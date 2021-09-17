@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f44499c-35fc-4e01-96ea-0020b249ef79" name="Default Changelist" comment="" />
+    <list default="true" id="5f44499c-35fc-4e01-96ea-0020b249ef79" name="Default Changelist" comment="Readme korrigiert">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1yGlnKiDbrUjWamHamDrsZb4HB8" />
   <component name="ProjectViewState">
@@ -13,6 +19,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -39,11 +47,24 @@
       <workItem from="1631886127936" duration="279000" />
       <workItem from="1631886938699" duration="129000" />
       <workItem from="1631887090401" duration="2460000" />
+      <workItem from="1631890712012" duration="812000" />
     </task>
+    <task id="LOCAL-00001" summary="Readme korrigiert">
+      <created>1631891139410</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1631891139410</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Readme korrigiert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme korrigiert" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
