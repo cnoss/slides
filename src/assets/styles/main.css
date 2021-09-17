@@ -325,6 +325,17 @@ a {
   justify-content: center;
   text-align: center; }
 
+/* Status
+############################################################################ */
+.status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--mi-pink);
+  color: var(--lightest);
+  padding: var(--xs) var(--xxs); }
+
 /* Aufzählung
 ############################################################################ */
 .inline li {
@@ -502,7 +513,7 @@ a.is-black {
     display: block;
     width: 100%;
     padding-top: 0;
-    padding-bottom: var(--xs);
+    padding-bottom: var(--half);
     margin-top: 0;
     color: var(--lightest);
     font-size: var(--xxxl); }
@@ -678,5 +689,9 @@ a.is-black {
       background-color: var(--lighter);
       border-radius: 0;
       color: var(--darkest); }
+
+.overview .slides .mi-slide {
+  width: 400px !important;
+  height: 300px !important; }
 
 /*# sourceMappingURL=main.css.map */
