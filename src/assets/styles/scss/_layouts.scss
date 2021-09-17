@@ -33,6 +33,36 @@
   }
 }
 
+/* Outro
+############################################################################ */
+
+.outro{
+
+  &-avatar{
+    display: flex;
+    align-items: center;
+    color: var(--lightest);
+
+    img{
+      border-radius: 50%;
+      width: 100%;
+      max-width: 10vw;
+      margin-right: var(--m);
+      border: solid var(--border-width-m) var(--mi-gruen);
+    }
+
+    figcaption{
+      font-size: var(--l);
+      .small{
+        font-size: var(--s);
+        color: var(--dark);
+      }
+    }
+  }
+
+
+}
+
 /* Zitat
 ############################################################################ */
 

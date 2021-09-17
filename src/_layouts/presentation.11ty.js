@@ -14,14 +14,30 @@ const backgroundColors = {
 
 const bgColorToClass = {
   intro: 'mi-lila',
-  shout: 'mi-blau'
+  shout: 'mi-blau',
+  outro: 'mi-black'
 };
+
+
+const outro = `
+<div class="outro">
+<figure class="outro-avatar">
+<img src="/assets/images/cnoss.jpeg">
+<figcaption>
+<p>Danke für's Mitmachen</p>
+<p class="small"><a href="https://christiannoss.de">https://christiannoss.de</a></p>
+</figcaption>
+</figure>
+</div>
+`;
+
 
 const codeWraps = {
   cite(data, html) { return `<blockquote class="has-whitener">${data.content}<cite>${data.author}</cite>${html.src}</blockquote>`; },
   shout(data, html) { return `<blockquote class="has-whitener">${data.content}<cite>${data.author}</cite>${html.src}</blockquote><p class="info is-passive">${data.info}</p>`; },
   statement(data, html) { return `<div><h1>${data.title}</h1><div class="fragment">${data.content}</div></div>`; },
   interlude(data, html) { return `<div class="is-fullscreen"><h1 class="title js-fit-text">${data.title}</h1></div>`; },
+  outro(data, html) { return `<div class="is-fullscreen is-centered"><p>${data.content}</p>${outro}</div>`; },
 };
 
 const injectContent = (wrap, data, html) => wrap(data, html);

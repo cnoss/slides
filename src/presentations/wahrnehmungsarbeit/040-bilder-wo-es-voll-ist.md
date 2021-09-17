@@ -17,7 +17,6 @@ status: tbu, Video vom Timesquare oder so, Credits addieren, Sundowner Bild nich
   </div>
 </section>
 
-
 <section class="image is-fullscreen" data-background="./images/iwona-castiello-d-antonio-dnMLdR814aA-unsplash.jpg.jpg">
   <div class="bu">
     <p>Viel zu tun</p>
@@ -26,7 +25,6 @@ status: tbu, Video vom Timesquare oder so, Credits addieren, Sundowner Bild nich
   </div>
 </section>
 
-  
 <section class="image is-fullscreen" data-background="./images/dan-freeman-G4E6PcOt4Ps-unsplash.jpg.jpg">
   <div class="bu">
     <p>Viel zu tun</p>
