@@ -7,7 +7,7 @@ HTML Slidedecks für meine Vorlesungen. Das Projekt nutzt den Static Page Genera
 ### `/docs`
 kompilierter Code … hier wird nix gemacht
 
-### `reveal`
+### `/reveal`
 Hier lebt Reveal.js und es muss nix gemacht werden.
 
 ### `/src` hier wird entwickelt
