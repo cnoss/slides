@@ -1,18 +1,14 @@
-# Mitlaufendes Projekt für WebDev Frontend-Development
+# Slides
 
-Ab Version 6.0.0 verwendet das Projekt den Static Page Generator [11ty](https://www.11ty.dev/docs/). Als Template Sprache wird [Nunjucks](https://www.11ty.dev/docs/languages/nunjucks/) eingesetzt.
-
-
-## Credits 📝
-
-Der Content für diese Aufgabe basiert auf der Bachelorarbeit *Online Sports Comnunities – A concept for supporting the user’s participation in team sports* von Kephas Nguyen (2021) an der TH Köln.
+HTML Slidedecks für meine Vorlesungen. Das Projekt nutzt den Static Page Generator [11ty](https://www.11ty.dev/docs/) und [reveal.js](https://revealjs.com/).
 
 ## Ordnerstruktur
-### `/_stuff`
-Material zum Verarbeiten und Erklären … Layouts, PDF, usw.
 
 ### `/docs`
 kompilierter Code … hier wird nix gemacht
+
+### `reveal`
+Hier lebt Reveal.js und es muss nix gemacht werden.
 
 ### `/src` hier wird entwickelt
 
@@ -22,9 +18,7 @@ _data               Zusätzliche Daten oder Hilffunktionen
 _layouts            Templates
 assets              SCSS, Skripts, Fonts, etc … alles was kein Content ist
 compiled-assets     Kompilierte Dateien, z.B. CSS
-chapters            Content
-images              Bilder, die zum Content gehören
-index.md            Startseite
+presentations       Content, und zwar pro Slidedeck ein Ordner
 ```
 
 ### Weitere Dateien
