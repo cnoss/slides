@@ -1,0 +1,57 @@
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(./fonts/PT_Sans/pt-sans.css);
+@import url(./fonts/Roboto_Slab/roboto-slab.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mi-lila: #9313ce;
+$mi-pink: #dd1166;
+$mi-gruen: #00ad2f;
+$mi-blau: #2F59DA;
+$mi-schwarz: #241F20;
+$mi-grau: #aaaaaa;
+$mi-hellgrau: #efefef;
+$lh-tight: 110%;
+
+$mainFontSize: 2vw;
+$mainFont: 'PTSans', Helvetica, sans-serif;
+$headingFont: 'RobotoSlab', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingLineHeight: $lh-tight;
+$headingTextTransform: none;
+$headingFontWeight: 600;
+$headingColor: $mi-lila;
+$linkColor: $mi-pink; 
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+.present{
+  width: 100vw;
+  height: 100vh;
+}

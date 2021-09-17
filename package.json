@@ -1,0 +1,51 @@
+{
+  "name": "fd-2021-cnoss",
+  "version": "4.0.0",
+  "description": "Mitlaufendes Projekt für das Modul Frontend Development",
+  "main": "index.js",
+  "scripts": {
+    "lint:css": "stylelint src/assets/styles/**/*.scss",
+    "lint:css:fix": "stylelint src/assets/styles/**/*.scss --fix",
+    "lint:js": "eslint src/scripts/**/*.js",
+    "lint:js:fix": "eslint src/scripts/**/*.js --fix",
+    "dev:css": "node-sass --source-map true src/assets/styles/scss src/assets/styles/scss/main.scss -o src/assets/styles/",
+    "watch:sass": "node-sass --source-map true --watch src/assets/styles/scss src/assets/styles/scss/main.scss -o src/compiled-assets/",
+    "watch": "npm-run-all --parallel dev:css watch:*",
+    "build:css": "node-sass --include-path src/assets/styles/scss src/assets/styles/scss/main.scss src/compiled-assets/main.css --output-style compressed",
+    "build:site": "ELEVENTY_ENV=production npx eleventy",
+    "del:docs": "rimraf ./docs",
+    "del:assets": "rimraf ./src/compiled-assets",
+    "serve:11ty": "ELEVENTY_ENV=development npx eleventy --serve",
+    "serve:prod": "serve ./docs/",
+    "dev": "npm-run-all --parallel watch serve:11ty",
+    "build": "npm-run-all del:docs del:assets build:css build:site",
+    "live": "npm run build && npm run serve:prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cnoss/fd-2021.git"
+  },
+  "author": "Christian Noss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cnoss/fd-2021/issues"
+  },
+  "homepage": "https://github.com/cnoss/fd-2021#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "html-minifier": "^4.0.0",
+    "md5-file": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "reveal.js": "^4.1.3",
+    "rimraf": "^3.0.2",
+    "sass": "^1.35.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.19.0"
+  }
+}

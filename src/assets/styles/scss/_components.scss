@@ -1,0 +1,145 @@
+/* Misc
+############################################################################ */
+
+.has-whitener {
+  padding: var(--l);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.is-full-width {
+  width: 100%;
+}
+
+.is-fullscreen {
+  width: 100vw;
+  height: 100vh;
+}
+
+.is-centered {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.is-stacked {
+  flex-direction: column;
+}
+
+.js-fit-text {
+  display: flex;
+  height: 90%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Status
+############################################################################ */
+
+.status{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--mi-pink);
+  color: var(--lightest);
+  padding: var(--xs) var(--xxs);
+}
+
+/* Aufzählung
+############################################################################ */
+
+.inline {
+  li {
+    display: inline-block;
+  }
+
+  li + li::before {
+    color: var(--color-decoration);
+    content: "// ";
+  }
+}
+
+/* Quelle
+############################################################################ */
+
+.src {
+  font-size: var(--xxs);
+  opacity: 0.2;
+  transform: scale(0.5);
+  transform-origin: left top;
+  transition: all var(--tr-fast);
+
+  &:hover {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+}
+
+/* Bildunterschriften
+############################################################################ */
+.bu {
+  position: absolute;
+  bottom: 0;
+  left: var(--xxs);
+  display: inline-block;
+  max-width: calc(var(--bfs) * 20);
+  padding: var(--xxs) var(--xxs) var(--xs) var(--xxs);
+  background-color: var(--lighter);
+  color: var(--darker);
+  font-size: var(--xs);
+  opacity: 0;
+  transition: opacity var(--tr-slow) var(--tr-delay);
+
+  .credit {
+    font-size: var(--xxs);
+  }
+
+  &.is-active {
+    opacity: 1;
+  }
+
+  h2,
+  h3 {
+    padding-top: 0;
+    margin-bottom: 0;
+    color: var(--darkest);
+    font-size: var(--s);
+
+    & + * {
+      margin-top: var(--half);
+    }
+  }
+}
+
+.bu-hero {
+  color: var(--lightest);
+  font-family: var(--ff-headline);
+  font-size: var(--xxl);
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+/* Blöcke
+############################################################################ */
+
+.content-blocks {
+  p,
+  li,
+  h3 {
+    display: block;
+    padding: var(--xxs) var(--xs);
+    margin-bottom: var(--xxs);
+    background-color: var(--lightest);
+    box-shadow: var(--shadow-l);
+  }
+
+  h3 {
+    color: var(--mi-lila);
+  }
+
+  strong {
+    font-weight: var(--fw-bold);
+  }
+}

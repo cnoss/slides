@@ -1,0 +1,116 @@
+/* Document Layout 
+############################################################################ */
+
+.document {
+  --bfs: 0.7rem;
+  --quat: calc(var(--bfs) / 4); // viertel geviert
+  --xxs: calc(var(--bfs) * 1);
+  --xs: calc(var(--bfs) * 1.25);
+  --s: calc(var(--bfs) * 1.6);
+  --m: calc(var(--bfs) * 2);
+  --l: calc(var(--bfs) * 2.5);
+  --xl: calc(var(--bfs) * 3.15);
+  --xxl: calc(var(--bfs) * 4);
+  --xxxl: calc(var(--bfs) * 5);
+  --xxxxl: calc(var(--bfs) * 6.3);
+  padding: var(--l) var(--m);
+}
+
+.document h1{
+  padding-top: var(--s);
+  padding-bottom: var(--s);
+  font-size: var(--xl);
+}
+
+.document h2{
+  color: var(--mi-lila);
+  font-size: var(--l);
+} 
+
+.count{
+  color: var(--darkest);
+  font-weight: var(--fw-light);
+  font-size: 80%;
+
+  &::before{
+    content: " // #";
+    color: var(--darkest);
+  }
+}
+
+.question-count{
+  position: absolute;
+  right: var(--m);
+  top: var(--xs);
+  font-size: var(--s);
+  color: var(--mi-gruen);
+
+  &::before{
+    content:"#";
+    color: var(--dark);
+  }
+}
+
+.shout blockquote{
+  max-width: 90rem !important;
+  p{
+    font-family: var(--ff-normal) !important;
+  }
+}
+
+#questionSelector{
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  -moz-padding-start: calc(10px - 3px);
+  outline: none;
+  
+  position: absolute;
+  right: var(--m);
+  bottom: 0;
+  
+  font-size: var(--xxs);
+  border: solid var(--border-width-s) var(--light);
+  padding: 0 var(--xs);
+  border-radius: var(--radius-s);
+  opacity: 0.5;
+  transition: opacity var(--tr-fast);
+
+  option{
+    font-size: var(--xxs);
+  }
+
+  &:hover{
+    opacity: 1;
+  }
+}
+
+/* Utils
+############################################################################ */
+
+.is-black{
+  color: var(--darkest);
+}
+
+.is-blue{
+  color: var(--mi-blau);
+}
+
+.is-important{
+  font-weight: var(--fw-medium);
+}
+
+a.is-black{
+  color: var(--darkest);
+
+  &:hover{
+    color: var(--color-accent);
+  }
+}

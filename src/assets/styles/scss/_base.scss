@@ -1,0 +1,61 @@
+* {
+  /* TODO: Zeigen */
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--lightest);
+  color: var(--color-text);
+  font-family: var(--ff-normal);
+  font-size: var(--m);
+  font-weight: var(--fw-normal);
+  hyphens: auto;
+  line-height: var(--lh-normal);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-headline);
+  font-family: var(--ff-headline);
+  font-weight: bold;
+  hyphens: none;
+}
+
+h1 {
+  padding-top: var(--xxxl);
+  padding-bottom: var(--xxxl);
+  color: var(--darkest);
+  font-size: var(--xxxl);
+  line-height: var(--lh-tight);
+}
+
+h2 {
+  padding-top: var(--xxl);
+  margin-bottom: var(--xxl);
+  font-size: var(--xxl);
+  font-weight: var(--fw-medium);
+}
+
+h3 {
+  padding-top: var(--xl);
+  margin-bottom: var(--xl);
+  font-size: var(--xl);
+  font-weight: normal;
+}
+
+p {
+  hyphens: auto;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
