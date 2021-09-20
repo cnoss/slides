@@ -522,6 +522,24 @@ a.is-black {
     color: rgba(255, 255, 255, 0.6);
     font-size: var(--m); }
 
+/* Outro
+############################################################################ */
+.outro-avatar {
+  display: flex;
+  align-items: center;
+  color: var(--lightest); }
+  .outro-avatar img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 10vw;
+    margin-right: var(--m);
+    border: solid var(--border-width-m) var(--mi-gruen); }
+  .outro-avatar figcaption {
+    font-size: var(--l); }
+    .outro-avatar figcaption .small {
+      font-size: var(--s);
+      color: var(--dark); }
+
 /* Zitat
 ############################################################################ */
 .cite {

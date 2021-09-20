@@ -22,7 +22,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/assets/images': 'assets/images' });
 
   // Copy images
-  eleventyConfig.addPassthroughCopy('src/presentations/**/images/*.{jpg,png,svg}');
+  eleventyConfig.addPassthroughCopy('src/presentations/**/images/*.{jpg,png,svg,jpeg}');
+  eleventyConfig.addPassthroughCopy('src/presentations/**/images/**/*.{jpg,png,svg,jpeg}');
 
   // Copy Reveal Stuff
   eleventyConfig.addPassthroughCopy({ 'reveal/dist': 'reveal/dist' });
@@ -32,14 +33,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/assets/scripts': 'assets/scripts' });
   eleventyConfig.addWatchTarget("./src/assets/scripts");
 
-  eleventyConfig.addCollection("sortedPresentations", (collection) => {
-    // console.log(collection);
-    return collection.getFilteredByGlob("./src/presentations/gestaltgesetze/*.md").sort((a, b) => {
-      if (a.fileSlug > b.fileSlug) return 1;
-      else if (a.fileSlug < b.fileSlug) return -1;
-      else return 0;
-    });
-  });
 
   eleventyConfig.addFilter("presentationByTopic", function (topic) {
     eleventyConfig.addCollection(topic, (collection) => {
@@ -62,7 +55,7 @@ module.exports = function (eleventyConfig) {
       const filenameFromA = a.filePathStem.split(/\//).pop();
       const filenameFromB = b.filePathStem.split(/\//).pop();
       
-      if (filenameFromB === 'index') return 1;
+      if (filenameFromA === 'index') return 1;
       else if (a.fileSlug > b.fileSlug) return 1;
       else if (a.fileSlug < b.fileSlug) return -1;
       
