@@ -42,7 +42,14 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("presentations", (collection) => {
-    const presentations = collection.getFilteredByGlob("./src/presentations/**/index.md");
+    const presentations = collection.getFilteredByGlob("./src/presentations/**/index.md").sort((a, b) => {
+      const filenameFromA = a.filePathStem.split(/\//).pop();
+      const filenameFromB = b.filePathStem.split(/\//).pop();
+      if (a.fileSlug > b.fileSlug) return 1;
+      else a.fileSlug < b.fileSlug
+      return -1;
+    });
+console.log(presentations);
     return presentations;
   });
 
