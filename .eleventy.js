@@ -82,6 +82,12 @@ module.exports = function (eleventyConfig) {
   return `<section class="image screenshot" ${dataTransition}><figure><img src="${imgSrc}" alt="${imgSrc}"></figure></section>`;
  });
 
+ eleventyConfig.addShortcode('interlude', (title, subtitle, transition) => {
+  const htmlSubtitle = subtitle ? `<h2 class="subtitle has-delay">${subtitle}</h2>` : '';
+  const dataTransition = transition ? `data-transition=${transition}` : '';
+  return `<section class="image screenshot interlude" ${dataTransition}><div><h1 class="title">${title}</h1>${htmlSubtitle}</div></section>`;
+ });
+
  /* Environment
  ########################################################################## */
 
