@@ -77,7 +77,10 @@ module.exports = function (eleventyConfig) {
  /* Shortcodes
  ########################################################################## */
 
- eleventyConfig.addShortcode('screenshot', (imgSrc) => `<section class="image screenshot"><figure><img src="${imgSrc}" alt="${imgSrc}"></figure></section>`);
+ eleventyConfig.addShortcode('screenshot', (imgSrc, transition) => {
+  const dataTransition = transition ? `data-transition=${transition}` : '';
+  return `<section class="image screenshot" ${dataTransition}><figure><img src="${imgSrc}" alt="${imgSrc}"></figure></section>`;
+ });
 
  /* Environment
  ########################################################################## */
