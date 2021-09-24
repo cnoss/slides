@@ -10,6 +10,11 @@ Reveal.on('slidechanged', event => {
     bu.classList.add("is-active");
   });
 
+  const delayedItems = event.currentSlide.querySelectorAll(".js-delay");
+  delayedItems.forEach(item => {
+    item.classList.add("has-delay");
+  });
+
   const info = event.currentSlide.querySelector(".info");
   if (info) {
     info.addEventListener("click", (ev) => { 
@@ -23,5 +28,10 @@ Reveal.on('slidechanged', event => {
   const lastBUs = event.previousSlide.querySelectorAll(".bu");
   lastBUs.forEach(bu => {
     bu.classList.remove("is-active");
+  });
+
+  const lastDelayedItems = event.previousSlide.querySelectorAll(".js-delay");
+  lastDelayedItems.forEach(item => {
+    item.classList.remove("has-delay");
   });
 } );

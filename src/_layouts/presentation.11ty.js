@@ -36,7 +36,7 @@ const codeWraps = {
   cite(data, html) { return `<blockquote class="has-whitener">${data.content}<cite>${data.author}</cite>${html.src}</blockquote>`; },
   shout(data, html) { return `<blockquote class="has-whitener">${data.content}<cite>${data.author}</cite>${html.src}</blockquote><p class="info is-passive">${data.info}</p>`; },
   statement(data, html) { return `<div><h1>${data.title}</h1><div class="fragment">${data.content}</div></div>`; },
-  interlude(data, html) { return `<div class="is-fullscreen"><h1 class="title js-fit-text">${data.title}</h1></div>`; },
+  interlude(data, html) { return `<div class="is-fullscreen"><h1 class="title">${data.title}</h1><h2 class="subtitle js-delay">${data.subtitle}</h2></div>`; },
   outro(data, html) { return `<div class="is-fullscreen is-centered"><p>${data.content}</p>${outro}</div>`; },
 };
 

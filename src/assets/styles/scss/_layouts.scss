@@ -220,15 +220,18 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
+  background-color: var(--mi-gruen);
 
   .title {
     padding: 0;
+    color: var(--lightest)
   }
 
   .subtitle {
     padding: 0;
     font-family: var(--ff-normal);
-    color: var(--mi-lila);
+    color: var(--darkest);
+    opacity: var(--op-medium);
   }
 }
 

@@ -83,7 +83,7 @@ module.exports = function (eleventyConfig) {
  });
 
  eleventyConfig.addShortcode('interlude', (title, subtitle, transition) => {
-  const htmlSubtitle = subtitle ? `<h2 class="subtitle has-delay">${subtitle}</h2>` : '';
+  const htmlSubtitle = subtitle ? `<h2 class="subtitle js-delay">${subtitle}</h2>` : '';
   const dataTransition = transition ? `data-transition=${transition}` : '';
   return `<section class="image screenshot interlude" ${dataTransition}><div><h1 class="title">${title}</h1>${htmlSubtitle}</div></section>`;
  });
