@@ -120,6 +120,7 @@ exports.render = function (data) {
       <script src="/reveal/plugin/notes/notes.js"></script>
       <script src="/reveal/plugin/markdown/markdown.js"></script>
       <script src="/reveal/plugin/highlight/highlight.js"></script>
+      <script src="/reveal/plugin/zoom/zoom.js"></script>
       <script>
         // More info about initialization & config:
         // - https://revealjs.com/initialization/
@@ -131,7 +132,7 @@ exports.render = function (data) {
           progress: true,
           backgroundTransition: 'zoom',
           // Learn about plugins: https://revealjs.com/plugins/
-          plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+          plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
         });
       </script>
     </body>

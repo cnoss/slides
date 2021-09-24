@@ -5,6 +5,14 @@ Reveal.on('slidechanged', event => {
     window.fitText( ele );
   });
 
+  const figures = event.currentSlide.querySelectorAll("figure");
+  figures.forEach(figure => {
+    figure.addEventListener("click", (ev) => {
+      figure.classList.toggle("zoom");
+    });
+
+  });
+
   const BUs = event.currentSlide.querySelectorAll(".bu");
   BUs.forEach(bu => {
     bu.classList.add("is-active");
