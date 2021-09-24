@@ -2,14 +2,14 @@
 title: Orientierung
 layout: presentation.11ty.js
 slideClass: image
-status: karten austauschen, Qualität ist mies
+status: ok
 transition: none
 ---
 
-<section class="image is-fullscreen" data-transition="fade"  data-background-transition="fade" data-background="./images/karte-1.jpg">
+<section class="image is-fullscreen" data-transition="fade"  data-background-transition="fade" data-background="./images/map-cologne.jpg">
 </section>
 
-<section class="image is-fullscreen" data-transition="fade"  data-background-transition="fade" data-background="./images/karte-2.jpeg.jpg">
+<section class="image is-fullscreen" data-transition="fade"  data-background-transition="fade" data-background="./images/map-cologne2.jpg">
 </section>
 
 <section class="image screenshot" data-transition="fade" data-background="#000000" data-background-transition="fade" >

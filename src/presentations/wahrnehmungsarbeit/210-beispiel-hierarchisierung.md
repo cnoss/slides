@@ -2,7 +2,7 @@
 title: Beispiele Hierarchisierung
 layout: presentation.11ty.js
 slideClasses: images
-status: Bilder ggf. aktualisieren, Credits addieren
+status: ok
 ---
 
 <section class="image screenshot">
@@ -10,51 +10,70 @@ status: Bilder ggf. aktualisieren, Credits addieren
     <img src="./images/FAZ_neu_S1_gross-570.jpg">
     <figcaption class="bu">
       <p>Wie ist die Hierarchie der Elemente?</p>
+      <p class="credit">
+      <span>Frankfurter Allgemeine (2007)</span>
+    </p>
     </figcaption>
   </figure>
 </section>
 
 <section class="image screenshot">
   <figure >
-    <img src="./images/lueneburger-zeitung-eonwerbung-560.tiff.jpg">
+    <img src="./images/lueneburger-zeitung-eonwerbung.jpg">
     <figcaption class="bu">
       <p>Wie ist die Hierarchie der Elemente?</p>
+      <p class="credit">
+        <span>Lokales (2006)</span> // 
+        <a href="https://www.dumpert.nl/item/1200691_74b43e9c" target="_blank">dumpert.nl</a>
+    </p>
     </figcaption>
   </figure>
 </section>
 
 <section class="image screenshot">
   <figure >
-    <img src="./images/pasted-image-684.png.jpg">
+    <img src="./images/tagesschau.jpg">
     <figcaption class="bu">
       <p>Wie ist die Hierarchie der Elemente?</p>
+      <p class="credit">
+        <a href="https://www.tagesschau.de/" target="_blank">tagesschau.de</a>
+    </p>
     </figcaption>
   </figure>
 </section>
 
 <section class="image screenshot">
   <figure >
-    <img src="./images/pasted-image-692.png.jpg">
+    <img src="./images/amazon.jpg">
     <figcaption class="bu">
       <p>Wie ist die Hierarchie der Elemente?</p>
+      <p class="credit">
+      <a href="https://www.amazon.de/" target="_blank">amazon.de</a>
+    </p>
     </figcaption>
   </figure>
 </section>
 
 <section class="image screenshot">
   <figure >
-    <img src="./images/droppedImage-557.pdf.jpg">
+    <img src="./images/zdf.jpg">
     <figcaption class="bu">
       <p>Wie ist die Hierarchie der Elemente?</p>
+      <p class="credit">
+      <a href="https://www.zdf.de/" target="_blank">zdf.de</a>
+    </p>
     </figcaption>
   </figure>
 </section>
 
 <section class="image screenshot">
   <figure >
-    <img src="./images/droppedImage-566.png">
+    <img src="./images/tunnel7.jpg">
     <figcaption class="bu">
       <p>Wie ist die Hierarchie der Elemente?</p>
+      <p class="credit">
+      <a href="https://tunnel7.com" target="_blank">tunnel7.com</a>
+    </p>
     </figcaption>
   </figure>
 </section>
