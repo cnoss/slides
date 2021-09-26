@@ -30,7 +30,7 @@ module.exports = function (eleventyConfig) {
 
  // Copy asset images
  eleventyConfig.addPassthroughCopy({'src/assets/images': 'assets/images'});
-
+  
  // Copy images
  eleventyConfig.addPassthroughCopy('src/presentations/**/images/*.{jpg,png,svg,jpeg}');
  eleventyConfig.addPassthroughCopy('src/presentations/**/images/**/*.{jpg,png,svg,jpeg}');
@@ -63,6 +63,7 @@ module.exports = function (eleventyConfig) {
    if (a.fileSlug > b.fileSlug) return 1;
    else a.fileSlug < b.fileSlug
    return -1;
+
   });
  });
 

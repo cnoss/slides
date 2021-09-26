@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+
     <list default="true" id="5f44499c-35fc-4e01-96ea-0020b249ef79" name="Default Changelist" comment="Shortcode für Screenshots addiert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/compiled-assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/compiled-assets/main.css" afterDir="false" />
@@ -25,6 +26,7 @@
       <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/330-lindgaard.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/9999-outro.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/index.md" beforeDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +81,7 @@
       <workItem from="1631886938699" duration="129000" />
       <workItem from="1631887090401" duration="2460000" />
       <workItem from="1631890712012" duration="4533000" />
+
       <workItem from="1632461757753" duration="24857000" />
     </task>
     <task id="LOCAL-00001" summary="Readme korrigiert">
