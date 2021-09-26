@@ -2,18 +2,18 @@
 title: Orientierung
 layout: presentation.11ty.js
 slideClasses: image
-status: karten austauschen, Qualität ist mies
+status: ok
 transition: none
 ---
 
-<section class="image is-fullscreen" data-transition="fade" data-background-transition="fade" data-background="./images/karte-1.jpg">
+<section class="image is-fullscreen" data-transition="fade" data-background-transition="fade" data-background="./images/map-cologne.jpg">
   <div class="bu">
     <h3>Orientierung schaffen</h3>
     aber wie?
   </div>
 </section>
 
-<section class="image is-fullscreen" data-transition="fade"  data-background-transition="fade" data-background="./images/karte-1.jpg">
+<section class="image is-fullscreen" data-transition="fade"  data-background-transition="fade" data-background="./images/map-cologne.jpg">
   <div class="is-centered">
     <div class="content-blocks">
       <h3>Orientierung schaffen</h3>
@@ -26,7 +26,7 @@ transition: none
   </div>
 </section>
 
-<section class="image is-fullscreen" data-transition="fade"  data-background-transition="fade" data-background="./images/karte-2.jpeg.jpg">
+<section class="image is-fullscreen" data-transition="fade"  data-background-transition="fade" data-background="./images/map-cologne2.jpg">
   <div class="bu">
     <h3>Orientierung schaffen</h3>
     <ul class="inline">
