@@ -143,7 +143,7 @@ module.exports = function (eleventyConfig) {
    layouts: '_layouts',
    output: 'docs',
   },
-  pathPrefix: "",
+  pathPrefix: "slides",
   markdownTemplateEngine: 'njk',
   htmlTemplateEngine: 'njk',
   templateFormats: [
