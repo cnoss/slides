@@ -354,6 +354,9 @@ a {
 .is-purple {
   color: var(--mi-lila); }
 
+.is-green {
+  color: var(--mi-gruen); }
+
 /* Status
 ############################################################################ */
 .status {

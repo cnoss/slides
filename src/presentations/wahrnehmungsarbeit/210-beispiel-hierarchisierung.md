@@ -2,7 +2,7 @@
 title: Beispiele Hierarchisierung
 layout: presentation.11ty.js
 slideClasses: images
-status: ok
+status: bitte die Zeitungsscreenshots erneuern, ggf. noch einen weiteren aus nem Magazin oder so addieren
 ---
 
 <section class="image screenshot">

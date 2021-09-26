@@ -1,5 +1,5 @@
 ---
-title: About Screendesign
+title: Wahrnehmungsarbeit
 layout: presentation.11ty.js
 slideClasses: intro
 transition: zoom
@@ -7,7 +7,8 @@ transition: zoom
 
 <div class="is-full-width">
 
-# About Screendesign
-## Worum geht es in diesem Modul?
+# Wahrnehmungsarbeit
+
+
 
 </div>

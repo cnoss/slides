@@ -7,4 +7,4 @@ src: "Alexander, K. (2013): Kompendium der visuellen Information und Kommunikati
 status: ok
 ---
 
-Qualität ist *keine* Geschmacks- sache!
+Qualität ist *keine* Geschmackssache!
