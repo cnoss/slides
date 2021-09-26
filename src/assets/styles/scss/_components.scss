@@ -1,6 +1,23 @@
 /* Misc
 ############################################################################ */
 
+.list{
+  border-left: solid var(--border-width-l) var(--mi-blau);
+  padding-left: var(--s);
+  background-color: var(--lighter);
+  padding-top: var(--quat);
+  padding-bottom: var(--half);
+  margin-bottom: var(--m) !important;
+}
+
+/* Utiliies
+############################################################################ */
+
+.has-gap{
+  margin-top: var(--xxl) !important;
+  margin-bottom: var(--xxl) !important;
+}
+
 .has-whitener {
   padding: var(--l);
   background-color: rgba(255, 255, 255, 0.7);
@@ -43,6 +60,14 @@
     opacity: 1;
     transform: scale(1);
   }
+}
+
+.is-purple{
+  color: var(--mi-lila);
+}
+
+.is-green{
+  color: var(--mi-gruen);
 }
 
 /* Status

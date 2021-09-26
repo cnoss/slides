@@ -1,5 +1,13 @@
 const htmlmin = require('html-minifier');
 
+const insertStrong = (string)=>{
+ return string.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>", string);
+}
+
+const insertColor = (string, colorClass)=>{
+ const color = (colorClass) ? colorClass : "is-purple";
+ return string.replace(/\/\//g, "<span class="+color+">//</span>", string);
+}
 
 module.exports = function (eleventyConfig) {
  eleventyConfig.setUseGitIgnore(false);
@@ -77,15 +85,35 @@ module.exports = function (eleventyConfig) {
  /* Shortcodes
  ########################################################################## */
 
- eleventyConfig.addShortcode('screenshot', (imgSrc, transition) => {
-  const dataTransition = transition ? `data-transition=${transition}` : '';
-  return `<section class="image screenshot" ${dataTransition}><figure><img src="${imgSrc}" alt="${imgSrc}"></figure></section>`;
+ eleventyConfig.addShortcode('screenshot', (imgSrc, props) => {
+  const propData = (props) ? JSON.parse(props) : {};
+  const dataTransition = propData && propData.transition ? `data-transition="${propData.transition}"` : '';
+  const classes = propData && propData.classes ? propData.classes : '';
+  return `<section class="image screenshot ${classes}" ${dataTransition}><figure><img src="${imgSrc}" alt="${imgSrc}"></figure></section>`;
  });
 
  eleventyConfig.addShortcode('interlude', (title, subtitle, transition) => {
   const htmlSubtitle = subtitle ? `<h2 class="subtitle js-delay">${subtitle}</h2>` : '';
-  const dataTransition = transition ? `data-transition=${transition}` : '';
+  const dataTransition = transition ? `data-transition="${transition}"` : '';
   return `<section class="image screenshot interlude" ${dataTransition}><div><h1 class="title">${title}</h1>${htmlSubtitle}</div></section>`;
+ });
+
+ eleventyConfig.addShortcode('question', (question, tagline) => {
+  const htmlTagline = tagline ? `<h2 class="subtitle js-delay">${tagline}</h2>` : '';
+  return `<section class="question"><div><h1 class="title">${question}</h1>${htmlTagline}</div></section>`;
+ });
+
+ eleventyConfig.addShortcode('fragment', (content, props) => {
+  const propData = (props) ? JSON.parse(props) : {};
+  return `<div class="fragment">${insertStrong(content)}</div>`;
+ });
+
+ eleventyConfig.addShortcode('qa', (q, a, props) => {
+  const propData = (props) ? JSON.parse(props) : {};
+  const dataTransition = propData && propData.transition ? `data-transition="${propData.transition}"` : '';
+  let answer = insertStrong(a);
+  answer = insertColor(answer, "is-green");
+  return `<section class="qa" ${dataTransition}><div class="qa-wrap"><h1 class="qa-question">${q}</h1><p class="qa-answer fragment">${answer}</p></div></section>`;
  });
 
  /* Environment

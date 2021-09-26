@@ -1,16 +1,19 @@
 const fitTextElements = document.querySelectorAll(".js-fit-text");
 
-Reveal.on('slidechanged', event => {
-  fitTextElements.forEach(ele=>{
-    window.fitText( ele );
-  });
 
-  const figures = event.currentSlide.querySelectorAll("figure");
+
+Reveal.on( 'ready', event => {
+  const figures = document.querySelectorAll(".slide figure");
   figures.forEach(figure => {
     figure.addEventListener("click", (ev) => {
       figure.classList.toggle("zoom");
     });
+  });
+} );
 
+Reveal.on('slidechanged', event => {
+  fitTextElements.forEach(ele=>{
+    window.fitText( ele );
   });
 
   const BUs = event.currentSlide.querySelectorAll(".bu");
@@ -42,4 +45,11 @@ Reveal.on('slidechanged', event => {
   lastDelayedItems.forEach(item => {
     item.classList.remove("has-delay");
   });
+
+  /* const lastFigures = event.previousSlide.querySelectorAll("figure");
+  lastFigures.forEach(figure => {
+    figure.removeEventListener("click", (ev) => {
+      toggleZoom(figure);
+    }, true);
+  });*/
 } );

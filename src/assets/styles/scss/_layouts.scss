@@ -143,6 +143,16 @@
       }
     }
   }
+
+  &.no-shadow{
+    figure{
+      box-shadow: none;
+
+      img{
+        box-shadow: none;
+      }
+    }
+  }
 }
 
 /* Video
@@ -315,5 +325,115 @@
       border-radius: 0;
       color: var(--darkest);
     }
+  }
+}
+
+/* question
+############################################################################ */
+
+.question {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  div{
+    text-align: center;
+    .title {
+      padding: 0;
+      padding-bottom: var(--half);
+    }
+    .subtitle {
+
+      font-family: var(--ff-normal);
+      color: var(--mi-lila);
+      font-size: var(--m);
+      padding: 0;
+    }
+  }
+
+
+
+
+}
+
+/* Simple
+############################################################################ */
+
+.simple {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    max-width: calc(var(--m) * 40);
+
+    h1 {
+      padding: 0;
+      padding-bottom: var(--s);
+      margin-bottom: var(--s);
+      font-size: var(--xl);
+    }
+
+
+    h2 {
+      padding: 0;
+      padding-bottom: 0;
+      margin-bottom: var(--xxs);
+      color: var(--mi-blau);
+      font-family: var(--ff-normal);
+      font-size: var(--l);
+    }
+
+
+    p {
+      margin-bottom: var(--xl);
+      color: var(--darker);
+      font-size: var(--l);
+      line-height: var(--lh-tight);
+    }
+  }
+
+}
+
+/* Question and Answer
+############################################################################ */
+
+.qa {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  max-height: 90vh;
+
+  &-wrap{
+    display: grid !important;
+    max-width: 90vw;
+    grid-template-columns: 33% 1fr;
+    grid-gap: var(--m);
+  }
+
+  h1 {
+    padding: 0;
+    font-family: var(--ff-normal);
+    font-size: var(--m);
+    line-height: var(--lh-normal);
+    font-weight: var(--fw-medium);
+    text-align: right;
+    color: var(--mi-lila);
+  }
+
+  h2 {
+    padding: 0;
+    padding-bottom: 0;
+    margin-bottom: var(--xxs);
+    color: var(--mi-blau);
+    font-family: var(--ff-normal);
+    font-size: var(--l);
+    text-align: right;
+  }
+
+  p {
+    color: var(--darker);
+    font-size: var(--m);
+    line-height: var(--lh-normal);
   }
 }
