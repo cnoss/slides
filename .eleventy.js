@@ -1,5 +1,7 @@
 const htmlmin = require('html-minifier');
 
+const pathPrefix = (process.env.ELEVENTY_ENV === 'production') ? "slides" : "";
+
 const insertStrong = (string)=>{
  return string.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>", string);
 }
@@ -43,6 +45,12 @@ module.exports = function (eleventyConfig) {
  eleventyConfig.addPassthroughCopy({'src/assets/scripts': 'assets/scripts'});
  eleventyConfig.addWatchTarget("./src/assets/scripts");
 
+ /* Functions
+ ########################################################################## */
+
+ eleventyConfig.addJavaScriptFunction("urlPrefix", function() {
+  return pathPrefix;
+ });
 
  /* Filter
  ########################################################################## */
@@ -136,6 +144,7 @@ module.exports = function (eleventyConfig) {
   });
  }
 
+
  return {
   dir: {
    includes: '_components',
@@ -143,7 +152,7 @@ module.exports = function (eleventyConfig) {
    layouts: '_layouts',
    output: 'docs',
   },
-  pathPrefix: "slides",
+  pathPrefix: pathPrefix,
   markdownTemplateEngine: 'njk',
   htmlTemplateEngine: 'njk',
   templateFormats: [

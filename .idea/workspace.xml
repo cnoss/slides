@@ -4,6 +4,61 @@
     <list default="true" id="5f44499c-35fc-4e01-96ea-0020b249ef79" name="Default Changelist" comment="Shortcode für Screenshots addiert">
       <change beforePath="$PROJECT_DIR$/.eleventy.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eleventy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/gdw-fragen-list/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/gdw-fragen-list/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/000-intro/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/000-intro/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/010-dataforest-intro/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/010-dataforest-intro/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/015-dataforest-cta/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/015-dataforest-cta/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/020-dataforest-form/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/020-dataforest-form/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/030-db-zuganzeiger/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/030-db-zuganzeiger/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/040-dive/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/040-dive/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/100-identity/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/100-identity/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/110-garten/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/110-garten/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/120-reisen/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/120-reisen/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/130-kober/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/130-kober/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/140-new/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/140-new/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/150-new/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/150-new/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/160-schrift/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/160-schrift/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/200-welcome/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/200-welcome/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/210-about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/210-about/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/220-my-first/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/220-my-first/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/230-ziele/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/230-ziele/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/240-ablauf/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/240-ablauf/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/250-leitfaden/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/250-leitfaden/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/260-leitfaden-kurzfassung/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/260-leitfaden-kurzfassung/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/270-keine-emails/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/270-keine-emails/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/300-themen-phase-1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/300-themen-phase-1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/310-themen-phase-2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/310-themen-phase-2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/400-veranstaltungsarten/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/400-veranstaltungsarten/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/9999-outro/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/9999-outro/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/000-intro/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/000-intro/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/010-moles/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/010-moles/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/020-watzlawick/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/020-watzlawick/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/030-uwe/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/030-uwe/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/040-bilder-wo-es-voll-ist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/040-bilder-wo-es-voll-ist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/050-online-viel-zu-tun/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/050-online-viel-zu-tun/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/060-aufmerksamkeitstest/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/060-aufmerksamkeitstest/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/100-orientierung/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/100-orientierung/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/110-orientierung-karte/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/110-orientierung-karte/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/120-reduzieren/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/120-reduzieren/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/122-reduzieren-beispiele/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/122-reduzieren-beispiele/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/130-strukturieren/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/130-strukturieren/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/132-strukturieren-karte/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/132-strukturieren-karte/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/140-hierarchisieren/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/140-hierarchisieren/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/142-hierarchisieren-karte/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/142-hierarchisieren-karte/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/210-beispiel-hierarchisierung/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/210-beispiel-hierarchisierung/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/220-beispiel-hierarchisierung-abstrakt/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/220-beispiel-hierarchisierung-abstrakt/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/300-moles/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/300-moles/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/320-alexander/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/320-alexander/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/330-lindgaard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/330-lindgaard/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/9999-outro/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/9999-outro/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_layouts/documents.11ty.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_layouts/documents.11ty.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_layouts/presentation.11ty.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_layouts/presentation.11ty.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +113,7 @@
       <workItem from="1631886938699" duration="129000" />
       <workItem from="1631887090401" duration="2460000" />
       <workItem from="1631890712012" duration="4533000" />
-      <workItem from="1632461757753" duration="26145000" />
+      <workItem from="1632461757753" duration="31513000" />
     </task>
     <task id="LOCAL-00001" summary="Readme korrigiert">
       <created>1631891139410</created>

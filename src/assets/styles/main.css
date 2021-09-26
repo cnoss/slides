@@ -404,7 +404,8 @@ a {
   opacity: 0;
   transition: opacity var(--tr-slow) var(--tr-delay); }
   .bu .credit {
-    font-size: var(--xxs); }
+    font-size: var(--xxs);
+    margin-top: var(--half); }
     .bu .credit > span {
       color: var(--color-accent); }
   .bu.is-active {
