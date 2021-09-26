@@ -8,8 +8,8 @@ exports.render = function (data) {
   
       <title>${data.title}</title>
   
-      <link rel="stylesheet" href="${this.urlPrefix()}/assets/main.css">
-      <link rel="icon" type="image/svg" href="${this.urlPrefix()}/assets/images/preview_black_24dp.svg">
+      <link rel="stylesheet" href="${this.url('/assets/main.css')}">
+      <link rel="icon" type="image/svg" href="${this.url('/assets/images/preview_black_24dp.svg')}">
     </head>
     <body class="document">
       <main>
@@ -17,6 +17,6 @@ exports.render = function (data) {
       ${data.content}
       </main>
     </body>
-    <script src="${this.urlPrefix()}/assets/scripts/gdw.js"></script>
+    <script src="${this.url('/assets/scripts/gdw.js')}"></script>
   </html>`;
 };
