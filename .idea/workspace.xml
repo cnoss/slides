@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f44499c-35fc-4e01-96ea-0020b249ef79" name="Default Changelist" comment="Readme korrigiert">
-      <change beforePath="$PROJECT_DIR$/.eleventy.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eleventy.js" afterDir="false" />
+
+    <list default="true" id="5f44499c-35fc-4e01-96ea-0020b249ef79" name="Default Changelist" comment="Shortcode für Screenshots addiert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentations/wahrnehmungsarbeit/9999-outro.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentations/wahrnehmungsarbeit/9999-outro.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compiled-assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/compiled-assets/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/010-dataforest.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/020-watzlawick.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/030-uwe.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/040-bilder-wo-es-voll-ist.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/050-online-viel-zu-tun.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/060-aufmerksamkeitstest.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/100-orientierung.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/110-orientierung-karte.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/120-reduzieren.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/122-reduzieren-beispiele.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/130-strukturieren.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/132-strukturieren-karte.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/140-hierarchisieren.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/142-hierarchisieren-karte.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/210-beispiel-hierarchisierung.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/220-beispiel-hierarchisierung-abstrakt.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/300-moles.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/320-alexander.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/330-lindgaard.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/9999-outro.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentations/about-screendesign/index.md" beforeDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +55,9 @@
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -59,6 +81,8 @@
       <workItem from="1631886938699" duration="129000" />
       <workItem from="1631887090401" duration="2460000" />
       <workItem from="1631890712012" duration="4533000" />
+
+      <workItem from="1632461757753" duration="24857000" />
     </task>
     <task id="LOCAL-00001" summary="Readme korrigiert">
       <created>1631891139410</created>
@@ -67,7 +91,49 @@
       <option name="project" value="LOCAL" />
       <updated>1631891139410</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Shortcode für Screenshots addiert">
+      <created>1632470138584</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1632470138584</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Shortcode um Transition ergänzt">
+      <created>1632470543011</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1632470543011</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Shortcode für Interlude addiert">
+      <created>1632471917379</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1632471917379</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Delayed Elemente integriert">
+      <created>1632473036423</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1632473036423</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Zoom für Screenshots integriert">
+      <created>1632477516751</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1632477516751</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Code für zweiten Foliensatz addiert">
+      <created>1632664748882</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1632664748882</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,7 +141,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Readme korrigiert" />
-    <option name="LAST_COMMIT_MESSAGE" value="Readme korrigiert" />
+    <MESSAGE value="Shortcode für Screenshots addiert" />
+    <MESSAGE value="Shortcode um Transition ergänzt" />
+    <MESSAGE value="Shortcode für Interlude addiert" />
+    <MESSAGE value="Delayed Elemente integriert" />
+    <MESSAGE value="Zoom für Screenshots integriert" />
+    <MESSAGE value="Code für zweiten Foliensatz addiert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code für zweiten Foliensatz addiert" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,5 +1,16 @@
 const fitTextElements = document.querySelectorAll(".js-fit-text");
 
+
+
+Reveal.on( 'ready', event => {
+  const figures = document.querySelectorAll(".slide figure");
+  figures.forEach(figure => {
+    figure.addEventListener("click", (ev) => {
+      figure.classList.toggle("zoom");
+    });
+  });
+} );
+
 Reveal.on('slidechanged', event => {
   fitTextElements.forEach(ele=>{
     window.fitText( ele );
@@ -8,6 +19,11 @@ Reveal.on('slidechanged', event => {
   const BUs = event.currentSlide.querySelectorAll(".bu");
   BUs.forEach(bu => {
     bu.classList.add("is-active");
+  });
+
+  const delayedItems = event.currentSlide.querySelectorAll(".js-delay");
+  delayedItems.forEach(item => {
+    item.classList.add("has-delay");
   });
 
   const info = event.currentSlide.querySelector(".info");
@@ -24,4 +40,16 @@ Reveal.on('slidechanged', event => {
   lastBUs.forEach(bu => {
     bu.classList.remove("is-active");
   });
+
+  const lastDelayedItems = event.previousSlide.querySelectorAll(".js-delay");
+  lastDelayedItems.forEach(item => {
+    item.classList.remove("has-delay");
+  });
+
+  /* const lastFigures = event.previousSlide.querySelectorAll("figure");
+  lastFigures.forEach(figure => {
+    figure.removeEventListener("click", (ev) => {
+      toggleZoom(figure);
+    }, true);
+  });*/
 } );

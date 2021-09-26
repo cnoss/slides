@@ -44,10 +44,12 @@
   --tr-fast: 0.2s;
   --tr-slow: 0.6s;
   --tr-delay: 1.2s;
+  --op-medium: 0.6;
   --shadow-l: 0 0 var(--xs) rgba(0, 0, 0, 0.5);
   --shadow-xl: var(--half) var(--half) var(--m) rgba(0, 0, 0, 0.3);
   --border-width-s: 1px;
   --border-width-m: 3px;
+  --border-width-l: 6px;
   --radius-s: 3px;
 }
 

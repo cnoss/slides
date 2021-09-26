@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const imgEndings = ['jpg', 'png'];
 
-const backgroundColors = {
+const colors = {
   'mi-blau': '#4952e1',
   'mi-pink': '#d16',
   'mi-gruen': '#00ad2f',
@@ -17,6 +17,10 @@ const bgColorToClass = {
   shout: 'mi-blau',
   outro: 'mi-black'
 };
+
+const insertColor = (string, colorClass)=>{
+  return string.replace(/\/\//g, "<span class="+colorClass+">//</span>", string);
+}
 
 
 const outro = `
@@ -35,8 +39,15 @@ const outro = `
 const codeWraps = {
   cite(data, html) { return `<blockquote class="has-whitener">${data.content}<cite>${data.author}</cite>${html.src}</blockquote>`; },
   shout(data, html) { return `<blockquote class="has-whitener">${data.content}<cite>${data.author}</cite>${html.src}</blockquote><p class="info is-passive">${data.info}</p>`; },
-  statement(data, html) { return `<div><h1>${data.title}</h1><div class="fragment">${data.content}</div></div>`; },
-  interlude(data, html) { return `<div class="is-fullscreen"><h1 class="title js-fit-text">${data.title}</h1></div>`; },
+  statement(data, html) {
+    const content = insertColor(data.content, "is-purple");
+    return `<div><h1>${data.title}</h1><div class="fragment">${content}</div></div>`;
+  },
+  simple(data, html) {
+    const content = insertColor(data.content, "is-purple");
+    return `<div><h1>${data.title}</h1>${content}</div>`;
+  },
+  interlude(data, html) { return `<div class="is-fullscreen"><h1 class="title">${data.title}</h1><h2 class="subtitle js-delay">${data.subtitle}</h2></div>`; },
   outro(data, html) { return `<div class="is-fullscreen is-centered"><p>${data.content}</p>${outro}</div>`; },
 };
 
@@ -52,7 +63,7 @@ const wrapContentByType = (data, type) => {
 const getData = (collections, pattern) => collections.filter((item) => item.url.match(pattern));
 const getBgColor = (cssClass) => {
   const colorKey = bgColorToClass[cssClass];
-  const color = backgroundColors[colorKey];
+  const color = colors[colorKey];
   return color ? `data-background-color="${color}"` : '';
 };
 
@@ -120,6 +131,7 @@ exports.render = function (data) {
       <script src="/reveal/plugin/notes/notes.js"></script>
       <script src="/reveal/plugin/markdown/markdown.js"></script>
       <script src="/reveal/plugin/highlight/highlight.js"></script>
+      <script src="/reveal/plugin/zoom/zoom.js"></script>
       <script>
         // More info about initialization & config:
         // - https://revealjs.com/initialization/
@@ -131,7 +143,7 @@ exports.render = function (data) {
           progress: true,
           backgroundTransition: 'zoom',
           // Learn about plugins: https://revealjs.com/plugins/
-          plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+          plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
         });
       </script>
     </body>
