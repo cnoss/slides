@@ -109,14 +109,14 @@ exports.render = function (data) {
   
       <title>Screendesign // ${data.title}</title>
 
-      <link rel="stylesheet" href="${this.urlPrefix()}/reveal/dist/reset.css">
-      <link rel="stylesheet" href="${this.urlPrefix()}/reveal/dist/reveal.css">
-      <link rel="stylesheet" href="${this.urlPrefix()}/assets/main.css">
+      <link rel="stylesheet" href="${this.url('/reveal/dist/reset.css')}">
+      <link rel="stylesheet" href="${this.url('/reveal/dist/reveal.css')}">
+      <link rel="stylesheet" href="${this.url('/assets/main.css')}">
      
-      <link rel="icon" type="image/svg" href="${this.urlPrefix()}/assets/images/preview_black_24dp.svg">
+      <link rel="icon" type="image/svg" href="${this.url('/assets/images/preview_black_24dp.svg')}">
   
       <!-- Theme used for syntax highlighted code -->
-      <link rel="stylesheet" href="${this.urlPrefix()}/reveal/plugin/highlight/monokai.css">
+      <link rel="stylesheet" href="${this.url('/reveal/plugin/highlight/monokai.css')}">
     </head>
     <body>
       <div class="reveal">
@@ -125,13 +125,13 @@ exports.render = function (data) {
         </div>
       </div>
       
-      <script src="${this.urlPrefix()}/reveal/dist/reveal.js"></script>
-      <script src="${this.urlPrefix()}/assets/scripts/libs/fittext.js"></script>
-      <script src="${this.urlPrefix()}/assets/scripts/main.js"></script>
-      <script src="${this.urlPrefix()}/reveal/plugin/notes/notes.js"></script>
-      <script src="${this.urlPrefix()}/reveal/plugin/markdown/markdown.js"></script>
-      <script src="${this.urlPrefix()}/reveal/plugin/highlight/highlight.js"></script>
-      <script src="${this.urlPrefix()}/reveal/plugin/zoom/zoom.js"></script>
+      <script src="${this.url('/reveal/dist/reveal.js')}"></script>
+      <script src="${this.url('/assets/scripts/libs/fittext.js')}"></script>
+      <script src="${this.url('/assets/scripts/main.js')}"></script>
+      <script src="${this.url('/reveal/plugin/notes/notes.js')}"></script>
+      <script src="${this.url('/reveal/plugin/markdown/markdown.js')}"></script>
+      <script src="${this.url('/reveal/plugin/highlight/highlight.js')}"></script>
+      <script src="${this.url('/reveal/plugin/zoom/zoom.js')}"></script>
       <script>
         // More info about initialization & config:
         // - https://revealjs.com/initialization/
