@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5f44499c-35fc-4e01-96ea-0020b249ef79" name="Default Changelist" comment="Shortcode für Screenshots addiert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/gdw-frage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/gdw-frage/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/gdw-fragen-list/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/gdw-fragen-list/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/000-intro/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/000-intro/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/010-dataforest-intro/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/010-dataforest-intro/index.html" afterDir="false" />
@@ -30,6 +33,8 @@
       <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/400-veranstaltungsarten/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/400-veranstaltungsarten/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/9999-outro/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/9999-outro/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/010-about-screendesign/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/gestaltgesetze/gesetz-der-naehe/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/gestaltgesetze/gesetz-der-naehe/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/presentations/gestaltgesetze/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/gestaltgesetze/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/000-intro/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/000-intro/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/010-moles/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/010-moles/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/020-watzlawick/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/020-watzlawick/index.html" afterDir="false" />
@@ -52,8 +57,9 @@
       <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/330-lindgaard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/330-lindgaard/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/9999-outro/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/9999-outro/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/wahrnehmungsarbeit/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_layouts/presentation.11ty.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_layouts/presentation.11ty.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/scss/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/scss/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compiled-assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/compiled-assets/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +114,7 @@
       <workItem from="1631886938699" duration="129000" />
       <workItem from="1631887090401" duration="2460000" />
       <workItem from="1631890712012" duration="4533000" />
-      <workItem from="1632461757753" duration="32379000" />
+      <workItem from="1632461757753" duration="32708000" />
     </task>
     <task id="LOCAL-00001" summary="Readme korrigiert">
       <created>1631891139410</created>
