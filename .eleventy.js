@@ -1,6 +1,7 @@
 const htmlmin = require('html-minifier');
 
 const pathPrefix = (process.env.ELEVENTY_ENV === 'production') ? "slides" : "";
+const ghPagesFolder = "docs";
 
 const insertStrong = (string)=>{
  return string.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>", string);
@@ -101,6 +102,14 @@ module.exports = function (eleventyConfig) {
   return `<section class="image screenshot ${classes}" ${dataTransition}><figure><img src="${imgSrc}" alt="${imgSrc}"></figure></section>`;
  });
 
+ eleventyConfig.addShortcode('meta',()=>{
+  return `<meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="googlebot-news" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+`});
+
  eleventyConfig.addShortcode('interlude', (title, subtitle, transition) => {
   const htmlSubtitle = subtitle ? `<h2 class="subtitle js-delay">${subtitle}</h2>` : '';
   const dataTransition = transition ? `data-transition="${transition}"` : '';
@@ -143,7 +152,6 @@ module.exports = function (eleventyConfig) {
    return content;
   });
  }
-
 
  return {
   dir: {
