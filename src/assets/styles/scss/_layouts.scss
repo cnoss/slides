@@ -194,10 +194,13 @@
   justify-content: center;
 
   div {
-    max-width: 60rem;
+    max-width: 80vw;
 
     h1 {
       padding-bottom: var(--s);
+      font-size: var(--xl);
+      font-family: var(--ff-normal);
+      
     }
 
     p {
@@ -240,9 +243,9 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
-  background-color: var(--mi-gruen);
 
   .title {
+    font-size: var(--xxl);
     padding: 0;
     color: var(--lightest)
   }
@@ -252,6 +255,15 @@
     font-family: var(--ff-normal);
     color: var(--darkest);
     opacity: var(--op-medium);
+  }
+
+  a{
+    color: var(--lightest);
+    opacity: var(--op-medium);
+
+    &:hover{
+      opacity: 1;
+    }
   }
 }
 
@@ -411,10 +423,10 @@
     grid-gap: var(--m);
   }
 
-  h1 {
+  &-question {
     padding: 0;
     font-family: var(--ff-normal);
-    font-size: var(--m);
+    font-size: var(--m) !important;
     line-height: var(--lh-normal);
     font-weight: var(--fw-medium);
     text-align: right;
@@ -435,5 +447,16 @@
     color: var(--darker);
     font-size: var(--m);
     line-height: var(--lh-normal);
+  }
+}
+
+/* Wrap
+############################################################################ */
+
+.wrap{
+  h1{
+    font-family: var(--ff-normal);
+    font-size: var(--l);
+    font-weight: var(--fw-medium);
   }
 }
