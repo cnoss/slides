@@ -308,9 +308,10 @@
     position: absolute;
     top: 0;
     left: 0;
+
     font-size: var(--s);
     padding: var(--l);
-    background-color: var(--dark);
+    background-color: var(--lighten);
     color: var(--dark);
     border-radius: 50%;
     line-height: var(--lh-normal);
@@ -332,8 +333,8 @@
       top: 0;
       left: 0;
       transform: scale(1) translateX(0) translateY(0);
-      bottom: calc(var(--xl) * -1);
-      background-color: var(--lighter);
+      height: 100vh;
+
       border-radius: 0;
       color: var(--darkest);
     }

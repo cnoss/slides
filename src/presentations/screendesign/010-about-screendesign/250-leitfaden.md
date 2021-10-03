@@ -7,7 +7,7 @@ status: ok
 
 {% interlude "Leitfaden", "für ein schmerzfreies Modul" %}
 
-{% qa "Was wollen wir sehen?", "Bei Screendesign geht darum Denkweise und Vokabular eines Designers kennen zu lernen. Denn Medieninformatiker arbeiten häufig in interdisziplinären Teams mit Gestaltern, sie sind häufig in der Aufgabe, Gestaltungskonzepte auf ein Medium zu transferieren, sie weiter zu entwickeln und zu implementieren. Dazu ist es unabdingbar und äußerst vorteilhaft zu wissen, wovon der Gestalter spricht und welche Ziele für ihn im Vordergrund stehen. Ein weiteres Ziel ist die Entwicklung einer eigenen gestalterischen Grundkompetenz, denn nicht selten werden sie in die Situation kommen eigene und eigenständige Gestaltungslösungen zu entwickeln." %}
+{% qa "Was wollen wir sehen?", "Bei Screendesign geht es darum Denkweise und Vokabular eines Designers kennen zu lernen. Denn Medieninformatiker arbeiten häufig in interdisziplinären Teams mit Gestaltern, sie sind häufig in der Aufgabe, Gestaltungskonzepte auf ein Medium zu transferieren, sie weiter zu entwickeln und zu implementieren. Dazu ist es unabdingbar und äußerst vorteilhaft zu wissen, wovon der Gestalter spricht und welche Ziele für ihn im Vordergrund stehen. Ein weiteres Ziel ist die Entwicklung einer eigenen gestalterischen Grundkompetenz, denn nicht selten werden sie in die Situation kommen eigene und eigenständige Gestaltungslösungen zu entwickeln." %}
 
 {% qa "Warum sind die Aufgaben oft so schwammig formuliert?", "Es kommt vor, dass Aufgaben unvollständig, vielleicht sogar unzureichend formuliert werden. Es gibt im Grunde zwei Wege damit umzugehen …" , '{"transition":"zoom"}' %}
 

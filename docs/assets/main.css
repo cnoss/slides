@@ -158,6 +158,7 @@ select {
   --light: #ccc;
   --lighter: #eee;
   --lightest: #fff;
+  --lighten: rgba(255,255,255,0.5);
   --dark: #888;
   --darker: #111;
   --darkest: #000;
@@ -748,7 +749,7 @@ a.is-black {
     left: 0;
     font-size: var(--s);
     padding: var(--l);
-    background-color: var(--dark);
+    background-color: var(--lighten);
     color: var(--dark);
     border-radius: 50%;
     line-height: var(--lh-normal);
@@ -766,8 +767,7 @@ a.is-black {
       top: 0;
       left: 0;
       transform: scale(1) translateX(0) translateY(0);
-      bottom: calc(var(--xl) * -1);
-      background-color: var(--lighter);
+      height: 100vh;
       border-radius: 0;
       color: var(--darkest); }
 

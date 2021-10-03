@@ -2,16 +2,17 @@
 title: Beispiele Hierarchisierung
 layout: presentation.11ty.js
 slideClasses: images
-status: bitte die Zeitungsscreenshots erneuern, ggf. noch einen weiteren aus nem Magazin oder so addieren
+status: ok
 ---
 
 <section class="image screenshot">
   <figure>
-    <img src="./images/FAZ_neu_S1_gross-570.jpg">
+    <img src="./images/kronen-zeitung.jpg">
     <figcaption class="bu">
       <p>Wie ist die Hierarchie der Elemente?</p>
-      <p class="credit">
-      <span>Frankfurter Allgemeine (2007)</span>
+     <p class="credit">
+        <span>Kronenzeitung (2021)</span> // 
+        <a href="https://epaper.krone.at" target="_blank">epaper.krone.at</a>
     </p>
     </figcaption>
   </figure>
@@ -19,12 +20,25 @@ status: bitte die Zeitungsscreenshots erneuern, ggf. noch einen weiteren aus nem
 
 <section class="image screenshot">
   <figure >
-    <img src="./images/lueneburger-zeitung-eonwerbung.jpg">
+    <img src="./images/bild-titel.jpg">
     <figcaption class="bu">
       <p>Wie ist die Hierarchie der Elemente?</p>
       <p class="credit">
-        <span>Lokales (2006)</span> // 
-        <a href="https://www.dumpert.nl/item/1200691_74b43e9c" target="_blank">dumpert.nl</a>
+        <span>Bild (2021)</span> // 
+        <a href="https://www.dwdl.de/features/fotostrecke/719_titelseiten_zur_bundestagswahl_2021/image_0.html" target="_blank">dwdl.de</a>
+    </p>
+    </figcaption>
+  </figure>
+</section>
+
+<section class="image screenshot">
+  <figure >
+    <img src="./images/t3n-magazin.jpg">
+    <figcaption class="bu">
+      <p>Wie ist die Hierarchie der Elemente?</p>
+      <p class="credit">
+        <span>t3n Magazin (2021)</span> // 
+        <a href="https://t3n.de/magazin/media/pageflip/65/html5.html#/38" target="_blank">t3n.de</a>
     </p>
     </figcaption>
   </figure>

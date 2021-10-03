@@ -673,7 +673,9 @@ a.is-black {
   .statement div {
     max-width: 80vw; }
     .statement div h1 {
-      padding-bottom: var(--s); }
+      padding-bottom: var(--s);
+      font-size: var(--xl);
+      font-family: var(--ff-normal); }
     .statement div p {
       margin-bottom: var(--xl);
       color: var(--darker);

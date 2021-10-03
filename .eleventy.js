@@ -121,7 +121,7 @@ module.exports = function (eleventyConfig) {
 
  eleventyConfig.addShortcode('interlude', (title, subtitle, transition) => {
   const getRandomBackgroundColor = ()=>{
-    const colors = ['#4952e1', '#d16', '#00ad2f', '#9313ce', '#231f20'];
+    const colors = ['#4952e1', '#d16', '#00ad2f', '#9313ce', '#aaa'];
     return colors[colors.length * Math.random() | 0];
   }
   const htmlSubtitle = subtitle ? `<h2 class="subtitle js-delay">${subtitle}</h2>` : '';

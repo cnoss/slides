@@ -3,12 +3,21 @@ const fitTextElements = document.querySelectorAll(".js-fit-text");
 
 
 Reveal.on( 'ready', event => {
+
   const figures = document.querySelectorAll(".slide figure");
   figures.forEach(figure => {
     figure.addEventListener("click", (ev) => {
       figure.classList.toggle("zoom");
     });
   });
+
+  const info = document.querySelector(".info");
+  if (info) {
+    info.addEventListener("click", (ev) => {
+      info.classList.toggle("is-active");
+      event.currentSlide.querySelector("blockquote").classList.toggle("is-passive");
+    });
+  }
 } );
 
 Reveal.on('slidechanged', event => {
@@ -26,13 +35,7 @@ Reveal.on('slidechanged', event => {
     item.classList.add("has-delay");
   });
 
-  const info = event.currentSlide.querySelector(".info");
-  if (info) {
-    info.addEventListener("click", (ev) => { 
-      info.classList.toggle("is-active");
-      event.currentSlide.querySelector("blockquote").classList.toggle("is-passive");
-    });
-  }
+
 
   if (!event.previousSlide) return;
   
