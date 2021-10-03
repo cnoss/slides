@@ -143,7 +143,7 @@ select {
   src: local("Material Icons"), local("MaterialIcons-Regular"), url("./fonts/MaterialIcons/MaterialIcons-Regular.woff2") format("woff2"), url("./fonts/MaterialIcons/MaterialIcons-Regular.woff") format("woff"), url("./fonts/MaterialIcons/MaterialIcons-Regular.ttf") format("truetype"); }
 
 :root {
-  --bfs: 1vw;
+  --bfs: 0.8vw;
   --half: calc(var(--bfs) / 2);
   --quat: calc(var(--bfs) / 4);
   --xxs: calc(var(--bfs) * 1);
@@ -291,6 +291,10 @@ p {
 a {
   color: var(--color-accent);
   text-decoration: none; }
+
+small {
+  opacity: var(--op-medium);
+  font-size: 80%; }
 
 @keyframes fadein {
   from {
@@ -667,7 +671,7 @@ a.is-black {
   align-items: center;
   justify-content: center; }
   .statement div {
-    max-width: 60rem; }
+    max-width: 80vw; }
     .statement div h1 {
       padding-bottom: var(--s); }
     .statement div p {
@@ -693,9 +697,9 @@ a.is-black {
 .interlude {
   display: flex !important;
   align-items: center;
-  justify-content: center;
-  background-color: var(--mi-gruen); }
+  justify-content: center; }
   .interlude .title {
+    font-size: var(--xxl);
     padding: 0;
     color: var(--lightest); }
   .interlude .subtitle {
@@ -703,6 +707,11 @@ a.is-black {
     font-family: var(--ff-normal);
     color: var(--darkest);
     opacity: var(--op-medium); }
+  .interlude a {
+    color: var(--lightest);
+    opacity: var(--op-medium); }
+    .interlude a:hover {
+      opacity: 1; }
 
 /* Shout
 ############################################################################ */
@@ -815,10 +824,10 @@ a.is-black {
     max-width: 90vw;
     grid-template-columns: 33% 1fr;
     grid-gap: var(--m); }
-  .qa h1 {
+  .qa-question {
     padding: 0;
     font-family: var(--ff-normal);
-    font-size: var(--m);
+    font-size: var(--m) !important;
     line-height: var(--lh-normal);
     font-weight: var(--fw-medium);
     text-align: right;
@@ -835,6 +844,13 @@ a.is-black {
     color: var(--darker);
     font-size: var(--m);
     line-height: var(--lh-normal); }
+
+/* Wrap
+############################################################################ */
+.wrap h1 {
+  font-family: var(--ff-normal);
+  font-size: var(--l);
+  font-weight: var(--fw-medium); }
 
 .overview .slides .mi-slide {
   width: 400px !important;

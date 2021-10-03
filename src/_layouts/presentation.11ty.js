@@ -94,7 +94,7 @@ exports.render = function (data) {
     const content = wrapContentByType(slide.data, slideClass);
     const status = getStatus(slide.data.status);
     return `
-      <section class="mi-slide ${slideClass} ${additionalClasses}" ${backgroundColor} ${backgroundImage} ${transition}>
+      <section data-slide-class="${slideClass}" class="mi-slide ${slideClass} ${additionalClasses}" ${backgroundColor} ${backgroundImage} ${transition}>
       ${content}
       ${status}
       </section>
@@ -104,7 +104,7 @@ exports.render = function (data) {
   return `<!doctype html>
   <html lang="de">
     <head>
-      <title>Screendesign // ${data.title}</title>
+      <title>${data.title} // Christian Noss</title>
       ${this.meta()}
       <link rel="stylesheet" href="${this.url('/reveal/dist/reset.css')}">
       <link rel="stylesheet" href="${this.url('/reveal/dist/reveal.css')}">

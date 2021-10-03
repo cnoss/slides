@@ -67,12 +67,19 @@ module.exports = function (eleventyConfig) {
  /* Collections
  ########################################################################## */
 
- eleventyConfig.addCollection("presentations", (collection) => {
-  return presentations = collection.getFilteredByGlob("./src/presentations/**/index.md").sort((a, b) => {
+ eleventyConfig.addCollection("screendesign", (collection) => {
+  return presentations = collection.getFilteredByGlob("./src/presentations/screendesign/**/index.md").sort((a, b) => {
    if (a.fileSlug > b.fileSlug) return 1;
    else a.fileSlug < b.fileSlug
    return -1;
+  });
+ });
 
+ eleventyConfig.addCollection("misc", (collection) => {
+  return presentations = collection.getFilteredByGlob("./src/presentations/misc/**/index.md").sort((a, b) => {
+   if (a.fileSlug > b.fileSlug) return 1;
+   else a.fileSlug < b.fileSlug
+   return -1;
   });
  });
 
@@ -99,7 +106,9 @@ module.exports = function (eleventyConfig) {
   const propData = (props) ? JSON.parse(props) : {};
   const dataTransition = propData && propData.transition ? `data-transition="${propData.transition}"` : '';
   const classes = propData && propData.classes ? propData.classes : '';
-  return `<section class="image screenshot ${classes}" ${dataTransition}><figure><img src="${imgSrc}" alt="${imgSrc}"></figure></section>`;
+  const buCreditHtml = propData && propData.credit ? `<p class="credit">${propData.credit}</p>` : '';
+  const buHtml = propData && propData.bu ? `<figcaption class="bu"><p>${propData.bu}</figcaption></p>` : '';
+  return `<section data-slide-shortcode-class="screenshot" class="image screenshot ${classes}" ${dataTransition}><figure><img src="${imgSrc}" alt="${imgSrc}">${buHtml}</figure></section>`;
  });
 
  eleventyConfig.addShortcode('meta',()=>{
@@ -111,19 +120,24 @@ module.exports = function (eleventyConfig) {
 `});
 
  eleventyConfig.addShortcode('interlude', (title, subtitle, transition) => {
+  const getRandomBackgroundColor = ()=>{
+    const colors = ['#4952e1', '#d16', '#00ad2f', '#9313ce', '#231f20'];
+    return colors[colors.length * Math.random() | 0];
+  }
   const htmlSubtitle = subtitle ? `<h2 class="subtitle js-delay">${subtitle}</h2>` : '';
   const dataTransition = transition ? `data-transition="${transition}"` : '';
-  return `<section class="image screenshot interlude" ${dataTransition}><div><h1 class="title">${title}</h1>${htmlSubtitle}</div></section>`;
+
+  return `<section data-slide-shortcode-class="interlude" data-background-color="${getRandomBackgroundColor()}" class="image screenshot interlude" ${dataTransition}><div><h1 class="title">${title}</h1>${htmlSubtitle}</div></section>`;
  });
 
  eleventyConfig.addShortcode('question', (question, tagline) => {
   const htmlTagline = tagline ? `<h2 class="subtitle js-delay">${tagline}</h2>` : '';
-  return `<section class="question"><div><h1 class="title">${question}</h1>${htmlTagline}</div></section>`;
+  return `<section data-slide-shortcode-class="question" class="question"><div><h1 class="title">${question}</h1>${htmlTagline}</div></section>`;
  });
 
  eleventyConfig.addShortcode('fragment', (content, props) => {
   const propData = (props) ? JSON.parse(props) : {};
-  return `<div class="fragment">${insertStrong(content)}</div>`;
+  return `<div data-slide-shortcode-class="fragment" class="fragment">${insertStrong(content)}</div>`;
  });
 
  eleventyConfig.addShortcode('qa', (q, a, props) => {
@@ -131,7 +145,7 @@ module.exports = function (eleventyConfig) {
   const dataTransition = propData && propData.transition ? `data-transition="${propData.transition}"` : '';
   let answer = insertStrong(a);
   answer = insertColor(answer, "is-green");
-  return `<section class="qa" ${dataTransition}><div class="qa-wrap"><h1 class="qa-question">${q}</h1><p class="qa-answer fragment">${answer}</p></div></section>`;
+  return `<section data-slide-shortcode-class="qa" class="qa" ${dataTransition}><div class="qa-wrap"><h1 class="qa-question">${q}</h1><p class="qa-answer fragment">${answer}</p></div></section>`;
  });
 
  /* Environment
