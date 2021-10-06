@@ -579,6 +579,8 @@ a.is-black {
     .outro-avatar figcaption .small {
       font-size: var(--s);
       color: var(--dark); }
+    .outro-avatar figcaption p {
+      margin-bottom: var(--half); }
 
 /* Zitat
 ############################################################################ */

@@ -4,6 +4,7 @@
     <list default="true" id="5f44499c-35fc-4e01-96ea-0020b249ef79" name="Default Changelist" comment="Shortcode für Screenshots addiert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/scripts/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/gdw-frage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/gdw-frage/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/gdw-fragen-list/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/gdw-fragen-list/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
@@ -65,7 +66,7 @@
       <change beforePath="$PROJECT_DIR$/docs/presentations/screendesign/wahrnehmungsarbeit/330-lindgaard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/screendesign/wahrnehmungsarbeit/330-lindgaard/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/presentations/screendesign/wahrnehmungsarbeit/9999-outro/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/screendesign/wahrnehmungsarbeit/9999-outro/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/presentations/screendesign/wahrnehmungsarbeit/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/presentations/screendesign/wahrnehmungsarbeit/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_layouts/presentation.11ty.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_layouts/presentation.11ty.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scripts/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/styles/scss/_layouts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/scss/_layouts.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/compiled-assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/compiled-assets/main.css" afterDir="false" />
@@ -131,6 +132,7 @@
       <workItem from="1633149544805" duration="683000" />
       <workItem from="1633275227848" duration="6549000" />
       <workItem from="1633508905529" duration="130000" />
+      <workItem from="1633509184799" duration="509000" />
     </task>
     <task id="LOCAL-00001" summary="Readme korrigiert">
       <created>1631891139410</created>

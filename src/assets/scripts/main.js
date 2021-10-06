@@ -15,7 +15,7 @@ Reveal.on( 'ready', event => {
   if (info) {
     info.addEventListener("click", (ev) => {
       info.classList.toggle("is-active");
-      event.currentSlide.querySelector("blockquote").classList.toggle("is-passive");
+      info.parentNode.querySelector("blockquote").classList.toggle("is-passive");
     });
   }
 } );
