@@ -107,8 +107,17 @@ module.exports = function (eleventyConfig) {
   const dataTransition = propData && propData.transition ? `data-transition="${propData.transition}"` : '';
   const classes = propData && propData.classes ? propData.classes : '';
   const buCreditHtml = propData && propData.credit ? `<p class="credit">${propData.credit}</p>` : '';
-  const buHtml = propData && propData.bu ? `<figcaption class="bu"><p>${propData.bu}</figcaption></p>` : '';
+  const buHtml = propData && propData.bu ? `<figcaption class="bu"><p>${insertStrong(propData.bu)}</p></figcaption>` : '';
   return `<section data-slide-shortcode-class="screenshot" class="image screenshot ${classes}" ${dataTransition}><figure><img src="${imgSrc}" alt="${imgSrc}">${buHtml}</figure></section>`;
+ });
+
+ eleventyConfig.addShortcode('screenshotFs', (imgSrc, props) => {
+  const propData = (props) ? JSON.parse(props) : {};
+  const dataTransition = propData && propData.transition ? `data-transition="${propData.transition}"` : '';
+  const classes = propData && propData.classes ? propData.classes : '';
+  const buCreditHtml = propData && propData.credit ? `<p class="credit">${propData.credit}</p>` : '';
+  const buHtml = propData && propData.bu ? `<div class="bu"><p>${insertStrong(propData.bu)}</p></div>` : '';
+  return `<section data-slide-shortcode-class="screenshot" class="image is-fullscreen ${classes}" data-background="${imgSrc}" ${dataTransition}>${buHtml}</section>`;
  });
 
  eleventyConfig.addShortcode('meta',()=>{
@@ -124,10 +133,10 @@ module.exports = function (eleventyConfig) {
     const colors = ['#4952e1', '#d16', '#00ad2f', '#9313ce', '#aaa'];
     return colors[colors.length * Math.random() | 0];
   }
-  const htmlSubtitle = subtitle ? `<h2 class="subtitle js-delay">${subtitle}</h2>` : '';
+  const htmlSubtitle = subtitle ? `<h2 class="subtitle js-delay">${insertStrong(subtitle)}</h2>` : '';
   const dataTransition = transition ? `data-transition="${transition}"` : '';
 
-  return `<section data-slide-shortcode-class="interlude" data-background-color="${getRandomBackgroundColor()}" class="image screenshot interlude" ${dataTransition}><div><h1 class="title">${title}</h1>${htmlSubtitle}</div></section>`;
+  return `<section data-slide-shortcode-class="interlude" data-background-color="${getRandomBackgroundColor()}" class="image screenshot interlude" ${dataTransition}><div><h1 class="title">${insertStrong(title)}</h1>${htmlSubtitle}</div></section>`;
  });
 
  eleventyConfig.addShortcode('question', (question, tagline) => {

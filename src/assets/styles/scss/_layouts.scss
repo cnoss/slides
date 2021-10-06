@@ -251,7 +251,11 @@
   .title {
     font-size: var(--xxl);
     padding: 0;
-    color: var(--lightest)
+    color: var(--lightest);
+
+    strong{
+      font-weight: var(--fw-bold);
+    }
   }
 
   .subtitle {
@@ -259,6 +263,10 @@
     font-family: var(--ff-normal);
     color: var(--darkest);
     opacity: var(--op-medium);
+
+    strong{
+      font-weight: var(--fw-bold);
+    }
   }
 
   a{

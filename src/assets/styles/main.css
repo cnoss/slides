@@ -707,11 +707,15 @@ a.is-black {
     font-size: var(--xxl);
     padding: 0;
     color: var(--lightest); }
+    .interlude .title strong {
+      font-weight: var(--fw-bold); }
   .interlude .subtitle {
     padding: 0;
     font-family: var(--ff-normal);
     color: var(--darkest);
     opacity: var(--op-medium); }
+    .interlude .subtitle strong {
+      font-weight: var(--fw-bold); }
   .interlude a {
     color: var(--lightest);
     opacity: var(--op-medium); }
@@ -751,7 +755,7 @@ a.is-black {
     left: 0;
     font-size: var(--s);
     padding: var(--l);
-    background-color: var(--lighten);
+    background-color: var(--lighter);
     color: var(--dark);
     border-radius: 50%;
     line-height: var(--lh-normal);
