@@ -26,7 +26,7 @@ const insertColor = (string, colorClass)=>{
 const outro = `
 <div class="outro">
 <figure class="outro-avatar">
-<img src="/assets/images/cnoss.jpeg">
+<img src="../../../assets/images/cnoss.jpeg">
 <figcaption>
 <p>Danke für's Mitmachen</p>
 <p class="small"><a href="https://christiannoss.de">https://christiannoss.de</a></p>
