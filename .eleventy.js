@@ -3,8 +3,9 @@ const htmlmin = require('html-minifier');
 const pathPrefix = (process.env.ELEVENTY_ENV === 'production') ? "slides" : "";
 const ghPagesFolder = "docs";
 
-const insertStrong = (string)=>{
- return string.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>", string);
+const insertMarkup = (string)=>{
+ string = string.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>", string);
+ return string.replace(/\*(.*?)\*/g, "<mark>$1</mark>", string);
 }
 
 const insertColor = (string, colorClass)=>{
@@ -105,19 +106,21 @@ module.exports = function (eleventyConfig) {
  eleventyConfig.addShortcode('screenshot', (imgSrc, props) => {
   const propData = (props) ? JSON.parse(props) : {};
   const dataTransition = propData && propData.transition ? `data-transition="${propData.transition}"` : '';
+  const dataBackgroundTransition = propData && propData.backgroundTransition ? `data-background-transition="${propData.backgroundTransition}"` : '';
   const classes = propData && propData.classes ? propData.classes : '';
   const buCreditHtml = propData && propData.credit ? `<p class="credit">${propData.credit}</p>` : '';
-  const buHtml = propData && propData.bu ? `<figcaption class="bu"><p>${insertStrong(propData.bu)}</p></figcaption>` : '';
-  return `<section data-slide-shortcode-class="screenshot" class="image screenshot ${classes}" ${dataTransition}><figure><img src="${imgSrc}" alt="${imgSrc}">${buHtml}</figure></section>`;
+  const buHtml = propData && propData.bu ? `<figcaption class="bu"><p>${insertMarkup(propData.bu)}</p></figcaption>` : '';
+  return `<section data-slide-shortcode-class="screenshot" class="image screenshot ${classes}" ${dataTransition} ${dataBackgroundTransition}><figure><img src="${imgSrc}" alt="${imgSrc}">${buHtml}</figure></section>`;
  });
 
  eleventyConfig.addShortcode('screenshotFs', (imgSrc, props) => {
   const propData = (props) ? JSON.parse(props) : {};
   const dataTransition = propData && propData.transition ? `data-transition="${propData.transition}"` : '';
+  const dataBackgroundTransition = propData && propData.backgroundTransition ? `data-background-transition="${propData.backgroundTransition}"` : '';
   const classes = propData && propData.classes ? propData.classes : '';
   const buCreditHtml = propData && propData.credit ? `<p class="credit">${propData.credit}</p>` : '';
-  const buHtml = propData && propData.bu ? `<div class="bu"><p>${insertStrong(propData.bu)}</p></div>` : '';
-  return `<section data-slide-shortcode-class="screenshot" class="image is-fullscreen ${classes}" data-background="${imgSrc}" ${dataTransition}>${buHtml}</section>`;
+  const buHtml = propData && propData.bu ? `<div class="bu"><p>${insertMarkup(propData.bu)}</p></div>` : '';
+  return `<section data-slide-shortcode-class="screenshot" class="image is-fullscreen ${classes}" data-background="${imgSrc}" ${dataTransition} ${dataBackgroundTransition}>${buHtml}</section>`;
  });
 
  eleventyConfig.addShortcode('meta',()=>{
@@ -133,10 +136,10 @@ module.exports = function (eleventyConfig) {
     const colors = ['#4952e1', '#d16', '#00ad2f', '#9313ce', '#aaa'];
     return colors[colors.length * Math.random() | 0];
   }
-  const htmlSubtitle = subtitle ? `<h2 class="subtitle js-delay">${insertStrong(subtitle)}</h2>` : '';
+  const htmlSubtitle = subtitle ? `<h2 class="subtitle js-delay">${insertMarkup(subtitle)}</h2>` : '';
   const dataTransition = transition ? `data-transition="${transition}"` : '';
 
-  return `<section data-slide-shortcode-class="interlude" data-background-color="${getRandomBackgroundColor()}" class="image screenshot interlude" ${dataTransition}><div><h1 class="title">${insertStrong(title)}</h1>${htmlSubtitle}</div></section>`;
+  return `<section data-slide-shortcode-class="interlude" data-background-color="${getRandomBackgroundColor()}" class="image screenshot interlude" ${dataTransition}><div><h1 class="title">${insertMarkup(title)}</h1>${htmlSubtitle}</div></section>`;
  });
 
  eleventyConfig.addShortcode('question', (question, tagline) => {
@@ -144,15 +147,22 @@ module.exports = function (eleventyConfig) {
   return `<section data-slide-shortcode-class="question" class="question"><div><h1 class="title">${question}</h1>${htmlTagline}</div></section>`;
  });
 
+ eleventyConfig.addShortcode('statement', (title, content, props) => {
+  const propData = (props) ? JSON.parse(props) : {};
+  const dataBackgroundTransition = propData && propData.backgroundTransition ? `data-background-transition="${propData.backgroundTransition}"` : '';
+  return `<section ${dataBackgroundTransition} class="statement"><div><h1 class="title">${insertMarkup(title)}</h1><div class="fragment">${insertMarkup(content)}</div></div></section>`;
+ });
+
  eleventyConfig.addShortcode('fragment', (content, props) => {
   const propData = (props) ? JSON.parse(props) : {};
-  return `<div data-slide-shortcode-class="fragment" class="fragment">${insertStrong(content)}</div>`;
+  return `<div data-slide-shortcode-class="fragment" class="fragment">${insertMarkup(content)}</div>`;
  });
 
  eleventyConfig.addShortcode('qa', (q, a, props) => {
   const propData = (props) ? JSON.parse(props) : {};
   const dataTransition = propData && propData.transition ? `data-transition="${propData.transition}"` : '';
-  let answer = insertStrong(a);
+
+  let answer = insertMarkup(a);
   answer = insertColor(answer, "is-green");
   return `<section data-slide-shortcode-class="qa" class="qa" ${dataTransition}><div class="qa-wrap"><h1 class="qa-question">${q}</h1><p class="qa-answer fragment">${answer}</p></div></section>`;
  });

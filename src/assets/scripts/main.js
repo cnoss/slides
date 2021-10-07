@@ -6,7 +6,7 @@ Reveal.on( 'ready', event => {
 
   const figures = document.querySelectorAll(".slide figure");
   figures.forEach(figure => {
-    figure.addEventListener("click", (ev) => {
+    figure.addEventListener("dblclick", (ev) => {
       figure.classList.toggle("zoom");
     });
   });
@@ -34,8 +34,6 @@ Reveal.on('slidechanged', event => {
   delayedItems.forEach(item => {
     item.classList.add("has-delay");
   });
-
-
 
   if (!event.previousSlide) return;
   

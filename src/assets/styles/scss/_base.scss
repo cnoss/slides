@@ -51,11 +51,16 @@ h3 {
   font-weight: normal;
 }
 
-p {
+p, div {
   hyphens: auto;
 
-  strong{
+  & > strong{
     color: var(--mi-lila);
+  }
+
+  & > mark, & > em{
+    font-weight: var(--fw-medium);
+    background-color: transparent;
   }
 }
 

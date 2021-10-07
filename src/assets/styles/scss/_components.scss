@@ -23,6 +23,10 @@
   background-color: rgba(255, 255, 255, 0.7);
 }
 
+.has-dark-bg{
+  background-color: var(--dark);
+}
+
 .is-full-width {
   width: 100%;
 }
@@ -121,7 +125,7 @@
   left: var(--xxs);
   display: inline-block;
   max-width: calc(var(--bfs) * 20);
-  padding: var(--xxs) var(--xxs) var(--xs) var(--xxs);
+  padding: var(--xxs) var(--xxs) var(--s) var(--xxs);
   background-color: var(--lighter);
   color: var(--darker);
   font-size: var(--xs);
@@ -135,6 +139,11 @@
     >span{
       color: var(--color-accent);
     }
+  }
+
+  &.is-dark{
+    background-color: var(--darken);
+    color: var(--lightest);
   }
 
   &.is-active {
