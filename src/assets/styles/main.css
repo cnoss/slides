@@ -419,6 +419,9 @@ small {
     margin-top: var(--half); }
     .bu .credit > span {
       color: var(--color-accent); }
+  .bu.is-dark {
+    background-color: var(--darken);
+    color: var(--lightest); }
   .bu.is-active {
     opacity: 1; }
   .bu h2,
