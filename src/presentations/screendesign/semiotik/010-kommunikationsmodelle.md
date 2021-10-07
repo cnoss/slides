@@ -5,7 +5,8 @@ slideClasses: wrap
 status: ok
 ---
 
-{% interlude "Kommunikations**modelle**" %}
+{% interlude "Kommunikation" , "Was heißt/ ist das?"%}
+{% interlude "Kommunikations**modelle**"%}
 {% screenshot "./images/kommunikationsmodell-1.svg", '{"transition":"slide", "classes":"no-shadow"}' %}
 {% screenshot "./images/kommunikationsmodell-2.svg", '{"transition":"fade","classes":"no-shadow"}' %}
 {% screenshot "./images/kommunikationsmodell-2a.svg", '{"transition":"slide", "classes":"no-shadow"}' %}

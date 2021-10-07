@@ -1,13 +1,6 @@
 ---
-title: Wahrnehmungsarbeit
+title: Semiotik
 layout: presentation.11ty.js
-slideClasses: intro
-transition: zoom
+slideClasses: outro
+transition: convex
 ---
-
-<div class="is-full-width">
-
-# Wahrnehmungsarbeit
-## Was hat *Wahrnehmung* mit Arbeit zu tun?
-
-</div>

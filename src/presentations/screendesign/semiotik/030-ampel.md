@@ -5,7 +5,7 @@ slideClasses: images
 status: ok
 ---
 
-{% interlude "Beispiel"%}
+{% interlude "Kleines Beispiel"%}
 {% screenshot "./images/ampel-1.png", '{"bu":"Was ist das?", "transition":"fade"}' %}
 {% screenshot "./images/ampel-2.png", '{"bu":"Was ist das?<br>**Syntaktische Ebene**", "transition":"fade"}' %}
 {% screenshot "./images/ampel-2.png", '{"bu":"Was bedeutet es?<br>**Semantische Ebene**", "transition":"fade"}' %}
