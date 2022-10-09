@@ -131,6 +131,7 @@
   font-size: var(--xs);
   opacity: 0;
   transition: opacity var(--tr-slow) var(--tr-delay);
+  p { hyphens: none !important; }
 
   .credit {
     font-size: var(--xxs);

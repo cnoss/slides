@@ -13,6 +13,16 @@ const insertColor = (string, colorClass)=>{
  return string.replace(/\/\//g, "<span class="+color+">//</span>", string);
 }
 
+const getPresentationData = (collection, pattern)=>{
+  const allSlides = collection.getFilteredByGlob(pattern);
+
+  return allSlides.sort((a, b) => {
+    if (a.fileSlug > b.fileSlug) return 1;
+    else a.fileSlug < b.fileSlug
+    return -1;
+   });
+}
+
 module.exports = function (eleventyConfig) {
  eleventyConfig.setUseGitIgnore(false);
 
@@ -69,19 +79,11 @@ module.exports = function (eleventyConfig) {
  ########################################################################## */
 
  eleventyConfig.addCollection("screendesign", (collection) => {
-  return presentations = collection.getFilteredByGlob("./src/presentations/screendesign/**/index.md").sort((a, b) => {
-   if (a.fileSlug > b.fileSlug) return 1;
-   else a.fileSlug < b.fileSlug
-   return -1;
-  });
+  return presentations = getPresentationData(collection, "./src/presentations/screendesign/**/index.md");
  });
 
  eleventyConfig.addCollection("misc", (collection) => {
-  return presentations = collection.getFilteredByGlob("./src/presentations/misc/**/index.md").sort((a, b) => {
-   if (a.fileSlug > b.fileSlug) return 1;
-   else a.fileSlug < b.fileSlug
-   return -1;
-  });
+  return presentations = getPresentationData(collection, "./src/presentations/misc/**/index.md");
  });
 
  eleventyConfig.addCollection("all", function (collection) {
@@ -108,9 +110,10 @@ module.exports = function (eleventyConfig) {
   const dataTransition = propData && propData.transition ? `data-transition="${propData.transition}"` : '';
   const dataBackgroundTransition = propData && propData.backgroundTransition ? `data-background-transition="${propData.backgroundTransition}"` : '';
   const classes = propData && propData.classes ? propData.classes : '';
+  const width = propData && propData.width ? `width="${propData.width}" ` : '';
   const buCreditHtml = propData && propData.credit ? `<p class="credit">${propData.credit}</p>` : '';
   const buHtml = propData && propData.bu ? `<figcaption class="bu"><p>${insertMarkup(propData.bu)}</p></figcaption>` : '';
-  return `<section data-slide-shortcode-class="screenshot" class="image screenshot ${classes}" ${dataTransition} ${dataBackgroundTransition}><figure><img src="${imgSrc}" alt="${imgSrc}">${buHtml}</figure></section>`;
+  return `<section data-slide-shortcode-class="screenshot" class="image screenshot ${classes}" ${dataTransition} ${dataBackgroundTransition}><figure><img src="${imgSrc}" alt="${imgSrc}" ${width}>${buHtml}</figure></section>`;
  });
 
  eleventyConfig.addShortcode('screenshotFs', (imgSrc, props) => {

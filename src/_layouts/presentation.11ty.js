@@ -93,6 +93,8 @@ exports.render = function (data) {
     const additionalClasses = getAdditionalClasses(slide.data.additionalClasses);
     const content = wrapContentByType(slide.data, slideClass);
     const status = getStatus(slide.data.status);
+    
+    if(slide.data.status === 'hidden') return '';
     return `
       <section data-slide-class="${slideClass}" class="mi-slide ${slideClass} ${additionalClasses}" ${backgroundColor} ${backgroundImage} ${transition}>
       ${content}

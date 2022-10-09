@@ -2,7 +2,7 @@
 title: Identität // Architektur
 layout: presentation.11ty.js
 slideClasses: images
-status: ok
+status: hidden
 ---
 
 {% interlude "Architektur"%}
