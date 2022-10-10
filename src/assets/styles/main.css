@@ -369,6 +369,10 @@ small {
   background-color: var(--dark);
 }
 
+.has-black-bg {
+  background-color: var(--darkest);
+}
+
 .is-full-width {
   width: 100%;
 }
@@ -465,6 +469,9 @@ small {
   font-size: var(--xs);
   opacity: 0;
   transition: opacity var(--tr-slow) var(--tr-delay);
+}
+.bu p {
+  hyphens: none !important;
 }
 .bu .credit {
   font-size: var(--xxs);
