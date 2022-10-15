@@ -111,7 +111,7 @@ status: ok
 transition: slide
 ```
 
-Hier sind alle [Reveal.js Transitions] möglich:
+Hier sind alle [Reveal.js Transitions](https://revealjs.com/transitions/) möglich:
 - none
 - fade
 - slide
@@ -240,6 +240,68 @@ Hier sind alle [Reveal.js Transitions] möglich:
 ```
 
 ## Beispiele
+
+### Intro
+
+```
+---
+title: Wahrnehmungsarbeit
+layout: presentation.11ty.js
+slideClasses: intro
+transition: zoom
+---
+
+<div class="is-full-width">
+
+# Demo Präsentation
+## Hier sieht man die verschiedenen Slidetypen und Shotcodes im Einsatz
+
+</div>
+```
+
+### Cite 
+
+```
+---
+title: Cite
+layout: presentation.11ty.js
+slideClasses: cite
+author: Max Mustermann, Beispiel
+---
+
+Hier wird ein Zitat hübsch angezeigt.
+```
+
+### Cite with Image
+
+```
+---
+title: Cite with Image
+layout: presentation.11ty.js
+slideClasses: cite
+img: paul
+author: Max Mustermann, Beispiel
+status: ok
+src: "Watzlawick, Paul (2016): Man kann nicht nicht kommunizieren. Das Lesebuch. 2., unveränderte Auflage. Hg. v. Trude Trunk. Bern: Hogrefe. Online verfügbar unter http://d-nb.info/1079675604/04."
+---
+
+Cite. Diesmal mit Bild, was im Front Matter angegeben werden kann. Gleiches gilt für die Quelle.
+
+```
+
+### Images
+```
+---
+title: Bilder wo et voll ist
+layout: presentation.11ty.js
+slideClasses: images
+status: ok
+---
+
+<section class="image is-fullscreen" data-background="./images/time-square.jpg.jpg" data-background-position="bottom">
+…
+</section>
+```
 
 ### Shout
 
