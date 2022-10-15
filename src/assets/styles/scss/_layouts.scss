@@ -97,7 +97,7 @@
 
       &::before {
         position: absolute;
-        left: calc(var(--s) * -1);
+        left: calc(1ch * -1);
         color: var(--mi-lila);
         content: "« ";
       }
@@ -414,6 +414,16 @@
       color: var(--darker);
       font-size: var(--l);
       line-height: var(--lh-tight);
+
+      & + ul{
+        margin-bottom: var(--xl);
+
+        & li{
+          font-size: var(--l);
+          @extend .list;
+          display: block;
+        }
+      }
     }
   }
 

@@ -1,7 +1,12 @@
 const htmlmin = require('html-minifier');
+const markdownIt = require("markdown-it");
 
 const pathPrefix = (process.env.ELEVENTY_ENV === 'production') ? "slides" : "";
 const ghPagesFolder = "docs";
+
+const md = new markdownIt({
+  html: true,
+});
 
 const insertMarkup = (string)=>{
  string = string.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>", string);
@@ -154,6 +159,11 @@ module.exports = function (eleventyConfig) {
   const propData = (props) ? JSON.parse(props) : {};
   const dataBackgroundTransition = propData && propData.backgroundTransition ? `data-background-transition="${propData.backgroundTransition}"` : '';
   return `<section ${dataBackgroundTransition} class="statement"><div><h1 class="title">${insertMarkup(title)}</h1><div class="fragment">${insertMarkup(content)}</div></div></section>`;
+ });
+
+ eleventyConfig.addShortcode('niceToKnow', (content, props) => {
+  const propData = (props) ? JSON.parse(props) : {};
+  return `<div class="is-add-on-info">${md.render(content)}</div>`;
  });
 
  eleventyConfig.addShortcode('fragment', (content, props) => {

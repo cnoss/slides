@@ -78,6 +78,15 @@
   color: var(--mi-gruen);
 }
 
+.is-add-on-info{
+  opacity: var(--op-low);
+  transition: opacity var(--tr-fast);
+
+  &:hover{
+    opacity: 1;
+  }
+}
+
 /* Status
 ############################################################################ */
 

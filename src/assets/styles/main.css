@@ -198,6 +198,7 @@ select {
   --tr-fast: 0.2s;
   --tr-slow: 0.6s;
   --tr-delay: 1.2s;
+  --op-low: 0.4;
   --op-medium: 0.6;
   --shadow-l: 0 0 var(--xs) rgba(0, 0, 0, 0.5);
   --shadow-xl: var(--half) var(--half) var(--m) rgba(0, 0, 0, 0.3);
@@ -344,7 +345,7 @@ small {
 }
 /* Misc
 ############################################################################ */
-.list {
+.list, .simple div p + ul li {
   border-left: solid var(--border-width-l) var(--mi-blau);
   padding-left: var(--s);
   background-color: var(--lighter);
@@ -417,6 +418,14 @@ small {
 
 .is-green {
   color: var(--mi-gruen);
+}
+
+.is-add-on-info {
+  opacity: var(--op-low);
+  transition: opacity var(--tr-fast);
+}
+.is-add-on-info:hover {
+  opacity: 1;
 }
 
 /* Status
@@ -714,7 +723,7 @@ a.is-black:hover {
 }
 .cite blockquote p::before {
   position: absolute;
-  left: calc(var(--s) * -1);
+  left: calc(1ch * -1);
   color: var(--mi-lila);
   content: "« ";
 }
@@ -973,6 +982,13 @@ a.is-black:hover {
   color: var(--darker);
   font-size: var(--l);
   line-height: var(--lh-tight);
+}
+.simple div p + ul {
+  margin-bottom: var(--xl);
+}
+.simple div p + ul li {
+  font-size: var(--l);
+  display: block;
 }
 
 /* Question and Answer

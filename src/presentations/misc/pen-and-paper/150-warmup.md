@@ -6,6 +6,8 @@ status: ok
 ---
 
 
-Suchen Sie sich einen Ort oder Thema, leiten Sie relevante Begriffe und Dinge daraus ab und finden Sie für diese Visualisierungen.
+Zeichnen Sie jeweils 3 Varianten von den folgenden Begriffen. Die erste Variante sollte stets die einfachste/ reduzierteste sein. Die zweite Variante darf etwas
+
+Smartphone, Server, Baum, Werkzeugkiste, Flugzeug, 
 
 **20 Minuten Bearbeitungszeit**
