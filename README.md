@@ -66,14 +66,14 @@ status: ok
 
 | SlideClass | Layout |
 | :--- | :--- |
-| [intro](misc/demo/) | Startfolie mit Titel und Untertitel |
+| [intro](https://cnoss.github.io/slides/presentations/misc/demo/) | Startfolie mit Titel und Untertitel |
 | outro | Endfolie ohne Text |
 | simple | Einfacher Inhalt mit Headline und Text |
-| cite | Zeigt ein Zitat, mit oder ohne Hintergrundbild. |
-| images | Wrapper Folie für Bilder, die dann via HTML eingebunden werden |
-| video | Wrapper Folie für ein Video, welches dann via HTML eingebunden werden |
-| statement | Aussage mit Erklärung |
-| shout | Ausruf mit Autor und Erklärung auf Hintergrund |
+| [cite](https://cnoss.github.io/slides/presentations/misc/demo/#/1) | Zeigt ein Zitat, mit oder ohne Hintergrundbild. |
+| [images](https://cnoss.github.io/slides/presentations/misc/demo/#/3) | Wrapper Folie für Bilder, die dann via HTML eingebunden werden |
+| [video](https://cnoss.github.io/slides/presentations/misc/demo/#/5) | Wrapper Folie für ein Video, welches dann via HTML eingebunden werden |
+| [statement](https://cnoss.github.io/slides/presentations/misc/demo/#/6) | Aussage mit Erklärung |
+| [shout](https://cnoss.github.io/slides/presentations/misc/demo/#/8) | Ausruf mit Autor und Erklärung auf Hintergrund |
 | wrap | Wrapper Folio für Shortcodes |
 | question | kein Beispiel parat :( |
 | qa | Frage und Antwort |
