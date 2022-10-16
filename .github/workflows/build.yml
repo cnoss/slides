@@ -1,34 +1,33 @@
-name: Build Eleventy
+name: Build & Deploy
 
 on:
   push:
-    branches:
-      - main
+    branches: ['main']
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: ['14.17.6']
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+          cache: 'npm'
 
-      - name: Install dependencies & build
-        run: |
-          npm ci
-          npm run build          
+      - name: Install packages
+        run: npm ci
 
-      - name: Deploy
+      - name: Run npm build
+        run: npm run build:prod
+
+      - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
-        env:
-          PUBLISH_DIR: _site 
-          PUBLISH_BRANCH: gh-pages
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
