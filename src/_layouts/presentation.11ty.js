@@ -78,6 +78,14 @@ const getBgImage = (img, path) => {
   return whatEnding ? `data-background-image="${base}.${whatEnding}"` : '';
 };
 
+const getBgImageData = (imgData) => {
+  if(!imgData) return '';
+  const position = imgData.position ? `data-background-position="${imgData.position}"` : '';
+  const size = imgData.size ? `data-background-size="${imgData.size}"` : '';
+
+  return `${position} ${size}`;
+};
+
 const getTransition = (transition) => (transition ? `data-transition="${transition}"` : 'data-transition="convex"');
 const getAdditionalClasses = (additionalClasses) => (additionalClasses ? additionalClasses : '');
 const getStatus = (status) => (status && status !== 'ok' ? `<div class="status">ToDo: ${status}</div>` : '');
@@ -89,6 +97,7 @@ exports.render = function (data) {
     const slideClass = slide.data.slideClasses;
     const backgroundColor = getBgColor(slideClass);
     const backgroundImage = getBgImage(slide.data.img, data.page.url);
+    const backgroundImageData = getBgImageData(slide.data.imgData);
     const transition = getTransition(slide.data.transition);
     const additionalClasses = getAdditionalClasses(slide.data.additionalClasses);
     const content = wrapContentByType(slide.data, slideClass);
@@ -96,7 +105,7 @@ exports.render = function (data) {
     
     if(slide.data.status === 'hidden') return '';
     return `
-      <section data-slide-class="${slideClass}" class="mi-slide ${slideClass} ${additionalClasses}" ${backgroundColor} ${backgroundImage} ${transition}>
+      <section data-slide-class="${slideClass}" class="mi-slide ${slideClass} ${additionalClasses}" ${backgroundColor} ${backgroundImage} ${backgroundImageData} ${transition}>
       ${content}
       ${status}
       </section>

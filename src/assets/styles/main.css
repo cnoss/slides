@@ -172,7 +172,7 @@ select {
   --dark: #888;
   --darker: #111;
   --darkest: #000;
-  --darken: rgba(0, 0, 0, 0.2);
+  --darken: rgba(0, 0, 0, 0.1);
   --color-text: var(--darker);
   --color-headline: var(--dark);
   --color-accent: var(--mi-pink);
@@ -428,6 +428,10 @@ small {
   opacity: 1;
 }
 
+.is-important * {
+  font-weight: var(--fw-medium);
+}
+
 /* Status
 ############################################################################ */
 .status {
@@ -438,6 +442,20 @@ small {
   background-color: var(--mi-pink);
   color: var(--lightest);
   padding: var(--xs) var(--xxs);
+}
+
+/* Definition
+############################################################################ */
+dl.simple-definition {
+  margin-bottom: var(--xl);
+}
+dl.simple-definition dt::after {
+  content: ":";
+}
+dl.simple-definition dd {
+  font-weight: var(--fw-medium);
+  margin-bottom: var(--s);
+  padding-left: var(--m);
 }
 
 /* Aufzählung
@@ -960,14 +978,13 @@ a.is-black:hover {
   align-items: center;
   justify-content: center;
 }
-.simple div {
+.simple div > * {
   max-width: calc(var(--m) * 40);
 }
 .simple div h1 {
   padding: 0;
   padding-bottom: var(--s);
   margin-bottom: var(--s);
-  font-size: var(--xl);
 }
 .simple div h2 {
   padding: 0;
@@ -989,6 +1006,18 @@ a.is-black:hover {
 .simple div p + ul li {
   font-size: var(--l);
   display: block;
+}
+.simple div blockquote {
+  border-left: solid var(--border-width-l) var(--mi-blau);
+  padding: var(--m) var(--m) var(--l) var(--m);
+  background-color: var(--darken);
+  margin-bottom: var(--l);
+}
+.simple div blockquote * {
+  font-weight: var(--fw-medium);
+}
+.simple div blockquote p:last-child {
+  margin-bottom: 0;
 }
 
 /* Question and Answer

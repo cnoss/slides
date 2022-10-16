@@ -2,7 +2,9 @@
 title: Mike Rode Matrix
 layout: presentation.11ty.js
 slideClasses: simple
-status: Add VIsual of Matrix
+status: ok
+img: mike-rode-matrix
+imgData: {"position":"1% 1%", "size": "15%"}
 ---
 
 

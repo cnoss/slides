@@ -87,6 +87,12 @@
   }
 }
 
+.is-important{
+  * {
+    font-weight: var(--fw-medium);
+  }
+}
+
 /* Status
 ############################################################################ */
 
@@ -98,6 +104,24 @@
   background-color: var(--mi-pink);
   color: var(--lightest);
   padding: var(--xs) var(--xxs);
+}
+
+/* Definition
+############################################################################ */
+
+dl.simple-definition{
+  margin-bottom: var(--xl);
+  dt{
+    &::after{
+      content:":";
+    }
+  }
+  dd{
+    font-weight: var(--fw-medium);
+    margin-bottom: var(--s);
+    padding-left: var(--m);
+  }
+
 }
 
 /* Aufzählung

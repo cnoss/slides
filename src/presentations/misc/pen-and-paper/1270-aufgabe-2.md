@@ -2,7 +2,7 @@
 title: Digitales Tool für Amateurschiedsrichter
 layout: presentation.11ty.js
 slideClasses: simple
-status: ok
+status: hidden
 ---
 
 ## **Step 2: Visualisierung**

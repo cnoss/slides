@@ -5,4 +5,4 @@ slideClasses: screenshot
 status: ok
 ---
 
-{% screenshot "./images/brain.jpg", '{"transition":"fade", "classes":"no-shadow"}' %}
+{% screenshot "./images/brain.jpg", '{"transition":"fade", "classes":"no-shadow", "width": "100%"}' %}

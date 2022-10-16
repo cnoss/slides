@@ -29,13 +29,18 @@ const getPresentationData = (collection, pattern)=>{
 }
 
 module.exports = function (eleventyConfig) {
- eleventyConfig.setUseGitIgnore(false);
-
+  eleventyConfig.setWatchThrottleWaitTime(500);
+  eleventyConfig.setUseGitIgnore(false);
+  eleventyConfig.setWatchJavaScriptDependencies(true);
+  eleventyConfig.setBrowserSyncConfig({
+    snippet: true,
+  });
+  
  /* Compilation
    ########################################################################## */
 
  // Watch our compiled assets for changes
- eleventyConfig.addWatchTarget('./src/compiled-assets/main.css');
+ // eleventyConfig.addWatchTarget('./src/compiled-assets/main.css');
  eleventyConfig.addWatchTarget('./src/assets/scripts/main.js');
 
  // Copy _data
@@ -115,7 +120,7 @@ module.exports = function (eleventyConfig) {
   const dataTransition = propData && propData.transition ? `data-transition="${propData.transition}"` : '';
   const dataBackgroundTransition = propData && propData.backgroundTransition ? `data-background-transition="${propData.backgroundTransition}"` : '';
   const classes = propData && propData.classes ? propData.classes : '';
-  const width = propData && propData.width ? `width="${propData.width}" ` : '';
+  const width = propData && propData.width ? `width="${propData.width}" ` : 'width="100%" ';
   const buCreditHtml = propData && propData.credit ? `<p class="credit">${propData.credit}</p>` : '';
   const buHtml = propData && propData.bu ? `<figcaption class="bu"><p>${insertMarkup(propData.bu)}</p></figcaption>` : '';
   return `<section data-slide-shortcode-class="screenshot" class="image screenshot ${classes}" ${dataTransition} ${dataBackgroundTransition}><figure><img src="${imgSrc}" alt="${imgSrc}" ${width}>${buHtml}</figure></section>`;
@@ -153,6 +158,10 @@ module.exports = function (eleventyConfig) {
  eleventyConfig.addShortcode('question', (question, tagline) => {
   const htmlTagline = tagline ? `<h2 class="subtitle js-delay">${tagline}</h2>` : '';
   return `<section data-slide-shortcode-class="question" class="question"><div><h1 class="title">${question}</h1>${htmlTagline}</div></section>`;
+ });
+
+ eleventyConfig.addShortcode('important', (content) => {
+  return `<div class="is-important">${md.render(content)}</div>`;
  });
 
  eleventyConfig.addShortcode('statement', (title, content, props) => {

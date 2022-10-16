@@ -78,7 +78,19 @@ status: ok
 | question | kein Beispiel parat :( |
 | qa | Frage und Antwort |
 
-### Additional Classes: 
+### Image
+```
+img: bildname
+```
+
+Url zu einem Hintergrundbild. Das Bild muss in `images` liegen. Bei *.jpg* Formaten kann die Endung weg gelassen werden.
+
+```
+imgData: {"position":"1% 1%", "size": "15%"}
+```
+
+
+### Additional Classes
 ```
 additionalClasses: is-green
 ```
@@ -102,8 +114,9 @@ additionalClasses: is-green
 status: ok
 ```
 
-| ok | nichts passiert |
 |:---|:---|
+| ok | nichts passiert |
+| hidden | Slide wird nicht angezeigt |
 | *alles andere* | Status wird oben rechts in der Folie angezeigt. Ganz praktisch für Todos oder so |
 
 ### Transition
@@ -126,14 +139,19 @@ Hier sind alle [Reveal.js Transitions](https://revealjs.com/transitions/) mögli
 {% fragment "<h2>Team</h2><p>Calvin Hinzer, Christian Hahn, Volker Schaefer, Christian Noss</p>" %}
 ```
 
-### Frage
+### Question
 ```
 {% question "Was guckst Du?" %}
 ```
 
-### Frage und Antwort
+### Question and Answer
 ```
 {% qa "Was ist ein System?", "A group of things, pieces of equipment, etc. that are connected or work together.<br><small>Cambridge Dictionary</small>" %}
+```
+
+### Important
+```
+{% important "Smartphone, Server, Baum, Werkzeugkiste und Flugzeug" %}
 ```
 
 ### Interlude
@@ -142,14 +160,13 @@ Hier sind alle [Reveal.js Transitions](https://revealjs.com/transitions/) mögli
 ```
 
 ### Nice to Know
-
 ```
 {% niceToKnow "Die Mike Rode Matrix nutzt übrigens das Konzept des [Morphologischen Kastens](https://refa.de/service/refa-lexikon/morphologischer-kasten)." %}
 ```
 
 ### Screenshot
 ```
-{% screenshot "./images/brain.jpg", '{"transition":"fade", "classes":"no-shadow", "bu":"Davon muss ich mir erst mal ein Bild machen."}' %}
+{% screenshot "./images/brain.jpg", '{"transition":"fade", "classes":"no-shadow", "width":"20%", "bu":"Davon muss ich mir erst mal ein Bild machen."}' %}
 ```
 
 ### Statement

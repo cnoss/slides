@@ -389,13 +389,16 @@
   justify-content: center;
 
   div {
-    max-width: calc(var(--m) * 40);
+
+    & > * {
+      max-width: calc(var(--m) * 40);
+    }
+    
 
     h1 {
       padding: 0;
       padding-bottom: var(--s);
       margin-bottom: var(--s);
-      font-size: var(--xl);
     }
 
 
@@ -423,6 +426,21 @@
           @extend .list;
           display: block;
         }
+      }
+    }
+
+    blockquote{
+      border-left: solid var(--border-width-l) var(--mi-blau);
+      padding: var(--m) var(--m) var(--l) var(--m);
+      background-color: var(--darken);
+      margin-bottom: var(--l);
+
+      & * {
+        font-weight: var(--fw-medium);
+      }
+
+      p:last-child{
+        margin-bottom: 0;
       }
     }
   }
