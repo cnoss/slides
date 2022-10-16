@@ -294,8 +294,11 @@ h1 {
   padding-top: var(--xxxl);
   padding-bottom: var(--xxxl);
   color: var(--darkest);
-  font-size: var(--xxxl);
+  font-size: var(--xxl);
   line-height: var(--lh-tight);
+  font-weight: var(--fw-bold);
+  color: var(--mi-black);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
