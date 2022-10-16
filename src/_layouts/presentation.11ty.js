@@ -67,15 +67,10 @@ const getBgColor = (cssClass) => {
   return color ? `data-background-color="${color}"` : '';
 };
 
-const getBgImage = (img, path) => {
-  const base = `${path}images/${img}`;
-  const whatEnding = imgEndings.find((ending) => {
-    const src = `docs${base}.${ending}`;
-    if (!fs.existsSync(src)) return false;
-    return true;
-  });
-
-  return whatEnding ? `data-background-image="${base}.${whatEnding}"` : '';
+const getBgImage = (img) => {
+  if(!img) return '';
+  const filename = img.match(/\....$/) ? img : `${img}.jpg`;
+  return `data-background-image="./images/${filename}"`;
 };
 
 const getBgImageData = (imgData) => {
@@ -96,7 +91,7 @@ exports.render = function (data) {
   const slides = presentationData.map((slide) => {
     const slideClass = slide.data.slideClasses;
     const backgroundColor = getBgColor(slideClass);
-    const backgroundImage = getBgImage(slide.data.img, data.page.url);
+    const backgroundImage = getBgImage(slide.data.img);
     const backgroundImageData = getBgImageData(slide.data.imgData);
     const transition = getTransition(slide.data.transition);
     const additionalClasses = getAdditionalClasses(slide.data.additionalClasses);
@@ -105,7 +100,8 @@ exports.render = function (data) {
     
     if(slide.data.status === 'hidden') return '';
     return `
-      <section data-slide-class="${slideClass}" class="mi-slide ${slideClass} ${additionalClasses}" ${backgroundColor} ${backgroundImage} ${backgroundImageData} ${transition}>
+      <section data-slide-class="${slideClass}" class="mi-slide 
+      ${slideClass} ${additionalClasses}" ${backgroundColor} ${backgroundImage} ${backgroundImageData} ${transition}>
       ${content}
       ${status}
       </section>

@@ -120,7 +120,7 @@ module.exports = function (eleventyConfig) {
   const dataTransition = propData && propData.transition ? `data-transition="${propData.transition}"` : '';
   const dataBackgroundTransition = propData && propData.backgroundTransition ? `data-background-transition="${propData.backgroundTransition}"` : '';
   const classes = propData && propData.classes ? propData.classes : '';
-  const width = propData && propData.width ? `width="${propData.width}" ` : 'width="100%" ';
+  const width = propData && propData.width ? `width="${propData.width}" ` : '';
   const buCreditHtml = propData && propData.credit ? `<p class="credit">${propData.credit}</p>` : '';
   const buHtml = propData && propData.bu ? `<figcaption class="bu"><p>${insertMarkup(propData.bu)}</p></figcaption>` : '';
   return `<section data-slide-shortcode-class="screenshot" class="image screenshot ${classes}" ${dataTransition} ${dataBackgroundTransition}><figure><img src="${imgSrc}" alt="${imgSrc}" ${width}>${buHtml}</figure></section>`;
