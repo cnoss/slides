@@ -12,4 +12,4 @@ Zeichnen Sie einen Mensch nach der Gray-Methode bei folgenden Aktivitäten und b
 
 {% important "Stehen, Gehen, Ausflippen, Geld holen, Telefonieren, Sitzen, Kochen, Fliegen, Nachdenken"  %}
 
-**15 Minuten Bearbeitungszeit**
+**10 Minuten Bearbeitungszeit**
