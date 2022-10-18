@@ -22,5 +22,5 @@ Zeichnen Sie jeweils zwei eher männliche und zwei eher weibliche Emoticons für
 
 Beschriften Sie die Visualisierung (Headline und so).
 
-**20 Minuten Bearbeitungszeit**
+**10 Minuten Bearbeitungszeit**
 
