@@ -233,12 +233,10 @@ Hier sind alle [Reveal.js Transitions](https://revealjs.com/transitions/) mögli
 <section class="image is-fullscreen" data-transition="fade"  data-background-transition="fade" data-background="./images/map-cologne.jpg">
   <div class="is-centered">
     <div class="content-blocks">
-      <h3>Orientierung schaffen</h3>
-      <ul>
-        <li class="fragment"><strong>reduzieren:</strong> Unwichtiges weglassen</li>
-        <li class="fragment"><strong>strukturieren:</strong> Muster bilden</li>
-        <li class="fragment"><strong>hierarchisieren:</strong> Bezüge herstellen</li>
-      </ul>
+      {% fragment "<p>Mit zunehmendem Abstand erscheinen uns Dinge:</p>" %}
+      {% fragment "<p class=\"list\">kleiner</p>" %}
+      {% fragment "<p class=\"list\">mit weniger Kontrast</p>" %}
+      {% fragment "<p class=\"list\">mit weniger warmen und gesättigten Farben</p>" %}
     </div>
   </div>
 </section>
