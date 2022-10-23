@@ -81,6 +81,15 @@ const getBgImageData = (imgData) => {
   return `${position} ${size}`;
 };
 
+const getBgImageCredits = (credits) => {
+  if(!credits) return '';
+  const { name, url } = credits;
+  const credit = url 
+    ? `<a href="${url}" target="_blank">${name}</a>`
+    : name;
+  return `<div class="bu"><p class="credit">Bild von ${credit}</p></div>`;
+};
+
 const getTransition = (transition) => (transition ? `data-transition="${transition}"` : 'data-transition="convex"');
 const getAdditionalClasses = (additionalClasses) => (additionalClasses ? additionalClasses : '');
 const getStatus = (status) => (status && status !== 'ok' ? `<div class="status">ToDo: ${status}</div>` : '');
@@ -92,6 +101,7 @@ exports.render = function (data) {
     const slideClass = slide.data.slideClasses;
     const backgroundColor = getBgColor(slideClass);
     const backgroundImage = getBgImage(slide.data.img);
+    const backgroundImageCredits = getBgImageCredits(slide.data.credits);
     const backgroundImageData = getBgImageData(slide.data.imgData);
     const transition = getTransition(slide.data.transition);
     const additionalClasses = getAdditionalClasses(slide.data.additionalClasses);
@@ -104,6 +114,7 @@ exports.render = function (data) {
       ${slideClass} ${additionalClasses}" ${backgroundColor} ${backgroundImage} ${backgroundImageData} ${transition}>
       ${content}
       ${status}
+      ${backgroundImageCredits}
       </section>
     `;
   });

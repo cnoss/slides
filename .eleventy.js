@@ -56,8 +56,8 @@ module.exports = function (eleventyConfig) {
  eleventyConfig.addPassthroughCopy({'src/assets/images': 'assets/images'});
   
  // Copy images
- eleventyConfig.addPassthroughCopy('src/presentations/**/images/*.{jpg,png,svg,jpeg}');
- eleventyConfig.addPassthroughCopy('src/presentations/**/images/**/*.{jpg,png,svg,jpeg}');
+ eleventyConfig.addPassthroughCopy('src/presentations/**/images/*.{jpg,png,svg,jpeg, gif}');
+ eleventyConfig.addPassthroughCopy('src/presentations/**/images/**/*.{jpg,png,svg,jpeg,gif}');
 
  // Copy Reveal Stuff
  eleventyConfig.addPassthroughCopy({'reveal/dist': 'reveal/dist'});
