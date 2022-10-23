@@ -89,6 +89,12 @@ Url zu einem Hintergrundbild. Das Bild muss in `images` liegen. Bei *.jpg* Forma
 imgData: {"position":"1% 1%", "size": "15%"}
 ```
 
+```
+credits: {'name': 'Unbekannt'}
+credits: {'name': 'Barbara Iandolo', 'url':'https://link.de'}
+```
+
+Quelle des Bildes.
 
 ### Additional Classes
 ```
