@@ -123,7 +123,7 @@ status: ok
 |:---|:---|
 | ok | nichts passiert |
 | hidden | Slide wird nicht angezeigt |
-| *alles andere* | Status wird oben rechts in der Folie angezeigt. Ganz praktisch für Todos oder so |
+| alles andere | Status wird oben rechts in der Folie angezeigt. Ganz praktisch für Todos oder so |
 
 ### Transition
 ```
