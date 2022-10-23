@@ -12,4 +12,4 @@ Zeichnen Sie jeweils 3 Varianten von den aufgeführten Begriffen. Die erste Vari
 
 {% important "Smartphone, Server, Baum, Werkzeugkiste, Flugzeug, TV, Katze, Geschäft, Laptop, Geld, WLAN, Glühbirne, Plan, Netzwerk"  %}
 
-**15 Minuten Bearbeitungszeit**
+**10 Minuten Bearbeitungszeit**

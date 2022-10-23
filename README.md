@@ -89,6 +89,12 @@ Url zu einem Hintergrundbild. Das Bild muss in `images` liegen. Bei *.jpg* Forma
 imgData: {"position":"1% 1%", "size": "15%"}
 ```
 
+```
+credits: {'name': 'Unbekannt'}
+credits: {'name': 'Barbara Iandolo', 'url':'https://link.de'}
+```
+
+Quelle des Bildes.
 
 ### Additional Classes
 ```
@@ -113,11 +119,11 @@ additionalClasses: is-green
 ```
 status: ok
 ```
-
+| Wert | Aktion |
 |:---|:---|
 | ok | nichts passiert |
 | hidden | Slide wird nicht angezeigt |
-| *alles andere* | Status wird oben rechts in der Folie angezeigt. Ganz praktisch für Todos oder so |
+| alles andere | Status wird oben rechts in der Folie angezeigt. Ganz praktisch für Todos oder so |
 
 ### Transition
 ```
@@ -203,6 +209,23 @@ Hier sind alle [Reveal.js Transitions](https://revealjs.com/transitions/) mögli
   </figure>
 </section>
 ```
+### Inline SVG
+
+```
+<section data-auto-animate class="image screenshot" data-transition="fade" data-background-color="#666">
+  <figure>
+    <svg data-id="frame" height="600" width="600">
+      <rect x="0" y="0" width="600" height="600" fill="#ffffff" />
+      <circle cx="80" cy="100" r="20" fill="#000000" />
+      <circle cx="220" cy="80" r="20" fill="#000000" />
+      <circle cx="480" cy="380" r="20" fill="#000000" />
+    </svg>
+    <figcaption class="bu is-dark">
+      <p>Zufall oder Gestaltung?</p>
+    </figcaption>
+  </figure>
+</section>
+```
 
 ### Video
 
@@ -227,12 +250,10 @@ Hier sind alle [Reveal.js Transitions](https://revealjs.com/transitions/) mögli
 <section class="image is-fullscreen" data-transition="fade"  data-background-transition="fade" data-background="./images/map-cologne.jpg">
   <div class="is-centered">
     <div class="content-blocks">
-      <h3>Orientierung schaffen</h3>
-      <ul>
-        <li class="fragment"><strong>reduzieren:</strong> Unwichtiges weglassen</li>
-        <li class="fragment"><strong>strukturieren:</strong> Muster bilden</li>
-        <li class="fragment"><strong>hierarchisieren:</strong> Bezüge herstellen</li>
-      </ul>
+      {% fragment "<p>Mit zunehmendem Abstand erscheinen uns Dinge:</p>" %}
+      {% fragment "<p class=\"list\">kleiner</p>" %}
+      {% fragment "<p class=\"list\">mit weniger Kontrast</p>" %}
+      {% fragment "<p class=\"list\">mit weniger warmen und gesättigten Farben</p>" %}
     </div>
   </div>
 </section>
