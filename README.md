@@ -119,7 +119,7 @@ additionalClasses: is-green
 ```
 status: ok
 ```
-
+| Wert | Aktion |
 |:---|:---|
 | ok | nichts passiert |
 | hidden | Slide wird nicht angezeigt |
