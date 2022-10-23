@@ -209,6 +209,23 @@ Hier sind alle [Reveal.js Transitions](https://revealjs.com/transitions/) mögli
   </figure>
 </section>
 ```
+### Inline SVG
+
+```
+<section data-auto-animate class="image screenshot" data-transition="fade" data-background-color="#666">
+  <figure>
+    <svg data-id="frame" height="600" width="600">
+      <rect x="0" y="0" width="600" height="600" fill="#ffffff" />
+      <circle cx="80" cy="100" r="20" fill="#000000" />
+      <circle cx="220" cy="80" r="20" fill="#000000" />
+      <circle cx="480" cy="380" r="20" fill="#000000" />
+    </svg>
+    <figcaption class="bu is-dark">
+      <p>Zufall oder Gestaltung?</p>
+    </figcaption>
+  </figure>
+</section>
+```
 
 ### Video
 
