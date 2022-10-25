@@ -426,10 +426,14 @@ small {
 
 .is-add-on-info {
   opacity: var(--op-low);
-  transition: opacity var(--tr-fast);
+  transform: perspective(200px) rotateY(85deg);
+  perspective-origin: 0 50%;
+  transform-origin: 0 50%;
+  transition: opacity var(--tr-fast), transform var(--tr-slow);
 }
 .is-add-on-info:hover {
   opacity: 1;
+  transform: perspective(400px) rotateY(0);
 }
 
 .is-important * {

@@ -169,6 +169,7 @@ select {
   --lighter: #eee;
   --lightest: #fff;
   --lighten: rgba(255,255,255,0.5);
+  --lighten-strong: rgba(255,255,255,0.8);
   --dark: #888;
   --darker: #111;
   --darkest: #000;
@@ -545,7 +546,7 @@ dl.simple-definition dd {
   display: block;
   padding: var(--xxs) var(--xs);
   margin-bottom: var(--xxs);
-  background-color: var(--lightest);
+  background-color: var(--lighten-strong);
   box-shadow: var(--shadow-l);
 }
 .content-blocks h3 {

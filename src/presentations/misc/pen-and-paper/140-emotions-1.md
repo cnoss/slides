@@ -13,4 +13,4 @@ Legen Sie eine Mike Rode Matrix an. Variieren Sie auf der X-Achse die Form der A
 
 {% niceToKnow "Die Mike Rode Matrix nutzt übrigens das Konzept des [Morphologischen Kastens](https://refa.de/service/refa-lexikon/morphologischer-kasten)." %}
 
-**15 Minuten Bearbeitungszeit**
+**10 Minuten Bearbeitungszeit**
