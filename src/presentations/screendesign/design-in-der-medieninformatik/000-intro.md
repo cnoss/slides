@@ -7,7 +7,8 @@ transition: zoom
 
 <div class="is-full-width">
 
-# Demo Präsentation
-## Hier sieht man die verschiedenen Slidetypen und Shotcodes im Einsatz
+# Design in der Medieninformatik
+
+## ---
 
 </div>
