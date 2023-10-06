@@ -10,21 +10,10 @@ status: ok
 {% qa "Desing is...", "making things pretty?" %}
 {% qa "Desing is...", "moving pixels around?" %}
 
-<section class="image is-fullscreen" data-background="./images/time-square.jpg.jpg" data-background-position="bottom">
-  <div class="bu">
-    <p>Viel zu tun</p>
-    <p class="credit">
-      <a href="https://unsplash.com/@nextvoyage_pl" target="_blank">Andreas M</a> // <a href="https://unsplash.com/photos/hJwLoCI1TmA" target="_blank">Unsplash</a></p>
-  </div>
-</section>
 
-<section class="image is-fullscreen" data-background="./images/time-square.jpg.jpg" data-background-position="bottom">
-  <div class="bu">
-    <p>Viel zu tun</p>
-    <p class="credit">
-      <a href="https://unsplash.com/@nextvoyage_pl" target="_blank">Andreas M</a> // <a href="https://unsplash.com/photos/hJwLoCI1TmA" target="_blank">Unsplash</a></p>
-  </div>
-</section>
+{% screenshot "./images/wir-duerfen-01.png", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":""}' %}
+
+{% screenshot "./images/wir-duerfen-02.png", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":""}' %}
 
 {% qa "Desing is...", "asking the right questions." %}
 {% qa "Desing is...", "identifying and solving problems." %}

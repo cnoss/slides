@@ -8,13 +8,7 @@ transition: zoom
 
 {% interlude "Woran erkennen wir gutes Design?" %}
 
-<section class="image is-fullscreen" data-background="./images/time-square.jpg.jpg" data-background-position="bottom">
-  <div class="bu">
-    <p>Viel zu tun</p>
-    <p class="credit">
-      <a href="https://unsplash.com/@nextvoyage_pl" target="_blank">Andreas M</a> // <a href="https://unsplash.com/photos/hJwLoCI1TmA" target="_blank">Unsplash</a></p>
-  </div>
-</section>
+{% screenshot "./images/gutes-design-01.png", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":""}' %}
 
 {% statement "Good Design is innovative", "The possibilities for innovation are not, by any means, exhausted. Technological development is always offering new opportunities for innovative design. But innovative design always develops in tandem with innovative technology, and can never be an end in itself." %}
 
@@ -38,10 +32,34 @@ transition: zoom
 {% statement "Good design is as little design as possible", "Less, but better – because it concentrates on the essential aspects, and the products are not burdened with non-essentials.
 Back to purity, back to simplicity." %}
 
-<section class="image is-fullscreen" data-background="./images/time-square.jpg.jpg" data-background-position="bottom">
-  <div class="bu">
-    <p>Viel zu tun</p>
-    <p class="credit">
-      <a href="https://unsplash.com/@nextvoyage_pl" target="_blank">Andreas M</a> // <a href="https://unsplash.com/photos/hJwLoCI1TmA" target="_blank">Unsplash</a></p>
+{% screenshot "./images/gutes-design-02.png", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":"Dieter Rams<br>Industrial Designer"}' %}
+
+{% screenshot "./images/gutes-design-03.png", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":""}' %}
+
+{% screenshot "./images/gutes-design-04.png", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":""}' %}
+
+<section class="simple">
+  <div>
+    <h1>Rams Kriterien</h1>
+    {% fragment '<p class="list">innovative</p>' %}
+    {% fragment '<p class="list">aesthetic</p>' %}
+    {% fragment '<p class="list">makes a product useful</p>' %}
+    {% fragment '<p class="list">makes a product understandable</p>' %}
+    {% fragment '<p class="list">unobtrusive</p>' %}
+    {% fragment '<p class="list">honest</p>' %}
+    {% fragment '<p class="list">long-lasting</p>' %}
+    {% fragment '<p class="list">thorough down to the last detail</p>' %}
+    {% fragment '<p class="list">environmentally-friendly</p>' %}
+    {% fragment '<p class="list">as little design as possible</p>' %}
   </div>
 </section>
+
+{% screenshot "./images/gutes-design-05.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"Rams Kriterien //<br> Was ist hier die Designleistung?"}' %}
+
+{% screenshot "./images/gutes-design-06.png", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":"Rams Kriterien //<br> Was ist hier die Designleistung?"}' %}
+
+{% screenshot "./images/gutes-design-07-b.png", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":"Rams Kriterien //<br> Was ist hier die Designleistung?"}' %}
+
+{% screenshot "./images/gutes-design-08.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"Rams Kriterien //<br> Was ist hier die Designleistung?"}' %}
+
+{% screenshot "./images/gutes-design-09-b.png", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":"Rams Kriterien //<br> Was ist hier die Designleistung?"}' %}

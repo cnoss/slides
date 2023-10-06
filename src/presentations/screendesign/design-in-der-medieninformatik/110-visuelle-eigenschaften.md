@@ -8,10 +8,16 @@ transition: zoom
 
 {% interlude "Notieren Sie visuelle Eigenschaften für die folgenden Beispiele."%}
 
-<section class="image is-fullscreen" data-background="./images/time-square.jpg.jpg" data-background-position="bottom">
-  <div class="bu">
-    <p>Viel zu tun</p>
-    <p class="credit">
-      <a href="https://unsplash.com/@nextvoyage_pl" target="_blank">Andreas M</a> // <a href="https://unsplash.com/photos/hJwLoCI1TmA" target="_blank">Unsplash</a></p>
-  </div>
-</section>
+{% screenshot "./images/eigenschaften-01.png", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/eigenschaften-02.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/eigenschaften-03.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/eigenschaften-04.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/eigenschaften-05.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/eigenschaften-06.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/eigenschaften-07.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/eigenschaften-08.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/eigenschaften-09.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/eigenschaften-10.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/eigenschaften-11.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/eigenschaften-12.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/eigenschaften-13.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
