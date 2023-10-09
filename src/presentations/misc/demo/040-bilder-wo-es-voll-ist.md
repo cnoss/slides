@@ -5,7 +5,7 @@ slideClasses: images
 status: ok
 ---
 
-<section class="image is-fullscreen" data-background="./images/time-square.jpg.jpg" data-background-position="bottom">
+<section class="image is-fullscreen" data-background="./images/time-square.jpg" data-background-position="bottom">
   <div class="bu">
     <p>Viel zu tun</p>
     <p class="credit">
