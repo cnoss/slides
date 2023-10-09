@@ -7,16 +7,6 @@ transition: zoom
 
 {% interlude "Wie <strong>strukturieren</strong> wir die Dokumentation?"%}
 
-<section class="simple">
-  <figure>
-    <div>
-    <h1>Komponenten</h1>
-    {% fragment '<p class="list">Navigation, Cards, Forms, Buttons, Button Groups, Tables, Lists, Grid Lists, Menues, Pickers, Progress & Activity, Slider, Tabs, Toolsbars, Tooltips</p>' %}
-    </div>
-  </figure>
-</section>
-
-
 {% screenshot "./images/struktur/struktur-01.png", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":""}' %}
 {% screenshot "./images/struktur/struktur-02.png", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":""}' %}
 {% screenshot "./images/struktur/struktur-03.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":""}' %}
@@ -28,15 +18,6 @@ transition: zoom
 
 {% interlude "Praxisbeispiel"%}
 
-
-<section class="simple">
-  <figure>
-    <div>
-    <h1>Komponenten</h1>
-    {% fragment '<p class="list">Navigation, Cards, Forms, Buttons, Button Groups, Tables, Lists, Grid Lists, Menues, Pickers, Progress & Activity, Slider, Tabs, Toolsbars, Tooltips</p>' %}
-    </div>
-  </figure>
-</section>
 
 <section class="image is-fullscreen" data-transition="fade"  data-background-transition="fade" data-background="./images/map-cologne.jpg">
   <div class="is-centered">
