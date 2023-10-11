@@ -6,7 +6,7 @@ status: ok
 ---
 
 {% interlude "De·kom·po·si·ti·on"%}
-{% screenshot "./images/die-Museen.jpg", '{"transition":"fade"}' %}
+{% screenshot "./images/die-museen.jpg", '{"transition":"fade"}' %}
 
 
 
