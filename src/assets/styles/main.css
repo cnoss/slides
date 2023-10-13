@@ -148,8 +148,7 @@ select {
   font-family: "MaterialIcons";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/MaterialIcons/MaterialIcons-Regular.eot");
-  /* For IE6-8 */
+  src: url("./fonts/MaterialIcons/MaterialIcons-Regular.eot"); /* For IE6-8 */
   src: local("Material Icons"), local("MaterialIcons-Regular"), url("./fonts/MaterialIcons/MaterialIcons-Regular.woff2") format("woff2"), url("./fonts/MaterialIcons/MaterialIcons-Regular.woff") format("woff"), url("./fonts/MaterialIcons/MaterialIcons-Regular.ttf") format("truetype");
 }
 :root {
@@ -622,7 +621,7 @@ dl.simple-definition dd {
   -webkit-appearance: none;
   appearance: none;
   border: none;
-  -moz-padding-start: calc(10px - 3px);
+  -moz-padding-start: 7px;
   outline: none;
   position: absolute;
   right: var(--m);
@@ -749,7 +748,7 @@ a.is-black:hover {
 }
 .cite blockquote p::before {
   position: absolute;
-  left: calc(1ch * -1);
+  left: -1ch;
   color: var(--mi-lila);
   content: "« ";
 }

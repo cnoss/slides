@@ -13,9 +13,9 @@ status: ok
 
 {% qa "Möglichkeit 1", "Sie regen sich darüber auf, sprechen sich mit Kommilitonen ab, versuchen das Briefing irgendwie zu komplettieren und die Aufgabe zu lösen und merken im schlechtesten Fall bei der Präsentation, dass Sie das falsche und davon viel zu viel gemacht haben.", '{"transition":"zoom"}' %}
 
-{% qa "Möglichkeit 2", "Sie stellen schlaue Fragen und versuchen so die Übungenstellung zu komplettieren, bevor Sie richtig anfangen.", '{"transition":"zoom"}' %}
+{% qa "Möglichkeit 2", "Sie stellen schlaue Fragen und versuchen so die Übung zu komplettieren, bevor Sie richtig anfangen.", '{"transition":"zoom"}' %}
 
-{% qa "Warum sind die Übungen oft so schwammig formuliert?", "Unvollständige Übungenstellung sind keine Finte, sondern Alltag. Sie werden im Job ständig damit konfrontiert, nicht weil ihr Kunde Sie ärgern möchte, sondern weil er anders denkt, die Aufgabe schon durchdacht oder angedacht hat und er schlichtweg vergisst, Ihnen alle Informationen zu geben, die Sie brauchen, zumal er auch gar nicht weiß, welche Information Sie brauchen. Also stellen Sie die richtigen Fragen. Fragen sind die Antwort.", '{"transition":"zoom"}' %}
+{% qa "Warum sind die Übungen oft so schwammig formuliert?", "Unvollständige Übung sind keine Finte, sondern Alltag. Sie werden im Job ständig damit konfrontiert, nicht weil ihr Kunde Sie ärgern möchte, sondern weil er anders denkt, die Aufgabe schon durchdacht oder angedacht hat und er schlichtweg vergisst, Ihnen alle Informationen zu geben, die Sie brauchen, zumal er auch gar nicht weiß, welche Information Sie brauchen. Also stellen Sie die richtigen Fragen. Fragen sind die Antwort.", '{"transition":"zoom"}' %}
 
 {% qa "Warum ändere ich so oft meine Meinung?", "Ja, ich ändere bezogen auf Gestaltungsvorschläge oft meine Meinung, und das hat mehrere  Gründe. Der erste Grund ist der, dass dies eine Grundvorraussetzung ist, um neue Lösungen zu finden. Neue Lösungen, sind häufig interessanter und spannender als althergebrachte und bekannte Lösungen und werden daher von Gestaltern gesucht. Also ist es für sie notwendig, Aufgaben und Lösungsansätze aus mehreren Perspektiven zu sehen, was zwangsläufig dazu führt, dass die Meinung zu einem Entwurf häufig um weitere Meinungen, die nicht selten gegensätzlich sind, ergänzt wird. "%}
 
