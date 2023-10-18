@@ -246,11 +246,14 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
+  padding-left: var(--xxl);
+  padding-right: var(--xxl);
 
   .title {
     font-size: var(--xxl);
     padding: 0;
     color: var(--lightest);
+    max-width: 80%;
 
     strong{
       font-weight: var(--fw-bold);
@@ -262,7 +265,9 @@
     font-family: var(--ff-normal);
     color: var(--darkest);
     opacity: var(--op-medium);
-
+    max-width: 80%;
+    font-size: calc(var(--xxl) * 0.8);
+    
     strong{
       font-weight: var(--fw-bold);
     }

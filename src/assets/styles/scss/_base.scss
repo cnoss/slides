@@ -62,7 +62,7 @@ p, div {
   }
 
   & > mark, & > em{
-    font-weight: var(--fw-medium);
+    font-weight: var(--fw-bold);
     background-color: transparent;
   }
 }
@@ -76,5 +76,3 @@ small{
   opacity: var(--op-medium);
   font-size: 80%;
 }
-
-

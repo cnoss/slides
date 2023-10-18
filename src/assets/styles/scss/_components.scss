@@ -51,6 +51,11 @@
   flex-direction: column;
 }
 
+.is-small{
+  font-size: var(--m) !important;
+  margin-bottom: var(--m) !important;
+}
+
 .js-fit-text {
   display: flex;
   height: 90%;
