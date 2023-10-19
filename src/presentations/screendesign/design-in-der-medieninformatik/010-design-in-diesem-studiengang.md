@@ -1,5 +1,5 @@
 ---
-title: Was hat Design in diesem Studiengang für eine Berechtigung?
+title: Design in der MI?
 layout: presentation.11ty.js
 slideClasses: simple
 status: ok

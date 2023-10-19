@@ -1,23 +1,15 @@
 ---
 title: Dataforrest Intro
 layout: presentation.11ty.js
-slideClasses: images
+slideClasses: wrap
 status: ok
 ---
 
-<section class="image is-fullscreen" data-background="./images/was-ist-design-01.png" data-background-position="center">
-</section>
-
-<section class="image is-fullscreen" data-background="./images/was-ist-design-02.png" data-background-position="bottom">
-
-</section>
-
-<section class="image is-full-width" data-background="./images/was-ist-design-03.png" data-background-position="center">
-
-</section>
-
 {% interlude "Was ist Design?"%}
 
-<section class="image is-full-width" data-background="./images/was-ist-design-04.png" data-background-position="center">
+{% screenshot "./images/a-good-design.png", '{"transition":"fade", "classes":""}' %}
+{% screenshot "./images/was-ist-design-01.png", '{"transition":"fade", "classes":"is-fullscreen"}' %}
+{% screenshot "./images/was-ist-design-02.png", '{"transition":"fade", "classes":"is-fullscreen"}' %}
+{% screenshot "./images/was-ist-design-03.png", '{"transition":"fade", "classes":"is-fullscreen"}' %}
+{% screenshot "./images/was-ist-design-04.png", '{"transition":"fade", "classes":"is-fullscreen"}' %}
 
-</section>

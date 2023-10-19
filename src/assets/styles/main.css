@@ -874,14 +874,15 @@ a.is-black:hover {
   display: flex !important;
   align-items: center;
   justify-content: center;
-  padding-left: var(--xxl);
-  padding-right: var(--xxl);
+}
+.interlude > * {
+  width: 80%;
 }
 .interlude .title {
   font-size: var(--xxl);
   padding: 0;
   color: var(--lightest);
-  max-width: 80%;
+  text-align: center;
 }
 .interlude .title strong {
   font-weight: var(--fw-bold);
@@ -891,7 +892,8 @@ a.is-black:hover {
   font-family: var(--ff-normal);
   color: var(--darkest);
   opacity: var(--op-medium);
-  max-width: 80%;
+  font-size: calc(var(--xxl) * 0.8);
+  text-align: center;
 }
 .interlude .subtitle strong {
   font-weight: var(--fw-bold);

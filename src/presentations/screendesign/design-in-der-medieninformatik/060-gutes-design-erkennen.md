@@ -54,12 +54,3 @@ Back to purity, back to simplicity." %}
   </div>
 </section>
 
-{% screenshot "./images/gutes-design-05.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"Rams Kriterien //<br> Was ist hier die Designleistung?"}' %}
-
-{% screenshot "./images/gutes-design-06.png", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":"Rams Kriterien //<br> Was ist hier die Designleistung?"}' %}
-
-{% screenshot "./images/gutes-design-07-b.png", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":"Rams Kriterien //<br> Was ist hier die Designleistung?"}' %}
-
-{% screenshot "./images/gutes-design-08.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"Rams Kriterien //<br> Was ist hier die Designleistung?"}' %}
-
-{% screenshot "./images/gutes-design-09-b.png", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":"Rams Kriterien //<br> Was ist hier die Designleistung?"}' %}

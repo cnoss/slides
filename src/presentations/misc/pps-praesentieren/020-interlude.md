@@ -5,4 +5,4 @@ slideClasses: wrap
 status: ok
 ---
 
-{% interlude "…"%}
+{% interlude "Weiter um 13:00"%}

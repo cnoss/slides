@@ -7,6 +7,9 @@ status: ok
 
 {% interlude "Wie würden Sie die folgenden Designs <strong>bewerten</strong>?", "Oder anders gefragt: nach welchen <strong>Kriterien</strong> würde Sie bewerten?" %}
 
-{% screenshot "./images/design-bewerten-01.png", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":""}' %}
-
-{% screenshot "./images/design-bewerten-02.png", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/design-bewerten-2023-1.jpg", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":"https://virena.eu/"}' %}
+{% screenshot "./images/design-bewerten-2023-2.jpg", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":"https://lucasdeoliveira.webflow.io/"}' %}
+{% screenshot "./images/design-bewerten-2023-3.jpg", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":"https://lusion.co/"}' %}
+{% screenshot "./images/design-bewerten-2023-4.jpg", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":"https://lusion.co/"}' %}
+{% screenshot "./images/design-bewerten-2023-5.jpg", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":"https://lusion.co/"}' %}
+{% screenshot "./images/design-bewerten-2023-6.jpg", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":"https://www.canyon.com/de-de/"}' %}
