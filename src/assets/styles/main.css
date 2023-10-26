@@ -148,8 +148,7 @@ select {
   font-family: "MaterialIcons";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/MaterialIcons/MaterialIcons-Regular.eot");
-  /* For IE6-8 */
+  src: url("./fonts/MaterialIcons/MaterialIcons-Regular.eot"); /* For IE6-8 */
   src: local("Material Icons"), local("MaterialIcons-Regular"), url("./fonts/MaterialIcons/MaterialIcons-Regular.woff2") format("woff2"), url("./fonts/MaterialIcons/MaterialIcons-Regular.woff") format("woff"), url("./fonts/MaterialIcons/MaterialIcons-Regular.ttf") format("truetype");
 }
 :root {
@@ -193,7 +192,7 @@ select {
   --fw-normal: 400;
   --fw-medium: 500;
   --fw-bold: 700;
-  --lh-normal: 140%;
+  --lh-normal: 130%;
   --lh-tight: 110%;
   --lh-loose: 150%;
   --tr-fast: 0.2s;
@@ -627,7 +626,7 @@ dl.simple-definition dd {
   -webkit-appearance: none;
   appearance: none;
   border: none;
-  -moz-padding-start: calc(10px - 3px);
+  -moz-padding-start: 7px;
   outline: none;
   position: absolute;
   right: var(--m);
@@ -754,7 +753,7 @@ a.is-black:hover {
 }
 .cite blockquote p::before {
   position: absolute;
-  left: calc(1ch * -1);
+  left: -1ch;
   color: var(--mi-lila);
   content: "« ";
 }
@@ -801,6 +800,19 @@ a.is-black:hover {
 .screenshot.no-shadow figure img {
   box-shadow: none;
 }
+.screenshot.is-fullscreen figure {
+  box-shadow: none;
+  width: 100vw;
+  height: 100vh;
+}
+.screenshot.is-fullscreen figure img {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
 
 /* Video
 ############################################################################ */
@@ -843,11 +855,12 @@ a.is-black:hover {
   font-size: var(--xl);
   font-family: var(--ff-normal);
 }
-.statement div p {
+.statement div p, .statement div .fragment {
   margin-bottom: var(--xl);
   color: var(--darker);
-  font-size: var(--l);
-  line-height: var(--lh-tight);
+  font-size: var(--m);
+  line-height: var(--lh-normal);
+  max-width: 60ch;
 }
 .statement.is-green {
   background-color: var(--mi-gruen);
@@ -1018,6 +1031,7 @@ a.is-black:hover {
   color: var(--darker);
   font-size: var(--l);
   line-height: var(--lh-tight);
+  padding-right: var(--s);
 }
 .simple div p + ul {
   margin-bottom: var(--xl);
@@ -1050,6 +1064,7 @@ a.is-black:hover {
 .qa-wrap {
   display: grid !important;
   max-width: 90vw;
+  min-width: 50vw;
   grid-template-columns: 33% 1fr;
   grid-gap: var(--m);
 }
@@ -1057,7 +1072,6 @@ a.is-black:hover {
   padding: 0;
   font-family: var(--ff-normal);
   font-size: var(--m) !important;
-  line-height: var(--lh-normal);
   font-weight: var(--fw-medium);
   text-align: right;
   color: var(--mi-lila);
@@ -1074,7 +1088,8 @@ a.is-black:hover {
 .qa p {
   color: var(--darker);
   font-size: var(--m);
-  line-height: var(--lh-normal);
+  hyphens: none;
+  line-height: var(--lh-tight);
 }
 
 /* Wrap
