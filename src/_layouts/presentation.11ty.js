@@ -47,6 +47,9 @@ const codeWraps = {
     const content = insertColor(data.content, "is-purple");
     return `<div><h1>${data.title}</h1>${content}</div>`;
   },
+  splitView(data, html) {
+    return `<div><h1>{data.title}</h1>${data.content} dddddd</div>`;
+  },
   interlude(data, html) { return `<div class="is-fullscreen"><h1 class="title">${data.title}</h1><h2 class="subtitle js-delay">${data.subtitle}</h2></div>`; },
   outro(data, html) { return `<div class="is-fullscreen is-centered"><p>${data.content}</p>${outro}</div>`; },
 };

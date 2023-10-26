@@ -206,7 +206,7 @@
   }
 }
 
-/* Statement
+/* statement
 ############################################################################ */
 
 .statement {
@@ -399,10 +399,6 @@
       padding: 0;
     }
   }
-
-
-
-
 }
 
 /* Simple
@@ -527,4 +523,37 @@
     font-size: var(--l);
     font-weight: var(--fw-medium);
   }
+}
+
+
+/* Split
+############################################################################ */
+
+.split-view{
+
+  &.present, present{
+
+    & > div{
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      background-color: var(--lightest);
+      margin-left: 50%;
+      width: 50%;
+      max-width: 50%;
+      padding: var(--l);
+  
+      h1{
+        padding-top: 0;
+        padding-bottom: var(--l);
+        font-family: var(--normal);
+        font-weight: var(--fw-bold);
+        font-size: var(--xl);
+  
+      }
+    }
+  }
+  
+
 }

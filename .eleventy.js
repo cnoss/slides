@@ -180,6 +180,10 @@ module.exports = function (eleventyConfig) {
   return `<div data-slide-shortcode-class="fragment" class="fragment">${insertMarkup(content)}</div>`;
  });
 
+ eleventyConfig.addShortcode('splitView', (title, content, props) => {
+  return `<section class="split-view"><div><h1 class="title">${insertMarkup(title)}</h1>${insertMarkup(content)}</div></section>`;
+ });
+
  eleventyConfig.addShortcode('qa', (q, a, props) => {
   const propData = (props) ? JSON.parse(props) : {};
   const dataTransition = propData && propData.transition ? `data-transition="${propData.transition}"` : '';

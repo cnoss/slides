@@ -75,6 +75,7 @@ status: ok
 | [statement](https://cnoss.github.io/slides/presentations/misc/demo/#/6) | Aussage mit Erklärung |
 | [shout](https://cnoss.github.io/slides/presentations/misc/demo/#/8) | Ausruf mit Autor und Erklärung auf Hintergrund |
 | wrap | Wrapper Folio für Shortcodes |
+| split | Bild links, Text rechts |
 | question | kein Beispiel parat :( |
 | qa | Frage und Antwort |
 
@@ -175,9 +176,19 @@ Hier sind alle [Reveal.js Transitions](https://revealjs.com/transitions/) mögli
 {% screenshot "./images/brain.jpg", '{"transition":"fade", "classes":"no-shadow", "width":"20%", "bu":"Davon muss ich mir erst mal ein Bild machen."}' %}
 ```
 
+### Fullscreen Screenshot
+```
+{% screenshotFs "./images/brain.jpg", '{"transition":"fade", "classes":"no-shadow", "width":"20%", "bu":"Davon muss ich mir erst mal ein Bild machen."}' %}
+
 ### Statement
 ```
 {% statement "Kräfte", "Auf Linien in einer Gestaltung wirken folgende *Kräfte*.", '{"backgroundTransition":"slide"}' %}
+```
+
+### Split View
+
+```
+{% splitView "Kommunikation", "communicare: teilen, mitteilen, teilnehmen lassen", '{"backgroundTransition":"slide"}' %}
 ```
 
 ## HTML
