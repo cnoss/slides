@@ -31,3 +31,10 @@ status: ok
   </figure>
   </div>
 </section>
+
+{% screenshot "./images/sumup-01.png", '{"transition":"none", "classes":"shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/sumup-02.png", '{"transition":"none", "classes":"shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/sumup-03.png", '{"transition":"none", "classes":"shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/sumup-04.png", '{"transition":"none", "classes":"shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/sumup-05.png", '{"transition":"none", "classes":"shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/sumup-06.png", '{"transition":"none", "classes":"no-shadow", "width":"auto", "bu":""}' %}
