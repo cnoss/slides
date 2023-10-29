@@ -1,5 +1,5 @@
 ---
-title: Wahrnehmungsarbeit
+title: Interface Inventar aufbauen und dokumentieren
 layout: presentation.11ty.js
 slideClasses: intro
 transition: zoom
@@ -7,7 +7,7 @@ transition: zoom
 
 <div class="is-full-width">
 
-# Demo Präsentation
-## Hier sieht man die verschiedenen Slidetypen und Shotcodes im Einsatz
+# Interface Inventar aufbauen und dokumentieren
+
 
 </div>

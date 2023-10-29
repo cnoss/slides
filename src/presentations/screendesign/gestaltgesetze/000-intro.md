@@ -7,7 +7,7 @@ transition: zoom
 
 <div class="is-full-width">
 
-# Demo Gestaltgesetze
+# Gestaltgesetze
 
 
 </div>
