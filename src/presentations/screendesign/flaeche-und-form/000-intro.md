@@ -8,6 +8,5 @@ transition: zoom
 <div class="is-full-width">
 
 # Fläche und Form
-## --
 
 </div>

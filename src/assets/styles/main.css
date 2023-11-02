@@ -165,6 +165,7 @@ select {
   --xxl: calc(var(--bfs) * 4);
   --xxxl: calc(var(--bfs) * 5);
   --xxxxl: calc(var(--bfs) * 6.3);
+  --fluid-l: clamp(1rem, 10vw + 0.75rem, 10rem);
   --light: #ccc;
   --lighter: #eee;
   --lightest: #fff;
@@ -195,6 +196,7 @@ select {
   --fw-bold: 700;
   --lh-normal: 130%;
   --lh-tight: 110%;
+  --lh-stick: 100%;
   --lh-loose: 150%;
   --tr-fast: 0.2s;
   --tr-slow: 0.6s;
@@ -761,6 +763,44 @@ a.is-black:hover {
 .cite blockquote p::after {
   color: var(--mi-lila);
   content: "»";
+}
+
+.bigCite {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.bigCite blockquote {
+  max-width: 90%;
+}
+.bigCite blockquote cite {
+  display: block;
+  margin-bottom: var(--half);
+  color: var(--dark);
+  color: var(--mi-lila);
+  font-size: var(--xs);
+}
+.bigCite blockquote p {
+  position: relative;
+  display: inline-block;
+  margin-bottom: var(--xl);
+  font-weight: var(--fw-bold);
+  font-size: var(--fluid-l);
+  hyphens: none;
+  line-height: var(--lh-stick);
+}
+.bigCite blockquote p::before {
+  position: absolute;
+  left: calc(1ch * -1);
+  color: var(--mi-lila);
+  content: "« ";
+}
+.bigCite blockquote p::after {
+  color: var(--mi-lila);
+  content: "»";
+}
+.bigCite blockquote p em {
+  color: var(--mi-gruen);
 }
 
 /* Screenshot

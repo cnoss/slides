@@ -110,6 +110,50 @@
   }
 }
 
+.bigCite {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  blockquote {
+    max-width: 90%;
+
+    cite {
+      display: block;
+      margin-bottom: var(--half);
+      color: var(--dark);
+      color: var(--mi-lila);
+      font-size: var(--xs);
+    }
+
+    p {
+      position: relative;
+      display: inline-block;
+      margin-bottom: var(--xl);
+      font-weight: var(--fw-bold);
+      font-size: var(--fluid-l);
+      hyphens: none;
+      line-height: var(--lh-stick);
+
+      &::before {
+        position: absolute;
+        left: calc(1ch * -1);
+        color: var(--mi-lila);
+        content: "« ";
+      }
+
+      &::after {
+        color: var(--mi-lila);
+        content: "»";
+      }
+
+      em{
+        color: var(--mi-gruen);
+      }
+    }
+  }
+}
+
 /* Screenshot
 ############################################################################ */
 

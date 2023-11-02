@@ -12,6 +12,7 @@
   --xxl: calc(var(--bfs) * 4);
   --xxxl: calc(var(--bfs) * 5);
   --xxxxl: calc(var(--bfs) * 6.3);
+  --fluid-l: clamp(1rem, 10vw + 0.75rem, 10rem);
   --light: #ccc;
   --lighter: #eee;
   --lightest: #fff;
@@ -42,6 +43,7 @@
   --fw-bold: 700;
   --lh-normal: 130%;
   --lh-tight: 110%;
+  --lh-stick: 100%;
   --lh-loose: 150%;
   --tr-fast: 0.2s;
   --tr-slow: 0.6s;

@@ -9,6 +9,4 @@ transition: zoom
 
 # Figur und Grund
 
-## ---
-
 </div>

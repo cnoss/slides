@@ -1,8 +1,8 @@
 ---
 title: Cite
 layout: presentation.11ty.js
-slideClasses: cite
-author: Max Mustermann, Beispiel
+slideClasses: bigCite
+author: Anthony Robbins, Autor
 ---
 
-Hier wird ein Zitat hübsch angezeigt.
+*Setting goals* is the first step in turning the invisible into the visible.
