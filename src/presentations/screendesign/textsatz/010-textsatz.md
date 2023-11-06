@@ -43,8 +43,9 @@ status: ok
     <h1>Textsatz KnowHow</h1>
     <div>
       {% fragment "<p class=\"list\">Ziel bei Mengentexten ist die Wirkung als möglichst <strong>gleichmäßige Graufläche</strong></p>" %}
-      {% fragment "<p class=\"list\">Buchstabenabstand <strong><</strong> Wortabstand <strong><</strong> Zeilenabstand <strong><</strong> Spaltenabstand</p>" %}
-      {% fragment "<p class=\"list\">Spatonierung sollte bei sehr <strong>großen</strong> und sehr<strong>kleinen</strong> Schriftgraden <strong>angepasst</strong> werden: kleine Schriften (< 9pt) benötigen eine größere Spationierung, große Schriften > 16pt eine kleinere Spatonierung. </p>" %}
+      {% fragment "<p class=\"list\">Buchstabenabstand <strong>&lt;
+</strong> Wortabstand <strong>&lt;</strong> Zeilenabstand <strong>&lt;</strong> Spaltenabstand</p>" %}
+      {% fragment "<p class=\"list\">Spatonierung sollte bei sehr <strong>großen</strong> und sehr<strong>kleinen</strong> Schriftgraden <strong>angepasst</strong> werden: kleine Schriften (&lt; 9pt) benötigen eine größere Spationierung, große Schriften &gt; 16pt eine kleinere Spatonierung. </p>" %}
     </div>
 </section>
 
@@ -52,7 +53,7 @@ status: ok
   <div>
     <h1>Textsatz KnowHow</h1>
     <div>
-      {% fragment "<p class=\"list\">Der <strong>Zeilenabstand</strong> sollte zwischen <strong>120%</strong> und <strong>130%</strong> des Schriftgrades betragen. Kleine Schriften (< 9pt) oder breite Spalten benötigen einen größeren Zeilenabstand, große Schriften (>16pt) oder schmale Spalten benötigen einen kleineren Zeilenabstand.</p>" %}
+      {% fragment "<p class=\"list\">Der <strong>Zeilenabstand</strong> sollte zwischen <strong>120%</strong> und <strong>130%</strong> des Schriftgrades betragen. Kleine Schriften (&lt; 9pt) oder breite Spalten benötigen einen größeren Zeilenabstand, große Schriften (&gt; 16pt) oder schmale Spalten benötigen einen kleineren Zeilenabstand.</p>" %}
       {% fragment "<p class=\"list\">Die Spaltenbreite sollte so gewählt sein, dass <strong>Zeilenlängen</strong> zwischen <strong>9</strong> und <strong>13 Worten</strong> oder 60 und 80 Zeichen entstehen.</p>" %}
       {% fragment "<p class=\"list\">Der <strong>Spaltenabstand</strong> sollte etwa so groß wie der <strong>Schriftgrad</strong> sein.</p>" %}
     </div>
