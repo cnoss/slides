@@ -1,5 +1,5 @@
 ---
-title: Wahrnehmungsarbeit
+title: Interaktion & Gestaltungselemente
 layout: presentation.11ty.js
 slideClasses: images
 transition: zoom
