@@ -1,5 +1,5 @@
 ---
-title: Wahrnehmungsarbeit
+title: Komponenten
 layout: presentation.11ty.js
 slideClasses: images
 transition: zoom
