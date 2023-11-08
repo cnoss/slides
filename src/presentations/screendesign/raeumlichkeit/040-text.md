@@ -6,9 +6,9 @@ status: ok
 
 ---
 
-<section data-auto-animate class="image screenshot" data-transition="none">
+<section data-auto-animate class="image screenshot" data-transition="fade">
   <figure>
-  <svg data-id="frame" height="200" width="800">
+  <svg data-id="frame" height="300" width="800">
   <style>
     .svg-headline{
       font-size: 2em;
@@ -24,9 +24,9 @@ status: ok
   </figure>
 </section>
 
-<section data-auto-animate class="image screenshot" data-transition="none">
+<section data-auto-animate class="image screenshot" data-transition="fade">
   <figure>
-  <svg data-id="frame" height="200" width="800">
+  <svg data-id="frame" height="300" width="800">
   <style>
     .svg-headline{
       font-size: 2em;
@@ -42,9 +42,9 @@ status: ok
   </figure>
 </section>
 
-<section data-auto-animate class="image screenshot" data-transition="none">
+<section data-auto-animate class="image screenshot" data-transition="fade">
   <figure>
-  <svg data-id="frame" height="200" width="800">
+  <svg data-id="frame" height="300" width="800">
   <style>
     .svg-headline{
       font-size: 2em;
