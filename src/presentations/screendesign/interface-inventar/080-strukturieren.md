@@ -1,5 +1,5 @@
 ---
-title: Wahrnehmungsarbeit
+title: Strukturieren
 layout: presentation.11ty.js
 slideClasses: images
 transition: zoom
