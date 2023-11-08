@@ -8,7 +8,7 @@ status: ok
 
 <section class="simple">
   <div>
-  <h1>Zentrales Gestaltgesetz</h1>
+  <h1>Gestaltgesetze</h1>
   <figure>
     {% fragment '<p class="list"><strong>Gesetz der Nähe</strong> Elemente, die nahe beieinander liegen, werden als zusammengehörig aufgefasst.</p>' %}
     {% fragment '<p class="list"><strong>Gesetz der Ähnlichkeit</strong> Elemente, die sich ähnlich sind, werden als zusammengehörig aufgefasst.</p>' %}
