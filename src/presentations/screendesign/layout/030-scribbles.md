@@ -1,5 +1,5 @@
 ---
-title: Worum geht es?
+title: Ein Gestaltungsraster hilft immer!
 layout: presentation.11ty.js
 slideClasses: images
 status: ok

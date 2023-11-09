@@ -1,5 +1,5 @@
 ---
-title: Das Gesetz der guten Fortsetzung
+title: Das Gesetz des gemeinsamen Schicksals
 layout: presentation.11ty.js
 slideClasses: images
 status: ok

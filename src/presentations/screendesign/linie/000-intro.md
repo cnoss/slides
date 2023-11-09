@@ -1,5 +1,5 @@
 ---
-title: Der Linie
+title: Die Linie
 layout: presentation.11ty.js
 slideClasses: intro
 transition: zoom
