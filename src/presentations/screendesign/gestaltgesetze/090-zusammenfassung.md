@@ -1,5 +1,5 @@
 ---
-title: Das Gesetz der guten Fortsetzung
+title: Zusammenfassung
 layout: presentation.11ty.js
 slideClasses: images
 status: ok

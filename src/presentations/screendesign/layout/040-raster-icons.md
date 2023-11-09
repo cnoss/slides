@@ -1,5 +1,5 @@
 ---
-title: Worum geht es?
+title: Raster, Icons & Größe
 layout: presentation.11ty.js
 slideClasses: images
 status: ok

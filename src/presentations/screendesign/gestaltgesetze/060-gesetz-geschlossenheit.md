@@ -1,5 +1,5 @@
 ---
-title: Das Gesetz der guten Fortsetzung
+title: Das Gesetz der Geschlossenheit
 layout: presentation.11ty.js
 slideClasses: images
 status: ok

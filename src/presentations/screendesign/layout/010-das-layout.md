@@ -1,5 +1,5 @@
 ---
-title: Worum geht es?
+title: Das Layout
 layout: presentation.11ty.js
 slideClasses: images
 status: ok
