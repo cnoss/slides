@@ -5,7 +5,10 @@ slideClasses: images
 status: ok
 ---
 
-{% screenshot "./images/cube-01.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/cube-01a.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/cube-01b.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/cube-01c.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/cube-01d.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":""}' %}
 
 
 {% statement "Gestaltpsychologie <h5>Max Wertheimer</h5> <br>" , "Wahrnehmungslehre, die zu erklären versucht, wie wir elementare optische Reize in unserem Gehirn zu einem kompletten Bild oder Objekt zusammensetzen. "%}
