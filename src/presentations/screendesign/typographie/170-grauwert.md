@@ -23,4 +23,4 @@ status: ok
 {% screenshot "./images/register-05.png", '{"transition":"none", "classes": "no-shadow", "width":"auto", "bu":"Register" }' %}
 
 
-{% screenshot "./images/clever-typoposter.png", '{"transition":"none", "classes": "no-shadow", "width":"auto", "bu":"" }' %}
+{% screenshot "./images/clever-typoposter.png", '{"transition":"none", "classes": "no-shadow", "width":"auto", "bu":"https://www.cleverprinting.de/das-kostenlose-cleverprinting-typoposter/" }' %}
