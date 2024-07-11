@@ -198,6 +198,7 @@ Hier sind alle [Reveal.js Transitions](https://revealjs.com/transitions/) mögli
 ### Bilder, Variante 1
 
 ```
+
 <section class="image is-fullscreen" data-background="./images/[src]">
   <div class="bu">
     <p>Viel zu tun</p>
@@ -205,6 +206,7 @@ Hier sind alle [Reveal.js Transitions](https://revealjs.com/transitions/) mögli
       <a href="[url]" target="_blank">Iwona Castiello d'Antonio</a> // <a href="[url]" target="_blank">Unsplash</a></p>
   </div>
 </section>
+
 ```
 
 ### Bilder, Variante 2
