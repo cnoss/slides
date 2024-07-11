@@ -74,6 +74,8 @@ status: ok
 | [video](https://cnoss.github.io/slides/presentations/misc/demo/#/5) | Wrapper Folie für ein Video, welches dann via HTML eingebunden werden |
 | [statement](https://cnoss.github.io/slides/presentations/misc/demo/#/6) | Aussage mit Erklärung |
 | [shout](https://cnoss.github.io/slides/presentations/misc/demo/#/8) | Ausruf mit Autor und Erklärung auf Hintergrund |
+| code | Zeigt schön formatierten Code auf der ganzen Fensterbreite.  |
+| codeSmall | Zeigt schön formatierten Code so breit, wie der Code läuft.  |
 | wrap | Wrapper Folio für Shortcodes |
 | split | Bild links, Text rechts |
 | question | kein Beispiel parat :( |
@@ -368,3 +370,28 @@ info: "Three studies were conducted to ascertain how quickly people form an opin
 Attention (web) designers: you have 50 milliseconds to make a good first impression!
 
 ```
+
+### Code & CodeSmall
+
+```
+---
+title: View Transitions
+layout: presentation.11ty.js
+slideClasses: codeSmall
+transition: fade
+status: ok
+---
+
+## Step 2
+Adding css-at-Rule. For a cross-document view transition to work, the current and destination documents of the navigation also need to be on the same origin […](https://developer.mozilla.org/en-US/docs/Web/CSS/@view-transition)
+
+
+<pre>
+<code>
+@view-transition {
+  navigation: auto;
+}
+</code>
+</pre>
+```
+
