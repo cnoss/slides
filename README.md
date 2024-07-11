@@ -181,6 +181,7 @@ Hier sind alle [Reveal.js Transitions](https://revealjs.com/transitions/) mögli
 ### Fullscreen Screenshot
 ```
 {% screenshotFs "./images/brain.jpg", '{"transition":"fade", "classes":"no-shadow", "width":"20%", "bu":"Davon muss ich mir erst mal ein Bild machen."}' %}
+```
 
 ### Statement
 ```
