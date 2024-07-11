@@ -148,14 +148,29 @@ Hier sind alle [Reveal.js Transitions](https://revealjs.com/transitions/) mögli
 {% fragment "<h2>Team</h2><p>Calvin Hinzer, Christian Hahn, Volker Schaefer, Christian Noss</p>" %}
 ```
 
+### SimpleText
+Erzeugt einen kompletten Screen. Headline kann auch `false` sein.
+```
+{% simpleText "Headline", "Text" %}
+```
+
 ### Question
+Erzeugt einen kompletten Screen.
 ```
 {% question "Was guckst Du?" %}
 ```
 
 ### Question and Answer
+Erzeugt einen kompletten Screen.
 ```
 {% qa "Was ist ein System?", "A group of things, pieces of equipment, etc. that are connected or work together.<br><small>Cambridge Dictionary</small>" %}
+```
+
+### CodeSmall
+Erzeugt einen kompletten Screen.
+```
+{% codeSmall "Title", "Text", "Code", "Sprache" %}
+{% codeSmall "Hello World", "kleines Beispiel", "<h1>Hello World</h1>", "html" %}
 ```
 
 ### Important
@@ -164,6 +179,7 @@ Hier sind alle [Reveal.js Transitions](https://revealjs.com/transitions/) mögli
 ```
 
 ### Interlude
+Erzeugt einen kompletten Screen.
 ```
 {% interlude "Lean back", "Lean forward"%}
 ```
@@ -179,6 +195,7 @@ Hier sind alle [Reveal.js Transitions](https://revealjs.com/transitions/) mögli
 ```
 
 ### Fullscreen Screenshot
+Erzeugt einen kompletten Screen.
 ```
 {% screenshotFs "./images/brain.jpg", '{"transition":"fade", "classes":"no-shadow", "width":"20%", "bu":"Davon muss ich mir erst mal ein Bild machen."}' %}
 ```
