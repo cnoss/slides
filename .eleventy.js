@@ -1,5 +1,7 @@
 const htmlmin = require('html-minifier');
 const markdownIt = require("markdown-it");
+const hljs = require('highlight.js');
+const { render } = require('./src/_layouts/presentation.11ty');
 
 const pathPrefix = (process.env.ELEVENTY_ENV === 'production') ? "slides" : "";
 const ghPagesFolder = "docs";
@@ -7,6 +9,18 @@ const ghPagesFolder = "docs";
 const md = new markdownIt({
   html: true,
 });
+
+const highlightCode = (lang, code) => {
+  if (lang && hljs.getLanguage(lang)) {
+    try {
+      const highlightedCode = `<pre class="code-wrapper"><samp class="code">${hljs.highlight(lang, code).value}</samp></pre>`
+      return highlightedCode.replace(/<span class="hljs-comment">\/\*\*\/<\/span>/g, "<span class='hljs-break'>/* break */</span>");
+    } catch (__) {}
+  }
+
+  return ''; // use external default escaping
+};
+
 
 const insertMarkup = (string)=>{
  string = string.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>", string);
@@ -27,6 +41,10 @@ const getPresentationData = (collection, pattern)=>{
     return -1;
    });
 }
+
+const renderCode = (code, lang) => {
+  return `${highlightCode(lang, code)}`;
+};
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setWatchThrottleWaitTime(500);
@@ -72,6 +90,10 @@ module.exports = function (eleventyConfig) {
 
  eleventyConfig.addJavaScriptFunction("urlPrefix", function() {
   return pathPrefix;
+ });
+
+ eleventyConfig.addJavaScriptFunction("markdown", function(content) {
+  return md.render(content);
  });
 
  /* Filter
@@ -146,10 +168,10 @@ module.exports = function (eleventyConfig) {
 
  eleventyConfig.addShortcode('interlude', (title, subtitle, transition) => {
   const getRandomBackgroundColor = ()=>{
-    const colors = ['#4952e1', '#d16', '#00ad2f', '#9313ce', '#aaa'];
+    const colors = ['#4952e1', '#d16', '#00ad2f', '#9313ce', '#2b2b2b'];
     return colors[colors.length * Math.random() | 0];
   }
-  const htmlSubtitle = subtitle ? `<h2 class="subtitle js-delay">${insertMarkup(subtitle)}</h2>` : '';
+  const htmlSubtitle = subtitle ? `<h2 class="subtitle js-delay">${md.render(subtitle)}</h2>` : '';
   const dataTransition = transition ? `data-transition="${transition}"` : '';
 
   return `<section data-slide-shortcode-class="interlude" data-background-color="${getRandomBackgroundColor()}" class="image screenshot interlude" ${dataTransition}><div><h1 class="title">${insertMarkup(title)}</h1>${htmlSubtitle}</div></section>`;
@@ -157,7 +179,31 @@ module.exports = function (eleventyConfig) {
 
  eleventyConfig.addShortcode('question', (question, tagline) => {
   const htmlTagline = tagline ? `<h2 class="subtitle js-delay">${tagline}</h2>` : '';
-  return `<section data-slide-shortcode-class="question" class="question"><div><h1 class="title">${question}</h1>${htmlTagline}</div></section>`;
+  return `<section data-slide-shortcode-class="question" class="question"><div><h1 class="title">${md.render(question)}</h1>${htmlTagline}</div></section>`;
+ });
+
+ eleventyConfig.addShortcode('simpleText', (title, text, transition) => {
+  const titleHtml = title ? `<h1 class="title">${insertMarkup(title)}</h1>` : '';
+  const dataTransition = transition ? `data-transition="${transition}"` : '';
+  return `<section data-slide-shortcode-class="simple-text" class="simple" ${dataTransition}>
+    <div>${titleHtml}${md.render(text)}</div></section>`;
+ });
+
+ eleventyConfig.addShortcode('codeSmall', (title, content, code, lang, transition) => {
+
+  const codeBlocks = typeof code !== 'object' 
+    ? highlightCode(lang, code)
+    : `<div class="code-columns">${code.map((codeBlock) => {
+      const {code} = codeBlock;
+      const lang = codeBlock.lang ? codeBlock.lang : 'html'; 
+      return highlightCode(lang, code);
+    }).join('')}</div>`;
+  
+  const dataTransition = transition ? `data-transition="${transition}"` : '';
+  const contentBlock = content.match(/[a-zA-Z0-9]/) ? content : '.';
+  return `
+      <section ${dataTransition} data-slide-shortcode-class="codeSmall" class="codeSmall"><div><h1 class="title">${title}</h1>${md.render(contentBlock)}${codeBlocks}</div></section>`
+    ;
  });
 
  eleventyConfig.addShortcode('important', (content) => {
@@ -166,8 +212,14 @@ module.exports = function (eleventyConfig) {
 
  eleventyConfig.addShortcode('statement', (title, content, props) => {
   const propData = (props) ? JSON.parse(props) : {};
+  const fragment = content && content.length > 0 ? `<div class="fragment">${insertMarkup(content)}</div>`: '';
   const dataBackgroundTransition = propData && propData.backgroundTransition ? `data-background-transition="${propData.backgroundTransition}"` : '';
-  return `<section ${dataBackgroundTransition} class="statement"><div><h1 class="title">${insertMarkup(title)}</h1><div class="fragment">${insertMarkup(content)}</div></div></section>`;
+  return `<section ${dataBackgroundTransition} class="statement"><div><h1 class="title">${insertMarkup(title)}</h1>${fragment}</div></section>`;
+ });
+
+ eleventyConfig.addShortcode('cite', (title, content, props) => {
+  const propData = (props) ? JSON.parse(props) : {};
+  return `<section data-slide-shortcode-class="cite" class="cite"><div class="cite"><blockquote class="typo-quote"><p>${insertMarkup(title)}</p><cite></cite></blockquote></div></section>`;
  });
 
  eleventyConfig.addShortcode('niceToKnow', (content, props) => {
@@ -191,6 +243,10 @@ module.exports = function (eleventyConfig) {
   let answer = insertMarkup(a);
   answer = insertColor(answer, "is-green");
   return `<section data-slide-shortcode-class="qa" class="qa" ${dataTransition}><div class="qa-wrap"><h1 class="qa-question">${q}</h1><p class="qa-answer fragment">${answer}</p></div></section>`;
+ });
+
+ eleventyConfig.setServerOptions({
+  showAllHosts: true
  });
 
  /* Environment

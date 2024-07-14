@@ -10,6 +10,73 @@
   margin-bottom: var(--m) !important;
 }
 
+.colored-list{
+  li{
+    margin-bottom: var(--xs);
+    margin-left: calc(var(--m) * 1);
+    &::before{
+      color: var(--mi-blau);
+      margin-left: calc(var(--m) * -1);
+      width: var(--m);
+      font-weight: var(--fw-bold);
+    }
+  }
+}
+
+/* Footer
+############################################################################ */
+
+.mi-slide{
+
+  .present{
+    position: relative;
+  }
+
+  footer{
+    position: fixed;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+    padding-left: var(--m);
+    padding-bottom: var(--m);
+    transform: scale(0);
+    transform-origin: bottom left;
+    z-index: 20;
+    line-height: var(--lh-normal);
+    transition: all 2s ease 2s;
+
+    li{
+      display: block;
+    }
+
+    &.is-active{
+      opacity: 1;
+      transform: scale(0.6);
+    }
+  }
+}
+
+/* Copy Button
+############################################################################ */
+
+.copy-button{
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  position: absolute;
+  top: var(--half);
+  left: var(--half);
+  opacity: 0.5;
+  transform: scale(0.8);
+  transition: all var(--tr-fast);
+
+  &:hover{
+    opacity: 1;
+    transform: scale(1);
+    cursor: pointer;
+  }
+}
+
 /* Utiliies
 ############################################################################ */
 

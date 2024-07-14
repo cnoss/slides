@@ -14,5 +14,8 @@ status: ok
 {% interlude "Was besagt das Client-Server-Modell?"%}
 {% interlude "Wie funktioniert das Request-Response-Modell?"%}
 {% interlude "Wie funktioniert ein Browser?" %}
+{% interlude "Was ist git?" %}
+{% interlude "Wer hat es gemacht?" %}
+{% interlude "Was ist der Unterschied zwischen git und github/ gitlab/ bitbucket?" %}
 {% interlude "Was fehlt?"%}
 

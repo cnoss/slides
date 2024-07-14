@@ -9,3 +9,17 @@
     opacity: 1;
   }
 }
+
+@keyframes slidein {
+  from {
+    bottom: calc(var(--xxl) * -1);
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+

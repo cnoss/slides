@@ -8,8 +8,7 @@ const colors = {
   'mi-gruen': '#00ad2f',
   'mi-lila': '#9313ce',
   'mi-black': '#231f20',
-  'mi-grau': '#aaa',
-  'mi-hellgrau': '#efefef',
+  'mi-grau': '#70AE11',
 };
 
 const bgColorToClass = {
@@ -19,7 +18,7 @@ const bgColorToClass = {
 };
 
 const insertColor = (string, colorClass)=>{
-  return string.replace(/\/\//g, "<span class="+colorClass+">//</span>", string);
+  return string; // .replace(/\/\//g, "<span class="+colorClass+">//</span>", string);
 }
 
 
@@ -42,18 +41,21 @@ const codeWraps = {
   shout(data, html) { return `<blockquote class="has-whitener">${data.content}<cite>${data.author}</cite>${html.src}</blockquote><p class="info is-passive">${data.info}</p>`; },
   statement(data, html) {
     const content = insertColor(data.content, "is-purple");
-    return `<div><h1>${data.title}</h1><div class="fragment">${content}</div></div>`;
+    return `<div class="main-content"><h1>${data.title}</h1><div class="fragment">${content}</div></div>`;
   },
   simple(data, html) {
     const content = insertColor(data.content, "is-purple");
     return `<div><h1>${data.title}</h1>${content}</div>`;
   },
   splitView(data, html) {
-    return `<div><h1>{data.title}</h1>${data.content} dddddd</div>`;
+    return `<div><h1>{data.title}</h1>${data.content}</div>`;
   },
-
   interlude(data, html) { return `<div class="is-fullscreen"><h1 class="title">${data.title}</h1><h2 class="subtitle js-delay">${data.subtitle}</h2></div>`; },
   outro(data, html) { return `<div class="is-fullscreen is-centered"><p>${data.content}</p>${outro}</div>`; },
+  code(data, html) { return `<div><h1>${data.title}</h1>${data.content}</div>${html.footer}`; },
+  codeSmall(data, html) { return `<div><h1>${data.title}</h1>${data.content}</div>${html.footer}`; },
+  embed(data, html) { return `<div><h1>${data.title}</h1><div class="iframe">${data.embedSrc}</div></div>${html.footer}`; },
+  wrap(data, html) { return `${data.content}${html.footer}`; },
 };
 
 const injectContent = (wrap, data, html) => wrap(data, html);
@@ -61,7 +63,9 @@ const injectContent = (wrap, data, html) => wrap(data, html);
 const wrapContentByType = (data, type) => {
   const html = { src: '' };
   if (data.src) { html.src = `<div class="src">${data.src}</div>`; }
-  const content = codeWraps[type] ? injectContent(codeWraps[type], data, html) : data.content;
+  html.footer = data.footer ? `<footer>${this.markdown(data.footer)}</footer>` : '';
+
+  const content = codeWraps[type] ? injectContent(codeWraps[type], data, html ) : data.content;
   return content;
 };
 
@@ -112,6 +116,7 @@ exports.render = function (data) {
     const additionalClasses = getAdditionalClasses(slide.data.additionalClasses);
     const content = wrapContentByType(slide.data, slideClass);
     const status = getStatus(slide.data.status);
+
     
     if(slide.data.status === 'hidden') return '';
     return `
@@ -120,6 +125,7 @@ exports.render = function (data) {
       ${content}
       ${status}
       ${backgroundImageCredits}
+
       </section>
     `;
   });
@@ -136,7 +142,7 @@ exports.render = function (data) {
       <link rel="icon" type="image/svg" href="${this.url('/assets/images/preview_black_24dp.svg')}">
   
       <!-- Theme used for syntax highlighted code -->
-      <link rel="stylesheet" href="${this.url('/reveal/plugin/highlight/monokai.css')}">
+      <link rel="stylesheet" href="${this.url('/reveal/plugin/highlight/github.css')}">
     </head>
     <body>
       <div class="reveal">
@@ -162,8 +168,19 @@ exports.render = function (data) {
           disableLayout: true,
           progress: true,
           backgroundTransition: 'zoom',
+          highlight: {
+            highlightOnLoad: false,
+          },
           // Learn about plugins: https://revealjs.com/plugins/
           plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+        }).then(() => {
+          const highlight = Reveal.getPlugin('highlight');
+          highlight.hljs.configure(
+            {
+              languages: ['javascript', 'css', 'html', 'bash', 'json', 'markdown', 'xml', 'yaml'],
+            }
+          );
+          highlight.hljs.highlightAll();
         });
       </script>
     </body>
