@@ -74,6 +74,8 @@ status: ok
 | [video](https://cnoss.github.io/slides/presentations/misc/demo/#/5) | Wrapper Folie für ein Video, welches dann via HTML eingebunden werden |
 | [statement](https://cnoss.github.io/slides/presentations/misc/demo/#/6) | Aussage mit Erklärung |
 | [shout](https://cnoss.github.io/slides/presentations/misc/demo/#/8) | Ausruf mit Autor und Erklärung auf Hintergrund |
+| code | Zeigt schön formatierten Code auf der ganzen Fensterbreite.  |
+| codeSmall | Zeigt schön formatierten Code so breit, wie der Code läuft.  |
 | wrap | Wrapper Folio für Shortcodes |
 | split | Bild links, Text rechts |
 | question | kein Beispiel parat :( |
@@ -146,14 +148,29 @@ Hier sind alle [Reveal.js Transitions](https://revealjs.com/transitions/) mögli
 {% fragment "<h2>Team</h2><p>Calvin Hinzer, Christian Hahn, Volker Schaefer, Christian Noss</p>" %}
 ```
 
+### SimpleText
+Erzeugt einen kompletten Screen. Headline kann auch `false` sein.
+```
+{% simpleText "Headline", "Text" %}
+```
+
 ### Question
+Erzeugt einen kompletten Screen.
 ```
 {% question "Was guckst Du?" %}
 ```
 
 ### Question and Answer
+Erzeugt einen kompletten Screen.
 ```
 {% qa "Was ist ein System?", "A group of things, pieces of equipment, etc. that are connected or work together.<br><small>Cambridge Dictionary</small>" %}
+```
+
+### CodeSmall
+Erzeugt einen kompletten Screen.
+```
+{% codeSmall "Title", "Text", "Code", "Sprache" %}
+{% codeSmall "Hello World", "kleines Beispiel", "<h1>Hello World</h1>", "html" %}
 ```
 
 ### Important
@@ -162,6 +179,7 @@ Hier sind alle [Reveal.js Transitions](https://revealjs.com/transitions/) mögli
 ```
 
 ### Interlude
+Erzeugt einen kompletten Screen.
 ```
 {% interlude "Lean back", "Lean forward"%}
 ```
@@ -177,8 +195,10 @@ Hier sind alle [Reveal.js Transitions](https://revealjs.com/transitions/) mögli
 ```
 
 ### Fullscreen Screenshot
+Erzeugt einen kompletten Screen.
 ```
 {% screenshotFs "./images/brain.jpg", '{"transition":"fade", "classes":"no-shadow", "width":"20%", "bu":"Davon muss ich mir erst mal ein Bild machen."}' %}
+```
 
 ### Statement
 ```
@@ -196,6 +216,7 @@ Hier sind alle [Reveal.js Transitions](https://revealjs.com/transitions/) mögli
 ### Bilder, Variante 1
 
 ```
+
 <section class="image is-fullscreen" data-background="./images/[src]">
   <div class="bu">
     <p>Viel zu tun</p>
@@ -203,6 +224,7 @@ Hier sind alle [Reveal.js Transitions](https://revealjs.com/transitions/) mögli
       <a href="[url]" target="_blank">Iwona Castiello d'Antonio</a> // <a href="[url]" target="_blank">Unsplash</a></p>
   </div>
 </section>
+
 ```
 
 ### Bilder, Variante 2
@@ -368,3 +390,28 @@ info: "Three studies were conducted to ascertain how quickly people form an opin
 Attention (web) designers: you have 50 milliseconds to make a good first impression!
 
 ```
+
+### Code & CodeSmall
+
+```
+---
+title: View Transitions
+layout: presentation.11ty.js
+slideClasses: codeSmall
+transition: fade
+status: ok
+---
+
+## Step 2
+Adding css-at-Rule. For a cross-document view transition to work, the current and destination documents of the navigation also need to be on the same origin […](https://developer.mozilla.org/en-US/docs/Web/CSS/@view-transition)
+
+
+<pre>
+<code>
+@view-transition {
+  navigation: auto;
+}
+</code>
+</pre>
+```
+
