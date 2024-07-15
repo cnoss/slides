@@ -1149,12 +1149,17 @@ a.is-black:hover {
 }
 .simple div ul li {
   display: block;
+  margin-left: var(--m);
+  line-height: var(--lh-tight);
+  margin-bottom: var(--xs);
 }
 .simple div ul li::before {
   content: "–";
   display: inline-block;
   padding-right: var(--half);
   margin-bottom: var(--quat);
+  width: var(--m);
+  margin-left: calc(var(--m) * -1);
 }
 .simple div h1 {
   padding: 0;
@@ -1174,7 +1179,7 @@ a.is-black:hover {
   margin-bottom: var(--xl);
   color: var(--darker);
   font-size: var(--l);
-  line-height: var(--lh-tight);
+  line-height: var(--lh-normal);
   padding-right: var(--s);
 }
 .simple div p + ul, .simple div + ul {

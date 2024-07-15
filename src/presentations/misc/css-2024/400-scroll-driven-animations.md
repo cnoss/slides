@@ -15,7 +15,7 @@ examples: |
   - [Reading Progress Indicator](https://scroll-driven-animations.style/demos/progress-bar/css/)
   - [Horizontal Scroll Section](https://scroll-driven-animations.style/demos/horizontal-section/css/)
   - [Image Reveal Effects](https://scroll-driven-animations.style/demos/image-reveal/css/)
-  - [Full-Height Cover Card to Fixed Header](https://scroll-driven-animations.style/demos/cover-to-fixed-header/css/)
+  
 
 advantages: |
   <ul class="colored-list">

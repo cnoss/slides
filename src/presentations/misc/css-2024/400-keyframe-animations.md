@@ -40,5 +40,5 @@ codeExample2: |
 
 {% interlude "CSS Animations" %}
 {% simpleText "CSS Animations", text1 %}
-{% codeSmall "CSS Animations", "Outline einer CSS Animation.", codeExample1, "css", "fade" %}
+{% codeSmall "CSS Animations", "Outline einer CSS Animation. [🛝](https://codepen.io/cnoss/pen/YzoXeXR)", codeExample1, "css", "fade" %}
 {% codeSmall "CSS Animations", "How to gain more control? [🛝](https://codepen.io/cnoss/pen/YzoXeXR)", codeExample2, "css", "fade" %}
