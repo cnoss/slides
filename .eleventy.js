@@ -72,6 +72,9 @@ module.exports = function (eleventyConfig) {
 
  // Copy asset images
  eleventyConfig.addPassthroughCopy({'src/assets/images': 'assets/images'});
+
+  // Copy asset icons
+  eleventyConfig.addPassthroughCopy({'src/assets/icons': 'assets/icons'});
   
  // Copy images
  eleventyConfig.addPassthroughCopy('src/presentations/**/images/*.{jpg,png,svg,jpeg, gif}');
@@ -84,6 +87,9 @@ module.exports = function (eleventyConfig) {
  // Copy Scripts
  eleventyConfig.addPassthroughCopy({'src/assets/scripts': 'assets/scripts'});
  eleventyConfig.addWatchTarget("./src/assets/scripts");
+
+ // Copy Manifest
+ eleventyConfig.addPassthroughCopy({'src/manifest.json': 'manifest.json'});
 
  /* Functions
  ########################################################################## */
@@ -154,7 +160,7 @@ module.exports = function (eleventyConfig) {
   const dataBackgroundTransition = propData && propData.backgroundTransition ? `data-background-transition="${propData.backgroundTransition}"` : '';
   const classes = propData && propData.classes ? propData.classes : '';
   const buCreditHtml = propData && propData.credit ? `<p class="credit">${propData.credit}</p>` : '';
-  const buHtml = propData && propData.bu ? `<div class="bu"><p>${insertMarkup(propData.bu)}</p></div>` : '';
+  const buHtml = propData && propData.bu ? `<div class="bu"><p>${insertMarkup(md.render(propData.bu))}</p></div>` : '';
   return `<section data-slide-shortcode-class="screenshot" class="image is-fullscreen ${classes}" data-background="${imgSrc}" ${dataTransition} ${dataBackgroundTransition}>${buHtml}</section>`;
  });
 
@@ -255,6 +261,7 @@ module.exports = function (eleventyConfig) {
  if (process.env.ELEVENTY_ENV === 'production') {
   eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
    if (outputPath.endsWith('.html')) {
+    return content;
     return minified = htmlmin.minify(content, {
      collapseInlineTagWhitespace: false,
      collapseWhitespace: true,

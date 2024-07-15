@@ -1,0 +1,25 @@
+{
+  "id": "cn-slides",
+  "name": "CN Slides",
+  "short_name": "Slides",
+  "start_url": "http://localhost:8080/",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "lang": "de-DE",
+  "orientation": "landscape",
+  "display": "standalone",
+  "icons": [
+    {
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "assets/icons/android-chrome-512x512.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "sizes": "512x512",
+      "src": "assets/icons/android-chrome-512x512.png",
+      "type": "image/png"
+    }
+  ]
+}

@@ -15,7 +15,7 @@ const addCopyToClipboard = () => {
     button.textContent = "assignment";
 
     button.addEventListener("click", (ev) => {
-      const text = codeBlock.textContent.replace(/assignment/, "");
+      const text = codeBlock.textContent.replace(/assignment/g, "");
       navigator.clipboard.writeText(text);
     });
     codeBlock.appendChild(button);
@@ -33,6 +33,10 @@ const reorderFooter = () => {
   if(!footer) return;
   
   presentChild.appendChild(footer);
+
+  const bu = presentChild.querySelector(".bu");
+  if(bu) return;
+
   footer.classList.add("is-active");
 }
 

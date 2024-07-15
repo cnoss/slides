@@ -7,6 +7,7 @@ exports.render = function (data) {
       ${this.meta()}
       <link rel="stylesheet" href="${this.url('/assets/main.css')}">
       <link rel="icon" type="image/svg" href="${this.url('/assets/images/preview_black_24dp.svg')}">
+      <link rel="manifest" href="${this.url('/manifest.json')}">
     </head>
     <body class="document">
       <main>
