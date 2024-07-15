@@ -1,0 +1,119 @@
+<!doctype html>
+  <html lang="de">
+    <head>
+      <title>View Transitions // Christian Noss</title>
+      <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="googlebot-news" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+      <link rel="stylesheet" href="/slides/reveal/dist/reset.css">
+      <link rel="stylesheet" href="/slides/reveal/dist/reveal.css">
+      <link rel="stylesheet" href="/slides/assets/main.css">
+     
+      <link rel="icon" type="image/svg" href="/slides/assets/images/preview_black_24dp.svg">
+  
+      <!-- Theme used for syntax highlighted code -->
+      <link rel="stylesheet" href="/slides/reveal/plugin/highlight/github.css">
+    </head>
+    <body>
+      <div class="reveal">
+        <div class="slides">
+          
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section data-slide-shortcode-class="interlude" data-background-color="#00ad2f" class="image screenshot interlude" ><div><h1 class="title">View Transitions API</h1><h2 class="subtitle js-delay"><p><a href="https://caniuse.com/?search=View%20Transitions%20API">Experimental Feature</a></p>
+</h2></div></section>
+<section data-slide-shortcode-class="simple-text" class="simple" >
+    <div><h1 class="title">View Transitions</h1><p>The View Transitions API provides a mechanism for easily creating animated transitions between different website views. This includes animating between DOM states in a single-page app (SPA), and <span class="fragment"><strong>animating the navigation between documents in a multi-page app (MPA)</strong>.</span><span class="fragment">🕺🏼🙌🏽</span></p>
+<p><span class="fragment">View transitions are a popular design choice for reducing users' cognitive load, helping them stay in context, and reducing perceived loading latency as they move between states or views of an application.</span></p>
+</div></section>
+<p><section data-transition="fade" data-slide-shortcode-class="codeSmall" class="codeSmall"><div><h1 class="title">View Transitions</h1><p><del>Step 1: Policy in allen HTML Dokumenten hinzufügen.</del> Deprecated 😱</p></p>
+<pre class="code-wrapper"><samp class="code"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;view-transition&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;same-origin&quot;</span> /&gt;</span>
+</samp></pre></div></section>
+<p><section data-transition="fade" data-slide-shortcode-class="codeSmall" class="codeSmall"><div><h1 class="title">View Transitions</h1><p>Adding css-at-Rule. For a cross-document view transition to work, the current and destination documents of the navigation also need to be on the same origin <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@view-transition">⎘</a></p></p>
+<pre class="code-wrapper"><samp class="code"><span class="hljs-keyword">@view-transition</span> {
+  navigation: auto; // <span class="hljs-selector-attr">[auto | none]</span>
+}
+</samp></pre></div></section>
+<p><section data-transition="fade" data-slide-shortcode-class="codeSmall" class="codeSmall"><div><h1 class="title">View Transitions</h1><p>Adding custom animation <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@view-transition">⎘</a></p></p>
+<pre class="code-wrapper"><samp class="code"><span class="hljs-keyword">@keyframes</span> move-out {
+  <span class="hljs-selector-tag">from</span> {
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateY</span>(<span class="hljs-number">0%</span>);
+  }
+  <span class="hljs-selector-tag">to</span> {
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateY</span>(-<span class="hljs-number">100%</span>);
+  }
+}
+<span class='hljs-break'>/* break */</span>
+<span class="hljs-keyword">@keyframes</span> move-in {
+  <span class="hljs-selector-tag">from</span> {
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateY</span>(<span class="hljs-number">100%</span>);
+  }
+  <span class="hljs-selector-tag">to</span> {
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateY</span>(<span class="hljs-number">0%</span>);
+  }
+}
+</samp></pre></div></section>
+<p><section data-transition="fade" data-slide-shortcode-class="codeSmall" class="codeSmall"><div><h1 class="title">View Transitions</h1><p>Apply the custom animation to the old and new page states <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition-old">⎘</a></p></p>
+<pre class="code-wrapper"><samp class="code">::<span class="hljs-built_in">view-transition-old</span>(root) {
+  <span class="hljs-attribute">animation-name</span>: move-out;
+  <span class="hljs-attribute">animation-duration</span>: <span class="hljs-number">0.4s</span>;
+  <span class="hljs-attribute">animation-timing-function</span>: ease-in;
+  <span class="hljs-attribute">animation-direction</span>: both;
+}
+<span class='hljs-break'>/* break */</span>
+::<span class="hljs-built_in">view-transition-new</span>(root) {
+  <span class="hljs-attribute">animation</span>: <span class="hljs-number">0.4s</span> ease-in both move-in;
+}
+</samp></pre></div></section>
+<section data-slide-shortcode-class="simple-text" class="simple" >
+    <div><h1 class="title">🥳</h1></div></section>
+<footer><ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API">View Transitions API, MDN</a></li>
+<li><a href="https://github.com/WICG/view-transitions/blob/main/explainer.md">Explainer Document, WICG</a></li>
+</ul>
+</footer>
+      
+      
+
+      </section>
+      
+        </div>
+      </div>
+      
+      <script src="/slides/reveal/dist/reveal.js"></script>
+      <script src="/slides/assets/scripts/libs/fittext.js"></script>
+      <script src="/slides/assets/scripts/main.js"></script>
+      <script src="/slides/reveal/plugin/notes/notes.js"></script>
+      <script src="/slides/reveal/plugin/markdown/markdown.js"></script>
+      <script src="/slides/reveal/plugin/highlight/highlight.js"></script>
+      <script src="/slides/reveal/plugin/zoom/zoom.js"></script>
+      <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+          hash: true, 
+          center: false,
+          disableLayout: true,
+          progress: true,
+          backgroundTransition: 'zoom',
+          highlight: {
+            highlightOnLoad: false,
+          },
+          // Learn about plugins: https://revealjs.com/plugins/
+          plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+        }).then(() => {
+          const highlight = Reveal.getPlugin('highlight');
+          highlight.hljs.configure(
+            {
+              languages: ['javascript', 'css', 'html', 'bash', 'json', 'markdown', 'xml', 'yaml'],
+            }
+          );
+          highlight.hljs.highlightAll();
+        });
+      </script>
+    </body>
+  </html>

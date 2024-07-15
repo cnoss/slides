@@ -1,0 +1,149 @@
+<!doctype html>
+  <html lang="de">
+    <head>
+      <title>CSS Scroll Driven Animations // Christian Noss</title>
+      <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="googlebot-news" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+      <link rel="stylesheet" href="/slides/reveal/dist/reset.css">
+      <link rel="stylesheet" href="/slides/reveal/dist/reveal.css">
+      <link rel="stylesheet" href="/slides/assets/main.css">
+     
+      <link rel="icon" type="image/svg" href="/slides/assets/images/preview_black_24dp.svg">
+  
+      <!-- Theme used for syntax highlighted code -->
+      <link rel="stylesheet" href="/slides/reveal/plugin/highlight/github.css">
+    </head>
+    <body>
+      <div class="reveal">
+        <div class="slides">
+          
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section data-slide-shortcode-class="interlude" data-background-color="#9313ce" class="image screenshot interlude" ><div><h1 class="title">Scroll-Driven Animations</h1><h2 class="subtitle js-delay"><p><a href="https://caniuse.com/?search=scroll-timeline">Experimental Feature</a></p>
+</h2></div></section>
+<section data-slide-shortcode-class="simple-text" class="simple" >
+    <div><h1 class="title">Scroll-Driven Animations</h1><p>The CSS scroll-driven animations module allows you to <strong>animate property values</strong> based on a progression <strong>along a scroll-based timeline</strong> instead of the default time-based document timeline. This means that you can <strong>animate an element by scrolling a scrollable element</strong>, rather than just by the passing of time.</p>
+<p>It is built on top of CSS animations module and Web Animations API.</p>
+</div></section>
+<section data-slide-shortcode-class="simple-text" class="simple" >
+    <div><h1 class="title">Scroll-Driven Animations Examples</h1><p>All taken from <a href="https://www.bram.us">Bramus</a> Demo.</p>
+<ul>
+<li><a href="https://scroll-driven-animations.style/demos/progress-bar/css/">Reading Progress Indicator</a></li>
+<li><a href="https://scroll-driven-animations.style/demos/horizontal-section/css/">Horizontal Scroll Section</a></li>
+<li><a href="https://scroll-driven-animations.style/demos/image-reveal/css/">Image Reveal Effects</a></li>
+<li><a href="https://scroll-driven-animations.style/demos/cover-to-fixed-header/css/">Full-Height Cover Card to Fixed Header</a></li>
+</ul>
+</div></section>
+<section data-slide-shortcode-class="simple-text" class="simple" >
+    <div><h1 class="title">Advantages of SDA</h1><ul class="colored-list">
+  <li class="fragment">They're easy to use for simple animations; you can create them without even having to know JavaScript.</li>
+  <li class="fragment">The animations run well, even under moderate system load. Simple animations can often perform poorly in JavaScript. The rendering engine can use frame-skipping and other techniques to keep the performance as smooth as possible.</li>
+  <li class="fragment">Letting the browser control the animation sequence lets the browser optimize performance and efficiency by, for example, reducing the update frequency of animations running in tabs that aren't currently visible.</li>
+</ul>
+</div></section>
+<p><section data-transition="fade" data-slide-shortcode-class="codeSmall" class="codeSmall"><div><h1 class="title">Scroll-Driven Animations</h1><p>Outline einer Scroll-Driven Animation als Scroll-Timeline <a href="https://codepen.io/cnoss/pen/VwJLxNB">🛝</a> am Beispiel eines <a href="https://scroll-driven-animations.style/demos/progress-bar/css/">Reading Process Indicators</a>. Der <a href="https://scroll-driven-animations.style/tools/scroll-timeline/progress/">Scroll Timeline Progress Visualizer</a> und die <a href="https://scroll-driven-animations.style/#debugger">Chrome Extension</a> unterstützen beim Verständnis.</p></p>
+<div class="code-columns"><pre class="code-wrapper"><samp class="code"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;progress&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  …
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</samp></pre><pre class="code-wrapper"><samp class="code"><span class="hljs-selector-tag">html</span>{
+  scroll-timeline-name: --page-scroll;
+}
+<span class='hljs-break'>/* break */</span>
+<span class="hljs-keyword">@keyframes</span> grow-progress {  
+  <span class="hljs-selector-tag">from</span> { <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scaleX</span>(<span class="hljs-number">0</span>); }
+  <span class="hljs-selector-tag">to</span> { <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scaleX</span>(<span class="hljs-number">1</span>); }
+}
+<span class='hljs-break'>/* break */</span>
+<span class="hljs-selector-id">#progress</span> {
+  <span class="hljs-comment">/* Styling Stuff */</span>
+  <span class="hljs-attribute">background-color</span>: red;
+  <span class="hljs-attribute">position</span>: fixed;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">transform-origin</span>: <span class="hljs-number">0</span> <span class="hljs-number">50%</span>;
+  <span class='hljs-break'>/* break */</span>
+  <span class="hljs-comment">/* Animation Stuff */</span>
+  <span class="hljs-attribute">animation</span>-timeline: --page-scroll;
+  <span class="hljs-attribute">animation-duration</span>: auto;
+  <span class="hljs-attribute">animation-timing-function</span>: linear;
+  <span class="hljs-attribute">animation-name</span>: grow-progress;
+}
+</samp></pre></div></div></section>
+<p><section data-transition="slide" data-slide-shortcode-class="codeSmall" class="codeSmall"><div><h1 class="title">Scroll-Driven Animations</h1><p>Outline einer Scroll-Driven Animation als View-Timeline <a href="https://codepen.io/cnoss/pen/QWXbVRw">🛝</a>. Der <a href="https://scroll-driven-animations.style/tools/view-timeline/ranges/#range-start-name=cover&amp;range-start-percentage=0&amp;range-end-name=cover&amp;range-end-percentage=100&amp;view-timeline-axis=block&amp;view-timeline-inset=0&amp;subject-size=smaller&amp;subject-animation=reveal&amp;interactivity=clicktodrag&amp;show-areas=yes&amp;show-fromto=yes&amp;show-labels=yes">View Timeline Ranges Visualizer</a> unterstützt beim Verständnis.</p></p>
+<div class="code-columns"><pre class="code-wrapper"><samp class="code"><span class="hljs-keyword">@keyframes</span> scale-in {
+  <span class="hljs-selector-tag">from</span> {
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scale</span>(<span class="hljs-number">0</span>);
+  }
+  <span class="hljs-selector-tag">to</span> {
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>; 
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scale</span>(<span class="hljs-number">1</span>);
+  }
+}
+</samp></pre><pre class="code-wrapper"><samp class="code"><span class="hljs-selector-class">.scale-in</span> {
+  <span class="hljs-comment">/* Create View Timeline */</span>
+  view-timeline-name: --appear-in-viewport;
+  <span class='hljs-break'>/* break */</span>
+  <span class="hljs-comment">/* Attach animation, linked to the  View Timeline */</span>
+  <span class="hljs-attribute">animation-name</span>: scale-in;
+  <span class="hljs-attribute">animation-timing-function</span>: linear;
+  <span class="hljs-attribute">animation</span>-timeline: --appear-in-viewport;
+  <span class='hljs-break'>/* break */</span>  
+  <span class="hljs-comment">/* Tweak range when effect should run */</span>
+  <span class="hljs-attribute">animation</span>-range: entry <span class="hljs-number">25%</span> cover <span class="hljs-number">50%</span>;
+}
+</samp></pre></div></div></section>
+<footer><ul>
+<li><a href="https://scroll-driven-animations.style/">Scroll Driven Animations, Bramus Demo</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations">CSS scroll-driven animations, MDN</a></li>
+</ul>
+</footer>
+      
+      
+
+      </section>
+      
+        </div>
+      </div>
+      
+      <script src="/slides/reveal/dist/reveal.js"></script>
+      <script src="/slides/assets/scripts/libs/fittext.js"></script>
+      <script src="/slides/assets/scripts/main.js"></script>
+      <script src="/slides/reveal/plugin/notes/notes.js"></script>
+      <script src="/slides/reveal/plugin/markdown/markdown.js"></script>
+      <script src="/slides/reveal/plugin/highlight/highlight.js"></script>
+      <script src="/slides/reveal/plugin/zoom/zoom.js"></script>
+      <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+          hash: true, 
+          center: false,
+          disableLayout: true,
+          progress: true,
+          backgroundTransition: 'zoom',
+          highlight: {
+            highlightOnLoad: false,
+          },
+          // Learn about plugins: https://revealjs.com/plugins/
+          plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+        }).then(() => {
+          const highlight = Reveal.getPlugin('highlight');
+          highlight.hljs.configure(
+            {
+              languages: ['javascript', 'css', 'html', 'bash', 'json', 'markdown', 'xml', 'yaml'],
+            }
+          );
+          highlight.hljs.highlightAll();
+        });
+      </script>
+    </body>
+  </html>
