@@ -35,7 +35,11 @@ const reorderFooter = () => {
   presentChild.appendChild(footer);
 
   const bu = presentChild.querySelector(".bu");
-  if(bu) return;
+  
+  if(bu){
+    footer.classList.remove("is-active");
+    return;
+  }
 
   footer.classList.add("is-active");
 }
