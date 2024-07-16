@@ -15,6 +15,6 @@ text: |
 
 {% interlude "Wie geht's weiter?", "" %}
 {% simpleText "Diggin Deeper", text %}
-{% interlude "🔨", "Der Hammer hilft nicht immer." %}
+{% interlude "🧰", "Gut gepackte Werkzeugkiste lohnt sich!" %}
 
 

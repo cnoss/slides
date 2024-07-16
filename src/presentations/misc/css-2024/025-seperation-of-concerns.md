@@ -19,6 +19,7 @@ embrace: |
 {% statement "Greenfield vs. Brownfield", "oder: Woran erkenne ich ein erfolgreiches Web Projekt?" %}
 {% simpleText "The Lean Web", leanWeb %}
 {% simpleText "Embrace the Platform", embrace %}
+{% simpleText "Web Standards", "Features, die einmal im Browser implementiert sind bleiben i.d.R. drin." %}
 
 
 

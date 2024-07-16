@@ -18,6 +18,7 @@ disclaimer: |
   <div class="fragment">Die meisten Features hab ich noch nie in der Hand gehabt. 😱</div>
 ---
 
+{% interlude "Checkin?", "", '{"transition":"none"}'  %}
 {% interlude "Wo will ich hin?", "", '{"transition":"none"}'  %}
 {% simpleText "Ziele des Workshops", ziele, '{"transition":"none"}'  %}
 {% simpleText "Disclaimer ⚠️", disclaimer, '{"transition":"none"}'  %}
