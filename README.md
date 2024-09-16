@@ -2,6 +2,8 @@
 
 HTML Slidedecks für meine Vorlesungen. Das Projekt nutzt den Static Page Generator [11ty](https://www.11ty.dev/docs/) und [reveal.js](https://revealjs.com/).
 
+[Figma für Montagen](https://www.figma.com/design/xXM2JmJMAWsqoOJQyxqaqa/Slides?m=auto&t=ZhJbsnkuKr5jUWYC-1)
+
 ## Ordnerstruktur
 
 ### `/docs`
