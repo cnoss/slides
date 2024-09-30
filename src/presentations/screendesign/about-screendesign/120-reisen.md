@@ -2,7 +2,7 @@
 title: Identität // Reisen
 layout: presentation.11ty.js
 slideClasses: images
-status: ok
+status: hidden
 ---
 
 {% interlude "Wenn man eine Reise tut", "dann hat wan viel zu wählen."%}
