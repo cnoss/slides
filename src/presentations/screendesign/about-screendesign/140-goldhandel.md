@@ -2,7 +2,7 @@
 title: Identität // Goldhandel
 layout: presentation.11ty.js
 slideClasses: images
-status: ok
+status: hidden
 ---
 
 {% interlude "Goldhandel"%}

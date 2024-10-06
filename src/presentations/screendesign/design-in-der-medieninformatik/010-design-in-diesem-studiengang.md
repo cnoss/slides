@@ -5,6 +5,11 @@ slideClasses: simple
 status: ok
 ---
 
-{% fragment "<p>Absolventen der Medieninformatik <strong>analysieren, realisieren, betreiben</strong> und <strong>evaluieren informationstechnische Prozesse</strong> und <strong>Systeme</strong> zur Gestaltung, Produktion, Bearbeitung, Distribution und Nutzung <strong>medienbasierter Informationen.</strong></p>" %}
-{% fragment "<p>Das Studium der Medieninformatik zielt somit im Kern auf die Vermittlung entsprechender Methoden, Techniken und Denkweisen der Informatik. <strong>Absolvent*innen</strong> der Medieninformatik <strong>arbeiten</strong> dabei vorwiegend in Teams und müssen dort ihre erworbenen Kompetenzen einbringen können – hier ist <strong>Interdisziplinarität</strong> gefragt, erwünscht und gefordert. Auch darauf bereitet das Studium der Medieninformatik vor: es <strong>vermittelt Sichtweisen</strong> und Techniken aus verschiedenen Fachgebieten, von Computergrafik über Mensch-Computer-Interaktion bis <strong>Videoproduktion,</strong> von <strong>Kommunikationsdesign</strong> über Programmentwicklung bis Marketing.
-</p>" %}
+{% fragment "<p>Absolventen der Medieninformatik <strong>konzipieren</strong> und <strong>explorieren</strong> neue digitale Medien und interaktive digitale Produkte, <strong>implementieren</strong> diese in Hard- und Software, <strong>treiben</strong> interdisziplinäre Entwicklungsprozesse voran, und <strong>analysieren</strong> und <strong>evaluieren</strong> deren Nutzung.</p>" %}
+
+
+
+{% fragment '<p>Im Handlungsfeld <a href="https://medieninformatik.th-koeln.de//mi-5.0/handlungsfelder/#designing-for-user-experiences">Designing for User Experiences</a> gestalten Medieninformatiker&#42;innen digitale Anwendungen und deren Einbettung in Ökosysteme von Unternehmen oder Institutionen. Sie analysieren <strong>Nutzungskontexte</strong>, führen Benutzerforschung durch, entwickeln Interaktionskonzepte, Prototypen und Wireframes und arbeiten eng mit Entwickler&#42;innen zusammen. Ziel ist es, <strong>funktionale, ästhetische, inklusive</strong> und <strong>nachhaltige</strong> Nutzungserlebnisse zu schaffen. Dabei werden Methoden aus Design, Mensch-Computer-Interaktion und Design Thinking angewandt. Durch fortlaufende Evaluationen und Anpassungen werden Lösungen auf die <strong>langfristigen Bedürfnisse</strong> der Nutzer&#42;innen abgestimmt, um eine effiziente, zugängliche und positive Interaktion zu gewährleisten.
+</p>' %}
+
+
