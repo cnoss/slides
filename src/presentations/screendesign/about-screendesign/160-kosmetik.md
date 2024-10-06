@@ -6,4 +6,5 @@ status: ok
 ---
 
 {% interlude "Kosmetik"%}
-# add screenshots
+{% screenshot "./images/identitaet-kosmetik-2.png", '{"transition":"fade"}' %}
+{% screenshot "./images/identitaet-kosmetik-1.png", '{"transition":"fade"}' %}
