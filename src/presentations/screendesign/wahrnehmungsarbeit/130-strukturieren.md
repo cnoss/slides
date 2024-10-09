@@ -7,4 +7,4 @@ status: ok
 transition: slide
 ---
 
-Muster bilden … wie gehts das? Was können wir zusammen fassen? Wie machen wir das?
+Muster bilden … wie geht das? Was können wir zusammenfassen? Wie machen wir das?
