@@ -2,7 +2,7 @@
 title: Take Aways
 layout: presentation.11ty.js
 slideClasses: simple
-status: ok
+status: hidden
 ---
  
 Nehmen Sie ein DIN A4 Blatt, falten Sie es mittig über die lange Seite, so dass ein Seitenverhältnis im gefalteten Zustand von 105x297mm entsteht. Nutzen Sie das Resultat hochkant. Platzieren Sie oben eine kleine, einfache Portraitskizze von sich, notieren Sie darunter (in Ihrer allerschönsten Handschrift!) folgende Angaben:
