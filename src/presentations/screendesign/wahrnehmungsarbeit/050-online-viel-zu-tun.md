@@ -7,11 +7,11 @@ status: ok
 
 <section class="image screenshot">
   <figure>
-    <img src="./images/messy-website.jpg">
+    <img src="./images/belladesolo.png">
     <figcaption class="bu">
       <p>Viel zu tun</p>
       <p class="credit">
-        <a href="https://www.arngren.net/" target="_blank">Arngren Electronics</a>
+        <a href="https://www.bellads.info/" target="_blank">Bella De Soto</a>
       </p> 
     </figcaption>
   </figure>
