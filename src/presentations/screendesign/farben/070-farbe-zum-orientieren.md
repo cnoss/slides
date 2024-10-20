@@ -19,44 +19,11 @@ transition: none
   </figure>
 </section>
 
-{% screenshot "./images/orientierung/kabel-01.png", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/orientierung/krankenhaus-01.jpg", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":"Farbe zum Orientieren"}' %}
 
+{% screenshot "./images/orientierung/anatomie-01.jpg", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":"Farbe zum Orientieren"}' %}
 
-<section class="image screenshot no-shadow">
-  <figure>
-    <img src="./images/orientierung/green-peace-energy-01.png">
-    <figcaption class="bu">
-      <p>Farbe zum Orientieren</p>
-      <p class="credit">
-        <a href="https://green-planet-energy.de/" target="_blank">Green Planet Energy</a>
-      </p> 
-    </figcaption>
-  </figure>
-</section>
-
-<section class="image screenshot no-shadow">
-  <figure>
-    <img src="./images/orientierung/green-peace-energy-02.png">
-    <figcaption class="bu">
-      <p>Farbe zum Orientieren</p>
-      <p class="credit">
-        <a href="https://green-planet-energy.de/" target="_blank">Green Planet Energy</a>
-      </p> 
-    </figcaption>
-  </figure>
-</section>
-
-<section class="image screenshot no-shadow">
-  <figure>
-    <img src="./images/orientierung/green-peace-energy-03.png">
-    <figcaption class="bu">
-      <p>Farbe zum Orientieren</p>
-      <p class="credit">
-        <a href="https://green-planet-energy.de/" target="_blank">Green Planet Energy</a>
-      </p> 
-    </figcaption>
-  </figure>
-</section>
+{% screenshot "./images/orientierung/kabel-01.png", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":"Farbe zum Orientieren"}' %}
 
 <section class="image screenshot no-shadow">
   <figure>

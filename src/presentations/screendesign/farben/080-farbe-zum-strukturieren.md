@@ -45,25 +45,25 @@ transition: none
   </figure>
 </section>
 
-<section class="image screenshot no-shadow">
+<section class="image screenshot shadow">
   <figure>
-    <img src="./images/strukturierung/strukturieren-05.png">
+    <img src="./images/strukturierung/strukturieren-08.png">
     <figcaption class="bu">
       <p>Farbe zum Strukturieren</p>
       <p class="credit">
-        <a href="https://www.mskgent.be/" target="_blank">Audi</a>
+        <a href="https://mailchimp.com/de/" target="_blank">Mailchimp</a>
       </p> 
     </figcaption>
   </figure>
 </section>
 
-<section class="image screenshot no-shadow">
+<section class="image screenshot shadow">
   <figure>
-    <img src="./images/strukturierung/strukturieren-06.png">
+    <img src="./images/strukturierung/strukturieren-09.png">
     <figcaption class="bu">
       <p>Farbe zum Strukturieren</p>
       <p class="credit">
-        <a href="https://www.audi.de/de/brand/de.html" target="_blank">Merten</a>
+        <a href="https://www.explicatis.com" target="_blank">Explicatis</a>
       </p> 
     </figcaption>
   </figure>

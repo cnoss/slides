@@ -93,17 +93,17 @@ transition: none
 
 <section class="image screenshot">
   <figure>
-    <img src="./images/kontraste/farbe-an-sich-kontrast-04.png">
+    <img src="./images/kontraste/farbe-an-sich-kontrast-07.png">
     <figcaption class="bu">
       <p>Farbe-an-sich Kontrast</p>
       <p class="credit">
-        <a href="https://www.kika.de/" target="_blank">Kika</a>
+        <a href="https://www.nick.de" target="_blank">Nickelodeon</a>
       </p> 
     </figcaption>
   </figure>
 </section>
 
-{% screenshot "./images/kontraste/farbe-an-sich-kontrast-05.png", '{"transition":"slide", "classes":"no-shadow", "width":"auto", "bu":"Farbe-an-sich Kontrast"}' %}
+{% screenshot "./images/kontraste/farbe-an-sich-kontrast-08.jpg", '{"transition":"slide", "classes":"no-shadow", "width":"auto", "bu":"Farbe-an-sich Kontrast"}' %}
 
 <section class="image screenshot">
   <figure>
@@ -197,7 +197,7 @@ transition: none
   </figure>
 </section>
 
-{% screenshot "./images/kontraste/bunt-unbunt-kontrast-06.png", '{"transition":"slide", "classes":"screenshot", "width":"auto", "bu":"Bunt-Unbunt Kontrast"}' %}
+<!-- {% screenshot "./images/kontraste/bunt-unbunt-kontrast-06.png", '{"transition":"slide", "classes":"screenshot", "width":"auto", "bu":"Bunt-Unbunt Kontrast"}' %} -->
 
 {% screenshot "./images/kontraste/bunt-unbunt-kontrast-07.png", '{"transition":"slide", "classes":"screenshot", "width":"auto", "bu":"Bunt-Unbunt Kontrast"}' %}
 
@@ -303,8 +303,8 @@ transition: none
 <section class="simple">
   <figure>
     <p class="list">Dieselbe Farbe wirkt auf dunklem Hintergrund leuchtender.</p>
-    <p class="list">Liegen benachbarte Farben nahe bei einander, so schwächen sie sich ab.</p>
-    <p class="list">Treffen Komplementärfarben eng bei einander, so verstärken sie sich gegenseitig.</p>
+    <p class="list">Liegen benachbarte Farben nahe beieinander, so schwächen sie sich ab.</p>
+    <p class="list">Treffen Komplementärfarben aufeinander, so verstärken sie sich gegenseitig.</p>
     <p class="list">Bei zu kleinem Helligkeitsunterschied entsteht ein Flimmern.</p>  
   </figure>
 </section>

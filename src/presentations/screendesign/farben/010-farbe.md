@@ -13,6 +13,10 @@ transition: none
 
 {% screenshot "./images/farbe/corporate-color-04.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":"Corporate Color"}' %}
 
+{% screenshot "./images/farbe/corporate-color-intellij.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":"Corporate Color"}' %}
+
+{% screenshot "./images/farbe/corporate-color-tiktok.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":"Corporate Color"}' %}
+
 {% screenshot "./images/farbe/der-gleiche-farbwert.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":"Der gleiche Farbwert"}' %}
 
 {% screenshot "./images/farbe/verlaeufe-01.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":"Verläufe"}' %}

@@ -13,6 +13,8 @@ transition: none
 
 {% screenshot "./images/akzentuierung/akzentuieren-03.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":"Farbe zum Akzentuieren"}' %}
 
+{% screenshot "./images/akzentuierung/akzentuieren-06.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":"Farbe zum Akzentuieren"}' %}
+
 
 <section class="image screenshot no-shadow">
   <figure>
@@ -26,14 +28,3 @@ transition: none
   </figure>
 </section>
 
-<section class="image screenshot no-shadow">
-  <figure>
-    <img src="./images/akzentuierung/akzentuieren-04.png">
-    <figcaption class="bu">
-      <p>Farbe zum Akzentuieren</p>
-      <p class="credit">
-        <a href="https://nachdemfilm.de/" target="_blank">Nach dem Film</a>
-      </p> 
-    </figcaption>
-  </figure>
-</section>
