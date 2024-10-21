@@ -9,14 +9,11 @@ transition: zoom
 {% screenshot "./images/bastelshop-pixeled.png", '{"transition":"fade", "width":"100%", "bu":"Unternehmensgegenstand?"}' %}
 {% screenshot "./images/bastelshop.png", '{"transition":"fade", "width":"100%", "bu":"Unternehmensgegenstand?"}' %}
 
-{% screenshot "./images/relaxguide-pixeled.png", '{"transition":"fade", "width":"100%", "bu":"Unternehmensgegenstand?"}' %}
-{% screenshot "./images/relaxguide.png", '{"transition":"fade", "width":"100%", "bu":"Unternehmensgegenstand?"}' %}
-
-{% screenshot "./images/sportnutrition-pixeled.png", '{"transition":"fade", "width":"100%", "bu":"Unternehmensgegenstand?"}' %}
-{% screenshot "./images/sportnutrition.png", '{"transition":"fade", "width":"100%", "bu":"Unternehmensgegenstand?"}' %}
+{% screenshot "./images/kicker-pixeled.png", '{"transition":"fade", "width":"100%", "bu":"Unternehmensgegenstand?"}' %}
+{% screenshot "./images/kicker.png", '{"transition":"fade", "width":"100%", "bu":"Unternehmensgegenstand?"}' %}
 
 {% screenshot "./images/gartenbau-pixeled.png", '{"transition":"fade", "width":"100%", "bu":"Unternehmensgegenstand?"}' %}
 {% screenshot "./images/gartenbau.png", '{"transition":"fade", "width":"100%", "bu":"Unternehmensgegenstand?"}' %}
 
-{% screenshot "./images/hochzeitsplanung-pixeled.png", '{"transition":"fade", "width":"100%", "bu":"Unternehmensgegenstand?"}' %}
-{% screenshot "./images/hochzeitsplanung.png", '{"transition":"fade", "width":"100%", "bu":"Unternehmensgegenstand?"}' %}
+{% screenshot "./images/boerse-pixeled.png", '{"transition":"fade", "width":"100%", "bu":"Unternehmensgegenstand?"}' %}
+{% screenshot "./images/boerse.png", '{"transition":"fade", "width":"100%", "bu":"Unternehmensgegenstand?"}' %}

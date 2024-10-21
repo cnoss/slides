@@ -10,25 +10,21 @@ transition: none
 {% screenshot "./images/farbwirkung/farbklimata-01.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":"Farbklimata"}' %}
 {% screenshot "./images/farbwirkung/farbklimata-02.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":"Farbklimata"}' %}
 
-{% screenshot "./images/farbwirkung/pixel-01-a.png", '{"transition":"fade", "classes":"screenshot", 
+{% screenshot "./images/farbwirkung/pixel-06-a.png", '{"transition":"fade", "classes":"screenshot", 
 "width":"auto", "bu":""}' %}
-{% screenshot "./images/farbwirkung/pixel-01-b.png", '{"transition":"fade", "classes":"screenshot", 
+{% screenshot "./images/farbwirkung/pixel-06-b.png", '{"transition":"fade", "classes":"screenshot", 
 "width":"auto", "bu":""}' %}
-{% screenshot "./images/farbwirkung/pixel-02-a.png", '{"transition":"fade", "classes":"screenshot", 
+{% screenshot "./images/farbwirkung/pixel-07-a.png", '{"transition":"fade", "classes":"screenshot", 
 "width":"auto", "bu":""}' %}
-{% screenshot "./images/farbwirkung/pixel-02-b.png", '{"transition":"fade", "classes":"screenshot", 
+{% screenshot "./images/farbwirkung/pixel-07-b.png", '{"transition":"fade", "classes":"screenshot", 
 "width":"auto", "bu":""}' %}
-{% screenshot "./images/farbwirkung/pixel-03-a.png", '{"transition":"fade", "classes":"screenshot", 
+{% screenshot "./images/farbwirkung/pixel-08-a.png", '{"transition":"fade", "classes":"screenshot", 
 "width":"auto", "bu":""}' %}
-{% screenshot "./images/farbwirkung/pixel-03-b.png", '{"transition":"fade", "classes":"screenshot", 
+{% screenshot "./images/farbwirkung/pixel-08-b.png", '{"transition":"fade", "classes":"screenshot", 
 "width":"auto", "bu":""}' %}
-{% screenshot "./images/farbwirkung/pixel-04-a.png", '{"transition":"fade", "classes":"screenshot", 
+{% screenshot "./images/farbwirkung/pixel-09-a.png", '{"transition":"fade", "classes":"screenshot", 
 "width":"auto", "bu":""}' %}
-{% screenshot "./images/farbwirkung/pixel-04-b.png", '{"transition":"fade", "classes":"screenshot", 
-"width":"auto", "bu":""}' %}
-{% screenshot "./images/farbwirkung/pixel-05-a.png", '{"transition":"fade", "classes":"screenshot", 
-"width":"auto", "bu":""}' %}
-{% screenshot "./images/farbwirkung/pixel-05-b.png", '{"transition":"fade", "classes":"screenshot", 
+{% screenshot "./images/farbwirkung/pixel-09-b.png", '{"transition":"fade", "classes":"screenshot", 
 "width":"auto", "bu":""}' %}
 
 <section class="screenshot" data-background="./images/farbwirkung/blau-zitat.png">
