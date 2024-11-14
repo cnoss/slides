@@ -10,7 +10,6 @@ transition: fade
  
 <p class="list">Position</p>
 <p class="list">Anzahl</p>
-<p class="list">Tonwert</p>
 <p class="list">Farbe</p>
 <p class="list">Transparenz</p>
 {% fragment '<p class="list">Länge</p>' %}
