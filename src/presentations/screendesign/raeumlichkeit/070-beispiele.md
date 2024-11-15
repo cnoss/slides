@@ -16,7 +16,7 @@ status: ok
 {% screenshot "./images/audi.jpg", '{"transition":"convex", "bu":"Welche Regeln werden hier genutzt?"}' %}
 
 {% screenshot "./images/notice-2.jpg", '{"transition":"convex", "classes": "no-shadow" }' %}
-{% screenshot "./images/notice-1.jpg", '{"transition":"convex", "classes": "no-shadow" }' %}
+{% screenshot "./images/notice-1.jpg", '{"transition":"fade", "classes": "no-shadow" }' %}
 
 {% screenshot "./images/visual-h.jpg", '{"transition":"convex", "bu":"Welche Regeln werden hier genutzt?"}' %}
 {% screenshot "./images/visual-hierarchy.jpg", '{"transition":"convex", "bu":"Welche Regeln werden hier genutzt?"}' %}
