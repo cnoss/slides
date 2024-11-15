@@ -6,7 +6,7 @@ status: ok
 
 ---
 
-{% screenshot "./images/playmobil-edit-01.jpg", '{"transition":"fade", "classes":"no-shadow", "bu" : "Mit zunehmendem Abstand erscheinen uns Dinge … "}' %}
-{% screenshot "./images/playmobil-edit-02.jpg", '{"transition":"fade", "classes":"no-shadow", "bu" : "kleiner … "}' %}
-{% screenshot "./images/playmobil-edit-03.jpg", '{"transition":"fade", "classes":"no-shadow", "bu" : "mit weniger Kontrast … "}' %}
-{% screenshot "./images/playmobil-edit-04.jpg", '{"transition":"fade", "classes":"no-shadow", "bu" : "mit weniger gesättigten Farben. "}' %}
+{% screenshot "./images/playmobil-edit-01.png", '{"transition":"fade", "classes":"no-shadow", "bu" : "Mit zunehmendem Abstand erscheinen uns Dinge … "}' %}
+{% screenshot "./images/playmobil-edit-02.png", '{"transition":"fade", "classes":"no-shadow", "bu" : "kleiner … "}' %}
+{% screenshot "./images/playmobil-edit-03.png", '{"transition":"fade", "classes":"no-shadow", "bu" : "mit weniger Kontrast … "}' %}
+{% screenshot "./images/playmobil-edit-04.png", '{"transition":"fade", "classes":"no-shadow", "bu" : "mit weniger gesättigten Farben. "}' %}

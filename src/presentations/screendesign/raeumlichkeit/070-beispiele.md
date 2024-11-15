@@ -11,8 +11,8 @@ status: ok
 {% screenshot "./images/arte.jpg", '{"transition":"convex", "bu":"Welche Regeln werden hier genutzt?"}' %}
 {% screenshot "./images/fhd.jpg", '{"transition":"convex", "bu":"Welche Regeln werden hier genutzt?"}' %}
 {% screenshot "./images/kalender.jpg", '{"transition":"convex", "bu":"Welche Regeln werden hier genutzt?"}' %}
-{% screenshot "./images/wii.jpg", '{"transition":"convex", "bu":"Welche Regeln werden hier genutzt?"}' %}
-{% screenshot "./images/zdf.jpg", '{"transition":"convex", "bu":"Welche Regeln werden hier genutzt?"}' %}
+{% screenshot "./images/steam.png", '{"transition":"convex", "bu":"Welche Regeln werden hier genutzt?"}' %}
+{% screenshot "./images/cleo.png", '{"transition":"convex", "bu":"Welche Regeln werden hier genutzt?"}' %}
 {% screenshot "./images/audi.jpg", '{"transition":"convex", "bu":"Welche Regeln werden hier genutzt?"}' %}
 
 {% screenshot "./images/notice-2.jpg", '{"transition":"convex", "classes": "no-shadow" }' %}
