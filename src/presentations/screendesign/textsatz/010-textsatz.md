@@ -45,7 +45,7 @@ status: ok
       {% fragment "<p class=\"list\">Ziel bei Mengentexten ist die Wirkung als möglichst <strong>gleichmäßige Graufläche</strong></p>" %}
       {% fragment "<p class=\"list\">Buchstabenabstand <strong>&lt;
 </strong> Wortabstand <strong>&lt;</strong> Zeilenabstand <strong>&lt;</strong> Spaltenabstand</p>" %}
-      {% fragment "<p class=\"list\">Spatonierung sollte bei sehr <strong>großen</strong> und sehr<strong>kleinen</strong> Schriftgraden <strong>angepasst</strong> werden: kleine Schriften (&lt; 9pt) benötigen eine größere Spationierung, große Schriften &gt; 16pt eine kleinere Spatonierung. </p>" %}
+      {% fragment "<p class=\"list\">Spatonierung sollte bei sehr <strong>großen</strong> und sehr <strong>kleinen</strong> Schriftgraden <strong>angepasst</strong> werden: kleine Schriften (&lt; 9pt) benötigen eine größere Spationierung, große Schriften &gt; 16pt eine kleinere Spatonierung. </p>" %}
     </div>
 </section>
 
@@ -80,7 +80,10 @@ status: ok
 {% screenshot "./images/beispiel-01.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
 {% screenshot "./images/beispiel-02.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"https://type.method.ac/"}' %}
 {% screenshot "./images/beispiel-03.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"https://shape.method.ac/"}' %}
-{% screenshot "./images/beispiel-04.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"https://typewar.com/"}' %}
 {% screenshot "./images/beispiel-05.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"https://tothepoint.co.uk/"}' %}
-{% screenshot "./images/beispiel-06.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"http://typeconnection.com/"}' %}
 {% screenshot "./images/beispiel-07.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"https://fathom.info/"}' %}
+
+<!-- momentan (?) offline/nicht erreichbar
+{% screenshot "./images/beispiel-04.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"https://typewar.com/"}' %}
+{% screenshot "./images/beispiel-06.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"http://typeconnection.com/"}' %}
+-->

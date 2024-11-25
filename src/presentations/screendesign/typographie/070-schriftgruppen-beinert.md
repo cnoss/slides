@@ -30,5 +30,5 @@ status: ok
 {% screenshot "./images/beinert-hauptgruppen-03.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"" }' %}
 {% screenshot "./images/beinert-hauptgruppen-04.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"" }' %}
 {% screenshot "./images/beinert-hauptgruppen-05.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"" }' %}
-{% screenshot "./images/beinert-hauptgruppen-06.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"" }' %}
+{% screenshot "./images/beinert-hauptgruppen-06a.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"" }' %}
 {% screenshot "./images/beinert-hauptgruppen-07.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"" }' %}
