@@ -77,11 +77,7 @@ status: ok
     </div>
 </section>
 
-{% screenshot "./images/beispiel-01.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
-{% screenshot "./images/beispiel-02.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"https://type.method.ac/"}' %}
-{% screenshot "./images/beispiel-03.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"https://shape.method.ac/"}' %}
-{% screenshot "./images/beispiel-05.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"https://tothepoint.co.uk/"}' %}
-{% screenshot "./images/beispiel-07.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"https://fathom.info/"}' %}
+
 
 <!-- momentan (?) offline/nicht erreichbar
 {% screenshot "./images/beispiel-04.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"https://typewar.com/"}' %}
