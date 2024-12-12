@@ -22,16 +22,23 @@ status: ok
 
 {% screenshot "./images/font-03.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":""}' %}
 
-{% screenshot "./images/example-01.png", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/aw.jpg", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":""}' %}
 
-{% screenshot "./images/example-02.png", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":""}' %}
 
-{% screenshot "./images/example-03.png", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/aw.jpg", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":""}' %}
 
-{% screenshot "./images/semantisches-differenzial-01.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/black-rock.jpg", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":""}' %}
 
-{% screenshot "./images/semantisches-differenzial-02.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/deka.jpg", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":""}' %}
 
+{% screenshot "./images/flossbach.jpg", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":""}' %}
+
+{% screenshot "./images/semantisches-differenzial-01.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":"https://wpgs.de/fachtexte/frageboegen/polaritaetenprofil-semantisches-differential/"}' %}
+
+{% screenshot "./images/semantisches-differenzial-02.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":"https://wpgs.de/fachtexte/frageboegen/polaritaetenprofil-semantisches-differential/"}' %}
+
+
+<!--
 {% interlude "Ein Selbstversuch"%}
 
 {% screenshot "./images/selbstversuch-01.png", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":""}' %}
@@ -41,3 +48,5 @@ status: ok
 {% screenshot "./images/selbstversuch-03.png", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":""}' %}
 
 {% screenshot "./images/selbstversuch-04.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":""}' %}
+
+-->
