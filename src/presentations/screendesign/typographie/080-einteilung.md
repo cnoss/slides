@@ -12,9 +12,9 @@ status: ok
     <div>
       {% fragment "<p class=\"list\"><strong>Schriftgruppe oder -art:</strong> Antiqua, Grotesk, etc.</p>" %}
       {% fragment "<p class=\"list\"><strong>Schriftfamilie:</strong> Helvetica, Times, etc.</p>" %}
-      {% fragment "<p class=\"list\"><strong>Schriftstärke:</strong> Leicht, Normal, Fett, etc. (Schnitt)</p>" %}
-      {% fragment "<p class=\"list\"><strong>Dicktenbreite:</strong> Schmal, Normal, Breit. etc. (Schnitt)</p>" %}
-      {% fragment "<p class=\"list\"><strong>Schriftlage:</strong> Normal, Kursiv (italic), Kapitälchen (Schnitt)</p>" %}
+      {% fragment "<p class=\"list\"><strong>Schriftstärke:</strong> Leicht, Normal, Fett, etc.</p>" %}
+      {% fragment "<p class=\"list\"><strong>Dicktenbreite:</strong> Schmal, Normal, Breit. etc.</p>" %}
+      {% fragment "<p class=\"list\"><strong>Schriftlage:</strong> Normal, Kursiv (italic), Kapitälchen</p>" %}
       {% fragment "<p class=\"list\"><strong>Schriftgrad:</strong> 8 Punkt, 12 Punkt, etc. 1 Punkt(pt)=0,375 mm</p>" %}
     </div>
     </div>
