@@ -15,6 +15,9 @@ status: ok
 {% screenshot "./images/goldener-schnitt-06.png", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":""}' %}
 {% screenshot "./images/goldener-schnitt-07.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":""}' %}
 {% screenshot "./images/goldener-schnitt-08.png", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/goldener-schnitt-19.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/goldener-schnitt-21.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":""}' %}
+
 {% screenshot "./images/goldener-schnitt-09.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":""}' %}
 {% screenshot "./images/goldener-schnitt-10.png", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":""}' %}
 {% screenshot "./images/goldener-schnitt-11.png", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":""}' %}
@@ -24,3 +27,4 @@ status: ok
 {% screenshot "./images/goldener-schnitt-15.png", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":""}' %}
 {% screenshot "./images/goldener-schnitt-16.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":""}' %}
 {% screenshot "./images/goldener-schnitt-17.png", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/goldener-schnitt-20.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":""}' %}
