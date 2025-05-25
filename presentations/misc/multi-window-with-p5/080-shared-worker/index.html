@@ -1,0 +1,122 @@
+<!doctype html>
+  <html lang="de">
+    <head>
+      <title>Use of a higher-level Shared Worker // Christian Noss</title>
+      <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="googlebot-news" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+      <link rel="stylesheet" href="/slides/reveal/dist/reset.css">
+      <link rel="stylesheet" href="/slides/reveal/dist/reveal.css">
+      <link rel="stylesheet" href="/slides/assets/main.css">
+     
+      <link rel="icon" type="image/svg" href="/slides/assets/images/preview_black_24dp.svg">
+  
+      <!-- Theme used for syntax highlighted code -->
+      <link rel="stylesheet" href="/slides/reveal/plugin/highlight/github.css">
+    </head>
+    <body>
+      <div class="reveal">
+        <div class="slides">
+          
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="slide">
+      <section data-slide-shortcode-class="interlude" data-background-color="#00ad2f" class="image screenshot interlude" ><div><h1 class="title">Use of a higher-level Shared Worker</h1><h2 class="subtitle js-delay"><p>Shared Process with Message-Based Communication</p>
+</h2></div></section>
+<section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/shared-worker.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>Use of a higher-level <a href="https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker">Shared Worker</a></p>
+</p></div></section>
+<p><section data-transition="fade" data-slide-shortcode-class="codeSmall" class="codeSmall"><div><h1 class="title">Shared Worker with postMessage()</h1><p>This creates a new connection to an existing or newly started SharedWorker whose code is located in the shared.js file. In contrast to workers, which start a separate thread per window or tab, a SharedWorker is only started once per Origin - all tabs share the same worker process.</p></p>
+<div class="code-columns"><pre class="code-wrapper"><samp class="code"><span class="hljs-comment">// Shared Worker Code in shared.js</span>
+<span class='hljs-break'>/* break */</span>
+<span class="hljs-keyword">const</span> connections = [];
+<span class='hljs-break'>/* break */</span>
+onconnect = <span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) {
+  <span class="hljs-keyword">const</span> port = e.<span class="hljs-property">ports</span>[<span class="hljs-number">0</span>];
+  connections.<span class="hljs-title function_">push</span>(port);
+  <span class='hljs-break'>/* break */</span>
+  port.<span class="hljs-property">onmessage</span> = <span class="hljs-keyword">function</span> (<span class="hljs-params">event</span>) {
+    <span class="hljs-keyword">const</span> data = event.<span class="hljs-property">data</span>;
+    <span class='hljs-break'>/* break */</span>
+    <span class="hljs-comment">// Echo to all other windows</span>
+    connections.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">p</span> =&gt;</span> {
+      <span class="hljs-keyword">if</span> (p !== port) {
+        p.<span class="hljs-title function_">postMessage</span>(data);
+      }
+    });
+  };
+  <span class='hljs-break'>/* break */</span>
+  port.<span class="hljs-title function_">start</span>(); <span class="hljs-comment">// Required for older browsers</span>
+};
+</samp></pre><pre class="code-wrapper"><samp class="code"><span class="hljs-comment">// Client Code</span>
+<span class="hljs-comment">// Start or connect to worker</span>
+<span class="hljs-keyword">const</span> worker = <span class="hljs-keyword">new</span> <span class="hljs-title class_">SharedWorker</span>(<span class="hljs-string">&#x27;shared.js&#x27;</span>);
+worker.<span class="hljs-property">port</span>.<span class="hljs-title function_">start</span>();
+<span class='hljs-break'>/* break */</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">trackMyWindowPosition</span> = (<span class="hljs-params"></span>) =&gt; {
+  <span class="hljs-comment">/* ... */</span>
+  <span class="hljs-comment">// Store Window Data in Shared Worker</span>
+  worker.<span class="hljs-property">port</span>.<span class="hljs-title function_">postMessage</span>(myWindowPosition);
+}
+<span class='hljs-break'>/* break */</span>
+<span class="hljs-comment">// Observe my window position</span>
+<span class="hljs-keyword">const</span> observeMyWindowPosition = <span class="hljs-built_in">setInterval</span>(trackMyWindowPosition, <span class="hljs-number">500</span>);
+<span class='hljs-break'>/* break */</span>
+<span class="hljs-comment">// Receive messages from the worker</span>
+worker.<span class="hljs-property">port</span>.<span class="hljs-property">onmessage</span> = <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+  <span class='hljs-break'>/* break */</span>
+  <span class="hljs-keyword">const</span> otherWindowPosition = event.<span class="hljs-property">data</span>;
+  <span class='hljs-break'>/* break */</span>
+  <span class="hljs-comment">// Do something meaningful with the data 🕺🏼</span>
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(otherWindowPosition.<span class="hljs-property">x</span>, otherWindowPosition.<span class="hljs-property">y</span>);
+};
+</samp></pre></div></div></section>
+<section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/shared-worker.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>Use of a higher-level <a href="https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker">Shared Worker</a></p>
+</p></div></section>
+<footer><ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker">Shared Worker MDN</a></li>
+</ul>
+</footer>
+      
+      
+
+      </section>
+      
+        </div>
+      </div>
+      
+      <script src="/slides/reveal/dist/reveal.js"></script>
+      <script src="/slides/assets/scripts/libs/fittext.js"></script>
+      <script src="/slides/assets/scripts/main.js"></script>
+      <script src="/slides/reveal/plugin/notes/notes.js"></script>
+      <script src="/slides/reveal/plugin/markdown/markdown.js"></script>
+      <script src="/slides/reveal/plugin/highlight/highlight.js"></script>
+      <script src="/slides/reveal/plugin/zoom/zoom.js"></script>
+      <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+          hash: true, 
+          center: false,
+          disableLayout: true,
+          progress: true,
+          backgroundTransition: 'fade',
+          highlight: {
+            highlightOnLoad: false,
+          },
+          // Learn about plugins: https://revealjs.com/plugins/
+          plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+        }).then(() => {
+          const highlight = Reveal.getPlugin('highlight');
+          highlight.hljs.configure(
+            {
+              languages: ['javascript', 'css', 'html', 'bash', 'json', 'markdown', 'xml', 'yaml'],
+            }
+          );
+          highlight.hljs.highlightAll();
+        });
+      </script>
+    </body>
+  </html>

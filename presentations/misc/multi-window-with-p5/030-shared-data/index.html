@@ -1,0 +1,82 @@
+<!doctype html>
+  <html lang="de">
+    <head>
+      <title>Shared Data // Christian Noss</title>
+      <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="googlebot-news" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+      <link rel="stylesheet" href="/slides/reveal/dist/reset.css">
+      <link rel="stylesheet" href="/slides/reveal/dist/reveal.css">
+      <link rel="stylesheet" href="/slides/assets/main.css">
+     
+      <link rel="icon" type="image/svg" href="/slides/assets/images/preview_black_24dp.svg">
+  
+      <!-- Theme used for syntax highlighted code -->
+      <link rel="stylesheet" href="/slides/reveal/plugin/highlight/github.css">
+    </head>
+    <body>
+      <div class="reveal">
+        <div class="slides">
+          
+      <section data-slide-class="images" class="mi-slide 
+      images "    data-transition="slide">
+      <section data-slide-shortcode-class="question" class="question"><div><h1 class="title"><p>Woher kommen die <em>Daten</em><br>und wie können wir sie <em>austauschen</em>?</p>
+</h1></div></section>
+<section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/get-position.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>Position on screen via <a href="https://developer.mozilla.org/de/docs/Web/API/Window/screenX">window.screenX</a> &amp; <a href="https://developer.mozilla.org/de/docs/Web/API/Window/screenY">window.screenY</a></p>
+</p></div></section>
+<section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/opener.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>Share Data via <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/opener">window.opener</a></p>
+</p></div></section>
+<section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/broadcast-channel.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>Share via <a href="https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API">Broadcast Channel API</a></p>
+</p></div></section>
+<section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/local-storage.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>Store shared data via <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">Local Storage</a></p>
+</p></div></section>
+<section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/shared-worker.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>Use of a higher-level <a href="https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker">Shared Worker</a></p>
+</p></div></section>
+<section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/web-socket.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>Using an external component: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket">WebSocket</a></p>
+</p></div></section>
+
+      
+      
+
+      </section>
+      
+        </div>
+      </div>
+      
+      <script src="/slides/reveal/dist/reveal.js"></script>
+      <script src="/slides/assets/scripts/libs/fittext.js"></script>
+      <script src="/slides/assets/scripts/main.js"></script>
+      <script src="/slides/reveal/plugin/notes/notes.js"></script>
+      <script src="/slides/reveal/plugin/markdown/markdown.js"></script>
+      <script src="/slides/reveal/plugin/highlight/highlight.js"></script>
+      <script src="/slides/reveal/plugin/zoom/zoom.js"></script>
+      <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+          hash: true, 
+          center: false,
+          disableLayout: true,
+          progress: true,
+          backgroundTransition: 'fade',
+          highlight: {
+            highlightOnLoad: false,
+          },
+          // Learn about plugins: https://revealjs.com/plugins/
+          plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+        }).then(() => {
+          const highlight = Reveal.getPlugin('highlight');
+          highlight.hljs.configure(
+            {
+              languages: ['javascript', 'css', 'html', 'bash', 'json', 'markdown', 'xml', 'yaml'],
+            }
+          );
+          highlight.hljs.highlightAll();
+        });
+      </script>
+    </body>
+  </html>

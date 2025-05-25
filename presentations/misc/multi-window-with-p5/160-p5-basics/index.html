@@ -1,0 +1,174 @@
+<!doctype html>
+  <html lang="de">
+    <head>
+      <title>p5.js Basics // Christian Noss</title>
+      <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="googlebot-news" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+      <link rel="stylesheet" href="/slides/reveal/dist/reset.css">
+      <link rel="stylesheet" href="/slides/reveal/dist/reveal.css">
+      <link rel="stylesheet" href="/slides/assets/main.css">
+     
+      <link rel="icon" type="image/svg" href="/slides/assets/images/preview_black_24dp.svg">
+  
+      <!-- Theme used for syntax highlighted code -->
+      <link rel="stylesheet" href="/slides/reveal/plugin/highlight/github.css">
+    </head>
+    <body>
+      <div class="reveal">
+        <div class="slides">
+          
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <p><section data-transition="slide" data-slide-shortcode-class="codeSmall" class="codeSmall"><div><h1 class="title">Core Structure of a Sketch</h1><p>The tools uses a simple sketch structure based on two main functions: setup(), which runs once at the beginning, and draw(), which runs continuously like a loop. To get started, you can write your code in the <a href="https://editor.p5js.org">p5.js Web Editor</a>.</p></p>
+<pre class="code-wrapper"><samp class="code"><span class="hljs-keyword">function</span> <span class="hljs-title function_">setup</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-title function_">createCanvas</span>(<span class="hljs-number">400</span>, <span class="hljs-number">400</span>);
+}
+<span class='hljs-break'>/* break */</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">draw</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-title function_">background</span>(<span class="hljs-number">220</span>);
+  <span class="hljs-title function_">ellipse</span>(mouseX, mouseY, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+}
+</samp></pre></div></section>
+<p><section data-transition="slide" data-slide-shortcode-class="codeSmall" class="codeSmall"><div><h1 class="title">Useful Snippets: ColorMode</h1><p>colorMode() in p5.js sets how colors are interpreted. Using <a href="https://color.adobe.com/de/create/color-wheel">HSB</a> (Hue, Saturation, Brightness) is often better because it separates color, intensity, and lightness, making color control more intuitive.</p></p>
+<pre class="code-wrapper"><samp class="code"><span class="hljs-keyword">function</span> <span class="hljs-title function_">setup</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-title function_">createCanvas</span>(<span class="hljs-number">400</span>, <span class="hljs-number">400</span>);
+  <span class="hljs-title function_">colorMode</span>(<span class="hljs-variable constant_">HSB</span>, <span class="hljs-number">360</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-title function_">fill</span>(<span class="hljs-number">90</span>, <span class="hljs-number">100</span>, <span class="hljs-number">70</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-title function_">stroke</span>(<span class="hljs-number">270</span>, <span class="hljs-number">100</span>, <span class="hljs-number">70</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-title function_">strokeWeight</span>(<span class="hljs-number">10</span>);
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">draw</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-title function_">background</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-title function_">ellipse</span>(mouseX, mouseY, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+}
+</samp></pre></div></section>
+<p><section data-transition="slide" data-slide-shortcode-class="codeSmall" class="codeSmall"><div><h1 class="title">Useful Snippets: random() &amp; randomSeed()</h1><p>random() in p5.js returns a random number, useful for adding unpredictability. randomSeed() sets the starting point for random values, making results repeatable — helpful for debugging or creating consistent outcomes.</p></p>
+<pre class="code-wrapper"><samp class="code"><span class="hljs-keyword">function</span> <span class="hljs-title function_">setup</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-title function_">createCanvas</span>(<span class="hljs-number">400</span>, <span class="hljs-number">400</span>);
+  <span class="hljs-title function_">colorMode</span>(<span class="hljs-variable constant_">HSB</span>, <span class="hljs-number">360</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-title function_">fill</span>(<span class="hljs-number">90</span>, <span class="hljs-number">100</span>, <span class="hljs-number">70</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-title function_">stroke</span>(<span class="hljs-number">270</span>, <span class="hljs-number">100</span>, <span class="hljs-number">70</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-title function_">strokeWeight</span>(<span class="hljs-number">10</span>);
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">draw</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-title function_">background</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">100</span>);
+
+  <span class="hljs-keyword">const</span> dotSize = <span class="hljs-title function_">random</span>(-<span class="hljs-number">20</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-title function_">ellipse</span>(mouseX, mouseY, dotSize);
+}
+</samp></pre></div></section>
+<p><section data-transition="slide" data-slide-shortcode-class="codeSmall" class="codeSmall"><div><h1 class="title">Useful Snippets: map()</h1><p>map() in p5.js converts a number from one range to another. It's useful for scaling values, like turning mouse position into color or speed.</p></p>
+<pre class="code-wrapper"><samp class="code"><span class="hljs-keyword">function</span> <span class="hljs-title function_">setup</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-title function_">createCanvas</span>(<span class="hljs-number">400</span>, <span class="hljs-number">400</span>);
+  <span class="hljs-title function_">colorMode</span>(<span class="hljs-variable constant_">HSB</span>, <span class="hljs-number">360</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-title function_">fill</span>(<span class="hljs-number">90</span>, <span class="hljs-number">100</span>, <span class="hljs-number">70</span>, <span class="hljs-number">100</span>);
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">draw</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-title function_">background</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-keyword">const</span> hue = <span class="hljs-title function_">map</span>(mouseX, <span class="hljs-number">0</span>, <span class="hljs-number">400</span>, <span class="hljs-number">0</span>, <span class="hljs-number">360</span>);
+  <span class="hljs-keyword">const</span> dotSize = <span class="hljs-title function_">map</span>(mouseY, <span class="hljs-number">0</span>, <span class="hljs-number">400</span>, <span class="hljs-number">0</span>, <span class="hljs-number">50</span>);
+  <span class="hljs-title function_">fill</span>(hue, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-title function_">ellipse</span>(mouseX, mouseY, dotSize);
+}
+</samp></pre></div></section>
+<p><section data-transition="slide" data-slide-shortcode-class="codeSmall" class="codeSmall"><div><h1 class="title">Useful Snippets: dist()</h1><p>dist() in p5.js calculates the distance between two points. It's useful for measuring how far apart objects are, often used in movement or collision detection.</p></p>
+<pre class="code-wrapper"><samp class="code"><span class="hljs-keyword">function</span> <span class="hljs-title function_">setup</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-title function_">createCanvas</span>(<span class="hljs-number">400</span>, <span class="hljs-number">400</span>);
+  <span class="hljs-title function_">colorMode</span>(<span class="hljs-variable constant_">HSB</span>, <span class="hljs-number">360</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-title function_">fill</span>(<span class="hljs-number">90</span>, <span class="hljs-number">100</span>, <span class="hljs-number">70</span>, <span class="hljs-number">100</span>);
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">draw</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-title function_">background</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-keyword">const</span> dotSize = <span class="hljs-title function_">dist</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, mouseX, mouseY);
+  <span class="hljs-title function_">ellipse</span>(width/<span class="hljs-number">2</span>, height/<span class="hljs-number">2</span>, dotSize);
+}
+</samp></pre></div></section>
+<p><section data-transition="slide" data-slide-shortcode-class="codeSmall" class="codeSmall"><div><h1 class="title">Brain-Freeze: translate() &amp; rotate()</h1><p>translate() in p5.js moves the origin of the drawing space, letting you draw shapes in a new position. rotate() turns the drawing space, useful for rotating shapes around a point.</p></p>
+<pre class="code-wrapper"><samp class="code"><span class="hljs-keyword">function</span> <span class="hljs-title function_">setup</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-title function_">createCanvas</span>(<span class="hljs-number">400</span>, <span class="hljs-number">400</span>);
+  <span class="hljs-title function_">colorMode</span>(<span class="hljs-variable constant_">HSB</span>, <span class="hljs-number">360</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-title function_">fill</span>(<span class="hljs-number">335</span>, <span class="hljs-number">92</span>, <span class="hljs-number">87</span>, <span class="hljs-number">100</span>);
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">draw</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-title function_">background</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-title function_">translate</span>(width/<span class="hljs-number">2</span>, height/<span class="hljs-number">2</span>);
+  <span class="hljs-title function_">rotate</span>(<span class="hljs-number">45</span>);
+  <span class="hljs-title function_">rect</span>(-<span class="hljs-number">30</span>, -<span class="hljs-number">30</span>, <span class="hljs-number">60</span>, <span class="hljs-number">60</span>);
+}
+</samp></pre></div></section>
+<p><section data-transition="slide" data-slide-shortcode-class="codeSmall" class="codeSmall"><div><h1 class="title">Useful Snippets: Simple Animation</h1><p>This code creates a rotating rectangle in the center of the canvas. The translate() function moves the origin to the center, and rotate(angle) spins the rectangle around that point. angle increases over time, causing continuous rotation, while the semi-transparent background creates a fading trail effect.</p></p>
+<pre class="code-wrapper"><samp class="code"><span class="hljs-keyword">let</span> angle = <span class="hljs-number">0</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">setup</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-title function_">createCanvas</span>(<span class="hljs-number">400</span>, <span class="hljs-number">400</span>);
+  <span class="hljs-title function_">colorMode</span>(<span class="hljs-variable constant_">HSB</span>, <span class="hljs-number">360</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+  <span class="hljs-title function_">fill</span>(<span class="hljs-number">335</span>, <span class="hljs-number">92</span>, <span class="hljs-number">87</span>, <span class="hljs-number">100</span>);
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">draw</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-title function_">background</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">10</span>);
+
+  <span class="hljs-title function_">translate</span>(width/<span class="hljs-number">2</span>, height/<span class="hljs-number">2</span>);
+  <span class="hljs-title function_">rotate</span>(angle);
+  <span class="hljs-title function_">rect</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">60</span>, <span class="hljs-number">60</span>);
+
+  angle += <span class="hljs-number">0.08</span>;
+}
+</samp></pre></div></section>
+<footer><ul>
+<li><a href="https://p5js.org">P5.js</a></li>
+<li><a href="https://p5js.org/reference/">Reference</a></li>
+<li><a href="https://editor.p5js.org/">Web Editor</a></li>
+</ul>
+</footer>
+      
+      
+
+      </section>
+      
+        </div>
+      </div>
+      
+      <script src="/slides/reveal/dist/reveal.js"></script>
+      <script src="/slides/assets/scripts/libs/fittext.js"></script>
+      <script src="/slides/assets/scripts/main.js"></script>
+      <script src="/slides/reveal/plugin/notes/notes.js"></script>
+      <script src="/slides/reveal/plugin/markdown/markdown.js"></script>
+      <script src="/slides/reveal/plugin/highlight/highlight.js"></script>
+      <script src="/slides/reveal/plugin/zoom/zoom.js"></script>
+      <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+          hash: true, 
+          center: false,
+          disableLayout: true,
+          progress: true,
+          backgroundTransition: 'fade',
+          highlight: {
+            highlightOnLoad: false,
+          },
+          // Learn about plugins: https://revealjs.com/plugins/
+          plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+        }).then(() => {
+          const highlight = Reveal.getPlugin('highlight');
+          highlight.hljs.configure(
+            {
+              languages: ['javascript', 'css', 'html', 'bash', 'json', 'markdown', 'xml', 'yaml'],
+            }
+          );
+          highlight.hljs.highlightAll();
+        });
+      </script>
+    </body>
+  </html>
