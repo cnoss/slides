@@ -37,6 +37,7 @@ h1 {
   line-height: var(--lh-tight);
   font-weight: var(--fw-medium);
   color: var(--mi-black);
+  text-wrap: balance;
 }
 
 h2 {
@@ -74,4 +75,8 @@ a {
 small{
   opacity: var(--op-medium);
   font-size: 80%;
+}
+
+.fragment{
+  text-wrap: balance;
 }

@@ -12,8 +12,3 @@ slideClasses: simple
 - **Herausforderung:** Fehlende Expertise im Team  
   **Lösung:** Schulungen und externe Beratung
 
-
-- [WAVE](https://wave.webaim.org/)
-- [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
-- [axe](https://www.deque.com/axe/)
-- Browser-Entwicklertools

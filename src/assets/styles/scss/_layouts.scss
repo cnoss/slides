@@ -284,6 +284,7 @@
   .title{
     margin-top: 0;
     padding-top: 0;
+    text-wrap: balance;
   }
 
   div {
@@ -347,6 +348,7 @@
     padding: 0 0 var(--half) 0;
     color: var(--lightest);
     text-align: center;
+    text-wrap: balance;
 
     strong{
       font-weight: var(--fw-bold);
@@ -458,19 +460,28 @@
   justify-content: center;
 
   div{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     .title {
+      text-align: center;
       font-family: var(--ff-normal);
       text-wrap: balance;
       padding: 0;
       padding-bottom: var(--half);
+      text-wrap: balance;
     }
     .subtitle {
-
+      text-align: center;
       font-family: var(--ff-normal);
       color: var(--mi-lila);
       font-size: var(--m);
+      max-width: 66%;
       padding: 0;
+      line-height: var(--lh-normal);
+      margin-top: var(--m);
     }
   }
 }
@@ -634,6 +645,10 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+
+    p{
+      line-height: var(--lh-normal);
+    }
     
     & > * {
       flex-grow: 0;

@@ -341,6 +341,10 @@ small {
   font-size: 80%;
 }
 
+.fragment {
+  text-wrap: balance;
+}
+
 @keyframes fadein {
   from {
     bottom: calc(var(--xxl) * -1);
@@ -1122,19 +1126,27 @@ a.is-black:hover {
   justify-content: center;
 }
 .question div {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .question div .title {
+  text-align: center;
   font-family: var(--ff-normal);
   text-wrap: balance;
   padding: 0;
   padding-bottom: var(--half);
 }
 .question div .subtitle {
+  text-align: center;
   font-family: var(--ff-normal);
   color: var(--mi-lila);
   font-size: var(--m);
+  max-width: 66%;
   padding: 0;
+  line-height: var(--lh-normal);
+  margin-top: var(--m);
 }
 
 /* Simple

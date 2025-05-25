@@ -145,8 +145,12 @@ module.exports = function (eleventyConfig) {
 
  eleventyConfig.addShortcode('screenshot', (imgSrc, props) => {
   const propData = (props) ? JSON.parse(props) : {};
-  const dataTransition = propData && propData.transition ? `data-transition="${propData.transition}"` : '';
-  const dataBackgroundTransition = propData && propData.backgroundTransition ? `data-background-transition="${propData.backgroundTransition}"` : '';
+  const dataTransition = propData && propData.transition 
+    ? `data-transition="${propData.transition}"` 
+    : 'data-transition="fade"';
+  const dataBackgroundTransition = propData && propData.backgroundTransition 
+    ? `data-background-transition="${propData.backgroundTransition}"` 
+    : 'data-background-transition="fade"';
   const classes = propData && propData.classes ? propData.classes : '';
   const width = propData && propData.width ? `width="${propData.width}" ` : '';
   const buCreditHtml = propData && propData.credit ? `<p class="credit">${propData.credit}</p>` : '';
@@ -156,8 +160,12 @@ module.exports = function (eleventyConfig) {
 
  eleventyConfig.addShortcode('screenshotFs', (imgSrc, props) => {
   const propData = (props) ? JSON.parse(props) : {};
-  const dataTransition = propData && propData.transition ? `data-transition="${propData.transition}"` : '';
-  const dataBackgroundTransition = propData && propData.backgroundTransition ? `data-background-transition="${propData.backgroundTransition}"` : '';
+  const dataTransition = propData && propData.transition 
+    ? `data-transition="${propData.transition}"` 
+    : 'data-transition="fade"';
+  const dataBackgroundTransition = propData && propData.backgroundTransition 
+    ? `data-background-transition="${propData.backgroundTransition}"` 
+    : 'data-background-transition="fade"';
   const classes = propData && propData.classes ? propData.classes : '';
   const buCreditHtml = propData && propData.credit ? `<p class="credit">${propData.credit}</p>` : '';
   const buHtml = propData && propData.bu ? `<div class="bu"><p>${insertMarkup(md.render(propData.bu))}</p></div>` : '';

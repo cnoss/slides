@@ -1,5 +1,5 @@
 ---
-title: Shift Left" Ansatz
+title: Shift Left Ansatz
 layout: presentation.11ty.js
 slideClasses: simple
 ---
