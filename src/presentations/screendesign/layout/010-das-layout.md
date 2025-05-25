@@ -45,5 +45,5 @@ status: ok
 {% screenshot "./images/layout-15.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"2-spaltiges Gestaltungsraster"}' %}
 {% screenshot "./images/layout-16.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"3-spaltiges  Gestaltungsraster"}' %}
 {% screenshot "./images/layout-17.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"4-spaltiges  Gestaltungsraster"}' %}
-
-{% screenshot "./images/layout-18.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"4-spaltiges  Gestaltungsraster"}' %}
+{% screenshot "./images/layout-19.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/layout-18.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
