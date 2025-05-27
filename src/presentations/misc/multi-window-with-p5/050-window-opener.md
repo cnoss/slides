@@ -7,6 +7,7 @@ transition: slide
 status: ok
 footer: |
   - [Window: opener property MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/opener)
+  - [Demo Implementation](https://cnoss.github.io/multi-window-experiences/00-core-concepts/window-opener-demo/parent.html)
 code: |
   // In opener/parent window
   /**/
@@ -38,9 +39,27 @@ code2: |
     /**/
   parentWindowPosition.x = window.opener.screenX;
   parentWindowPosition.y = window.opener.screenY;
+
+vorteile: |
+  - direct reference to the parent window
+  - easy to call functions or access variables
+  - minimal setup, no external messaging needed
+
+nachteile: |
+  - only works if the window was opened via window.open()
+  - breaks on reloads or navigation
+  - no support for cross-tab communication
+  - tight coupling between windows
 ---
 
 {% interlude "Share Data via window.opener","Baseline Widely available" %}
+
 {% screenshotFs "./images/opener.png", '{"transition":"fade", "classes":"no-shadow", "bu":"Share Data via [window.opener](https://developer.mozilla.org/en-US/docs/Web/API/Window/opener)"}' %}
+
 {% codeSmall "Using window.opener", "Baseline Widely available", [{code: code, lang: "javascript"}, {code: code2, lang: "javascript"}], "css", "fade" %}
+
+{% simpleText "Advantages of window.opener 🥳", vorteile, '{"transition":"slide"}'  %}
+
+{% simpleText "Disadvantages 😢", nachteile, '{"transition":"slide"}'  %}
+
 {% screenshotFs "./images/opener.png", '{"transition":"fade", "classes":"no-shadow", "bu":"Share Data via [window.opener](https://developer.mozilla.org/en-US/docs/Web/API/Window/opener)"}' %}

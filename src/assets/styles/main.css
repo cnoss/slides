@@ -304,6 +304,7 @@ h1 {
   line-height: var(--lh-tight);
   font-weight: var(--fw-medium);
   color: var(--mi-black);
+  text-wrap: balance;
 }
 
 h2 {
@@ -982,6 +983,7 @@ a.is-black:hover {
 .statement .title {
   margin-top: 0;
   padding-top: 0;
+  text-wrap: balance;
 }
 .statement div {
   max-width: 80vw;
@@ -1032,6 +1034,7 @@ a.is-black:hover {
   padding: 0 0 var(--half) 0;
   color: var(--lightest);
   text-align: center;
+  text-wrap: balance;
 }
 .interlude .title strong {
   font-weight: var(--fw-bold);
@@ -1137,6 +1140,7 @@ a.is-black:hover {
   text-wrap: balance;
   padding: 0;
   padding-bottom: var(--half);
+  text-wrap: balance;
 }
 .question div .subtitle {
   text-align: center;
@@ -1267,6 +1271,9 @@ a.is-black:hover {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+.codeSmall div p {
+  line-height: var(--lh-normal);
 }
 .codeSmall div > * {
   flex-grow: 0;

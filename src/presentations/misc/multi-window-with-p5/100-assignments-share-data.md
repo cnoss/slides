@@ -5,9 +5,13 @@ slideClasses: images
 transition: zoom
 status: ok
 aufgabe1: |
-  tbd
+  *01. Share Data between Windows:* You are given a starter file with a code skeleton. Your job is to implement a working communication channel that allows each window to display: its own position (based on window.screenX / screenY) and the position of the other window.
+
+  [Let's go 👨🏽‍💻](https://cnoss.github.io/multi-window-experiences/99-assignments/)
 ---
 
+{% interlude "Endlich Aufgaben 🎊","",  '{"transition":"slide"}'  %}
+{% statement "Repo erklären! 🧐", "", '{"transition":"slide"}'  %}
 {% simpleText "Endlich Aufgaben 🎊", aufgabe1, '{"transition":"none"}'  %}
 
 

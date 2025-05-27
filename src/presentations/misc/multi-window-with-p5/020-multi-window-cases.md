@@ -28,11 +28,5 @@ disclaimer: |
 {% screenshotFs "./images/multi-window-2e.png", '{"transition":"fade", "classes":"no-shadow", "bu":"Overlap & Casting"}' %}
 {% screenshotFs "./images/multi-screen.png", '{"transition":"fade", "classes":"no-shadow", "bu":"Multi Screen"}' %}
 
-{% interlude "Checkin?", "", '{"transition":"none"}'  %}
-
-{% screenshotFs "./images/01-cover-bjorn-stall.jpg", '{"transition":"fade", "classes":"no-shadow", "bu":"[Beispiel von Björn Staal](https://80.lv/articles/a-programmer-presents-a-mind-blowing-multi-window-adaptive-experience)<br>[GitHub Repo](https://github.com/bgstaal/multipleWindow3dScene)<br>[Demo](https://bgstaal.github.io/multipleWindow3dScene/)<br>[Video](https://www.youtube.com/watch?v=4LwHH3r2qNY)"}', 'fade' %}
-{% simpleText "Ziele des Workshops", ziele, '{"transition":"none"}'  %}
-{% simpleText "Disclaimer ⚠️", disclaimer, '{"transition":"none"}'  %}
-{% interlude "Demo", "", '{"transition":"slide"}'  %}
 
 

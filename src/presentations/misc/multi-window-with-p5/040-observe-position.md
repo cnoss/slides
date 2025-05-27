@@ -8,6 +8,7 @@ status: ok
 footer: |
   - [Window: screenX property MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/screenX)
   - [Window: screenY property MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/screenY)
+  - [Demo Implementation](https://cnoss.github.io/multi-window-experiences/00-core-concepts/index.html)
 code: |
   console.log('Window position:', window.screenX, window.screenY);
 code2: |

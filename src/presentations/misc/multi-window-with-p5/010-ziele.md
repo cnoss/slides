@@ -25,16 +25,17 @@ disclaimer2: |
   <div class="fragment">Alle Implementierungen versuchen möglichst nah an Standards zu sein.</div>
 
 playgrounds: |
-  <a href="https://cnoss.github.io/multi-window-experiences/02-single-window-simple-object-example/index.html">Single Window, Simple Object Example</a> // <a href="https://cnoss.github.io/multi-window-experiences/03-single-window-complex-object-example/index.html">Single Window, Complex Object Example</a> // <a href="https://cnoss.github.io/multi-window-experiences/04-multi-window-simple-object-task/index.html">Multi-Window, Simple Object</a> // <a href="https://cnoss.github.io/multi-window-experiences/05-multi-window-complex-object-playground/index.html">Multi-Window, Complex Object Playground</a> // <a href="https://cnoss.github.io/multi-window-experiences/06-rotating-circles-playground/index.html">Rotating Circles Playground</a>
+  <a href="https://cnoss.github.io/multi-window-experiences/02-single-window-simple-object-example/index.html">Single Window, Simple Object</a> // <a href="https://cnoss.github.io/multi-window-experiences/03-single-window-complex-object-example/index.html">Single Window, Complex Object</a> // <a href="https://cnoss.github.io/multi-window-experiences/04-multi-window-simple-object-example/index.html">Multi-Window, Simple Object</a> // <a href="https://cnoss.github.io/multi-window-experiences/05-multi-window-complex-object-example/index.html">Multi-Window, Complex Object</a> // <a href="https://cnoss.github.io/multi-window-experiences/06-rotating-circles-example/index.html">Rotating Circles</a>
 
 ---
 
 {% interlude "Checkin?", "", '{"transition":"none"}'  %}
+{% question "💪 😵‍💫 😖 💪 💪 🏃‍♂️ 😖 🌀 🏃 💪", "Mein Weg zu diesem Workshop" %}
 {% question "Was meint *Multi-Window* Experiences?" %}
 {% screenshotFs "./images/01-cover-bjorn-stall.jpg", '{"transition":"fade", "classes":"no-shadow", "bu":"[Beispiel von Björn Staal](https://80.lv/articles/a-programmer-presents-a-mind-blowing-multi-window-adaptive-experience)<br>[GitHub Repo](https://github.com/bgstaal/multipleWindow3dScene)<br>[Demo](https://bgstaal.github.io/multipleWindow3dScene/)<br>[Video](https://www.youtube.com/watch?v=4LwHH3r2qNY)"}', 'fade' %}
 {% simpleText "Ziele des Workshops", ziele, '{"transition":"slide"}'  %}
 {% simpleText "Disclaimer ⚠️", disclaimer, '{"transition":"slide"}'  %}
 {% simpleText "Disclaimer, Teil 2 ‼️", disclaimer2, '{"transition":"slide"}'  %}
-{% question "Playgrounds", playgrounds, '{"transition":"slide"}'  %}
+{% question "Wohin geht es?", playgrounds, '{"transition":"slide"}'  %}
 
 
