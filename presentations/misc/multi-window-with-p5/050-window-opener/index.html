@@ -58,10 +58,25 @@ childWindowPosition.<span class="hljs-property">y</span> = childWindow.<span cla
 parentWindowPosition.<span class="hljs-property">x</span> = <span class="hljs-variable language_">window</span>.<span class="hljs-property">opener</span>.<span class="hljs-property">screenX</span>;
 parentWindowPosition.<span class="hljs-property">y</span> = <span class="hljs-variable language_">window</span>.<span class="hljs-property">opener</span>.<span class="hljs-property">screenY</span>;
 </samp></pre></div></div></section>
+<section data-slide-shortcode-class="simple-text" class="simple" data-transition="{"transition":"slide"}">
+    <div><h1 class="title">Advantages of window.opener 🥳</h1><ul>
+<li>direct reference to the parent window</li>
+<li>easy to call functions or access variables</li>
+<li>minimal setup, no external messaging needed</li>
+</ul>
+</div></section>
+<section data-slide-shortcode-class="simple-text" class="simple" data-transition="{"transition":"slide"}">
+    <div><h1 class="title">Disadvantages 😢</h1><ul>
+<li>only works if the window was opened via window.open()</li>
+<li>breaks on reloads or navigation</li>
+<li>no support for cross-tab communication</li>
+<li>tight coupling between windows</li>
+</ul>
+</div></section>
 <section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/opener.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>Share Data via <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/opener">window.opener</a></p>
-</p></div></section>
-<footer><ul>
+</p></div></section><footer><ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/opener">Window: opener property MDN</a></li>
+<li><a href="https://cnoss.github.io/multi-window-experiences/00-core-concepts/window-opener-demo/parent.html">Demo Implementation</a></li>
 </ul>
 </footer>
       

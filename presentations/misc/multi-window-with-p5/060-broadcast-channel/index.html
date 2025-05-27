@@ -23,7 +23,7 @@
           
       <section data-slide-class="wrap" class="mi-slide 
       wrap "    data-transition="slide">
-      <section data-slide-shortcode-class="interlude" data-background-color="#4952e1" class="image screenshot interlude" ><div><h1 class="title">Share Data via Broadcast Channel API & window.postMessage</h1><h2 class="subtitle js-delay"><p>Publish–Subscribe Messaging</p>
+      <section data-slide-shortcode-class="interlude" data-background-color="#9313ce" class="image screenshot interlude" ><div><h1 class="title">Share Data via Broadcast Channel API & window.postMessage</h1><h2 class="subtitle js-delay"><p>Publish–Subscribe Messaging</p>
 </h2></div></section>
 <section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/broadcast-channel.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>Share Data via <a href="https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API">Broadcast Channel API</a> &amp; <a href="https://developer.mozilla.org/en-us/docs/Web/API/Window/postMessage">window.postMessage</a></p>
 </p></div></section>
@@ -64,15 +64,32 @@ windowPositionChannel.<span class="hljs-property">onmessage</span> = <span class
 }
 </samp></pre></div></div></section>
 <section data-slide-shortcode-class="simple-text" class="simple" data-transition="{"transition":"slide"}">
-    <div><h1 class="title">Broadcast Channel API & window.postMessage()</h1><p>The window.postMessage() method safely enables cross-origin communication between Window objects; e.g., between a page and a pop-up that it spawned, or between a page and an iframe embedded within it.</p>
+    <div><h1 class="title">Broadcast Channel API & window.postMessage()</h1><p>The window.postMessage() method safely enables cross-origin communication between Window objects; e.g., between a page and a pop-up that it spawned, or between a page and an iframe embedded within it. The Broadcast Channel API is restricted on same origin communication.</p>
 <p>If a participant (tab, window, worker) sends a message via BroadcastChannel.postMessage(), it is sent to all other participants in the channel - but not to the sender itself.</p>
 <p>⚠️ Note that window.postMessage() also works without the Broadcast Channel API.</p>
+</div></section>
+<section data-slide-shortcode-class="simple-text" class="simple" data-transition="{"transition":"slide"}">
+    <div><h1 class="title">Advantages 🥳</h1><ul>
+<li>combines broadcasting and direct messaging</li>
+<li>works well for decoupled, event-based communication</li>
+<li>no shared memory needed — everything flows through messages</li>
+<li>no direct window references needed</li>
+<li>scalable to multiple tabs and controlled windows</li>
+</ul>
+</div></section>
+<section data-slide-shortcode-class="simple-text" class="simple" data-transition="{"transition":"slide"}">
+    <div><h1 class="title">Disadvantages 😢</h1><ul>
+<li>requires same-origin (for BroadcastChannel)</li>
+<li>no built-in state — messages must be actively passed around</li>
+<li>no message history — late listeners miss earlier messages</li>
+</ul>
 </div></section>
 <section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/broadcast-channel.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>Share Data via <a href="https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API">Broadcast Channel API</a> &amp; <a href="https://developer.mozilla.org/en-us/docs/Web/API/Window/postMessage">window.postMessage</a></p>
 </p></div></section>
 <footer><ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API">Broadcast Channel API MDN</a></li>
 <li><a href="https://developer.mozilla.org/en-us/docs/Web/API/Window/postMessage">window.postMessage MDN</a></li>
+<li><a href="https://cnoss.github.io/multi-window-experiences/00-core-concepts/post-message-demo/index.html">Demo Implementation</a></li>
 </ul>
 </footer>
       

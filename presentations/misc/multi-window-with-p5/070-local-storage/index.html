@@ -23,7 +23,7 @@
           
       <section data-slide-class="wrap" class="mi-slide 
       wrap "    data-transition="slide">
-      <section data-slide-shortcode-class="interlude" data-background-color="#d16" class="image screenshot interlude" ><div><h1 class="title">Store shared data via LocalStorage</h1><h2 class="subtitle js-delay"><p>Storage Event Triggering Paradigm</p>
+      <section data-slide-shortcode-class="interlude" data-background-color="#9313ce" class="image screenshot interlude" ><div><h1 class="title">Store shared data via LocalStorage</h1><h2 class="subtitle js-delay"><p>Storage Event Triggering Paradigm</p>
 </h2></div></section>
 <section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/local-storage.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>Store shared data via <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">Local Storage</a></p>
 </p></div></section>
@@ -50,10 +50,26 @@
   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(otherWindowPosition.<span class="hljs-property">x</span>, otherWindowPosition.<span class="hljs-property">y</span>);
 });
 </samp></pre></div></div></section>
+<section data-slide-shortcode-class="simple-text" class="simple" data-transition="{"transition":"slide"}">
+    <div><h1 class="title">Advantages 🥳</h1><ul>
+<li>simple key–value storage, persistent across reloads</li>
+<li>built-in storage event allows reactive cross-tab communication</li>
+<li>no direct window references needed</li>
+<li>easy to implement and debug</li>
+</ul>
+</div></section>
+<section data-slide-shortcode-class="simple-text" class="simple" data-transition="{"transition":"slide"}">
+    <div><h1 class="title">Disadvantages 😢</h1><ul>
+<li>string-only storage (no complex data types without serialization)</li>
+<li>storage events don’t fire in the same window 🧐</li>
+<li>not designed for high-frequency updates or large data volumes</li>
+</ul>
+</div></section>
 <section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/local-storage.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>Store shared data via <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">Local Storage</a></p>
 </p></div></section>
 <footer><ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">Local Storage MDN</a></li>
+<li><a href="https://cnoss.github.io/multi-window-experiences/00-core-concepts/local-storage-demo/index.html">Demo Implementation</a></li>
 </ul>
 </footer>
       
