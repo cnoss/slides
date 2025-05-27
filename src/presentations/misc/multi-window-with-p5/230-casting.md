@@ -6,7 +6,7 @@ transition: slide
 status: ok
 
 aufgabe4: |
-  *04.  Visual Handoff Between Windows:* You're given a starter sketch with a simple visual and a working SharedWorker; extend it so that when two windows visibly overlap on screen, the visual automatically moves to the other window.
+  *04.  Visual Handoff Between Windows:* You're given a starter sketch with a simple visual and a working SharedWorker; extend it so that when two windows visibly overlap on screen, the visual automatically moves to the other window. *30min*
   
   [Let's go 👨🏽‍💻](https://cnoss.github.io/multi-window-experiences/99-assignments/)
 ---

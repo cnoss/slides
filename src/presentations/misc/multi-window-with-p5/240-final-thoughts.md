@@ -10,9 +10,6 @@ finalThoughts1: |
   
   Most approaches ultimately rely on sending messages back and forth, but *the real challenge* lies in crafting a *meaningful design concept* around that connection.
 
-finalThoughts2: |
-  The question isn't just how to share data — *it's what for*. What *kind of interaction makes sense* across multiple windows? What becomes possible when you think beyond a single canvas?
-
 finalThoughts3: |
   In the end, your architecture is just the foundation.
   *What you build on top is what matters most.*
@@ -23,9 +20,9 @@ finalThoughts4: |
 
 
 {% simpleText "Final Thoughts", finalThoughts1, '{"transition":"slide"}'  %}
-{% simpleText "", finalThoughts2, '{"transition":"slide"}'  %}
 {% simpleText "", finalThoughts3, '{"transition":"slide"}'  %}
 {% simpleText "", finalThoughts4, '{"transition":"slide"}'  %}
+{% simpleText "Physics??? 🧐", "", '{"transition":"slide"}'  %}
 
 
 

@@ -520,6 +520,10 @@ small {
   font-weight: var(--fw-medium);
 }
 
+.is-unbalanced {
+  text-wrap: unset !important;
+}
+
 /* Status
 ############################################################################ */
 .status {
