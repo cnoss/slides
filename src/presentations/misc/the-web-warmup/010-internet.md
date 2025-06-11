@@ -10,6 +10,8 @@ status: ok
 {% interlude "Was ist ein Protokoll?"%}
 {% interlude "Was ist das World Wide Web?"%}
 {% interlude "Wer hat es erfunden?"%}
+{% interlude "Wem gehört das Internet/ WWW?"%}
+{% interlude "Wem organisiert das World Wide Web?"%}
 {% interlude "Was sind die 3 Säulen des WWW?"%}
 {% interlude "Wofür steht die Abkürzung HTML?"%}
 {% interlude "Was ist ein Hypertext?"%}
