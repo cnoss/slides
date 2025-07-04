@@ -9,4 +9,4 @@ slideClasses: simple
 {% fragment "**Ältere Menschen** (nachlassende Sehkraft, motorische Fähigkeiten)" %}
 {% fragment "**Temporäre Einschränkungen** (gebrochener Arm, laute Umgebung)" %}
 {% fragment "**Situative Einschränkungen** (helles Sonnenlicht, schlechte Internetverbindung)" %}
-{% fragment "**Maschinen**" %}
+{% fragment "**Maschinen**" 😎 %}
