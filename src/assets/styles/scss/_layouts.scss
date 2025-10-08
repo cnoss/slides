@@ -362,8 +362,15 @@
     opacity: var(--op-medium);
     font-size: calc(var(--xxl) * 0.8);
     text-align: center;
+    text-wrap: balance;
     strong{
       font-weight: var(--fw-bold);
+    }
+    small{
+      font-size: var(--m);
+      display: block;
+      margin-top: var(--half);
+      color: var(--lightest)
     }
   }
 

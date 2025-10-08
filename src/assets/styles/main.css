@@ -1050,9 +1050,16 @@ a.is-black:hover {
   opacity: var(--op-medium);
   font-size: calc(var(--xxl) * 0.8);
   text-align: center;
+  text-wrap: balance;
 }
 .interlude .subtitle strong {
   font-weight: var(--fw-bold);
+}
+.interlude .subtitle small {
+  font-size: var(--m);
+  display: block;
+  margin-top: var(--half);
+  color: var(--lightest);
 }
 .interlude a {
   color: var(--lightest);
@@ -1386,6 +1393,22 @@ a.is-black:hover {
 
 .hljs-break {
   display: none;
+}
+
+/* Notizen
+#################################################### */
+.notes.is-active {
+  display: block !important;
+  top: 0;
+  right: 0;
+  width: 33%;
+  height: 100%;
+  position: fixed;
+  background-color: var(--darkest);
+  color: var(--lightest);
+  padding: var(--m);
+  z-index: 1000;
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=main.css.map */

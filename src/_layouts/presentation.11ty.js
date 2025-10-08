@@ -116,6 +116,7 @@ exports.render = function (data) {
     const additionalClasses = getAdditionalClasses(slide.data.additionalClasses);
     const content = wrapContentByType(slide.data, slideClass);
     const status = getStatus(slide.data.status);
+    const speakerNotes = slide.data.speaker ? `<aside class="notes">${this.markdown(slide.data.speaker)}</aside>` : '';
 
     
     if(slide.data.status === 'hidden') return '';
@@ -125,7 +126,7 @@ exports.render = function (data) {
       ${content}
       ${status}
       ${backgroundImageCredits}
-
+      ${speakerNotes}
       </section>
     `;
   });
@@ -149,6 +150,7 @@ exports.render = function (data) {
         <div class="slides">
           ${slides.join('\n')}  
         </div>
+
       </div>
       
       <script src="${this.url('/reveal/dist/reveal.js')}"></script>
@@ -182,6 +184,8 @@ exports.render = function (data) {
           );
           highlight.hljs.highlightAll();
         });
+
+        
       </script>
     </body>
   </html>`;
