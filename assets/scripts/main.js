@@ -63,6 +63,16 @@ Reveal.on( 'ready', event => {
       info.parentNode.querySelector("blockquote").classList.toggle("is-passive");
     });
   }
+
+  const speakerNotes = document.querySelectorAll(".notes");
+  // wenn der Nutzer die taste "i" drückt, dann zeige die Speaker Notes an/ verstecke sie wieder
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "i") {
+      speakerNotes.forEach(note => {
+        note.classList.toggle("is-active");
+      });
+    }
+  });
 } );
 
 Reveal.on('slidechanged', event => {
