@@ -11,7 +11,7 @@ status: ok
 
 {% screenshot "./images/digital-products-02.png", '{"transition":"fade", "classes": "shadow", "width":"80%", "bu":"Different Types of Design(ers)"}' %}
 
-{% screenshot "./images/digital-products-03.png", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":"https://techcrunch.com/2017/05/31/here-are-some-reasons-behind-techs-design-shortage"}' %}
+{% screenshot "./images/digital-products-03.png", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":"https://techcrunch.com/2017/05/31/here-are-some-reasons-behind-techs-design-shortage<br><br>https://www.nngroup.com/articles/ux-developer-ratio/"}' %}
 
 {% screenshot "./images/digital-products-04.png", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":""}' %}
 

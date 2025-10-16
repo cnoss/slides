@@ -1398,7 +1398,7 @@ a.is-black:hover {
 /* Notizen
 #################################################### */
 .notes.is-active {
-  display: block !important;
+  display: flex !important;
   top: 0;
   right: 0;
   width: 33%;
@@ -1408,7 +1408,24 @@ a.is-black:hover {
   color: var(--lightest);
   padding: var(--m);
   z-index: 1000;
-  opacity: 0.7;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  gap: var(--xs);
+  overflow-y: auto;
+  justify-content: center;
+}
+.notes.is-active * {
+  line-height: var(--lh-normal);
+}
+.notes.is-active p {
+  margin-bottom: var(--s);
+}
+.notes.is-active ul, .notes.is-active ol {
+  margin-left: var(--m);
+}
+.notes.is-active ul li, .notes.is-active ol li {
+  margin-bottom: var(--xs);
 }
 
 /*# sourceMappingURL=main.css.map */
