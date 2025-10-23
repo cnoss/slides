@@ -1,0 +1,118 @@
+<!doctype html>
+  <html lang="de">
+    <head>
+      <title>Über den Workshop // Christian Noss</title>
+      <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="googlebot-news" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+      <link rel="stylesheet" href="/slides/reveal/dist/reset.css">
+      <link rel="stylesheet" href="/slides/reveal/dist/reveal.css">
+      <link rel="stylesheet" href="/slides/assets/main.css">
+     
+      <link rel="icon" type="image/svg" href="/slides/assets/images/preview_black_24dp.svg">
+  
+      <!-- Theme used for syntax highlighted code -->
+      <link rel="stylesheet" href="/slides/reveal/plugin/highlight/github.css">
+    </head>
+    <body>
+      <div class="reveal">
+        <div class="slides">
+          
+      <section data-slide-class="images" class="mi-slide 
+      images "    data-transition="convex">
+      <section data-slide-shortcode-class="interlude" data-background-color="#4952e1" class="image screenshot interlude" data-transition="{"transition":"none"}"><div><h1 class="title"><del>Checkin?</del> 😢</h1></div></section>
+<section data-slide-shortcode-class="question" class="question"><div><h1 class="title"><p>💪 😵‍💫 😖 💪 💪 🏃‍♂️ 😖 🌀 🏃 💪</p>
+</h1><h2 class="subtitle js-delay">Mein Weg zu diesem Workshop</h2></div></section>
+<section data-slide-shortcode-class="question" class="question"><div><h1 class="title"><p>Was meint <em>Multi-Window</em> Experiences?</p>
+</h1></div></section>
+<section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/01-cover-bjorn-stall.jpg" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p><a href="https://80.lv/articles/a-programmer-presents-a-mind-blowing-multi-window-adaptive-experience">Beispiel von Björn Staal</a><br><a href="https://github.com/bgstaal/multipleWindow3dScene">GitHub Repo</a><br><a href="https://bgstaal.github.io/multipleWindow3dScene/">Demo</a><br><a href="https://www.youtube.com/watch?v=4LwHH3r2qNY">Video</a></p>
+</p></div></section>
+<section data-slide-shortcode-class="simple-text" class="simple" data-transition="{"transition":"slide"}">
+    <div><h1 class="title">Ziele des Workshops</h1><ul>
+<li>Wie können Daten zwischen Fenstern ausgetauscht werden?</li>
+<li>Wie lassen sich diese Ansätze mit p5.js sinnvoll verbinden?</li>
+<li>Was lässt sich gestalterisch damit machen? 🧐</li>
+<li>bissl Spaß haben 👻</li>
+</ul>
+</div></section>
+<section data-slide-shortcode-class="simple-text" class="simple" data-transition="{"transition":"slide"}">
+    <div><h1 class="title">Wie kommen wir dahin?</h1><div class="fragment is-unbalanced"><em>Zielbild:</em> Wo geht die Reise hin?</div>
+<div class="fragment is-unbalanced"><em>Szenarien:</em> Kleiner konzeptioneller Unterbau</div>
+<div class="fragment is-unbalanced"><em>Sharing Data:</em> Verschiedene Ansätze zum Austausch von Daten zwischen Fenstern. <strong>mit Übung</strong></div>
+<div class="fragment is-unbalanced"><em>Working with p5.js:</em> Kleiner Rundflug über p5.js</div>  
+<div class="fragment is-unbalanced"><em>Code-Code-Code:</em> Aufgaben zum selber coden 🎊</div>
+<div class="fragment is-unbalanced"><em>Rückblick/ Ausblick:</em> Was war – was geht?</div>
+</div></section>
+<section data-slide-shortcode-class="simple-text" class="simple" data-transition="{"transition":"slide"}">
+    <div><h1 class="title">Material</h1><ul>
+<li><a href="https://cnoss.github.io/multi-window-experiences/">Dokumentation</a></li>
+<li><a href="https://github.com/cnoss/multi-window-experiences">Repo</a></li>
+<li><a href="https://cnoss.github.io/slides/presentations/misc/multi-window-with-p5/">Slidedeck</a></li>
+</ul>
+</div></section>
+<section data-slide-shortcode-class="simple-text" class="simple" data-transition="{"transition":"slide"}">
+    <div><h1 class="title">Disclaimer ⚠️</h1><div class="fragment">Wir werden die meisten Konzepte & Techniken nur sehr oberflächlich behandeln.</div>
+<div class="fragment">Der Code ist teils leider recht umfassend und unübersichtlich.</div>
+<div class="fragment">Für p5.js wird uns Repertoire fehlen. 😢</div>
+<div class="fragment">Babylonisches Sprachgewirr 😱</div>
+<div class="fragment">Die meisten Konzepte & Techniken hab ich noch nie in der Hand gehabt oder gar ernsthaft genutzt. 🧐</div>
+</div></section>
+<section data-slide-shortcode-class="simple-text" class="simple" data-transition="{"transition":"slide"}">
+    <div><h1 class="title">Disclaimer, Teil 2 ‼️</h1><div class="fragment">Es wurden keine Performance Messungen vorgenommen.</div>
+<div class="fragment">Wir befassen uns nur mit <strong>zwei</strong> Fenstern.</div>
+<div class="fragment">Insgesamt ist sehr wenig getestet worden, insbesondere wurden kaum Cross-Browser Tests gemacht.</div>
+<div class="fragment">Nicht alle sinnvollen Ansätze werden in einem Sketch(?) zusammen gebracht, z.B. Physics & Multi-Window</div>
+<div class="fragment">Alle Implementierungen versuchen möglichst nah an Standards zu sein.</div>
+</div></section>
+<section data-slide-shortcode-class="question" class="question"><div><h1 class="title"><p>Wohin geht es?</p>
+</h1><h2 class="subtitle js-delay"><a href="https://cnoss.github.io/multi-window-experiences/02-single-window-simple-object-example/index.html">Single Window, Simple Object</a> // <a href="https://cnoss.github.io/multi-window-experiences/03-single-window-complex-object-example/index.html">Single Window, Complex Object</a> // <a href="https://cnoss.github.io/multi-window-experiences/04-multi-window-simple-object-example/index.html">Multi-Window, Simple Object</a> // <a href="https://cnoss.github.io/multi-window-experiences/05-multi-window-complex-object-example/index.html">Multi-Window, Complex Object</a> // <a href="https://cnoss.github.io/multi-window-experiences/06-rotating-circles-example/index.html">Rotating Circles</a> // <a href="https://cnoss.github.io/multi-window-experiences/07-handoff-example/index.html">Casting</a>
+</h2></div></section>
+
+      
+      
+      
+      </section>
+      
+        </div>
+
+      </div>
+      
+      <script src="/slides/reveal/dist/reveal.js"></script>
+      <script src="/slides/assets/scripts/libs/fittext.js"></script>
+      <script src="/slides/assets/scripts/main.js"></script>
+      <script src="/slides/reveal/plugin/notes/notes.js"></script>
+      <script src="/slides/reveal/plugin/markdown/markdown.js"></script>
+      <script src="/slides/reveal/plugin/highlight/highlight.js"></script>
+      <script src="/slides/reveal/plugin/zoom/zoom.js"></script>
+      <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+          hash: true, 
+          center: false,
+          disableLayout: true,
+          progress: true,
+          backgroundTransition: 'fade',
+          highlight: {
+            highlightOnLoad: false,
+          },
+          // Learn about plugins: https://revealjs.com/plugins/
+          plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+        }).then(() => {
+          const highlight = Reveal.getPlugin('highlight');
+          highlight.hljs.configure(
+            {
+              languages: ['javascript', 'css', 'html', 'bash', 'json', 'markdown', 'xml', 'yaml'],
+            }
+          );
+          highlight.hljs.highlightAll();
+        });
+
+        
+      </script>
+    </body>
+  </html>

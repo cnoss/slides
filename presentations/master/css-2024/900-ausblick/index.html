@@ -1,0 +1,82 @@
+<!doctype html>
+  <html lang="de">
+    <head>
+      <title>Wie geht's weiter? // Christian Noss</title>
+      <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="googlebot-news" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+      <link rel="stylesheet" href="/slides/reveal/dist/reset.css">
+      <link rel="stylesheet" href="/slides/reveal/dist/reveal.css">
+      <link rel="stylesheet" href="/slides/assets/main.css">
+     
+      <link rel="icon" type="image/svg" href="/slides/assets/images/preview_black_24dp.svg">
+  
+      <!-- Theme used for syntax highlighted code -->
+      <link rel="stylesheet" href="/slides/reveal/plugin/highlight/github.css">
+    </head>
+    <body>
+      <div class="reveal">
+        <div class="slides">
+          
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section data-slide-shortcode-class="interlude" data-background-color="#00ad2f" class="image screenshot interlude" ><div><h1 class="title">Wie geht's weiter?</h1></div></section>
+<section data-slide-shortcode-class="simple-text" class="simple" >
+    <div><h1 class="title">Diggin Deeper</h1><ul class="colored-list">
+  <li>Checkout <a href="https://leanweb.dev">The Lean Web</a></li>
+  <li>Checkout <a href="https://io.google/2024/explore/6d6b2a35-ae3a-4f73-b40d-9dc4a8cf0df4/">What's new in the Web, Google I/O Talk from Rachel Andrew</a></li>
+  <li>Checkout <a href="https://io.google/2024/explore/8ae18b72-028e-4722-9a05-4a480048e629/">Multi-page application View Transitions are here, Google I/O Talk from Bramus Van Damme</a></li>
+  <li>Checkout <a href="https://io.google/2024/explore/83764202-1ca2-4491-a731-c4d3701624d4/">The state of CSS and Web UI, Google I/O Talk from Una Kravets</a></li>
+</ul>
+</div></section>
+<section data-slide-shortcode-class="interlude" data-background-color="#d16" class="image screenshot interlude" ><div><h1 class="title">🧰</h1><h2 class="subtitle js-delay"><p>Gut gepackte Werkzeugkiste lohnt sich!</p>
+</h2></div></section>
+
+      
+      
+      
+      </section>
+      
+        </div>
+
+      </div>
+      
+      <script src="/slides/reveal/dist/reveal.js"></script>
+      <script src="/slides/assets/scripts/libs/fittext.js"></script>
+      <script src="/slides/assets/scripts/main.js"></script>
+      <script src="/slides/reveal/plugin/notes/notes.js"></script>
+      <script src="/slides/reveal/plugin/markdown/markdown.js"></script>
+      <script src="/slides/reveal/plugin/highlight/highlight.js"></script>
+      <script src="/slides/reveal/plugin/zoom/zoom.js"></script>
+      <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+          hash: true, 
+          center: false,
+          disableLayout: true,
+          progress: true,
+          backgroundTransition: 'fade',
+          highlight: {
+            highlightOnLoad: false,
+          },
+          // Learn about plugins: https://revealjs.com/plugins/
+          plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+        }).then(() => {
+          const highlight = Reveal.getPlugin('highlight');
+          highlight.hljs.configure(
+            {
+              languages: ['javascript', 'css', 'html', 'bash', 'json', 'markdown', 'xml', 'yaml'],
+            }
+          );
+          highlight.hljs.highlightAll();
+        });
+
+        
+      </script>
+    </body>
+  </html>

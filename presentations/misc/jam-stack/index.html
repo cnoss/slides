@@ -1,0 +1,474 @@
+<p>slide-is:image-fullscreen images/header-illustration-bg.svg</p>
+<hr>
+<p>slide-is:welcome</p>
+<h1>Case Study: Developing a Community Website on JAMstack with GIT Managed Content and a Isomorphic Rendering Approach</h1>
+<p>oder: eine kleine Reise in die Welt des Unwissens</p>
+<hr>
+<p>slide-is:interlude</p>
+<h2>Wie bin ich auf diesen Titel gekommen???</h2>
+<p>lang, falsch, unverständlich und in der falschen Sprache :/</p>
+<hr>
+<p>slide-is:interlude</p>
+<h2>Christian Noss</h2>
+<p>Web-(designer|developer|enthusiast) seit … öhm</p>
+<hr>
+<p>slide-is:simple</p>
+<h2>Disclaimer</h2>
+<ul>
+<li>Sichtweisen und Kontexte sind eher persönlich</li>
+<li>Sachverhalte sind oft verkürzt dargestellt</li>
+<li>Schlüsse sind zugunsten der Prägnanz oft plakativ</li>
+</ul>
+<hr>
+<p>slide-is:interlude</p>
+<h2>Wen könnte das Thema interessieren?</h2>
+<hr>
+<p>slide-is:welcome</p>
+<h1><strong>Developing a</strong> Community <strong>Website</strong> on JAMstack with GIT Managed Content and a Isomorphic Rendering Approach</h1>
+<p>irgendwo zwischen <strong>informationsgetriebener Website(z.B. Wikipedia)</strong> und funktionsgetrieber Web-App (z.B. Gmail, Spotify)</p>
+<hr>
+<p>slide-is:interlude</p>
+<h2>Dem Kunden/ User möglichst schnell und gut strukturiert die gesuchten Informationen ausliefern.</h2>
+<p>Ziel</p>
+<hr>
+<p>slide-is:simple</p>
+<h2>1993</h2>
+<p>HTML &amp; VIM, Webserver, Telnet, Mosaic &gt; <strong>Seite funktioniert: Waaaaahnsinn!!</strong></p>
+<blockquote>
+<p>Kernfrage: läuft die Seite?</p>
+</blockquote>
+<hr>
+<p>slide-is:simple</p>
+<h2>1998</h2>
+<p>HTML, CSS, <s>VIM</s> BBedit, <s>Mosaic</s> Netscape Navigator, Webserver, FTP, Telnet, CGI/Perl &gt; <strong>Seite funktioniert und sieht irgendwie gut aus: yeeeeaaaah!!</strong></p>
+<blockquote>
+<p>Kernfragen: laufen die Skripte und sieht die Seite gut aus?</p>
+</blockquote>
+<hr>
+<p>slide-is:simple</p>
+<h2>2003</h2>
+<p><s>HTML</s> XHTML, CSS, Javascript, DHTML oder Flash, BBedit, <s>Netscape Navigator</s> Internet/Explorer/Safari/Firefox, Webserver(Produktiv), Webserver(Dev), SFTP, SSH, <s>CGI/Perl</s> PHP, CMS(Produktiv), CMS(Dev), (My)SQL-DB(Produktiv), (My)SQL-DB(Dev), SVN &gt; <strong>Seite funktioniert, sieht auf verschiedenen Browsern korrekt aus, hat coole grafische Effekte, Kunde versteht das CMS, PHP Skripte laufen, JS Skripte laufen auch im IE, Seite ist barrierefrei, Code ist valide und wohlgeformt, Sync vom Dev ins Live System funktioniert, WebMetrics laufen: yeah!</strong></p>
+<blockquote>
+<p>Kernfrage: Findet der Google Bot die Seiten?</p>
+</blockquote>
+<hr>
+<p>slide-is:simple</p>
+<h2>2008</h2>
+<p>XHTML, CSS, Javascript, script.aculo.us, <s>Flash</s>, <s>VIM BBedit</s> Sublime, AJAX, <s>Mosaic Netscape Navigator</s> Chrome/Internet Explorer/Safari/Firefox, iPhone, Webserver(Produktiv), Webserver(Staging), Webserver(Dev), SFTP, SSH, PHP, Code-Ignitor, CMS(Produktiv), CMS(Dev), (My)SQL-DB(Produktiv), (My)SQL-DB(Dev), SVN &gt; <strong>Seite funktioniert, sieht auf verschiedenen Browsern korrekt aus, hat coole grafische Effekte, Kunde versteht das CMS, PHP Skripte laufen, JS Skripte laufen auch im IE, Seite ist barrierefrei, Code ist valide und wohlgeformt, Sync vom Dev ins Live System funktioniert, Site wird von Google indiziert, WebMetrics laufen, Seite funktioniert irgendwie auch auf dem iPhone: yeah!</strong></p>
+<blockquote>
+<p>Kernfragen: Läuft die Seite auf dem iPhone vom Chef halbwegs?</p>
+</blockquote>
+<hr>
+<p>slide-is:simple</p>
+<h2>2013</h2>
+<p><s>HTML XHTML</s> HTML5, <s>CSS</s> CSS3, Less/Sass, Javascript, <s>script.aculo.us</s> jQuery, Bootstrap/Foundation, AngularJS, AJAX, <s>VIM BBedit</s> Sublime, <s>Mosaic Netscape Navigator</s>/Chrome/Internet Explorer/Safari/Firefox, iPhone/Android/iPad, Webserver(Produktiv), Webserver(Staging), Webserver(Dev), SFTP, SSH, PHP, <s>Code-Ignitor</s> Laravel, Flatfile-CMS(Produktiv), Flatfile-CMS(Dev), (My)SQL-DB(Produktiv), (My)SQL-DB(Dev), Git, Grunt &gt; <strong>Seite funktioniert, sieht auf verschiedenen Browsern korrekt aus, Kunde versteht das CMS, Skripte laufen, Seite ist <s>barrierefrei</s> performant, Code ist <s>valide</s> komprimiert <s>und wohlgeformt</s>, Build Chain funktioniert, Deployment Pipeline funktioniert, Site wird von Google indiziert, WebMetrics laufen, Seite funktioniert gut auf allen Desktops, Smartphones und Tablets, wahrgenommene Performance ist gut: puh!</strong></p>
+<blockquote>
+<p>Kernfragen: Funktionieren die Build Chain und Deployment Pipeline?</p>
+</blockquote>
+<hr>
+<p>slide-is:simple</p>
+<h2>2018</h2>
+<p><s>HTML XHTML</s> HTML5, <s>CSS</s> CSS3, <s>Less</s> Sass, <s>Javascript</s> ECMAScript 2017, Babel, <s>script.aculo.us</s> <s>jQuery</s>, Bootstrap/Foundation/SemnaticUI/Bulma/UIKit/, Angular/React/Vue, ~~AJAX~8, <s>VIM BBedit</s> Sublime, <s>Mosaic Netscape Navigator</s>/Chrome/Internet Explorer/Safari/Firefox, iPhone/Android/iPad, Webserver(Produktiv), Webserver(Staging), Webserver(Dev), SFTP, SSH, PHP, <s>Code-Ignitor Laravel, Flatfile-CMS(Produktiv), Flatfile-CMS(Dev), (My)SQL-DB(Produktiv), (My)SQL-DB(Dev)</s>, HeadlessCMS, JAMStack, Git, <s>Grunt</s> WebPack, NPM &gt; <strong>Seite funktioniert, sieht auf verschiedenen Browsern korrekt aus, Kunde versteht das CMS, Skripte laufen, Seite ist <s>barrierefrei</s> performant, Code ist <s>valide</s> komprimiert <s>und wohlgeformt</s>, Build Chain funktioniert, Deployment Pipeline funktioniert, Site wird von Google indiziert, WebMetrics laufen, Seite funktioniert gut auf allen Desktops, Smartphones und Tablets, wahrgenommene Performance ist gut: puh!</strong></p>
+<blockquote>
+<p>Kernfrage: Ist mein Stack noch zeitgemäß?</p>
+</blockquote>
+<hr>
+<p>slide-is: conclusion</p>
+<h2>Die Ziele haben sich kaum verändert, der Weg zum Ziel enorm!</h2>
+<hr>
+<p>slide-is:welcome</p>
+<h1>Developing a <strong>Community</strong> Website on JAMstack with GIT Managed Content and a Isomorphic Rendering Approach</h1>
+<hr>
+<p>slide-is: interlude</p>
+<h2>A feeling of fellowship with others, as a result of sharing common attitudes, interests and goals.</h2>
+<p>Fabian Pfortmüller</p>
+<hr>
+<p>slide-is:image-fullscreen images/community.svg</p>
+<hr>
+<!-- Content
+	-------------------------------------------------------------------------->
+<p>slide-is:welcome</p>
+<h1>Case Study: Developing a Community Website on JAMstack with GIT Managed <strong>Content</strong> and a Isomorphic Rendering Approach</h1>
+<hr>
+<p>slide-is: interlude</p>
+<h1>Content is king.</h1>
+<p>Bill Gates</p>
+<hr>
+<p>slide-is:image-fullscreen images/google-1999.png</p>
+<hr>
+<p>slide-is:image-fullscreen images/content-creation.png</p>
+<hr>
+<p>slide-is:conclusion</p>
+<h2>icon:book Content Entwicklung ist jede Menge Arbeit.</h2>
+<hr>
+<!-- Content Management
+	-------------------------------------------------------------------------->
+<p>slide-is:welcome</p>
+<h1>Case Study: Developing a Community Website on JAMstack with GIT <strong>Managed Content</strong> and a Isomorphic Rendering Approach</h1>
+<p>Oder passender: Content Management</p>
+<hr>
+<p>slide-is:image images/content-structure.png</p>
+<hr>
+<p>slide-is:interlude</p>
+<h2>Aufgaben eines Content Management Systems</h2>
+<hr>
+<p>slide-is:image images/CMS-Tasks.png</p>
+<hr>
+<p>slide-is:interlude</p>
+<h2>Structured Content vs. „Layouted“ Content</h2>
+<p>Mental Model of Content</p>
+<hr>
+<p>slide-is:image images/content-structured.png</p>
+<hr>
+<p>slide-is:image images/layout-simple.png</p>
+<hr>
+<p>slide-is:interlude</p>
+<h3>„Layouted“ Content</h3>
+<hr>
+<p>slide-is:image images/content-layouted-fvf.png</p>
+<hr>
+<p>slide-is:image images/content-layouted.png</p>
+<hr>
+<p>slide-is:interlude</p>
+<h3>Content Storage</h3>
+<hr>
+<p>slide-is:image images/content-storage.png</p>
+<hr>
+<p>slide-is:image images/cms-nutzung.png zoom</p>
+<hr>
+<p>slide-is: simple</p>
+<h2>Ergebnis</h2>
+<ul>
+<li>Content ist da und kann publiziert werden</li>
+<li>Content liegt in den Strukturen des CMS</li>
+<li>Content kann schlecht weiter verarbeitet werden</li>
+<li>Content ist segmentiert</li>
+<li>Semantik geht verloren</li>
+<li>Merging von Content bei vielen parallelen Pflegeprozessen ist schwer</li>
+</ul>
+<hr>
+<p>slide-is:image images/CMS-Tasks.png</p>
+<hr>
+<p>slide-is: interlude</p>
+<h1>Organizing</h1>
+<p>Wie wird strukturiert?</p>
+<hr>
+<p>slide-is: simple</p>
+<h2>Wie wird strukturiert?</h2>
+<ul>
+<li>im CMS Backend</li>
+<li>mit Kategorien</li>
+<li>mit weiteren Taxonomien, z.B. Tags</li>
+</ul>
+<hr>
+<p>slide-is: interlude</p>
+<h1>Publishing</h1>
+<p>Wie wird ausgeliefert?</p>
+<hr>
+<p>slide-is:image images/cms-components.png</p>
+<hr>
+<p>slide-is:image images/cms-stack.png</p>
+<hr>
+<p>slide-is:image images/trad-stack.png</p>
+<hr>
+<p>slide-is:image images/trad-stack-2.png</p>
+<hr>
+<p>slide-is:image images/trad-stack-3.png</p>
+<hr>
+<p>slide-is:image images/trad-stack-4.png</p>
+<hr>
+<p>slide-is:image images/trad-stack-5.png</p>
+<hr>
+<p>slide-is:image images/trad-stack-simple.png</p>
+<hr>
+<p>slide-is:image images/trad-stack-in-real.png</p>
+<hr>
+<p>slide-is:image images/trad-stack-content.png</p>
+<hr>
+<p>slide-is:image images/trad-stack-content-2.png</p>
+<hr>
+<p>slide-is: conclusion</p>
+<h2>icon:ban Wenn wir den Zustand schlecht reden wollten:</h2>
+<ul>
+<li>Content Pflege ist mühsam</li>
+<li>Content zerfällt/ wird segmentiert</li>
+<li>Organisation ist umständlich</li>
+<li>Merge von Datenständen ist sau kompliziert</li>
+<li>Content lässt sich schlecht weiter verarbeiten</li>
+<li>Content ist in den Strukturen des Systems „gefangen“</li>
+<li>Content Migration in ein anderen System ist sehr komplex</li>
+<li>Publishing ist langsam</li>
+<li>Bedienung von verschiedenen Ausgabekanälen ist mühsam</li>
+<li>Publishing skaliert schlecht</li>
+<li>System bietet viele Angriffsvektoren</li>
+<li>monolithisches System</li>
+</ul>
+<hr>
+<p>slide-is: interlude</p>
+<h2>Static is the new dynamic!</h2>
+<p>Why not?</p>
+<hr>
+<!-- JAM Stack
+	-------------------------------------------------------------------------->
+<p>slide-is:welcome</p>
+<h1>Case Study: Developing a Community Website on <strong>JAMstack</strong> with GIT Managed Content and a Isomorphic Rendering Approach</h1>
+<p>Coined by Mathias Biilmann, Netlify</p>
+<hr>
+<p>slide-is: simple</p>
+<h2>Stacks</h2>
+<ul>
+<li><strong>WISA stack:</strong> Windows, IIS, SQL Server, ASP.NET</li>
+<li><strong>LAMP:</strong> Linux, Apache, MySQL, Python || Perl || PHP</li>
+<li><strong>MEAN:</strong> MongoDB, express.js, angular.js, node.js</li>
+<li><strong>MERN:</strong> MongoDB, Express.js, React.js, Node.js</li>
+</ul>
+<hr>
+<p>slide-is: interlude</p>
+<h1>JAM</h1>
+<p>Javascript, APIs and Markup</p>
+<hr>
+<p>slide-is: assignment</p>
+<h2>Javascript</h2>
+<p>Any dynamic programming during the request/response cycle is handled by JavaScript, running entirely on the client. This could be any frontend framework, library, or even vanilla JavaScript.</p>
+<hr>
+<p>slide-is: assignment</p>
+<h2>APIs</h2>
+<p>All server-side processes or database actions are abstracted into reusable APIs, accessed over HTTP with JavaScript. These can be custom-built or leverage third-party services.</p>
+<hr>
+<p>slide-is: assignment</p>
+<h2>Markup</h2>
+<p>Templated markup should be prebuilt at deploy time, usually using a site generator for content sites, or a build tool for web apps.</p>
+<hr>
+<p>slide-is: interlude</p>
+<h2>Aufgaben werden entkoppelt</h2>
+<p>#microservices #decoupling #antimonolithic</p>
+<hr>
+<p>slide-is:image images/CMS-Tasks.png</p>
+<hr>
+<p>slide-is:image images/CMS-Tasks-jamstack.png</p>
+<hr>
+<p>slide-is: interlude</p>
+<h1>Bausteine des Stacks</h1>
+<hr>
+<p>slide-is:image images/jamstack-blocks.png slide</p>
+<hr>
+<p>slide-is: interlude</p>
+<h1>#1 Creating Content</h1>
+<hr>
+<p>slide-is: simple</p>
+<h2>Content in Markdown</h2>
+<ul>
+<li>übersichtlich</li>
+<li>in sich geschlossen</li>
+<li>flat</li>
+<li>leicht zu editieren</li>
+<li>leicht weiter zu verarbeiten</li>
+</ul>
+<hr>
+<p>slide-is:image images/markdown.png</p>
+<hr>
+<p>slide-is: interlude</p>
+<h1>#2 Organizing Content</h1>
+<hr>
+<p>slide-is: simple</p>
+<h2>Organisation im Filesystem …</h2>
+<ul>
+<li>bekanntes mentales Modell</li>
+<li>übersichtlich</li>
+<li>leicht und schnell zu editieren</li>
+</ul>
+<hr>
+<p>slide-is: simple</p>
+<h2>… und via GIT/GITHUB</h2>
+<ul>
+<li>Versionierung</li>
+<li>Merging</li>
+<li>Branching</li>
+<li>zusätzliche Tools, z.B. Issues</li>
+</ul>
+<hr>
+<p>slide-is:image images/filesystem.png slide</p>
+<hr>
+<p>slide-is:image images/git.png</p>
+<hr>
+<p>slide-is:image images/git-2.png</p>
+<hr>
+<p>slide-is: interlude</p>
+<h1>#3 Publishing Content</h1>
+<hr>
+<p>slide-is: simple</p>
+<h2>Prerendered, static Data</h2>
+<ul>
+<li>rendered at buildtime via static site generator</li>
+<li>deployed to simple webserver or cdn</li>
+<li>additional data via javascript and APIs</li>
+</ul>
+<hr>
+<p>slide-is: simple</p>
+<h2>Vorteile</h2>
+<ul>
+<li>superschnell und skalierbar</li>
+<li>sehr sicher</li>
+<li>minimale Anforderungen an den Server</li>
+</ul>
+<hr>
+<p>slide-is:image images/jamstack-example.png</p>
+<hr>
+<p>slide-is: simple</p>
+<h2>Realworld Examples</h2>
+<ul>
+<li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+<li>Reakkreditierung der Medieninformatik <a href="https://github.com/th-koeln/mi-2017">Repo</a> // <a href="https://th-koeln.github.io/mi-2017/">Web</a> // <a href="http://www.medieninformatik.th-koeln.de/download/modulbeschreibungen-bachelor-bpo4.pdf">PDF</a></li>
+</ul>
+<hr>
+<p>slide-is: conclusion</p>
+<h2>icon:gratipay Wenn wir den JAMstack schönreden wollten:</h2>
+<ul>
+<li>Pflege der Inhalte ist leicht</li>
+<li>Inhalte bleiben in sich geschlossen</li>
+<li>Inhalte sind portierbar</li>
+<li>Inhalte können versioniert werden</li>
+<li>verschiedene Stände können gemerged werden</li>
+<li>verschiedene Kanäle können recht gut bedient werden</li>
+<li>Trennung von Content und Layout ist gut möglich</li>
+<li>Organisation von Inhalten ist sehr einfach</li>
+<li>Publishing ist schnell</li>
+<li>Publishing ist sicher</li>
+<li>Publishing skaliert gut</li>
+<li>Best-of-Breed Ansatz mit lose gekoppelten Systemen</li>
+<li>unterstützt paralleles Entwickeln von Code und Content</li>
+</ul>
+<hr>
+<!-- Case Study
+	-------------------------------------------------------------------------->
+<p>slide-is:welcome</p>
+<h1><strong>Case Study</strong>: Developing a Community Website on JAMstack with GIT Managed Content and a Isomorphic Rendering Approach</h1>
+<hr>
+<p>slide-is:image-fullscreen images/community.svg slide</p>
+<hr>
+<p>slide-is: simple</p>
+<h2>MI Website</h2>
+<p>Die Medieninformatik Website ist der Schweizer Taschenmesser für die Kommunikation nach außen und innen. Sie richtet sich an alle Zielgruppen und stellt Informationen und Einblicke in das Forschungs- und Lehrgebiet Medieninformatik für die verschiedenen Zielgruppen bereit. Hier landet im Grunde alles, was in den anderen Kanälen nicht passt, oder was für längere Zeit vorgehalten werden soll. Schwerpunkt des Inhalts sind Artefakte, die im Rahmen von Projekten oder Abschlussarbeiten entstanden sind. Inhalte werden folgenden Hauptrubriken zugeordnet:</p>
+<ul>
+<li><strong>mission:</strong> alles rund im die Mission des Fachgebiets</li>
+<li><strong>people:</strong> alles rund im die Leute in der MI</li>
+<li><strong>projects:</strong> Berichte und Ergebnisse aus Projekten</li>
+<li><strong>pulse:</strong> alles, was gerade so passiert</li>
+<li><strong>research:</strong> Berichte und Ergebnisse aus Forschungsvorhaben und Kooperationen</li>
+<li><strong>study:</strong> alles rund ums Studium</li>
+<li><strong>toolbox:</strong> Helferlein für den Alltag von Medieninformatikern</li>
+</ul>
+<hr>
+<p>slide-is: simple</p>
+<h2>Was soll die Seite können?</h2>
+<p>Thanks to <a href="https://www.hawksworx.com/">Phil Hawksworth</a></p>
+<ul>
+<li>meaningful URL for every Page (or Piece) of Content</li>
+<li>alle URLs sind Crawable, Curlaable und indizierbar</li>
+<li>jede URL liefert wirklichen Content</li>
+<li>URLs sind möglichst stabil</li>
+<li>schnelles Rendering und gute, wahrgenommene Performance</li>
+<li>hohe Ausfallsicherheit</li>
+<li>geringen Payload</li>
+<li>Möglichkeit für Übergänge and visuelle Effekte</li>
+<li>minimale Hosting Komplexität</li>
+</ul>
+<hr>
+<p>slide-is: simple</p>
+<h2>Warum JAMstack?</h2>
+<ul>
+<li>Fokus auf Content/ Dokumente</li>
+<li>Offenheit des Systems</li>
+<li>in sich geschlossene Dokumente</li>
+<li>Zweitverwertung von Dokumenten ist leicht möglich</li>
+<li>unterschiedliche Autoren</li>
+<li>einfache Struktur</li>
+<li>Layout und Content entkoppelt</li>
+<li>…</li>
+</ul>
+<hr>
+<p>slide-is:interlude</p>
+<h1>Building Blocks</h1>
+<p>Markdown, GitHub, Hugo, Travis.CI, Github.io</p>
+<hr>
+<p>slide-is: interlude</p>
+<h1>Hugo</h1>
+<p>Ein sehr flexiber und schneller Static Site Generator.</p>
+<hr>
+<p>slide-is: interlude</p>
+<h2>Seiten &amp; Listen</h2>
+<p>Hugos inhaltliches Basiskonzept</p>
+<hr>
+<p>slide-is:image-fullscreen images/hugo-list-example.png slide</p>
+<hr>
+<p>slide-is:image-fullscreen images/hugo-list-example-2.png</p>
+<hr>
+<p>slide-is:image-fullscreen images/hugo-list-example-3.png</p>
+<hr>
+<p>slide-is: interlude</p>
+<h2>mal kurz rein gucken?</h2>
+<hr>
+<p>slide-is: conclusion</p>
+<h2>icon:heartbeat Derzeitige Beurteilung</h2>
+<ul>
+<li>Markdown ist wirklich hübsch</li>
+<li>die Kombination aus Markdown und Git ist topp!</li>
+<li>Entwurf eines Systems um den Content herum ist interessant aber gar nicht so leicht</li>
+<li>konsequente Trennung von Content und Layout ist gar nicht so leicht</li>
+<li>Hugo's Lookup Order ist recht komplex</li>
+<li>Hugo's Lists &amp; Pages Konzept ist cool, aber herausforderend</li>
+</ul>
+<hr>
+<p>slide-is: interlude</p>
+<h2>Hugo: multiple Repräsentationen des Contents</h2>
+<p>HTML, AMP, JSON, XML</p>
+<hr>
+<!-- Isomorphic Rendering
+	-------------------------------------------------------------------------->
+<p>slide-is:welcome</p>
+<h1>Case Study: Developing a Community Website on JAMstack with GIT Managed Content and a <strong>Isomorphic Rendering</strong> Approach</h1>
+<p>Javascript Page Rendering</p>
+<hr>
+<p>slide-is:image images/isomorphic.png</p>
+<hr>
+<p>slide-is:image images/isomorphi-2.png</p>
+<hr>
+<p>slide-is: conclusion</p>
+<h2>icon:tachometer Speed up your page!</h2>
+<ul>
+<li>Bessere wahrgenommene Performance</li>
+<li>Visuelle Effekte</li>
+<li>Suchfunktionen</li>
+<li>maschinenlesbare Inhalte</li>
+</ul>
+<hr>
+<p>slide-is: interlude</p>
+<h2>Was kann JAMstack für uns tun?</h2>
+<hr>
+<p>slide-is: conclusion</p>
+<h2>Geht es um Content?</h2>
+<hr>
+<p>slide-is: conclusion</p>
+<h2>Gibt es viele Autoren?</h2>
+<hr>
+<p>slide-is: conclusion</p>
+<h2>Soll Code und Content schnell parallel entwickelt werden?</h2>
+<hr>
+<p>slide-is: conclusion</p>
+<h2>Sind die Inhalte überwiegend statisch?</h2>
+<hr>
+<p>slide-is: conclusion</p>
+<h2>Hat das Team Dev-Skills und Spaß an einfachen als auch flexiblen Lösungen?</h2>
+<hr>
+<p>slide-is: interlude</p>
+<h1>JAMstack first?</h1>
+<hr>
+<p>slide-is: interlude</p>
+<h2>auch interessant</h2>
+<p>#Netlify #Flatfile CMS #Headless CMS</p>
+<hr>
+<p>slide-is:outro</p>
+<h2>Danke für's Mitmachen</h2>
+<p>Slides unter <strong>http://christian-noss.de/latest</strong></p>
+<p>icon:twitter <a href="http://twitter.com/cnoss">twitter.com/cnoss</a><br>
+icon:facebook <a href="https://www.facebook.com/cnoss">www.facebook.com/cnoss</a></p>

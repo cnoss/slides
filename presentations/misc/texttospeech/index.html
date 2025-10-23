@@ -1,0 +1,547 @@
+<p>slide-is:welcome</p>
+<h1>Sprache im Web</h1>
+<p>Technologien und Konzepte zur Sprachsynthese im Online-Kontext</p>
+<hr>
+<p>slide-is:simple</p>
+<h2>Über den Workshop</h2>
+<ul>
+<li><strong>Anmerkungen/Fragen</strong> bitte direkt stellen und einbringen!</li>
+<li><strong>Zeitrahmen</strong> - 3x 50 Minuten mit je 10 Minuten Pause</li>
+<li><strong>Formate</strong> - Input, Diskussion, Coding</li>
+<li><strong>Motivation</strong> - Nutzung der eigenen Website im Home Assistant</li>
+<li><strong>Erwartungen</strong> - Beteiligung in Diskussionen, Interesse an Javascript-Coding</li>
+<li><strong>Ziele</strong> - Überblick gewinnen, Web Speech nutzen, Verständnis und Bewertungskompetenz für TTS-Technologien</li>
+</ul>
+<hr>
+<p>slide-is:simple</p>
+<h2>Inhalt</h2>
+<ul>
+<li>Einleitung</li>
+<li>Sprachen und Technologien</li>
+<li>Hands on</li>
+<li>Technologiebewertung</li>
+<li>Neuer Standard: Pronunciation</li>
+<li>Zusammenfassung</li>
+</ul>
+<hr>
+<p>slide-is:simple</p>
+<h2>Einleitung</h2>
+<ul>
+<li>Wozu Text to Speech?</li>
+<li>Geschichte</li>
+<li>Potenzial</li>
+</ul>
+<hr>
+<p>slide-is:interlude</p>
+<h3>Wozu Text to Speech?</h3>
+<p>Welche Anwendungsfälle gibt es?<br>
+Welche Technologien kann es ersetzen?</p>
+<p>https://pingo.coactum.de/752008</p>
+<hr>
+<p>slide-is:simple</p>
+<h3>Wozu Text to Speech?</h3>
+<ul>
+<li>Sprachcomputer</li>
+<li>Screenreader (Sehbehinderungen/Dyslexie)</li>
+<li>Home Assistants</li>
+<li>Klassische Bandansagen ersetzen</li>
+</ul>
+<hr>
+<p>slide-is:simple</p>
+<h3>Geschichte</h3>
+<ul>
+<li>Ausgabe von Sprache seit dem 18. Jahrhundert ein Thema</li>
+<li>&quot;Vokalmaschinen&quot; und &quot;Sprachorgeln&quot; konnten Worte ausgeben</li>
+<li>1961: Präsentation von IBM 704</li>
+<li>In den letzten zehn Jahren
+<ul>
+<li>Deutliche Qualitätssteigerung von TTS</li>
+<li>Fokus auf die Verkettung von Begriffen</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>slide-is:simple</p>
+<h3>Potenzial</h3>
+<ul>
+<li>Hotlines</li>
+<li>Lautsprecherdurchsagen</li>
+<li>Sprache von künstlicher Intelligenz</li>
+<li>KI-gesteuerte Medien (Radio, TV, Webstreams)</li>
+</ul>
+<hr>
+<p>slide-is:simple</p>
+<h2>Sprachen und Technologien</h2>
+<ul>
+<li>SSML</li>
+<li>CSS Speech</li>
+<li>Web Speech API</li>
+<li>Bestandteile der Web Speech API</li>
+</ul>
+<hr>
+<p>slide-is:simple</p>
+<h3>SSML</h3>
+<ul>
+<li>Speech Synthesis Markup Language</li>
+<li>Basiert auf XML</li>
+<li>Kann in Alexa Skills verwendet werden</li>
+<li>Unterstützt Text-to-Speech-API von Google</li>
+<li>Nur von Microsoft Edge teilweise unterstützt</li>
+<li>(Noch) <strong>kein</strong> Teil des HTML-Standards</li>
+</ul>
+<hr>
+<p>slide-is:simple</p>
+<h3>icon:code SSML</h3>
+<pre><code class="language-xml">&lt;speak&gt;
+  Das ist ein Testtext in &lt;say-as interpret-as=&quot;characters&quot;&gt;SSML&lt;/say-as&gt;. Ich kann Zahlen verschieden aussprechen.
+  &lt;break time=&quot;2000ms&quot;&gt;
+  &lt;say-as interpret-as=&quot;cardinal&quot;&gt;10&lt;/say-as&gt;
+  &lt;say-as interpret-as=&quot;ordinal&quot;&gt;10&lt;/say-as&gt;
+  Auch ein Datum, Abkürzungen oder Zensur machen mir keine Probleme.
+  &lt;say-as interpret-as=&quot;date&quot; format=&quot;yyyymmdd&quot; detail=&quot;1&quot;&gt;
+    2019-04-25
+  &lt;/say-as&gt;
+  &lt;sub alias=&quot;Technische Hochschule&quot;&gt;TH&lt;/sub&gt;Köln.
+  &lt;say-as interpret-as=&quot;bleep&quot;&gt;Zensiert&lt;/say-as&gt;
+  &lt;emphasis level=&quot;moderate&quot;&gt;Das ist eine wichtige Aussage.&lt;/emphasis&gt;
+&lt;/speak&gt;
+</code></pre>
+<hr>
+<p>slide-is:simple</p>
+<h3>CSS Speech</h3>
+<ul>
+<li>Behandlung von Sprache als Mediatype in CSS</li>
+<li>Auditive Eigenschaften für einzelne Selektoren</li>
+<li>Teilweise kompatibel mit SSML, kann SSML ergänzen</li>
+<li>(Noch) <strong>kein</strong> Teil des CSS-Standards</li>
+<li>Von keinem etablierten Browser (außer Opera) unterstützt</li>
+</ul>
+<hr>
+<p>slide-is:simple</p>
+<h3>icon:css3 CSS Speech</h3>
+<pre><code class="language-css">h1 {
+  voice-family: female;
+  voice-balance: left;
+  voice-pitch: high;
+  voice-volume: -6dB;
+}
+p {
+  voice-family: male;
+  voice-volume: +6dB;
+}
+.number {
+  speak-as: digit;
+  pause-before: weak;
+}
+</code></pre>
+<hr>
+<p>slide-is:simple</p>
+<h3>Web Speech API</h3>
+<ul>
+<li>Teil der JavaScript Web APIs</li>
+<li>Im Vanilla Javascript enthalten</li>
+<li>Von jedem etablierten Browser unterstützt (IE ausgenommen)</li>
+<li>Zwei Teile: SpeechRecognition und SpeechSynthesis</li>
+<li>Sprachausgabe durch Browser-Sprachausgabe</li>
+<li>Manuelles Ansteuern</li>
+</ul>
+<hr>
+<p>slide-is:simple</p>
+<h3>Bestandteile der Web Speech API</h3>
+<ul>
+<li>Drei miteinander agierende Objekte:</li>
+</ul>
+<p><strong>SpeechSynthesis</strong></p>
+<ul>
+<li>Startet, pausiert und stoppt die Wiedergabe</li>
+<li>Abfragen der verfügbaren Stimmen je Gerät</li>
+</ul>
+<p><strong>SpeechSynthesisVoice</strong></p>
+<ul>
+<li>Definiert eine Stimme (inkl. Sprache)</li>
+<li>Jedes Gerät hat eine Default-Stimme</li>
+</ul>
+<p><strong>SpeechSynthesisUtterance</strong></p>
+<ul>
+<li>Definiert eine Äußerung und alle dafür relevanten Parameter</li>
+<li>z.B. Text, Lautstärke, Pitch, Geschwindigkeit etc.</li>
+</ul>
+<hr>
+<p>slide-is:simple</p>
+<h3>icon:file-code Web Speech</h3>
+<pre><code class="language-javascript">let synth = window.speechSynthesis;
+let utterThis = new SpeechSynthesisUtterance(&quot;Das ist ein Testtext.&quot;);
+utterThis.voice = synth.getVoices()[0];
+utterThis.lang = 'de-DE';
+utterThis.volume = 0.7;
+synth.speak(utterThis);
+synth.pause();
+setTimeout(function(){
+    synth.resume();
+}, 3000);
+</code></pre>
+<hr>
+<p>slide-is:interlude</p>
+<h2>Hands on!</h2>
+<p>Aufgaben: https://github.com/astrutz/texttospeech<br>
+<strong>Bitte Firefox nutzen!</strong></p>
+<hr>
+<p>slide-is:simple</p>
+<h3>icon:low-vision Szenario</h3>
+<p>Die Website der Medieninformatik wird relauncht. Neben Designänderungen soll die Seite auch barrierefrei(er) werden, um das Studium auch für körperlich beeinträchtigte Studienanfänger interessanter zu machen. Ihr werdet von Prof. Noss beauftragt die relevantesten Inhalte für Menschen mit Sehbeeinträchtigung umzugestalten.</p>
+<hr>
+<p>slide-is:assignment</p>
+<h3>icon:tools Aufgabe 1: User-Interface zur Steuerung</h3>
+<p>Erstellt eine <strong>GUI</strong>, die es dem Nutzer ermöglicht sich den Willkommenstext vorlesen zu lassen. Dazu soll der Nutzer die Wiedergabe starten, pausieren, fortsetzen und stoppen können. Darüber hinaus sollen Geschwindigkeit, Stimme (abhängig vom Gerät), Lautstärke definierbar sein.</p>
+<p>Für die Aufgabe habt Ihr <strong>25 Minuten</strong> Zeit. Beschränkt euch auf ein <strong>einfaches Frontend</strong>.</p>
+<p><strong>Hilfsmittel</strong>: jQuery, Design-Frameworks (Bootstrap, Material o.ä.), MDN web docs.</p>
+<p><strong>Material</strong>: aufgabe_1.html, style.css, script.js</p>
+<hr>
+<p>slide-is:assignment</p>
+<h3>icon:lightbulb Bonusaufgabe 1</h3>
+<p>Prüfe, ob dein Code auch in anderen gängigen Browsern läuft. Wie unterscheiden sich die Stimmen von Browser zu Browser und was bedeutet das für die Entwicklung?</p>
+<p>.
+<img src="/img/web-speech-compatibility.JPG" alt="Browser" title="Web Speech Browser"></p>
+<hr>
+<p>slide-is:assignment</p>
+<h3>icon:table Aufgabe 2: Semantische Anreicherung</h3>
+<p>Überführt Euer Interface in die Klasse &quot;tts-controls&quot; oder überführt die Beispiellösung, Passwort <em>sol1</em>. Passt Eure TTS-Logik so an, dass sie den Inhalt semantisch vorliest. Dazu sollen die Tabelleninhalte logisch verbunden werden. Ziel ist es die Tabelle nur durch das Vorlesen verstehen zu können.</p>
+<p>Für die Aufgabe habt Ihr <strong>20 Minuten</strong> Zeit.</p>
+<p><strong>Hinweis</strong>: Nutzt die gesetzten Klassen &quot;semester-number&quot; und &quot;credit-points&quot;.</p>
+<p><strong>Material</strong>: aufgabe_2.html, style.css, script.js</p>
+<hr>
+<p>slide-is:assignment</p>
+<h3>icon:lightbulb Bonusaufgabe 2</h3>
+<p>Welche HTML-Elemente und Frontendkonzepte benötigen eine semantische Anreicherung? Wie könnte man eine solche Anreicherung automatisieren oder im Markup bereits festlegen?</p>
+<hr>
+<p>slide-is:assignment</p>
+<h3>icon:magic Aufgabe 3: Simulation von SSML</h3>
+<p>Überführt Euer Interface in die Klasse &quot;tts-controls&quot; oder überführt die Beispiellösung, Passwort <em>sol1</em>. Um semantische Anreicherung dynamisch im Markup nutzen zu können soll grundlegendes SSML in p-Tags verfügbar sein. Dazu sollen über das Attribut &quot;data-ssml&quot; folgende Features umgesetzt werden:</p>
+<ul>
+<li><code>&lt;sub alias=&quot;text&quot;&gt;</code></li>
+<li><code>&lt;say-as interpret-as=&quot;characters&quot;&gt;</code> (Für Strings und Zahlen)</li>
+<li><code>&lt;say-as interpret-as=&quot;unit&quot;&gt;</code> (Für Streckeneinheiten)</li>
+</ul>
+<p>Ziel ist es den mit SSML-Tags gefüllten Text semantisch korrekt wiederzugeben.</p>
+<p>Für die Aufgabe habt Ihr <strong>20 Minuten</strong> Zeit.</p>
+<p><strong>Hinweis</strong>: Den Link zur SSML-Doku findet Ihr in der README.md</p>
+<p><strong>Material</strong>: aufgabe_3.html, style.css, script.js</p>
+<hr>
+<p>slide-is:assignment</p>
+<h3>icon:lightbulb Bonusaufgabe 3</h3>
+<p>Prüfe inwieweit die folgenden Use Cases ohne SSML-Tags bereits richtig ausgegeben werden:</p>
+<ul>
+<li>Aufzählungen</li>
+<li>Sprechpausen</li>
+<li>Mathematische Brüche</li>
+<li>Datum und Uhrzeit</li>
+<li>Ausgabe von Sounds/Audiofiles</li>
+</ul>
+<hr>
+<p>slide-is:simple</p>
+<h2>Technologiebewertung</h2>
+<ul>
+<li>SSML</li>
+<li>CSS Speech</li>
+<li>Web Speech</li>
+<li>Bewertungskriterien</li>
+<li>Bewertungsmatrix</li>
+</ul>
+<hr>
+<p>slide-is:simple</p>
+<h3>Kritikpunkte - SSML</h3>
+<ul>
+<li>Definition von Betonungen ist einzigartig</li>
+<li>Spezialisiert auf TTS -&gt; Keine Mischtechnologie</li>
+<li>Äquivalenz zu HTML</li>
+<li>Kein Support durch Web-Browser</li>
+<li>Propietärer Standard</li>
+<li>Keine Steuerung des Vorlesens</li>
+</ul>
+<hr>
+<p>slide-is:simple</p>
+<h3>Kritikpunkte - CSS Speech</h3>
+<ul>
+<li>Kapselung von verschiedenen Inhaltstypen</li>
+<li>CSS-übliche Selektoren</li>
+<li>Trennung von Styling und Markup</li>
+<li>Kaum Browsersupport</li>
+<li>Keine Steuerung des Vorlesens</li>
+</ul>
+<hr>
+<p>slide-is:interlude</p>
+<h3>Kritikpunkte - Web Speech</h3>
+<p>Was fiel leicht?<br>
+Wo gab es Schwierigkeiten?<br>
+Was war nicht möglich?</p>
+<hr>
+<p>slide-is:simple</p>
+<h3>Kritikpunkte - Web Speech</h3>
+<ul>
+<li>Kapselung von Code</li>
+<li>Steuerung durch den Nutzer möglich</li>
+<li>Wiedergabe von bestimmten Segmenten</li>
+<li>Anpassung der Reihenfolge</li>
+<li>GUI/Grundlage muss aufgesetzt werden</li>
+</ul>
+<hr>
+<p>slide-is:interlude</p>
+<h3>Bewertungskriterien</h3>
+<p>Welche Kriterien bestimmen die Qualität und Nutzbarkeit von TTS-Technologien?</p>
+<p>https://pingo.coactum.de/752008</p>
+<hr>
+<p>slide-is:simple</p>
+<h3>Bewertungskriterien</h3>
+<ul>
+<li>Sprache</li>
+<li>Stimmfamilie/Geschlecht</li>
+<li>Phonetische Aussprache</li>
+<li>Ersetzung von Worten</li>
+<li>Geschwindigkeit/Pitch/Lautstärke</li>
+<li>Abspielen/Fortsetzen/Pausieren</li>
+</ul>
+<hr>
+<p>slide-is:interlude</p>
+<h3>Bewertungsmatrix</h3>
+<p>Gemeinsame Live-Bewertung</p>
+<hr>
+<p>slide-is:simple</p>
+<h3>Bewertungsmatrix</h3>
+<p>Erlaubte Werte: <strong>--</strong>, <strong>-</strong>,  <strong>O</strong>,  <strong>+</strong>, <strong>++</strong></p>
+<table>
+<thead>
+<tr>
+<th>Kriterium</th>
+<th>SSML</th>
+<th>CSS Speech</th>
+<th>Web Speech API</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kompatibilität</td>
+<td>--</td>
+<td>--</td>
+<td>O</td>
+</tr>
+<tr>
+<td>Verlässlichkeit</td>
+<td>++</td>
+<td>O</td>
+<td>O</td>
+</tr>
+<tr>
+<td>Genauigkeit</td>
+<td>++</td>
+<td>+</td>
+<td>+</td>
+</tr>
+<tr>
+<td>Steuerbarkeit</td>
+<td>--</td>
+<td>-</td>
+<td>++</td>
+</tr>
+<tr>
+<td>Implementierungsaufwand</td>
+<td>O</td>
+<td>O</td>
+<td>+</td>
+</tr>
+<tr>
+<td>Zugänglichkeit</td>
+<td>+</td>
+<td>O</td>
+<td>+</td>
+</tr>
+<tr>
+<td>Komplexität</td>
+<td>O</td>
+<td>+</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Gesamt</strong></td>
+<td><strong>1</strong></td>
+<td><strong>-1</strong></td>
+<td><strong>4</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>slide-is:simple</p>
+<h2>Neuer Standard: Pronunciation</h2>
+<ul>
+<li>Pronunciation allgemein</li>
+<li>Ziele und Nicht-Ziele</li>
+<li>Technologische Ansätze</li>
+<li>Kritikpunkte</li>
+<li>Bewertungsmatrix</li>
+<li>Ausblick</li>
+</ul>
+<hr>
+<p>slide-is:simple</p>
+<h3>Pronunciation allgemein</h3>
+<ul>
+<li>Verbesserung der TTS-Möglichkeiten</li>
+<li>Schaffung eines (!) Standards</li>
+<li>Bisherige Technologien nicht beschädigen</li>
+</ul>
+<hr>
+<p>slide-is:simple</p>
+<h3>Ziele und Nicht-Ziele</h3>
+<p><strong>Ziele</strong></p>
+<ul>
+<li>Standardmechanismus um HTML zu ergänzen</li>
+<li>SSML generalisieren und erweitern</li>
+<li>Assistive Technologien sollen Pronunciation nutzen können</li>
+</ul>
+<p><strong>Nicht-Ziele</strong></p>
+<ul>
+<li>CSS-Speech wiederbeleben/erweitern</li>
+<li>Einen komplett neuen TTS-Standard konzeptionieren</li>
+</ul>
+<hr>
+<p>slide-is:simple</p>
+<h3>Technologische Ansätze</h3>
+<p><strong>In-line SSML</strong></p>
+<ul>
+<li>Direkt lesbar für Browser</li>
+<li>(Möglicherweise) für Home Assistants einfach lesbar</li>
+<li>(Möglicherweise) für Assistenzsysteme schwer lesbar</li>
+</ul>
+<pre><code class="language-xml">&lt;span&gt;Das ist der &lt;speak-as interpret-as=&quot;ordinal&quot;&gt;4.&lt;/speak-as&gt; Beispieltext.&lt;/span&gt;
+</code></pre>
+<p><strong>SSML mit Attributen</strong></p>
+<ul>
+<li>SSML als JSON in data-Attributen</li>
+<li>HTML-Semantik wird nicht gefährdet</li>
+<li>Erhöht die Komplexität des Markups</li>
+</ul>
+<pre><code class="language-xml">&lt;span&gt;Das ist der &lt;span data-ssml='{&quot;say-as&quot; : {&quot;interpret-as&quot;:&quot;digits&quot;}}'&gt;4.&lt;/span&gt; Beispieltext.&lt;/span&gt;
+</code></pre>
+<hr>
+<p>slide-is:simple</p>
+<h3>Kritikpunkte - Pronunciation</h3>
+<ul>
+<li>Versucht bestehende Technologien zu einem Standard zu vereinen</li>
+<li>JSON-Struktur sorgt für Potenzial von TTS-REST-APIs</li>
+<li>Nicht nur Browser werden berücksichtigt (wie bei CSS Speech)</li>
+</ul>
+<hr>
+<p>slide-is:simple</p>
+<h3>Bewertungsmatrix</h3>
+<table>
+<thead>
+<tr>
+<th>Kriterium</th>
+<th>SSML</th>
+<th>CSS Speech</th>
+<th>Web Speech API</th>
+<th>Pronunciation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kompatibilität</td>
+<td>--</td>
+<td>--</td>
+<td>O</td>
+<td>+</td>
+</tr>
+<tr>
+<td>Verlässlichkeit</td>
+<td>++</td>
+<td>O</td>
+<td>O</td>
+<td>++</td>
+</tr>
+<tr>
+<td>Genauigkeit</td>
+<td>++</td>
+<td>+</td>
+<td>+</td>
+<td>++</td>
+</tr>
+<tr>
+<td>Steuerbarkeit</td>
+<td>--</td>
+<td>-</td>
+<td>++</td>
+<td>?</td>
+</tr>
+<tr>
+<td>Implementierungsaufwand</td>
+<td>O</td>
+<td>O</td>
+<td>+</td>
+<td>O</td>
+</tr>
+<tr>
+<td>Zugänglichkeit</td>
+<td>+</td>
+<td>O</td>
+<td>+</td>
+<td>+</td>
+</tr>
+<tr>
+<td>Komplexität</td>
+<td>O</td>
+<td>+</td>
+<td>-</td>
+<td>O</td>
+</tr>
+<tr>
+<td><strong>Gesamt</strong></td>
+<td><strong>1</strong></td>
+<td><strong>-1</strong></td>
+<td><strong>4</strong></td>
+<td><strong>6</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>slide-is:simple</p>
+<h3>Wie geht es weiter?</h3>
+<ul>
+<li>Recommendation-Status für technische Ansätze wird erlangt</li>
+<li>Implementation von Pronunciation/Erweiterung SSML</li>
+<li>Abgabe an W3C Advisory Council zur Bestätigung</li>
+<li>Etablieren des neuen Standards bei Entwicklern, Browsern und in der Industrie</li>
+</ul>
+<hr>
+<p>slide-is:image /img/timeline.png
+W3C Draft Prozess - Technische Herangehensweise</p>
+<hr>
+<p>slide-is:simple</p>
+<h3>W3C Draft Prozess</h3>
+<h4>First Working Draft (min. alle 3 Monate)</h4>
+<p>Erste Veröffentlichung zu einem Standard.</p>
+<h4>Last Call Working Draft (3 Wochen)</h4>
+<p>Letzte Chance für Feedback von anderen Arbeitsgruppen und der Community.</p>
+<h4>Candidate Recommendation (max. 1 Jahr)</h4>
+<p>Arbeitsgruppe ist der Meinung das Ziel erreicht zu haben, signifikante Features stehen.</p>
+<h4>Proposed Recommendation (min. 4 Wochen)</h4>
+<p>Input der Nutzer wurde berücksichtigt, Standard kann an das W3C Advisory Council abgegeben werden.</p>
+<h4>Recommendation (unbegrenzt)</h4>
+<p>Bereit zur Verteilung und Integration in Browser und betreffende Systeme.</p>
+<hr>
+<p>slide-is:conclusion</p>
+<h2>Zusammenfassung</h2>
+<ul>
+<li>Text to Speech bietet in vielen Bereichen technologisches Potenzial</li>
+<li>Im Web gibt es noch <strong>keinen eindeutigen Standard</strong></li>
+<li>Web Speech API deckt die meisten Anforderungen ab</li>
+<li>Pronunciation soll SSML öffentlich machen und HTML erweitern</li>
+<li>Überführung in Proposed Recommendation spätestens Juni 2021</li>
+<li>Standardisierung von Pronunciation vermutlich innerhalb der nächsten 2 Jahre</li>
+</ul>
+<hr>
+<p>slide-is:outro</p>
+<h2>Danke für's Mitmachen!</h2>
+<h4>Gibt es Fragen, Anmerkungen, Feedback?</h4>
+<ul>
+<li>icon:envelope <a href="mailto:astrutz@th-koeln.de">astrutz@th-koeln.de</a></li>
+<li>icon:github <a href="https://www.github.com/astrutz">astrutz</a></li>
+<li>icon:xing <a href="https://www.xing.com/profile/Alexander_Strutz3/cv">Alexander Strutz</a></li>
+</ul>

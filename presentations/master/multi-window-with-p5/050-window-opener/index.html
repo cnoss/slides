@@ -1,0 +1,126 @@
+<!doctype html>
+  <html lang="de">
+    <head>
+      <title>Share Data via Window Opener // Christian Noss</title>
+      <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="googlebot-news" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+      <link rel="stylesheet" href="/slides/reveal/dist/reset.css">
+      <link rel="stylesheet" href="/slides/reveal/dist/reveal.css">
+      <link rel="stylesheet" href="/slides/assets/main.css">
+     
+      <link rel="icon" type="image/svg" href="/slides/assets/images/preview_black_24dp.svg">
+  
+      <!-- Theme used for syntax highlighted code -->
+      <link rel="stylesheet" href="/slides/reveal/plugin/highlight/github.css">
+    </head>
+    <body>
+      <div class="reveal">
+        <div class="slides">
+          
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="slide">
+      <section data-slide-shortcode-class="interlude" data-background-color="#d16" class="image screenshot interlude" ><div><h1 class="title">Share Data via window.opener</h1><h2 class="subtitle js-delay"><p>Baseline Widely available</p>
+</h2></div></section>
+<section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/opener.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>Share Data via <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/opener">window.opener</a></p>
+</p></div></section>
+<p><section data-transition="fade" data-slide-shortcode-class="codeSmall" class="codeSmall"><div><h1 class="title">Using window.opener</h1><p>Baseline Widely available</p></p>
+<div class="code-columns"><pre class="code-wrapper"><samp class="code"><span class="hljs-comment">// In opener/parent window</span>
+<span class='hljs-break'>/* break */</span>
+<span class="hljs-keyword">const</span> childWindowPosition = {
+  <span class="hljs-attr">x</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">y</span>: <span class="hljs-literal">false</span>
+}
+<span class='hljs-break'>/* break */</span>
+<span class="hljs-comment">// Open child window</span>
+childWindow = <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">open</span>(url, <span class="hljs-string">&#x27;child-window&#x27;</span>);
+<span class='hljs-break'>/* break */</span>
+<span class="hljs-comment">// Read window position from child</span>
+<span class="hljs-keyword">if</span> (childWindowPosition.<span class="hljs-property">x</span> === childWindow.<span class="hljs-property">screenX</span> 
+  &amp;&amp; childWindowPosition.<span class="hljs-property">y</span> === childWindow.<span class="hljs-property">screenY</span>) <span class="hljs-keyword">return</span>;
+  <span class='hljs-break'>/* break */</span>
+childWindowPosition.<span class="hljs-property">x</span> = childWindow.<span class="hljs-property">screenX</span>;
+childWindowPosition.<span class="hljs-property">y</span> = childWindow.<span class="hljs-property">screenY</span>;
+</samp></pre><pre class="code-wrapper"><samp class="code"><span class="hljs-comment">// In opened/child window</span>
+<span class='hljs-break'>/* break */</span>
+<span class="hljs-keyword">const</span> parentWindowPosition = {
+  <span class="hljs-attr">x</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">y</span>: <span class="hljs-literal">false</span>
+}
+<span class='hljs-break'>/* break */</span>
+<span class="hljs-comment">// Read window position from parent</span>
+<span class="hljs-keyword">if</span> (parentWindowPosition.<span class="hljs-property">x</span> === <span class="hljs-variable language_">window</span>.<span class="hljs-property">opener</span>.<span class="hljs-property">screenX</span> 
+  &amp;&amp; parentWindowPosition.<span class="hljs-property">y</span> === <span class="hljs-variable language_">window</span>.<span class="hljs-property">opener</span>.<span class="hljs-property">screenY</span>) <span class="hljs-keyword">return</span>;
+  <span class='hljs-break'>/* break */</span>
+parentWindowPosition.<span class="hljs-property">x</span> = <span class="hljs-variable language_">window</span>.<span class="hljs-property">opener</span>.<span class="hljs-property">screenX</span>;
+parentWindowPosition.<span class="hljs-property">y</span> = <span class="hljs-variable language_">window</span>.<span class="hljs-property">opener</span>.<span class="hljs-property">screenY</span>;
+</samp></pre></div></div></section>
+<section data-slide-shortcode-class="simple-text" class="simple" data-transition="{"transition":"slide"}">
+    <div><h1 class="title">Advantages of window.opener 🥳</h1><ul>
+<li>direct reference to the parent window</li>
+<li>easy to call functions or access variables</li>
+<li>minimal setup, no external messaging needed</li>
+</ul>
+</div></section>
+<section data-slide-shortcode-class="simple-text" class="simple" data-transition="{"transition":"slide"}">
+    <div><h1 class="title">Disadvantages 😢</h1><ul>
+<li>only works if the window was opened via window.open()</li>
+<li>breaks on reloads or navigation</li>
+<li>no support for cross-tab communication</li>
+<li>tight coupling between windows</li>
+</ul>
+</div></section>
+<section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/opener.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>Share Data via <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/opener">window.opener</a></p>
+</p></div></section><footer><ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/opener">Window: opener property MDN</a></li>
+<li><a href="https://cnoss.github.io/multi-window-experiences/00-core-concepts/window-opener-demo/parent.html">Demo Implementation</a></li>
+</ul>
+</footer>
+      
+      
+      
+      </section>
+      
+        </div>
+
+      </div>
+      
+      <script src="/slides/reveal/dist/reveal.js"></script>
+      <script src="/slides/assets/scripts/libs/fittext.js"></script>
+      <script src="/slides/assets/scripts/main.js"></script>
+      <script src="/slides/reveal/plugin/notes/notes.js"></script>
+      <script src="/slides/reveal/plugin/markdown/markdown.js"></script>
+      <script src="/slides/reveal/plugin/highlight/highlight.js"></script>
+      <script src="/slides/reveal/plugin/zoom/zoom.js"></script>
+      <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+          hash: true, 
+          center: false,
+          disableLayout: true,
+          progress: true,
+          backgroundTransition: 'fade',
+          highlight: {
+            highlightOnLoad: false,
+          },
+          // Learn about plugins: https://revealjs.com/plugins/
+          plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+        }).then(() => {
+          const highlight = Reveal.getPlugin('highlight');
+          highlight.hljs.configure(
+            {
+              languages: ['javascript', 'css', 'html', 'bash', 'json', 'markdown', 'xml', 'yaml'],
+            }
+          );
+          highlight.hljs.highlightAll();
+        });
+
+        
+      </script>
+    </body>
+  </html>

@@ -1,0 +1,109 @@
+<!doctype html>
+  <html lang="de">
+    <head>
+      <title>CSS Animations // Christian Noss</title>
+      <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="googlebot-news" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+      <link rel="stylesheet" href="/slides/reveal/dist/reset.css">
+      <link rel="stylesheet" href="/slides/reveal/dist/reveal.css">
+      <link rel="stylesheet" href="/slides/assets/main.css">
+     
+      <link rel="icon" type="image/svg" href="/slides/assets/images/preview_black_24dp.svg">
+  
+      <!-- Theme used for syntax highlighted code -->
+      <link rel="stylesheet" href="/slides/reveal/plugin/highlight/github.css">
+    </head>
+    <body>
+      <div class="reveal">
+        <div class="slides">
+          
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section data-slide-shortcode-class="interlude" data-background-color="#9313ce" class="image screenshot interlude" ><div><h1 class="title">CSS Animations</h1></div></section>
+<section data-slide-shortcode-class="simple-text" class="simple" >
+    <div><h1 class="title">CSS Animations</h1><p>CSS animations make it possible to animate transitions from one CSS style configuration to another. Animations consist of two components: a <em>style describing the CSS animation</em> and a <em>set of keyframes</em> that indicate the start and end states of the animation's style, as well as possible intermediate waypoints.</p>
+</div></section>
+<p><section data-transition="fade" data-slide-shortcode-class="codeSmall" class="codeSmall"><div><h1 class="title">CSS Animations</h1><p>Outline einer CSS Animation. <a href="https://codepen.io/cnoss/pen/YzoXeXR">🛝</a></p></p>
+<pre class="code-wrapper"><samp class="code"><span class="hljs-selector-class">.card</span> {
+  <span class="hljs-attribute">animation-duration</span>: <span class="hljs-number">3s</span>;
+  <span class="hljs-attribute">animation-name</span>: slidein;
+}
+<span class='hljs-break'>/* break */</span>
+<span class="hljs-keyword">@keyframes</span> slidein {
+  <span class="hljs-selector-tag">from</span> {
+    <span class="hljs-attribute">translate</span>: <span class="hljs-number">150vw</span> <span class="hljs-number">0</span>;
+  }
+<span class='hljs-break'>/* break */</span>
+  <span class="hljs-selector-tag">to</span> {
+    <span class="hljs-attribute">translate</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
+  }
+}
+</samp></pre></div></section>
+<p><section data-transition="fade" data-slide-shortcode-class="codeSmall" class="codeSmall"><div><h1 class="title">CSS Animations</h1><p>How to gain more control? <a href="https://codepen.io/cnoss/pen/YzoXeXR">🛝</a></p></p>
+<pre class="code-wrapper"><samp class="code"><span class="hljs-keyword">@keyframes</span> slidein {
+  <span class="hljs-number">0%</span> {
+    <span class="hljs-attribute">translate</span>: <span class="hljs-number">150vw</span> <span class="hljs-number">0</span>;
+  }
+<span class='hljs-break'>/* break */</span>
+  <span class="hljs-number">50%</span> {
+    <span class="hljs-attribute">translate</span>: -<span class="hljs-number">10vw</span> <span class="hljs-number">0</span>;
+  }
+<span class='hljs-break'>/* break */</span>
+  <span class="hljs-number">100%</span> {
+    <span class="hljs-attribute">translate</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
+  }
+}
+</samp></pre></div></section>
+<footer><ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations">Using CSS animations, MDN</a></li>
+</ul>
+</footer>
+      
+      
+      
+      </section>
+      
+        </div>
+
+      </div>
+      
+      <script src="/slides/reveal/dist/reveal.js"></script>
+      <script src="/slides/assets/scripts/libs/fittext.js"></script>
+      <script src="/slides/assets/scripts/main.js"></script>
+      <script src="/slides/reveal/plugin/notes/notes.js"></script>
+      <script src="/slides/reveal/plugin/markdown/markdown.js"></script>
+      <script src="/slides/reveal/plugin/highlight/highlight.js"></script>
+      <script src="/slides/reveal/plugin/zoom/zoom.js"></script>
+      <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+          hash: true, 
+          center: false,
+          disableLayout: true,
+          progress: true,
+          backgroundTransition: 'fade',
+          highlight: {
+            highlightOnLoad: false,
+          },
+          // Learn about plugins: https://revealjs.com/plugins/
+          plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+        }).then(() => {
+          const highlight = Reveal.getPlugin('highlight');
+          highlight.hljs.configure(
+            {
+              languages: ['javascript', 'css', 'html', 'bash', 'json', 'markdown', 'xml', 'yaml'],
+            }
+          );
+          highlight.hljs.highlightAll();
+        });
+
+        
+      </script>
+    </body>
+  </html>
