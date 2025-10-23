@@ -33,6 +33,7 @@ const insertColor = (string, colorClass)=>{
 }
 
 const getPresentationData = (collection, pattern)=>{
+
   const allSlides = collection.getFilteredByGlob(pattern);
 
   return allSlides.sort((a, b) => {
@@ -122,6 +123,14 @@ module.exports = function (eleventyConfig) {
 
  eleventyConfig.addCollection("misc", (collection) => {
   return presentations = getPresentationData(collection, "./src/presentations/misc/**/index.md");
+ });
+
+  eleventyConfig.addCollection("master", (collection) => {
+  return presentations = getPresentationData(collection, "./src/presentations/master/**/index.md");
+ });
+
+  eleventyConfig.addCollection("bachelor", (collection) => {
+  return presentations = getPresentationData(collection, "./src/presentations/bachelor/**/index.md");
  });
 
  eleventyConfig.addCollection("all", function (collection) {

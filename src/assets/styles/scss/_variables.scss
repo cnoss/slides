@@ -34,13 +34,13 @@
   --mi-black: #231f20;
   --mi-grau: #aaa;
   --mi-hellgrau: #efefef;
-  --ff-normal: 'Barlow', sans-serif;
-  --ff-serif: 'PTserif', serif;
-  --ff-code: 'RobotoCode', monospace;
-  --ff-headline: 'Roboto', monospace;
+  --ff-normal: 'Fira', sans-serif;
+  --ff-serif: 'FiraItalic', serif;
+  --ff-code: 'FiraCode', monospace;
+  --ff-headline: 'Fira', sans-serif;
   --ff-icons: 'MaterialIcons', serif;
-  --fw-normal: 400;
-  --fw-medium: 500;
+  --fw-normal: 300;
+  --fw-medium: 400;
   --fw-bold: 700;
   --lh-normal: 130%;
   --lh-tight: 110%;
@@ -59,6 +59,7 @@
   --radius-s: 3px;
   --radius-m: 6px;
   --max-width-text: calc(var(--bfs) * 90);
+  --max-width-text-small: 60ch;
 }
 
 /* Viewportgrößen für Media Queries

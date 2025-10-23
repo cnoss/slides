@@ -1,5 +1,7 @@
 exports.render = function (data) {
 
+  const bodyClass = data.bodyClass ? data.bodyClass : '';
+  
   return `<!doctype html>
   <html lang="de">
     <head>
@@ -9,7 +11,7 @@ exports.render = function (data) {
       <link rel="icon" type="image/svg" href="${this.url('/assets/images/preview_black_24dp.svg')}">
       <link rel="manifest" href="${this.url('/manifest.json')}">
     </head>
-    <body class="document">
+    <body class="document ${bodyClass}">
       <main>
       <h1>${data.title}</h1>
       ${data.content}

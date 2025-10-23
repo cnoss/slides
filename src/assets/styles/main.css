@@ -145,6 +145,61 @@ select {
   src: url("./fonts/Roboto_Slab/RobotoSlab-Bold.ttf");
 }
 @font-face {
+  font-display: swap;
+  font-family: Fira;
+  font-style: normal;
+  font-weight: 200;
+  src: url("./fonts/Fira_Sans/FiraSans-Light.ttf");
+}
+@font-face {
+  font-display: swap;
+  font-family: Fira;
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/Fira_Sans/FiraSans-Regular.ttf");
+}
+@font-face {
+  font-display: swap;
+  font-family: Fira;
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Fira_Sans/FiraSans-Medium.ttf");
+}
+@font-face {
+  font-display: swap;
+  font-family: Fira;
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/Fira_Sans/FiraSans-SemiBold.ttf");
+}
+@font-face {
+  font-display: swap;
+  font-family: Fira;
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/Fira_Sans/FiraSans-Bold.ttf");
+}
+@font-face {
+  font-display: swap;
+  font-family: Fira;
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/Fira_Sans/FiraSans-ExtraBold.ttf");
+}
+@font-face {
+  font-family: FiraCode;
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/Fira_Code/FiraCode-Regular.ttf");
+}
+@font-face {
+  font-display: swap;
+  font-family: FiraItalic;
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/Fira_Sans/FiraSans-Italic.ttf");
+}
+@font-face {
   font-family: "MaterialIcons";
   font-style: normal;
   font-weight: 400;
@@ -187,13 +242,13 @@ select {
   --mi-black: #231f20;
   --mi-grau: #aaa;
   --mi-hellgrau: #efefef;
-  --ff-normal: "Barlow", sans-serif;
-  --ff-serif: "PTserif", serif;
-  --ff-code: "RobotoCode", monospace;
-  --ff-headline: "Roboto", monospace;
+  --ff-normal: "Fira", sans-serif;
+  --ff-serif: "FiraItalic", serif;
+  --ff-code: "FiraCode", monospace;
+  --ff-headline: "Fira", sans-serif;
   --ff-icons: "MaterialIcons", serif;
-  --fw-normal: 400;
-  --fw-medium: 500;
+  --fw-normal: 300;
+  --fw-medium: 400;
   --fw-bold: 700;
   --lh-normal: 130%;
   --lh-tight: 110%;
@@ -212,6 +267,7 @@ select {
   --radius-s: 3px;
   --radius-m: 6px;
   --max-width-text: calc(var(--bfs) * 90);
+  --max-width-text-small: 60ch;
 }
 
 /* Viewportgrößen für Media Queries
@@ -668,8 +724,8 @@ dl.simple-definition dd {
 }
 
 .document h2 {
-  color: var(--mi-lila);
   font-size: var(--l);
+  margin-bottom: var(--m);
 }
 
 .count {
@@ -822,6 +878,7 @@ a.is-black:hover {
 }
 .cite blockquote {
   max-width: 70vw;
+  text-wrap: balance;
 }
 .cite blockquote.typo-quote {
   border: none;
@@ -1384,6 +1441,45 @@ a.is-black:hover {
   font-family: var(--normal);
   font-weight: var(--fw-bold);
   font-size: var(--xl);
+}
+
+/* presentation-list
+############################################################################ */
+@media screen and (min-width: 768px) {
+  .presentation-list main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    gap: var(--l);
+  }
+  .presentation-list main > *:not(h2) {
+    grid-column: 2/3;
+  }
+  .presentation-list main h2, .presentation-list main ul {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .presentation-list main h2 {
+    text-align: right;
+    font-size: var(--m);
+    padding: var(--quat) 0;
+  }
+  .presentation-list main ul {
+    padding-left: 0;
+    list-style: none;
+  }
+  .presentation-list main ul li {
+    max-width: var(--max-width-text-small);
+  }
+  .presentation-list main a {
+    transition: padding var(--tr-fast), background-color var(--tr-fast), margin var(--tr-fast);
+    padding: var(--quat) 0;
+    display: inline-block;
+  }
+  .presentation-list main a:hover {
+    background-color: var(--darken-light);
+    padding: var(--quat) var(--half);
+  }
 }
 
 .overview .slides .mi-slide {

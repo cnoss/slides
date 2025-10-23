@@ -87,6 +87,7 @@
 
   blockquote {
     max-width: 70vw;
+    text-wrap: balance;
 
     &.typo-quote{
       border: none;

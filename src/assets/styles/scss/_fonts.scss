@@ -78,6 +78,69 @@
 }
 
 @font-face {
+  font-display: swap;
+  font-family: Fira;
+  font-style: normal;
+  font-weight: 200;
+  src: url("./fonts/Fira_Sans/FiraSans-Light.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Fira;
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/Fira_Sans/FiraSans-Regular.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Fira;
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Fira_Sans/FiraSans-Medium.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Fira;
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/Fira_Sans/FiraSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Fira;
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/Fira_Sans/FiraSans-Bold.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Fira;
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/Fira_Sans/FiraSans-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: FiraCode;
+  font-style: normal;
+  font-weight: 300;
+  src: url('./fonts/Fira_Code/FiraCode-Regular.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: FiraItalic;
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/Fira_Sans/FiraSans-Italic.ttf");
+}
+
+@font-face {
   font-family: 'MaterialIcons';
   font-style: normal;
   font-weight: 400;
