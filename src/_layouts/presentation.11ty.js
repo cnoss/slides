@@ -1,4 +1,5 @@
 const fs = require('fs');
+const { title } = require('process');
 
 const imgEndings = ['jpg', 'png'];
 
@@ -99,12 +100,69 @@ const getBgImageCredits = (credits) => {
   return `<div class="bu"><p class="credit">Bild von ${credit}</p></div>`;
 };
 
+const getLegacyData = (data) => {
+  const { raw, rendered } = this.markdownWithRaw(data);
+  const slideSeparator = '---\n';
+  const slideContents = raw.split(slideSeparator);
+
+  const slides = slideContents.map((rawContent, index) => {
+    const directives = {};
+    const content = [];
+    let title = `Slide ${index + 1}`;
+    rawContent.split('\n').forEach(line => {
+      if(line.match(/^slide-is/)){
+        const directiveArgs = line.split(' ');
+        directiveArgs.forEach(arg => {
+          const [key, value] = arg.split(':');
+          if(key && value){
+            directives[key] = value;
+          }
+        });
+      }else if(line.match(/^##(.*)/)){
+        const heading = line.replace(/^##(.*)/, '$1').trim();
+        title = heading;
+      }else{
+        content.push(line);
+      }
+      
+    });
+    
+    const renderedContent = this.markdown(content.join('\n'));
+    return {
+      data: {
+        slideClasses: directives['slide-is'] || 'normal',
+        transition: data.revealOptions && data.revealOptions.transition ? data.revealOptions.transition : '',
+        img: directives['bg-img'] || null,
+        title: title,
+        imgData: {
+          position: directives['bg-img-position'] || null,
+          size: directives['bg-img-size'] || null,
+        },
+        additionalClasses: directives['additional-classes'] || null,
+        status: directives['status'] || 'ok',
+        content: renderedContent,
+      }
+    };
+  });
+
+  
+
+  return slides;
+}
+
 const getTransition = (transition) => (transition ? `data-transition="${transition}"` : 'data-transition="convex"');
 const getAdditionalClasses = (additionalClasses) => (additionalClasses ? additionalClasses : '');
 const getStatus = (status) => (status && status !== 'ok' ? `<div class="status">ToDo: ${status}</div>` : '');
 
 exports.render = function (data) {
-  const presentationData = getData(data.collections.sorted, data.page.fileSlug);
+  // const presentationData = getData(data.collections.sorted, data.page.fileSlug);
+
+  // remove last segment from filePathStem to get base path
+  const basePath = data.page.filePathStem.split('/').slice(0, -1).join('/');
+  
+  const presentationData = (data.version && data.version === 1) 
+    ? getLegacyData(data)
+    : getData(data.collections.sorted, basePath);
 
   const slides = presentationData.map((slide) => {
     const slideClass = slide.data.slideClasses;

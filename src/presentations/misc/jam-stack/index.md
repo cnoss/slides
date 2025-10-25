@@ -1,5 +1,7 @@
 ---
 title: Developing a Community Website on JAMstack with GIT Managed Content and a Isomorphic Rendering Approach
+version: 1
+layout: presentation.11ty.js
 revealOptions:
   transition: 'slide'
   backgroundTransition: 'fade'

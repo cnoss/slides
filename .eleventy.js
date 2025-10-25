@@ -1,6 +1,7 @@
 const htmlmin = require('html-minifier');
 const markdownIt = require("markdown-it");
 const hljs = require('highlight.js');
+const fs = require('fs');
 const { render } = require('./src/_layouts/presentation.11ty');
 
 const pathPrefix = (process.env.ELEVENTY_ENV === 'production') ? "slides" : "";
@@ -54,6 +55,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
     snippet: true,
   });
+
+  eleventyComputed: {
+    raw: (data) => fs.readFileSync(data.page.inputPath, "utf-8")
+  };
   
  /* Compilation
    ########################################################################## */
@@ -113,6 +118,15 @@ module.exports = function (eleventyConfig) {
   });
   return topic;
  });
+
+ eleventyConfig.addFilter("markdownWithRaw", function (data) {
+    const filePath = data.page.inputPath;
+    const raw = fs.readFileSync(filePath, "utf-8");
+    return {
+      raw,
+      rendered: md.render(raw)
+    };
+  });
 
  /* Collections
  ########################################################################## */
@@ -272,6 +286,8 @@ module.exports = function (eleventyConfig) {
   showAllHosts: true
  });
 
+ 
+
  /* Environment
  ########################################################################## */
 
@@ -293,6 +309,9 @@ module.exports = function (eleventyConfig) {
  }
 
  return {
+  eleventyComputed: {
+    raw: (data) => fs.readFileSync(data.page.inputPath, "utf-8")
+  },
   dir: {
    includes: '_components',
    input: 'src',
