@@ -1,0 +1,24 @@
+/*----------------------------------------------------------------------------
+typography.css                                                                  
+Enthält alle übergreifenden typographischen Regeln.  
+
+Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
+----------------------------------------------------------------------------*/
+
+body{
+	font-family: var(--font-family);
+}
+
+.text{
+	font-size: var(--fontsize);
+}
+
+.text-large{
+	font-size: var(--fontsize-l);
+}
+
+.text-large.invers,
+.text-medium.invers,
+.text.invers{
+	color: var(--text-color-invers);
+}
