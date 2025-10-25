@@ -90,6 +90,11 @@ module.exports = function (eleventyConfig) {
  eleventyConfig.addPassthroughCopy({'reveal/dist': 'reveal/dist'});
  eleventyConfig.addPassthroughCopy({'reveal/plugin': 'reveal/plugin'});
 
+ // Copy impress.js Stuff
+  eleventyConfig.addPassthroughCopy({'impress.js/css': 'impress.js/css'});
+  eleventyConfig.addPassthroughCopy({'impress.js/js': 'impress.js/js'});
+
+
  // Copy Scripts
  eleventyConfig.addPassthroughCopy({'src/assets/scripts': 'assets/scripts'});
  eleventyConfig.addWatchTarget("./src/assets/scripts");

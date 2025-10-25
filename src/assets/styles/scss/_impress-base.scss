@@ -1,0 +1,19 @@
+:root{
+  --bfs: 12px;
+}
+
+#impress{
+  .step{
+    width: 80vw;
+    opacity: 0.2;
+    transition: all var(--tr-fast) ease-in-out;
+
+    &.active{
+      opacity: 1;
+    }
+  }
+
+  .bu{
+    opacity: 1;
+  }
+}
