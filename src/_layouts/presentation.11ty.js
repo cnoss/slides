@@ -174,7 +174,8 @@ exports.render = function (data) {
     const additionalClasses = getAdditionalClasses(slide.data.additionalClasses);
     const content = wrapContentByType(slide.data, slideClass);
     const status = getStatus(slide.data.status);
-    const speakerNotes = slide.data.speaker ? `<aside class="notes">${this.markdown(slide.data.speaker)}</aside>` : '';
+    const badge = slide.data.badge ? `<div class="badge">${this.markdown(slide.data.badge)}</div>` : '';
+    const speakerNotes = slide.data.speaker ? `<aside class="notes"><div>${this.markdown(slide.data.speaker)}</div></aside>` : '';
 
     
     if(slide.data.status === 'hidden') return '';
@@ -185,6 +186,7 @@ exports.render = function (data) {
       ${status}
       ${backgroundImageCredits}
       ${speakerNotes}
+      ${badge}
       </section>
     `;
   });

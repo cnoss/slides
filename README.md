@@ -207,6 +207,8 @@ Erzeugt einen kompletten Screen.
 ### Screenshot
 ```
 {% screenshot "./images/brain.jpg", '{"transition":"fade", "classes":"no-shadow", "width":"20%", "bu":"Davon muss ich mir erst mal ein Bild machen."}' %}
+
+{% screenshot "./images/brain.jpg",  '{"transition":"fade", "classes":"no-shadow large-text full-height", "bu":"Kleine BU"}' %}
 ```
 
 

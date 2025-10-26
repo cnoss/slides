@@ -5,9 +5,8 @@ slideClasses: images
 status: ok
 
 toc: |
-  <div class="fragment is-unbalanced">Eindruck meiner Person vermitteln</div>
-  <div class="fragment is-unbalanced">Fachliche Expertise darstellen</div>
-  <div class="fragment is-unbalanced">Meine Vorstellungen zur Ausgestaltung der Professur erläutern</div>
+  <span class="fragment is-unbalanced">Eindruck meiner Person vermitteln</span><span class="fragment is-unbalanced">, meine fachliche Expertise darstellen</span>
+  <span class="fragment is-unbalanced"><br>und meine Vorstellungen zur Ausgestaltung der Professur erläutern.</span>
 
 bausteine: |
   <div class="fragment is-unbalanced">Kurze Vorstellung meiner Person und meines beruflichen Werdegangs in englisch</div>
@@ -17,6 +16,6 @@ bausteine: |
 
 ---
 {% simpleText "Mein Auftrag für heute", toc %}
-{% simpleText "Gewünschte Bauteine", bausteine %}
+{% simpleText "Gewünschte Bausteine", bausteine %}
 {% statement "30 min" %}
 {% statement "?" %}

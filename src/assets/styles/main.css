@@ -283,6 +283,7 @@ select {
   --mi-lila: #9313ce;
   --mi-black: #231f20;
   --mi-grau: #aaa;
+  --mark: #ffff00;
   --mi-hellgrau: #efefef;
   --ff-normal: "Barlow", sans-serif;
   --ff-serif: "FiraItalic", serif;
@@ -688,7 +689,7 @@ dl.simple-definition dd {
   bottom: 0;
   left: var(--xxs);
   display: inline-block;
-  max-width: calc(var(--bfs) * 20);
+  max-width: 30em;
   padding: var(--xxs) var(--xxs) var(--s) var(--xxs);
   background-color: var(--lighter);
   color: var(--darker);
@@ -733,6 +734,42 @@ dl.simple-definition dd {
   opacity: 0.7;
 }
 
+.large-text .bu {
+  font-size: var(--l);
+  padding: var(--s) var(--m) var(--l) var(--m);
+  line-height: var(--lh-normal);
+}
+
+.full-height .bu {
+  bottom: var(--m);
+  top: var(--m);
+  display: flex;
+  align-items: center;
+}
+
+.center .bu {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: unset;
+}
+
+.invert .bu {
+  background-color: var(--darkest);
+  color: var(--lightest);
+}
+.invert .bu strong {
+  color: var(--lightest);
+  font-weight: var(--fw-bold);
+}
+
+.frameless .bu {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: var(--xxl);
+  width: 33%;
+}
+
 /* Blöcke
 ############################################################################ */
 .content-blocks p,
@@ -749,6 +786,30 @@ dl.simple-definition dd {
 }
 .content-blocks strong {
   font-weight: var(--fw-bold);
+}
+
+/* Badge
+############################################################################ */
+.mi-slide .badge, .mi-slide.badge {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: var(--mark);
+  color: var(--darkest);
+  font-size: var(--xs);
+  font-weight: var(--fw-bold);
+  padding: var(--half) var(--m);
+  text-align: right;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity var(--tr-fast) var(--tr-delay);
+  transform-origin: right;
+  transform: rotate(1deg);
+}
+
+.present.mi-slide .badge, .present .mi-slide.badge {
+  opacity: 1;
 }
 
 /* Document Layout 
@@ -1255,19 +1316,34 @@ a.is-black:hover {
   align-items: center;
   justify-content: center;
 }
+.question.align-left div {
+  align-items: flex-start;
+}
+.question.align-left div .title, .question.align-left div .subtitle {
+  text-align: left;
+}
+.question.fit-text .title {
+  --min-font-size: 1rem;
+  --max-font-size: 5rem;
+  --ratio: 10cqi;
+  font-size: clamp(var(--min-font-size), var(--ratio), var(--max-font-size));
+}
+.question.fit-text .title, .question.fit-text .title * {
+  hyphens: none;
+}
 .question div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 80%;
+  hyphens: none;
 }
 .question div .title {
   text-align: center;
   font-family: var(--ff-normal);
-  text-wrap: balance;
   padding: 0;
   padding-bottom: var(--half);
-  text-wrap: balance;
 }
 .question div .subtitle {
   text-align: center;
@@ -1304,9 +1380,6 @@ a.is-black:hover {
 .simple div.fragment.visible {
   transform: translateX(0);
 }
-.simple div > * {
-  max-width: calc(var(--m) * 40);
-}
 .simple div ul li {
   display: block;
   line-height: var(--lh-tight);
@@ -1339,6 +1412,10 @@ a.is-black:hover {
 .simple div p + ul li, .simple div + ul li {
   font-size: var(--l);
   display: block;
+}
+.simple div p, .simple div p + p {
+  margin-top: var(--xs);
+  margin-bottom: 0;
 }
 .simple div blockquote {
   border-left: solid var(--border-width-l) var(--mi-blau);
@@ -1544,6 +1621,26 @@ a.is-black:hover {
   font-size: var(--xl);
 }
 
+/* Fact List
+############################################################################ */
+.fact-list {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--darker);
+  color: var(--lightest);
+  padding: var(--l);
+  font-size: var(--xxl);
+}
+.fact-list p {
+  margin-bottom: var(--xs);
+  opacity: 0.4;
+}
+.fact-list p:last-child {
+  margin-bottom: 0;
+  opacity: 1;
+}
+
 /* presentation-list
 ############################################################################ */
 @media screen and (min-width: 768px) {
@@ -1595,22 +1692,18 @@ a.is-black:hover {
 /* Notizen
 #################################################### */
 .notes.is-active {
-  display: flex !important;
+  display: block !important;
   top: 0;
   right: 0;
   width: 33%;
-  height: 100%;
+  bottom: 0;
   position: fixed;
   background-color: var(--darkest);
   color: var(--lightest);
   padding: var(--m);
   z-index: 1000;
   opacity: 0.9;
-  display: flex;
-  flex-direction: column;
-  gap: var(--xs);
-  overflow-y: auto;
-  justify-content: center;
+  overflow-y: scroll;
 }
 .notes.is-active * {
   line-height: var(--lh-normal);

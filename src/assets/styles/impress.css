@@ -283,6 +283,7 @@ select {
   --mi-lila: #9313ce;
   --mi-black: #231f20;
   --mi-grau: #aaa;
+  --mark: #ffff00;
   --mi-hellgrau: #efefef;
   --ff-normal: "Barlow", sans-serif;
   --ff-serif: "FiraItalic", serif;
@@ -668,7 +669,7 @@ dl.simple-definition dd {
   bottom: 0;
   left: var(--xxs);
   display: inline-block;
-  max-width: calc(var(--bfs) * 20);
+  max-width: 30em;
   padding: var(--xxs) var(--xxs) var(--s) var(--xxs);
   background-color: var(--lighter);
   color: var(--darker);
@@ -713,6 +714,42 @@ dl.simple-definition dd {
   opacity: 0.7;
 }
 
+.large-text .bu {
+  font-size: var(--l);
+  padding: var(--s) var(--m) var(--l) var(--m);
+  line-height: var(--lh-normal);
+}
+
+.full-height .bu {
+  bottom: var(--m);
+  top: var(--m);
+  display: flex;
+  align-items: center;
+}
+
+.center .bu {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: unset;
+}
+
+.invert .bu {
+  background-color: var(--darkest);
+  color: var(--lightest);
+}
+.invert .bu strong {
+  color: var(--lightest);
+  font-weight: var(--fw-bold);
+}
+
+.frameless .bu {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: var(--xxl);
+  width: 33%;
+}
+
 /* Blöcke
 ############################################################################ */
 .content-blocks p,
@@ -729,6 +766,30 @@ dl.simple-definition dd {
 }
 .content-blocks strong {
   font-weight: var(--fw-bold);
+}
+
+/* Badge
+############################################################################ */
+.mi-slide .badge, .mi-slide.badge {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: var(--mark);
+  color: var(--darkest);
+  font-size: var(--xs);
+  font-weight: var(--fw-bold);
+  padding: var(--half) var(--m);
+  text-align: right;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity var(--tr-fast) var(--tr-delay);
+  transform-origin: right;
+  transform: rotate(1deg);
+}
+
+.present.mi-slide .badge, .present .mi-slide.badge {
+  opacity: 1;
 }
 
 :root {
