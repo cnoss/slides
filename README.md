@@ -156,6 +156,13 @@ Erzeugt einen kompletten Screen. Headline kann auch `false` sein.
 {% simpleText "Headline", "Text" %}
 ```
 
+### SimpleTextInterlude
+Erzeugt einen kompletten Screen mit anderem Hintergrund. Headline kann auch `false` sein.
+```
+{% simpleInterlude "Headline", "Text" %}
+```
+
+
 ### Question
 Erzeugt einen kompletten Screen.
 ```
@@ -191,15 +198,29 @@ Erzeugt einen kompletten Screen.
 {% niceToKnow "Die Mike Rode Matrix nutzt übrigens das Konzept des [Morphologischen Kastens](https://refa.de/service/refa-lexikon/morphologischer-kasten)." %}
 ```
 
+### Image
+```
+{% image "./images/hfg-triade.jpg", '{"transition":"fade", "classes":"no-shadow", "bu":"https://www.hfg-gmuend.de/hochschule/geschichte"}' %}
+```
+
+
 ### Screenshot
 ```
 {% screenshot "./images/brain.jpg", '{"transition":"fade", "classes":"no-shadow", "width":"20%", "bu":"Davon muss ich mir erst mal ein Bild machen."}' %}
 ```
 
+
 ### Fullscreen Screenshot
 Erzeugt einen kompletten Screen.
 ```
 {% screenshotFs "./images/brain.jpg", '{"transition":"fade", "classes":"no-shadow", "width":"20%", "bu":"Davon muss ich mir erst mal ein Bild machen."}' %}
+```
+
+### Shout
+Erzeugt einen lauten Ausruf. Alle anderen Angaben außer dem Titel sind optional.
+
+```
+{% shout "Titel", "autor", "quelle", zusatzinfo, '{"backgroundTransition":"slide"}' %}
 ```
 
 ### Statement

@@ -37,7 +37,10 @@ h1 {
   line-height: var(--lh-tight);
   font-weight: var(--fw-medium);
   color: var(--mi-black);
-  text-wrap: balance;
+
+  strong{
+    font-weight: var(--fw-bold) !important;
+  }
 }
 
 h2 {

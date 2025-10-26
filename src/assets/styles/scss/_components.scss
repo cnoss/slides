@@ -131,6 +131,13 @@
   text-align: center;
 }
 
+.fit-text {
+  --min-font-size: 1rem;
+  --max-font-size: 3rem;
+  --ratio: 10cqi;
+  font-size: clamp(var(--min-font-size), var(--ratio), var(--max-font-size));
+}
+
 .js-delay{
   opacity: 0;
   transform: scale(0);

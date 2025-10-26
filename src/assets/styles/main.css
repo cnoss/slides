@@ -200,6 +200,48 @@ select {
   src: url("./fonts/Fira_Sans/FiraSans-Italic.ttf");
 }
 @font-face {
+  font-display: swap;
+  font-family: IBM;
+  font-style: normal;
+  font-weight: 200;
+  src: url("./fonts/IBM_Plex_Sans/IBMPlexSans-Light.ttf");
+}
+@font-face {
+  font-display: swap;
+  font-family: IBM;
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf");
+}
+@font-face {
+  font-display: swap;
+  font-family: IBM;
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf");
+}
+@font-face {
+  font-display: swap;
+  font-family: IBM;
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf");
+}
+@font-face {
+  font-display: swap;
+  font-family: IBM;
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/IBM_Plex_Sans/IBMPlexSans-SemiBold.ttf");
+}
+@font-face {
+  font-display: swap;
+  font-family: IBM;
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf");
+}
+@font-face {
   font-family: "MaterialIcons";
   font-style: normal;
   font-weight: 400;
@@ -208,7 +250,7 @@ select {
   src: local("Material Icons"), local("MaterialIcons-Regular"), url("./fonts/MaterialIcons/MaterialIcons-Regular.woff2") format("woff2"), url("./fonts/MaterialIcons/MaterialIcons-Regular.woff") format("woff"), url("./fonts/MaterialIcons/MaterialIcons-Regular.ttf") format("truetype");
 }
 :root {
-  --bfs: 0.8vw;
+  --bfs: 1rem;
   --half: calc(var(--bfs) / 2);
   --quat: calc(var(--bfs) / 4);
   --xxs: calc(var(--bfs) * 1);
@@ -242,13 +284,13 @@ select {
   --mi-black: #231f20;
   --mi-grau: #aaa;
   --mi-hellgrau: #efefef;
-  --ff-normal: "Fira", sans-serif;
+  --ff-normal: "Barlow", sans-serif;
   --ff-serif: "FiraItalic", serif;
   --ff-code: "FiraCode", monospace;
-  --ff-headline: "Fira", sans-serif;
+  --ff-headline: "Barlow", sans-serif;
   --ff-icons: "MaterialIcons", serif;
   --fw-normal: 300;
-  --fw-medium: 400;
+  --fw-medium: 500;
   --fw-bold: 700;
   --lh-normal: 130%;
   --lh-tight: 110%;
@@ -360,7 +402,9 @@ h1 {
   line-height: var(--lh-tight);
   font-weight: var(--fw-medium);
   color: var(--mi-black);
-  text-wrap: balance;
+}
+h1 strong {
+  font-weight: var(--fw-bold) !important;
 }
 
 h2 {
@@ -540,6 +584,13 @@ small {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.fit-text {
+  --min-font-size: 1rem;
+  --max-font-size: 3rem;
+  --ratio: 10cqi;
+  font-size: clamp(var(--min-font-size), var(--ratio), var(--max-font-size));
 }
 
 .js-delay {
@@ -825,8 +876,8 @@ a.is-black:hover {
 /* Intro
 ############################################################################ */
 .intro {
-  /* display: flex !important;
-  align-items: center; */
+  display: flex !important;
+  align-items: center;
   padding: var(--m);
 }
 .intro h1 {
@@ -840,8 +891,8 @@ a.is-black:hover {
 }
 .intro h2 {
   padding-top: 0;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: var(--m);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: var(--xxxl);
 }
 
 /* Outro
@@ -1046,18 +1097,22 @@ a.is-black:hover {
   padding-top: 0;
   text-wrap: balance;
 }
+.statement .title strong {
+  font-weight: var(--fw-bold);
+}
 .statement div {
   max-width: 80vw;
 }
 .statement div h1 {
   padding-bottom: var(--s);
-  font-size: var(--xl);
+  font-size: var(--xxl);
   font-family: var(--ff-normal);
+  font-weight: var(--fw-bold);
 }
 .statement div p, .statement div .fragment {
   margin-bottom: var(--xl);
   color: var(--darker);
-  font-size: var(--m);
+  font-size: var(--xl);
   line-height: var(--lh-normal);
   max-width: 60ch;
 }
@@ -1086,6 +1141,10 @@ a.is-black:hover {
   display: flex !important;
   align-items: center;
   justify-content: center;
+}
+.interlude mark {
+  background-color: transparent;
+  color: var(--darkest);
 }
 .interlude > * {
   width: 80%;
@@ -1228,6 +1287,23 @@ a.is-black:hover {
   align-items: center;
   justify-content: center;
 }
+.simple.is-interlude {
+  background-color: var(--darkest);
+}
+.simple.is-interlude * {
+  color: var(--lightest);
+}
+.simple div {
+  width: 90%;
+}
+.simple div.fragment {
+  margin-bottom: var(--xs);
+  transition: all var(--tr-fast) ease-in-out;
+  transform: translateX(10%);
+}
+.simple div.fragment.visible {
+  transform: translateX(0);
+}
 .simple div > * {
   max-width: calc(var(--m) * 40);
 }
@@ -1275,6 +1351,31 @@ a.is-black:hover {
 }
 .simple div blockquote p:last-child {
   margin-bottom: 0;
+}
+
+/* Image
+############################################################################ */
+.image figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  max-height: 100dvh;
+  overflow: auto;
+}
+.image figure img, .image figure svg {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+.image figure img {
+  box-shadow: var(--shadow-xl);
+}
+.image.no-shadow figure {
+  box-shadow: none;
+}
+.image.no-shadow figure img {
+  box-shadow: none;
 }
 
 /* Code

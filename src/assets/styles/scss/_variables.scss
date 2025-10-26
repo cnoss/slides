@@ -1,6 +1,6 @@
 
 :root {
-  --bfs: 0.8vw;
+  --bfs: 1rem;
   --half: calc(var(--bfs) / 2); // halbes geviert
   --quat: calc(var(--bfs) / 4); // viertel geviert
   --xxs: calc(var(--bfs) * 1);
@@ -34,13 +34,13 @@
   --mi-black: #231f20;
   --mi-grau: #aaa;
   --mi-hellgrau: #efefef;
-  --ff-normal: 'Fira', sans-serif;
+  --ff-normal: 'Barlow', sans-serif;
   --ff-serif: 'FiraItalic', serif;
   --ff-code: 'FiraCode', monospace;
-  --ff-headline: 'Fira', sans-serif;
+  --ff-headline: 'Barlow', sans-serif;
   --ff-icons: 'MaterialIcons', serif;
   --fw-normal: 300;
-  --fw-medium: 400;
+  --fw-medium: 500;
   --fw-bold: 700;
   --lh-normal: 130%;
   --lh-tight: 110%;

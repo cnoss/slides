@@ -1,7 +1,3 @@
-const fitTextElements = document.querySelectorAll(".js-fit-text");
-
-
-
 Reveal.on( 'ready', event => {
   const figures = document.querySelectorAll(".slide figure");
   figures.forEach(figure => {

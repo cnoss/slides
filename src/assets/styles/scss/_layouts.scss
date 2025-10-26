@@ -22,8 +22,8 @@
 ############################################################################ */
 
 .intro {
-  /* display: flex !important;
-  align-items: center; */
+  display: flex !important;
+  align-items: center;
   padding: var(--m);
 
   h1 {
@@ -38,8 +38,8 @@
 
   h2 {
     padding-top: 0;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: var(--m);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: var(--xxxl);
   }
 }
 
@@ -282,10 +282,15 @@
   align-items: center;
   justify-content: center;
 
+
   .title{
     margin-top: 0;
     padding-top: 0;
     text-wrap: balance;
+
+    strong{
+      font-weight: var(--fw-bold);
+    }
   }
 
   div {
@@ -293,14 +298,15 @@
 
     h1 {
       padding-bottom: var(--s);
-      font-size: var(--xl);
+      font-size: var(--xxl);
       font-family: var(--ff-normal);
+      font-weight: var(--fw-bold);
     }
 
     p, .fragment {
       margin-bottom: var(--xl);
       color: var(--darker);
-      font-size: var(--m);
+      font-size: var(--xl);
       line-height: var(--lh-normal);
       max-width: 60ch;
     }
@@ -339,6 +345,10 @@
   align-items: center;
   justify-content: center;
 
+  mark{
+    background-color: transparent;
+    color: var(--darkest);
+  }
 
   & > *{
     width: 80%;
@@ -467,6 +477,29 @@
   align-items: center;
   justify-content: center;
 
+  &.align-left{
+    div{
+      align-items: flex-start;
+      padding: 10%;
+      .title, .subtitle{
+        text-align: left;
+      }
+    }
+  }
+
+  &.fit-text{
+    .title{
+      --min-font-size: 1rem;
+      --max-font-size: 5rem;
+      --ratio: 10cqi;
+      font-size: clamp(var(--min-font-size), var(--ratio), var(--max-font-size));
+
+      &, *{
+        hyphens: none;
+      }
+    }
+  }
+
   div{
     display: flex;
     flex-direction: column;
@@ -502,7 +535,26 @@
   align-items: center;
   justify-content: center;
 
+  &.is-interlude{
+    background-color: var(--darkest);
+
+    * {
+      color: var(--lightest);
+    }
+  }
+
   div {
+
+    width: 90%;
+
+    &.fragment{
+      margin-bottom: var(--xs);
+      transition: all var(--tr-fast) ease-in-out;
+      transform: translateX(10%);
+      &.visible{
+        transform: translateX(0);
+      }
+    }
 
     & > * {
       max-width: calc(var(--m) * 40);
@@ -567,6 +619,41 @@
 
       p:last-child{
         margin-bottom: 0;
+      }
+    }
+  }
+
+}
+
+/* Image
+############################################################################ */
+
+.image {
+  figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    max-height: 100dvh;
+    overflow: auto;
+
+    img, svg {
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+    }
+
+    img {
+      box-shadow: var(--shadow-xl);
+    }
+  }
+
+  &.no-shadow{
+    figure{
+      box-shadow: none;
+
+      img{
+        box-shadow: none;
       }
     }
   }
