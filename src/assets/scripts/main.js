@@ -89,6 +89,11 @@ Reveal.on('slidechanged', event => {
     bu.classList.add("is-active");
   });
 
+  const badges = event.currentSlide.querySelectorAll(".badge");
+  badges.forEach(badge => {
+    badge.classList.add("is-active");
+  });
+
   const delayedItems = event.currentSlide.querySelectorAll(".js-delay");
   delayedItems.forEach(item => {
     item.classList.add("has-delay");

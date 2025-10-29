@@ -16,23 +16,18 @@
 
 .notes{
   &.is-active{
-    display: flex !important;
+    display: block !important;
     top: 0;
     right: 0;
     width: 33%;
-    height: 100%;
+    bottom: 0;
     position: fixed;
     background-color: var(--darkest);
     color: var(--lightest);
     padding: var(--m);
     z-index: 1000;
     opacity: 0.9;
-
-    display: flex;
-    flex-direction: column;
-    gap: var(--xs);
-    overflow-y: auto;
-    justify-content: center;
+    overflow-y: scroll;
 
     *{
       line-height: var(--lh-normal);

@@ -26,7 +26,7 @@ const highlightCode = (lang, code) => {
 const insertMarkup = (string) => {
   
   if (!string) return "";
-  if (string.match(/<.*?>/i)) return string;
+  if (string.match(/<.*?\/>/i)) return string;
   string = string.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>", string);
   return string.replace(/\*(.*?)\*/g, "<mark>$1</mark>", string);
 }
@@ -174,8 +174,13 @@ module.exports = function (eleventyConfig) {
   /* Shortcodes
   ########################################################################## */
 
+  const badgeHtml = (text) => {
+    return `<div class="badge"><span>${text}</span></div>`;
+  }
+
   eleventyConfig.addShortcode('screenshot', (imgSrc, props) => {
     const propData = (props) ? JSON.parse(props) : {};
+    const badge = propData && propData.badge ? badgeHtml(insertMarkup(propData.badge)) : '';
     const dataTransition = propData && propData.transition
       ? `data-transition="${propData.transition}"`
       : 'data-transition="fade"';
@@ -186,11 +191,12 @@ module.exports = function (eleventyConfig) {
     const width = propData && propData.width ? `width="${propData.width}" ` : '';
     const buCreditHtml = propData && propData.credit ? `<p class="credit">${propData.credit}</p>` : '';
     const buHtml = propData && propData.bu ? `<figcaption class="bu"><p>${insertMarkup(propData.bu)}</p></figcaption>` : '';
-    return `<section data-slide-shortcode-class="screenshot" class="image screenshot ${classes}" ${dataTransition} ${dataBackgroundTransition}><figure><img src="${imgSrc}" alt="${imgSrc}" ${width}>${buHtml}</figure></section>`;
+    return `<section data-slide-shortcode-class="screenshot" class="image screenshot ${classes}" ${dataTransition} ${dataBackgroundTransition}><figure><img src="${imgSrc}" alt="${imgSrc}" ${width}>${buHtml}</figure>${badge}</section>`;
   });
 
   eleventyConfig.addShortcode('image', (imgSrc, props) => {
     const propData = (props) ? JSON.parse(props) : {};
+    const badge = propData && propData.badge ? badgeHtml(insertMarkup(propData.badge)) : '';
     const dataTransition = propData && propData.transition
       ? `data-transition="${propData.transition}"`
       : 'data-transition="fade"';
@@ -198,7 +204,7 @@ module.exports = function (eleventyConfig) {
     const width = propData && propData.width ? `width="${propData.width}" ` : '';
     const buCreditHtml = propData && propData.credit ? `<p class="credit">${propData.credit}</p>` : '';
     const buHtml = propData && propData.bu ? `<figcaption class="bu"><p>${insertMarkup(propData.bu)}</p></figcaption>` : '';
-    return `<section data-slide-shortcode-class="image" class="image ${classes}" ${dataTransition}><figure><img src="${imgSrc}" alt="${imgSrc}" ${width}>${buHtml}</figure></section>`;
+    return `<section data-slide-shortcode-class="image" class="image ${classes}" ${dataTransition}><figure><img src="${imgSrc}" alt="${imgSrc}" ${width}>${buHtml}</figure>${badge}</section>`;
   });
 
   eleventyConfig.addShortcode('screenshotFs', (imgSrc, props) => {
@@ -209,10 +215,11 @@ module.exports = function (eleventyConfig) {
     const dataBackgroundTransition = propData && propData.backgroundTransition
       ? `data-background-transition="${propData.backgroundTransition}"`
       : 'data-background-transition="fade"';
+    const badge = propData && propData.badge ? badgeHtml(insertMarkup(propData.badge)) : '';
     const classes = propData && propData.classes ? propData.classes : '';
     const buCreditHtml = propData && propData.credit ? `<p class="credit">${propData.credit}</p>` : '';
     const buHtml = propData && propData.bu ? `<div class="bu"><p>${insertMarkup(md.render(propData.bu))}</p></div>` : '';
-    return `<section data-slide-shortcode-class="screenshot" class="image is-fullscreen ${classes}" data-background="${imgSrc}" ${dataTransition} ${dataBackgroundTransition}>${buHtml}</section>`;
+    return `<section data-slide-shortcode-class="screenshot" class="image is-fullscreen ${classes}" data-background="${imgSrc}" ${dataTransition} ${dataBackgroundTransition}>${buHtml}${badge}</section>`;
   });
 
   eleventyConfig.addShortcode('meta', () => {
@@ -241,12 +248,14 @@ module.exports = function (eleventyConfig) {
     return `<section data-slide-shortcode-class="question" class="question ${classes}"><div><h1 class="title">${md.render(question)}</h1>${htmlTagline}</div></section>`;
   });
 
-  eleventyConfig.addShortcode('simpleText', (title, text, transition) => {
+  eleventyConfig.addShortcode('simpleText', (title, text, transition, props) => {
+    const propData = (props) ? JSON.parse(props) : {};
     const titleHtml = title ? `<h1 class="title">${insertMarkup(title)}</h1>` : '';
     const textHtml = text ? insertMarkup(text) : '';
+    const badge = propData && propData.badge ? badgeHtml(insertMarkup(propData.badge)) : '';
     const dataTransition = transition ? `data-transition="${transition}"` : '';
     return `<section data-slide-shortcode-class="simple-text" class="simple" ${dataTransition}>
-    <div>${titleHtml}${textHtml}</div></section>`;
+    <div>${titleHtml}${textHtml}</div>${badge}</section>`;
   });
 
   eleventyConfig.addShortcode('simpleInterlude', (title, text, transition) => {
@@ -293,6 +302,10 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode('important', (content) => {
     return `<div class="is-important">${md.render(content)}</div>`;
+  });
+
+    eleventyConfig.addShortcode('text', (content) => {
+    return `<div>${content}</div>`;
   });
 
   eleventyConfig.addShortcode('statement', (title, content, props) => {

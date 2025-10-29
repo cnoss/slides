@@ -2,6 +2,7 @@
   position: relative;
   width: 100dvw;
   height: 100dvh;
+  z-index: 10;
 
   strong{
     font-weight: var(--fw-medium);
@@ -87,7 +88,6 @@
 
   blockquote {
     max-width: 70vw;
-    text-wrap: balance;
 
     &.typo-quote{
       border: none;
@@ -286,7 +286,6 @@
   .title{
     margin-top: 0;
     padding-top: 0;
-    text-wrap: balance;
 
     strong{
       font-weight: var(--fw-bold);
@@ -480,7 +479,6 @@
   &.align-left{
     div{
       align-items: flex-start;
-      padding: 10%;
       .title, .subtitle{
         text-align: left;
       }
@@ -505,14 +503,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 80%;
+    hyphens: none;
 
     .title {
       text-align: center;
       font-family: var(--ff-normal);
-      text-wrap: balance;
       padding: 0;
       padding-bottom: var(--half);
-      text-wrap: balance;
     }
     .subtitle {
       text-align: center;
@@ -547,6 +545,10 @@
 
     width: 90%;
 
+    & > * {
+      max-width: 80ch;
+    }
+
     &.fragment{
       margin-bottom: var(--xs);
       transition: all var(--tr-fast) ease-in-out;
@@ -554,10 +556,6 @@
       &.visible{
         transform: translateX(0);
       }
-    }
-
-    & > * {
-      max-width: calc(var(--m) * 40);
     }
 
     ul{
@@ -589,6 +587,7 @@
     }
 
 
+
     p, & {
       margin-bottom: var(--xl);
       color: var(--darker);
@@ -605,6 +604,11 @@
           display: block;
         }
       }
+    }
+
+    p, p + p{
+      margin-top: var(--xs);
+      margin-bottom: 0;
     }
 
     blockquote{
@@ -877,4 +881,53 @@
   }
   
 
+}
+
+/* Fact List
+############################################################################ */
+
+.fact-list{
+
+  padding-bottom: 50dvh !important;
+
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--l);
+
+  font-size: var(--l);
+  perspective: 2000px;
+
+  .is-dark &{
+    background-color: var(--darker);
+    color: var(--lightest);
+  }
+
+  div{   
+    max-width: 50ch;
+
+    &.fragment{
+      
+      max-height: 0;
+      opacity: 0.3;
+      transform-origin: top left;
+      transform: rotateY(60deg) skewY(-15deg) scale(0.3);
+      transition: all var(--tr-slow) ease-in-out;
+      hyphens: none;
+      line-height: var(--lh-tight);
+      font-size: var(--xxl);
+
+      &.visible{
+        opacity: 0.3;
+        max-height: 900px;
+      }
+
+      &.current-fragment{
+        opacity: 1;
+        transform: rotateY(0deg) scale(1) translateY(+50%);
+        line-height: var(--lh-normal);
+      }
+    }
+
+  }
 }

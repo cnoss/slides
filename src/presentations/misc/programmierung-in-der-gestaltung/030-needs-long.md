@@ -2,7 +2,7 @@
 title: Needs
 layout: presentation.11ty.js
 slideClasses: images
-
+status: hidden
 
 tShape01: ./images/t-shaped-04.png
 tShape02: ./images/t-shaped-03.png
@@ -21,7 +21,7 @@ anspruch: |
   Wir wollen sicher­stellen, dass unsere Studie­renden ein <mark><strong>Höchstmaß an Profes­sio­na­lität</strong></mark> errei­chen und eine aktive Rolle im Sinne der Nutzer:innen von Gestal­tungs­dienst­leis­tungen einnehmen.
 
 kompetenz: |
-  Wissen<span class="fragment"> + Können</span><span class="fragment"> + Wollen</span><span class="fragment"> + kontextuelle Anpassungsfähigkeit</span>
+  Wissen<span class="fragment"> + Können</span><span class="fragment"> + Wollen</span><span class="fragment"> + Kontextsensibilität</span>
 
 kompetenzSatz: |
   Eine Kompetenz beschreibt die Fähigkeit, Wissen, Fertigkeiten und Haltung in konkreten Situationen selbstorganisiert und verantwortungsvoll anzuwenden.
@@ -36,6 +36,8 @@ tShapeTeam: ./images/digital-product-t-shaped-team.png
 
 {% statement anspruch %}
 
+{% image tShape06, '{"transition":"fade", "classes":"no-shadow", "bu":"Generalist: jemand, der über breit gefächertes Wissen und vielseitige Fähigkeiten in verschiedenen Bereichen verfügt."}' %}
+{% image tShape05, '{"transition":"fade", "classes":"no-shadow", "bu":"Spezialistin: jemand, der sich auf ein bestimmtes Fachgebiet konzentriert und darin über tiefgehendes Wissen und hohe Expertise verfügt."}' %}
 {% image tShape01, '{"transition":"fade", "classes":"no-shadow", "bu":"Introduced by David Guest in 1991,<br>coined by Tim Brown 15 years later."}' %}
 {% image tShape03, '{"transition":"fade", "classes":"no-shadow" }' %}
 {% image tShape04, '{"transition":"fade", "classes":"no-shadow", "bu":"Vielleicht passend für die HFG – Gestaltung, Technologie & Wissenschaft"}' %}

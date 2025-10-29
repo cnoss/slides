@@ -248,14 +248,19 @@ dl.simple-definition{
   bottom: 0;
   left: var(--xxs);
   display: inline-block;
-  max-width: calc(var(--bfs) * 20);
+  max-width: 30em;
   padding: var(--xxs) var(--xxs) var(--s) var(--xxs);
   background-color: var(--lighter);
   color: var(--darker);
   font-size: var(--xs);
   opacity: 0;
   transition: opacity var(--tr-slow) var(--tr-delay);
-  p { hyphens: none !important; }
+
+
+  p { 
+    hyphens: none !important;
+    line-height: var(--lh-normal);
+  }
 
   .credit {
     font-size: var(--xxs);
@@ -296,6 +301,43 @@ dl.simple-definition{
   opacity: 0.7;
 }
 
+.large-text .bu {
+  font-size: var(--l);
+  padding: var(--s) var(--m) var(--l) var(--m);
+  line-height: var(--lh-normal);
+}
+
+.full-height .bu {
+  bottom: var(--m);
+  top: var(--m);
+  display: flex;
+  align-items: center; 
+}
+
+.center .bu{
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: unset;
+}
+
+.invert .bu {
+  background-color: var(--darkest);
+  color: var(--lightest);
+
+  strong{
+    color: var(--lightest);
+    font-weight: var(--fw-bold);
+  }
+}
+
+.frameless .bu {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: var(--xxl);
+  width: 33%;
+}
+
 /* Blöcke
 ############################################################################ */
 
@@ -316,5 +358,55 @@ dl.simple-definition{
 
   strong {
     font-weight: var(--fw-bold);
+  }
+}
+
+
+/* Badge
+############################################################################ */
+
+.mi-slide .badge, .mi-slide.badge{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: var(--mark);
+  color: var(--darkest);
+  font-size: var(--xs);
+  font-weight: var(--fw-bold);
+  padding: var(--half) var(--m);
+  text-align: right;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity var(--tr-fast) 1s;
+  transform-origin: right;
+
+  a{
+    color:var(--darkest);
+    text-decoration: none;
+  }
+}
+.mi-slide .badge.is-active, .mi-slide.badge.is-active{
+  opacity: 1;
+}
+
+/* Fadeout Bottom
+############################################################################ */
+
+.fadeout-bottom{
+  position: fixed;
+  max-height: 80dvh;
+  overflow: hidden;
+  bottom: 0;
+
+  &::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
   }
 }

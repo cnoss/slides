@@ -283,6 +283,8 @@ select {
   --mi-lila: #9313ce;
   --mi-black: #231f20;
   --mi-grau: #aaa;
+  --mark: var(--mi-blau);
+  /* #F4FF71; */
   --mi-hellgrau: #efefef;
   --ff-normal: "Barlow", sans-serif;
   --ff-serif: "FiraItalic", serif;
@@ -688,7 +690,7 @@ dl.simple-definition dd {
   bottom: 0;
   left: var(--xxs);
   display: inline-block;
-  max-width: calc(var(--bfs) * 20);
+  max-width: 30em;
   padding: var(--xxs) var(--xxs) var(--s) var(--xxs);
   background-color: var(--lighter);
   color: var(--darker);
@@ -733,6 +735,42 @@ dl.simple-definition dd {
   opacity: 0.7;
 }
 
+.large-text .bu {
+  font-size: var(--l);
+  padding: var(--s) var(--m) var(--l) var(--m);
+  line-height: var(--lh-normal);
+}
+
+.full-height .bu {
+  bottom: var(--m);
+  top: var(--m);
+  display: flex;
+  align-items: center;
+}
+
+.center .bu {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: unset;
+}
+
+.invert .bu {
+  background-color: var(--darkest);
+  color: var(--lightest);
+}
+.invert .bu strong {
+  color: var(--lightest);
+  font-weight: var(--fw-bold);
+}
+
+.frameless .bu {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: var(--xxl);
+  width: 33%;
+}
+
 /* Blöcke
 ############################################################################ */
 .content-blocks p,
@@ -749,6 +787,52 @@ dl.simple-definition dd {
 }
 .content-blocks strong {
   font-weight: var(--fw-bold);
+}
+
+/* Badge
+############################################################################ */
+.mi-slide .badge, .mi-slide.badge {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: var(--mark);
+  color: var(--lightest);
+  font-size: var(--xs);
+  font-weight: var(--fw-bold);
+  padding: var(--half) var(--m);
+  text-align: right;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity var(--tr-fast) 1s;
+  transform-origin: right;
+}
+.mi-slide .badge a, .mi-slide.badge a {
+  color: var(--lightest);
+  text-decoration: none;
+}
+
+.mi-slide .badge.is-active, .mi-slide.badge.is-active {
+  opacity: 1;
+}
+
+/* Fadeout Bottom
+############################################################################ */
+.fadeout-bottom {
+  position: fixed;
+  max-height: 80dvh;
+  overflow: hidden;
+  bottom: 0;
+}
+.fadeout-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
 }
 
 /* Document Layout 
@@ -860,6 +944,7 @@ a.is-black:hover {
   position: relative;
   width: 100dvw;
   height: 100dvh;
+  z-index: 10;
 }
 .mi-slide strong {
   font-weight: var(--fw-medium);
@@ -929,7 +1014,6 @@ a.is-black:hover {
 }
 .cite blockquote {
   max-width: 70vw;
-  text-wrap: balance;
 }
 .cite blockquote.typo-quote {
   border: none;
@@ -1095,7 +1179,6 @@ a.is-black:hover {
 .statement .title {
   margin-top: 0;
   padding-top: 0;
-  text-wrap: balance;
 }
 .statement .title strong {
   font-weight: var(--fw-bold);
@@ -1255,19 +1338,34 @@ a.is-black:hover {
   align-items: center;
   justify-content: center;
 }
+.question.align-left div {
+  align-items: flex-start;
+}
+.question.align-left div .title, .question.align-left div .subtitle {
+  text-align: left;
+}
+.question.fit-text .title {
+  --min-font-size: 1rem;
+  --max-font-size: 5rem;
+  --ratio: 10cqi;
+  font-size: clamp(var(--min-font-size), var(--ratio), var(--max-font-size));
+}
+.question.fit-text .title, .question.fit-text .title * {
+  hyphens: none;
+}
 .question div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 80%;
+  hyphens: none;
 }
 .question div .title {
   text-align: center;
   font-family: var(--ff-normal);
-  text-wrap: balance;
   padding: 0;
   padding-bottom: var(--half);
-  text-wrap: balance;
 }
 .question div .subtitle {
   text-align: center;
@@ -1296,6 +1394,9 @@ a.is-black:hover {
 .simple div {
   width: 90%;
 }
+.simple div > * {
+  max-width: 80ch;
+}
 .simple div.fragment {
   margin-bottom: var(--xs);
   transition: all var(--tr-fast) ease-in-out;
@@ -1303,9 +1404,6 @@ a.is-black:hover {
 }
 .simple div.fragment.visible {
   transform: translateX(0);
-}
-.simple div > * {
-  max-width: calc(var(--m) * 40);
 }
 .simple div ul li {
   display: block;
@@ -1339,6 +1437,10 @@ a.is-black:hover {
 .simple div p + ul li, .simple div + ul li {
   font-size: var(--l);
   display: block;
+}
+.simple div p, .simple div p + p {
+  margin-top: var(--xs);
+  margin-bottom: 0;
 }
 .simple div blockquote {
   border-left: solid var(--border-width-l) var(--mi-blau);
@@ -1544,6 +1646,45 @@ a.is-black:hover {
   font-size: var(--xl);
 }
 
+/* Fact List
+############################################################################ */
+.fact-list {
+  padding-bottom: 50dvh !important;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--l);
+  font-size: var(--l);
+  perspective: 2000px;
+}
+.is-dark .fact-list {
+  background-color: var(--darker);
+  color: var(--lightest);
+}
+.fact-list div {
+  max-width: 50ch;
+}
+.fact-list div.fragment {
+  max-height: 0;
+  opacity: 0.3;
+  transform-origin: top left;
+  transform: rotateY(60deg) skewY(-15deg) scale(0.7);
+  transition: all var(--tr-slow) ease-in-out;
+  hyphens: none;
+  line-height: var(--lh-tight);
+  font-size: var(--l);
+}
+.fact-list div.fragment.visible {
+  opacity: 0.3;
+  max-height: 900px;
+}
+.fact-list div.fragment.current-fragment {
+  opacity: 1;
+  transform: rotateY(0deg) scale(1) translateY(50%);
+  line-height: var(--lh-normal);
+  font-size: var(--xxl);
+}
+
 /* presentation-list
 ############################################################################ */
 @media screen and (min-width: 768px) {
@@ -1595,22 +1736,18 @@ a.is-black:hover {
 /* Notizen
 #################################################### */
 .notes.is-active {
-  display: flex !important;
+  display: block !important;
   top: 0;
   right: 0;
   width: 33%;
-  height: 100%;
+  bottom: 0;
   position: fixed;
   background-color: var(--darkest);
   color: var(--lightest);
   padding: var(--m);
   z-index: 1000;
   opacity: 0.9;
-  display: flex;
-  flex-direction: column;
-  gap: var(--xs);
-  overflow-y: auto;
-  justify-content: center;
+  overflow-y: scroll;
 }
 .notes.is-active * {
   line-height: var(--lh-normal);
