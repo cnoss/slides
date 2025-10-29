@@ -16,6 +16,7 @@ dbVariants: ./images/db-mob-trans.png
 dbVariantsB: ./images/db-mob-b.jpg
 aurora: ./images/datenquellen-pruefen.jpg
 cranach: ./images/datenkonsitenz-pruefen.jpg
+data: ./images/data.png
 
 materialeigenschaften: |
   <p><strong>Strukturelle Eigenschaften:</strong> Modularität, Logik & Regelhaftigkeit, Abhängigkeit & Verkettung, Schichtung / Abstraktionsebenen </p>
@@ -65,16 +66,18 @@ speaker: |
 
 {% screenshotFs material, '{"transition":"fade", "classes":"no-shadow large-text", "bu":"Verständnis von Material und Produktion"}' %}
 
-{% simpleText "Level 1: Materialverständnis", materialeigenschaften, false, '{"badge": "must have"}'  %}
+{% simpleText "Materialverständnis", materialeigenschaften, false, '{"badge": "must have"}'  %}
 
-{% screenshotFs webApis, '{"transition":"fade", "classes":"no-shadow large-text center invert", "bu":"<strong>Gestaltungsräume</strong> kennen und <strong>Komplexität</strong> abschätzen können.", "badge": "must have"}' %}
+{% screenshotFs webApis, '{"transition":"fade", "classes":"no-shadow large-text invert full-height frameless", "bu":"<strong>Gestaltungsräume</strong> kennen und <strong>Komplexität</strong> abschätzen können", "badge": "must have"}' %}
 
-{% screenshotFs containerQueries, '{"transition":"fade", "classes":"no-shadow large-text center invert", "bu":"<strong>Implementierungsmöglichkeiten</strong> und <strong>-strategien</strong> kennen<br>(und entwickeln?).", "badge": "should have"}' %}
+{% screenshotFs containerQueries, '{"transition":"fade", "classes":"no-shadow large-text invert full-height frameless", "bu":"<strong>Implementierungsmöglich-<br>keiten</strong> und <strong>-strategien</strong> kennen (und entwickeln?)", "badge": "should have"}' %}
 
-{% screenshotFs ercoDataMock, '{"transition":"fade", "classes":"no-shadow large-text invert full-height frameless", "bu":"Funktionale <strong>Prototypen</strong> und <strong>Proof-of-concepts</strong> aufbauen<br>(und verproben).", "badge": "could have"}' %}
+{% screenshotFs ercoDataMock, '{"transition":"fade", "classes":"no-shadow large-text invert full-height frameless", "bu":"Funktionale <strong>Prototypen</strong> und <strong>Proof-of-concepts</strong> aufbauen<br>(und verproben)", "badge": "could have"}' %}
 
-{% screenshotFs aurora, '{"transition":"fade", "classes":"no-shadow large-text", "bu":"<strong>Datenquellen</strong> und <strong>Datenqualität</strong> prüfen.", "badge": "could have"}' %}
+{% screenshotFs aurora, '{"transition":"fade", "classes":"no-shadow large-text full-height frameless", "bu":"<strong>Datenquellen</strong> und <strong>Datenqualität</strong> prüfen", "badge": "could have"}' %}
 
-{% screenshotFs cranach, '{"transition":"fade", "classes":"no-shadow large-text", "bu":"<strong>Datenkonsistenz</strong> und <strong>Datenstrukturen</strong> erkunden und prüfen.", "badge": "could have"}' %}
+{% screenshotFs cranach, '{"transition":"fade", "classes":"no-shadow large-text  full-height frameless", "bu":"<strong>Datenkonsistenz</strong> und <strong>Datenstrukturen</strong> erkunden und prüfen", "badge": "could have"}' %}
 
-{% screenshotFs dbVariantsB, '{"transition":"fade", "classes":"no-shadow large-text invert", "bu":"<strong>Varianten</strong> erzeugen, mit <strong>echten Daten</strong> auf <strong>echten Geräten</strong> testen.", "badge": "could have"}' %}
+{% screenshotFs dbVariantsB, '{"transition":"fade", "classes":"no-shadow large-text invert  full-height frameless", "bu":"<strong>Varianten</strong> erzeugen, mit <strong>echten Daten</strong> auf <strong>echten Geräten</strong> testen", "badge": "could have"}' %}
+
+{% screenshotFs data, '{"transition":"fade", "classes":"no-shadow large-text invert  full-height frameless", "bu":"Sehr gutes <strong>Verständnis von Daten</strong>", "badge": "must have"}' %}

@@ -174,9 +174,13 @@ module.exports = function (eleventyConfig) {
   /* Shortcodes
   ########################################################################## */
 
+  const badgeHtml = (text) => {
+    return `<div class="badge"><span>${text}</span></div>`;
+  }
+
   eleventyConfig.addShortcode('screenshot', (imgSrc, props) => {
     const propData = (props) ? JSON.parse(props) : {};
-    const badge = propData && propData.badge ? `<div class="badge">${insertMarkup(propData.badge)}</div>` : '';
+    const badge = propData && propData.badge ? badgeHtml(insertMarkup(propData.badge)) : '';
     const dataTransition = propData && propData.transition
       ? `data-transition="${propData.transition}"`
       : 'data-transition="fade"';
@@ -192,7 +196,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode('image', (imgSrc, props) => {
     const propData = (props) ? JSON.parse(props) : {};
-    const badge = propData && propData.badge ? `<div class="badge">${insertMarkup(propData.badge)}</div>` : '';
+    const badge = propData && propData.badge ? badgeHtml(insertMarkup(propData.badge)) : '';
     const dataTransition = propData && propData.transition
       ? `data-transition="${propData.transition}"`
       : 'data-transition="fade"';
@@ -211,7 +215,7 @@ module.exports = function (eleventyConfig) {
     const dataBackgroundTransition = propData && propData.backgroundTransition
       ? `data-background-transition="${propData.backgroundTransition}"`
       : 'data-background-transition="fade"';
-    const badge = propData && propData.badge ? `<div class="badge">${insertMarkup(propData.badge)}</div>` : '';
+    const badge = propData && propData.badge ? badgeHtml(insertMarkup(propData.badge)) : '';
     const classes = propData && propData.classes ? propData.classes : '';
     const buCreditHtml = propData && propData.credit ? `<p class="credit">${propData.credit}</p>` : '';
     const buHtml = propData && propData.bu ? `<div class="bu"><p>${insertMarkup(md.render(propData.bu))}</p></div>` : '';
@@ -248,7 +252,7 @@ module.exports = function (eleventyConfig) {
     const propData = (props) ? JSON.parse(props) : {};
     const titleHtml = title ? `<h1 class="title">${insertMarkup(title)}</h1>` : '';
     const textHtml = text ? insertMarkup(text) : '';
-    const badge = propData && propData.badge ? `<div class="badge">${insertMarkup(propData.badge)}</div>` : '';
+    const badge = propData && propData.badge ? badgeHtml(insertMarkup(propData.badge)) : '';
     const dataTransition = transition ? `data-transition="${transition}"` : '';
     return `<section data-slide-shortcode-class="simple-text" class="simple" ${dataTransition}>
     <div>${titleHtml}${textHtml}</div>${badge}</section>`;

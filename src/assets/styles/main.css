@@ -283,7 +283,8 @@ select {
   --mi-lila: #9313ce;
   --mi-black: #231f20;
   --mi-grau: #aaa;
-  --mark: #ffff00;
+  --mark: var(--mi-blau);
+  /* #F4FF71; */
   --mi-hellgrau: #efefef;
   --ff-normal: "Barlow", sans-serif;
   --ff-serif: "FiraItalic", serif;
@@ -796,20 +797,42 @@ dl.simple-definition dd {
   left: 0;
   width: 100vw;
   background-color: var(--mark);
-  color: var(--darkest);
+  color: var(--lightest);
   font-size: var(--xs);
   font-weight: var(--fw-bold);
   padding: var(--half) var(--m);
   text-align: right;
   z-index: 1000;
   opacity: 0;
-  transition: opacity var(--tr-fast) var(--tr-delay);
+  transition: opacity var(--tr-fast) 1s;
   transform-origin: right;
-  transform: rotate(1deg);
+}
+.mi-slide .badge a, .mi-slide.badge a {
+  color: var(--lightest);
+  text-decoration: none;
 }
 
-.present.mi-slide .badge, .present .mi-slide.badge {
+.mi-slide .badge.is-active, .mi-slide.badge.is-active {
   opacity: 1;
+}
+
+/* Fadeout Bottom
+############################################################################ */
+.fadeout-bottom {
+  position: fixed;
+  max-height: 80dvh;
+  overflow: hidden;
+  bottom: 0;
+}
+.fadeout-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
 }
 
 /* Document Layout 
@@ -921,6 +944,7 @@ a.is-black:hover {
   position: relative;
   width: 100dvw;
   height: 100dvh;
+  z-index: 10;
 }
 .mi-slide strong {
   font-weight: var(--fw-medium);
@@ -990,7 +1014,6 @@ a.is-black:hover {
 }
 .cite blockquote {
   max-width: 70vw;
-  text-wrap: balance;
 }
 .cite blockquote.typo-quote {
   border: none;
@@ -1156,7 +1179,6 @@ a.is-black:hover {
 .statement .title {
   margin-top: 0;
   padding-top: 0;
-  text-wrap: balance;
 }
 .statement .title strong {
   font-weight: var(--fw-bold);
@@ -1371,6 +1393,9 @@ a.is-black:hover {
 }
 .simple div {
   width: 90%;
+}
+.simple div > * {
+  max-width: 80ch;
 }
 .simple div.fragment {
   margin-bottom: var(--xs);
@@ -1624,21 +1649,40 @@ a.is-black:hover {
 /* Fact List
 ############################################################################ */
 .fact-list {
+  padding-bottom: 50dvh !important;
   display: flex !important;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+  padding: var(--l);
+  font-size: var(--l);
+  perspective: 2000px;
+}
+.is-dark .fact-list {
   background-color: var(--darker);
   color: var(--lightest);
-  padding: var(--l);
-  font-size: var(--xxl);
 }
-.fact-list p {
-  margin-bottom: var(--xs);
-  opacity: 0.4;
+.fact-list div {
+  max-width: 50ch;
 }
-.fact-list p:last-child {
-  margin-bottom: 0;
+.fact-list div.fragment {
+  max-height: 0;
+  opacity: 0.3;
+  transform-origin: top left;
+  transform: rotateY(60deg) skewY(-15deg) scale(0.7);
+  transition: all var(--tr-slow) ease-in-out;
+  hyphens: none;
+  line-height: var(--lh-tight);
+  font-size: var(--l);
+}
+.fact-list div.fragment.visible {
+  opacity: 0.3;
+  max-height: 900px;
+}
+.fact-list div.fragment.current-fragment {
   opacity: 1;
+  transform: rotateY(0deg) scale(1) translateY(50%);
+  line-height: var(--lh-normal);
+  font-size: var(--xxl);
 }
 
 /* presentation-list

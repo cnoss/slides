@@ -174,7 +174,7 @@ exports.render = function (data) {
     const additionalClasses = getAdditionalClasses(slide.data.additionalClasses);
     const content = wrapContentByType(slide.data, slideClass);
     const status = getStatus(slide.data.status);
-    const badge = slide.data.badge ? `<div class="badge">${this.markdown(slide.data.badge)}</div>` : '';
+    const badge = slide.data.badge ? `<div class="badge"><span>${this.markdown(slide.data.badge)}</span></div>` : '';
     const speakerNotes = slide.data.speaker ? `<aside class="notes"><div>${this.markdown(slide.data.speaker)}</div></aside>` : '';
 
     
