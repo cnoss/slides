@@ -19,11 +19,11 @@ cranach: ./images/datenkonsitenz-pruefen.jpg
 data: ./images/data.png
 
 materialeigenschaften: |
-  <p><strong>Strukturelle Eigenschaften:</strong> Modularität, Logik & Regelhaftigkeit, Abhängigkeit & Verkettung, Schichtung / Abstraktionsebenen </p>
-  <p><strong>Dynamische Eigenschaften:</strong> Prozessualität, Emergenz, Iterativität, Reaktivität, Temporalität</p>
-  <p><strong>Physikalische & technische Eigenschaften:</strong> Performanz, Präzision, Fehleranfälligkeit, Kompatibilität, Transparenz</p>
-  <p><strong>Semantische & kulturelle Eigenschaften:</strong> Kollaboration, Automatisierung, Übersetzbarkeit, Lesbarkeit, Kommunikativität, Konventionalität, Pflege & Nachvollziehbarkeit</p>
-  <p><strong>Gestalterische Metaeigenschaften:</strong> Experimentierbarkeit, Reproduzierbarkeit, Parametrik & Variabilität, Offenheit & Erweiterbarkeit, Ephemerität</p>
+  <p class="grid"><strong data-col="1">Strukturelle Eigenschaften</strong> <span data-col="2">Modularität, Logik & Regelhaftigkeit, Abhängigkeit & Verkettung, Schichtung / Abstraktionsebenen</span></p>
+  <p class="grid"><strong data-col="1">Dynamische Eigenschaften</strong> <span data-col="2">Prozessualität, Emergenz, Iterativität, Reaktivität, Temporalität</span></p>
+  <p class="grid"><strong data-col="1">Physikalische & technische Eigenschaften</strong> <span data-col="2">Performanz, Präzision, Fehleranfälligkeit, Kompatibilität, Transparenz</span></p>
+  <p class="grid"><strong data-col="1">Semantische & kulturelle Eigenschaften</strong> <span data-col="2">Kollaboration, Automatisierung, Übersetzbarkeit, Lesbarkeit, Kommunikativität, Konventionalität, Pflege & Nachvollziehbarkeit</span></p>
+  <p class="grid"><strong data-col="1">Gestalterische Metaeigenschaften</strong> <span data-col="2">Experimentierbarkeit, Reproduzierbarkeit, Parametrik & Variabilität, Offenheit & Erweiterbarkeit, Ephemerität</span></p>
 
 speaker: |
   Strukturelle Eigenschaften
@@ -66,7 +66,7 @@ speaker: |
 
 {% screenshotFs material, '{"transition":"fade", "classes":"no-shadow large-text", "bu":"Verständnis von Material und Produktion"}' %}
 
-{% simpleText "Materialverständnis", materialeigenschaften, false, '{"badge": "must have"}'  %}
+{% simpleText "Materialverständnis", materialeigenschaften, false, '{"badge": "must have", "classes":"has-grid"}'  %}
 
 {% screenshotFs webApis, '{"transition":"fade", "classes":"no-shadow large-text invert full-height frameless", "bu":"<strong>Gestaltungsräume</strong> kennen und <strong>Komplexität</strong> abschätzen können", "badge": "must have"}' %}
 

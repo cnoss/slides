@@ -57,12 +57,19 @@ h3 {
   font-weight: normal;
 }
 
+mark{
+  strong{
+    color: var(--darkest) !important;  
+  }
+  
+  padding-left: var(--half);
+  padding-right: var(--half);
+  display: inline-block;
+}
+
 p, div {
   hyphens: auto;
 
-  & > strong{
-    color: var(--mi-lila);
-  }
 
   & > mark, & > em{
     font-weight: var(--fw-bold);

@@ -252,9 +252,10 @@ module.exports = function (eleventyConfig) {
     const propData = (props) ? JSON.parse(props) : {};
     const titleHtml = title ? `<h1 class="title">${insertMarkup(title)}</h1>` : '';
     const textHtml = text ? insertMarkup(text) : '';
+    const classes = propData && propData.classes ? propData.classes : '';
     const badge = propData && propData.badge ? badgeHtml(insertMarkup(propData.badge)) : '';
     const dataTransition = transition ? `data-transition="${transition}"` : '';
-    return `<section data-slide-shortcode-class="simple-text" class="simple" ${dataTransition}>
+    return `<section data-slide-shortcode-class="simple-text" class="simple ${classes}" ${dataTransition}>
     <div>${titleHtml}${textHtml}</div>${badge}</section>`;
   });
 
