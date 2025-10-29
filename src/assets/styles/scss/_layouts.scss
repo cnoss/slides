@@ -6,6 +6,7 @@
 
   strong{
     font-weight: var(--fw-medium);
+    color: var(--mi-lila);
   }
 
   & > section {
@@ -545,6 +546,7 @@
 
     width: 90%;
 
+
     & > * {
       max-width: 80ch;
     }
@@ -660,6 +662,12 @@
         box-shadow: none;
       }
     }
+  }
+
+  &.is-dark{
+    background-color: var(--darkest);
+    color: var(--lightest);
+    --mi-lila: var(--mi-lila-light);
   }
 
 }
@@ -901,6 +909,7 @@
   .is-dark &{
     background-color: var(--darker);
     color: var(--lightest);
+    --mi-lila: var(--mi-lila-light);
   }
 
   div{   

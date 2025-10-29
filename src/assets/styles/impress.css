@@ -283,7 +283,7 @@ select {
   --mi-lila: #9313ce;
   --mi-black: #231f20;
   --mi-grau: #aaa;
-  --mark: var(--mi-blau);
+  --mark: #F4FF71;
   /* #F4FF71; */
   --mi-hellgrau: #efefef;
   --ff-normal: "Barlow", sans-serif;
@@ -680,6 +680,7 @@ dl.simple-definition dd {
 }
 .bu p {
   hyphens: none !important;
+  line-height: var(--lh-normal);
 }
 .bu .credit {
   font-size: var(--xxs);
@@ -777,7 +778,7 @@ dl.simple-definition dd {
   left: 0;
   width: 100vw;
   background-color: var(--mark);
-  color: var(--lightest);
+  color: var(--darkest);
   font-size: var(--xs);
   font-weight: var(--fw-bold);
   padding: var(--half) var(--m);
@@ -788,7 +789,7 @@ dl.simple-definition dd {
   transform-origin: right;
 }
 .mi-slide .badge a, .mi-slide.badge a {
-  color: var(--lightest);
+  color: var(--darkest);
   text-decoration: none;
 }
 

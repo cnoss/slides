@@ -32,7 +32,7 @@ tShapeTeam: ./images/digital-product-t-shaped-team.png
 
 
 ---
-{% image "./images/hfg-triade.jpg", '{"transition":"fade", "classes":"no-shadow", "bu":"https://www.hfg-gmuend.de/hochschule/geschichte"}' %}
+{% image "./images/hfg-triade.jpg", '{"transition":"fade", "classes":"no-shadow is-dark", "bu":"https://www.hfg-gmuend.de/hochschule/geschichte"}' %}
 
 {% statement anspruch %}
 
