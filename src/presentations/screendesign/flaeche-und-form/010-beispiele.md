@@ -5,16 +5,16 @@ slideClasses: images
 transition: none
 ---
 
-{% screenshot "./images/flaeche-01.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":""}' %}
-{% screenshot "./images/flaeche-02.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":""}' %}
-{% screenshot "./images/flaeche-03.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":""}' %}
-{% screenshot "./images/flaeche-04.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":""}' %}
-{% screenshot "./images/flaeche-05.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":""}' %}
-{% screenshot "./images/flaeche-06.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":""}' %}
-{% screenshot "./images/flaeche-07.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":""}' %}
-{% screenshot "./images/flaeche-08.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":""}' %}
-{% screenshot "./images/flaeche-09.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":""}' %}
-{% screenshot "./images/flaeche-10.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":""}' %}
+{% screenshot "./images/flaeche-01.png", '{"transition":"fade", "classes":"screenshot no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/flaeche-02.png", '{"transition":"fade", "classes":"screenshot no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/flaeche-03.png", '{"transition":"fade", "classes":"screenshot no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/flaeche-04.png", '{"transition":"fade", "classes":"screenshot no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/flaeche-05.png", '{"transition":"fade", "classes":"screenshot no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/flaeche-06.png", '{"transition":"fade", "classes":"screenshot no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/flaeche-07.png", '{"transition":"fade", "classes":"screenshot no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/flaeche-08.png", '{"transition":"fade", "classes":"screenshot no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/flaeche-09.png", '{"transition":"fade", "classes":"screenshot no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/flaeche-10.png", '{"transition":"fade", "classes":"screenshot no-shadow", "width":"auto", "bu":""}' %}
 
 
 {% screenshot "./images/formen-01.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":""}' %}

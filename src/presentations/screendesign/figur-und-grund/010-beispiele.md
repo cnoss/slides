@@ -55,7 +55,6 @@ transition: fade
   <div>
     <h1>Man nimmt Figuren wahr, wenn ...</h1>
     {% fragment '<p class="list">... der entsprechende Bildausschnitt <strong>übereinstimmende Farbkomponenten hat,</strong></p>' %}
-    {% fragment '<p class="list">... der entsprechende Bildausschnitt <strong>einen eher konvexen Rand hat</strong></p>' %}
     {% fragment '<p class="list">... der entsprechende Bildausschnitt <strong>vertikal oder horizontal orientiert ist</strong></p>' %}
     {% fragment '<p class="list">... der entsprechende Bildausschnitt <strong>symmetrisch oder in einem nicht zufälligem Zusammenhang steht</strong></p>' %}
   </div>
