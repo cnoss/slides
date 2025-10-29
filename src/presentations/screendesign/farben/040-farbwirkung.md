@@ -40,7 +40,7 @@ transition: none
 {% screenshot "./images/farbwirkung/farbharmonie-01.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":"Farbharmonie"}' %}
 {% screenshot "./images/farbwirkung/farbharmonie-02.png", '{"transition":"fade", "classes":"no-shadow", "width":"auto", "bu":"Farbharmonie"}' %}
 
-{% screenshot "./images/farbwirkung/farbkreis-01.png", '{"transition":"fade", "classes":"screenshot", 
+{% screenshot "./images/farbwirkung/farbkreis-01.png", '{"transition":"fade", "classes":"screenshot no-shadow", 
 "width":"auto", "bu":"Farbkreis"}' %}
 
 {% screenshot "./images/farbwirkung/farb-bedeutung-rot.png", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":""}' %}

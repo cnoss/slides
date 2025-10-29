@@ -3,6 +3,14 @@ title: Wechselwirkungen und Farbkontraste
 layout: presentation.11ty.js
 slideClasses: images
 transition: none
+
+
+goodToKnow: |
+  <p class="fragment list">Dieselbe Farbe wirkt auf dunklem Hintergrund leuchtender.</p>
+  <p class="fragment list">Liegen benachbarte Farben nahe beieinander, so schwächen sie sich ab.</p>
+  <p class="fragment list">Treffen Komplementärfarben aufeinander, so verstärken sie sich gegenseitig.</p>
+  <p class="fragment list">Bei zu kleinem Helligkeitsunterschied entsteht ein Flimmern.</p>  
+
 ---
 
 {% interlude "Wechselwirkungen und Farbkontraste"%}
@@ -15,7 +23,7 @@ transition: none
 
 {% screenshot "./images/kontraste/komplementaer-kontrast-03.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":"Komplementärkontrast"}' %}
 
-<section class="image screenshot">
+<!--section class="image screenshot">
   <figure>
     <img src="./images/kontraste/komplementaer-kontrast-04.png">
     <figcaption class="bu">
@@ -25,7 +33,7 @@ transition: none
       </p> 
     </figcaption>
   </figure>
-</section>
+</section-->
 
 <section class="image screenshot no-shadow">
   <figure>
@@ -51,7 +59,7 @@ transition: none
   </figure>
 </section>
 
-<section class="image screenshot">
+<!--section class="image screenshot">
   <figure>
     <img src="./images/kontraste/komplementaer-kontrast-07.png">
     <figcaption class="bu">
@@ -61,7 +69,7 @@ transition: none
       </p> 
     </figcaption>
   </figure>
-</section>
+</section-->
 
 {% interlude "Farbe-an-sich Kontrast"%}
 
@@ -300,14 +308,7 @@ transition: none
 {% screenshot "./images/kontraste/flimmern-01.png", '{"transition":"fade", 
 "classes":"screenshot", "width":"auto", "bu":"Flimmern"}' %}
 
-<section class="simple">
-  <figure>
-    <p class="list">Dieselbe Farbe wirkt auf dunklem Hintergrund leuchtender.</p>
-    <p class="list">Liegen benachbarte Farben nahe beieinander, so schwächen sie sich ab.</p>
-    <p class="list">Treffen Komplementärfarben aufeinander, so verstärken sie sich gegenseitig.</p>
-    <p class="list">Bei zu kleinem Helligkeitsunterschied entsteht ein Flimmern.</p>  
-  </figure>
-</section>
+{% simpleText "Gut zu wissen", goodToKnow %}
 
 {% screenshot "./images/kontraste/flimmern-02.png", '{"transition":"fade", 
 "classes":"no-shadow", "width":"auto", "bu":"Flimmern"}' %}

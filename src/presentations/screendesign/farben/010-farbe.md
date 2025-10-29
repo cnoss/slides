@@ -3,6 +3,8 @@ title: Farbe
 layout: presentation.11ty.js
 slideClasses: images
 transition: none
+speaker: |
+  Telekom, ebay, Coca Cola, Ikea, Intellij, TikTok
 ---
 
 {% screenshot "./images/farbe/corporate-color-01.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":"Corporate Color"}' %}
