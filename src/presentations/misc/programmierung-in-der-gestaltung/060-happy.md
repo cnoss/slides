@@ -12,7 +12,11 @@ greenfield: |
 
   <div class="fragment is-unbalanced"><em>Brownfield-Szenarien erfordern</em> kritischen, verantwortungsvollen, integrativen und nachhaltigen Umgang mit Technologie: Redesign-Projekte, Interface & Code-Refactoring</div>
 
+fertig: |
+  Folien und Miro Boards unter <a href="https://christiannoss.de/hfg">christiannoss.de/hfg</a>
+
 ---
 
 {% statement happy %}
 {% simpleInterlude "Greenfield vs. Brownfield", greenfield %}
+{% simpleText fertig, "Happy coding 🕺🏼!" %}
