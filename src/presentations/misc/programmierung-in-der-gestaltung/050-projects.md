@@ -8,8 +8,8 @@ projects: |
   <div class="fadeout-bottom">
   <h1>Projekte</h1>
   <span class="icon">edit</span> Relaunch ERCO Website<br>
-  <span class="icon">edit</span> <a href="https://miro.com/app/board/uXjVJzpE_VQ=/?share_link_id=604967837707">Cranach Grafiken</a> – Erweiterung des CDA um Grafiken und Zeichnungen<br>
-  <span class="icon">edit</span> <a href="https://miro.com/app/board/uXjVJzpE_VQ=/?share_link_id=604967837707">Migration Modulverwaltung</a> – Integration der neuen Modulverwaltung an der Fakultät<br>
+  <span class="icon">edit</span> <a href="https://miro.com/app/board/uXjVJzpE_VQ=/?moveToWidget=3458764646339413735&cot=14">Cranach Grafiken</a> – Erweiterung des CDA um Grafiken und Zeichnungen<br>
+  <span class="icon">edit</span> <a href="https://miro.com/app/board/uXjVJzpE_VQ=/?moveToWidget=3458764646309741155&cot=14">Migration Modulverwaltung</a> – Integration der neuen Modulverwaltung an der Fakultät<br>
   <span class="icon">edit</span> <a href="https://auroraforecast.is/spots/map-beta">Aurora Forecast Map</a> – wann und wo könnten Nordlichter in Island gesehen werden?<br>
   <a href="https://lucascranach.org/map/">Cranach Map</a> – Geografischer Zugang zum Werk von Lucas Cranach<br>
   <a href="https://lucascranach.org/xr/">Cranach VR</a> – Cranach Meisterwerke in virtueller Realität erleben<br>
