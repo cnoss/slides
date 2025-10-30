@@ -9,7 +9,7 @@ geboren: born in 1972 in Gummersbach
 atari: first Computer in 1985 – Atari 800XL
 study: <a href="https://www.folkwang-uni.de/folkwang-universitaet-der-kuenste/gestaltung/industrial-design">Industrial Design</a> at the University of Duisburg-Essen
 diploma: | 
-  Certified designer degree with thesis topic <strong>E-Dötzchen and Klickmeister. Design strategies for user groups with varying levels of experience»</strong> supervised by Prof. Dr. Ralph Bruder and Prof. Claudius Lazzeroni in 2001
+  Certified designer degree with thesis topic <strong>«e-Dötzchen and Klickmeister. Design strategies for user groups with varying levels of experience»</strong> supervised by Prof. Dr. Ralph Bruder and Prof. Claudius Lazzeroni in 2001
 
 ied: Research assistant at the Institute for Ergonomics and Design Research at the University of Duisburg-Essen for 5 years
 erco: Working student at ERCO Leuchten GmbH in the Marketing department

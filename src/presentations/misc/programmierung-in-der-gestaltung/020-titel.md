@@ -12,7 +12,7 @@ design: |
 
 coding: |
   <div class="fragment is-unbalanced"><strong>Coding</strong> als Schreiben von Code als handwerkliche, konkrete Tätigkeit, bei der eine Idee oder ein Algorithmus in eine Programmiersprache übersetzt wird.</div>
-  <div class="fragment is-unbalanced"><strong>Programmierung</strong> als systematische, strukturierte Entwicklung funktionaler Software. // Das reflektierte und systematische Entwerfen von Verhalten, Prozessen und Strukturen.</div>
+  <div class="fragment is-unbalanced"><strong>Programmierung</strong> als systematische, strukturierte Entwicklung funktionaler Software oder das systematische Entwerfen von Verhalten, Prozessen und Strukturen.</div>
 
 program: |
   <div class="fragment is-unbalanced"><strong>Programmierung</strong> Substantiv, ist statisch, benennt, fixiert</div>
@@ -22,8 +22,8 @@ mission: |
   Es geht um das Gestalten mit und durch Programmieren und somit die Erweiterung des gestalterischen <del>Denkens</del> Repertoires um algorithmische und technologische Mittel.
 
 ---
-{% interlude "Programmierung in der Gestaltung", false, '{"transition": "fade"}' %}
-{% interlude "Programmierung *|* in der *|* Gestaltung", false, '{"transition": "fade"}' %}
+{% interlude "Programmieren in der Gestaltung", false, '{"transition": "fade"}' %}
+{% interlude "Programmierung *|* im *|* Design", false, '{"transition": "fade"}' %}
 {% simpleText "Design oder Gestaltung?", design %}
 
 {% simpleText "Programmieren oder Programmierung?", program %}

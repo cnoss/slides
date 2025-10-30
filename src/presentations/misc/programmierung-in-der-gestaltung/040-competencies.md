@@ -78,6 +78,7 @@ speaker: |
 
 {% screenshotFs cranach, '{"transition":"fade", "classes":"no-shadow large-text  full-height frameless", "bu":"<strong>Datenkonsistenz</strong> und <strong>Datenstrukturen</strong> erkunden und prüfen", "badge": "could have"}' %}
 
+{% screenshotFs data, '{"transition":"fade", "classes":"no-shadow large-text invert  full-height frameless", "bu":"Sehr gutes <strong>Verständnis von Daten</strong>", "badge": "must have"}' %}
+
 {% screenshotFs dbVariantsB, '{"transition":"fade", "classes":"no-shadow large-text invert  full-height frameless", "bu":"<strong>Varianten</strong> erzeugen, mit <strong>echten Daten</strong> auf <strong>echten Geräten</strong> testen", "badge": "could have"}' %}
 
-{% screenshotFs data, '{"transition":"fade", "classes":"no-shadow large-text invert  full-height frameless", "bu":"Sehr gutes <strong>Verständnis von Daten</strong>", "badge": "must have"}' %}
