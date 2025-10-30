@@ -74,7 +74,7 @@ speaker: |
 
 {% screenshotFs ercoDataMock, '{"transition":"fade", "classes":"no-shadow large-text invert full-height frameless", "bu":"Funktionale <strong>Prototypen</strong> und <strong>Proof-of-concepts</strong> aufbauen<br>(und verproben)", "badge": "could have"}' %}
 
-{% screenshotFs aurora, '{"transition":"fade", "classes":"no-shadow large-text full-height frameless", "bu":"<strong>Datenquellen</strong> und <strong>Datenqualität</strong> prüfen", "badge": "could have"}' %}
+{% screenshotFs aurora, '{"transition":"fade", "classes":"no-shadow large-text full-height frameless", "bu":"<strong>Datenquellen</strong> und <strong>Datenqualität</strong> prüfen", "badge": "should have"}' %}
 
 {% screenshotFs cranach, '{"transition":"fade", "classes":"no-shadow large-text  full-height frameless", "bu":"<strong>Datenkonsistenz</strong> und <strong>Datenstrukturen</strong> erkunden und prüfen", "badge": "could have"}' %}
 
