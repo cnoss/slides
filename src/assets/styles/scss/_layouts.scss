@@ -940,3 +940,19 @@
 
   }
 }
+
+.print-pdf{
+  .fact-list{
+    padding-bottom: var(--m) !important;
+
+    div{
+      &.fragment, &.current-fragment{
+        opacity: 1;
+        max-height: none;
+        transform: none;
+        display: list-item;
+        font-size: var(--s );
+      }
+    }
+  }
+}

@@ -230,6 +230,7 @@ exports.render = function (data) {
           disableLayout: true,
           progress: true,
           backgroundTransition: 'fade',
+          pdfSeparateFragments: false,
           highlight: {
             highlightOnLoad: false,
           },

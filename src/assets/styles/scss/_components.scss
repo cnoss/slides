@@ -280,6 +280,15 @@ dl.simple-definition{
     opacity: 1;
   }
 
+  .print-pdf & {
+    opacity: 1;
+
+    &, * {
+      hyphens: auto !important;
+    }
+
+  }
+
   h2,
   h3 {
     padding-top: 0;
@@ -396,11 +405,16 @@ dl.simple-definition{
   opacity: 1;
 }
 
+.print-pdf .mi-slide .badge, .print-pdf.mi-slide.badge{
+  position: absolute;
+  background-color: var(--mark) !important;
+}
+
 /* Fadeout Bottom
 ############################################################################ */
 
 .fadeout-bottom{
-  position: fixed;
+  position: absolute;
   max-height: 80dvh;
   overflow: hidden;
   bottom: 0;
@@ -415,6 +429,10 @@ dl.simple-definition{
     pointer-events: none;
     background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
   }
+}
+
+.print-pdf .fadeout-bottom{
+  position: relative;
 }
 
 /* Grid
