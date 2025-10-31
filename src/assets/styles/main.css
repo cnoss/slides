@@ -723,6 +723,12 @@ dl.simple-definition dd {
 .bu.is-active {
   opacity: 1;
 }
+.print-pdf .bu {
+  opacity: 1;
+}
+.print-pdf .bu, .print-pdf .bu * {
+  hyphens: auto !important;
+}
 .bu h2,
 .bu h3 {
   padding-top: 0;
@@ -830,10 +836,15 @@ dl.simple-definition dd {
   opacity: 1;
 }
 
+.print-pdf .mi-slide .badge, .print-pdf.mi-slide.badge {
+  position: absolute;
+  background-color: var(--mark) !important;
+}
+
 /* Fadeout Bottom
 ############################################################################ */
 .fadeout-bottom {
-  position: fixed;
+  position: absolute;
   max-height: 80dvh;
   overflow: hidden;
   bottom: 0;
@@ -847,6 +858,10 @@ dl.simple-definition dd {
   height: 25%;
   pointer-events: none;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+}
+
+.print-pdf .fadeout-bottom {
+  position: relative;
 }
 
 /* Grid
@@ -1725,6 +1740,17 @@ a.is-black:hover {
   line-height: var(--lh-normal);
 }
 
+.print-pdf .fact-list {
+  padding-bottom: var(--m) !important;
+}
+.print-pdf .fact-list div.fragment, .print-pdf .fact-list div.current-fragment {
+  opacity: 1;
+  max-height: none;
+  transform: none;
+  display: list-item;
+  font-size: var(--s);
+}
+
 /* presentation-list
 ############################################################################ */
 @media screen and (min-width: 768px) {
@@ -1804,6 +1830,12 @@ a.is-black:hover {
 }
 .notes.is-active ul li, .notes.is-active ol li {
   margin-bottom: var(--xs);
+}
+
+/* Print
+#################################################### */
+.print-pdf {
+  --bfs: 10pt;
 }
 
 /*# sourceMappingURL=main.css.map */

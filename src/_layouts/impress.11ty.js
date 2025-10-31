@@ -102,7 +102,8 @@ const getBgImageCredits = (credits) => {
 
 const enrichSlides = (slideChildren, dataX) => {
   return slideChildren.map((child, index) => {
-    const dataY = index * 1000;
+    const dataZ = index * -1000;
+    const rotateZ = index * 15;
     // extract data-slide-class from section tag
     const slideClassMatch = child.match(/class="(.*?)"/); 
     const slideClass = slideClassMatch ? slideClassMatch[1] : '';
@@ -114,7 +115,7 @@ const enrichSlides = (slideChildren, dataX) => {
     // wrap content in a div with the slideClass as class
     const image = imageSrc !== null ? `<figure><img src="${imageSrc}" alt="${slideClass}"></figure>` : '';
 
-    return `<div class="step ${slideClass}" data-y="${dataY}" data-x="${dataX}" data-scale="0.2" data-rotate-y="45">${image}${content}</div>`;
+    return `<div class="step mi-slide ${slideClass}" data-z="${dataZ}" data-x="${dataX}" data-rotate-z="${rotateZ}" data-scale="0.5" data-rotate-y="0">${image}${content}</div>`;
   }).join('\n');
 };
 
@@ -139,7 +140,7 @@ exports.render = function (data) {
 
     
     const slideId = `slide-${index}`;
-    const dataX = index * 1000;
+    const dataX = index * 2000;
     const slideClass = slide.data.slideClasses;
     const backgroundColor = getBgColor(slideClass);
     const backgroundImage = getBgImage(slide.data.img);
@@ -157,7 +158,7 @@ exports.render = function (data) {
     }
 
     return `
-      <section data-slide-class="${slideClass}" class="step" data-scale="1" id="${slideId}" data-rel-x="${dataX}">
+      <section data-slide-class="${slideClass}" class="step" data-scale="1" id="${slideId}" data-x="${dataX}">
       ${content}
       ${status}
 
@@ -189,7 +190,20 @@ exports.render = function (data) {
       </div>
 
       <script src="${this.url('https://cdn.jsdelivr.net/gh/impress/impress.js@1.1.0/js/impress.js')}"></script>      
-      <script>impress().init()</script>
+      <script>impress().init();</script>
+      <script>
+document.addEventListener("impress:stepenter", function (event) {
+  const step = event.target;
+  console.log("Neuer Step:", step.id);
+
+  // Beispiel: Unterschiedlichen Code pro Step ausführen
+  if (step.id === "intro") {
+    console.log("Willkommen beim Intro!");
+  } else if (step.id === "summary") {
+    alert("Fast fertig!");
+  }
+});
+</script>
     </body>
   </html>`;
 };
