@@ -10,13 +10,13 @@ status: ok
   <div>
   <h1>Gestaltgesetze</h1>
   <figure>
-    {% fragment '<p class="list"><strong>Gesetz der Nähe</strong> Elemente, die nahe beieinander liegen, werden als zusammengehörig aufgefasst.</p>' %}
-    {% fragment '<p class="list"><strong>Gesetz der Ähnlichkeit</strong> Elemente, die sich ähnlich sind, werden als zusammengehörig aufgefasst.</p>' %}
-    {% fragment '<p class="list"><strong>Gesetz der guten Gestalt</strong> Mehrere Elemente versucht das Gehirn, zu Gestalten zu verbinden. Es bevorzugt dabei im Ergebnis eine möglichst einfache und einprägsame Gestalt.</p>' %}
-    {% fragment '<p class="list"><strong>Gesetz der guten Fortsetzung</strong> Elemente, die auf einer durchgehenden Linie oder Kurve angeordnet sind, werden als zusammengehörig aufgefasst.</p>' %}
-    {% fragment '<p class="list"><strong>Gesetz der Geschlossenheit</strong> Elemente, die geschlossen oder von einer Linie umrahmt sind, werden als zusammengehörig aufgefasst.</p>' %}
-    {% fragment '<p class="list"><strong>Gesetz der Erfahrung</strong> Elemente, die sich zu bekannten Gestalten zusammenfügen lassen, werden als solche erkannt, selbst wenn sie unvollständig sind.</p>' %}
-    {% fragment '<p class="list"><strong>Gesetz des gemeinsamen Schicksals</strong> Mehrere, sich gleichzeitig und gleichförmig bewegende Elemente, werden als Einheit aufgefasst.</p>' %}
+    {% fragment '<p class="list is-small"><strong>Gesetz der Nähe</strong> Elemente, die nahe beieinander liegen, werden als zusammengehörig aufgefasst.</p>' %}
+    {% fragment '<p class="list is-small"><strong>Gesetz der Ähnlichkeit</strong> Elemente, die sich ähnlich sind, werden als zusammengehörig aufgefasst.</p>' %}
+    {% fragment '<p class="list is-small"><strong>Gesetz der guten Gestalt</strong> Mehrere Elemente versucht das Gehirn, zu Gestalten zu verbinden. Es bevorzugt dabei im Ergebnis eine möglichst einfache und einprägsame Gestalt.</p>' %}
+    {% fragment '<p class="list is-small"><strong>Gesetz der guten Fortsetzung</strong> Elemente, die auf einer durchgehenden Linie oder Kurve angeordnet sind, werden als zusammengehörig aufgefasst.</p>' %}
+    {% fragment '<p class="list is-small"><strong>Gesetz der Geschlossenheit</strong> Elemente, die geschlossen oder von einer Linie umrahmt sind, werden als zusammengehörig aufgefasst.</p>' %}
+    {% fragment '<p class="list is-small"><strong>Gesetz der Erfahrung</strong> Elemente, die sich zu bekannten Gestalten zusammenfügen lassen, werden als solche erkannt, selbst wenn sie unvollständig sind.</p>' %}
+    {% fragment '<p class="list is-small"><strong>Gesetz des gemeinsamen Schicksals</strong> Mehrere, sich gleichzeitig und gleichförmig bewegende Elemente, werden als Einheit aufgefasst.</p>' %}
   </figure>
   </div>
 </section>

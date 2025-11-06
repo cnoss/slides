@@ -8,17 +8,19 @@ status: ok
 
 <section data-auto-animate class="image screenshot" data-transition="fade">
   <figure>
-  <svg data-id="frame" height="300" width="800">
+  <svg data-id="frame" height="300" width="800" style="width: 100%; height: 100%">
   <style>
     .svg-headline{
       font-size: 2em;
       font-weight: bold;
     }
   </style>
-  <text x="0" y="74">Ich bin die Headline</text>
-  <text x="0" y="100">Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier </text>
-  <text x="0" y="126">kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet.</text>
-  <text x="0" y="152">Da muss wesentlich mehr Produktaussage rein. </text>
+  <text>
+    <tspan x="0">Ich bin die Headline</tspan>
+    <tspan dy="1.3em" x="0">Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier </tspan>
+    <tspan dy="1.3em" x="0">kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet.</tspan>
+    <tspan dy="1.3em" x="0">Da muss wesentlich mehr Produktaussage rein. </tspan>
+  </text>
 
 </svg>
   </figure>
@@ -26,17 +28,20 @@ status: ok
 
 <section data-auto-animate class="image screenshot" data-transition="fade">
   <figure>
-  <svg data-id="frame" height="300" width="800">
+  <svg data-id="frame" height="300" width="800" style="width: 100%; height: 100%">
   <style>
     .svg-headline{
       font-size: 2em;
       font-weight: bold;
     }
   </style>
-  <text x="0" y="38" class="svg-headline">Ich bin die Headline</text>
-  <text x="0" y="100">Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier </text>
-  <text x="0" y="126">kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet.</text>
-  <text x="0" y="152">Da muss wesentlich mehr Produktaussage rein. </text>
+  
+  <text>
+    <tspan x="0" dy="1em" class="svg-headline">Ich bin die Headline</tspan>
+    <tspan dy="2em" x="0">Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier </tspan>
+    <tspan dy="1.3em" x="0">kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet.</tspan>
+    <tspan dy="1.3em" x="0">Da muss wesentlich mehr Produktaussage rein. </tspan>
+  </text>
 
 </svg>
   </figure>
@@ -44,7 +49,7 @@ status: ok
 
 <section data-auto-animate class="image screenshot" data-transition="fade">
   <figure>
-  <svg data-id="frame" height="300" width="800">
+  <svg data-id="frame" height="300" width="800" style="width: 100%; height: 100%">
   <style>
     .svg-headline{
       font-size: 2em;
@@ -52,11 +57,13 @@ status: ok
     }
 
   </style>
-  <text x="0" y="38" class="svg-headline">Ich bin die Headline</text>
-  <text x="0" y="100" class="svg-is-lighter" fill="#999">Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier </text>
-  <text x="0" y="126" class="svg-is-lighter" fill="#999">kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet.</text>
-  <text x="0" y="152" class="svg-is-lighter" fill="#999">Da muss wesentlich mehr Produktaussage rein. </text>
 
+  <text>
+    <tspan x="0" dy="1em" class="svg-headline">Ich bin die Headline</tspan>
+    <tspan  fill="#999" dy="2em" x="0">Ja, wir finden auch, dass man über die Copy noch mal reden sollte. Das hier </tspan>
+    <tspan  fill="#999" dy="1.3em" x="0">kann es jedenfalls nicht sein. Das klingt ja wie auf dem Totenbett getextet.</tspan>
+    <tspan  fill="#999" dy="1.3em" x="0">Da muss wesentlich mehr Produktaussage rein. </tspan>
+  </text>
 </svg>
   </figure>
 </section>
