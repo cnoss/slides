@@ -288,6 +288,22 @@ goodToKnow: |
 {% screenshot "./images/kontraste/qualitaets-kontrast-02.png", '{"transition":"slide", 
 "classes":"screenshot", "width":"auto", "bu":"Qualitätskontrast"}' %}
 
+{% screenshot "./images/kontraste/qualitaets-kontrast-03.png", '{"transition":"slide", 
+"classes":"screenshot", "width":"auto", "bu":"https://dribbble.com/shots/26682684-Monexa-Financial-Platform-Web-Design"}' %}
+
+{% screenshot "./images/kontraste/qualitaets-kontrast-04.png", '{"transition":"slide", 
+"classes":"screenshot", "width":"auto", "bu":"https://dribbble.com/shots/26655404-Brightpeak-Modern-Marketing-Landing-Page"}' %}
+
+{% screenshot "./images/kontraste/qualitaets-kontrast-05.png", '{"transition":"slide", 
+"classes":"screenshot", "width":"auto", "bu":"https://dribbble.com/shots/25909455-Health-Care-Products-Web-Design"}' %}
+
+{% screenshot "./images/kontraste/qualitaets-kontrast-06.png", '{"transition":"slide", 
+"classes":"screenshot", "width":"auto", "bu":"https://dribbble.com/shots/26591429-Spendy-Financial-Tracker-Landing-Page"}' %}
+
+{% screenshot "./images/kontraste/qualitaets-kontrast-07.png", '{"transition":"slide", 
+"classes":"screenshot", "width":"auto", "bu":"https://dribbble.com/shots/26152814-Nexa-Ai-Agents-Landing-page-web-design-3D-Animation"}' %}
+
+
 {% interlude "Simultankontrast"%}
 
 {% screenshot "./images/kontraste/simultan-kontrast-01.png", '{"transition":"fade", 
