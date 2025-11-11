@@ -89,7 +89,11 @@ Reveal.on('slidechanged', event => {
     bu.classList.add("is-active");
   });
 
-  const badges = event.currentSlide.querySelectorAll(".badge");
+  const parentBadges = event.currentSlide.parentNode.querySelectorAll(".badge");
+  const childBadges = event.currentSlide.querySelectorAll(".badge");
+
+  const badges = childBadges.length > 0 ? childBadges : parentBadges;
+
   badges.forEach(badge => {
     badge.classList.add("is-active");
   });
