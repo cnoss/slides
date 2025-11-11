@@ -791,7 +791,7 @@ dl.simple-definition dd {
 
 /* Badge
 ############################################################################ */
-.mi-slide .badge, .mi-slide.badge {
+.badge, .mi-slide .badge, .mi-slide.badge {
   position: fixed;
   top: 0;
   left: 0;
@@ -807,7 +807,7 @@ dl.simple-definition dd {
   transition: opacity var(--tr-fast) 1s;
   transform-origin: right;
 }
-.mi-slide .badge a, .mi-slide.badge a {
+.badge a, .mi-slide .badge a, .mi-slide.badge a {
   color: var(--darkest);
   text-decoration: none;
 }

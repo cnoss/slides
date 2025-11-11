@@ -10,6 +10,7 @@ status: ok
 {% screenshot "./images/typo-example-03.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
 {% screenshot "./images/typo-example-04.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
 {% screenshot "./images/typo-example-05.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
+{% screenshot "./images/typo.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
 {% screenshot "./images/typo-example-06.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
 {% screenshot "./images/typo-example-07.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}
 {% screenshot "./images/typo-example-09.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":""}' %}

@@ -811,7 +811,7 @@ dl.simple-definition dd {
 
 /* Badge
 ############################################################################ */
-.mi-slide .badge, .mi-slide.badge {
+.badge, .mi-slide .badge, .mi-slide.badge {
   position: fixed;
   top: 0;
   left: 0;
@@ -827,7 +827,7 @@ dl.simple-definition dd {
   transition: opacity var(--tr-fast) 1s;
   transform-origin: right;
 }
-.mi-slide .badge a, .mi-slide.badge a {
+.badge a, .mi-slide .badge a, .mi-slide.badge a {
   color: var(--darkest);
   text-decoration: none;
 }
@@ -1503,6 +1503,26 @@ a.is-black:hover {
 }
 .simple div blockquote p:last-child {
   margin-bottom: 0;
+}
+.simple.text-with-list p + ul {
+  margin-top: var(--half);
+}
+.simple.text-with-list p strong {
+  font-weight: var(--fw-medium);
+  color: var(--darkest);
+}
+.simple.text-with-list ul li {
+  background-color: transparent;
+  border: none;
+  padding-left: 0;
+  margin-bottom: var(--half) !important;
+}
+.simple.text-with-list ul li::before {
+  content: "-";
+  color: var(--mi-lila);
+  font-size: var(--l);
+  line-height: var(--lh-tight);
+  margin-right: var(--s);
 }
 
 /* Image

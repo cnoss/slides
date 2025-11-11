@@ -1,5 +1,5 @@
 ---
-title: Typographie
+title: Auswahl von Schriften
 layout: presentation.11ty.js
 slideClasses: intro
 transition: zoom
@@ -7,6 +7,7 @@ transition: zoom
 
 <div class="is-full-width">
 
-# Typography
-## is two-dimensional architecture<br><small>Hermann Zapf</small>
+# Typographie & Textsatz
+## Auswahl von Schriften
+
 </div>

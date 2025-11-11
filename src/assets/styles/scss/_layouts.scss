@@ -629,6 +629,37 @@
     }
   }
 
+  &.text-with-list{
+
+    p + ul{
+      margin-top: var(--half);
+    }
+
+    p strong{
+      font-weight: var(--fw-medium);
+      color: var(--darkest);
+    }
+
+    ul{
+
+      li{
+        background-color: transparent;
+        border: none;
+        padding-left: 0;
+        margin-bottom: var(--half) !important;
+
+        &::before{
+          content: "-";
+          color: var(--mi-lila);
+          font-size: var(--l);
+          line-height: var(--lh-tight);
+          margin-right: var(--s); 
+
+        }
+      }
+    }
+  }
+
 }
 
 /* Image
