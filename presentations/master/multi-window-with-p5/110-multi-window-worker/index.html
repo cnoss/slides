@@ -37,7 +37,7 @@
 
       <section data-slide-class="images" class="mi-slide 
       images "    data-transition="convex">
-      <section data-slide-shortcode-class="interlude" data-background-color="#00ad2f" class="image screenshot interlude" data-transition="{"transition":"none"}"><div><h1 class="title"><del>Checkin?</del> 😢</h1></div></section>
+      <section data-slide-shortcode-class="interlude" data-background-color="#9313ce" class="image screenshot interlude" data-transition="{"transition":"none"}"><div><h1 class="title"><del>Checkin?</del> 😢</h1></div></section>
 <section data-slide-shortcode-class="question" class="question "><div><h1 class="title"><p>💪 😵‍💫 😖 💪 💪 🏃‍♂️ 😖 🌀 🏃 💪</p>
 </h1><h2 class="subtitle js-delay">Mein Weg zu diesem Workshop</h2></div></section>
 <section data-slide-shortcode-class="question" class="question "><div><h1 class="title"><p>Was meint <em>Multi-Window</em> Experiences?</p>
@@ -45,13 +45,13 @@
 <section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/01-cover-bjorn-stall.jpg" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p><a href="https://80.lv/articles/a-programmer-presents-a-mind-blowing-multi-window-adaptive-experience">Beispiel von Björn Staal</a><br><a href="https://github.com/bgstaal/multipleWindow3dScene">GitHub Repo</a><br><a href="https://bgstaal.github.io/multipleWindow3dScene/">Demo</a><br><a href="https://www.youtube.com/watch?v=4LwHH3r2qNY">Video</a></p>
 </p></div></section>
 <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"slide"}">
-    <div><h1 class="title">Ziele des Workshops</h1>- Wie können Daten zwischen Fenstern ausgetauscht werden?
+    <div class="content"><h1 class="title">Ziele des Workshops</h1>- Wie können Daten zwischen Fenstern ausgetauscht werden?
 - Wie lassen sich diese Ansätze mit p5.js sinnvoll verbinden?
 - Was lässt sich gestalterisch damit machen? 🧐
 - bissl Spaß haben 👻
 </div></section>
 <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"slide"}">
-    <div><h1 class="title">Wie kommen wir dahin?</h1><div class="fragment is-unbalanced"><em>Zielbild:</em> Wo geht die Reise hin?</div>
+    <div class="content"><h1 class="title">Wie kommen wir dahin?</h1><div class="fragment is-unbalanced"><em>Zielbild:</em> Wo geht die Reise hin?</div>
 <div class="fragment is-unbalanced"><em>Szenarien:</em> Kleiner konzeptioneller Unterbau</div>
 <div class="fragment is-unbalanced"><em>Sharing Data:</em> Verschiedene Ansätze zum Austausch von Daten zwischen Fenstern. <strong>mit Übung</strong></div>
 <div class="fragment is-unbalanced"><em>Working with p5.js:</em> Kleiner Rundflug über p5.js</div>  
@@ -59,19 +59,19 @@
 <div class="fragment is-unbalanced"><em>Rückblick/ Ausblick:</em> Was war – was geht?</div>
 </div></section>
 <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"slide"}">
-    <div><h1 class="title">Material</h1>- [Dokumentation](https://cnoss.github.io/multi-window-experiences/)
+    <div class="content"><h1 class="title">Material</h1>- [Dokumentation](https://cnoss.github.io/multi-window-experiences/)
 - [Repo](https://github.com/cnoss/multi-window-experiences)
 - [Slidedeck](https://cnoss.github.io/slides/presentations/misc/multi-window-with-p5/)
 </div></section>
 <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"slide"}">
-    <div><h1 class="title">Disclaimer ⚠️</h1><div class="fragment">Wir werden die meisten Konzepte & Techniken nur sehr oberflächlich behandeln.</div>
+    <div class="content"><h1 class="title">Disclaimer ⚠️</h1><div class="fragment">Wir werden die meisten Konzepte & Techniken nur sehr oberflächlich behandeln.</div>
 <div class="fragment">Der Code ist teils leider recht umfassend und unübersichtlich.</div>
 <div class="fragment">Für p5.js wird uns Repertoire fehlen. 😢</div>
 <div class="fragment">Babylonisches Sprachgewirr 😱</div>
 <div class="fragment">Die meisten Konzepte & Techniken hab ich noch nie in der Hand gehabt oder gar ernsthaft genutzt. 🧐</div>
 </div></section>
 <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"slide"}">
-    <div><h1 class="title">Disclaimer, Teil 2 ‼️</h1><div class="fragment">Es wurden keine Performance Messungen vorgenommen.</div>
+    <div class="content"><h1 class="title">Disclaimer, Teil 2 ‼️</h1><div class="fragment">Es wurden keine Performance Messungen vorgenommen.</div>
 <div class="fragment">Wir befassen uns nur mit <strong>zwei</strong> Fenstern.</div>
 <div class="fragment">Insgesamt ist sehr wenig getestet worden, insbesondere wurden kaum Cross-Browser Tests gemacht.</div>
 <div class="fragment">Nicht alle sinnvollen Ansätze werden in einem Sketch(?) zusammen gebracht, z.B. Physics & Multi-Window</div>
@@ -142,7 +142,7 @@
 
       <section data-slide-class="wrap" class="mi-slide 
       wrap "    data-transition="slide">
-      <section data-slide-shortcode-class="interlude" data-background-color="#d16" class="image screenshot interlude" ><div><h1 class="title">Observe Window Position</h1><h2 class="subtitle js-delay"><p>No event listener is available 😢</p>
+      <section data-slide-shortcode-class="interlude" data-background-color="#4952e1" class="image screenshot interlude" ><div><h1 class="title">Observe Window Position</h1><h2 class="subtitle js-delay"><p>No event listener is available 😢</p>
 </h2></div></section>
 <section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/get-position.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>Position on screen via <a href="https://developer.mozilla.org/de/docs/Web/API/Window/screenX">window.screenX</a> &amp; <a href="https://developer.mozilla.org/de/docs/Web/API/Window/screenY">window.screenY</a></p>
 </p></div></section>
@@ -186,7 +186,7 @@
 
       <section data-slide-class="wrap" class="mi-slide 
       wrap "    data-transition="slide">
-      <section data-slide-shortcode-class="interlude" data-background-color="#2b2b2b" class="image screenshot interlude" ><div><h1 class="title">Share Data via window.opener</h1><h2 class="subtitle js-delay"><p>Baseline Widely available</p>
+      <section data-slide-shortcode-class="interlude" data-background-color="#4952e1" class="image screenshot interlude" ><div><h1 class="title">Share Data via window.opener</h1><h2 class="subtitle js-delay"><p>Baseline Widely available</p>
 </h2></div></section>
 <section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/opener.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>Share Data via <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/opener">window.opener</a></p>
 </p></div></section>
@@ -222,12 +222,12 @@ parentWindowPosition.<span class="hljs-property">x</span> = <span class="hljs-va
 parentWindowPosition.<span class="hljs-property">y</span> = <span class="hljs-variable language_">window</span>.<span class="hljs-property">opener</span>.<span class="hljs-property">screenY</span>;
 </samp></pre></div></div></section>
 <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"slide"}">
-    <div><h1 class="title">Advantages of window.opener 🥳</h1>- direct reference to the parent window
+    <div class="content"><h1 class="title">Advantages of window.opener 🥳</h1>- direct reference to the parent window
 - easy to call functions or access variables
 - minimal setup, no external messaging needed
 </div></section>
 <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"slide"}">
-    <div><h1 class="title">Disadvantages 😢</h1>- only works if the window was opened via window.open()
+    <div class="content"><h1 class="title">Disadvantages 😢</h1>- only works if the window was opened via window.open()
 - breaks on reloads or navigation
 - no support for cross-tab communication
 - tight coupling between windows
@@ -247,7 +247,7 @@ parentWindowPosition.<span class="hljs-property">y</span> = <span class="hljs-va
 
       <section data-slide-class="wrap" class="mi-slide 
       wrap "    data-transition="slide">
-      <section data-slide-shortcode-class="interlude" data-background-color="#00ad2f" class="image screenshot interlude" ><div><h1 class="title">Share Data via Broadcast Channel API & window.postMessage</h1><h2 class="subtitle js-delay"><p>Publish–Subscribe Messaging</p>
+      <section data-slide-shortcode-class="interlude" data-background-color="#2b2b2b" class="image screenshot interlude" ><div><h1 class="title">Share Data via Broadcast Channel API & window.postMessage</h1><h2 class="subtitle js-delay"><p>Publish–Subscribe Messaging</p>
 </h2></div></section>
 <section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/broadcast-channel.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>Share Data via <a href="https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API">Broadcast Channel API</a> &amp; <a href="https://developer.mozilla.org/en-us/docs/Web/API/Window/postMessage">window.postMessage</a></p>
 </p></div></section>
@@ -288,19 +288,19 @@ windowPositionChannel.<span class="hljs-property">onmessage</span> = <span class
 }
 </samp></pre></div></div></section>
 <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"slide"}">
-    <div><h1 class="title">Broadcast Channel API & window.postMessage()</h1>The window.postMessage() method safely enables cross-origin communication between Window objects; e.g., between a page and a pop-up that it spawned, or between a page and an iframe embedded within it. The Broadcast Channel API is restricted on same origin communication.
+    <div class="content"><h1 class="title">Broadcast Channel API & window.postMessage()</h1>The window.postMessage() method safely enables cross-origin communication between Window objects; e.g., between a page and a pop-up that it spawned, or between a page and an iframe embedded within it. The Broadcast Channel API is restricted on same origin communication.
 <p>If a participant (tab, window, worker) sends a message via BroadcastChannel.postMessage(), it is sent to all other participants in the channel - but not to the sender itself.</p>
 <p>⚠️ Note that window.postMessage() also works without the Broadcast Channel API.</p>
 </div></section>
 <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"slide"}">
-    <div><h1 class="title">Advantages 🥳</h1>- combines broadcasting and direct messaging
+    <div class="content"><h1 class="title">Advantages 🥳</h1>- combines broadcasting and direct messaging
 - works well for decoupled, event-based communication
 - no shared memory needed — everything flows through messages
 - no direct window references needed
 - scalable to multiple tabs and controlled windows
 </div></section>
 <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"slide"}">
-    <div><h1 class="title">Disadvantages 😢</h1>- requires same-origin (for BroadcastChannel)
+    <div class="content"><h1 class="title">Disadvantages 😢</h1>- requires same-origin (for BroadcastChannel)
 - no built-in state — messages must be actively passed around
 - no message history — late listeners miss earlier messages
 </div></section>
@@ -321,7 +321,7 @@ windowPositionChannel.<span class="hljs-property">onmessage</span> = <span class
 
       <section data-slide-class="wrap" class="mi-slide 
       wrap "    data-transition="slide">
-      <section data-slide-shortcode-class="interlude" data-background-color="#4952e1" class="image screenshot interlude" ><div><h1 class="title">Store shared data via LocalStorage</h1><h2 class="subtitle js-delay"><p>Storage Event Triggering Paradigm</p>
+      <section data-slide-shortcode-class="interlude" data-background-color="#d16" class="image screenshot interlude" ><div><h1 class="title">Store shared data via LocalStorage</h1><h2 class="subtitle js-delay"><p>Storage Event Triggering Paradigm</p>
 </h2></div></section>
 <section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/local-storage.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>Store shared data via <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">Local Storage</a></p>
 </p></div></section>
@@ -349,13 +349,13 @@ windowPositionChannel.<span class="hljs-property">onmessage</span> = <span class
 });
 </samp></pre></div></div></section>
 <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"slide"}">
-    <div><h1 class="title">Advantages 🥳</h1>- simple key–value storage, persistent across reloads
+    <div class="content"><h1 class="title">Advantages 🥳</h1>- simple key–value storage, persistent across reloads
 - built-in storage event allows reactive cross-tab communication
 - no direct window references needed
 - easy to implement and debug
 </div></section>
 <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"slide"}">
-    <div><h1 class="title">Disadvantages 😢</h1>- string-only storage (no complex data types without serialization)
+    <div class="content"><h1 class="title">Disadvantages 😢</h1>- string-only storage (no complex data types without serialization)
 - storage events don’t fire in the same window 🧐
 - not designed for high-frequency updates or large data volumes
 </div></section>
@@ -375,7 +375,7 @@ windowPositionChannel.<span class="hljs-property">onmessage</span> = <span class
 
       <section data-slide-class="wrap" class="mi-slide 
       wrap "    data-transition="slide">
-      <section data-slide-shortcode-class="interlude" data-background-color="#4952e1" class="image screenshot interlude" ><div><h1 class="title">Use of a higher-level Shared Worker</h1><h2 class="subtitle js-delay"><p>Shared Process with Message-Based Communication</p>
+      <section data-slide-shortcode-class="interlude" data-background-color="#00ad2f" class="image screenshot interlude" ><div><h1 class="title">Use of a higher-level Shared Worker</h1><h2 class="subtitle js-delay"><p>Shared Process with Message-Based Communication</p>
 </h2></div></section>
 <section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/shared-worker.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>Use of a higher-level <a href="https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker">Shared Worker</a></p>
 </p></div></section>
@@ -425,13 +425,13 @@ worker.<span class="hljs-property">port</span>.<span class="hljs-property">onmes
 };
 </samp></pre></div></div></section>
 <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"slide"}">
-    <div><h1 class="title">Advantages 🥳</h1>- one central background process shared by all windows
+    <div class="content"><h1 class="title">Advantages 🥳</h1>- one central background process shared by all windows
 - ideal for coordinating state across multiple tabs
 - allows custom logic, shared memory, and message routing  
 - fully decouples windows — no references required
 </div></section>
 <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"slide"}">
-    <div><h1 class="title">Disadvantages 😢</h1>- requires custom implementation of state & communication
+    <div class="content"><h1 class="title">Disadvantages 😢</h1>- requires custom implementation of state & communication
 - slightly more complex setup (ports, onconnect, message handling)
 - same-origin only
 - not available in some contexts (e.g. Incognito mode in Chrome) 
@@ -452,11 +452,11 @@ worker.<span class="hljs-property">port</span>.<span class="hljs-property">onmes
 
       <section data-slide-class="images" class="mi-slide 
       images "    data-transition="zoom">
-      <section data-slide-shortcode-class="interlude" data-background-color="#00ad2f" class="image screenshot interlude" data-transition="{"transition":"slide"}"><div><h1 class="title">Endlich Aufgaben 🎊</h1></div></section>
+      <section data-slide-shortcode-class="interlude" data-background-color="#d16" class="image screenshot interlude" data-transition="{"transition":"slide"}"><div><h1 class="title">Endlich Aufgaben 🎊</h1></div></section>
 <section  class="statement"><div><h1 class="title">Repo erklären! 🧐</h1><div class="fragment"><a href="https://github.com/cnoss/multi-window-experiences">https://github.com/cnoss/multi-window-experiences</a>
 </div></div></section>
 <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"none"}">
-    <div><h1 class="title">Endlich Aufgaben 🎊</h1><mark>01. Share Data between Windows:</mark> You are given a starter file with a code skeleton. Your job is to implement a working communication channel that allows each window to display: its own position (based on window.screenX / screenY) and the position of the other window.
+    <div class="content"><h1 class="title">Endlich Aufgaben 🎊</h1><mark>01. Share Data between Windows:</mark> You are given a starter file with a code skeleton. Your job is to implement a working communication channel that allows each window to display: its own position (based on window.screenX / screenY) and the position of the other window.
 <mark>30min</mark>
 <p><a href="https://cnoss.github.io/multi-window-experiences/99-assignments/">Let's go 👨🏽‍💻</a></p>
 </div></section>
@@ -471,7 +471,7 @@ worker.<span class="hljs-property">port</span>.<span class="hljs-property">onmes
       <section data-slide-class="wrap" class="mi-slide 
       wrap "    data-transition="slide">
       <section data-slide-shortcode-class="simple-text" class="simple " >
-    <div><h1 class="title">Shared Worker with Central State Management</h1>This [SharedWorker](https://cnoss.github.io/multi-window-experiences/00-core-concepts/shared-worker-with-central-state-management-demo/index.html) script manages real-time communication between multiple browser windows by tracking and sharing their screen positions. 
+    <div class="content"><h1 class="title">Shared Worker with Central State Management</h1>This [SharedWorker](https://cnoss.github.io/multi-window-experiences/00-core-concepts/shared-worker-with-central-state-management-demo/index.html) script manages real-time communication between multiple browser windows by tracking and sharing their screen positions. 
 <p>Each connected window can send its current position, retrieve its own stored position, or request the positions of all other connected windows.</p>
 </div></section>
 <footer><ul>
@@ -487,9 +487,9 @@ worker.<span class="hljs-property">port</span>.<span class="hljs-property">onmes
 
       <section data-slide-class="images" class="mi-slide 
       images "    data-transition="convex">
-      <section data-slide-shortcode-class="interlude" data-background-color="#00ad2f" class="image screenshot interlude" data-transition="{"transition":"none"}"><div><h1 class="title">Working with p5.js</h1></div></section>
+      <section data-slide-shortcode-class="interlude" data-background-color="#d16" class="image screenshot interlude" data-transition="{"transition":"none"}"><div><h1 class="title">Working with p5.js</h1></div></section>
 <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"none"}">
-    <div><h1 class="title">About p5.js</h1>p5.js is an open-source JavaScript library that brings the core principles of creative coding to the web. It was initiated in 2013 by Lauren McCarthy, an artist and programmer, as a browser-based reinterpretation of Processing, the influential visual programming environment developed by Casey Reas and Ben Fry at the MIT Media Lab.
+    <div class="content"><h1 class="title">About p5.js</h1>p5.js is an open-source JavaScript library that brings the core principles of creative coding to the web. It was initiated in 2013 by Lauren McCarthy, an artist and programmer, as a browser-based reinterpretation of Processing, the influential visual programming environment developed by Casey Reas and Ben Fry at the MIT Media Lab.
 </div></section>
 
       
@@ -617,7 +617,7 @@ worker.<span class="hljs-property">port</span>.<span class="hljs-property">onmes
 
       <section data-slide-class="wrap" class="mi-slide 
       wrap "    data-transition="slide">
-      <section data-slide-shortcode-class="interlude" data-background-color="#2b2b2b" class="image screenshot interlude" ><div><h1 class="title">Time to assemble.</h1><h2 class="subtitle js-delay"><p>Share Window Data Concepts &amp; p5.js</p>
+      <section data-slide-shortcode-class="interlude" data-background-color="#d16" class="image screenshot interlude" ><div><h1 class="title">Time to assemble.</h1><h2 class="subtitle js-delay"><p>Share Window Data Concepts &amp; p5.js</p>
 </h2></div></section>
 <section data-slide-shortcode-class="screenshot" class="image is-fullscreen no-shadow" data-background="./images/translate-canvas-1.png" data-transition="fade" data-background-transition="fade"><div class="bu"><p><p>In order to create a link between the sketch and the screen, we move and scale the canvas to the size of the screen.</p>
 </p></div></section>
@@ -661,7 +661,7 @@ worker.<span class="hljs-property">port</span>.<span class="hljs-property">onmes
       <section data-slide-class="images" class="mi-slide 
       images "    data-transition="zoom">
       <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"none"}">
-    <div><h1 class="title">Multi Window Sketch Assignments 😎</h1><mark>02. Draw Line between Windows:</mark> Extend the p5 sketch so that a line is drawn from your own center to the other window’s center. <mark>15min</mark>
+    <div class="content"><h1 class="title">Multi Window Sketch Assignments 😎</h1><mark>02. Draw Line between Windows:</mark> Extend the p5 sketch so that a line is drawn from your own center to the other window’s center. <mark>15min</mark>
 <p><mark>03. Dual-Window Visualization Experiment</mark> Turn a given starter sketch into an interactive or generative visual system that lives across two windows. <mark>30min</mark></p>
 <p><a href="https://cnoss.github.io/multi-window-experiences/99-assignments/">Let's go 👨🏽‍💻</a></p>
 </div></section>
@@ -680,7 +680,7 @@ worker.<span class="hljs-property">port</span>.<span class="hljs-property">onmes
 <section data-slide-shortcode-class="question" class="question "><div><h1 class="title"><p>How could the <em>transfer</em> of an element from one window to another be realized?</p>
 </h1></div></section>
 <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"none"}">
-    <div><h1 class="title">Casting /Hand-off Assignment</h1><mark>04.  Visual Handoff Between Windows:</mark> You're given a starter sketch with a simple visual and a working SharedWorker; extend it so that when two windows visibly overlap on screen, the visual automatically moves to the other window. <mark>30min</mark>
+    <div class="content"><h1 class="title">Casting /Hand-off Assignment</h1><mark>04.  Visual Handoff Between Windows:</mark> You're given a starter sketch with a simple visual and a working SharedWorker; extend it so that when two windows visibly overlap on screen, the visual automatically moves to the other window. <mark>30min</mark>
 <p><a href="https://cnoss.github.io/multi-window-experiences/99-assignments/">Let's go 👨🏽‍💻</a></p>
 </div></section>
 
@@ -694,18 +694,18 @@ worker.<span class="hljs-property">port</span>.<span class="hljs-property">onmes
       <section data-slide-class="images" class="mi-slide 
       images "    data-transition="slide">
       <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"slide"}">
-    <div><h1 class="title">Final Thoughts</h1>There are <mark>many technical ways</mark> to exchange data between browser windows — from direct messaging with postMessage to reactive broadcasting with BroadcastChannel, or even shared background logic via SharedWorker. 
+    <div class="content"><h1 class="title">Final Thoughts</h1>There are <mark>many technical ways</mark> to exchange data between browser windows — from direct messaging with postMessage to reactive broadcasting with BroadcastChannel, or even shared background logic via SharedWorker. 
 <p>Most approaches ultimately rely on sending messages back and forth, but <mark>the real challenge</mark> lies in crafting a <mark>meaningful design concept</mark> around that connection.</p>
 </div></section>
 <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"slide"}">
-    <div>In the end, your architecture is just the foundation.
+    <div class="content">In the end, your architecture is just the foundation.
 <mark>What you build on top is what matters most.</mark>
 </div></section>
 <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"slide"}">
-    <div>By the way, designer and coder <mark>Björn Staal</mark> works with the <mark>localStorage-based approach</mark> — showing that even the simplest mechanisms can lead to compelling, interactive experiences if paired with a strong idea.
+    <div class="content">By the way, designer and coder <mark>Björn Staal</mark> works with the <mark>localStorage-based approach</mark> — showing that even the simplest mechanisms can lead to compelling, interactive experiences if paired with a strong idea.
 </div></section>
 <section data-slide-shortcode-class="simple-text" class="simple " data-transition="{"transition":"slide"}">
-    <div><h1 class="title">Physics??? 🧐</h1></div></section>
+    <div class="content"><h1 class="title">Physics??? 🧐</h1></div></section>
 
       
       
