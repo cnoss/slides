@@ -254,9 +254,10 @@ module.exports = function (eleventyConfig) {
     const textHtml = text ? insertMarkup(text) : '';
     const classes = propData && propData.classes ? propData.classes : '';
     const badge = propData && propData.badge ? badgeHtml(insertMarkup(propData.badge)) : '';
+    const image = propData && propData.image ? `<img src="${propData.image}">` : '';
     const dataTransition = transition ? `data-transition="${transition}"` : '';
     return `<section data-slide-shortcode-class="simple-text" class="simple ${classes}" ${dataTransition}>
-    <div>${titleHtml}${textHtml}</div>${badge}</section>`;
+    <div class="content">${titleHtml}${textHtml}</div>${image}${badge}</section>`;
   });
 
   eleventyConfig.addShortcode('simpleInterlude', (title, text, transition) => {

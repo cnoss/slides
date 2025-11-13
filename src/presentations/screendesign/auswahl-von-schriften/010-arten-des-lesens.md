@@ -97,19 +97,21 @@ inszenierendeTypografie: |
 ---
 {% simpleText "Arten des Lesens", arten, false, '{"badge": "H. P. Willberg und F. Forssman, Lesetypographie. Mainz: Schmidt, 1997."}' %}
 
-{% simpleText "**Lineares Lesen**<br>Satz für Satz, von Anfang bis Ende", linearesLesen, false, '{"classes": "text-with-list", "badge": "H. P. Willberg und F. Forssman, Lesetypographie. Mainz: Schmidt, 1997."}' %}
+{% simpleText "**Lineares Lesen**<br>Satz für Satz, von Anfang bis Ende", linearesLesen, false, '{"classes": "text-with-list image-right", "badge": "H. P. Willberg und F. Forssman, Lesetypographie. Mainz: Schmidt, 1997.", "image": "./images/lineares-lesen-01.png"}' %}
 
-{% simpleText "**Informierendes Lesen**<br>um sich schnell einen Überblick über Inhalte zu verschaffen", informierendesLesen, false, '{"classes": "text-with-list", "badge": "H. P. Willberg und F. Forssman, Lesetypographie. Mainz: Schmidt, 1997."}' %}
-{% simpleText "**Differenzierendes Lesen**<br>mit analytischem Fokus auf Fachinhalte und Details", differenzierendesLesen, false, '{"classes": "text-with-list", "badge": "H. P. Willberg und F. Forssman, Lesetypographie. Mainz: Schmidt, 1997."}' %}
+{% simpleText "**Informierendes Lesen**<br>um sich schnell einen Überblick über Inhalte zu verschaffen", informierendesLesen, false, '{"classes": "text-with-list image-right", "badge": "H. P. Willberg und F. Forssman, Lesetypographie. Mainz: Schmidt, 1997.", "image": "./images/informierendes-lesen-01.png.jpg"}' %}
 
-{% simpleText "**Konsultierendes Lesen**<br>Gezieltes Nachschlagen einzelner Begriffe oder Informationen", konsultierendesLesen, false, '{"classes": "text-with-list", "badge": "H. P. Willberg und F. Forssman, Lesetypographie. Mainz: Schmidt, 1997."}' %}
+{% simpleText "**Differenzierendes Lesen**<br>mit analytischem Fokus auf Fachinhalte und Details", differenzierendesLesen, false, '{"classes": "text-with-list image-right", "badge": "H. P. Willberg und F. Forssman, Lesetypographie. Mainz: Schmidt, 1997.", "image": "./images/differenzierendes-lesen-01.png.jpg"}' %}
 
-{% simpleText "**Selektierendes Lesen**<br>mit Auswahlfreiheit zwischen verschiedenen Textebenen.", selektierendesLesen, false, '{"classes": "text-with-list", "badge": "H. P. Willberg und F. Forssman, Lesetypographie. Mainz: Schmidt, 1997."}' %}
+{% simpleText "**Konsultierendes Lesen**<br>Gezieltes Nachschlagen einzelner Begriffe oder Informationen", konsultierendesLesen, false, '{"classes": "text-with-list image-right", "badge": "H. P. Willberg und F. Forssman, Lesetypographie. Mainz: Schmidt, 1997.", "image": "./images/konsultierendes-lesen-01.png.jpg"}' %}
 
-{% simpleText "**Typografie nach Sinnschritten**<br>Lesen nach inhaltlichen Einheiten, nicht nach Gestaltung.", sinnschritte, false, '{"classes": "text-with-list", "badge": "H. P. Willberg und F. Forssman, Lesetypographie. Mainz: Schmidt, 1997."}' %}
+{% simpleText "**Selektierendes Lesen**<br>mit Auswahlfreiheit zwischen verschiedenen Textebenen.", selektierendesLesen, false, '{"classes": "text-with-list image-right", "badge": "H. P. Willberg und F. Forssman, Lesetypographie. Mainz: Schmidt, 1997.", "image": "./images/selektierendes-lesen-01.png.jpg"}' %}
 
-{% simpleText "**Aktivierende Typografie**<br>die Neugier weckt und zum Lesen anregt", aktivierendeTypografie, false, '{"classes": "text-with-list", "badge": "H. P. Willberg und F. Forssman, Lesetypographie. Mainz: Schmidt, 1997."}' %}
-{% simpleText "**Inszenierende Typografie**<br>als gestalterisches Ausdrucksmittel der Sprache", inszenierendeTypografie, false, '{"classes": "text-with-list", "badge": "H. P. Willberg und F. Forssman, Lesetypographie. Mainz: Schmidt, 1997."}' %}
+{% simpleText "**Typografie nach Sinnschritten**<br>Lesen nach inhaltlichen Einheiten, nicht nach Gestaltung.", sinnschritte, false, '{"classes": "text-with-list image-right", "badge": "H. P. Willberg und F. Forssman, Lesetypographie. Mainz: Schmidt, 1997.", "image": "./images/sinnschritte-typo-01.png"}' %}
+
+{% simpleText "**Aktivierende Typografie**<br>die Neugier weckt und zum Lesen anregt", aktivierendeTypografie, false, '{"classes": "text-with-list image-right", "badge": "H. P. Willberg und F. Forssman, Lesetypographie. Mainz: Schmidt, 1997.", "image": "./images/aktivierende-typo-01.png.jpg"}' %}
+
+{% simpleText "**Inszenierende Typografie**<br>als gestalterisches Ausdrucksmittel der Sprache", inszenierendeTypografie, false, '{"classes": "text-with-list image-right", "badge": "H. P. Willberg und F. Forssman, Lesetypographie. Mainz: Schmidt, 1997.", "image": "./images/inszenierende-typo-01.png.jpg"}' %}
 
 
 
