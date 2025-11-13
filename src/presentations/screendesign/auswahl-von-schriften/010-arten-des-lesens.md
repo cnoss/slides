@@ -8,8 +8,8 @@ arten: |
   <div class="fragment is-unbalanced">Text für lineares Lesen</div>
   <div class="fragment is-unbalanced">Text für informierendes Lesen</div>
   <div class="fragment is-unbalanced">Text für differenzierendes Lesen</div>
-  <div class="fragment is-unbalanced">Text für konsultierenden Lesen</div>
-  <div class="fragment is-unbalanced">Text für selektierenden Lesen</div>
+  <div class="fragment is-unbalanced">Text für konsultierendes Lesen</div>
+  <div class="fragment is-unbalanced">Text für selektierendes Lesen</div>
   <div class="fragment is-unbalanced">Typografie nach Sinnschritten</div>
   <div class="fragment is-unbalanced">Aktivierende Typografie</div>
   <div class="fragment is-unbalanced">Inszenierende Typografie</div>
