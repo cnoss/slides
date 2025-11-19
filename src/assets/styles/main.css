@@ -1524,6 +1524,25 @@ a.is-black:hover {
   line-height: var(--lh-tight);
   margin-right: var(--s);
 }
+.simple.image-right .content {
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+.simple.image-right .content > * {
+  max-width: 60vw;
+  background: linear-gradient(to right, var(--lightest) 80%, transparent 100%);
+}
+.simple.image-right img {
+  display: block;
+  position: absolute;
+  right: var(--l);
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 40vw;
+  max-height: 80dvh;
+  z-index: 0;
+}
 
 /* Image
 ############################################################################ */
