@@ -13,7 +13,7 @@ reflectWall: Refect – Was hat Sie am stärksten gebremst?
 ---
 
 <section class="mi-slide fact-list">
-  <div>Wie kann der Kurs/ das Modul optimiert werden?</div>
+  <div>Wie kann der Kurs/ das Modul/ die eigene Performance verbessert werden?</div>
   {% fragment keep %}
   {% fragment drop %}
   {% fragment try %}
