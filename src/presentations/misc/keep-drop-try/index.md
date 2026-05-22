@@ -1,5 +1,5 @@
 ---
-title: Keep, Drop, Try, Reflect
+title: About me
 layout: presentation.11ty.js
 slideClasses: intro
 transition: zoom
