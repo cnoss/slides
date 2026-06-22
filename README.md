@@ -1,35 +1,61 @@
 # Slides
 
-HTML Slidedecks für meine Vorlesungen. Das Projekt nutzt den Static Page Generator [11ty](https://www.11ty.dev/docs/) und [reveal.js](https://revealjs.com/).
+HTML-Slidedecks für meine Vorlesungen. Das Projekt nutzt den Static-Site-Generator [11ty](https://www.11ty.dev/docs/) und als Präsentations-Framework [reveal.js](https://revealjs.com/) (Standard) sowie optional [impress.js](https://impress.js.org/).
+
+Veröffentlicht unter [cnoss.github.io/slides](https://cnoss.github.io/slides/).
 
 [Figma für Montagen](https://www.figma.com/design/xXM2JmJMAWsqoOJQyxqaqa/Slides?m=auto&t=ZhJbsnkuKr5jUWYC-1)
 
+## Wie es funktioniert
+
+Ein **Slidedeck ist ein Ordner** unter `src/presentations/<kategorie>/<deck>/`. Darin liegen:
+
+- eine `index.md` als Einstiegspunkt (sie legt das Layout fest, üblicherweise `presentation.11ty.js`),
+- und beliebig viele **nummerierte Einzelfolien** wie `000-intro.md`, `010-cite.md`, `020-…md`.
+
+Beim Build sammelt das Layout alle `.md`-Dateien desselben Deck-Ordners ein, **sortiert sie nach Dateinamen** und fügt sie zu *einer* reveal.js-Präsentation zusammen. Die Zahlen-Präfixe steuern also die Reihenfolge der Folien – mit Lücken (000, 010, 020 …) lässt sich später bequem etwas dazwischenschieben.
+
+Das Aussehen jeder Folie wird über das [Front Matter](#front-matter) (`slideClasses`, `transition`, `img` …) und über [Shortcodes](#shortcodes) gesteuert.
+
+Die Übersichtsseite ([src/index.md](src/index.md)) listet alle Decks gruppiert nach den vier Kategorien (Sammlungen) **screendesign**, **master**, **bachelor** und **misc**.
+
+## Deployment
+
+Bei jedem Push auf `main` baut der GitHub-Actions-Workflow [.github/workflows/build.yml](.github/workflows/build.yml) das Projekt (`npm run build`) und veröffentlicht den `docs`-Ordner auf den Branch `gh-pages`. In Production wird der Pfad-Präfix `slides` gesetzt (über `ELEVENTY_ENV=production`).
+
 ## Ordnerstruktur
 
-### `/docs`
-kompilierter Code … hier wird nix gemacht
+```
+docs                kompilierter Output → wird deployed, hier nichts von Hand ändern
+reveal              reveal.js (unverändert)
+impress.js          impress.js (unverändert)
+static              statische Zusatzdateien
+_archive            ausrangierte Stände
+src                 hier wird entwickelt (s.u.)
+```
 
-### `/reveal`
-Hier lebt Reveal.js und es muss nix gemacht werden.
-
-### `/src` hier wird entwickelt
+### `/src`
 
 ```
-_components         Layout- oder Funktionsschnipsel
-_data               Zusätzliche Daten oder Hilffunktionen
-_layouts            Templates
-assets              SCSS, Skripts, Fonts, etc … alles was kein Content ist
-compiled-assets     Kompilierte Dateien, z.B. CSS
-presentations       Content, und zwar pro Slidedeck ein Ordner
+_components         Includes (Layout- oder Funktionsschnipsel)
+_data               Globale Daten & Helper (project.json, cacheBust.js …)
+_layouts            Templates (presentation.11ty.js, impress.11ty.js, documents.11ty.js …)
+assets              SCSS, Skripte, Fonts, Icons, Bilder – alles, was kein Content ist
+compiled-assets     Vom SASS-Compiler erzeugte Dateien (z.B. main.css)
+presentations       Der Content: pro Kategorie ein Ordner, darin pro Deck ein Ordner
+  ├── bachelor
+  ├── master
+  ├── misc
+  └── screendesign
+index.md            Übersichtsseite mit allen Decks
 ```
 
 ### Weitere Dateien
 ```
-.eleventy.js        Config von 11ty
-.eleventyignore     Welche Folder/ Files soll 11ty ignorieren?
-.eslintrc.json      Config von eslint
-.gitignore          Welche Folder/ Files soll git igorieren?
-.stylelintrc.json   Config von stylelint
+.eleventy.js        Config von 11ty (Collections, Shortcodes, Passthrough-Copy …)
+.eleventyignore     Welche Ordner/Dateien soll 11ty ignorieren?
+.stylelintrc.yaml   Config von stylelint
+.gitignore          Welche Ordner/Dateien soll git ignorieren?
 ```
 
 ## Funktionen
@@ -37,23 +63,27 @@ presentations       Content, und zwar pro Slidedeck ein Ordner
 `npm install`
 Installiert die erforderlichen Abhängigkeiten.
 
-`npm run build` 
-kompiliert einen Build und speichert diesen im `docs` Folder.
+`npm run dev`
+Startet die Entwicklungsumgebung: SASS-Compiler im Watch-Mode plus 11ty-Dev-Server mit Live-Reload.
 
-`npm run dev` 
-Watchmode für den SASS Compiler und Browsersync, der die Inhalte inkl. livereload serviert.
+`npm run quiet`
+Wie `dev`, aber mit weniger Konsolen-Ausgabe (`--quiet`).
 
-`npm run live` erzeugt einen Build und startet den Webserver, der die Inhalte serviert.
+`npm run build`
+Kompiliert einen Build (CSS + Seite) in den `docs`-Ordner.
 
-`npm run lint:css` startet stylelint.
+`npm run live`
+Erzeugt einen Build und startet einen Webserver, der den `docs`-Ordner serviert.
 
-`npm run lint:css:fix` startet stylelint und korrigiert die Fehler, sofern möglich.
+`npm run lint:css` / `npm run lint:css:fix`
+Startet stylelint (mit `:fix` werden Fehler nach Möglichkeit automatisch korrigiert).
 
-`npm run lint:js` startet eslint.
-
-`npm run lint:js:fix` startet eslint und korrigiert die Fehler, sofern möglich.
+`npm run lint:js` / `npm run lint:js:fix`
+Startet eslint (mit `:fix` werden Fehler nach Möglichkeit automatisch korrigiert).
 
 ## Front Matter
+
+Jede Folie (und die `index.md` des Decks) wird über Front Matter konfiguriert:
 
 ```
 ---
@@ -64,24 +94,39 @@ status: ok
 ---
 ```
 
+Weitere mögliche Felder pro Folie:
+
+| Feld | Bedeutung |
+| :--- | :--- |
+| `title` | Titel der Folie bzw. des Decks |
+| `layout` | Template – meist `presentation.11ty.js`, für impress.js `impress.11ty.js` |
+| `slideClasses` | Folientyp, s. [Slide Classes](#slide-classes) |
+| `transition` | reveal.js-Übergang, s. [Transition](#transition) |
+| `status` | Sichtbarkeit / ToDo-Hinweis, s. [Status](#status) |
+| `img` / `imgData` / `credits` | Hintergrundbild und dessen Quelle, s. [Image](#image) |
+| `additionalClasses` | zusätzliche CSS-Klassen, s. [Additional Classes](#additional-classes) |
+| `author` / `src` / `info` | Autor, Quelle und Zusatzinfo (z.B. bei `cite` und `shout`) |
+| `speaker` | Speaker Notes (in reveal.js mit `S` aufrufbar) |
+| `badge` | kleines Badge, das auf der Folie eingeblendet wird |
+
 ### Slide Classes
 
-| SlideClass | Layout |
+| SlideClass | Layout |
 | :--- | :--- |
-| [intro](https://cnoss.github.io/slides/presentations/misc/demo/) | Startfolie mit Titel und Untertitel |
-| outro | Endfolie ohne Text |
-| simple | Einfacher Inhalt mit Headline und Text |
-| [cite](https://cnoss.github.io/slides/presentations/misc/demo/#/1) | Zeigt ein Zitat, mit oder ohne Hintergrundbild. |
-| [images](https://cnoss.github.io/slides/presentations/misc/demo/#/3) | Wrapper Folie für Bilder, die dann via HTML eingebunden werden |
-| [video](https://cnoss.github.io/slides/presentations/misc/demo/#/5) | Wrapper Folie für ein Video, welches dann via HTML eingebunden werden |
-| [statement](https://cnoss.github.io/slides/presentations/misc/demo/#/6) | Aussage mit Erklärung |
-| [shout](https://cnoss.github.io/slides/presentations/misc/demo/#/8) | Ausruf mit Autor und Erklärung auf Hintergrund |
+| [intro](https://cnoss.github.io/slides/presentations/misc/demo/) | Startfolie mit Titel und Untertitel |
+| outro | Endfolie ohne Text |
+| simple | Einfacher Inhalt mit Headline und Text |
+| [cite](https://cnoss.github.io/slides/presentations/misc/demo/#/1) | Zeigt ein Zitat, mit oder ohne Hintergrundbild. |
+| [images](https://cnoss.github.io/slides/presentations/misc/demo/#/3) | Wrapper Folie für Bilder, die dann via HTML eingebunden werden |
+| [video](https://cnoss.github.io/slides/presentations/misc/demo/#/5) | Wrapper Folie für ein Video, welches dann via HTML eingebunden werden |
+| [statement](https://cnoss.github.io/slides/presentations/misc/demo/#/6) | Aussage mit Erklärung |
+| [shout](https://cnoss.github.io/slides/presentations/misc/demo/#/8) | Ausruf mit Autor und Erklärung auf Hintergrund |
 | code | Zeigt schön formatierten Code auf der ganzen Fensterbreite.  |
 | codeSmall | Zeigt schön formatierten Code so breit, wie der Code läuft.  |
-| wrap | Wrapper Folio für Shortcodes |
+| wrap | Wrapper Folio für Shortcodes |
 | split | Bild links, Text rechts |
-| question | kein Beispiel parat :( |
-| qa | Frage und Antwort |
+| question | kein Beispiel parat :( |
+| qa | Frage und Antwort |
 
 ### Image
 ```
@@ -124,11 +169,11 @@ additionalClasses: is-green
 ```
 status: ok
 ```
-| Wert | Aktion |
+| Wert | Aktion |
 |:---|:---|
 | ok | nichts passiert |
 | hidden | Slide wird nicht angezeigt |
-| alles andere | Status wird oben rechts in der Folie angezeigt. Ganz praktisch für Todos oder so |
+| alles andere | Status wird oben rechts in der Folie angezeigt. Ganz praktisch für Todos oder so |
 
 ### Transition
 ```
@@ -144,6 +189,8 @@ Hier sind alle [Reveal.js Transitions](https://revealjs.com/transitions/) mögli
 - zoom
 
 ## Shortcodes
+
+Shortcodes erzeugen fertige Folien oder Bausteine direkt im Markdown. Sie sind in [.eleventy.js](.eleventy.js) definiert.
 
 ### Fragment
 ```
@@ -196,6 +243,17 @@ Erzeugt einen kompletten Screen.
 ### Nice to Know
 ```
 {% niceToKnow "Die Mike Rode Matrix nutzt übrigens das Konzept des [Morphologischen Kastens](https://refa.de/service/refa-lexikon/morphologischer-kasten)." %}
+```
+
+### Cite
+```
+{% cite "Man kann nicht nicht kommunizieren." %}
+```
+
+### Text
+Hüllt beliebigen Inhalt in einen `<div>`.
+```
+{% text "<p>Beliebiger HTML-Inhalt</p>" %}
 ```
 
 ### Image
@@ -439,4 +497,3 @@ Adding css-at-Rule. For a cross-document view transition to work, the current an
 </code>
 </pre>
 ```
-
