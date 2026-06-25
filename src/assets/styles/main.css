@@ -999,6 +999,13 @@ a.is-black:hover {
   font-weight: var(--fw-medium);
   color: var(--mi-lila);
 }
+.mi-slide em {
+  font-weight: var(--fw-bold) !important;
+}
+.mi-slide mark {
+  display: inline-block;
+  padding: 0;
+}
 .mi-slide > section {
   height: 100%;
 }
@@ -1060,7 +1067,6 @@ a.is-black:hover {
 .cite {
   display: flex !important;
   align-items: center;
-  justify-content: center;
 }
 .cite blockquote {
   max-width: 70vw;
@@ -1070,11 +1076,14 @@ a.is-black:hover {
   background-color: transparent;
   padding: 0;
   margin: 0;
+  margin-left: 50vw;
+  text-wrap: balance;
 }
 .cite blockquote.typo-quote p {
   line-height: var(--lh-normal);
   padding: 0;
   margin: 0;
+  transform: translateX(-50%);
 }
 .cite blockquote cite {
   display: block;
@@ -1295,9 +1304,9 @@ a.is-black:hover {
 .interlude .subtitle {
   padding: 0;
   font-family: var(--ff-normal);
-  color: var(--darkest);
+  color: var(--lightest);
   opacity: var(--op-medium);
-  font-size: calc(var(--xxl) * 0.8);
+  font-size: calc(var(--xxl) * 0.);
   text-align: center;
   text-wrap: balance;
 }
@@ -1381,6 +1390,25 @@ a.is-black:hover {
   color: var(--darkest);
 }
 
+/* Important
+############################################################################ */
+.important {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  container-type: size;
+}
+.important div {
+  max-width: 80%;
+  text-wrap: balance;
+  hyphens: none;
+  line-height: var(--lh-tight);
+  font-weight: var(--fw-medium);
+  --cap: 5;
+  font-size: clamp(2rem, calc(var(--cap) * 1cqi / var(--len-factor, 1)), 9rem);
+  --len-factor: max(1, calc(var(--chars, 1) / 20));
+}
+
 /* question
 ############################################################################ */
 .question {
@@ -1435,6 +1463,10 @@ a.is-black:hover {
   align-items: center;
   justify-content: center;
 }
+.simple .title {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 .simple.is-interlude {
   background-color: var(--darkest);
 }
@@ -1460,11 +1492,19 @@ a.is-black:hover {
   line-height: var(--lh-tight);
   margin-bottom: var(--xs);
 }
+.simple div ul li::before {
+  content: "-";
+  color: var(--mi-lila);
+  font-size: var(--l);
+  line-height: var(--lh-tight);
+  margin-right: 0.4ch;
+}
 .simple div h1 {
   padding: 0;
   padding-bottom: var(--s);
   margin-bottom: var(--s);
   font-family: var(--ff-normal);
+  font-size: var(--xxl) !important;
 }
 .simple div h2 {
   padding: 0;

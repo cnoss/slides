@@ -11,6 +11,12 @@ const md = new markdownIt({
   html: true,
 });
 
+md.enable([
+  "list",
+  "link",
+  "autolink"
+]);
+
 const highlightCode = (lang, code) => {
   if (lang && hljs.getLanguage(lang)) {
     try {
@@ -28,7 +34,16 @@ const insertMarkup = (string) => {
   if (!string) return "";
   if (string.match(/<.*?\/>/i)) return string;
   string = string.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>", string);
-  return string.replace(/\*(.*?)\*/g, "<mark>$1</mark>", string);
+  string = string.replace(/\*(.*?)\*/g, "<mark>$1</mark>", string);
+  string = markdownIt({ html: true }).render(string);
+  return string;
+}
+
+const insertMarkupInline = (string) => {
+  
+  if (!string) return "";
+  string = markdownIt({ html: true }).renderInline(string);
+  return string;
 }
 
 const insertColor = (string, colorClass) => {
@@ -54,6 +69,7 @@ const renderCode = (code, lang) => {
 module.exports = function (eleventyConfig) {
   eleventyConfig.setWatchThrottleWaitTime(500);
   eleventyConfig.setUseGitIgnore(false);
+  eleventyConfig.setQuietMode(true)
   eleventyConfig.setWatchJavaScriptDependencies(true);
   eleventyConfig.setBrowserSyncConfig({
     snippet: true,
@@ -250,7 +266,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode('simpleText', (title, text, transition, props) => {
     const propData = (props) ? JSON.parse(props) : {};
-    const titleHtml = title ? `<h1 class="title">${insertMarkup(title)}</h1>` : '';
+    const titleHtml = title ? `<h1 class="title">${insertMarkupInline(title)}</h1>` : '';
     const textHtml = text ? insertMarkup(text) : '';
     const classes = propData && propData.classes ? propData.classes : '';
     const badge = propData && propData.badge ? badgeHtml(insertMarkup(propData.badge)) : '';
@@ -302,8 +318,10 @@ module.exports = function (eleventyConfig) {
       ;
   });
 
-  eleventyConfig.addShortcode('important', (content) => {
-    return `<div class="is-important">${md.render(content)}</div>`;
+  eleventyConfig.addShortcode('important', (content, props) => {
+    const propData = (props) ? JSON.parse(props) : {};
+    const badge = propData && propData.badge ? badgeHtml(insertMarkup(propData.badge)) : '';
+    return `<section data-slide-shortcode-class="important" class="important"><div>${insertMarkup(content)}${badge}</div></section>`;
   });
 
     eleventyConfig.addShortcode('text', (content) => {
@@ -319,7 +337,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode('cite', (title, content, props) => {
     const propData = (props) ? JSON.parse(props) : {};
-    return `<section data-slide-shortcode-class="cite" class="cite"><div class="cite"><blockquote class="typo-quote"><p>${insertMarkup(title)}</p><cite></cite></blockquote></div></section>`;
+    const badge = propData && propData.badge ? badgeHtml(insertMarkup(propData.badge)) : '';
+    return `<section data-slide-shortcode-class="cite" class="cite"><div class="cite"><blockquote class="typo-quote"><p>${insertMarkupInline(title)}</p></blockquote></div>${badge}</section>`;
   });
 
   eleventyConfig.addShortcode('niceToKnow', (content, props) => {
@@ -337,12 +356,14 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addShortcode('qa', (q, a, props) => {
+
+  
     const propData = (props) ? JSON.parse(props) : {};
     const dataTransition = propData && propData.transition ? `data-transition="${propData.transition}"` : '';
     const classes = propData && propData.classes ? propData.classes : '';
     let answer = insertMarkup(a);
     answer = insertColor(answer, "is-green");
-    return `<section data-slide-shortcode-class="qa" class="qa ${classes}" ${dataTransition}><div class="qa-wrap"><h1 class="qa-question">${q}</h1><p class="qa-answer fragment">${answer}</p></div></section>`;
+    return `<section data-slide-shortcode-class="qa" class="qa ${classes}" ${dataTransition}><div class="qa-wrap"><h1 class="qa-question">${q}</h1><p class="qa-answer fragment">${a}</p></div></section>`;
   });
 
   eleventyConfig.setServerOptions({

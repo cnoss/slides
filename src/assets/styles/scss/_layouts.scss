@@ -9,6 +9,16 @@
     color: var(--mi-lila);
   }
 
+  em{
+    font-weight: var(--fw-bold) !important;
+
+  }
+
+  mark{
+    display: inline-block;
+    padding: 0;
+  }
+
   & > section {
     height: 100%;
   }
@@ -85,21 +95,25 @@
 .cite {
   display: flex !important;
   align-items: center;
-  justify-content: center;
+
 
   blockquote {
     max-width: 70vw;
+
 
     &.typo-quote{
       border: none;
       background-color: transparent;
       padding: 0;
       margin: 0;
+      margin-left: 50vw;
+      text-wrap: balance;
 
       p{  
         line-height: var(--lh-normal);
         padding: 0;
         margin: 0;
+        transform: translateX(-50%);
       }
     }
 
@@ -369,9 +383,9 @@
   .subtitle {
     padding: 0;
     font-family: var(--ff-normal);
-    color: var(--darkest);
+    color: var(--lightest);
     opacity: var(--op-medium);
-    font-size: calc(var(--xxl) * 0.8);
+    font-size: calc(var(--xxl) * 0.);
     text-align: center;
     text-wrap: balance;
     strong{
@@ -469,6 +483,40 @@
   }
 }
 
+/* Important
+############################################################################ */
+
+.important {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  // Container fuer cqi-Einheiten (1cqi = 1% der Slide-Breite)
+  container-type: size;
+
+  div {
+    max-width: 80%;
+    text-wrap: balance;
+    hyphens: none;
+    line-height: var(--lh-tight);
+    font-weight: var(--fw-medium);
+
+    // So gross wie moeglich: skaliert mit der Slide-Breite, gedeckelt nach
+    // oben/unten. --cap regelt das Verhaeltnis (Default 12 = 12% der Breite).
+    // Optionales Add-on: setzt das Skript style="--chars:N", wird die Groesse
+    // zusaetzlich an die Textlaenge gekoppelt (laenger -> kleiner).
+    --cap: 5;
+    font-size: clamp(2rem, calc(var(--cap) * 1cqi / var(--len-factor, 1)), 9rem);
+
+    // greift nur, wenn --chars gesetzt ist; sonst neutral (1)
+    --len-factor: max(1, calc(var(--chars, 1) / 20));
+
+    *{
+      hyphens: none;
+    }
+  }
+}
+
 /* question
 ############################################################################ */
 
@@ -534,6 +582,11 @@
   align-items: center;
   justify-content: center;
 
+  .title{
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
   &.is-interlude{
     background-color: var(--darkest);
 
@@ -565,21 +618,28 @@
         display: block;
         line-height: var(--lh-tight);
         margin-bottom: var(--xs);
-
+        &::before{
+          content: "-";
+          color: var(--mi-lila);
+          font-size: var(--l);
+          line-height: var(--lh-tight);
+          margin-right: 0.4ch;
+        }
 
       }
     }
     
 
-    h1 {
+    h1{
       padding: 0;
       padding-bottom: var(--s);
       margin-bottom: var(--s);
       font-family: var(--ff-normal);
+      font-size: var(--xxl) !important;
     }
 
 
-    h2 {
+    h2{
       padding: 0;
       padding-bottom: 0;
       margin-bottom: var(--xxs);
@@ -896,6 +956,7 @@
     font-size: var(--l);
     text-align: right;
   }
+
 
   p {
     color: var(--darker);
