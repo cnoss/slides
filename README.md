@@ -194,7 +194,7 @@ Shortcodes erzeugen fertige Folien oder Bausteine direkt im Markdown. Sie sind i
 
 ### Fragment
 ```
-{% fragment "<h2>Team</h2><p>Calvin Hinzer, Christian Hahn, Volker Schaefer, Christian Noss</p>" %}
+{% fragment "<h2>Team</h2><p>Miriam Purushotham, Volker Schaefer, Christian Noss</p>" %}
 ```
 
 ### SimpleText
