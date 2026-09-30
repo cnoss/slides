@@ -102,8 +102,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/assets/icons': 'assets/icons' });
 
   // Copy images
-  eleventyConfig.addPassthroughCopy('src/presentations/**/images/*.{jpg,png,svg,jpeg, gif}');
-  eleventyConfig.addPassthroughCopy('src/presentations/**/images/**/*.{jpg,png,svg,jpeg,gif}');
+  eleventyConfig.addPassthroughCopy('src/presentations/**/images/*.{jpg,jpeg,webp,png,svg,jpeg, gif}');
+  eleventyConfig.addPassthroughCopy('src/presentations/**/images/**/*.{jpg,jpeg,webp,png,svg,jpeg, gif}');
 
   // Copy Reveal Stuff
   eleventyConfig.addPassthroughCopy({ 'reveal/dist': 'reveal/dist' });

@@ -17,7 +17,7 @@ speaker: |
   Durch diese Analyse (Dekomposition) wird sichtbar, welche Designprinzipien wiederkehren – und wie sich ein kohärentes System bildet.
 ---
 
-{% interlude "De·kom·po·si·ti·on"%}
+{% interlude "Strukturelle Dekomposition"%}
 {% screenshot "./images/die-museen.jpg", '{"transition":"fade"}' %}
 
 

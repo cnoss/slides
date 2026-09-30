@@ -1,10 +1,8 @@
 ---
-title: Was ist Identität?
+title: Was hat Design … 
 layout: presentation.11ty.js
 slideClasses: statement
 status: ok
 ---
 
-Was hat Identität mit diesem Modul zu tun?
-
-
+in der Medieninformatik zu suchen?

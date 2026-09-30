@@ -1175,7 +1175,6 @@ a.is-black:hover {
   box-shadow: var(--shadow-xl);
 }
 .screenshot figure.zoom {
-  box-shadow: var(--shadow-xl);
   align-items: normal;
 }
 .screenshot figure.zoom img, .screenshot figure.zoom svg {
@@ -1407,6 +1406,9 @@ a.is-black:hover {
   --cap: 5;
   font-size: clamp(2rem, calc(var(--cap) * 1cqi / var(--len-factor, 1)), 9rem);
   --len-factor: max(1, calc(var(--chars, 1) / 20));
+}
+.important div * {
+  hyphens: none;
 }
 
 /* question
