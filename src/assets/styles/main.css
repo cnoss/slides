@@ -1175,6 +1175,7 @@ a.is-black:hover {
   box-shadow: var(--shadow-xl);
 }
 .screenshot figure.zoom {
+  box-shadow: var(--shadow-xl);
   align-items: normal;
 }
 .screenshot figure.zoom img, .screenshot figure.zoom svg {
