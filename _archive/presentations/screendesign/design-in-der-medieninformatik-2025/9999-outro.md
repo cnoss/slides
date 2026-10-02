@@ -1,5 +1,5 @@
 ---
-title: Design in der Medieninformatik
+title: About Screendesign
 layout: presentation.11ty.js
 slideClasses: outro
 transition: convex
