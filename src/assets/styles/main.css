@@ -1248,6 +1248,9 @@ a.is-black:hover {
 .statement .title strong {
   font-weight: var(--fw-bold);
 }
+.statement .title p {
+  margin-bottom: var(--xs);
+}
 .statement div {
   max-width: 80vw;
 }
@@ -1844,7 +1847,7 @@ a.is-black:hover {
 @media screen and (min-width: 768px) {
   .presentation-list main {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 2fr 3fr;
     grid-template-rows: auto;
     column-gap: var(--l);
     row-gap: 0;
