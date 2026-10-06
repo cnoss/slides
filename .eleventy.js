@@ -159,6 +159,10 @@ module.exports = function (eleventyConfig) {
     return presentations = getPresentationData(collection, "./src/presentations/screendesign/**/index.md");
   });
 
+  eleventyConfig.addCollection("screendesignUndVisuelleKommunikation", (collection) => {
+    return presentations = getPresentationData(collection, "./src/presentations/screendesign-und-visuelle-kommunikation/**/index.md");
+  });
+
   eleventyConfig.addCollection("misc", (collection) => {
     return presentations = getPresentationData(collection, "./src/presentations/misc/**/index.md");
   });
