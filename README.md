@@ -142,7 +142,7 @@ transition: zoom
 | `transition` | reveal.js-Übergang beim Wechsel *zu* dieser Datei: `none`, `fade`, `slide`, `convex` (Standard), `concave`, `zoom`. |
 | `speaker` | Speaker Notes in Markdown, siehe [Speaker Notes](#speaker-notes). |
 | `badge` | Kleines Badge (Markdown/HTML), das auf allen Folien der Datei erscheint. |
-| `footer` | Markdown-Fußzeile, z. B. Quellen. Wirkt nur bei `wrap`, `code`, `codeSmall`. |
+| `footer` | Markdown-Fußzeile, z. B. Quellen. Wirkt bei `images`, `wrap`, `code`, `codeSmall`. |
 | `img` | Hintergrundbild aus `images/`. Bei `.jpg` kann die Endung entfallen. |
 | `imgData` | Position und Größe des Hintergrundbilds: `{"position":"1% 1%", "size": "15%"}` |
 | `credits` | Bildnachweis zum Hintergrundbild: `{'name': 'Barbara Iandolo', 'url': 'https://…'}` |
@@ -156,8 +156,8 @@ transition: zoom
 
 | slideClasses | Verwendung |
 | :--- | :--- |
-| `images` | Kapitel mit Bildern, Screenshots, Übungen. Inhalt wird roh ausgegeben. |
-| `wrap` | Kapitel aus Shortcodes (interlude, qa, important, shout …). Wie `images`, hängt zusätzlich `footer` an. |
+| `images` | Kapitel mit Bildern, Screenshots, Übungen. |
+| `wrap` | Kapitel aus Shortcodes (interlude, qa, important, shout …). Technisch identisch mit `images`. |
 | `wrap is-dark` | Wie `wrap`, mit dunklem Hintergrund und heller Bildunterschrift. |
 
 **Eigenständige Folien** (eine Folie pro Datei, das Layout baut sie auf):
@@ -282,7 +282,7 @@ Props: `transition`, `backgroundTransition`, `classes`, `bu` (Markdown), `badge`
 {% interlude "Für wen ist das?", "Funktion & Zielgruppe", "zoom" %}
 ```
 
-Achtung: Das dritte Argument ist ein **einfacher String**, kein JSON (siehe [Bekannte Macken](#bekannte-macken)).
+Das dritte Argument ist ein einfacher String. Aus älteren Folien wird auch JSON akzeptiert (`'{"transition":"zoom"}'`).
 
 ### statement
 
@@ -324,7 +324,7 @@ Props: `transition`, `classes`. Die Antwort wird als rohes HTML ausgegeben, Mark
 {% simpleText "Headline", "Text", "fade", '{"classes":"text-with-list"}' %}
 ```
 
-Props: `classes` (z. B. `text-with-list`, `image-right`), `badge`, `image` (Bildpfad, wird neben dem Text gezeigt). Die Transition ist das **dritte Argument als String**, nicht Teil der Props.
+Props: `classes` (z. B. `text-with-list`, `image-right`), `badge`, `image` (Bildpfad, wird neben dem Text gezeigt), `backgroundTransition`. Die Transition ist das dritte Argument als String. Steht dort stattdessen ein Props-JSON (`'{"transition":"slide"}'`), wird es als Props gelesen.
 
 ### simpleInterlude
 
@@ -354,13 +354,14 @@ Props: `badge`.
 
 ### cite
 
-`{% cite text %}`: Zitat. Die Anführungszeichen « » setzt das CSS, also keine eigenen setzen.
+`{% cite text, author, props %}`: Zitat, optional mit Autor (Markdown). Die Anführungszeichen « » setzt das CSS, also keine eigenen setzen.
 
 ```
 {% cite "Man kann nicht nicht kommunizieren." %}
+{% cite "Die Grenzen meiner Sprache bedeuten die Grenzen meiner Welt.", "Ludwig Wittgenstein" %}
 ```
 
-Ein zweites Argument (Autor) wird derzeit **ignoriert**. Zitat mit Autor und Quelle: als eigene Datei mit `slideClasses: cite`, siehe [Beispiel](#cite-als-eigene-datei).
+Props: `badge`. Zitat mit Hintergrundbild und ausführlicher Quelle: als eigene Datei mit `slideClasses: cite`, siehe [Beispiel](#cite-als-eigene-datei).
 
 ### codeSmall
 
@@ -420,8 +421,9 @@ Ohne `class="list"` erscheinen Absätze ohne Aufzählungszeichen (z. B. für ein
 | `classes` | Zusätzliche Klassen, durch Leerzeichen getrennt (siehe unten). |
 | `width` | `width`-Attribut des Bildes, meist `"auto"`, sonst z. B. `"40%"`. |
 | `bu` | Bildunterschrift (Markdown/HTML). |
+| `credit` | Bildnachweis unter der Bildunterschrift, klein (Markdown/HTML): `"credit":"[Arngren Electronics](https://www.arngren.net/)"` |
+| `alt` | Alternativtext (`screenshot`, `image`). Ohne Angabe wird der Text der `bu` verwendet. Wenn die `bu` eine Frage ist (»Und hier?«), sollte `alt` beschreiben, was zu sehen ist. |
 | `badge` | Badge oben auf der Folie (Markdown/HTML), z. B. `"must have"`. |
-| `credit` | **Wirkt derzeit nicht.** Bildnachweise per [HTML](#bild-mit-bildnachweis). |
 
 ### Klassen für Folien und HTML
 
@@ -508,6 +510,9 @@ Wird gebraucht, wenn ein Kapitel mitten im Ablauf eine Anleitung oder Liste zeig
 ```
 
 ### Bild mit Bildnachweis
+
+Mit Shortcode: `{% screenshot "./images/messy-website.jpg", '{"classes":"no-shadow", "bu":"Wie ist die Hierarchie der Elemente?", "credit":"[Arngren Electronics](https://www.arngren.net/)", "alt":"Überladene Website mit vielen Produktbildern"}' %}`. Als HTML:
+
 
 ```html
 <section class="image screenshot no-shadow" data-transition="fade">
@@ -697,13 +702,8 @@ PDF: `?print-pdf` an die URL hängen und im Browser drucken.
 
 Diese Punkte sind im Code so, die Doku beschreibt den Ist-Zustand:
 
-- **`interlude` und `simpleText` erwarten die Transition als String.** Wer JSON übergibt (`'{"transition":"slide"}'`), erzeugt kaputtes HTML (`data-transition="{"…`). Richtig: `{% interlude "Titel", "Untertitel", "slide" %}`.
 - `important` ignoriert eine Transition, `statement` kennt nur `backgroundTransition`.
-- `cite` ignoriert das zweite Argument (Autor).
 - `qa` gibt die Antwort roh aus, Markdown wird nicht umgesetzt.
-- Das Prop `credit` bei `screenshot`, `screenshotFs`, `image` wird nicht ausgegeben.
-- Als `alt`-Text der Shortcode-Bilder wird der Dateipfad gesetzt.
-- `footer` erscheint nur bei `wrap`, `code`, `codeSmall`, nicht bei `images`.
 - Die `index.md` wird als letzte Folie gerendert (siehe [`index.md`](#indexmd)).
 - Sortierung als String (siehe [Dateinamen](#dateinamen-und-reihenfolge)).
 

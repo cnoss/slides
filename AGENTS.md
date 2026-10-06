@@ -212,13 +212,14 @@ transition: convex
 
 ## Technische Fallstricke
 
-- **Transition bei `interlude` und `simpleText` ist ein String als drittes Argument**, kein JSON: `{% interlude "Titel", "Untertitel", "slide" %}`. JSON erzeugt kaputtes HTML.
+- Transition bei `interlude` und `simpleText` als String im dritten Argument: `{% interlude "Titel", "Untertitel", "slide" %}`.
 - Props sind ein JSON-String in **einfachen** Anführungszeichen mit **doppelten** innen: `'{"bu":"Text"}'`. Gültiges JSON: keine Kommas am Ende, keine einfachen Anführungszeichen innen. Ein Apostroph im Text (»geht's«) zerbricht den String, wenn das Argument in einfachen Anführungszeichen steht. Dann das Argument in doppelte Anführungszeichen setzen und innere doppelte Anführungszeichen mit `\"` maskieren.
 - Folien-Shortcodes (`screenshot`, `interlude`, `question`, `qa`, `statement` …) erzeugen `<section>`s und gehören in `images`- oder `wrap`-Dateien, nicht in `simple`.
 - Bausteine (`fragment`, `text`, `niceToKnow`) gehören in eine Folie (`simple`-Datei oder `<section class="simple">`).
-- `cite` nimmt nur ein Argument. Autor: eigene Datei mit `slideClasses: cite` und `author:`. Keine eigenen Anführungszeichen, die setzt das CSS.
+- `cite`: `{% cite "Zitat", "Autor" %}`. Keine eigenen Anführungszeichen, die setzt das CSS.
 - `qa` gibt die Antwort als rohes HTML aus. Dort kein Markdown, sondern `<strong>`, `<br>`, `<small>`.
-- Prop `credit` wirkt nicht. Bildnachweise in die `bu` schreiben oder das HTML-Muster »Bild mit Bildnachweis« aus dem README nehmen.
+- Bildnachweise ins Prop `credit` (Markdown-Link), nicht in die `bu`.
+- **Alt-Text:** Ohne Prop `alt` wird die `bu` als Alternativtext genommen. Ist die `bu` eine Frage oder ein Label, setze `"alt"` mit einer kurzen Beschreibung dessen, was zu sehen ist.
 - `*Wort*` wird in Shortcodes zu `<mark>`, `**Wort**` zu fettem Lila. Sparsam einsetzen.
 - Nutze nur Klassen, die im README stehen. Erfinde keine neuen, und schreib kein Inline-CSS, solange es nicht unvermeidbar ist.
 - `speaker`, `badge`, `footer` gelten für die ganze Datei, nicht für einzelne Folien.

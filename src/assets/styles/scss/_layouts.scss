@@ -115,6 +115,13 @@
         margin: 0;
         transform: translateX(-50%);
       }
+
+      cite {
+        display: table;
+        margin-top: var(--m);
+        margin-bottom: 0;
+        transform: translateX(-50%);
+      }
     }
 
     cite {

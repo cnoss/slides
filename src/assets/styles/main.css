@@ -1085,6 +1085,12 @@ a.is-black:hover {
   margin: 0;
   transform: translateX(-50%);
 }
+.cite blockquote.typo-quote cite {
+  display: table;
+  margin-top: var(--m);
+  margin-bottom: 0;
+  transform: translateX(-50%);
+}
 .cite blockquote cite {
   display: block;
   margin-bottom: var(--half);
