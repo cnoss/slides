@@ -1,12 +1,12 @@
 ---
-title: Gestaltungsparameter
+title: Visuelle Variablen am Punkt
 layout: presentation.11ty.js
 slideClasses: wrap
 transition: zoom
 
 ---
 
-{% interlude "Gestaltungsparameter", "Position des Elements" %}
+{% interlude "Visuelle Variable", "Position" %}
 
 <section data-auto-animate class="image screenshot" data-transition="fade" data-background-color="#666">
   <figure>
@@ -56,7 +56,7 @@ transition: zoom
   </figure>
 </section>
 
-{% interlude "Gestaltungsparameter", "Größe des Elements" %}
+{% interlude "Visuelle Variable", "Größe" %}
 
 <section data-auto-animate class="image screenshot" data-transition="fade" data-background-color="#666">
   <figure>
