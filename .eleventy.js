@@ -242,6 +242,20 @@ module.exports = function (eleventyConfig) {
     return `<section data-slide-shortcode-class="screenshot" class="image screenshot ${classes}" ${dataTransition} ${dataBackgroundTransition}><figure><img src="${imgSrc}" alt="${getAltText(propData)}" ${width}>${buHtml}</figure>${badge}</section>`;
   });
 
+  /* frame: Bühne und Format für eigene SVG-Visualisierungen (siehe README, Visualisierungsregeln) */
+  eleventyConfig.addPairedShortcode('frame', (content, props) => {
+    const p = props ? JSON.parse(props) : {};
+    const w = p.w || 600;
+    const h = p.h || 600;
+    const stage = p.stage || '#666666';
+    const transition = p.transition || 'fade';
+    const animate = p.animate === false ? '' : 'data-auto-animate';
+    const classes = p.classes || '';
+    const bu = p.bu ? `<figcaption class="bu is-dark"><p>${insertMarkup(p.bu)}</p></figcaption>` : '';
+    const inner = content.split('\n').map((l) => l.trim()).filter(Boolean).join('');
+    return `<section ${animate} data-slide-shortcode-class="frame" class="image screenshot ${classes}" data-transition="${transition}" data-background-color="${stage}"><figure><svg data-id="frame" viewBox="0 0 ${w} ${h}" style="height:66vh; width:auto; max-width:90vw;"><rect x="0" y="0" width="${w}" height="${h}" fill="#ffffff" />${inner}</svg>${bu}</figure></section>`;
+  });
+
   eleventyConfig.addShortcode('image', (imgSrc, props) => {
     const propData = (props) ? JSON.parse(props) : {};
     const badge = propData && propData.badge ? badgeHtml(insertMarkup(propData.badge)) : '';

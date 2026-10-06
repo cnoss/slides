@@ -7,11 +7,11 @@ typ: "Prinzip"
 gruppe: "Gruppieren"
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Was nah beieinander steht, gehört zusammen. Innen enger als außen"
+begriffe: ["Gesetz der Nähe", "Gruppierung", "Weißraum"]
 herkunft: "U: gestaltgesetze/020"
 inhalt:
   - "Gesetz der Nähe"
   - "Abstand zeigt Beziehung"
-status: entwurf
+status: ok
 ---

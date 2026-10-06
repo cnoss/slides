@@ -410,6 +410,17 @@ Ohne `class="list"` erscheinen Absätze ohne Aufzählungszeichen (z. B. für ein
 
 `{% text content %}`: hüllt beliebigen Inhalt in ein `<div>`.
 
+### frame
+
+`{% frame props %} … {% endframe %}`: Folie für eigene Visualisierungen mit grauer Bühne und weißem Format. Im Inneren stehen nur die SVG-Elemente. Props: `w`, `h` (Format, Standard 600 × 600), `bu`, `transition`, `animate` (Standard: an), `stage`, `classes`. Regeln siehe [Visualisierungsregeln](#visualisierungsregeln).
+
+```
+{% frame '{"bu":"Nähe"}' %}
+  <circle data-id="a" cx="200" cy="300" r="20" fill="#231f20" />
+  <circle data-id="b" cx="260" cy="300" r="20" fill="#9313ce" />
+{% endframe %}
+```
+
 ## Props und Klassen
 
 ### Props für `screenshot`, `screenshotFs`, `image`
@@ -683,6 +694,21 @@ slideClasses: outro
 transition: convex
 ---
 ```
+
+## Visualisierungsregeln
+
+Leitbild: Otl Aicher und Bauhaus. So reduziert, einfach und prägnant wie möglich. Ausführlich im Rückgrat (Obsidian, "Screendesign Rückgrat").
+
+- **Drei Stufen:** abstrakt (Grundformen im Format), schematisch (Wireframe), real (aktueller Screenshot)
+- **Bühne und Format:** weißes Format auf #666666, Format immer sichtbar. 600 × 600, quer 900 × 500, hoch 450 × 900
+- **Farbe:** Schwarz #231f20, Grau #888888 und #d9d9d9, genau eine Akzentfarbe Lila #9313ce für das, worauf es ankommt
+- **Form:** flach, keine Schatten, Verläufe oder Texturen, konstruiert auf Raster, Winkel 90° und 45°
+- **Wireframe:** Text = Balken #d9d9d9, Überschrift = Balken #888888, Bild = graue Fläche, Button = Pille oder Rechteck, Rahmen = 2 px #888888
+- **Perspektive:** nur Isometrie (30°), keine Fluchtpunkte
+- **Variation:** pro Folienwechsel ändert sich genau eine Variable, Elemente behalten ihre `data-id` (Auto-Animate)
+- **Beschriftung:** keine Schrift in der Grafik, Erklärung in die Bildunterschrift, Quelle in die Speaker Notes
+- **Barrierefreiheit:** Kontrast, Akzent nie nur über Farbe, jede Grafik mit Bildunterschrift
+- **Screenshots:** 1440 oder 390 px breit, ohne Cookie-Banner, höchstens zwei Jahre alt, Quelle und Jahr in die Bildunterschrift
 
 ## Präsentieren
 
