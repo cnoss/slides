@@ -8,7 +8,7 @@ gruppe: "Fundament"
 tiefe: ""
 einsatz: ""
 kurzsatz: "Position, Größe, Form, Helligkeit, Farbe, Richtung, Textur: das Alphabet jeder Gestaltung"
-begriffe: ["Visuelle Variable", "Format", "Gestaltungsparameter"]
+begriffe: ["Visuelle Variable", "Format", "Gestaltungsparameter", "Design Token"]
 herkunft: "U: design-in-der-medieninformatik/060, punkt/040, linie/020, 030"
 inhalt:
   - "Visuelle Variablen (Bertin)"
