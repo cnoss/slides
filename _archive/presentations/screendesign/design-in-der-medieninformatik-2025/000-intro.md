@@ -9,6 +9,6 @@ transition: zoom
 
 # Design in der Medieninformatik
 
-## Gutes Auge, präzise Sprache
+## ---
 
 </div>
