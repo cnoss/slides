@@ -9,4 +9,4 @@ speaker: |
 
 {% statement "Begründen Sie, warum.", "Jede Entscheidung braucht ein Warum." %}
 
-{% statement "Woran Sie merken, dass Sie es tun", "Sie können zu jeder Farbe, jedem Abstand und jeder Schrift in Ihrem Entwurf sagen, warum sie so ist. Und warum nicht anders." %}
+{% statement "Woran merken Sie, dass Sie Ihre Entscheidungen begründen?", "Sie können zu jeder Farbe, jedem Abstand und jeder Schrift in Ihrem Entwurf sagen, warum sie so ist. Und warum nicht anders." %}

@@ -10,5 +10,3 @@ speaker: |
 ---
 
 {% statement "»Gefällt mir« ist kein Argument.", "Geschmack ist privat. Wirkung lässt sich beschreiben, prüfen und begründen." %}
-
-{% statement "Woran Sie merken, dass Sie es tun", "Sie sagen nicht »schön«, sondern was das Gestaltungsmittel bewirkt: »Die große Headline zieht den Blick zuerst nach oben, der Button ist das einzige farbige Element.«" %}
