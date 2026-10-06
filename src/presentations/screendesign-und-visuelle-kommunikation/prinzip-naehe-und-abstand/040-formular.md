@@ -5,6 +5,7 @@ slideClasses: wrap
 status: ok
 speaker: |
   Ein Formular als Wireframe. Grau: Beschriftung, Rahmen: Eingabefeld, Lila: Absenden. Links sind alle Abstände gleich: Gehört die Beschriftung zum Feld darüber oder darunter? Rechts ist nur der Abstand verändert, sonst nichts.
+transition: none
 ---
 
 {% frame '{"bu":"Gleiche Abstände: Gehört die Beschriftung zum Feld darüber oder darunter?"}' %}

@@ -412,7 +412,7 @@ Ohne `class="list"` erscheinen Absätze ohne Aufzählungszeichen (z. B. für ein
 
 ### frame
 
-`{% frame props %} … {% endframe %}`: Folie für eigene Visualisierungen mit grauer Bühne und weißem Format. Im Inneren stehen nur die SVG-Elemente. Props: `w`, `h` (Format, Standard 600 × 600), `bu`, `transition`, `animate` (Standard: an), `stage`, `classes`. Regeln siehe [Visualisierungsregeln](#visualisierungsregeln).
+`{% frame props %} … {% endframe %}`: Folie für eigene Visualisierungen mit grauer Bühne und weißem Format. Im Inneren stehen nur die SVG-Elemente. Props: `w`, `h` (Format, Standard 600 × 600), `bu`, `transition` (Standard: `none`), `animate` (Standard: an), `stage`, `classes`. Frame-Folien haben keinen Übergang, auch der Hintergrund blendet nicht. Bewegung entsteht nur über Auto-Animate. Dateien mit Frames bekommen im Front Matter `transition: none`. Regeln siehe [Visualisierungsregeln](#visualisierungsregeln).
 
 ```
 {% frame '{"bu":"Nähe"}' %}
@@ -706,6 +706,7 @@ Leitbild: Otl Aicher und Bauhaus. So reduziert, einfach und prägnant wie mögli
 - **Wireframe:** Text = Balken #d9d9d9, Überschrift = Balken #888888, Bild = graue Fläche, Button = Pille oder Rechteck, Rahmen = 2 px #888888
 - **Perspektive:** nur Isometrie (30°), keine Fluchtpunkte
 - **Variation:** pro Folienwechsel ändert sich genau eine Variable, Elemente behalten ihre `data-id` (Auto-Animate)
+- **Übergänge:** keine. Frame-Folien schneiden hart, die Bühne bleibt stehen, nur die Elemente bewegen sich
 - **Beschriftung:** keine Schrift in der Grafik, Erklärung in die Bildunterschrift, Quelle in die Speaker Notes
 - **Barrierefreiheit:** Kontrast, Akzent nie nur über Farbe, jede Grafik mit Bildunterschrift
 - **Screenshots:** 1440 oder 390 px breit, ohne Cookie-Banner, höchstens zwei Jahre alt, Quelle und Jahr in die Bildunterschrift

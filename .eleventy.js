@@ -248,12 +248,12 @@ module.exports = function (eleventyConfig) {
     const w = p.w || 600;
     const h = p.h || 600;
     const stage = p.stage || '#666666';
-    const transition = p.transition || 'fade';
+    const transition = p.transition || 'none';
     const animate = p.animate === false ? '' : 'data-auto-animate';
     const classes = p.classes || '';
     const bu = p.bu ? `<figcaption class="bu is-dark"><p>${insertMarkup(p.bu)}</p></figcaption>` : '';
     const inner = content.split('\n').map((l) => l.trim()).filter(Boolean).join('');
-    return `<section ${animate} data-slide-shortcode-class="frame" class="image screenshot ${classes}" data-transition="${transition}" data-background-color="${stage}"><figure><svg data-id="frame" viewBox="0 0 ${w} ${h}" style="height:66vh; width:auto; max-width:90vw;"><rect x="0" y="0" width="${w}" height="${h}" fill="#ffffff" />${inner}</svg>${bu}</figure></section>`;
+    return `<section ${animate} data-slide-shortcode-class="frame" class="image screenshot ${classes}" data-transition="${transition}" data-background-transition="none" data-background-color="${stage}"><figure><svg data-id="frame" viewBox="0 0 ${w} ${h}" style="height:66vh; width:auto; max-width:90vw;"><rect x="0" y="0" width="${w}" height="${h}" fill="#ffffff" />${inner}</svg>${bu}</figure></section>`;
   });
 
   eleventyConfig.addShortcode('image', (imgSrc, props) => {

@@ -5,6 +5,7 @@ slideClasses: wrap
 status: ok
 speaker: |
   Dieselben 16 Punkte, nur die Abstände ändern sich. Erst gleichmäßig: ein Feld. Dann Spalten, dann Zeilen. Fragen: Was sehen Sie jetzt? Wie viele Gruppen?
+transition: none
 ---
 
 {% frame '{"bu":"Gleiche Abstände: ein Feld"}' %}
