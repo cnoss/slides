@@ -7,12 +7,12 @@ typ: "Prinzip"
 gruppe: "Verstehen"
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Funktion, Zielgruppe und Nutzungskontext kommen vor der Form"
+begriffe: ["Zielgruppe", "Nutzungskontext", "Mentales Modell"]
 herkunft: "N"
 inhalt:
   - "Erst wofür und für wen, dann wie"
   - "Nutzungskontext bestimmt Gestaltung"
   - "Mentale Modelle"
-status: entwurf
+status: ok
 ---

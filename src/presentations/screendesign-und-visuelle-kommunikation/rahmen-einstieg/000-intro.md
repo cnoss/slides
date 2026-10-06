@@ -9,6 +9,6 @@ transition: zoom
 
 # Design in der Medieninformatik
 
-## Rahmen
+## Gutes Auge, präzise Sprache
 
 </div>

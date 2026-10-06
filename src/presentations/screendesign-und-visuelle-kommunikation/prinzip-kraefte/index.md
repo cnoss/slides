@@ -7,12 +7,12 @@ typ: "Prinzip"
 gruppe: "Ordnen"
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Schwerkraft und Leserichtung wirken auf jedes Element"
+begriffe: ["Schwerkraft", "Leserichtung", "Spannung"]
 herkunft: "B: punkt/020, linie/040"
 inhalt:
   - "Schwerkraft"
   - "Leserichtung"
   - "Richtung hat Bedeutung"
-status: entwurf
+status: ok
 ---

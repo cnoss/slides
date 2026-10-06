@@ -7,10 +7,10 @@ typ: "Rahmen"
 gruppe: ""
 tiefe: ""
 einsatz: "bei Bedarf"
-kurzsatz: ""
+kurzsatz: "Fünf Minuten falten, dann fliegen"
 begriffe: []
 herkunft: "B: screendesign/pausen-und-aufgaben/010"
 inhalt:
   - "Papierflieger-Langflugwettbewerb"
-status: entwurf
+status: ok
 ---

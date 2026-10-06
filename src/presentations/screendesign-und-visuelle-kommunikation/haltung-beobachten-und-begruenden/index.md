@@ -7,12 +7,12 @@ typ: "Haltung"
 gruppe: ""
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Erst beschreiben, dann urteilen, und jede Entscheidung begründen"
+begriffe: ["Wirkung", "Gestaltungsmittel"]
 herkunft: "B: about/250, 260, design-in-der-medieninformatik/010, wahrnehmungsarbeit/320"
 inhalt:
   - "Beobachten vor Bewerten"
   - "Gefällt mir ist kein Argument"
   - "Begründen Sie, warum"
-status: entwurf
+status: ok
 ---

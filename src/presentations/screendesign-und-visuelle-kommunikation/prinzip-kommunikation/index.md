@@ -7,12 +7,12 @@ typ: "Prinzip"
 gruppe: "Fundament"
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Jedes Element sendet etwas, auch das ungestaltete"
+begriffe: ["Sender", "Empfänger", "Code", "Störung", "Vier-Seiten-Modell"]
 herkunft: "U: visuelle-wahrnehmung/020, semiotik/010"
 inhalt:
   - "Man kann nicht nicht kommunizieren"
   - "Vier-Seiten-Modell"
   - "Kommunikationsmodell (Methode, kennen)"
-status: entwurf
+status: ok
 ---

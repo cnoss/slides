@@ -9,6 +9,6 @@ transition: zoom
 
 # Aktive Pause
 
-## Rahmen
+## Papierflieger-Langflugwettbewerb
 
 </div>

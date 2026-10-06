@@ -9,6 +9,6 @@ transition: zoom
 
 # Die fünf Elemente
 
-## Rahmen
+## Wie dieses Modul aufgebaut ist
 
 </div>

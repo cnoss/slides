@@ -7,11 +7,11 @@ typ: "Prinzip"
 gruppe: "Fundament"
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Zeichen haben eine Form, eine Bedeutung und eine Wirkung auf Menschen"
+begriffe: ["Syntaktik", "Semantik", "Pragmatik", "Zeichen"]
 herkunft: "B: semiotik"
 inhalt:
   - "Syntaktik, Semantik, Pragmatik"
   - "Semiotische Analyse (Methode, kennen)"
-status: entwurf
+status: ok
 ---

@@ -7,11 +7,11 @@ typ: "Prinzip"
 gruppe: "Ordnen"
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Ordnen Sie Elemente so eindeutig wie möglich an. Zufall oder Gestaltung muss erkennbar sein"
+begriffe: ["Eindeutigkeit", "Anordnung", "Absicht"]
 herkunft: "U: eindeutigkeit, punkt/060"
 inhalt:
   - "Eindeutigkeit"
   - "Zufall oder Gestaltung"
-status: entwurf
+status: ok
 ---
