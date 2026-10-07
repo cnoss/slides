@@ -3,6 +3,18 @@ const fitTextElements = document.querySelectorAll(".js-fit-text");
 /* Functions
 ############################################################################ */
 
+const updateNotesOverlay = () => {
+  const overlay = document.querySelector(".notes-overlay");
+  const slide = Reveal.getCurrentSlide();
+  if (!overlay || !slide) return;
+
+  // bei verschachtelten Folien (wrap) hängen die Notizen an der äußeren .mi-slide
+  const outerSlide = slide.closest(".mi-slide");
+  const notes = slide.querySelector("aside.notes") || (outerSlide && outerSlide.querySelector("aside.notes"));
+  overlay.innerHTML = notes ? notes.innerHTML : "<p><em>Keine Notizen auf dieser Folie.</em></p>";
+  overlay.scrollTop = 0;
+};
+
 const addCopyToClipboard = () => {
   const present = document.querySelector(".mi-slide.present");
   const codeBlocks = present.querySelectorAll("pre .hljs, pre .code");
@@ -64,19 +76,25 @@ Reveal.on( 'ready', event => {
     });
   }
 
-  const speakerNotes = document.querySelectorAll(".notes");
+  // Speaker Notes als eigenes Overlay im body: innerhalb der Folie hebelt
+  // der transform von .slides position:fixed und damit das Scrollen aus
+  const notesOverlay = document.createElement("div");
+  notesOverlay.classList.add("notes-overlay");
+  notesOverlay.setAttribute("data-prevent-swipe", "");
+  document.body.appendChild(notesOverlay);
+
   // wenn der Nutzer die taste "i" drückt, dann zeige die Speaker Notes an/ verstecke sie wieder
   document.addEventListener("keydown", (event) => {
     if (event.key === "i") {
-      speakerNotes.forEach(note => {
-        note.classList.toggle("is-active");
-      });
+      updateNotesOverlay();
+      notesOverlay.classList.toggle("is-active");
     }
   });
 } );
 
 Reveal.on('slidechanged', event => {
 
+  updateNotesOverlay();
   addCopyToClipboard();
   reorderFooter();
 

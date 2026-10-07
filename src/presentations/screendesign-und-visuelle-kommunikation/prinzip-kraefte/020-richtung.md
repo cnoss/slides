@@ -18,10 +18,10 @@ speaker: |
 {% screenshot "./images/040-Linie.007.jpeg", '{"transition":"none", "classes":"has-black-bg"}' %}
 {% screenshot "./images/040-Linie.008.jpeg", '{"transition":"none", "classes":"has-black-bg"}' %}
 {% screenshot "./images/040-Linie.009.jpeg", '{"transition":"none", "classes":"has-black-bg"}' %}
-{% screenshotFs "./images/kraefte-shanghai-tower.jpg", '{"transition":"none", "bu":"Kraftvoll, strebt nach oben: Shanghai Tower<br><small>Foto: Ermell, CC0, Wikimedia Commons</small>"}' %}
-{% screenshotFs "./images/kraefte-oculus.jpg", '{"transition":"none", "bu":"Kraftvoll, strebt nach oben: Oculus, World Trade Center, New York (Santiago Calatrava)<br><small>Foto: Chris Hunkeler, CC BY-SA 2.0, Wikimedia Commons</small>"}' %}
-{% screenshotFs "./images/kraefte-bambuswald.jpg", '{"transition":"none", "bu":"Kraftvoll, strebt nach oben: Bambuswald Wugayan, Taiwan<br><small>Foto: 大頭家族, CC BY-SA 2.0, Wikimedia Commons</small>"}' %}
-{% screenshot "./images/040-Linie.010.jpeg", '{"transition":"none", "classes":"has-black-bg"}' %}
+{% screenshotFs "./images/kraefte-shanghai-tower.jpg", '{"transition":"none", "bu":"Kraftvoll, strebt nach oben: Shanghai Tower", "credit":"Foto: Ermell, [CC0](https://creativecommons.org/publicdomain/zero/1.0/), via Wikimedia Commons"}' %}
+{% screenshotFs "./images/kraefte-oculus.jpg", '{"transition":"none", "bu":"Kraftvoll, strebt nach oben: Oculus, World Trade Center, New York (Santiago Calatrava)", "credit":"Foto: Chris Hunkeler, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/), via Wikimedia Commons"}' %}
+{% screenshotFs "./images/kraefte-bambuswald.jpg", '{"transition":"none", "bu":"Kraftvoll, strebt nach oben: Bambuswald Wugayan, Taiwan", "credit":"Foto: 大頭家族, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/), via Wikimedia Commons"}' %}
+{% screenshotFs "./images/kraefte-bristol-kathedrale.jpg", '{"transition":"none", "bu":"Kraftvoll, strebt nach oben: Gotik, Kathedrale von Bristol", "credit":"Foto: [Diliff](https://commons.wikimedia.org/wiki/File:Bristol_Cathedral_Nave,_Looking_West,_Bristol,_UK_-_Diliff.jpg), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons"}' %}
 {% screenshot "./images/040-Linie.011.jpeg", '{"transition":"none", "classes":"has-black-bg"}' %}
 {% screenshot "./images/040-Linie.012.jpeg", '{"transition":"none", "classes":"has-black-bg"}' %}
 {% screenshot "./images/040-Linie.013.jpeg", '{"transition":"none", "classes":"has-black-bg"}' %}

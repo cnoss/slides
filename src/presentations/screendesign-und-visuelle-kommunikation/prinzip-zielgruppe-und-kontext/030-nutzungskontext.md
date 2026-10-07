@@ -13,4 +13,4 @@ speaker: |
 
 {% statement "Der Nutzungskontext bestimmt die Gestaltung.", "Unterwegs, am Schreibtisch, unter Stress: Der Kontext ändert die Anforderungen." %}
 
-{% question "Dieselbe Bahn-App", "Am Schreibtisch, am Bahnsteig im Regen, mit einem Kind auf dem Arm. Was muss die Gestaltung jeweils leisten?" %}
+{% question "DB Navigator", "Am Schreibtisch, am Bahnsteig im Regen, mit einem Kind auf dem Arm. Was muss die Gestaltung jeweils leisten?" %}

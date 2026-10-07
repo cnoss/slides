@@ -1309,6 +1309,7 @@ a.is-black:hover {
 }
 .interlude .title strong {
   font-weight: var(--fw-bold);
+  color: inherit;
 }
 .interlude .subtitle {
   padding: 0;
@@ -1321,6 +1322,7 @@ a.is-black:hover {
 }
 .interlude .subtitle strong {
   font-weight: var(--fw-bold);
+  color: inherit;
 }
 .interlude .subtitle small {
   font-size: var(--m);
@@ -1908,31 +1910,42 @@ a.is-black:hover {
 .notes {
   opacity: 0;
 }
-.notes.is-active {
-  display: block !important;
+
+.notes-overlay {
+  display: none;
+}
+.notes-overlay.is-active {
+  display: block;
   top: 0;
   right: 0;
   width: 33%;
-  bottom: 0;
+  height: 100vh;
+  box-sizing: border-box;
   position: fixed;
   background-color: var(--darkest);
   color: var(--lightest);
+  font-size: var(--s);
   padding: var(--m);
   z-index: 1000;
   opacity: 0.9;
-  overflow-y: scroll;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  pointer-events: auto;
 }
-.notes.is-active * {
+.notes-overlay.is-active * {
   line-height: var(--lh-normal);
 }
-.notes.is-active p {
+.notes-overlay.is-active p {
   margin-bottom: var(--s);
   animation: none;
 }
-.notes.is-active ul, .notes.is-active ol {
+.notes-overlay.is-active strong, .notes-overlay.is-active b {
+  font-weight: var(--fw-medium);
+}
+.notes-overlay.is-active ul, .notes-overlay.is-active ol {
   margin-left: var(--m);
 }
-.notes.is-active ul li, .notes.is-active ol li {
+.notes-overlay.is-active ul li, .notes-overlay.is-active ol li {
   margin-bottom: var(--xs);
 }
 

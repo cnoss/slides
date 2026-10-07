@@ -14,7 +14,7 @@ speaker: |
 
 {% interlude "Für wen ist das?", "Funktion & Zielgruppe" %}
 
-{% screenshot "./images/zielgruppe-medikamente.png", '{"transition":"fade", "classes": "shadow", "width":"auto", "bu":"Für wen ist das? Woran sehen Sie das?"}' %}
+{% screenshot "./images/zielgruppe-medikamente.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"Für wen ist das? Woran sehen Sie das?"}' %}
 
 {% screenshot "./images/design-basics-a.png", '{"transition":"fade", "classes": "no-shadow", "width":"auto", "bu":"Gleiches Thema, zwei Hefte. Für wen ist welches?"}' %}
 
