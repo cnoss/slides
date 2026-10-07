@@ -10,7 +10,7 @@ speaker: |
 
   **Hintergrund**
 
-  "Shift Left" kommt aus der Softwareentwicklung: Tests und Qualitätssicherung wandern auf der Zeitachse eines Projekts nach links, also nach vorne. Der Begriff wird Larry Smith (2001) zugeschrieben.
+  »Shift Left« kommt aus der Softwareentwicklung: Tests und Qualitätssicherung wandern auf der Zeitachse eines Projekts nach links, also nach vorne. Der Begriff wird Larry Smith (2001) zugeschrieben.
 
   In Deutschland gilt seit dem 28. Juni 2025 das Barrierefreiheitsstärkungsgesetz (BFSG). Es setzt den European Accessibility Act um und verpflichtet viele digitale Angebote, etwa Online-Shops und Bankdienstleistungen, zur Barrierefreiheit. Maßstab sind die WCAG.
 ---

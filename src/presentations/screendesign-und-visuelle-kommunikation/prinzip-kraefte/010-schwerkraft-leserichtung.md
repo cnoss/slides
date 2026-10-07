@@ -10,7 +10,7 @@ speaker: |
 
   **Hintergrund**
 
-  Die Vorstellung, dass in einer Komposition Kräfte wirken, geht vor allem auf Rudolf Arnheim zurück: "Art and Visual Perception" (1954, deutsch "Kunst und Sehen"). Arnheim beschreibt visuelles Gewicht, Spannung und Gleichgewicht als Wahrnehmungstatsachen, nicht als Geschmacksfragen.
+  Die Vorstellung, dass in einer Komposition Kräfte wirken, geht vor allem auf Rudolf Arnheim zurück: »Art and Visual Perception« (1954, deutsch »Kunst und Sehen«). Arnheim beschreibt visuelles Gewicht, Spannung und Gleichgewicht als Wahrnehmungstatsachen, nicht als Geschmacksfragen.
 
   Die Leserichtung ist gelernt, nicht angeboren. Für Seiten mit gleichmäßig verteilter Information hat der Zeitungsgestalter Edmund C. Arnold das Gutenberg-Diagramm beschrieben: Der Blick startet oben links und endet unten rechts.
 ---

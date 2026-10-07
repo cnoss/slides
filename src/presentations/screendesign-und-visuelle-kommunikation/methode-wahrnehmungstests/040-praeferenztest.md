@@ -7,7 +7,7 @@ transition: none
 speaker: |
   Der Präferenztest (Tiefe: kennen) vergleicht zwei oder mehr Varianten: Welche bevorzugen Sie, und warum? Das Warum ist der eigentliche Ertrag. Die Mehrheit allein sagt wenig, die Begründungen zeigen, worauf es ankommt.
 
-  Beispiel: zwei Varianten einer Produktkarte. A betont die Handlung, B den Preis. Kurz abstimmen lassen, dann nach Gründen fragen. Gut kombinierbar mit dem Semantischen Differential, wenn es um Wirkung geht ("Welche wirkt vertrauenswürdiger?").
+  Beispiel: zwei Varianten einer Produktkarte. A betont die Handlung, B den Preis. Kurz abstimmen lassen, dann nach Gründen fragen. Gut kombinierbar mit dem Semantischen Differential, wenn es um Wirkung geht (»Welche wirkt vertrauenswürdiger?«).
 
   Online-Werkzeuge wie Lyssna (früher UsabilityHub) bieten 5-Sekunden-Tests und Präferenztests mit externen Testpersonen an.
 ---

@@ -6,13 +6,13 @@ status: ok
 speaker: |
   **Live-Test (ca. 5 Minuten)**
 
-  Zwei Freiwillige mit Handy, jeweils im privaten Fenster, rufen check24.de auf. Person A stimmt allen Cookies zu. Person B erlaubt nur die notwendigen. Alle anderen stoppen die Zeit. Vorher selbst prüfen, ob das Banner noch so aussieht (Stand Oktober 2026: großer blauer Button "Geht klar", daneben "Anpassen", und "Nur notwendige Cookies" als kleiner Textlink oben rechts).
+  Zwei Freiwillige mit Handy, jeweils im privaten Fenster, rufen check24.de auf. Person A stimmt allen Cookies zu. Person B erlaubt nur die notwendigen. Alle anderen stoppen die Zeit. Vorher selbst prüfen, ob das Banner noch so aussieht (Stand Oktober 2026: großer blauer Button »Geht klar«, daneben »Anpassen«, und »Nur notwendige Cookies« als kleiner Textlink oben rechts).
 
   Auflösung: Ablehnen ist möglich, kostet aber mehr Wahrnehmungsarbeit. Der Link ist klein, steht abseits und sieht nicht aus wie ein Button. Die meisten nehmen den einfachen Weg. Genau darauf ist das gestaltet.
 
-  Zum Vergleich: Bei Otto steht "Einwilligung ablehnen" auf der ersten Ebene, aber grau und flach neben einem roten "OK". dm und die Deutsche Bahn zeigen beide Möglichkeiten gleichwertig.
+  Zum Vergleich: Bei Otto steht »Einwilligung ablehnen« auf der ersten Ebene, aber grau und flach neben einem roten »OK«. dm und die Deutsche Bahn zeigen beide Möglichkeiten gleichwertig.
 
-  Viele Nachrichtenseiten (z. B. Spiegel, Zeit, Chefkoch, GMX) setzen inzwischen auf "Pur-Abos": Ablehnen heißt dort bezahlen.
+  Viele Nachrichtenseiten (z. B. Spiegel, Zeit, Chefkoch, GMX) setzen inzwischen auf »Pur-Abos«: Ablehnen heißt dort bezahlen.
 
   **Hintergrund**
 

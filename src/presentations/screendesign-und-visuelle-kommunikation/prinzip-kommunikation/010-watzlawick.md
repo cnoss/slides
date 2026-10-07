@@ -8,7 +8,7 @@ status: ok
 speaker: |
   **Zum Selbstlernen**
 
-  "Man kann nicht nicht kommunizieren" ist das erste von fünf Axiomen der Kommunikation, die Paul Watzlawick, Janet Beavin und Don Jackson 1967 in "Menschliche Kommunikation" (Pragmatics of Human Communication) formuliert haben.
+  »Man kann nicht nicht kommunizieren« ist das erste von fünf Axiomen der Kommunikation, die Paul Watzlawick, Janet Beavin und Don Jackson 1967 in »Menschliche Kommunikation« (Pragmatics of Human Communication) formuliert haben.
 
   Der Gedanke: Jedes Verhalten hat Mitteilungscharakter. Und weil man sich nicht nicht verhalten kann, kann man auch nicht nicht kommunizieren. Auch Schweigen, Weggucken oder Nichtstun sagt etwas.
 

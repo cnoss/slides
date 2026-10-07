@@ -8,9 +8,9 @@ speaker: |
 
   Papier und Stift. Jeder Screen erscheint beim Weiterschalten für genau 5 Sekunden und verschwindet dann von selbst. Danach eine Minute still schreiben, erst dann der nächste Screen. Am Ende zu zweit vergleichen und gemeinsam auflösen.
 
-  Screen 1: linear.app, ein Werkzeug für Projekt- und Aufgabenplanung in Softwareteams. Der Claim "The product development system for teams and agents" ist für Außenstehende schwer zu entschlüsseln. Typische Antworten: "irgendwas mit KI", "Software", "keine Ahnung".
+  Screen 1: linear.app, ein Werkzeug für Projekt- und Aufgabenplanung in Softwareteams. Der Claim »The product development system for teams and agents« ist für Außenstehende schwer zu entschlüsseln. Typische Antworten: »irgendwas mit KI«, »Software«, »keine Ahnung«.
 
-  Screen 2: Too Good To Go, eine App gegen Lebensmittelverschwendung. Der Claim "Rette gute Lebensmittel vor der Verschwendung" ist sofort klar, die Handlung (App herunterladen) meist auch.
+  Screen 2: Too Good To Go, eine App gegen Lebensmittelverschwendung. Der Claim »Rette gute Lebensmittel vor der Verschwendung« ist sofort klar, die Handlung (App herunterladen) meist auch.
 
   Auswertung an der Tafel: Bei welchem Screen sind die Antworten einheitlicher? Woran liegt das? Was würden Sie bei Screen 1 ändern?
 

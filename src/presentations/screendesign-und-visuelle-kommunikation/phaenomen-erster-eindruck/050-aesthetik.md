@@ -8,7 +8,7 @@ speaker: |
 
   **Hintergrund**
 
-  Masaaki Kurosu und Kaori Kashimura (Hitachi, 1995) ließen 26 Varianten eines Geldautomaten-Layouts bewerten: Die ästhetische Bewertung hing enger mit der eingeschätzten Benutzbarkeit zusammen als die tatsächlichen Eigenschaften der Layouts. Noam Tractinsky hat das 1997 in Israel wiederholt, der Effekt war dort noch stärker, und es 2000 auf die Formel "What is beautiful is usable" gebracht.
+  Masaaki Kurosu und Kaori Kashimura (Hitachi, 1995) ließen 26 Varianten eines Geldautomaten-Layouts bewerten: Die ästhetische Bewertung hing enger mit der eingeschätzten Benutzbarkeit zusammen als die tatsächlichen Eigenschaften der Layouts. Noam Tractinsky hat das 1997 in Israel wiederholt, der Effekt war dort noch stärker, und es 2000 auf die Formel »What is beautiful is usable« gebracht.
 
   Quellen: Yablonski, Laws of UX (Aesthetic-Usability Effect); Lidwell, Universal Principles of Design (Aesthetic-Usability Effect).
 ---

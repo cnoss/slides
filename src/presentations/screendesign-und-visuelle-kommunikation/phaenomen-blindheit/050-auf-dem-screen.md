@@ -5,7 +5,7 @@ slideClasses: wrap
 status: ok
 transition: none
 speaker: |
-  Ein Formular als Wireframe. Der gestrichelte Kreis ist der Blick: Wer gerade auf "Absenden" geklickt hat, schaut auf den Button. Erscheint die Fehlermeldung oben, wird sie leicht übersehen, besonders wenn die Seite dabei neu lädt (Unterbrechung wie beim Flimmern). Typische Folge: Menschen klicken mehrfach auf Absenden und denken, das Formular sei kaputt.
+  Ein Formular als Wireframe. Der gestrichelte Kreis ist der Blick: Wer gerade auf »Absenden« geklickt hat, schaut auf den Button. Erscheint die Fehlermeldung oben, wird sie leicht übersehen, besonders wenn die Seite dabei neu lädt (Unterbrechung wie beim Flimmern). Typische Folge: Menschen klicken mehrfach auf Absenden und denken, das Formular sei kaputt.
 
   Besser: Die Rückmeldung erscheint dort, wo der Blick ist, und markiert das betroffene Feld. Im Kleinen genauso: Ein Warenkorb-Zähler, der sich beim Seitenwechsel still um eins erhöht, wird oft nicht bemerkt.
 ---

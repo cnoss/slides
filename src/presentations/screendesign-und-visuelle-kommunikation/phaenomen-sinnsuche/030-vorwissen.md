@@ -8,7 +8,7 @@ speaker: |
 
   Ein paar Steine reichen, aber nur, wenn man die Figuren kennt. Wer die Simpsons nie gesehen hat, sieht bunte Türme. Gut fragen: Wer hat etwas erkannt, wer nicht? Die Unterschiede im Raum zeigen, dass Erkennen vom Vorwissen abhängt, auch kulturell.
 
-  Wortspiel zum Merken: In "Erkennen" steckt "kennen".
+  Wortspiel zum Merken: In »Erkennen« steckt »kennen«.
 ---
 
 {% statement "In »Erkennen« steckt »kennen«.", "Wir sehen, was wir schon kennen." %}

@@ -11,7 +11,7 @@ speaker: |
 
   **Hintergrund**
 
-  Das Signal-Rausch-Verhältnis stammt aus der Nachrichtentechnik (Shannon, 1948). In der Gestaltung: Lidwell, Universal Principles of Design (Signal-to-Noise Ratio). Verwandt ist Edward Tuftes "Data-Ink Ratio" für Diagramme (The Visual Display of Quantitative Information, 1983): Möglichst viel der Tinte soll Daten zeigen.
+  Das Signal-Rausch-Verhältnis stammt aus der Nachrichtentechnik (Shannon, 1948). In der Gestaltung: Lidwell, Universal Principles of Design (Signal-to-Noise Ratio). Verwandt ist Edward Tuftes »Data-Ink Ratio« für Diagramme (The Visual Display of Quantitative Information, 1983): Möglichst viel der Tinte soll Daten zeigen.
 ---
 
 {% frame '{"bu":"Viel Rauschen: Was ist hier das Signal?"}' %}

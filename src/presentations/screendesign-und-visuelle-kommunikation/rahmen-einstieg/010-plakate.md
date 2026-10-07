@@ -9,7 +9,7 @@ speaker: |
   - 6 bis 8 Plakate aus der Kick-off-Abgabe zeigen, anonym und nummeriert.
   - Paare einigen sich in einer Minute auf ihren Favoriten. Dann Handzeichen.
   - 2 bis 3 Paare fragen: Warum genau dieses Plakat?
-  - Die Begründungen wörtlich an die Tafel schreiben. Erwartbar: "sieht gut aus", "gefällt mir", "modern", "clean".
+  - Die Begründungen wörtlich an die Tafel schreiben. Erwartbar: »sieht gut aus«, »gefällt mir«, »modern«, »clean«.
   - Die Tafel stehen lassen. Am Ende der Methode Beschreibungsraster kommen wir darauf zurück.
 
   **Kernaussage:** Wir merken, dass uns Kriterien und Vokabular fehlen. Genau das bauen wir heute auf.

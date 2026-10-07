@@ -8,7 +8,7 @@ speaker: |
 
   **Hintergrund**
 
-  Claude E. Shannon hat das Modell 1948 an den Bell Labs für die Nachrichtentechnik entwickelt ("A Mathematical Theory of Communication"), 1949 als Buch gemeinsam mit Warren Weaver. Es beschreibt die technische Übertragung von Signalen. Die Kommunikationswissenschaft hat es später um Bedeutung, Zeichenvorrat und Rückkopplung erweitert.
+  Claude E. Shannon hat das Modell 1948 an den Bell Labs für die Nachrichtentechnik entwickelt (»A Mathematical Theory of Communication«), 1949 als Buch gemeinsam mit Warren Weaver. Es beschreibt die technische Übertragung von Signalen. Die Kommunikationswissenschaft hat es später um Bedeutung, Zeichenvorrat und Rückkopplung erweitert.
 ---
 
 {% interlude "Kommunikation" , "Was heißt/ ist das?"%}

@@ -12,7 +12,7 @@ speaker: |
 
   **Und anderswo? (ca. 5 Minuten)**
 
-  Vier Seiten, die aus europäischer Sicht oft als "zu voll" gelten und in ihrem Kontext sehr erfolgreich sind. Die Studierenden aus diesen Designkulturen als Expert:innen einbinden: Was ist dort normal, was gilt als vertrauenswürdig, was als billig?
+  Vier Seiten, die aus europäischer Sicht oft als »zu voll« gelten und in ihrem Kontext sehr erfolgreich sind. Die Studierenden aus diesen Designkulturen als Expert:innen einbinden: Was ist dort normal, was gilt als vertrauenswürdig, was als billig?
 
   Häufig genannte Erklärungsansätze, ausdrücklich keine Gesetze: Chinesische und japanische Schriftzeichen tragen mehr Information pro Zeichen, dichte Seiten wirken für Lesende dieser Schriften weniger voll. Viel Information auf einen Blick kann als Zeichen von Vollständigkeit und Vertrauen gelesen werden. In Sprachen, die von rechts nach links geschrieben werden, spiegelt sich das ganze Layout, inklusive Navigation und Leserichtung. In vielen Märkten wird zuerst und vor allem mobil gelesen.
 

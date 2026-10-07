@@ -9,7 +9,7 @@ speaker: |
 
   **Hintergrund**
 
-  Die ersten systematischen Bordsteinabsenkungen entstanden in den 1940er-Jahren in Kalamazoo (Michigan) für Kriegsversehrte. Bekannt wurden sie durch die Behindertenrechtsbewegung in Berkeley Anfang der 1970er-Jahre. Den Begriff "Curb-Cut Effect" hat Angela Glover Blackwell 2017 im Stanford Social Innovation Review geprägt.
+  Die ersten systematischen Bordsteinabsenkungen entstanden in den 1940er-Jahren in Kalamazoo (Michigan) für Kriegsversehrte. Bekannt wurden sie durch die Behindertenrechtsbewegung in Berkeley Anfang der 1970er-Jahre. Den Begriff »Curb-Cut Effect« hat Angela Glover Blackwell 2017 im Stanford Social Innovation Review geprägt.
 
   Quelle: Laura Kalbag, Accessibility for Everyone (2017).
 ---

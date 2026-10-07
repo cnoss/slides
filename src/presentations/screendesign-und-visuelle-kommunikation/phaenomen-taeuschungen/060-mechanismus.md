@@ -8,7 +8,7 @@ speaker: |
 
   **Hintergrund**
 
-  Der britische Psychologe Richard L. Gregory beschrieb Wahrnehmung als Bildung von Hypothesen: The Intelligent Eye (1970), Eye and Brain (1966, 5. Auflage 1997). Der Gedanke geht auf Hermann von Helmholtz zurück, der schon 1867 von "unbewussten Schlüssen" sprach.
+  Der britische Psychologe Richard L. Gregory beschrieb Wahrnehmung als Bildung von Hypothesen: The Intelligent Eye (1970), Eye and Brain (1966, 5. Auflage 1997). Der Gedanke geht auf Hermann von Helmholtz zurück, der schon 1867 von »unbewussten Schlüssen« sprach.
 
   Quelle: Ware, Visual Thinking for Information Design.
 ---

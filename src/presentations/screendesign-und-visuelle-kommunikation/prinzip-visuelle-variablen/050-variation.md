@@ -6,7 +6,7 @@ transition: zoom
 speaker: |
   **Hintergrund**
 
-  Max Bill (1908 bis 1994), Bauhaus-Schüler und Mitgründer der Hochschule für Gestaltung Ulm, Hauptvertreter der Konkreten Kunst. "Quinze variations sur un même thème" (1935 bis 1938): ein Thema, fünfzehn systematische Variationen.
+  Max Bill (1908 bis 1994), Bauhaus-Schüler und Mitgründer der Hochschule für Gestaltung Ulm, Hauptvertreter der Konkreten Kunst. »Quinze variations sur un même thème« (1935 bis 1938): ein Thema, fünfzehn systematische Variationen.
 
   Yayoi Kusama (geboren 1929), japanische Künstlerin. Ihre Punkträume (Infinity Rooms, Obliteration Rooms) zeigen, wie die Masse eines einzigen Elements Raum und Wahrnehmung verändert.
 ---

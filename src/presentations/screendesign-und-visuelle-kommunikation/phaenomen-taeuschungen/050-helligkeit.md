@@ -7,7 +7,7 @@ transition: none
 speaker: |
   Hermann-Gitter: An den Kreuzungen der weißen Straßen erscheinen graue Flecken, aber nie an der Kreuzung, die man gerade direkt anschaut. Mehr Abstand schwächt den Effekt.
 
-  Adelson-Schachbrett: Die Felder A und B haben exakt denselben Grauwert. Das Gehirn rechnet den Schatten des Zylinders heraus und "sieht" B heller, weil es weiß, dass ein Feld im Schatten dunkler aussehen müsste.
+  Adelson-Schachbrett: Die Felder A und B haben exakt denselben Grauwert. Das Gehirn rechnet den Schatten des Zylinders heraus und »sieht« B heller, weil es weiß, dass ein Feld im Schatten dunkler aussehen müsste.
 
   **Hintergrund**
 

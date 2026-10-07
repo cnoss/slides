@@ -9,7 +9,7 @@ speaker: |
 
   Wir nehmen Screen A aus Runde 1 und beschreiben ihn gemeinsam entlang des Rasters. Erst die Studierenden fragen, dann den jeweiligen Schritt einblenden.
 
-  Pointe: Die Beschreibung ist nicht länger als die aus Runde 1, aber sie hat eine Reihenfolge. Und sie benennt Verhältnisse ("größtes Element", "volle Breite", "am unteren Rand") statt nur Dinge aufzuzählen.
+  Pointe: Die Beschreibung ist nicht länger als die aus Runde 1, aber sie hat eine Reihenfolge. Und sie benennt Verhältnisse (»größtes Element«, »volle Breite«, »am unteren Rand«) statt nur Dinge aufzuzählen.
 ---
 
 {% interlude "Einmal zusammen", "Screen A aus Runde 1, diesmal mit Raster" %}

@@ -4,7 +4,7 @@ layout: presentation.11ty.js
 slideClasses: wrap
 status: ok
 speaker: |
-  Jede gestalterische Entscheidung braucht ein Warum: die Farbe, der Abstand, die Schrift. "Hab ich so gemacht" ist kein Warum. Später im Semester: Methode Entscheidungslog.
+  Jede gestalterische Entscheidung braucht ein Warum: die Farbe, der Abstand, die Schrift. »Hab ich so gemacht« ist kein Warum. Später im Semester: Methode Entscheidungslog.
 ---
 
 {% statement "Begründen Sie, warum.", "Jede Entscheidung braucht ein Warum." %}

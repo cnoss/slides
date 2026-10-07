@@ -8,7 +8,7 @@ speaker: |
 
   Aufgabe vorher klar ansagen: Zählen Sie still, wie oft die Spieler:innen in Weiß den Ball passen. Nicht reinrufen. Nach dem Video erst die Zahl abfragen, dann die anderen Fragen.
 
-  "The Monkey Business Illusion" ist für Menschen gedacht, die den berühmten Gorilla-Test schon kennen: Wer auf den Gorilla wartet, sieht ihn, übersieht dafür aber anderes. Auflösung nach dem Video im Video selbst.
+  »The Monkey Business Illusion« ist für Menschen gedacht, die den berühmten Gorilla-Test schon kennen: Wer auf den Gorilla wartet, sieht ihn, übersieht dafür aber anderes. Auflösung nach dem Video im Video selbst.
 
   Backup, falls jemand das Video kennt oder es nicht lädt: das Original von 1999 als nächste Folie.
 

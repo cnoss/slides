@@ -12,7 +12,7 @@ speaker: |
 
   **Hintergrund**
 
-  Das "Persona Spectrum" stammt aus dem Microsoft Inclusive Design Toolkit (2016). Kat Holmes, die es mitentwickelt hat, beschreibt Behinderung dort als Missverhältnis zwischen Mensch und Umgebung, nicht als Eigenschaft eines Menschen (Kat Holmes: Mismatch, 2018).
+  Das »Persona Spectrum« stammt aus dem Microsoft Inclusive Design Toolkit (2016). Kat Holmes, die es mitentwickelt hat, beschreibt Behinderung dort als Missverhältnis zwischen Mensch und Umgebung, nicht als Eigenschaft eines Menschen (Kat Holmes: Mismatch, 2018).
 ---
 
 {% statement "Gestalten Sie für die Ränder.", "Extreme Nutzungssituationen zeigen, was eine Lösung leisten muss." %}

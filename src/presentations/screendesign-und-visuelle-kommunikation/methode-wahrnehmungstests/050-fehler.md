@@ -4,7 +4,7 @@ layout: presentation.11ty.js
 slideClasses: simple
 status: ok
 speaker: |
-  Der häufigste Fehler im Studium: im eigenen Team testen. Wer den Entwurf kennt, sieht, was er sehen soll. Zweithäufigster: "Gefällt es Ihnen?" fragen. Das misst Geschmack, nicht Wirkung (Haltung: Gefällt mir ist kein Argument).
+  Der häufigste Fehler im Studium: im eigenen Team testen. Wer den Entwurf kennt, sieht, was er sehen soll. Zweithäufigster: »Gefällt es Ihnen?« fragen. Das misst Geschmack, nicht Wirkung (Haltung: Gefällt mir ist kein Argument).
 ---
 
 {% fragment '<p class="list">Im eigenen Team testen, mit Leuten, die den Entwurf kennen</p>' %}

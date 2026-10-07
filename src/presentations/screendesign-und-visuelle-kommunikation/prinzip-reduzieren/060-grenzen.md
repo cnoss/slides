@@ -4,7 +4,7 @@ layout: presentation.11ty.js
 slideClasses: wrap
 status: ok
 speaker: |
-  Zu viel Reduktion schadet auch: Icons ohne Beschriftung, die niemand versteht. Navigation im Hamburger-Menü, die keiner findet (was man nicht sieht, wird seltener genutzt). Grau auf Grau, weil es "clean" aussieht, aber nicht mehr lesbar ist.
+  Zu viel Reduktion schadet auch: Icons ohne Beschriftung, die niemand versteht. Navigation im Hamburger-Menü, die keiner findet (was man nicht sieht, wird seltener genutzt). Grau auf Grau, weil es »clean« aussieht, aber nicht mehr lesbar ist.
 
   Reduzieren heißt nicht, Information zu verstecken, die gebraucht wird. Progressive Disclosure ist der Mittelweg: erst das Nötige, Details auf Anfrage (siehe Prinzip Entscheiden erleichtern).
 ---

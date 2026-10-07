@@ -6,11 +6,11 @@ status: ok
 speaker: |
   Einstieg in eine Veranstaltung über Wahrnehmung: Wer weiß, wie Wahrnehmung funktioniert, kann Blicke lenken, Entscheidungen erleichtern und Dinge verstecken. Dieses Wissen wirkt in beide Richtungen.
 
-  Medieninformatiker:innen entwerfen und bauen. Wer baut, entscheidet mit, auch wenn der Entwurf von anderen kommt. Methodischer Partner: der Crit mit der Frage "Wem nützt das?", später im Semester der Verantwortungs-Check.
+  Medieninformatiker:innen entwerfen und bauen. Wer baut, entscheidet mit, auch wenn der Entwurf von anderen kommt. Methodischer Partner: der Crit mit der Frage »Wem nützt das?«, später im Semester der Verantwortungs-Check.
 
   **Hintergrund**
 
-  Den Begriff "Dark Patterns" hat der britische UX-Designer Harry Brignull 2010 geprägt. Seine Sammlung heißt heute "Deceptive Patterns" (Buch 2023, deceptive.design). Gemeint sind Gestaltungen, die Menschen zu etwas bringen, das sie eigentlich nicht wollen: falsche Dringlichkeit, versteckte Kosten, erschwertes Kündigen.
+  Den Begriff »Dark Patterns« hat der britische UX-Designer Harry Brignull 2010 geprägt. Seine Sammlung heißt heute »Deceptive Patterns« (Buch 2023, deceptive.design). Gemeint sind Gestaltungen, die Menschen zu etwas bringen, das sie eigentlich nicht wollen: falsche Dringlichkeit, versteckte Kosten, erschwertes Kündigen.
 
   Inzwischen ist das auch Recht: Der Digital Services Act der EU (2022, Art. 25) verbietet Online-Plattformen Gestaltungen, die Nutzende täuschen oder manipulieren. In Deutschland verlangt § 312k BGB seit Juli 2022 einen Kündigungsbutton für online abgeschlossene Verträge.
 

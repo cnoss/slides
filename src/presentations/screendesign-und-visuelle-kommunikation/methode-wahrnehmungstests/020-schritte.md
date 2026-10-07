@@ -6,7 +6,7 @@ status: ok
 speaker: |
   Der 5-Sekunden-Test prüft den ersten Eindruck: Was bleibt hängen, wenn man fast keine Zeit hat? Fünf Sekunden reichen, um Botschaft, Hierarchie und Hauptaktion zu erfassen, aber nicht, um zu lesen.
 
-  Die drei Standardfragen lassen sich an das Ziel anpassen. Wichtig: offene Fragen, keine Suggestivfragen ("Haben Sie den Button gesehen?").
+  Die drei Standardfragen lassen sich an das Ziel anpassen. Wichtig: offene Fragen, keine Suggestivfragen (»Haben Sie den Button gesehen?«).
 
   **Hintergrund**
 

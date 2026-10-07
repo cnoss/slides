@@ -11,7 +11,7 @@ speaker: |
 
   Ohne die leere Fläche dazwischen würde die Veränderung sofort ins Auge springen: Das periphere Sehen reagiert stark auf Bewegung. Die Unterbrechung löscht genau dieses Signal. Die nächste Folie zeigt die Auflösung.
 
-  Das Flimmern ist eine SVG-Animation. Bei aktivierter Einstellung "Bewegung reduzieren" im Betriebssystem bleibt das Bild stehen.
+  Das Flimmern ist eine SVG-Animation. Bei aktivierter Einstellung »Bewegung reduzieren« im Betriebssystem bleibt das Bild stehen.
 ---
 
 {% frame '{"bu":"Was verändert sich? Hand hoch, wenn Sie es gefunden haben."}' %}

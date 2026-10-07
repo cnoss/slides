@@ -5,7 +5,7 @@ slideClasses: images
 status: ok
 transition: zoom
 speaker: |
-  Kandinskys "Punkt und Linie zu Fläche" erschien 1926 als Band 9 der Bauhausbücher, also vor genau 100 Jahren. Es ist bis heute eine der Grundlagen der Gestaltungslehre.
+  Kandinskys »Punkt und Linie zu Fläche« erschien 1926 als Band 9 der Bauhausbücher, also vor genau 100 Jahren. Es ist bis heute eine der Grundlagen der Gestaltungslehre.
 
   Die Pointe: Alle visuellen Variablen gelten schon für das kleinste Element. Im Workshop reduzieren wir alles auf einen Punkt im Format und schauen, was Position, Größe und Anzahl allein schon bewirken.
 ---

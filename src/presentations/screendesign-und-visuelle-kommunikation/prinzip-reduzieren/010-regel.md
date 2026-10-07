@@ -8,7 +8,7 @@ speaker: |
 
   **Hintergrund**
 
-  John Maeda: The Laws of Simplicity (2006), Law 1: Reduce. "Less is more" wird Ludwig Mies van der Rohe zugeschrieben, der es zu seinem Leitsatz machte. Die Wendung selbst ist älter, sie steht schon in Robert Brownings Gedicht "Andrea del Sarto" (1855).
+  John Maeda: The Laws of Simplicity (2006), Law 1: Reduce. »Less is more« wird Ludwig Mies van der Rohe zugeschrieben, der es zu seinem Leitsatz machte. Die Wendung selbst ist älter, sie steht schon in Robert Brownings Gedicht »Andrea del Sarto« (1855).
 
   Moles nennt Reduzieren als ersten von drei Wegen, Wahrnehmungsarbeit zu senken, vor Strukturieren und Hierarchisieren.
 ---
