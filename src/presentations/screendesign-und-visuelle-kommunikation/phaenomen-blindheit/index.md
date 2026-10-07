@@ -7,11 +7,11 @@ typ: "Phänomen"
 gruppe: ""
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Wer auf etwas achtet, übersieht anderes, auch große Veränderungen"
+begriffe: ["Unaufmerksamkeitsblindheit", "Veränderungsblindheit", "Selektive Aufmerksamkeit"]
 herkunft: "U: wahrnehmungsarbeit/060 und neu"
 inhalt:
   - "Unaufmerksamkeitsblindheit"
   - "Change Blindness"
-status: entwurf
+status: ok
 ---
