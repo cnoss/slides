@@ -7,11 +7,11 @@ typ: "Phänomen"
 gruppe: ""
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Über eine Website wird in Sekundenbruchteilen geurteilt, und das Urteil färbt alles Weitere"
+begriffe: ["Erster Eindruck", "Prototypikalität", "Visuelle Komplexität", "Ästhetik-Usability-Effekt"]
 herkunft: "U: wahrnehmungsarbeit/330 und neu"
 inhalt:
   - "Ersteindruck in 50 ms"
   - "Ästhetik-Usability-Effekt"
-status: entwurf
+status: ok
 ---
