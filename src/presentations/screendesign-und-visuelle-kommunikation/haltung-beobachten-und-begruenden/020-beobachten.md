@@ -7,6 +7,10 @@ speaker: |
   Die Grundhaltung des Moduls. Wer sofort wertet, sieht danach nur noch Belege für das eigene Urteil. Wer erst beschreibt, sieht mehr und kann andere mitnehmen. Methodischer Partner: Beschreibungsraster.
 
   **Mini-Übung (ca. 3 Minuten):** Ling's Cars noch einmal zeigen. Erst ein Wort reinrufen lassen (Bewertung: "chaotisch", "hässlich"). Dann zu zweit eine Minute: nur beschreiben, was zu sehen ist. Unterschied gemeinsam benennen.
+
+  **Hintergrund**
+
+  Die Trennung von Beobachtung und Bewertung ist ein Kernelement der Gewaltfreien Kommunikation nach Marshall B. Rosenberg. Sie gilt auch im Design-Feedback: Eine Beschreibung lässt sich prüfen und teilen, eine Bewertung nur annehmen oder ablehnen.
 ---
 
 {% statement "Beobachten vor Bewerten.", "Erst beschreiben, was Sie sehen. Dann urteilen." %}

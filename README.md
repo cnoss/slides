@@ -710,6 +710,8 @@ Leitbild: Otl Aicher und Bauhaus. So reduziert, einfach und prägnant wie mögli
 - **Format:** möglichst SVG (inline per `frame` oder als Datei). Animationen im SVG sind erlaubt (CSS oder SMIL), wenn sie dem Punkt dienen: reduziert, eine Bewegung pro Aussage, Easing statt linear, `prefers-reduced-motion` respektieren
 - **Beschriftung:** keine Schrift in der Grafik, Erklärung in die Bildunterschrift, Quelle in die Speaker Notes
 - **Barrierefreiheit:** Kontrast, Akzent nie nur über Farbe, jede Grafik mit Bildunterschrift
+- **Vollbild-Hintergründe** (`screenshotFs`): Der Stapel darf keine Hintergrundklasse wie `has-dark-bg` tragen, sonst verdeckt sie das Bild. Fotos frei lizenziert, Namensnennung und Lizenz in der Bildunterschrift
+- **Infofenster (Taste I) = Speaker Notes:** wissenschaftliche Bezüge (Herkunft, Personen, Literatur mit Jahr) zum Selbstlernen
 - **Screenshots:** 1440 oder 390 px breit, ohne Cookie-Banner, höchstens zwei Jahre alt, Quelle und Jahr in die Bildunterschrift
 
 ## Präsentieren

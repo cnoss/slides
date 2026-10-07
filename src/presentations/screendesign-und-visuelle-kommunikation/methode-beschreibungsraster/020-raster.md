@@ -12,6 +12,10 @@ speaker: |
   Die Reihenfolge ist kein Zufall. Wer mit Details anfängt ("oben links ist ein kleines Icon"), verliert die Zuhörer:innen, bevor das Gesamtbild steht. Wer erst Format und Grobstruktur nennt, gibt ein Gerüst, in das sich jedes weitere Detail einsortieren lässt.
 
   Die visuellen Variablen gehen auf Jacques Bertin zurück (Sémiologie graphique, 1967). Ausführlich: Prinzip Visuelle Variablen.
+
+  **Hintergrund**
+
+  Dekomposition ist ein Grundprinzip der Informatik: ein komplexes Problem in kleinere, beherrschbare Teile zerlegen. Das Raster wendet es auf Gestaltung an. Die Reihenfolge vom Großen zum Kleinen folgt dem Prinzip "Overview first, zoom and filter, then details-on-demand" (Ben Shneiderman, 1996).
 ---
 
 {% interlude "Wie beschreiben wir einen Screen?", "Vom Großen zum Kleinen" %}

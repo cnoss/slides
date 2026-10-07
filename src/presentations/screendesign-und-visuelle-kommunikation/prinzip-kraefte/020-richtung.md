@@ -4,6 +4,10 @@ layout: presentation.11ty.js
 slideClasses: wrap
 transition: convex
 status: ok
+speaker: |
+  **Hintergrund**
+
+  Wassily Kandinsky beschreibt in "Punkt und Linie zu Fläche" (1926, Bauhausbuch Band 9) die Waagerechte als kalte, ruhende und die Senkrechte als warme, aktive Form. Dass steigend positiv und fallend negativ wirkt, ist eine kulturell gelernte Lesart, die sich mit der Leserichtung verbindet (siehe auch Kurven in Diagrammen).
 ---
 
 {% statement "Richtung hat Bedeutung", "Waagerecht wirkt ruhig, senkrecht aktiv, steigend positiv, fallend negativ.", '{"backgroundTransition":"slide"}' %}

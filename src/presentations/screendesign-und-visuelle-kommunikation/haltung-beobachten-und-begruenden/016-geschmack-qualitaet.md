@@ -17,6 +17,10 @@ speaker: |
   Häufig genannte Erklärungsansätze, ausdrücklich keine Gesetze: Chinesische und japanische Schriftzeichen tragen mehr Information pro Zeichen, dichte Seiten wirken für Lesende dieser Schriften weniger voll. Viel Information auf einen Blick kann als Zeichen von Vollständigkeit und Vertrauen gelesen werden. In Sprachen, die von rechts nach links geschrieben werden, spiegelt sich das ganze Layout, inklusive Navigation und Leserichtung. In vielen Märkten wird zuerst und vor allem mobil gelesen.
 
   Pointe: Ob uns etwas gefällt, sagt nichts darüber, ob es funktioniert. Qualität misst sich an Ziel, Zielgruppe und Kontext. Und was als schön gilt, ist kulturell gelernt.
+
+  **Hintergrund**
+
+  Ästhetik-Usability-Effekt: Masaaki Kurosu und Kaori Kashimura (1995) zeigten, dass als schön empfundene Oberflächen auch als leichter benutzbar eingeschätzt werden. Ästhetik wirkt also, auch wenn sie nicht nach Geschmack beurteilt werden sollte.
 ---
 
 <section class="simple" data-transition="fade">

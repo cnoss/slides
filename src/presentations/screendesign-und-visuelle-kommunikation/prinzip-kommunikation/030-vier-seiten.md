@@ -5,6 +5,10 @@ slideClasses: wrap
 status: ok
 speaker: |
   Friedemann Schulz von Thun: Miteinander reden. Jede Nachricht hat vier Seiten. Das gilt auch für Gestaltung. Gut für Analyse und Crit: Was sagt dieser Screen auf jeder der vier Seiten?
+
+  **Hintergrund**
+
+  Friedemann Schulz von Thun: "Miteinander reden 1" (1981). Das Modell baut auf zwei Vorläufern auf: dem Organon-Modell von Karl Bühler (1934) mit den Funktionen Darstellung, Ausdruck und Appell und auf Watzlawicks Unterscheidung von Inhalts- und Beziehungsaspekt (1967). Zum Modell gehören auch die vier Ohren auf der Empfangsseite: Jede Botschaft kann auf jeder Seite anders gehört werden.
 ---
 
 {% statement "Jede Gestaltung sendet vier Botschaften.", "Sachinhalt, Selbstkundgabe, Beziehung, Appell. Vier-Seiten-Modell nach Friedemann Schulz von Thun" %}

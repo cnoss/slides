@@ -9,6 +9,10 @@ speaker: |
   Wichtig ist die Ebene: Basis-Tokens benennen Werte, semantische Tokens benennen Zwecke, Komponenten-Tokens benennen Einsatzorte. Gestaltet wird auf der semantischen Ebene.
 
   Kommt wieder bei: Spacing-System, Typografische Skala, Gestaltungskontext analysieren, Interface-Inventar.
+
+  **Hintergrund**
+
+  Der Begriff Design Token wurde um 2014 bei Salesforce geprägt (Jina Anne und Jon Levine, Lightning Design System). Seit 2019 arbeitet die Design Tokens Community Group des W3C an einem gemeinsamen Austauschformat.
 ---
 
 {% statement "Design Tokens geben visuellen Variablen einen Namen.", "Statt #9313ce heißt es color-accent. Design und Entwicklung sprechen dieselbe Sprache." %}
