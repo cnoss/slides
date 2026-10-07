@@ -31,4 +31,5 @@ Kontaktbogen aus gerenderten Folien: `montage` (ImageMagick) über Python `subpr
 
 - Der Dev-Server lädt Änderungen an `.eleventy.js` erst nach Neustart.
 - Bei Frame-Folien kein Übergang (`transition: none`), sonst blendet die Bühne mit.
+- Speaker Notes mit Guillemets (»…«). `python3 tools/sdvk/guillemets.py dry` listet gerade Anführungszeichen in den Speaker Notes, ohne `dry` werden sie ersetzt.
 - Reveal: Pfeil rechts springt von Stapel zu Stapel, Pfeil runter oder Leertaste geht durch alle Folien.
