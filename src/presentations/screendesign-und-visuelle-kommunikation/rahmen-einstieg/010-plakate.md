@@ -22,5 +22,7 @@ speaker: |
 {% screenshot "./images/plakat-02.jpg", '{"transition":"fade", "classes":"no-shadow", "bu":"2"}' %}
 #}
 
-{% question "Welches Plakat funktioniert am besten?", "Einigen Sie sich zu zweit auf einen Favoriten. Und warum?" %}
+{% question "Welches Plakat funktioniert am besten?", "Einigen Sie sich zu zweit auf einen Favoriten." %}
+
+{% question "Warum ist es Ihr Favorit?", "Begründen Sie Ihre Wahl in einem kurzen Satz." %}
 

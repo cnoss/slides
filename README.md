@@ -707,6 +707,7 @@ Leitbild: Otl Aicher und Bauhaus. So reduziert, einfach und prägnant wie mögli
 - **Perspektive:** nur Isometrie (30°), keine Fluchtpunkte
 - **Variation:** pro Folienwechsel ändert sich genau eine Variable, Elemente behalten ihre `data-id` (Auto-Animate)
 - **Übergänge:** keine. Frame-Folien schneiden hart, die Bühne bleibt stehen, nur die Elemente bewegen sich
+- **Format:** möglichst SVG (inline per `frame` oder als Datei). Animationen im SVG sind erlaubt (CSS oder SMIL), wenn sie dem Punkt dienen: reduziert, eine Bewegung pro Aussage, Easing statt linear, `prefers-reduced-motion` respektieren
 - **Beschriftung:** keine Schrift in der Grafik, Erklärung in die Bildunterschrift, Quelle in die Speaker Notes
 - **Barrierefreiheit:** Kontrast, Akzent nie nur über Farbe, jede Grafik mit Bildunterschrift
 - **Screenshots:** 1440 oder 390 px breit, ohne Cookie-Banner, höchstens zwei Jahre alt, Quelle und Jahr in die Bildunterschrift

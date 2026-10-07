@@ -4,7 +4,7 @@ layout: presentation.11ty.js
 slideClasses: wrap
 status: ok
 speaker: |
-  Alles in diesem Modul ist einem von fünf Elementen zugeordnet. Die Foliensätze tragen den Typ im Titel. Jede Vorlesung setzt sich aus mehreren Bausteinen zusammen.
+  Den organisatorischen Aufbau des Moduls kennen die Studierenden aus der ersten Woche. Hier geht es um die inhaltliche Struktur: Alles in diesem Modul ist einem von fünf Elementen zugeordnet. Die Foliensätze tragen den Typ im Titel. Jede Vorlesung setzt sich aus mehreren Bausteinen zusammen.
 
   Ausführlich: Konzeptseite auf der Modul-Website (wird noch veröffentlicht).
 ---
