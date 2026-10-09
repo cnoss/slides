@@ -27,4 +27,4 @@ speaker: |
   </div>
 </section>
 
-{% question "Und jetzt Sie.", "Runde 2, diesmal mit Raster." %}
+{% question "Und jetzt Sie?", "Optional: Runde 2, mit getauschten Rollen und mit Raster." %}
