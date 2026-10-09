@@ -201,3 +201,5 @@ $RECYCLE.BIN/
 
 compiled-assets/
 docs/
+# Ablage für Rohmaterial (Bilder, Dateien zum Einbauen), nicht versionieren
+_stuff/_input/

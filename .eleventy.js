@@ -62,6 +62,33 @@ const getPresentationData = (collection, pattern) => {
   });
 }
 
+// Akzeptiert die Transition als String ("slide") oder als JSON ('{"transition":"slide"}')
+const parseTransition = (value) => {
+  if (!value) return '';
+  if (typeof value === 'object') return value.transition || '';
+  const trimmed = String(value).trim();
+  if (!trimmed.startsWith('{')) return trimmed;
+  try {
+    return JSON.parse(trimmed).transition || '';
+  } catch (__) {
+    return '';
+  }
+};
+
+const escapeAttr = (string) => String(string)
+  .replace(/&/g, '&amp;')
+  .replace(/"/g, '&quot;')
+  .replace(/</g, '&lt;')
+  .replace(/>/g, '&gt;');
+
+// alt-Text: explizites Prop "alt", sonst der Text der Bildunterschrift ohne Markup
+const getAltText = (propData) => {
+  if (propData.alt !== undefined) return escapeAttr(propData.alt);
+  if (!propData.bu) return '';
+  const plain = String(propData.bu).replace(/<[^>]*>/g, ' ').replace(/[*`]/g, '').replace(/\s+/g, ' ').trim();
+  return escapeAttr(plain);
+};
+
 const renderCode = (code, lang) => {
   return `${highlightCode(lang, code)}`;
 };
@@ -159,6 +186,10 @@ module.exports = function (eleventyConfig) {
     return presentations = getPresentationData(collection, "./src/presentations/screendesign/**/index.md");
   });
 
+  eleventyConfig.addCollection("screendesignUndVisuelleKommunikation", (collection) => {
+    return presentations = getPresentationData(collection, "./src/presentations/screendesign-und-visuelle-kommunikation/**/index.md");
+  });
+
   eleventyConfig.addCollection("misc", (collection) => {
     return presentations = getPresentationData(collection, "./src/presentations/misc/**/index.md");
   });
@@ -205,9 +236,24 @@ module.exports = function (eleventyConfig) {
       : 'data-background-transition="fade"';
     const classes = propData && propData.classes ? propData.classes : '';
     const width = propData && propData.width ? `width="${propData.width}" ` : '';
-    const buCreditHtml = propData && propData.credit ? `<p class="credit">${propData.credit}</p>` : '';
-    const buHtml = propData && propData.bu ? `<figcaption class="bu"><p>${insertMarkup(propData.bu)}</p></figcaption>` : '';
-    return `<section data-slide-shortcode-class="screenshot" class="image screenshot ${classes}" ${dataTransition} ${dataBackgroundTransition}><figure><img src="${imgSrc}" alt="${imgSrc}" ${width}>${buHtml}</figure>${badge}</section>`;
+    const buCreditHtml = propData && propData.credit ? `<p class="credit">${insertMarkupInline(propData.credit)}</p>` : '';
+    const buTextHtml = propData && propData.bu ? `<p>${insertMarkup(propData.bu)}</p>` : '';
+    const buHtml = buTextHtml || buCreditHtml ? `<figcaption class="bu">${buTextHtml}${buCreditHtml}</figcaption>` : '';
+    return `<section data-slide-shortcode-class="screenshot" class="image screenshot ${classes}" ${dataTransition} ${dataBackgroundTransition}><figure><img src="${imgSrc}" alt="${getAltText(propData)}" ${width}>${buHtml}</figure>${badge}</section>`;
+  });
+
+  /* frame: Bühne und Format für eigene SVG-Visualisierungen (siehe README, Visualisierungsregeln) */
+  eleventyConfig.addPairedShortcode('frame', (content, props) => {
+    const p = props ? JSON.parse(props) : {};
+    const w = p.w || 600;
+    const h = p.h || 600;
+    const stage = p.stage || '#666666';
+    const transition = p.transition || 'none';
+    const animate = p.animate === false ? '' : 'data-auto-animate';
+    const classes = p.classes || '';
+    const bu = p.bu ? `<figcaption class="bu is-dark"><p>${insertMarkup(p.bu)}</p></figcaption>` : '';
+    const inner = content.split('\n').map((l) => l.trim()).filter(Boolean).join('');
+    return `<section ${animate} data-slide-shortcode-class="frame" class="image screenshot ${classes}" data-transition="${transition}" data-background-transition="none" data-background-color="${stage}"><figure><svg data-id="frame" viewBox="0 0 ${w} ${h}" style="height:66vh; width:auto; max-width:90vw;"><rect x="0" y="0" width="${w}" height="${h}" fill="#ffffff" />${inner}</svg>${bu}</figure></section>`;
   });
 
   eleventyConfig.addShortcode('image', (imgSrc, props) => {
@@ -218,9 +264,10 @@ module.exports = function (eleventyConfig) {
       : 'data-transition="fade"';
     const classes = propData && propData.classes ? propData.classes : '';
     const width = propData && propData.width ? `width="${propData.width}" ` : '';
-    const buCreditHtml = propData && propData.credit ? `<p class="credit">${propData.credit}</p>` : '';
-    const buHtml = propData && propData.bu ? `<figcaption class="bu"><p>${insertMarkup(propData.bu)}</p></figcaption>` : '';
-    return `<section data-slide-shortcode-class="image" class="image ${classes}" ${dataTransition}><figure><img src="${imgSrc}" alt="${imgSrc}" ${width}>${buHtml}</figure>${badge}</section>`;
+    const buCreditHtml = propData && propData.credit ? `<p class="credit">${insertMarkupInline(propData.credit)}</p>` : '';
+    const buTextHtml = propData && propData.bu ? `<p>${insertMarkup(propData.bu)}</p>` : '';
+    const buHtml = buTextHtml || buCreditHtml ? `<figcaption class="bu">${buTextHtml}${buCreditHtml}</figcaption>` : '';
+    return `<section data-slide-shortcode-class="image" class="image ${classes}" ${dataTransition}><figure><img src="${imgSrc}" alt="${getAltText(propData)}" ${width}>${buHtml}</figure>${badge}</section>`;
   });
 
   eleventyConfig.addShortcode('screenshotFs', (imgSrc, props) => {
@@ -233,8 +280,9 @@ module.exports = function (eleventyConfig) {
       : 'data-background-transition="fade"';
     const badge = propData && propData.badge ? badgeHtml(insertMarkup(propData.badge)) : '';
     const classes = propData && propData.classes ? propData.classes : '';
-    const buCreditHtml = propData && propData.credit ? `<p class="credit">${propData.credit}</p>` : '';
-    const buHtml = propData && propData.bu ? `<div class="bu"><p>${insertMarkup(md.render(propData.bu))}</p></div>` : '';
+    const buCreditHtml = propData && propData.credit ? `<p class="credit">${insertMarkupInline(propData.credit)}</p>` : '';
+    const buTextHtml = propData && propData.bu ? `<p>${insertMarkup(md.render(propData.bu))}</p>` : '';
+    const buHtml = buTextHtml || buCreditHtml ? `<div class="bu">${buTextHtml}${buCreditHtml}</div>` : '';
     return `<section data-slide-shortcode-class="screenshot" class="image is-fullscreen ${classes}" data-background="${imgSrc}" ${dataTransition} ${dataBackgroundTransition}>${buHtml}${badge}</section>`;
   });
 
@@ -252,7 +300,8 @@ module.exports = function (eleventyConfig) {
       return colors[colors.length * Math.random() | 0];
     }
     const htmlSubtitle = subtitle ? `<h2 class="subtitle js-delay">${md.render(subtitle)}</h2>` : '';
-    const dataTransition = transition ? `data-transition="${transition}"` : '';
+    const transitionName = parseTransition(transition);
+    const dataTransition = transitionName ? `data-transition="${transitionName}"` : '';
 
     return `<section data-slide-shortcode-class="interlude" data-background-color="${getRandomBackgroundColor()}" class="image screenshot interlude" ${dataTransition}><div><h1 class="title">${insertMarkup(title)}</h1>${htmlSubtitle}</div></section>`;
   });
@@ -265,14 +314,18 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addShortcode('simpleText', (title, text, transition, props) => {
-    const propData = (props) ? JSON.parse(props) : {};
+    // Props dürfen auch an dritter Stelle stehen: {% simpleText "Titel", "Text", '{"transition":"slide"}' %}
+    const transitionIsJson = typeof transition === 'string' && transition.trim().startsWith('{');
+    const propData = props ? JSON.parse(props) : (transitionIsJson ? JSON.parse(transition) : {});
     const titleHtml = title ? `<h1 class="title">${insertMarkupInline(title)}</h1>` : '';
     const textHtml = text ? insertMarkup(text) : '';
     const classes = propData && propData.classes ? propData.classes : '';
     const badge = propData && propData.badge ? badgeHtml(insertMarkup(propData.badge)) : '';
-    const image = propData && propData.image ? `<img src="${propData.image}">` : '';
-    const dataTransition = transition ? `data-transition="${transition}"` : '';
-    return `<section data-slide-shortcode-class="simple-text" class="simple ${classes}" ${dataTransition}>
+    const image = propData && propData.image ? `<img src="${propData.image}" alt="">` : '';
+    const transitionName = parseTransition(transition) || propData.transition;
+    const dataTransition = transitionName ? `data-transition="${transitionName}"` : '';
+    const dataBackgroundTransition = propData.backgroundTransition ? `data-background-transition="${propData.backgroundTransition}"` : '';
+    return `<section data-slide-shortcode-class="simple-text" class="simple ${classes}" ${dataTransition} ${dataBackgroundTransition}>
     <div class="content">${titleHtml}${textHtml}</div>${image}${badge}</section>`;
   });
 
@@ -335,10 +388,11 @@ module.exports = function (eleventyConfig) {
     return `<section ${dataBackgroundTransition} class="statement"><div><h1 class="title">${insertMarkup(title)}</h1>${fragment}</div></section>`;
   });
 
-  eleventyConfig.addShortcode('cite', (title, content, props) => {
+  eleventyConfig.addShortcode('cite', (title, author, props) => {
     const propData = (props) ? JSON.parse(props) : {};
     const badge = propData && propData.badge ? badgeHtml(insertMarkup(propData.badge)) : '';
-    return `<section data-slide-shortcode-class="cite" class="cite"><div class="cite"><blockquote class="typo-quote"><p>${insertMarkupInline(title)}</p></blockquote></div>${badge}</section>`;
+    const authorHtml = author ? `<cite>${insertMarkupInline(author)}</cite>` : '';
+    return `<section data-slide-shortcode-class="cite" class="cite"><div class="cite"><blockquote class="typo-quote"><p>${insertMarkupInline(title)}</p>${authorHtml}</blockquote></div>${badge}</section>`;
   });
 
   eleventyConfig.addShortcode('niceToKnow', (content, props) => {

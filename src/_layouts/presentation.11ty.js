@@ -57,6 +57,7 @@ const codeWraps = {
   codeSmall(data, html) { return `<div><h1>${data.title}</h1>${data.content}</div>${html.footer}`; },
   embed(data, html) { return `<div><h1>${data.title}</h1><div class="iframe">${data.embedSrc}</div></div>${html.footer}`; },
   wrap(data, html) { return `${data.content}${html.footer}`; },
+  images(data, html) { return `${data.content}${html.footer}`; },
 };
 
 const injectContent = (wrap, data, html) => wrap(data, html);

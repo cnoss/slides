@@ -115,6 +115,13 @@
         margin: 0;
         transform: translateX(-50%);
       }
+
+      cite {
+        display: table;
+        margin-top: var(--m);
+        margin-bottom: 0;
+        transform: translateX(-50%);
+      }
     }
 
     cite {
@@ -305,6 +312,10 @@
     strong{
       font-weight: var(--fw-bold);
     }
+
+    p{
+      margin-bottom: var(--xs);
+    }
   }
 
   div {
@@ -377,6 +388,7 @@
 
     strong{
       font-weight: var(--fw-bold);
+      color: inherit;
     }
   }
 
@@ -390,6 +402,7 @@
     text-wrap: balance;
     strong{
       font-weight: var(--fw-bold);
+      color: inherit;
     }
     small{
       font-size: var(--m);

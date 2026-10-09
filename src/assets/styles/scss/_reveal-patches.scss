@@ -16,20 +16,28 @@
 
 .notes{
   opacity: 0;
+}
+
+.notes-overlay{
+  display: none;
 
   &.is-active{
-    display: block !important;
+    display: block;
     top: 0;
     right: 0;
     width: 33%;
-    bottom: 0;
+    height: 100vh;
+    box-sizing: border-box;
     position: fixed;
     background-color: var(--darkest);
     color: var(--lightest);
+    font-size: var(--s);
     padding: var(--m);
     z-index: 1000;
     opacity: 0.9;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    pointer-events: auto;
 
     *{
       line-height: var(--lh-normal);
@@ -38,6 +46,10 @@
     p{
       margin-bottom: var(--s);
       animation: none;
+    }
+
+    strong, b{
+      font-weight: var(--fw-medium);
     }
 
     ul, ol{
