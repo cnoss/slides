@@ -36,14 +36,6 @@ speaker: |
   </div>
 </section>
 
-<section class="simple" data-transition="fade">
-  <div>
-    <h1>Alle Plakate zum Nachschauen</h1>
-    <div style="display:flex; justify-content:center; margin-top:1rem; width:100%;">
-      <figure style="margin:0; text-align:center;"><img src="./images/qr-plakate-pdf.svg" alt="QR-Code zum PDF mit allen Plakaten" style="width:42vh; height:42vh; margin:0 auto; display:block;"><figcaption><p>PDF mit allen fünf Plakaten, auch auf der Modul-Website</p></figcaption></figure>
-    </div>
-  </div>
-</section>
 
 {% question "Welches Plakat funktioniert am besten?", "Einigen Sie sich zu zweit auf einen Favoriten." %}
 

@@ -68,7 +68,7 @@ speaker: |
 
 <section class="simple" data-transition="fade">
   <div>
-    <h1>Kennen Sie schon: aus CSS</h1>
+    <h1>Gleiches Konzept, konkreter Anwendungsfall: CSS</h1>
     <table style="font-size:0.8em; width:100%;">
       <tr><td><strong>Position</strong></td><td><code>grid-area</code>, <code>margin</code>, <code>inset</code></td></tr>
       <tr><td><strong>Größe</strong></td><td><code>width</code>, <code>height</code>, <code>font-size</code></td></tr>
