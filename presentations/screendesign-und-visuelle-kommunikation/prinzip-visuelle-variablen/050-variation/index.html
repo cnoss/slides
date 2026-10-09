@@ -1,0 +1,444 @@
+<!doctype html>
+  <html lang="de">
+    <head>
+      <title>Max Bill // Christian Noss</title>
+      <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="googlebot-news" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+      <link rel="stylesheet" href="/slides/reveal/dist/reset.css">
+      <link rel="stylesheet" href="/slides/reveal/dist/reveal.css">
+      <link rel="stylesheet" href="/slides/assets/main.css">
+     
+      <link rel="icon" type="image/svg" href="/slides/assets/images/preview_black_24dp.svg">
+  
+      <!-- Theme used for syntax highlighted code -->
+      <link rel="stylesheet" href="/slides/reveal/plugin/highlight/github.css">
+    </head>
+    <body>
+      <div class="reveal">
+        <div class="slides">
+          
+      <section data-slide-class="intro" class="mi-slide 
+      intro " data-background-color="#9313ce"   data-transition="zoom">
+      <div class="is-full-width">
+<h1>Visuelle Variablen</h1>
+<h2>Prinzip // Fundament</h2>
+</div>
+
+      
+      
+      
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section  class="statement"><div><h1 class="title"><p>Jedes Element hat Eigenschaften, mit denen wir gestalten.</p>
+</h1><div class="fragment"><p>Position, Größe, Form, Helligkeit, Farbe, Richtung, Textur: das Alphabet jeder Gestaltung.</p>
+</div></div></section>
+<section  class="statement"><div><h1 class="title"><p>Visuelle Variablen</p>
+</h1><div class="fragment"><p>So nennen wir diese Eigenschaften, nach Jacques Bertin. In älteren Texten und Folien heißen sie auch Gestaltungsparameter. Gemeint ist dasselbe.</p>
+</div></div></section>
+
+      
+      
+      <aside class="notes"><div><p>Jacques Bertin: Sémiologie graphique, 1967 (»variables visuelles«). Wir nutzen im ganzen Modul den Begriff »visuelle Variable«, weil er bis zu Figma-Variablen, Design Tokens und CSS-Variablen trägt. Bertin hat die Variablen für Karten und Diagramme beschrieben. Sie gelten für jede Gestaltung, auch für Screens.</p>
+<p><strong>Hintergrund</strong></p>
+<p>Jacques Bertin (1918 bis 2010), französischer Kartograf, hat die visuellen Variablen 1967 in »Sémiologie graphique« beschrieben. Sein Ziel war eine Grammatik für Karten und Diagramme. Bertin unterscheidet die zwei Dimensionen der Ebene (Position) und sechs weitere Variablen: Größe, Helligkeit, Textur, Farbe, Richtung, Form. Spätere Arbeiten haben die Liste erweitert, etwa um Transparenz und Schärfe (Alan MacEachren, 1995) und die Variablen nach ihrer Eignung geordnet (Jock Mackinlay, 1986).</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section class="image screenshot" data-transition="fade" data-background-color="#666">
+  <figure>
+    <svg viewBox="0 0 1400 300" width="1400" height="300" style="max-width:100%; height:auto;">
+      <defs>
+        <pattern id="bertin-stripes" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="4" height="8" fill="#231f20"/></pattern>
+        <pattern id="bertin-dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="1.8" fill="#231f20"/></pattern>
+      </defs>
+      <g font-family="sans-serif" font-size="30" fill="#fff" text-anchor="middle">
+        <text x="90" y="270">Position</text>
+        <text x="290" y="270">Größe</text>
+        <text x="490" y="270">Form</text>
+        <text x="690" y="270">Helligkeit</text>
+        <text x="890" y="270">Farbe</text>
+        <text x="1090" y="270">Richtung</text>
+        <text x="1290" y="270">Textur</text>
+      </g>
+      <g fill="#fff">
+        <rect x="0" y="40" width="180" height="180"/><rect x="200" y="40" width="180" height="180"/><rect x="400" y="40" width="180" height="180"/><rect x="600" y="40" width="180" height="180"/><rect x="800" y="40" width="180" height="180"/><rect x="1000" y="40" width="180" height="180"/><rect x="1200" y="40" width="180" height="180"/>
+      </g>
+      <g fill="#231f20">
+        <circle cx="40" cy="75" r="14"/><circle cx="95" cy="140" r="14"/><circle cx="145" cy="190" r="14"/>
+        <circle cx="235" cy="130" r="8"/><circle cx="280" cy="130" r="16"/><circle cx="342" cy="130" r="28"/>
+        <circle cx="440" cy="130" r="20"/><rect x="472" y="110" width="40" height="40"/><polygon points="550,110 572,150 528,150"/>
+        <circle cx="640" cy="130" r="20" fill="#231f20"/><circle cx="690" cy="130" r="20" fill="#888"/><circle cx="740" cy="130" r="20" fill="#d4d4d4"/>
+        <circle cx="840" cy="130" r="20" fill="#4952e1"/><circle cx="890" cy="130" r="20" fill="#dd1166"/><circle cx="940" cy="130" r="20" fill="#00ad2f"/>
+        <rect x="1028" y="124" width="36" height="12" rx="6"/><rect x="1072" y="124" width="36" height="12" rx="6" transform="rotate(45 1090 130)"/><rect x="1116" y="124" width="36" height="12" rx="6" transform="rotate(90 1134 130)"/>
+        <circle cx="1240" cy="130" r="20"/><circle cx="1290" cy="130" r="20" fill="url(#bertin-stripes)" stroke="#231f20" stroke-width="2"/><circle cx="1340" cy="130" r="20" fill="url(#bertin-dots)" stroke="#231f20" stroke-width="2"/>
+      </g>
+    </svg>
+    <figcaption class="bu is-dark"><p>Visuelle Variablen nach Jacques Bertin (1967)</p></figcaption>
+  </figure>
+</section>
+<section class="simple" data-transition="fade">
+  <div>
+    <h1>Kennen Sie schon: aus CSS</h1>
+    <table style="font-size:0.8em; width:100%;">
+      <tr><td><strong>Position</strong></td><td><code>grid-area</code>, <code>margin</code>, <code>inset</code></td></tr>
+      <tr><td><strong>Größe</strong></td><td><code>width</code>, <code>height</code>, <code>font-size</code></td></tr>
+      <tr><td><strong>Form</strong></td><td><code>border-radius</code>, <code>clip-path</code></td></tr>
+      <tr><td><strong>Helligkeit</strong></td><td><code>oklch(L …)</code>, <code>opacity</code></td></tr>
+      <tr><td><strong>Farbe</strong></td><td><code>color</code>, <code>background-color</code></td></tr>
+      <tr><td><strong>Richtung</strong></td><td><code>transform: rotate()</code>, <code>writing-mode</code></td></tr>
+      <tr><td><strong>Textur</strong></td><td><code>background-image</code>, <code>mask</code>, <code>filter</code></td></tr>
+    </table>
+  </div>
+</section>
+
+      
+      
+      
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section  class="statement"><div><h1 class="title"><p>Design Tokens geben visuellen Variablen einen Namen.</p>
+</h1><div class="fragment"><p>Statt #9313ce heißt es color-accent. Design und Entwicklung sprechen dieselbe Sprache.</p>
+</div></div></section>
+<section class="simple" data-transition="fade">
+  <div>
+    <h1>Drei Ebenen</h1>
+    <table style="font-size:1em; width:100%;">
+      <tr><td><strong>Basis</strong></td><td>Was gibt es?</td><td><code>purple-500: #9313ce</code></td></tr>
+      <tr class="fragment"><td><strong>Semantisch</strong></td><td>Wofür ist es da?</td><td><code>color-accent: purple-500</code></td></tr>
+      <tr class="fragment"><td><strong>Komponente</strong></td><td>Wo wird es eingesetzt?</td><td><code>button-primary-bg: color-accent</code></td></tr>
+    </table>
+  </div>
+</section>
+<p><section  data-slide-shortcode-class="codeSmall" class="codeSmall"><div><h1 class="title">Im Code</h1><p>Dieselben Tokens als CSS Custom Properties</p></p>
+<pre class="code-wrapper"><samp class="code"><span class="hljs-selector-pseudo">:root</span> {
+  <span class="hljs-attr">--purple-500</span>: <span class="hljs-number">#9313ce</span>;
+  <span class="hljs-attr">--color-accent</span>: <span class="hljs-built_in">var</span>(--purple-<span class="hljs-number">500</span>);
+  <span class="hljs-attr">--space-m</span>: <span class="hljs-number">1rem</span>;
+  <span class="hljs-attr">--radius-pill</span>: <span class="hljs-number">999px</span>;
+}
+
+<span class="hljs-selector-class">.button-primary</span> {
+  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--color-accent);
+  <span class="hljs-attribute">padding</span>: <span class="hljs-built_in">var</span>(--space-m);
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-built_in">var</span>(--radius-pill);
+}</samp></pre></div></section>
+<section  class="statement"><div><h1 class="title"><p>Tokens sind die Übergabe vom Design an die Entwicklung.</p>
+</h1><div class="fragment"><p>Wer in Variablen und Tokens gestaltet, übergibt keine Bilder, sondern Entscheidungen.</p>
+</div></div></section>
+
+      
+      
+      <aside class="notes"><div><p>Design Tokens sind benannte Werte für visuelle Variablen: Farbe, Größe, Abstand, Radius, Schrift, Schatten, Dauer. Sie sind die Schnittstelle zwischen Design und Entwicklung: In Figma als Variablen, im Code als CSS Custom Properties oder JSON. Austauschformat: Design Tokens Community Group des W3C.</p>
+<p>Wichtig ist die Ebene: Basis-Tokens benennen Werte, semantische Tokens benennen Zwecke, Komponenten-Tokens benennen Einsatzorte. Gestaltet wird auf der semantischen Ebene.</p>
+<p>Kommt wieder bei: Spacing-System, Typografische Skala, Gestaltungskontext analysieren, Interface-Inventar.</p>
+<p><strong>Hintergrund</strong></p>
+<p>Der Begriff Design Token wurde um 2014 bei Salesforce geprägt (Jina Anne und Jon Levine, Lightning Design System). Seit 2019 arbeitet die Design Tokens Community Group des W3C an einem gemeinsamen Austauschformat.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="zoom">
+      <section data-slide-shortcode-class="screenshot" class="image screenshot has-dark-bg" data-transition="none" data-background-transition="fade"><figure><img src="./images/punkt-1.svg" alt="" ></figure></section>
+<section data-slide-shortcode-class="screenshot" class="image screenshot has-dark-bg" data-transition="none" data-background-transition="fade"><figure><img src="./images/punkt-2.svg" alt="" ></figure></section>
+<section data-slide-shortcode-class="screenshot" class="image screenshot has-dark-bg" data-transition="none" data-background-transition="fade"><figure><img src="./images/punkt-3.svg" alt="" ></figure></section>
+<section data-slide-shortcode-class="screenshot" class="image screenshot has-dark-bg" data-transition="none" data-background-transition="fade"><figure><img src="./images/punkt-4.svg" alt="" ></figure></section>
+<section data-slide-shortcode-class="screenshot" class="image screenshot has-dark-bg" data-transition="none" data-background-transition="fade"><figure><img src="./images/punkt-5.svg" alt="" ></figure></section>
+<section data-slide-shortcode-class="screenshot" class="image screenshot has-dark-bg" data-transition="none" data-background-transition="fade"><figure><img src="./images/punkt-6.svg" alt="" ></figure></section>
+<section data-slide-shortcode-class="screenshot" class="image screenshot has-dark-bg" data-transition="none" data-background-transition="fade"><figure><img src="./images/punkt-7.svg" alt="" ></figure></section>
+<section data-slide-shortcode-class="screenshot" class="image screenshot has-dark-bg" data-transition="none" data-background-transition="fade"><figure><img src="./images/punkt-8.svg" alt="" ></figure></section>
+<section class="image screenshot" data-transition="fade" data-background-color="#666">
+  <figure>
+    <svg data-id="frame" height="600" width="600">
+    <rect x="0" y="0" width="600" height="600" fill="#ffffff" />
+    <circle cx="300" cy="300" r="20" fill="#000000" />
+</svg> 
+    <figcaption class="bu  is-dark">
+      <p>Format // Darstellungsfläche</p>
+    </figcaption>
+  </figure>
+</section>
+<section class="image screenshot" data-transition="none" data-background-color="#666">
+  <figure>
+    <svg data-id="frame" width="900" height="500">
+    <rect x="0" y="0" width="900" height="500" fill="#ffffff" />
+    <circle cx="450" cy="240" r="20" fill="#000000" />
+</svg> 
+    <figcaption class="bu is-dark">
+      <p>Format // Darstellungsfläche</p>
+    </figcaption>
+  </figure>
+</section>
+<section class="image screenshot" data-transition="none" data-background-color="#666">
+  <figure>
+    <svg data-id="frame" width="450" height="900">
+    <rect  x="0" y="0" width="500" height="900" fill="#ffffff" />
+    <circle cx="240" cy="450" r="20" fill="#000000" />
+</svg> 
+    <figcaption class="bu  is-dark">
+      <p>Format // Darstellungsfläche</p>
+    </figcaption>
+  </figure>
+</section>
+      
+      
+      
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="zoom">
+      <section data-slide-shortcode-class="interlude" data-background-color="#9313ce" class="image screenshot interlude" ><div><h1 class="title"><p>Visuelle Variable</p>
+</h1><h2 class="subtitle js-delay"><p>Position</p>
+</h2></div></section>
+<section data-auto-animate class="image screenshot" data-transition="fade" data-background-color="#666">
+  <figure>
+    <svg data-id="frame" height="600" width="600">
+    <rect x="0" y="0" width="600" height="600" fill="#ffffff" />
+    <circle cx="300" cy="300" r="20" fill="#000000" />
+</svg> 
+    <figcaption class="bu is-dark">
+      <p>Position</p>
+    </figcaption>
+  </figure>
+</section>
+<section data-auto-animate class="image screenshot" data-transition="fade" data-background-transition="none" data-background-color="#666">
+  <figure>
+    <svg data-id="frame" height="600" width="600">
+    <rect x="0" y="0" width="600" height="600" fill="#ffffff" />
+    <circle cx="100" cy="300" r="20" fill="#000000" />
+</svg> 
+    <figcaption class="bu is-dark">
+      <p>Position</p>
+    </figcaption>
+  </figure>
+</section>
+<section data-auto-animate class="image screenshot" data-transition="fade" data-background-transition="none" data-background-color="#666">
+  <figure>
+    <svg data-id="frame" height="600" width="600">
+    <rect x="0" y="0" width="600" height="600" fill="#ffffff" />
+    <circle cx="15" cy="300" r="20" fill="#000000" />
+</svg> 
+    <figcaption class="bu is-dark">
+      <p>Position</p>
+    </figcaption>
+  </figure>
+</section>
+<section data-auto-animate class="image screenshot" data-transition="fade" data-background-transition="none" data-background-color="#666">
+  <figure>
+    <svg data-id="frame" height="600" width="600">
+    <rect x="0" y="0" width="600" height="600" fill="#ffffff" />
+    <circle cx="585" cy="30" r="20" fill="#000000" />
+</svg> 
+    <figcaption class="bu is-dark">
+      <p>Position</p>
+    </figcaption>
+  </figure>
+</section>
+<section data-slide-shortcode-class="interlude" data-background-color="#9313ce" class="image screenshot interlude" ><div><h1 class="title"><p>Visuelle Variable</p>
+</h1><h2 class="subtitle js-delay"><p>Größe</p>
+</h2></div></section>
+<section data-auto-animate class="image screenshot" data-transition="fade" data-background-color="#666">
+  <figure>
+    <svg data-id="frame" height="600" width="600">
+    <rect x="0" y="0" width="600" height="600" fill="#ffffff" />
+    <circle cx="300" cy="300" r="20" fill="#000000" />
+</svg> 
+    <figcaption class="bu is-dark">
+      <p>Größe</p>
+    </figcaption>
+  </figure>
+</section>
+<section data-auto-animate class="image screenshot" data-transition="fade" data-background-color="#666">
+  <figure>
+    <svg data-id="frame" height="600" width="600">
+    <rect x="0" y="0" width="600" height="600" fill="#ffffff" />
+    <circle cx="300" cy="300" r="60" fill="#000000" />
+</svg> 
+    <figcaption class="bu is-dark">
+      <p>Größe</p>
+    </figcaption>
+  </figure>
+</section>
+<section data-auto-animate class="image screenshot" data-transition="fade" data-background-color="#666">
+  <figure>
+    <svg data-id="frame" height="600" width="600">
+    <rect x="0" y="0" width="600" height="600" fill="#ffffff" />
+    <circle cx="300" cy="300" r="100" fill="#000000" />
+</svg> 
+    <figcaption class="bu is-dark">
+      <p>Größe</p>
+    </figcaption>
+  </figure>
+</section>
+<section data-auto-animate class="image screenshot" data-transition="fade" data-background-color="#666">
+  <figure>
+    <svg data-id="frame" height="600" width="600">
+    <rect x="0" y="0" width="600" height="600" fill="#ffffff" />
+    <circle cx="300" cy="300" r="5" fill="#000000" />
+</svg> 
+    <figcaption class="bu is-dark">
+      <p>Größe</p>
+    </figcaption>
+  </figure>
+</section>
+
+      
+      
+      
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="zoom">
+      <section data-slide-shortcode-class="screenshot" class="image screenshot has-dark-bg" data-transition="none" data-background-transition="fade"><figure><img src="./images/bill-overview.png" alt="" ></figure></section>
+<section data-slide-shortcode-class="screenshot" class="image screenshot no-shadow" data-transition="none" data-background-transition="fade"><figure><img src="./images/bill-dots.png" alt="Max Bill: 15 Variationen über ein Thema" width="50%" ><figcaption class="bu"><p><p>Max Bill: 15 Variationen über ein Thema</p>
+</p></figcaption></figure></section>
+<section data-slide-shortcode-class="screenshot" class="image screenshot no-shadow" data-transition="none" data-background-transition="fade"><figure><img src="./images/kusama.jpg" alt="Artwork by Yayoi Kusama, Foto von Susanne Nilsson" width="100%" ><figcaption class="bu"><p><p>Artwork by Yayoi Kusama, Foto von <a href=https://www.flickr.com/photos/infomastern/23118776332>Susanne Nilsson</a></p>
+</p></figcaption></figure></section>
+
+      
+      
+      <aside class="notes"><div><p><strong>Hintergrund</strong></p>
+<p>Max Bill (1908 bis 1994), Bauhaus-Schüler und Mitgründer der Hochschule für Gestaltung Ulm, Hauptvertreter der Konkreten Kunst. »Quinze variations sur un même thème« (1935 bis 1938): ein Thema, fünfzehn systematische Variationen.</p>
+<p>Yayoi Kusama (geboren 1929), japanische Künstlerin. Ihre Punkträume (Infinity Rooms, Obliteration Rooms) zeigen, wie die Masse eines einzigen Elements Raum und Wahrnehmung verändert.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="none">
+      <section  class="statement"><div><h1 class="title"><p>Nicht jede Variable kann alles</p>
+</h1><div class="fragment"><p>Farbton unterscheidet Kategorien. Helligkeit und Größe zeigen eine Rangfolge. Wer Wichtigkeit über Farbton ausdrückt, wird oft nicht verstanden.</p>
+</div></div></section>
+<section data-auto-animate data-slide-shortcode-class="frame" class="image screenshot " data-transition="none" data-background-transition="none" data-background-color="#666666"><figure><svg data-id="frame" viewBox="0 0 900 500" style="height:66vh; width:auto; max-width:90vw;"><rect x="0" y="0" width="900" height="500" fill="#ffffff" /><circle data-id="r0" cx="170" cy="250" r="44" fill="#4952e1" /><circle data-id="r1" cx="310" cy="250" r="44" fill="#dd1166" /><circle data-id="r2" cx="450" cy="250" r="44" fill="#00ad2f" /><circle data-id="r3" cx="590" cy="250" r="44" fill="#9313ce" /><circle data-id="r4" cx="730" cy="250" r="44" fill="#231f20" /></svg><figcaption class="bu is-dark"><p><p>Rangfolge über Farbton: Welcher Punkt ist am wichtigsten?</p>
+</p></figcaption></figure></section>
+<section data-auto-animate data-slide-shortcode-class="frame" class="image screenshot " data-transition="none" data-background-transition="none" data-background-color="#666666"><figure><svg data-id="frame" viewBox="0 0 900 500" style="height:66vh; width:auto; max-width:90vw;"><rect x="0" y="0" width="900" height="500" fill="#ffffff" /><circle data-id="r0" cx="170" cy="250" r="44" fill="#231f20" /><circle data-id="r1" cx="310" cy="250" r="44" fill="#555555" /><circle data-id="r2" cx="450" cy="250" r="44" fill="#888888" /><circle data-id="r3" cx="590" cy="250" r="44" fill="#b3b3b3" /><circle data-id="r4" cx="730" cy="250" r="44" fill="#d9d9d9" /></svg><figcaption class="bu is-dark"><p><p>Rangfolge über Helligkeit: sofort lesbar</p>
+</p></figcaption></figure></section>
+<section data-auto-animate data-slide-shortcode-class="frame" class="image screenshot " data-transition="none" data-background-transition="none" data-background-color="#666666"><figure><svg data-id="frame" viewBox="0 0 900 500" style="height:66vh; width:auto; max-width:90vw;"><rect x="0" y="0" width="900" height="500" fill="#ffffff" /><circle data-id="c0" cx="180" cy="250" r="18" fill="#231f20" /><circle data-id="c1" cx="300" cy="250" r="30" fill="#231f20" /><circle data-id="c2" cx="420" cy="250" r="44" fill="#231f20" /><circle data-id="c3" cx="540" cy="250" r="18" fill="#231f20" /><circle data-id="c4" cx="660" cy="250" r="30" fill="#231f20" /><circle data-id="c5" cx="780" cy="250" r="44" fill="#231f20" /></svg><figcaption class="bu is-dark"><p><p>Drei Kategorien über Größe: Wirkt, als wäre eine wichtiger</p>
+</p></figcaption></figure></section>
+<section data-auto-animate data-slide-shortcode-class="frame" class="image screenshot " data-transition="none" data-background-transition="none" data-background-color="#666666"><figure><svg data-id="frame" viewBox="0 0 900 500" style="height:66vh; width:auto; max-width:90vw;"><rect x="0" y="0" width="900" height="500" fill="#ffffff" /><circle data-id="c0" cx="180" cy="250" r="32" fill="#4952e1" /><circle data-id="c1" cx="300" cy="250" r="32" fill="#dd1166" /><circle data-id="c2" cx="420" cy="250" r="32" fill="#00ad2f" /><circle data-id="c3" cx="540" cy="250" r="32" fill="#4952e1" /><circle data-id="c4" cx="660" cy="250" r="32" fill="#dd1166" /><circle data-id="c5" cx="780" cy="250" r="32" fill="#00ad2f" /></svg><figcaption class="bu is-dark"><p><p>Drei Kategorien über Farbton: gleichwertig und unterscheidbar</p>
+</p></figcaption></figure></section>
+<section data-auto-animate data-slide-shortcode-class="frame" class="image screenshot " data-transition="none" data-background-transition="none" data-background-color="#666666"><figure><svg data-id="frame" viewBox="0 0 900 500" style="height:66vh; width:auto; max-width:90vw;"><rect x="0" y="0" width="900" height="500" fill="#ffffff" /><circle data-id="c0" cx="180" cy="250" r="32" fill="#4952e1" /><rect data-id="c1" x="270" y="220" width="60" height="60" fill="#dd1166" /><polygon data-id="c2" points="420,214 454,280 386,280" fill="#00ad2f" /><circle data-id="c3" cx="540" cy="250" r="32" fill="#4952e1" /><rect data-id="c4" x="630" y="220" width="60" height="60" fill="#dd1166" /><polygon data-id="c5" points="780,214 814,280 746,280" fill="#00ad2f" /></svg><figcaption class="bu is-dark"><p><p>Zusätzlich über Form: auch ohne Farbe unterscheidbar</p>
+</p></figcaption></figure></section>
+<section data-auto-animate data-slide-shortcode-class="frame" class="image screenshot " data-transition="none" data-background-transition="none" data-background-color="#666666"><figure><svg data-id="frame" viewBox="0 0 900 500" style="height:66vh; width:auto; max-width:90vw;"><rect x="0" y="0" width="900" height="500" fill="#ffffff" /><rect data-id="b0" x="180" y="225" width="160" height="50" rx="25" fill="#4952e1" /><rect data-id="t0" x="225" y="245" width="70" height="10" fill="#ffffff" /><rect data-id="b1" x="380" y="225" width="160" height="50" rx="25" fill="#dd1166" /><rect data-id="t1" x="425" y="245" width="70" height="10" fill="#ffffff" /><rect data-id="b2" x="580" y="225" width="160" height="50" rx="25" fill="#00ad2f" /><rect data-id="t2" x="625" y="245" width="70" height="10" fill="#ffffff" /></svg><figcaption class="bu is-dark"><p><p>Drei Buttons, drei Farbtöne: Welcher ist die Hauptaktion?</p>
+</p></figcaption></figure></section>
+<section data-auto-animate data-slide-shortcode-class="frame" class="image screenshot " data-transition="none" data-background-transition="none" data-background-color="#666666"><figure><svg data-id="frame" viewBox="0 0 900 500" style="height:66vh; width:auto; max-width:90vw;"><rect x="0" y="0" width="900" height="500" fill="#ffffff" /><rect data-id="b0" x="180" y="225" width="160" height="50" rx="25" fill="#9313ce" /><rect data-id="t0" x="225" y="245" width="70" height="10" fill="#ffffff" /><rect data-id="b1" x="380" y="225" width="160" height="50" rx="25" fill="#ffffff" stroke="#888888" stroke-width="2" /><rect data-id="t1" x="425" y="245" width="70" height="10" fill="#888888" /><rect data-id="b2" x="580" y="225" width="160" height="50" rx="25" fill="#ffffff" /><rect data-id="t2" x="625" y="245" width="70" height="10" fill="#b3b3b3" /></svg><figcaption class="bu is-dark"><p><p>Füllung und Helligkeit zeigen die Rangfolge. Die Akzentfarbe kommt nur einmal vor</p>
+</p></figcaption></figure></section>
+
+      
+      
+      <aside class="notes"><div><p>Nicht jede Variable eignet sich für jede Aufgabe. Farbton unterscheidet Kategorien gut, Rangfolgen schlecht. Helligkeit und Größe zeigen Rangfolgen, suggerieren aber auch eine, wo keine ist. Quellen: Bertin, Sémiologie graphique; Ware, Visual Thinking for Information Design.</p>
+<p>Drei Beispiele, jeweils ungeeignet, dann geeignet. Bei jedem fragen, bevor aufgelöst wird.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="images" class="mi-slide 
+      images "    data-transition="zoom">
+      <section  class="statement"><div><h1 class="title"><p>Punkt und Linie zu Fläche</p>
+</h1><div class="fragment"><p>Wassily Kandinsky, Bauhausbuch Nr. 9, 1926. Vor genau 100 Jahren.</p>
+</div></div></section>
+<section class="image screenshot" data-transition="fade" data-background-color="#666">
+  <figure>
+    <svg data-id="frame" height="600" width="600">
+      <rect x="0" y="0" width="600" height="600" fill="#ffffff" />
+      <circle cx="300" cy="300" r="20" fill="#000000" />
+    </svg>
+    <figcaption class="bu is-dark"><p>Position, Größe, Form, Helligkeit, Farbe … Ein Punkt hat sie alle.</p></figcaption>
+  </figure>
+</section>
+<section  class="statement"><div><h1 class="title"><p>Führt zu</p>
+</h1><div class="fragment"><p>Wie Elemente aufeinander wirken: Prinzipien Kräfte und Eindeutigkeit. Wie wir sie beschreiben: Methode Beschreibungsraster.</p>
+</div></div></section>
+
+      
+      
+      <aside class="notes"><div><p>Kandinskys »Punkt und Linie zu Fläche« erschien 1926 als Band 9 der Bauhausbücher, also vor genau 100 Jahren. Es ist bis heute eine der Grundlagen der Gestaltungslehre.</p>
+<p>Die Pointe: Alle visuellen Variablen gelten schon für das kleinste Element. Im Workshop reduzieren wir alles auf einen Punkt im Format und schauen, was Position, Größe und Anzahl allein schon bewirken.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="outro" class="mi-slide 
+      outro " data-background-color="#231f20"   data-transition="convex">
+      <div class="is-fullscreen is-centered"><p></p>
+<div class="outro">
+<figure class="outro-avatar">
+<img src="../../../assets/images/cnoss.jpeg">
+<figcaption>
+<p>Danke für's Mitmachen</p>
+<p class="small"><a href="https://christiannoss.de">https://christiannoss.de</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+      
+      
+      
+      
+      </section>
+      
+        </div>
+
+      </div>
+      
+      <script src="/slides/reveal/dist/reveal.js"></script>
+      <script src="/slides/assets/scripts/libs/fittext.js"></script>
+      <script src="/slides/assets/scripts/main.js"></script>
+      <script src="/slides/reveal/plugin/notes/notes.js"></script>
+      <script src="/slides/reveal/plugin/markdown/markdown.js"></script>
+      <script src="/slides/reveal/plugin/highlight/highlight.js"></script>
+      <script src="/slides/reveal/plugin/zoom/zoom.js"></script>
+      <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+          hash: true, 
+          center: false,
+          disableLayout: true,
+          progress: true,
+          backgroundTransition: 'fade',
+          pdfSeparateFragments: false,
+          highlight: {
+            highlightOnLoad: false,
+          },
+          // Learn about plugins: https://revealjs.com/plugins/
+          plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+        }).then(() => {
+          const highlight = Reveal.getPlugin('highlight');
+          highlight.hljs.configure(
+            {
+              languages: ['javascript', 'css', 'html', 'bash', 'json', 'markdown', 'xml', 'yaml'],
+            }
+          );
+          highlight.hljs.highlightAll();
+        });
+
+        
+      </script>
+    </body>
+  </html>
