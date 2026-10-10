@@ -7,4 +7,4 @@ status: ok
 
 {% statement "Wann gilt das nicht?", "Mehrdeutigkeit kann gewollt sein: in Logos, Plakaten oder Kippbildern. Dann muss sie aber klar als Absicht erkennbar sein." %}
 
-{% statement "Führt zu", "Gestaltgesetze, vor allem Nähe und Ähnlichkeit" %}
+{% statement "Führt zu", "Gestaltgesetze, vor allem [Nähe](../prinzip-naehe-und-abstand/) und [Ähnlichkeit](../prinzip-aehnlichkeit/)" %}

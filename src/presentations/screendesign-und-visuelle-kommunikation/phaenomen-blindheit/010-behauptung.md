@@ -5,4 +5,4 @@ slideClasses: wrap
 status: ok
 ---
 
-{% statement "Sie sehen weniger, als Sie denken.", "Ein Test." %}
+{% interlude "Sie sehen weniger, als Sie denken.", "Ein Test." %}

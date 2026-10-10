@@ -17,7 +17,7 @@ speaker: |
   Quellen: Yablonski, Laws of UX (Selective Attention); Ware, Visual Thinking for Information Design.
 ---
 
-{% statement "Aufmerksamkeit ist ein Scheinwerfer, kein Flutlicht.", "Wir sehen scharf, worauf wir achten. Den Rest ergänzt das Gehirn." %}
+{% interlude "Aufmerksamkeit ist ein Scheinwerfer, kein Flutlicht.", "Wir sehen scharf, worauf wir achten. Den Rest ergänzt das Gehirn." %}
 
 <section class="simple" data-transition="fade">
   <div>

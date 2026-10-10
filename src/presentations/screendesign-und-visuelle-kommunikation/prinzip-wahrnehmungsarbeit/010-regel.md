@@ -15,4 +15,4 @@ speaker: |
 
 {% cite "Die maßgebende Norm für den Wert eines grafischen Designs sind die Gesamtkosten der Wahrnehmungsarbeit.", "Abraham A. Moles, Informationstheoretiker" %}
 
-{% statement "Sehen ist Arbeit.", "Jedes Element will gesehen, eingeordnet und verstanden werden. Gute Gestaltung senkt diese Kosten." %}
+{% interlude "Sehen ist Arbeit.", "Jedes Element will gesehen, eingeordnet und verstanden werden. Gute Gestaltung senkt diese Kosten." %}

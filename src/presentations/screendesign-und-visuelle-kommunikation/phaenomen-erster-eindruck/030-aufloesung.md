@@ -1,10 +1,10 @@
 ---
-title: 50 Millisekunden
+title: Eine Zehntelsekunde
 layout: presentation.11ty.js
 slideClasses: wrap
 status: ok
 speaker: |
-  Auflösung: Jede Seite war 50 Millisekunden zu sehen, eine Zwanzigstelsekunde. Das reicht für ein Urteil, und es stimmt erstaunlich gut mit dem Urteil nach längerem Hinsehen überein.
+  Auflösung: Jede Seite war 100 Millisekunden zu sehen, eine Zehntelsekunde. Das reicht für ein Urteil (in der Studie sogar schon die Hälfte), und es stimmt erstaunlich gut mit dem Urteil nach längerem Hinsehen überein.
 
   **Hintergrund**
 
@@ -13,7 +13,7 @@ speaker: |
   Alexandre Tuch und Kolleg:innen (Universität Basel) gingen 2012 auf 17 ms herunter und fanden zwei Treiber des ersten Eindrucks: geringe visuelle Komplexität und hohe Prototypikalität, also wie sehr eine Seite so aussieht, wie man es von ihrer Art erwartet. Tuch, A. N., Presslaber, E. E., Stöcklin, M., Opwis, K. & Bargas-Avila, J. A. (2012): The role of visual complexity and prototypicality regarding first impression of websites. International Journal of Human-Computer Studies 70(11), 794–811.
 ---
 
-{% statement "Sie hatten 50 Millisekunden.", "Eine Zwanzigstelsekunde. Das reicht für ein Urteil." %}
+{% interlude "Sie hatten eine Zehntelsekunde.", "In der Studie reichten schon 50 Millisekunden für ein Urteil." %}
 
 {% shout "Attention web designers: You have 50 milliseconds to make a good first impression!", "Gitte Lindgaard u. a., 2006" %}
 

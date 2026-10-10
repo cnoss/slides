@@ -16,7 +16,7 @@ speaker: |
   Edward H. Adelson, MIT, veröffentlichte das Schachbrett 1995. Bild: Edward H. Adelson, frei zur Weitergabe.
 ---
 
-{% frame '{"bu":"Was sehen Sie an den Kreuzungen?"}' %}
+{% frame '{"bu":"Was sehen Sie an den Kreuzungen?", "stage":"#ffffff"}' %}
 <rect data-id="h00" x="52.0" y="52.0" width="88" height="88" fill="#231f20" />
 <rect data-id="h01" x="154.0" y="52.0" width="88" height="88" fill="#231f20" />
 <rect data-id="h02" x="256.0" y="52.0" width="88" height="88" fill="#231f20" />
@@ -43,7 +43,7 @@ speaker: |
 <rect data-id="h43" x="358.0" y="460.0" width="88" height="88" fill="#231f20" />
 <rect data-id="h44" x="460.0" y="460.0" width="88" height="88" fill="#231f20" />
 {% endframe %}
-{% frame '{"bu":"Mehr Abstand: Die grauen Flecken werden schwächer."}' %}
+{% frame '{"bu":"Mehr Abstand: Die grauen Flecken werden schwächer.", "stage":"#ffffff"}' %}
 <rect data-id="h00" x="32.0" y="32.0" width="80" height="80" fill="#231f20" />
 <rect data-id="h01" x="146.0" y="32.0" width="80" height="80" fill="#231f20" />
 <rect data-id="h02" x="260.0" y="32.0" width="80" height="80" fill="#231f20" />

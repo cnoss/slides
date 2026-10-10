@@ -13,6 +13,6 @@ speaker: |
   Moles nennt Reduzieren als ersten von drei Wegen, Wahrnehmungsarbeit zu senken, vor Strukturieren und Hierarchisieren.
 ---
 
-{% statement "Was nicht hilft, stört.", "Reduzieren heißt: weglassen, zurücknehmen, verstecken, bis es gebraucht wird." %}
+{% interlude "Was nicht hilft, stört.", "Reduzieren heißt: weglassen, zurücknehmen, verstecken, bis es gebraucht wird." %}
 
 {% cite "Less is more.", "Ludwig Mies van der Rohe, Architekt" %}

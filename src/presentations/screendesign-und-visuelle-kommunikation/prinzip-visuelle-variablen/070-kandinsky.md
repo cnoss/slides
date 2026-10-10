@@ -22,4 +22,4 @@ speaker: |
   </figure>
 </section>
 
-{% statement "Führt zu", "Wie Elemente aufeinander wirken: Prinzipien Kräfte und Eindeutigkeit. Wie wir sie beschreiben: Methode Beschreibungsraster." %}
+{% statement "Führt zu", "Wie Elemente aufeinander wirken: Prinzipien [Kräfte](../prinzip-kraefte/) und [Eindeutigkeit](../prinzip-eindeutigkeit/). Wie wir sie beschreiben: Methode [Beschreibungsraster](../methode-beschreibungsraster/)." %}

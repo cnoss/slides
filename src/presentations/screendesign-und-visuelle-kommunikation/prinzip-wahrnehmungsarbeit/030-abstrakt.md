@@ -10,7 +10,7 @@ speaker: |
   Drei Hebel, um Wahrnehmungsarbeit zu senken, nach Moles: Ordnen (strukturieren), Zurücknehmen (hierarchisieren), Weglassen (reduzieren). Ausführlich: Prinzip Reduzieren und die Gruppen Gruppieren, Ordnen, Gewichten.
 ---
 
-{% frame '{"bu":"Wie viele Kreise sehen Sie?"}' %}
+{% frame '{"bu":"Wie viele Kreise sehen Sie?", "stage":"#ffffff"}' %}
 <polygon data-id="o0" points="80,486 94,514 66,514" fill="#888888" />
 <rect data-id="o1" x="246" y="486" width="28" height="28" fill="#888888" />
 <polygon data-id="o2" points="260,306 274,334 246,334" fill="#888888" />
@@ -42,7 +42,7 @@ speaker: |
 <circle data-id="c10" cx="200" cy="140" r="16" fill="#231f20" />
 <circle data-id="c11" cx="440" cy="500" r="16" fill="#231f20" />
 {% endframe %}
-{% frame '{"bu":"Dieselben Kreise, geordnet. Der Rest tritt zurück."}' %}
+{% frame '{"bu":"Dieselben Kreise, geordnet. Der Rest tritt zurück.", "stage":"#ffffff"}' %}
 <polygon data-id="o0" points="120,456 134,484 106,484" fill="#d9d9d9" />
 <rect data-id="o1" x="151" y="456" width="28" height="28" fill="#d9d9d9" />
 <polygon data-id="o2" points="210,456 224,484 196,484" fill="#d9d9d9" />
@@ -74,7 +74,7 @@ speaker: |
 <circle data-id="c10" cx="350" cy="320" r="16" fill="#231f20" />
 <circle data-id="c11" cx="450" cy="320" r="16" fill="#231f20" />
 {% endframe %}
-{% frame '{"bu":"Und ohne alles, was nicht zählt."}' %}
+{% frame '{"bu":"Und ohne alles, was nicht zählt.", "stage":"#ffffff"}' %}
 <circle data-id="c0" cx="150" cy="140" r="16" fill="#231f20" />
 <circle data-id="c1" cx="250" cy="140" r="16" fill="#231f20" />
 <circle data-id="c2" cx="350" cy="140" r="16" fill="#231f20" />

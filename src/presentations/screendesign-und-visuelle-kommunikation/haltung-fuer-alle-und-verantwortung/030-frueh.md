@@ -15,6 +15,6 @@ speaker: |
   In Deutschland gilt seit dem 28. Juni 2025 das Barrierefreiheitsstärkungsgesetz (BFSG). Es setzt den European Accessibility Act um und verpflichtet viele digitale Angebote, etwa Online-Shops und Bankdienstleistungen, zur Barrierefreiheit. Maßstab sind die WCAG.
 ---
 
-{% statement "Früh an alle denken.", "Barrierefreiheit ist kein Prüfschritt am Ende, sondern eine Entscheidung am Anfang." %}
+{% interlude "Früh an alle denken.", "Barrierefreiheit ist kein Prüfschritt am Ende, sondern eine Entscheidung am Anfang." %}
 
 {% statement "Woran merken Sie, dass Sie früh an alle denken?", "Schon Ihr erster Entwurf hat geprüfte Kontraste, Fokuszustände und Texte, die man auch ohne Bild versteht." %}

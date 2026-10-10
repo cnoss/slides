@@ -9,6 +9,6 @@ speaker: |
   Führt zu: Optische Korrektur (Phänomen), Kräfte und Richtung (Prinzip), Figur und Grund.
 ---
 
-{% statement "Messen ist gut, Hinschauen ist besser.", "Gleiche Maße wirken nicht immer gleich. Entscheidend ist, was gesehen wird." %}
+{% interlude "Messen ist gut, Hinschauen ist besser.", "Gleiche Maße wirken nicht immer gleich." %}
 
-{% statement "Führt zu", "Optischer Korrektur, Kräften und Richtung. Und zur Arbeit mit Linien: Sie täuschen Länge, Richtung und Bewegung vor." %}
+{% statement "Führt zu", "[Optischer Korrektur](../phaenomen-optische-korrektur/), [Kräften und Richtung](../prinzip-kraefte/). Und zur Arbeit mit Linien: Sie täuschen Länge, Richtung und Bewegung vor." %}

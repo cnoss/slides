@@ -13,6 +13,6 @@ speaker: |
   Quellen: Yablonski, Laws of UX (Aesthetic-Usability Effect); Lidwell, Universal Principles of Design (Aesthetic-Usability Effect).
 ---
 
-{% statement "Was schön ist, wirkt leichter benutzbar.", "Ästhetik-Usability-Effekt" %}
+{% interlude "Was schön ist, wirkt leichter benutzbar.", "Ästhetik-Usability-Effekt" %}
 
 {% statement "Ein guter erster Eindruck verzeiht Fehler.", "Ein schlechter wird auch durch gute Funktion kaum noch korrigiert. Und: Schöne Oberflächen verdecken in Tests echte Probleme." %}

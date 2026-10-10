@@ -17,7 +17,7 @@ speaker: |
   Quellen: Brignull, Deceptive Patterns (2023); Yablonski, Laws of UX (Kapitel zur Ethik).
 ---
 
-{% statement "Gestaltung lenkt.", "Also tragen wir Verantwortung." %}
+{% interlude "Gestaltung lenkt.", "Also tragen wir Verantwortung." %}
 
 {% statement "Wissen über Wahrnehmung wirkt in beide Richtungen.", "Wer weiß, wohin Menschen schauen, kann ihnen helfen. Oder etwas vor ihnen verstecken." %}
 

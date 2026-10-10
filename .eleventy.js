@@ -251,7 +251,8 @@ module.exports = function (eleventyConfig) {
     const transition = p.transition || 'none';
     const animate = p.animate === false ? '' : 'data-auto-animate';
     const classes = p.classes || '';
-    const bu = p.bu ? `<figcaption class="bu is-dark"><p>${insertMarkup(p.bu)}</p></figcaption>` : '';
+    const buClass = stage.toLowerCase() === '#ffffff' ? 'bu' : 'bu is-dark';
+    const bu = p.bu ? `<figcaption class="${buClass}"><p>${insertMarkup(p.bu)}</p></figcaption>` : '';
     const inner = content.split('\n').map((l) => l.trim()).filter(Boolean).join('');
     return `<section ${animate} data-slide-shortcode-class="frame" class="image screenshot ${classes}" data-transition="${transition}" data-background-transition="none" data-background-color="${stage}"><figure><svg data-id="frame" viewBox="0 0 ${w} ${h}" style="height:66vh; width:auto; max-width:90vw;"><rect x="0" y="0" width="${w}" height="${h}" fill="#ffffff" />${inner}</svg>${bu}</figure></section>`;
   });
@@ -296,7 +297,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode('interlude', (title, subtitle, transition) => {
     const getRandomBackgroundColor = () => {
-      const colors = ['#4952e1', '#d16', '#00ad2f', '#9313ce', '#2b2b2b'];
+      const colors = ['#4952e1', '#d16', '#00ad2f', '#9313ce'];
       return colors[colors.length * Math.random() | 0];
     }
     const htmlSubtitle = subtitle ? `<h2 class="subtitle js-delay">${md.render(subtitle)}</h2>` : '';

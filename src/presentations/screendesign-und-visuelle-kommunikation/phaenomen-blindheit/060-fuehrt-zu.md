@@ -11,4 +11,4 @@ speaker: |
 
 {% question "Aufmerksamkeit ist begrenzt.", "Wer verbraucht sie in Ihren Apps? Und wofür?" %}
 
-{% statement "Führt zu", "Feedback dort, wo der Blick ist. Hierarchie, die das Wichtige sichtbar macht. Und Respekt vor der Aufmerksamkeit der Nutzenden." %}
+{% statement "Führt zu", "[Feedback](../prinzip-feedback-und-zustaende/) dort, wo der Blick ist. [Hierarchie](../prinzip-hierarchie/), die das Wichtige sichtbar macht. Und [Respekt vor der Aufmerksamkeit](../haltung-fuer-alle-und-verantwortung/) der Nutzenden." %}

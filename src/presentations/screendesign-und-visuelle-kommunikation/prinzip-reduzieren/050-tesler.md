@@ -11,4 +11,4 @@ speaker: |
   Tesler's Law, auch Gesetz der Erhaltung der Komplexität, geht auf Larry Tesler zurück, der in den 1980er-Jahren bei Xerox PARC und Apple an Benutzungsoberflächen arbeitete (unter anderem an Copy und Paste). Quelle: Yablonski, Laws of UX (Tesler's Law).
 ---
 
-{% statement "Komplexität verschwindet nicht.", "Tesler's Law: Sie wird nur verschoben. Die Frage ist, wer sie trägt, die Nutzenden oder das System." %}
+{% interlude "Komplexität verschwindet nicht.", "Tesler's Law: Sie wird nur verschoben. Die Frage ist, wer sie trägt, die Nutzenden oder das System." %}

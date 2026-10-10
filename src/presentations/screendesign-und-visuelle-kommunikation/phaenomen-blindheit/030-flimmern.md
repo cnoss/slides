@@ -14,7 +14,7 @@ speaker: |
   Das Flimmern ist eine SVG-Animation. Bei aktivierter Einstellung »Bewegung reduzieren« im Betriebssystem bleibt das Bild stehen.
 ---
 
-{% frame '{"bu":"Was verändert sich? Hand hoch, wenn Sie es gefunden haben."}' %}
+{% frame '{"bu":"Was verändert sich? Hand hoch, wenn Sie es gefunden haben.", "stage":"#ffffff"}' %}
 <style>
 @keyframes cb-wechsel{0%,46.9%{opacity:1}47%,96.9%{opacity:0}97%,100%{opacity:1}}
 @keyframes cb-maske{0%,43.9%{opacity:0}44%,49.9%{opacity:1}50%,93.9%{opacity:0}94%,100%{opacity:1}}
@@ -60,7 +60,7 @@ speaker: |
 <circle data-id="e55" cx="508" cy="508" r="24" fill="#888888" />
 <rect class="cb-maske" x="0" y="0" width="600" height="600" fill="#ffffff" />
 {% endframe %}
-{% frame '{"bu":"Hier: Das Quadrat oben rechts kommt und geht."}' %}
+{% frame '{"bu":"Hier: Das Quadrat oben rechts kommt und geht.", "stage":"#ffffff"}' %}
 <rect data-id="e00" x="67" y="61" width="38" height="38" fill="#d9d9d9" />
 <circle data-id="e10" cx="186" cy="93" r="18" fill="#eeeeee" />
 <circle data-id="e20" cx="260" cy="82" r="24" fill="#d9d9d9" />

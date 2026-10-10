@@ -1,5 +1,5 @@
 ---
-title: "Für alle und Verantwortung"
+title: "Verantwortung und Inklusion"
 layout: presentation.11ty.js
 slideClasses: outro
 transition: convex

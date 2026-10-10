@@ -8,7 +8,7 @@ speaker: |
 transition: none
 ---
 
-{% frame '{"bu":"Gleiche Abstände: ein Feld"}' %}
+{% frame '{"stage":"#ffffff","bu":"Gleiche Abstände: ein Feld"}' %}
   <circle data-id="p0" cx="180" cy="180" r="16" fill="#231f20" />
   <circle data-id="p1" cx="260" cy="180" r="16" fill="#231f20" />
   <circle data-id="p2" cx="340" cy="180" r="16" fill="#231f20" />
@@ -26,7 +26,7 @@ transition: none
   <circle data-id="p14" cx="340" cy="420" r="16" fill="#231f20" />
   <circle data-id="p15" cx="420" cy="420" r="16" fill="#231f20" />
 {% endframe %}
-{% frame '{"bu":"Spalten rücken zusammen: zwei Gruppen"}' %}
+{% frame '{"stage":"#ffffff","bu":"Spalten rücken zusammen: zwei Gruppen"}' %}
   <circle data-id="p0" cx="150" cy="180" r="16" fill="#231f20" />
   <circle data-id="p1" cx="210" cy="180" r="16" fill="#231f20" />
   <circle data-id="p2" cx="390" cy="180" r="16" fill="#231f20" />
@@ -44,7 +44,7 @@ transition: none
   <circle data-id="p14" cx="390" cy="420" r="16" fill="#231f20" />
   <circle data-id="p15" cx="450" cy="420" r="16" fill="#231f20" />
 {% endframe %}
-{% frame '{"bu":"Zeilen rücken zusammen: wieder zwei Gruppen, ganz andere"}' %}
+{% frame '{"stage":"#ffffff","bu":"Zeilen rücken zusammen: wieder zwei Gruppen, ganz andere"}' %}
   <circle data-id="p0" cx="180" cy="150" r="16" fill="#231f20" />
   <circle data-id="p1" cx="260" cy="150" r="16" fill="#231f20" />
   <circle data-id="p2" cx="340" cy="150" r="16" fill="#231f20" />
