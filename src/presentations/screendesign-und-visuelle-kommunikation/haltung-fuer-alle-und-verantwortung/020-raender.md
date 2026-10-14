@@ -13,6 +13,9 @@ speaker: |
   **Hintergrund**
 
   Das »Persona Spectrum« stammt aus dem Microsoft Inclusive Design Toolkit (2016). Kat Holmes, die es mitentwickelt hat, beschreibt Behinderung dort als Missverhältnis zwischen Mensch und Umgebung, nicht als Eigenschaft eines Menschen (Kat Holmes: Mismatch, 2018).
+
+
+  **Mini-Übung (ca. 3 Minuten):** Alle schreiben eine kurze Nachricht mit der schwachen Hand, also Rechtshänder:innen mit links. Eine Minute. Dann sammeln: Was war schwer? Erwartbar: Tasten oben links nicht erreichbar, Tippfehler, Autokorrektur hilft, Sprachnachricht wäre einfacher. Überleitung: Genau so geht es Menschen mit einem Arm, mit Gips oder mit Kind auf dem Arm. Und Gestaltung entscheidet, wo die wichtigen Bedienelemente liegen.
 ---
 
 {% interlude "Gestalten Sie für die Ränder.", "Extreme Nutzungssituationen zeigen, was eine Lösung leisten muss." %}
@@ -25,5 +28,9 @@ speaker: |
     {% fragment '<p class="list"><strong>situativ:</strong> auf dem Arm sitzt ein Kind</p>' %}
   </div>
 </section>
+
+{% question "Schreiben Sie eine Nachricht.", "Mit Ihrer schwachen Hand. Eine Minute." %}
+
+{% question "Was war schwer?", "Und was hat geholfen?" %}
 
 {% statement "Woran merken Sie, dass Sie für die Ränder gestalten?", "Sie fragen nicht nur »Wer nutzt das?«, sondern auch »In welcher Lage?«: mit einer Hand, im Sonnenlicht, ohne Ton, unter Zeitdruck." %}

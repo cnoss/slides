@@ -1,12 +1,12 @@
 ---
-title: Gestaltungsparameter Übersicht
+title: Visuelle Variablen
 layout: presentation.11ty.js
 slideClasses: simple
 status: ok
 transition: fade
 ---
 
-Übersicht der Gestaltungsparameter für die **Line**.
+Visuelle Variablen für die **Linie**.
  
 <p class="list">Position</p>
 <p class="list">Anzahl</p>
