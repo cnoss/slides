@@ -58,9 +58,9 @@
   <div>
     <h1>Seite 1</h1>
     <p>Daumen hoch oder runter?</p>
-    <div class="fragment blitz" style="--dauer:50ms;"><img src="./images/eindruck-apple.jpg" alt="Screenshot einer Website"></div><style>
-.reveal .slides section .fragment.blitz{opacity:1;visibility:inherit;transition:none;position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;}
-.reveal .slides section .fragment.blitz img{opacity:0;max-height:88%;max-width:94%;width:auto;height:auto;margin:0;box-shadow:0 0 1.5rem rgba(0,0,0,.25);}
+    <div class="fragment blitz" style="--dauer:100ms;"><img src="./images/eindruck-apple.jpg" alt="Screenshot einer Website"></div><style>
+.reveal .slides section .fragment.blitz{opacity:1;visibility:inherit;transition:none;transform:none;padding:0;margin:0;position:fixed;inset:0;width:100% !important;max-width:none !important;display:flex;align-items:center;justify-content:center;pointer-events:none;}
+.reveal .slides section .fragment.blitz img{opacity:0;height:92%;width:auto;max-width:96%;margin:0;box-shadow:0 0 1.5rem rgba(0,0,0,.25);}
 .reveal .slides section .fragment.blitz.visible img{animation:blitz-zeigen var(--dauer,50ms) linear 1;}
 @keyframes blitz-zeigen{from{opacity:1}to{opacity:1}}
 </style>
@@ -70,21 +70,21 @@
   <div>
     <h1>Seite 2</h1>
     <p>Daumen hoch oder runter?</p>
-    <div class="fragment blitz" style="--dauer:50ms;"><img src="./images/eindruck-arngren.jpg" alt="Screenshot einer Website"></div>
+    <div class="fragment blitz" style="--dauer:100ms;"><img src="./images/eindruck-arngren.jpg" alt="Screenshot einer Website"></div>
   </div>
 </section>
 <section class="simple" data-transition="none">
   <div>
     <h1>Seite 3</h1>
     <p>Daumen hoch oder runter?</p>
-    <div class="fragment blitz" style="--dauer:50ms;"><img src="./images/eindruck-craigslist.jpg" alt="Screenshot einer Website"></div>
+    <div class="fragment blitz" style="--dauer:100ms;"><img src="./images/eindruck-craigslist.jpg" alt="Screenshot einer Website"></div>
   </div>
 </section>
 <section class="simple" data-transition="none">
   <div>
     <h1>Seite 4</h1>
     <p>Daumen hoch oder runter?</p>
-    <div class="fragment blitz" style="--dauer:50ms;"><img src="./images/eindruck-koeln.jpg" alt="Screenshot einer Website"></div>
+    <div class="fragment blitz" style="--dauer:100ms;"><img src="./images/eindruck-koeln.jpg" alt="Screenshot einer Website"></div>
   </div>
 </section>
 <section  class="statement"><div><h1 class="title"><p>Und jetzt in Ruhe.</p>
@@ -102,7 +102,7 @@
       
       
       <aside class="notes"><div><p><strong>Live-Test (ca. 5 Minuten)</strong></p>
-<p>Jede Seite blitzt beim Weiterschalten für 50 Millisekunden auf. Vorher ansagen, dass es sehr schnell geht. Direkt nach jedem Blitz Daumen zeigen lassen und grob zählen (mehr hoch oder mehr runter), an der Tafel notieren.</p>
+<p>Jede Seite blitzt beim Weiterschalten für 100 Millisekunden auf, fast folienfüllend. In der Studie waren es 50 ms. Die doppelte Zeit hilft, damit die Screens im Hörsaal überhaupt zu erkennen sind, an der Pointe ändert das nichts. Vorher ansagen, dass es sehr schnell geht. Direkt nach jedem Blitz Daumen zeigen lassen und grob zählen (mehr hoch oder mehr runter), an der Tafel notieren.</p>
 <p>Danach die vier Seiten in Ruhe zeigen. Frage: Hätten Sie jetzt anders abgestimmt? Erfahrungsgemäß kaum.</p>
 <p>Technik: Der Blitz ist ein Fragment. Zurück und wieder vor wiederholt ihn. Bei sehr trägen Beamern wirkt er etwas länger, das schadet dem Effekt nicht.</p>
 <p>Seiten: apple.com (Produktseite, ruhig, ein Bild), arngren.net (norwegischer Elektronikhändler, extrem dicht), craigslist.org (Kleinanzeigen, reine Linklisten, seit Jahrzehnten fast unverändert), stadt-koeln.de (Stadtverwaltung). Alle Screenshots Oktober 2026, 1440 px.</p>
@@ -113,9 +113,9 @@
 
       <section data-slide-class="wrap" class="mi-slide 
       wrap "    data-transition="convex">
-      <section  class="statement"><div><h1 class="title"><p>Sie hatten 50 Millisekunden.</p>
-</h1><div class="fragment"><p>Eine Zwanzigstelsekunde. Das reicht für ein Urteil.</p>
-</div></div></section>
+      <section data-slide-shortcode-class="interlude" data-background-color="#4952e1" class="image screenshot interlude" ><div><h1 class="title"><p>Sie hatten eine Zehntelsekunde.</p>
+</h1><h2 class="subtitle js-delay"><p>In der Studie reichten schon 50 Millisekunden für ein Urteil.</p>
+</h2></div></section>
 <p><section data-slide-shortcode-class="shout" class="shout" >
 <div>
 <blockquote class="has-whitener"><h1 class="title"><p>Attention web designers: You have 50 milliseconds to make a good first impression!</p></p>
@@ -133,7 +133,7 @@
 
       
       
-      <aside class="notes"><div><p>Auflösung: Jede Seite war 50 Millisekunden zu sehen, eine Zwanzigstelsekunde. Das reicht für ein Urteil, und es stimmt erstaunlich gut mit dem Urteil nach längerem Hinsehen überein.</p>
+      <aside class="notes"><div><p>Auflösung: Jede Seite war 100 Millisekunden zu sehen, eine Zehntelsekunde. Das reicht für ein Urteil (in der Studie sogar schon die Hälfte), und es stimmt erstaunlich gut mit dem Urteil nach längerem Hinsehen überein.</p>
 <p><strong>Hintergrund</strong></p>
 <p>Gitte Lindgaard und Kolleg:innen (Carleton University, Ottawa) ließen Websites einmal 500 ms und einmal 50 ms lang zeigen und auf ihre visuelle Anziehungskraft bewerten. Die Urteile nach 50 ms stimmten eng mit denen nach 500 ms überein. Lindgaard, G., Fernandes, G., Dudek, C. &amp; Brown, J. (2006): Attention web designers: You have 50 milliseconds to make a good first impression! Behaviour &amp; Information Technology 25(2), 115–126.</p>
 <p>Alexandre Tuch und Kolleg:innen (Universität Basel) gingen 2012 auf 17 ms herunter und fanden zwei Treiber des ersten Eindrucks: geringe visuelle Komplexität und hohe Prototypikalität, also wie sehr eine Seite so aussieht, wie man es von ihrer Art erwartet. Tuch, A. N., Presslaber, E. E., Stöcklin, M., Opwis, K. &amp; Bargas-Avila, J. A. (2012): The role of visual complexity and prototypicality regarding first impression of websites. International Journal of Human-Computer Studies 70(11), 794–811.</p>
@@ -144,7 +144,7 @@
 
       <section data-slide-class="wrap" class="mi-slide 
       wrap "    data-transition="convex">
-      <section data-slide-shortcode-class="interlude" data-background-color="#d16" class="image screenshot interlude" ><div><h1 class="title"><p>Was für eine Seite ist das?</p>
+      <section data-slide-shortcode-class="interlude" data-background-color="#9313ce" class="image screenshot interlude" ><div><h1 class="title"><p>Was für eine Seite ist das?</p>
 </h1><h2 class="subtitle js-delay"><p>Raten Sie, bevor Sie lesen können.</p>
 </h2></div></section>
 <section data-slide-shortcode-class="screenshot" class="image screenshot shadow" data-transition="fade" data-background-transition="fade"><figure><img src="./images/kicker-pixeled.jpg" alt="Was für eine Seite ist das?" width="auto" ><figcaption class="bu"><p><p>Was für eine Seite ist das?</p>
@@ -171,9 +171,9 @@
 
       <section data-slide-class="wrap" class="mi-slide 
       wrap "    data-transition="convex">
-      <section  class="statement"><div><h1 class="title"><p>Was schön ist, wirkt leichter benutzbar.</p>
-</h1><div class="fragment"><p>Ästhetik-Usability-Effekt</p>
-</div></div></section>
+      <section data-slide-shortcode-class="interlude" data-background-color="#d16" class="image screenshot interlude" ><div><h1 class="title"><p>Was schön ist, wirkt leichter benutzbar.</p>
+</h1><h2 class="subtitle js-delay"><p>Ästhetik-Usability-Effekt</p>
+</h2></div></section>
 <section  class="statement"><div><h1 class="title"><p>Ein guter erster Eindruck verzeiht Fehler.</p>
 </h1><div class="fragment"><p>Ein schlechter wird auch durch gute Funktion kaum noch korrigiert. Und: Schöne Oberflächen verdecken in Tests echte Probleme.</p>
 </div></div></section>
@@ -192,7 +192,7 @@
       <section data-slide-class="wrap" class="mi-slide 
       wrap "    data-transition="convex">
       <section  class="statement"><div><h1 class="title"><p>Führt zu</p>
-</h1><div class="fragment"><p>Wahrnehmungsarbeit, Konventionen und dem 5-Sekunden-Test, mit dem Sie den ersten Eindruck prüfen können.</p>
+</h1><div class="fragment"><p><a href="../prinzip-wahrnehmungsarbeit/">Wahrnehmungsarbeit</a>, <a href="../prinzip-konsistenz-und-konventionen/">Konventionen</a> und dem <a href="../methode-wahrnehmungstests/">5-Sekunden-Test</a>, mit dem Sie den ersten Eindruck prüfen können.</p>
 </div></div></section>
 
       
