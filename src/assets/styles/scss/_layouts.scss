@@ -1087,3 +1087,31 @@
     }
   }
 }
+/* Tabellen in Folien (Markdown-Tabellen)
+########################################################################## */
+
+.reveal .slides section table {
+  width: 100%;
+  max-width: none !important; // Textbreite 80ch gilt nicht für Tabellen
+  margin-top: var(--m);
+  border-collapse: collapse;
+  font-size: var(--xs);
+  line-height: 1.35;
+
+  th, td {
+    padding: var(--half) var(--xs) var(--half) 0;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--light);
+  }
+
+  th {
+    font-weight: normal;
+    color: var(--dark);
+    border-bottom: 2px solid var(--darker);
+  }
+
+  td:first-child {
+    white-space: nowrap;
+  }
+}
