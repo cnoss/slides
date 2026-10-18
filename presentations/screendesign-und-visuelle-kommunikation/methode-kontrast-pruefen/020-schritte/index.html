@@ -1,0 +1,381 @@
+<!doctype html>
+  <html lang="de">
+    <head>
+      <title>Schritte // Christian Noss</title>
+      <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="googlebot-news" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+      <link rel="stylesheet" href="/slides/reveal/dist/reset.css">
+      <link rel="stylesheet" href="/slides/reveal/dist/reveal.css">
+      <link rel="stylesheet" href="/slides/assets/main.css">
+     
+      <link rel="icon" type="image/svg" href="/slides/assets/images/preview_black_24dp.svg">
+  
+      <!-- Theme used for syntax highlighted code -->
+      <link rel="stylesheet" href="/slides/reveal/plugin/highlight/github.css">
+    </head>
+    <body>
+      <div class="reveal">
+        <div class="slides">
+          
+      <section data-slide-class="intro" class="mi-slide 
+      intro " data-background-color="#9313ce"   data-transition="zoom">
+      <div class="is-full-width">
+<h1>Kontrast prüfen</h1>
+<h2>Methode // Testen und Prüfen</h2>
+</div>
+
+      
+      
+      
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section data-slide-shortcode-class="interlude" data-background-color="#d16" class="image screenshot interlude" ><div><h1 class="title"><p>Ihre Augen sehen nicht für alle.</p>
+</h1><h2 class="subtitle js-delay"><p>Wie prüfen Sie, ob etwas für alle lesbar ist?</p>
+</h2></div></section>
+<section class="simple" data-transition="fade">
+  <div>
+    <h1>Was denn nun?</h1>
+    <p>Letzte Woche: »Messen ist gut, Hinschauen ist besser.« Heute: messen.</p>
+    <div data-slide-shortcode-class="fragment" class="fragment"><p class="list"><strong>Wirkung:</strong> Wie wirkt das? Hier entscheidet das Auge.</p></div>
+    <div data-slide-shortcode-class="fragment" class="fragment"><p class="list"><strong>Zugänglichkeit:</strong> Kommt es bei allen an? Hier ist das eigene Auge das falsche Instrument.</p></div>
+  </div>
+</section>
+<section  class="statement"><div><h1 class="title"><p>Messen für die Untergrenze, Hinschauen für die Wirkung.</p>
+</h1><div class="fragment"><p>Die Messung sagt, ob etwas für alle lesbar ist. Ob es gut ist, sagt sie nicht. Erst messen, dann schauen.</p>
+</div></div></section>
+
+      
+      
+      <aside class="notes"><div><p>Unsere Augen sind schlechte Messgeräte. Gesättigte Farben wirken heller, als sie sind (Helmholtz-Kohlrausch), und dieselbe Farbe wirkt je nach Umgebung anders (Simultankontrast). Wer Kontrast nach Augenmaß beurteilt, liegt regelmäßig daneben, und zwar meistens zu optimistisch, weil der eigene Bildschirm gut und hell ist und man weiß, was da steht.</p>
+<p>Das Problem, das die Methode löst: verlässlich und schnell entscheiden, ob Text und Bedienelemente für alle lesbar sind.</p>
+<p><strong>Der scheinbare Widerspruch zur letzten Woche:</strong> Bei den Täuschungen hieß es »Messen ist gut, Hinschauen ist besser.« Jetzt heißt es messen. Beides stimmt, es sind zwei verschiedene Fragen:</p>
+<ul>
+<li><strong>Wirkung (Wie wirkt das?):</strong> Hierarchie, Gleichgewicht, optische Mitte, Farbklima. Es zählt, was gesehen wird. Das Auge ist das richtige Instrument, darum korrigiert man optisch.</li>
+<li><strong>Zugänglichkeit (Kommt es bei allen an?):</strong> Hier ist das eigene Auge das falsche Instrument. Wir sind nicht die Zielgruppe: Wir sehen gut, haben einen guten Bildschirm und wissen, was da steht. Die Menschen, um die es geht, sehen wir nicht: mit Sehschwäche, älter, mit billigem Display, in der Sonne. Und die Phänomene der letzten Woche (Simultankontrast, Helmholtz-Kohlrausch) zeigen gerade, dass wir Helligkeit falsch einschätzen. Wenn Wahrnehmung relativ ist, taugt sie nicht als Prüfinstrument für einen festen Mindestwert. Das ist kein Widerspruch, sondern die Konsequenz.</li>
+</ul>
+<p><strong>Die Messung ist selbst Wahrnehmung, nur gemittelt:</strong> Die WCAG-Formel gewichtet Rot, Grün und Blau so, wie das Auge sie empfindet (relative Leuchtdichte: 0,2126 R + 0,7152 G + 0,0722 B). Sie misst also ein Modell der Wahrnehmung über viele Menschen, unabhängig vom eigenen Auge.</p>
+<p><strong>Reihenfolge:</strong> Erst messen, dann schauen. 4,5 : 1 ist notwendig, aber nicht hinreichend. Und weil die Formel Schwächen hat (helle Schrift auf Dunkel, kräftige Farben), hat das Auge das letzte Wort, aber nur oberhalb der Untergrenze. Passt zur Haltung »Gefällt mir ist kein Argument«: Ein Messwert ist ein Argument, das man niemandem erklären muss.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section class="simple" data-transition="fade">
+<div>
+<h1>So sieht das Ergebnis aus</h1>
+<table>
+<thead>
+<tr>
+<th>Paar</th>
+<th>Verwendung</th>
+<th>Kontrast</th>
+<th>Grenzwert</th>
+<th>Ergebnis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>#231f20 auf #ffffff</td>
+<td>Fließtext</td>
+<td>16,3 : 1</td>
+<td>4,5 : 1</td>
+<td>besteht</td>
+</tr>
+<tr>
+<td>#888888 auf #ffffff</td>
+<td>Bildunterschrift</td>
+<td>3,54 : 1</td>
+<td>4,5 : 1</td>
+<td><strong>fällt durch</strong></td>
+</tr>
+<tr>
+<td>#6a6a6a auf #ffffff</td>
+<td>Bildunterschrift, korrigiert</td>
+<td>5,41 : 1</td>
+<td>4,5 : 1</td>
+<td>besteht</td>
+</tr>
+<tr>
+<td>#ffffff auf #9313ce</td>
+<td>Button, 18 px fett</td>
+<td>6,51 : 1</td>
+<td>4,5 : 1</td>
+<td>besteht</td>
+</tr>
+<tr>
+<td>#d9d9d9 auf #ffffff</td>
+<td>Rahmen Eingabefeld</td>
+<td>1,41 : 1</td>
+<td>3 : 1</td>
+<td><strong>fällt durch</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+      
+      
+      <aside class="notes"><div><p>So sieht das Ergebnis aus: eine Liste aller Farbpaare eines Entwurfs, jeweils mit gemessenem Kontrastverhältnis, dem geltenden Grenzwert und einer Bewertung. Wer mit Design Tokens arbeitet, prüft die Paare der Tokens einmal und hat damit das ganze System abgedeckt.</p>
+<p>Die Werte sind berechnet. Das Beispiel ist erfunden, die Farben stammen aus diesem Modul.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section class="simple" data-transition="fade">
+  <div>
+    <h1>In fünf Schritten</h1>
+    <div data-slide-shortcode-class="fragment" class="fragment"><p class="list"><strong>1. Graustufentest:</strong> schnell und grob, im Entwurf</p></div>
+    <div data-slide-shortcode-class="fragment" class="fragment"><p class="list"><strong>2. Paare erfassen:</strong> jede Kombination aus Schrift oder Element und Hintergrund</p></div>
+    <div data-slide-shortcode-class="fragment" class="fragment"><p class="list"><strong>3. Messen:</strong> mit einem Werkzeug, nicht nach Augenmaß</p></div>
+    <div data-slide-shortcode-class="fragment" class="fragment"><p class="list"><strong>4. Bewerten:</strong> Grenzwert passend zum Element</p></div>
+    <div data-slide-shortcode-class="fragment" class="fragment"><p class="list"><strong>5. Korrigieren und festhalten:</strong> anpassen, als Token speichern</p></div>
+  </div>
+</section>
+<section class="simple" data-transition="fade">
+<div>
+<h1>Die Grenzwerte (WCAG 2.2, AA)</h1>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Mindestens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Text</strong></td>
+<td>4,5 : 1</td>
+</tr>
+<tr>
+<td><strong>Große Schrift</strong><br>ab 24 px oder ca. 19 px fett</td>
+<td>3 : 1</td>
+</tr>
+<tr>
+<td><strong>Bedienelemente und Grafik</strong><br>Rahmen, Icons, Fokus</td>
+<td>3 : 1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+      
+      
+      <aside class="notes"><div><p><strong>1. Graustufentest:</strong> im Entwurf schnell und grob. In Figma ein schwarzes Rechteck mit Ebenenmodus »Color« über den Frame legen. Was verschwindet, hat zu wenig Kontrast.</p>
+<p><strong>2. Paare erfassen:</strong> alle Kombinationen von Vorder- und Hintergrund. Nicht vergessen: Platzhalter in Eingabefeldern, Links, Bildunterschriften, Text auf Fotos, Icons, Rahmen von Eingabefeldern, Fokus-Rahmen, Zustände wie Hover und Fehler, Dark Mode.</p>
+<p><strong>3. Messen:</strong> mit einem Werkzeug. WebAIM Contrast Checker (Browser), die Entwicklerwerkzeuge von Chrome und Firefox (Farbwähler zeigt das Verhältnis direkt an), Colour Contrast Analyser von TPGi (kostenlos, mit Pipette für den ganzen Bildschirm), in Figma Plugins wie Stark.</p>
+<p><strong>4. Bewerten:</strong> Grenzwert passend zum Element. Text 4,5 : 1, große Schrift ab 24 px oder ca. 19 px fett 3 : 1, Bedienelemente und informationstragende Grafik 3 : 1. Deaktivierte Elemente und reine Dekoration sind ausgenommen.</p>
+<p><strong>5. Korrigieren und festhalten:</strong> Farbe so weit abdunkeln oder aufhellen, bis der Wert passt. Das Ergebnis als Token festhalten, damit es überall gilt.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section data-slide-shortcode-class="interlude" data-background-color="#d16" class="image screenshot interlude" ><div><h1 class="title"><p>Und jetzt Sie.</p>
+</h1><h2 class="subtitle js-delay"><p>Vier Farben, zu zweit, zehn Minuten</p>
+</h2></div></section>
+<section class="simple" data-transition="fade">
+  <div>
+    <h1>Reicht das?</h1>
+    <div style="display:flex; gap:1vw; width:100%;">
+      <div style="flex:1; background:#ff8000; color:#ffffff; padding:2vh 1vw; font-weight:600; font-size:3vh;">A<br><span style="font-size:2vh; font-weight:400;">Weiß auf #ff8000</span></div>
+      <div style="flex:1; background:#ec0016; color:#ffffff; padding:2vh 1vw; font-weight:600; font-size:3vh;">B<br><span style="font-size:2vh; font-weight:400;">Weiß auf #ec0016</span></div>
+      <div style="flex:1; background:#1db954; color:#ffffff; padding:2vh 1vw; font-weight:600; font-size:3vh;">C<br><span style="font-size:2vh; font-weight:400;">Weiß auf #1db954</span></div>
+      <div style="flex:1; background:#ff385c; color:#ffffff; padding:2vh 1vw; font-weight:600; font-size:3vh;">D<br><span style="font-size:2vh; font-weight:400;">Weiß auf #ff385c</span></div>
+    </div>
+    <p style="margin-top:3vh;">Für Fließtext? Für einen Button mit großer, fetter Schrift?</p>
+  </div>
+</section>
+<section class="simple" data-transition="fade">
+  <div>
+    <h1>Messen Sie hier</h1>
+    <div style="display:flex; justify-content:center; width:100%;">
+      <figure style="margin:0; text-align:center;"><img src="./images/qr-webaim.svg" alt="QR-Code zum WebAIM Contrast Checker" style="width:40vh; height:40vh; margin:0 auto; display:block;"><figcaption><p>WebAIM Contrast Checker</p></figcaption></figure>
+    </div>
+  </div>
+</section>
+<section class="simple" data-transition="fade">
+<div>
+<h1>Auflösung</h1>
+<table>
+<thead>
+<tr>
+<th>Farbe</th>
+<th>Kontrast mit Weiß</th>
+<th>Fließtext</th>
+<th>Große Schrift</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong> #ff8000</td>
+<td>2,52 : 1</td>
+<td>fällt durch</td>
+<td>fällt durch</td>
+</tr>
+<tr>
+<td><strong>B</strong> #ec0016</td>
+<td>4,59 : 1</td>
+<td>besteht knapp</td>
+<td>besteht</td>
+</tr>
+<tr>
+<td><strong>C</strong> #1db954</td>
+<td>2,59 : 1</td>
+<td>fällt durch</td>
+<td>fällt durch</td>
+</tr>
+<tr>
+<td><strong>D</strong> #ff385c</td>
+<td>3,52 : 1</td>
+<td>fällt durch</td>
+<td>besteht</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section data-slide-shortcode-class="question" class="question "><div><h1 class="title"><p>Und wenn die Markenfarbe zu hell ist?</p>
+</h1><h2 class="subtitle js-delay">Was würden Sie vorschlagen?</h2></div></section>
+<section data-slide-shortcode-class="screenshot" class="image screenshot no-shadow" data-transition="fade" data-background-transition="fade"><figure><img src="./images/brand-zitro-problem.jpg" alt="Zitro: Gelb ist die Marke. Für weiße Schrift und Links ist es zu hell. Erfundene Marke" width="auto" ><figcaption class="bu"><p><p>Zitro: Gelb ist die Marke. Für weiße Schrift und Links ist es zu hell.<br><small>Erfundene Marke</small></p>
+</p></figcaption></figure></section>
+<section data-slide-shortcode-class="screenshot" class="image screenshot no-shadow" data-transition="none" data-background-transition="fade"><figure><img src="./images/brand-zitro-loesung.jpg" alt="Lösung: Gelb als Fläche, dunkle Schrift auf Gelb, eine dunklere Variante für Links Erfundene Marke" width="auto" ><figcaption class="bu"><p><p>Lösung: Gelb als Fläche, dunkle Schrift auf Gelb, eine dunklere Variante für Links<br><small>Erfundene Marke</small></p>
+</p></figcaption></figure></section>
+<section data-slide-shortcode-class="screenshot" class="image screenshot no-shadow" data-transition="fade" data-background-transition="fade"><figure><img src="./images/brand-minzig-problem.jpg" alt="Minzig: Mint ist die Marke. Auch hier reicht der Kontrast nicht. Erfundene Marke" width="auto" ><figcaption class="bu"><p><p>Minzig: Mint ist die Marke. Auch hier reicht der Kontrast nicht.<br><small>Erfundene Marke</small></p>
+</p></figcaption></figure></section>
+<section data-slide-shortcode-class="screenshot" class="image screenshot no-shadow" data-transition="none" data-background-transition="fade"><figure><img src="./images/brand-minzig-loesung.jpg" alt="Lösung: Mint als Fläche, eine dunklere Variante für Buttons und Links Erfundene Marke" width="auto" ><figcaption class="bu"><p><p>Lösung: Mint als Fläche, eine dunklere Variante für Buttons und Links<br><small>Erfundene Marke</small></p>
+</p></figcaption></figure></section>
+<section  class="statement"><div><h1 class="title"><p>Die Marke bleibt, die Funktion bekommt eine Variante.</p>
+</h1><div class="fragment"><p>Markenfarbe für Flächen und Logo. Für Schrift und Bedienelemente eine dunklere Variante oder dunkle Schrift. Beides als eigene Tokens festhalten.</p>
+</div></div></section>
+
+      
+      
+      <aside class="notes"><div><p><strong>Mini-Übung (ca. 10 Minuten)</strong></p>
+<p>Vier Markenfarben, jeweils mit weißer Schrift, wie man sie auf Buttons findet. Zu zweit mit dem WebAIM Contrast Checker auf dem Handy (QR-Code) messen und für jede Farbe entscheiden: Reicht das für Fließtext? Für einen Button mit großer, fetter Schrift?</p>
+<p>Auflösung (berechnet): A 2,52 : 1, fällt auch für große Schrift durch. B 4,59 : 1, besteht knapp. C 2,59 : 1, fällt durch, mit schwarzer Schrift wären es 8,12 : 1, so macht es Spotify auch. D 3,52 : 1, nur für große Schrift.</p>
+<p>Die Hex-Werte sind an die Markenfarben angelehnt und können von den aktuellen Originalen abweichen. Es geht um das Messen, nicht um die Marken.</p>
+<p>Diskussion danach: Was macht eine Marke, deren Farbe für weiße Schrift zu hell ist? Erst Vorschläge sammeln, dann die beiden Beispiele zeigen.</p>
+<p><strong>Zitro</strong> (erfunden, Gelb #ffd60a): Weiß auf Gelb hat 1,41 : 1, Gelb als Linkfarbe auf Weiß ebenso. Lösung: Gelb bleibt Fläche und Logo, Buttons bekommen dunkle Schrift (11,55 : 1), Links eine dunklere, bräunliche Variante #7a5c00 (6,25 : 1).</p>
+<p><strong>Minzig</strong> (erfunden, Mint #2ed3b7): Weiß auf Mint hat 1,89 : 1. Lösung: Mint bleibt Fläche, Buttons und Links bekommen die dunklere Variante #0f7c6c (5,1 : 1 mit Weiß).</p>
+<p>Echte Vorbilder: Spotify setzt schwarze Schrift auf das Grün, viele gelbe Marken (z. B. Post, IKEA in Teilen) arbeiten mit dunkler Schrift auf Gelb. In Design-Systemen heißen die Varianten oft brand und brand-strong oder brand-text.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="simple" class="mi-slide 
+      simple "    data-transition="convex">
+      <div><h1>Typische Fehler</h1><div data-slide-shortcode-class="fragment" class="fragment"><p class="list">Nach Augenmaß urteilen, am eigenen, hellen Bildschirm</p></div>
+<div data-slide-shortcode-class="fragment" class="fragment"><p class="list">Hellgrau für Platzhalter und Nebentexte, weil es »clean« aussieht</p></div>
+<div data-slide-shortcode-class="fragment" class="fragment"><p class="list">Nur Text prüfen, Rahmen, Icons und Fokus vergessen</p></div>
+<div data-slide-shortcode-class="fragment" class="fragment"><p class="list">Text auf Fotos nicht prüfen, an der hellsten Stelle des Bildes</p></div>
+<div data-slide-shortcode-class="fragment" class="fragment"><p class="list">Nur den hellen Modus prüfen, Dark Mode und Zustände vergessen</p></div>
+<div data-slide-shortcode-class="fragment" class="fragment"><p class="list">Erst am Ende prüfen, wenn die Farben schon überall verbaut sind</p></div>
+</div>
+      
+      
+      <aside class="notes"><div><p>Der häufigste Fehler im Studium: Platzhaltertext und Bildunterschriften in Hellgrau, weil es »clean« aussieht. Der zweithäufigste: nur die Schrift prüfen und die Rahmen von Eingabefeldern vergessen. Ein Feld mit einem #d9d9d9-Rahmen auf Weiß ist für viele Menschen praktisch unsichtbar (1,41 : 1).</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section class="simple" data-transition="fade">
+  <div>
+    <h1>Wo die Methode wiederkommt</h1>
+    <div data-slide-shortcode-class="fragment" class="fragment"><p class="list">Im ersten Entwurf: Graustufentest, bevor Farben festgelegt sind</p></div>
+    <div data-slide-shortcode-class="fragment" class="fragment"><p class="list">Bei den Design Tokens: jedes Farbpaar einmal messen</p></div>
+    <div data-slide-shortcode-class="fragment" class="fragment"><p class="list">Im Crit und vor jeder Abgabe: Liste der Paare mit Werten</p></div>
+  </div>
+</section>
+<section  class="statement"><div><h1 class="title"><p>Merksatz</p>
+</h1><div class="fragment"><p>Messen für die Untergrenze, Hinschauen für die Wirkung. Früh, für jedes Paar, auch für Rahmen, Icons und Dark Mode.</p>
+</div></div></section>
+
+      
+      
+      <aside class="notes"><div><p>Kontrast prüfen ist eine Können-Methode. Sie kehrt wieder: in jedem Workshop mit Farbe, in der Typografie (Schriftgröße und Grenzwert hängen zusammen), im Projekt bei den Design Tokens und im Crit. Shift Left: so früh wie möglich, nicht erst vor der Abgabe.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="outro" class="mi-slide 
+      outro " data-background-color="#231f20"   data-transition="convex">
+      <div class="is-fullscreen is-centered"><p></p>
+<div class="outro">
+<figure class="outro-avatar">
+<img src="../../../assets/images/cnoss.jpeg">
+<figcaption>
+<p>Danke für's Mitmachen</p>
+<p class="small"><a href="https://christiannoss.de">https://christiannoss.de</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+      
+      
+      
+      
+      </section>
+      
+        </div>
+
+      </div>
+      
+      <script src="/slides/reveal/dist/reveal.js"></script>
+      <script src="/slides/assets/scripts/libs/fittext.js"></script>
+      <script src="/slides/assets/scripts/main.js"></script>
+      <script src="/slides/reveal/plugin/notes/notes.js"></script>
+      <script src="/slides/reveal/plugin/markdown/markdown.js"></script>
+      <script src="/slides/reveal/plugin/highlight/highlight.js"></script>
+      <script src="/slides/reveal/plugin/zoom/zoom.js"></script>
+      <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+          hash: true, 
+          center: false,
+          disableLayout: true,
+          progress: true,
+          backgroundTransition: 'fade',
+          pdfSeparateFragments: false,
+          highlight: {
+            highlightOnLoad: false,
+          },
+          // Learn about plugins: https://revealjs.com/plugins/
+          plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+        }).then(() => {
+          const highlight = Reveal.getPlugin('highlight');
+          highlight.hljs.configure(
+            {
+              languages: ['javascript', 'css', 'html', 'bash', 'json', 'markdown', 'xml', 'yaml'],
+            }
+          );
+          highlight.hljs.highlightAll();
+        });
+
+        
+      </script>
+    </body>
+  </html>
