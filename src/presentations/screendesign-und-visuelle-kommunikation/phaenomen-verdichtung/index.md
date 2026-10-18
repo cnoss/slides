@@ -7,10 +7,10 @@ typ: "Phänomen"
 gruppe: ""
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Viele kleine Elemente verschmelzen ab einer bestimmten Dichte zu einer Fläche mit einem Tonwert"
+begriffe: ["Verdichtung", "Tonwert", "Raster", "Textur", "Grauwert"]
 herkunft: "B: flaeche-und-form"
 inhalt:
   - "Punkte und Linien werden Fläche"
-status: entwurf
+status: ok
 ---

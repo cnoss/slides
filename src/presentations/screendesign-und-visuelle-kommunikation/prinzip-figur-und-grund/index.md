@@ -7,10 +7,10 @@ typ: "Prinzip"
 gruppe: "Gewichten"
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Wir teilen jede Szene in Figur und Grund, und wer gestaltet, entscheidet, was Figur wird"
+begriffe: ["Figur", "Grund", "Scrim", "Elevation", "Fokus"]
 herkunft: "B: figur-und-grund"
 inhalt:
   - "Figur und Grund"
-status: entwurf
+status: ok
 ---

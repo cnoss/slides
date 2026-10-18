@@ -1068,6 +1068,9 @@ a.is-black:hover {
   display: flex !important;
   align-items: center;
 }
+.cite:has(.typo-quote) {
+  justify-content: center;
+}
 .cite blockquote {
   max-width: 70vw;
 }
@@ -1075,21 +1078,20 @@ a.is-black:hover {
   border: none;
   background-color: transparent;
   padding: 0;
-  margin: 0;
-  margin-left: 50vw;
+  width: fit-content;
+  margin: 0 auto;
   text-wrap: balance;
 }
 .cite blockquote.typo-quote p {
   line-height: var(--lh-normal);
   padding: 0;
   margin: 0;
-  transform: translateX(-50%);
 }
 .cite blockquote.typo-quote cite {
-  display: table;
+  display: block;
   margin-top: var(--m);
   margin-bottom: 0;
-  transform: translateX(-50%);
+  text-align: left;
 }
 .cite blockquote cite {
   display: block;
@@ -1842,6 +1844,31 @@ a.is-black:hover {
   transform: none;
   display: list-item;
   font-size: var(--s);
+}
+
+/* Tabellen in Folien (Markdown-Tabellen)
+########################################################################## */
+.reveal .slides section table {
+  width: 100%;
+  max-width: none !important;
+  margin-top: var(--m);
+  border-collapse: collapse;
+  font-size: var(--xs);
+  line-height: 1.35;
+}
+.reveal .slides section table th, .reveal .slides section table td {
+  padding: var(--half) var(--xs) var(--half) 0;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--light);
+}
+.reveal .slides section table th {
+  font-weight: normal;
+  color: var(--dark);
+  border-bottom: 2px solid var(--darker);
+}
+.reveal .slides section table td:first-child {
+  white-space: nowrap;
 }
 
 /* presentation-list

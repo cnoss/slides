@@ -7,11 +7,11 @@ typ: "Phänomen"
 gruppe: ""
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Farbe stört, wenn ihr der Helligkeitskontrast fehlt oder wenn sie der Bedeutung widerspricht"
+begriffe: ["Flimmern", "Isoluminanz", "Stroop-Effekt", "Farbbedeutung"]
 herkunft: "B: farben/030, 050, 060"
 inhalt:
   - "Flimmern"
   - "Stroop-Effekt"
-status: entwurf
+status: ok
 ---

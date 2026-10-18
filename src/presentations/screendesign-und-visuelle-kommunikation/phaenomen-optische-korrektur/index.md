@@ -7,12 +7,12 @@ typ: "Phänomen"
 gruppe: ""
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Exakt gleiche Maße wirken nicht gleich, darum korrigiert man nach Augenmaß: Mitte, Überhang, Irradiation"
+begriffe: ["Optische Mitte", "Überhang", "Irradiation", "Optische Korrektur", "Keyline"]
 herkunft: "N"
 inhalt:
   - "Optische Mitte"
   - "Irradiation"
   - "Quadrat gegen Raute"
-status: entwurf
+status: ok
 ---

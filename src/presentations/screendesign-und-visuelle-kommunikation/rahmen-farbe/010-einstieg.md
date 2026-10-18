@@ -27,7 +27,11 @@ speaker: |
 
 {% screenshot "./images/corporate-color-04.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":"Welche Marke ist das?"}' %}
 
-{% screenshot "./images/corporate-color-intellij.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":"Welche Marke ist das?"}' %}
+{% screenshot "./images/farben-red-bull.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":"Welche Marke ist das?"}' %}
+
+{% screenshot "./images/farben-spotify.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":"Welche Marke ist das?"}' %}
+
+{% screenshot "./images/farben-twitch.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":"Welche Marke ist das?"}' %}
 
 {% screenshot "./images/corporate-color-tiktok.png", '{"transition":"fade", "classes":"screenshot", "width":"auto", "bu":"Welche Marke ist das?"}' %}
 

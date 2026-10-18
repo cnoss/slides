@@ -96,6 +96,10 @@
   display: flex !important;
   align-items: center;
 
+  &:has(.typo-quote) {
+    justify-content: center;
+  }
+
 
   blockquote {
     max-width: 70vw;
@@ -105,22 +109,21 @@
       border: none;
       background-color: transparent;
       padding: 0;
-      margin: 0;
-      margin-left: 50vw;
+      width: fit-content;
+      margin: 0 auto;
       text-wrap: balance;
 
       p{  
         line-height: var(--lh-normal);
         padding: 0;
         margin: 0;
-        transform: translateX(-50%);
       }
 
       cite {
-        display: table;
+        display: block;
         margin-top: var(--m);
         margin-bottom: 0;
-        transform: translateX(-50%);
+        text-align: left;
       }
     }
 

@@ -7,10 +7,10 @@ typ: "Prinzip"
 gruppe: "Wirken"
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Formen tragen Bedeutung: rund, eckig, spitz, offen, teils körperlich verankert, teils gelernt"
+begriffe: ["Formsemantik", "Grundform", "Kiki-Bouba-Effekt", "Eckenradius"]
 herkunft: "B: flaeche-und-form"
 inhalt:
   - "Formsemantik"
-status: entwurf
+status: ok
 ---

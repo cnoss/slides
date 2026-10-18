@@ -7,10 +7,10 @@ typ: "Methode"
 gruppe: "Testen und Prüfen"
 tiefe: "können"
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Messen für die Untergrenze, Hinschauen für die Wirkung: Kontrastverhältnisse nach WCAG für alle Farbpaare messen"
+begriffe: ["Kontrastverhältnis", "Graustufentest", "WCAG", "Farbpaar"]
 herkunft: "N"
 inhalt:
   - "Kontrastverhältnis nach WCAG messen"
-status: entwurf
+status: ok
 ---

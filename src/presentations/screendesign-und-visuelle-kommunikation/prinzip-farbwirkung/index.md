@@ -7,11 +7,11 @@ typ: "Prinzip"
 gruppe: "Wirken"
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Farbe erzeugt Stimmung, bevor ein Wort gelesen ist, aber nur im Zusammenspiel, im Kontext und kulturell gelernt"
+begriffe: ["Farbklima", "Farbwirkung", "Farbassoziation", "Falsche Dringlichkeit"]
 herkunft: "U: farben/040, 095"
 inhalt:
   - "Farbwirkung und Farbklima"
   - "Farbe zum Emotionalisieren"
-status: entwurf
+status: ok
 ---
