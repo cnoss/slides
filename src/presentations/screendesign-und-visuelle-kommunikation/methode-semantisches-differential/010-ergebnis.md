@@ -5,7 +5,7 @@ slideClasses: wrap
 transition: none
 status: ok
 speaker: |
-  So sieht das Ergebnis aus, am Beispiel der erfundenen Bäckerei »Krume«, die Sie aus dem Moodboard kennen.
+  So sieht das Ergebnis aus, am Beispiel der erfundenen Bäckerei »Krume«, die Sie aus dem Moodboard kennen. Links steht der Entwurf, rechts baut sich das Profil auf. So hat man beim Bewerten den Entwurf vor Augen.
 
   **Das Profil:** acht Gegensatzpaare, dazwischen eine Skala mit fünf Stufen. Die schwarze Linie ist das Soll: So soll die Marke wirken. Es wird festgelegt, bevor gestaltet wird.
 
@@ -18,9 +18,8 @@ speaker: |
   Die Pole stehen bewusst gemischt: Die Wunschbegriffe liegen mal links, mal rechts. Sonst kreuzen Bewertende aus Gewohnheit immer auf derselben Seite an.
 ---
 
-{% screenshot "./images/baeckerei-app.jpg", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":"Der Entwurf für die Bäckerei »Krume«<br><small>Fiktives Beispiel</small>"}' %}
-
-{% frame '{"stage":"#ffffff", "w":900, "h":500, "bu":"Acht Gegensatzpaare, fünf Stufen"}' %}
+{% frame '{"stage":"#ffffff", "w":1160, "h":500, "bu":"Der Entwurf für die Bäckerei »Krume« und acht Gegensatzpaare mit fünf Stufen<br><small>Fiktives Beispiel</small>"}' %}
+<image data-id="entwurf" href="./images/baeckerei-app.jpg" x="60" y="20" width="213" height="460" /><rect data-id="entwurf-rand" x="60" y="20" width="213" height="460" fill="none" stroke="#d9d9d9" stroke-width="2" /><g transform="translate(250,0)">
 <g data-id="zeile0" opacity="1">
 <text x="290" y="58" text-anchor="end" font-family="sans-serif" font-size="22" fill="#231f20">handwerklich</text>
 <text x="650" y="58" text-anchor="start" font-family="sans-serif" font-size="22" fill="#231f20">effizient</text>
@@ -101,9 +100,11 @@ speaker: |
 <circle cx="540" cy="414" r="6" fill="#ffffff" stroke="#888888" stroke-width="2" />
 <circle cx="610" cy="414" r="6" fill="#ffffff" stroke="#888888" stroke-width="2" />
 </g>
+</g>
 {% endframe %}
 
-{% frame '{"stage":"#ffffff", "w":900, "h":500, "bu":"Das Soll: So soll »Krume« wirken"}' %}
+{% frame '{"stage":"#ffffff", "w":1160, "h":500, "bu":"Das Soll: So soll »Krume« wirken"}' %}
+<image data-id="entwurf" href="./images/baeckerei-app.jpg" x="60" y="20" width="213" height="460" /><rect data-id="entwurf-rand" x="60" y="20" width="213" height="460" fill="none" stroke="#d9d9d9" stroke-width="2" /><g transform="translate(250,0)">
 <g data-id="zeile0" opacity="1">
 <text x="290" y="58" text-anchor="end" font-family="sans-serif" font-size="22" fill="#231f20">handwerklich</text>
 <text x="650" y="58" text-anchor="start" font-family="sans-serif" font-size="22" fill="#231f20">effizient</text>
@@ -193,9 +194,11 @@ speaker: |
 <circle data-id="soll5" cx="610" cy="310" r="10" fill="#231f20" />
 <circle data-id="soll6" cx="330" cy="362" r="10" fill="#231f20" />
 <circle data-id="soll7" cx="400" cy="414" r="10" fill="#231f20" />
+</g>
 {% endframe %}
 
-{% frame '{"stage":"#ffffff", "w":900, "h":500, "bu":"Das Ist: So wirkt der Entwurf auf zehn Testpersonen (Mittelwert)"}' %}
+{% frame '{"stage":"#ffffff", "w":1160, "h":500, "bu":"Das Ist: So wirkt der Entwurf auf zehn Testpersonen (Mittelwert)"}' %}
+<image data-id="entwurf" href="./images/baeckerei-app.jpg" x="60" y="20" width="213" height="460" /><rect data-id="entwurf-rand" x="60" y="20" width="213" height="460" fill="none" stroke="#d9d9d9" stroke-width="2" /><g transform="translate(250,0)">
 <g data-id="zeile0" opacity="1">
 <text x="290" y="58" text-anchor="end" font-family="sans-serif" font-size="22" fill="#231f20">handwerklich</text>
 <text x="650" y="58" text-anchor="start" font-family="sans-serif" font-size="22" fill="#231f20">effizient</text>
@@ -294,9 +297,11 @@ speaker: |
 <circle data-id="ist5" cx="484" cy="310" r="10" fill="#9313ce" />
 <circle data-id="ist6" cx="372" cy="362" r="10" fill="#9313ce" />
 <circle data-id="ist7" cx="421" cy="414" r="10" fill="#9313ce" />
+</g>
 {% endframe %}
 
-{% frame '{"stage":"#ffffff", "w":900, "h":500, "bu":"Die Lücken: moderner und exklusiver als gewollt. Das ist der Auftrag für die Überarbeitung."}' %}
+{% frame '{"stage":"#ffffff", "w":1160, "h":500, "bu":"Die Lücken: moderner und exklusiver als gewollt. Das ist der Auftrag für die Überarbeitung."}' %}
+<image data-id="entwurf" href="./images/baeckerei-app.jpg" x="60" y="20" width="213" height="460" /><rect data-id="entwurf-rand" x="60" y="20" width="213" height="460" fill="none" stroke="#d9d9d9" stroke-width="2" /><g transform="translate(250,0)">
 <g data-id="zeile0" opacity="0.25">
 <text x="290" y="58" text-anchor="end" font-family="sans-serif" font-size="22" fill="#231f20">handwerklich</text>
 <text x="650" y="58" text-anchor="start" font-family="sans-serif" font-size="22" fill="#231f20">effizient</text>
@@ -395,4 +400,5 @@ speaker: |
 <circle data-id="ist5" cx="484" cy="310" r="10" fill="#9313ce" />
 <circle data-id="ist6" cx="372" cy="362" r="10" fill="#9313ce" />
 <circle data-id="ist7" cx="421" cy="414" r="10" fill="#9313ce" />
+</g>
 {% endframe %}

@@ -11,7 +11,7 @@ speaker: |
 
   **3. Gegenpole finden:** Zu jedem Begriff ein Gegenbegriff. Beide Pole müssen positiv sein, siehe nächste Folien.
 
-  **4. Soll festlegen:** Auf jeder Skala markieren, wo die Marke landen soll. Nicht überall die Eins: Eine Marke, die alles extrem ist, hat kein Profil.
+  **4. Soll festlegen:** Auf jeder Skala markieren, wo die Marke landen soll. Nicht überall die Mitte: Eine Marke, die sich nirgends festlegt, hat kein Profil.
 
   **5. Prüfen:** Andere bewerten den Entwurf mit denselben Paaren, ohne das Soll zu kennen. Dann Soll und Ist übereinanderlegen. Die Lücken sind der Auftrag.
 

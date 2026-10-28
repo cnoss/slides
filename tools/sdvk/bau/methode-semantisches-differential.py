@@ -50,6 +50,13 @@ def profil(soll=False, ist=False, fokus=False):
             out.append(f'<circle data-id="ist{i}" cx="{X(t):.0f}" cy="{Y(i)}" r="10" fill="{LILA}" />')
     return '\n'.join(out)
 
+# Entwurf links, Profil rechts: Das Bild steht fest, nur die Linien bauen sich auf
+BILD_W = round(460 * 780 / 1688)
+def mit_entwurf(inner):
+    return (f'<image data-id="entwurf" href="./images/baeckerei-app.jpg" x="60" y="20" width="{BILD_W}" height="460" />'
+            f'<rect data-id="entwurf-rand" x="60" y="20" width="{BILD_W}" height="460" fill="none" stroke="{HELL}" stroke-width="2" />'
+            f'<g transform="translate(250,0)">\n{inner}\n</g>')
+
 def frame(inner, bu, w=900, h=500):
     return "{% frame '{\"stage\":\"#ffffff\", \"w\":" + str(w) + ", \"h\":" + str(h) + ", \"bu\":\"" + bu + "\"}' %}\n" + inner + "\n{% endframe %}"
 
@@ -61,14 +68,14 @@ layout: presentation.11ty.js
 slideClasses: wrap
 status: ok
 speaker: |
-  **Live-Test (ca. 3 Minuten):** Drei Startseiten von Finanzanbietern nacheinander zeigen. Pro Seite fragen: Wie wirkt die Seite? Ein Wort, ganz spontan, in den Raum rufen lassen. Die Wörter an der Tafel sammeln.
+  **Live-Test (ca. 5 Minuten):** Erst die Aufgabe zeigen, noch ohne Screenshot: Zettel und Stift raus. Dann drei Startseiten von Finanzanbietern nacheinander zeigen, je ca. eine Minute. Jede Person notiert pro Seite still für sich fünf bis zehn Adjektive. Nicht reinrufen: Sonst lehnen sich alle an die ersten Aussagen an, und die Unterschiede verschwinden. Erst danach einsammeln: Einige lesen ihre Wörter zu einer Seite vor, die Wörter an der Tafel sammeln.
 
   Was dabei passiert: Für dieselbe Seite fallen sehr unterschiedliche Wörter. »Seriös«, »langweilig«, »vertrauenswürdig«, »kalt«. Teils meinen sie dasselbe, teils das Gegenteil, und vergleichen kann man sie nicht. Genau dieses Problem löst das Semantische Differential: Es gibt die Begriffe vor und macht aus Eindrücken Werte auf einer Skala.
 
   Screenshots: deka.de, flossbachvonstorch.de, blackrock.com, jeweils 2024.
 ---
 
-{% interlude "Wie wirkt das?", "Ein Wort, ganz spontan" %}
+{% interlude "Wie wirkt was?", "Notieren Sie fünf bis zehn Adjektive." %}
 
 {% screenshot "./images/deka.jpg", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":"Wie wirkt diese Seite?<br><small>deka.de, Screenshot 2024</small>"}' %}
 {% screenshot "./images/flossbach.jpg", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":"Und diese?<br><small>flossbachvonstorch.de, Screenshot 2024</small>"}' %}
@@ -86,7 +93,7 @@ slideClasses: wrap
 transition: none
 status: ok
 speaker: |
-  So sieht das Ergebnis aus, am Beispiel der erfundenen Bäckerei »Krume«, die Sie aus dem Moodboard kennen.
+  So sieht das Ergebnis aus, am Beispiel der erfundenen Bäckerei »Krume«, die Sie aus dem Moodboard kennen. Links steht der Entwurf, rechts baut sich das Profil auf. So hat man beim Bewerten den Entwurf vor Augen.
 
   **Das Profil:** acht Gegensatzpaare, dazwischen eine Skala mit fünf Stufen. Die schwarze Linie ist das Soll: So soll die Marke wirken. Es wird festgelegt, bevor gestaltet wird.
 
@@ -99,15 +106,13 @@ speaker: |
   Die Pole stehen bewusst gemischt: Die Wunschbegriffe liegen mal links, mal rechts. Sonst kreuzen Bewertende aus Gewohnheit immer auf derselben Seite an.
 ---
 
-{% screenshot "./images/baeckerei-app.jpg", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":"Der Entwurf für die Bäckerei »Krume«<br><small>Fiktives Beispiel</small>"}' %}
+''' + frame(mit_entwurf(profil()), 'Der Entwurf für die Bäckerei »Krume« und acht Gegensatzpaare mit fünf Stufen<br><small>Fiktives Beispiel</small>', 1160) + '''
 
-''' + frame(profil(), 'Acht Gegensatzpaare, fünf Stufen') + '''
+''' + frame(mit_entwurf(profil(soll=True)), 'Das Soll: So soll »Krume« wirken', 1160) + '''
 
-''' + frame(profil(soll=True), 'Das Soll: So soll »Krume« wirken') + '''
+''' + frame(mit_entwurf(profil(soll=True, ist=True)), 'Das Ist: So wirkt der Entwurf auf zehn Testpersonen (Mittelwert)', 1160) + '''
 
-''' + frame(profil(soll=True, ist=True), 'Das Ist: So wirkt der Entwurf auf zehn Testpersonen (Mittelwert)') + '''
-
-''' + frame(profil(soll=True, ist=True, fokus=True), 'Die Lücken: moderner und exklusiver als gewollt. Das ist der Auftrag für die Überarbeitung.') + '''
+''' + frame(mit_entwurf(profil(soll=True, ist=True, fokus=True)), 'Die Lücken: moderner und exklusiver als gewollt. Das ist der Auftrag für die Überarbeitung.', 1160) + '''
 ''')
 
 # ---------------------------------------------------------------- Schritte
@@ -139,7 +144,7 @@ speaker: |
 
   **3. Gegenpole finden:** Zu jedem Begriff ein Gegenbegriff. Beide Pole müssen positiv sein, siehe nächste Folien.
 
-  **4. Soll festlegen:** Auf jeder Skala markieren, wo die Marke landen soll. Nicht überall die Eins: Eine Marke, die alles extrem ist, hat kein Profil.
+  **4. Soll festlegen:** Auf jeder Skala markieren, wo die Marke landen soll. Nicht überall die Mitte: Eine Marke, die sich nirgends festlegt, hat kein Profil.
 
   **5. Prüfen:** Andere bewerten den Entwurf mit denselben Paaren, ohne das Soll zu kennen. Dann Soll und Ist übereinanderlegen. Die Lücken sind der Auftrag.
 
@@ -202,30 +207,7 @@ speaker: |
 {% statement "Die Prüffrage", "Gibt es eine erfolgreiche Marke, die genau diesen Pol für sich wählen würde? Wenn nein, ist der Pol negativ." %}
 ''')
 
-# ---------------------------------------------------------------- Mini-Übung
-W(D, '040-uebung.md', '''
----
-title: "Mini-Übung"
-layout: presentation.11ty.js
-slideClasses: wrap
-status: ok
-speaker: |
-  **Mini-Übung (ca. 10 Minuten)**
-
-  Die drei Finanzseiten vom Anfang noch einmal zeigen. Vier Paare an die Tafel schreiben, Pole gemischt:
-
-  - seriös gegen verspielt
-  - modern gegen traditionell (Pole getauscht: traditionell links)
-  - nahbar gegen exklusiv
-  - ruhig gegen lebendig
-
-  Für jede Seite und jedes Paar per Handzeichen abstimmen: ein bis fünf Finger. Ein Wert pro Paar an die Tafel, grob gemittelt. Danach vergleichen: Wo sind sich alle einig, wo streut es? Und: Welche Seite unterscheidet sich am stärksten von den anderen beiden?
-
-  Was meistens passiert: Bei »seriös« sind sich alle einig, bei »nahbar« streut es. Gute Überleitung: Streuung heißt, dass die Gestaltung an dieser Stelle kein klares Signal sendet.
----
-
-{% question "Wie wirken die drei Seiten?", "Vier Paare, fünf Stufen, Handzeichen. Wo sind sich alle einig, wo nicht?" %}
-''')
+# Mini-Übung (040-uebung.md) entfernt am 28.10.2026: Die Wirkung der drei Seiten wird schon im Problem-Teil notiert.
 
 # ---------------------------------------------------------------- Typische Fehler
 W(D, '050-fehler.md', '''
@@ -237,7 +219,7 @@ status: ok
 speaker: |
   Der häufigste Fehler ist der negative Gegenpol. Der zweithäufigste: nur selbst bewerten. Wer den Entwurf gebaut hat, sieht darin, was er wollte, nicht was er zeigt. Wirkung entsteht beim Gegenüber.
 
-  Überall die Eins: Wer jede Skala bis zum Rand ausreizt, hat keine Entscheidung getroffen. Eine Marke kann nicht gleichzeitig maximal seriös, maximal nahbar und maximal modern sein.
+  Überall die Mitte: Wer auf jeder Skala die Mitte ankreuzt, hat keine Entscheidung getroffen. Ein Profil entsteht erst durch klare Ausschläge. Die Mitte ist oft eine Flucht vor der Entscheidung, beim Festlegen des Solls genauso wie beim Bewerten.
 
   Pole immer auf derselben Seite: Menschen kreuzen aus Gewohnheit gern auf einer Seite an (Antworttendenz). Gemischte Pole halten die Aufmerksamkeit wach.
 ---
@@ -245,7 +227,7 @@ speaker: |
 {% fragment '<p class="list">Negativer Gegenpol: Die Bewertung kippt auf die andere Seite</p>' %}
 {% fragment '<p class="list">Synonyme statt Gegensätze: warm gegen herzlich misst nichts</p>' %}
 {% fragment '<p class="list">Zu viele Paare: Das Profil wird zur Zickzacklinie</p>' %}
-{% fragment '<p class="list">Überall die Eins: Wer alles will, hat kein Profil</p>' %}
+{% fragment '<p class="list">Überall die Mitte: Wer sich nicht festlegt, hat kein Profil</p>' %}
 {% fragment '<p class="list">Pole immer auf derselben Seite: Man kreuzt aus Gewohnheit an</p>' %}
 {% fragment '<p class="list">Nur selbst bewerten: Wirkung entsteht beim Gegenüber</p>' %}
 ''')
@@ -313,7 +295,6 @@ s = s.replace('''inhalt:
   - "Ergebnis zuerst: Soll und Ist"
   - "Fünf Schritte"
   - "Gegenpole finden"
-  - "Mini-Übung"
   - "Typische Fehler"''').replace('einsatz: ""', 'einsatz: "Am Anfang zum Festlegen der Wirkung, am Ende zum Prüfen"')
 open(p, 'w').write(s)
 print('fertig')

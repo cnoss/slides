@@ -14,7 +14,6 @@ inhalt:
   - "Ergebnis zuerst: Soll und Ist"
   - "Fünf Schritte"
   - "Gegenpole finden"
-  - "Mini-Übung"
   - "Typische Fehler"
 status: ok
 ---
