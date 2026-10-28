@@ -1,0 +1,294 @@
+<!doctype html>
+  <html lang="de">
+    <head>
+      <title>Mechanismus // Christian Noss</title>
+      <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="googlebot-news" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+      <link rel="stylesheet" href="/slides/reveal/dist/reset.css">
+      <link rel="stylesheet" href="/slides/reveal/dist/reveal.css">
+      <link rel="stylesheet" href="/slides/assets/main.css">
+     
+      <link rel="icon" type="image/svg" href="/slides/assets/images/preview_black_24dp.svg">
+  
+      <!-- Theme used for syntax highlighted code -->
+      <link rel="stylesheet" href="/slides/reveal/plugin/highlight/github.css">
+    </head>
+    <body>
+      <div class="reveal">
+        <div class="slides">
+          
+      <section data-slide-class="intro" class="mi-slide 
+      intro " data-background-color="#9313ce"   data-transition="zoom">
+      <div class="is-full-width">
+<h1>Pop-out</h1>
+<h2>Phänomen</h2>
+</div>
+
+      
+      
+      
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section  class="statement"><div><h1 class="title"><p>Finden Sie den lila Kreis.</p>
+</h1><div class="fragment"><p>Er blitzt nur einen Augenblick auf. Zeigen Sie danach sofort: links oder rechts?</p>
+</div></div></section>
+<section class="simple" data-transition="none">
+  <div>
+    <h1>Durchgang 1</h1>
+    <p>Links oder rechts? Zeigen Sie sofort in die Richtung.</p>
+    <div class="fragment blitz" style="--dauer:250ms;"><img src="./images/suche-a1.svg" alt="Suchbild mit Kreisen"></div><style>
+.reveal .slides section .fragment.blitz{opacity:1;visibility:inherit;transition:none;transform:none;padding:0;margin:0;position:fixed;inset:0;width:100% !important;max-width:none !important;display:flex;align-items:center;justify-content:center;pointer-events:none;}
+.reveal .slides section .fragment.blitz img{opacity:0;height:92%;width:auto;max-width:96%;margin:0;box-shadow:0 0 1.5rem rgba(0,0,0,.25);}
+.reveal .slides section .fragment.blitz.visible img{animation:blitz-zeigen var(--dauer,50ms) linear 1;}
+@keyframes blitz-zeigen{from{opacity:1}to{opacity:1}}
+</style>
+  </div>
+</section>
+<section class="simple" data-transition="none">
+  <div>
+    <h1>Durchgang 2</h1>
+    <p>Links oder rechts? Zeigen Sie sofort in die Richtung.</p>
+    <div class="fragment blitz" style="--dauer:250ms;"><img src="./images/suche-a2.svg" alt="Suchbild mit Kreisen"></div>
+  </div>
+</section>
+<section  class="statement"><div><h1 class="title"><p>Noch einmal.</p>
+</h1><div class="fragment"><p>Gleiche Aufgabe: Finden Sie den lila Kreis.</p>
+</div></div></section>
+<section class="simple" data-transition="none">
+  <div>
+    <h1>Durchgang 3</h1>
+    <p>Links oder rechts? Zeigen Sie sofort in die Richtung.</p>
+    <div class="fragment blitz" style="--dauer:250ms;"><img src="./images/suche-b1.svg" alt="Suchbild mit Kreisen und Quadraten"></div>
+  </div>
+</section>
+<section class="simple" data-transition="none">
+  <div>
+    <h1>Durchgang 4</h1>
+    <p>Links oder rechts? Zeigen Sie sofort in die Richtung.</p>
+    <div class="fragment blitz" style="--dauer:250ms;"><img src="./images/suche-b2.svg" alt="Suchbild mit Kreisen und Quadraten"></div>
+  </div>
+</section>
+<section data-slide-shortcode-class="screenshot" class="image screenshot no-shadow" data-transition="fade" data-background-transition="fade"><figure><img src="./images/suche-a1.svg" alt="Und jetzt in Ruhe: Durchgang 1" width="auto" ><figcaption class="bu"><p><p>Und jetzt in Ruhe: Durchgang 1</p>
+</p></figcaption></figure></section>
+<section data-slide-shortcode-class="screenshot" class="image screenshot no-shadow" data-transition="none" data-background-transition="fade"><figure><img src="./images/suche-b1.svg" alt="Durchgang 3: Sie müssen suchen, auch mit Zeit" width="auto" ><figcaption class="bu"><p><p>Durchgang 3: Sie müssen suchen, auch mit Zeit</p>
+</p></figcaption></figure></section>
+
+      
+      
+      <aside class="notes"><div><p><strong>Live-Test (ca. 4 Minuten)</strong></p>
+<p>Vier Suchbilder, jedes blitzt beim Weiterschalten nur 250 Millisekunden auf. Vorher ansagen: Es geht sehr schnell, und gleich danach zeigen alle mit dem Arm, auf welcher Seite der lila Kreis war.</p>
+<p>Durchgang 1 und 2: Der lila Kreis ist der einzige lila Gegenstand zwischen grauen Kreisen. Fast alle zeigen richtig, obwohl die Zeit kaum zum Hinschauen reicht. Lösung: 1 rechts, 2 links.</p>
+<p>Durchgang 3 und 4: Jetzt gibt es auch lila Quadrate. Der lila Kreis unterscheidet sich von den grauen Kreisen nur durch die Farbe und von den lila Quadraten nur durch die Form. Die Arme zeigen in alle Richtungen, viele zögern. Lösung: 3 links, 4 rechts.</p>
+<p>Danach beide Fassungen in Ruhe zeigen. Im zweiten Bild muss man auch mit Zeit suchen.</p>
+<p>Technik: Der Blitz ist ein Fragment. Zurück und wieder vor wiederholt ihn. Die Suchbilder erzeugt das Bauskript (zufällig, aber fest).</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section data-slide-shortcode-class="interlude" data-background-color="#9313ce" class="image screenshot interlude" ><div><h1 class="title"><p>Ein Merkmal springt ins Auge.</p>
+</h1><h2 class="subtitle js-delay"><p>Eine Kombination muss man suchen.</p>
+</h2></div></section>
+
+      
+      
+      <aside class="notes"><div><p>Im ersten Bild war der Kreis da, bevor Sie gesucht haben. Er unterscheidet sich in einem einzigen Merkmal, der Farbe, von allem anderen. Im zweiten Bild unterscheidet er sich nur in der Kombination aus Farbe und Form. Dafür muss man Element für Element prüfen.</p>
+<p>Begriffe: Pop-out, präattentive Wahrnehmung, Merkmalssuche, Konjunktionssuche.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section class="simple" data-transition="fade">
+  <div>
+    <h1>Was sofort ins Auge springt</h1>
+    <div data-slide-shortcode-class="fragment" class="fragment"><p class="list"><strong>Farbe</strong></p></div>
+    <div data-slide-shortcode-class="fragment" class="fragment"><p class="list"><strong>Größe</strong></p></div>
+    <div data-slide-shortcode-class="fragment" class="fragment"><p class="list"><strong>Ausrichtung</strong></p></div>
+    <div data-slide-shortcode-class="fragment" class="fragment"><p class="list"><strong>Bewegung</strong></p></div>
+    <div data-slide-shortcode-class="fragment" class="fragment"><p class="list"><strong>Form</strong>, aber schwächer</p></div>
+  </div>
+</section>
+<section  class="statement"><div><h1 class="title"><p>Ein Merkmal: sofort, egal wie viele.</p>
+</h1><div class="fragment"><p>Eine Kombination: Element für Element. Je mehr Elemente, desto länger dauert es.</p>
+</div></div></section>
+
+      
+      
+      <aside class="notes"><div><p>Ein Teil der Verarbeitung läuft parallel über das ganze Gesichtsfeld, bevor die Aufmerksamkeit irgendwohin gelenkt wird: präattentiv. Einfache Merkmale wie Farbe, Größe, Ausrichtung und Bewegung werden dort schon erfasst. Weicht ein Element in genau einem solchen Merkmal ab, springt es heraus, egal wie viele andere Elemente da sind.</p>
+<p>Eine Kombination von Merkmalen erkennt erst die Aufmerksamkeit, und die arbeitet nacheinander. Deshalb wächst die Suchzeit mit jedem zusätzlichen Element.</p>
+<p>Welche Merkmale das sind, zeigt das Prinzip Kontrast und Hervorhebung Folie für Folie.</p>
+<p><strong>Hintergrund</strong></p>
+<p>Anne Treisman und Garry Gelade, »A feature-integration theory of attention«, Cognitive Psychology 12, 1980. Merkmalsintegrationstheorie: Merkmale werden parallel registriert, ihre Verknüpfung zu einem Objekt braucht serielle Aufmerksamkeit. In ihren Versuchen blieb die Suchzeit bei Merkmalssuche fast gleich, bei Konjunktionssuche stieg sie mit der Zahl der Elemente linear an.</p>
+<p>Colin Ware, »Visual Thinking for Information Design« (2. Auflage 2021), nennt als präattentiv u. a. Farbe, Größe, Ausrichtung, Bewegung, Krümmung und Hinzufügungen (z. B. ein Rahmen). Form wirkt nur teilweise: Ein Kreis zwischen Quadraten springt weniger stark heraus als eine abweichende Farbe.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section class="simple" data-transition="none">
+  <div>
+    <h1>Merken Sie sich so viele Wörter wie möglich.</h1>
+    <p>Sie haben fünf Sekunden.</p>
+    <div class="fragment wortliste" style="--dauer:5s;"><div style="display:block;width:8em !important;hyphens:none;white-space:nowrap;margin:0;padding:0;font-size:4vh;line-height:1.25;text-align:left;"><div style="margin:0;padding:0.15em 0;">Tisch</div><div style="margin:0;padding:0.15em 0;">Lampe</div><div style="margin:0;padding:0.15em 0;">Fenster</div><div style="margin:0;padding:0.15em 0;">Teppich</div><div style="margin:0;padding:0.15em 0;">Regal</div><div style="margin:0;padding:0.15em 0;">Kissen</div><div style="margin:0;padding:0.15em 0;color:#9313ce;font-weight:700;">Spiegel</div><div style="margin:0;padding:0.15em 0;">Sessel</div><div style="margin:0;padding:0.15em 0;">Vorhang</div><div style="margin:0;padding:0.15em 0;">Schrank</div></div></div>
+    <style>
+.reveal .slides section .fragment.wortliste{opacity:0;visibility:inherit;transition:none;transform:none;position:fixed;inset:0;width:100% !important;max-width:none !important;margin:0;padding:0;display:flex;align-items:center;justify-content:center;background:#ffffff;pointer-events:none;}
+.reveal .slides section .fragment.wortliste.visible{opacity:0;animation:wortliste-zeigen var(--dauer,5s) linear 1;}
+@keyframes wortliste-zeigen{from{opacity:1}to{opacity:1}}
+    </style>
+  </div>
+</section>
+<section data-slide-shortcode-class="question" class="question "><div><h1 class="title"><p>Welche Wörter wissen Sie noch?</p>
+</h1><h2 class="subtitle js-delay">Schreiben Sie sie auf. 30 Sekunden.</h2></div></section>
+<section class="simple" data-transition="fade">
+  <div>
+    <h1>Die Liste</h1>
+    <div style="margin:0;padding:0;font-size:3.2vh;line-height:1.2;text-align:left;columns:2;"><div style="margin:0;padding:0.15em 0;">Tisch</div><div style="margin:0;padding:0.15em 0;">Lampe</div><div style="margin:0;padding:0.15em 0;">Fenster</div><div style="margin:0;padding:0.15em 0;">Teppich</div><div style="margin:0;padding:0.15em 0;">Regal</div><div style="margin:0;padding:0.15em 0;">Kissen</div><div style="margin:0;padding:0.15em 0;color:#9313ce;font-weight:700;">Spiegel</div><div style="margin:0;padding:0.15em 0;">Sessel</div><div style="margin:0;padding:0.15em 0;">Vorhang</div><div style="margin:0;padding:0.15em 0;">Schrank</div></div>
+  </div>
+</section>
+<section  class="statement"><div><h1 class="title"><p>Das Andere bleibt hängen.</p>
+</h1><div class="fragment"><p>Was sich abhebt, wird nicht nur schneller gefunden, sondern auch besser erinnert.</p>
+</div></div></section>
+
+      
+      
+      <aside class="notes"><div><p><strong>Live-Test (ca. 3 Minuten)</strong></p>
+<p>Die Liste erscheint beim Weiterschalten für fünf Sekunden und verschwindet von selbst. Danach 30 Sekunden: Alle schreiben auf, welche Wörter sie noch wissen. Dann per Handzeichen abfragen, Wort für Wort. Meist nennen die meisten das lila Wort »Spiegel«, obwohl es mitten in der Liste steht. Häufig sind auch das erste und das letzte Wort dabei (Serial-Position-Effekt).</p>
+<p>Eine Demo im Hörsaal ist kein Experiment: kleine Gruppe, alle sehen die Pointe kommen. Aber der Effekt ist robust und gut belegt.</p>
+<p><strong>Hintergrund</strong></p>
+<p>Hedwig von Restorff, »Über die Wirkung von Bereichsbildungen im Spurenfeld«, Psychologische Forschung 18, 1933, entstanden am Berliner Psychologischen Institut im Umfeld von Wolfgang Köhler, also mitten in der Gestaltpsychologie. Ein Element, das sich von den anderen abhebt, wird besser erinnert (Isolationseffekt). Yablonski, Laws of UX: »Von Restorff Effect«.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="none">
+      <section data-auto-animate data-slide-shortcode-class="frame" class="image screenshot " data-transition="none" data-background-transition="none" data-background-color="#666666"><figure><svg data-id="frame" viewBox="0 0 450 900" style="height:66vh; width:auto; max-width:90vw;"><rect x="0" y="0" width="450" height="900" fill="#ffffff" /><rect data-id="i0" x="25" y="80" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i1" x="135" y="80" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i2" x="245" y="80" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i3" x="355" y="80" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i4" x="25" y="190" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i5" x="135" y="190" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i6" x="245" y="190" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i7" x="355" y="190" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i8" x="25" y="300" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i9" x="135" y="300" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i10" x="245" y="300" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i11" x="355" y="300" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i12" x="25" y="410" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i13" x="135" y="410" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i14" x="245" y="410" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i15" x="355" y="410" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i16" x="25" y="520" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i17" x="135" y="520" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i18" x="245" y="520" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i19" x="355" y="520" width="70" height="70" rx="18" fill="#d9d9d9" /></svg><figcaption class="bu is-dark"><p><p>Zwanzig gleiche Icons</p>
+</p></figcaption></figure></section>
+<section data-auto-animate data-slide-shortcode-class="frame" class="image screenshot " data-transition="none" data-background-transition="none" data-background-color="#666666"><figure><svg data-id="frame" viewBox="0 0 450 900" style="height:66vh; width:auto; max-width:90vw;"><rect x="0" y="0" width="450" height="900" fill="#ffffff" /><rect data-id="i0" x="25" y="80" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i1" x="135" y="80" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i2" x="245" y="80" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i3" x="355" y="80" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i4" x="25" y="190" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i5" x="135" y="190" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i6" x="245" y="190" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i7" x="355" y="190" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i8" x="25" y="300" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i9" x="135" y="300" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i10" x="245" y="300" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i11" x="355" y="300" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i12" x="25" y="410" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i13" x="135" y="410" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i14" x="245" y="410" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i15" x="355" y="410" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i16" x="25" y="520" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i17" x="135" y="520" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i18" x="245" y="520" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i19" x="355" y="520" width="70" height="70" rx="18" fill="#d9d9d9" /><circle data-id="b6" cx="311" cy="194" r="16" fill="#9313ce" stroke="#ffffff" stroke-width="4" /></svg><figcaption class="bu is-dark"><p><p>Ein Punkt: sofort gesehen</p>
+</p></figcaption></figure></section>
+<section data-auto-animate data-slide-shortcode-class="frame" class="image screenshot " data-transition="none" data-background-transition="none" data-background-color="#666666"><figure><svg data-id="frame" viewBox="0 0 450 900" style="height:66vh; width:auto; max-width:90vw;"><rect x="0" y="0" width="450" height="900" fill="#ffffff" /><rect data-id="i0" x="25" y="80" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i1" x="135" y="80" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i2" x="245" y="80" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i3" x="355" y="80" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i4" x="25" y="190" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i5" x="135" y="190" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i6" x="245" y="190" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i7" x="355" y="190" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i8" x="25" y="300" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i9" x="135" y="300" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i10" x="245" y="300" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i11" x="355" y="300" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i12" x="25" y="410" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i13" x="135" y="410" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i14" x="245" y="410" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i15" x="355" y="410" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i16" x="25" y="520" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i17" x="135" y="520" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i18" x="245" y="520" width="70" height="70" rx="18" fill="#d9d9d9" /><rect data-id="i19" x="355" y="520" width="70" height="70" rx="18" fill="#d9d9d9" /><circle data-id="b1" cx="201" cy="84" r="16" fill="#9313ce" stroke="#ffffff" stroke-width="4" /><circle data-id="b3" cx="421" cy="84" r="16" fill="#9313ce" stroke="#ffffff" stroke-width="4" /><circle data-id="b4" cx="91" cy="194" r="16" fill="#9313ce" stroke="#ffffff" stroke-width="4" /><circle data-id="b6" cx="311" cy="194" r="16" fill="#9313ce" stroke="#ffffff" stroke-width="4" /><circle data-id="b9" cx="201" cy="304" r="16" fill="#9313ce" stroke="#ffffff" stroke-width="4" /><circle data-id="b10" cx="311" cy="304" r="16" fill="#9313ce" stroke="#ffffff" stroke-width="4" /><circle data-id="b13" cx="201" cy="414" r="16" fill="#9313ce" stroke="#ffffff" stroke-width="4" /><circle data-id="b15" cx="421" cy="414" r="16" fill="#9313ce" stroke="#ffffff" stroke-width="4" /><circle data-id="b16" cx="91" cy="524" r="16" fill="#9313ce" stroke="#ffffff" stroke-width="4" /><circle data-id="b18" cx="311" cy="524" r="16" fill="#9313ce" stroke="#ffffff" stroke-width="4" /></svg><figcaption class="bu is-dark"><p><p>Viele Punkte: Keiner springt mehr heraus, jeder zieht</p>
+</p></figcaption></figure></section>
+<section data-auto-animate data-slide-shortcode-class="frame" class="image screenshot " data-transition="none" data-background-transition="none" data-background-color="#ffffff"><figure><svg data-id="frame" viewBox="0 0 450 740" style="height:66vh; width:auto; max-width:90vw;"><rect x="0" y="0" width="450" height="740" fill="#ffffff" /><rect data-id="l0" x="75" y="90" width="110" height="12" fill="#888888" /><rect data-id="f0" x="75" y="110" width="300" height="48" fill="#ffffff" stroke="#888888" stroke-width="2" /><rect data-id="l1" x="75" y="210" width="110" height="12" fill="#888888" /><rect data-id="f1" x="75" y="230" width="300" height="48" fill="#ffffff" stroke="#888888" stroke-width="2" /><rect data-id="l2" x="75" y="350" width="110" height="12" fill="#888888" /><rect data-id="f2" x="75" y="370" width="300" height="48" fill="#ffffff" stroke="#888888" stroke-width="2" /><rect data-id="l3" x="75" y="470" width="110" height="12" fill="#888888" /><rect data-id="f3" x="75" y="490" width="300" height="48" fill="#ffffff" stroke="#888888" stroke-width="2" /><rect data-id="btn" x="75" y="590" width="140" height="48" rx="24" fill="#231f20" /></svg><figcaption class="bu"><p><p>Ein Formular</p>
+</p></figcaption></figure></section>
+<section data-auto-animate data-slide-shortcode-class="frame" class="image screenshot " data-transition="none" data-background-transition="none" data-background-color="#ffffff"><figure><svg data-id="frame" viewBox="0 0 450 740" style="height:66vh; width:auto; max-width:90vw;"><rect x="0" y="0" width="450" height="740" fill="#ffffff" /><rect data-id="l0" x="75" y="90" width="110" height="12" fill="#888888" /><rect data-id="f0" x="75" y="110" width="300" height="48" fill="#ffffff" stroke="#888888" stroke-width="2" /><rect data-id="l1" x="75" y="210" width="110" height="12" fill="#888888" /><rect data-id="f1" x="75" y="230" width="300" height="48" fill="#ffffff" stroke="#9313ce" stroke-width="4" /><circle data-id="ei" cx="350" cy="254" r="11" fill="#9313ce" /><rect data-id="em" x="75" y="292" width="180" height="10" fill="#9313ce" /><rect data-id="l2" x="75" y="350" width="110" height="12" fill="#888888" /><rect data-id="f2" x="75" y="370" width="300" height="48" fill="#ffffff" stroke="#888888" stroke-width="2" /><rect data-id="l3" x="75" y="470" width="110" height="12" fill="#888888" /><rect data-id="f3" x="75" y="490" width="300" height="48" fill="#ffffff" stroke="#888888" stroke-width="2" /><rect data-id="btn" x="75" y="590" width="140" height="48" rx="24" fill="#231f20" /></svg><figcaption class="bu"><p><p>Ein Fehler: Farbe, Rahmen, Symbol und Meldung zugleich</p>
+</p></figcaption></figure></section>
+
+      
+      
+      <aside class="notes"><div><p>Ein Homescreen als Wireframe. Zwanzig gleiche Icons. Dann ein einziger Punkt an einem Icon: Sie sehen ihn sofort, ohne zu suchen. Genau dafür ist er gebaut. Dann viele Punkte: Jetzt springt keiner mehr heraus, und trotzdem zieht jeder ein bisschen.</p>
+<p>Ein Formular mit einem fehlerhaften Feld. Der Fehler wird gefunden, weil er sich in mehreren Merkmalen gleichzeitig unterscheidet: Farbe, dickerer Rahmen, ein Symbol, eine Meldung darunter. So erkennen ihn auch Menschen, die die Farbe nicht unterscheiden können. In echten Interfaces ist die Fehlerfarbe meist Rot, hier steht die Akzentfarbe dafür.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section data-slide-shortcode-class="interlude" data-background-color="#9313ce" class="image screenshot interlude" ><div><h1 class="title"><p>Pop-out auf Bestellung.</p>
+</h1><h2 class="subtitle js-delay"><p>Ein Punkt am Icon wird gesehen, bevor Sie entscheiden können, ihn nicht zu sehen.</p>
+</h2></div></section>
+<section data-slide-shortcode-class="question" class="question "><div><h1 class="title"><p>Wer verbraucht hier Ihre Aufmerksamkeit?</p>
+</h1><h2 class="subtitle js-delay">Wie viele Punkte hat Ihr Homescreen gerade? Und welche davon haben Ihnen etwas gebracht?</h2></div></section>
+
+      
+      
+      <aside class="notes"><div><p>Der rote Punkt am App-Icon ist Pop-out auf Bestellung. Er nutzt genau den Mechanismus, den Sie gerade erlebt haben: Er wird gesehen, bevor man sich entscheiden kann, ihn nicht zu sehen. Und er bleibt hängen (Von Restorff).</p>
+<p>Das ist nützlich, wenn wirklich etwas wartet: eine Nachricht von einem Menschen, ein Fehler, ein Termin. Es wird zum Problem, wenn der Punkt vor allem dazu da ist, die App wieder zu öffnen: Badges für Empfehlungen, »Neuigkeiten«, Angebote.</p>
+<p>Diskussion (ca. 3 Minuten): Wie viele Punkte hat Ihr Homescreen gerade? Welche davon haben Ihnen etwas gebracht?</p>
+<p><strong>Hintergrund</strong></p>
+<p>Jon Yablonski, Laws of UX (2. Auflage 2024), Kapitel zur Ethik: Wer weiß, wie Wahrnehmung funktioniert, kann damit Aufmerksamkeit lenken, auch gegen die Interessen der Nutzenden. Im Rückgrat des Moduls: Verantwortung, Bereich Aufmerksamkeit (»Wem gehört die Zeit der Nutzenden?«), Prinzip Aufmerksamkeit respektieren.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section  class="statement"><div><h1 class="title"><p>Führt zu</p>
+</h1><div class="fragment"><p><a href="../prinzip-kontrast-und-hervorhebung/">Kontrast und Hervorhebung</a> und <a href="../prinzip-hierarchie/">Hierarchie</a>: Was sich in einem Merkmal unterscheidet, wird zuerst gesehen und am besten erinnert.</p>
+</div></div></section>
+
+      
+      
+      <aside class="notes"><div><p>Führt zu den Prinzipien Kontrast und Hervorhebung (welche Merkmale, wie sparsam) und Hierarchie (was zuerst gesehen wird).</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="outro" class="mi-slide 
+      outro " data-background-color="#231f20"   data-transition="convex">
+      <div class="is-fullscreen is-centered"><p></p>
+<div class="outro">
+<figure class="outro-avatar">
+<img src="../../../assets/images/cnoss.jpeg">
+<figcaption>
+<p>Danke für's Mitmachen</p>
+<p class="small"><a href="https://christiannoss.de">https://christiannoss.de</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+      
+      
+      
+      
+      </section>
+      
+        </div>
+
+      </div>
+      
+      <script src="/slides/reveal/dist/reveal.js"></script>
+      <script src="/slides/assets/scripts/libs/fittext.js"></script>
+      <script src="/slides/assets/scripts/main.js"></script>
+      <script src="/slides/reveal/plugin/notes/notes.js"></script>
+      <script src="/slides/reveal/plugin/markdown/markdown.js"></script>
+      <script src="/slides/reveal/plugin/highlight/highlight.js"></script>
+      <script src="/slides/reveal/plugin/zoom/zoom.js"></script>
+      <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+          hash: true, 
+          center: false,
+          disableLayout: true,
+          progress: true,
+          backgroundTransition: 'fade',
+          pdfSeparateFragments: false,
+          highlight: {
+            highlightOnLoad: false,
+          },
+          // Learn about plugins: https://revealjs.com/plugins/
+          plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+        }).then(() => {
+          const highlight = Reveal.getPlugin('highlight');
+          highlight.hljs.configure(
+            {
+              languages: ['javascript', 'css', 'html', 'bash', 'json', 'markdown', 'xml', 'yaml'],
+            }
+          );
+          highlight.hljs.highlightAll();
+        });
+
+        
+      </script>
+    </body>
+  </html>
