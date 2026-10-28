@@ -7,11 +7,11 @@ typ: "Methode"
 gruppe: "Testen und Prüfen"
 tiefe: "können"
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Unscharf und grau bleibt nur, was Gewicht hat: Hierarchie ohne Details und ohne Farbe prüfen und mit dem Ziel abgleichen"
+begriffe: ["Unschärfetest", "Graustufentest", "Squint-Test", "Rangfolge"]
 herkunft: "N"
 inhalt:
   - "Hierarchie ohne Details prüfen"
   - "Hierarchie ohne Farbe prüfen"
-status: entwurf
+status: ok
 ---

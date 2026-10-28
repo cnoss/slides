@@ -7,11 +7,11 @@ typ: "Phänomen"
 gruppe: ""
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Was sich in einem einzigen Merkmal unterscheidet, springt sofort ins Auge und bleibt hängen. Kombinationen muss man suchen"
+begriffe: ["Pop-out", "präattentive Wahrnehmung", "Merkmalssuche", "Konjunktionssuche", "Von-Restorff-Effekt"]
 herkunft: "N"
 inhalt:
   - "Pop-out (präattentive Wahrnehmung)"
   - "Von-Restorff-Effekt"
-status: entwurf
+status: ok
 ---

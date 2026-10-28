@@ -7,11 +7,11 @@ typ: "Prinzip"
 gruppe: "Ordnen"
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
-herkunft: "N"
+kurzsatz: "Jedes Element richtet sich an etwas aus. Ein gemeinsames Raster verbindet alles, was darauf steht"
+begriffe: ["Ausrichtung", "Achse", "Gestaltungsraster", "Spalte", "Rinne", "Modul"]
+herkunft: "N, Zitat aus proportionen-und-abstaende/020"
 inhalt:
   - "Ausrichtung"
   - "Raster schafft Zusammenhang"
-status: entwurf
+status: ok
 ---

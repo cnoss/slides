@@ -7,8 +7,8 @@ typ: "Haltung"
 gruppe: ""
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Wer nur eine Lösung hat, hat keine Argumente: erst viele Varianten, dann begründet eine wählen"
+begriffe: ["Alternative", "Variante", "Exploration"]
 herkunft: "B: about/250, 260 und neu"
 inhalt:
   - "Entwickeln Sie Alternativen"
@@ -18,5 +18,5 @@ inhalt:
   - "Über das Naheliegende hinaus"
   - "Wer nie danebenliegt, hat nicht genug ausprobiert"
   - "Verlieben Sie sich nicht in Ihren Prototyp"
-status: entwurf
+status: ok
 ---

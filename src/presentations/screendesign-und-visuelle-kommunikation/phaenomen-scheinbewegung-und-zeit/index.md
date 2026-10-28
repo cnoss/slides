@@ -7,11 +7,11 @@ typ: "Phänomen"
 gruppe: ""
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Zwei Reize kurz nacheinander werden als Bewegung gesehen, und Wartezeit wird nicht gemessen, sondern erlebt"
+begriffe: ["Scheinbewegung", "Phi-Phänomen", "Gefühlte Wartezeit", "Doherty-Schwelle", "Skeleton Screen"]
 herkunft: "N"
 inhalt:
   - "Phi-Phänomen"
   - "Gefühlte Wartezeit"
-status: entwurf
+status: ok
 ---

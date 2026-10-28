@@ -7,11 +7,12 @@ typ: "Prinzip"
 gruppe: "Gewichten"
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
-herkunft: "U: raeumlichkeit"
+kurzsatz: "Was näher wirkt, wirkt wichtiger. Tiefe lesen wir aus flachen Hinweisen: Größe, Kontrast, Sättigung, Überdeckung und Schatten"
+begriffe: ["Räumlichkeit", "Tiefenhinweis", "Luftperspektive", "Überdeckung", "Elevation"]
+herkunft: "U: raeumlichkeit (mit dem früheren Phänomen Tiefenstaffelung, raeumlichkeit/010, 020)"
 inhalt:
+  - "Tiefenstaffelung, Luftperspektive (Playmobil, Málaga)"
   - "Räumlichkeit als Hierarchie"
   - "Tiefe durch Licht und Schatten"
-status: entwurf
+status: ok
 ---

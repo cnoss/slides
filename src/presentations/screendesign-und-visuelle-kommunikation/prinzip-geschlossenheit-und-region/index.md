@@ -7,12 +7,12 @@ typ: "Prinzip"
 gruppe: "Gruppieren"
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Was umschlossen, auf einer Fläche oder verbunden ist, gehört zusammen. Lücken ergänzen wir"
+begriffe: ["Geschlossenheit", "Gemeinsame Region", "Verbundenheit", "Karte"]
 herkunft: "U: gestaltgesetze/060"
 inhalt:
   - "Gesetz der Geschlossenheit"
   - "Gemeinsame Region"
   - "Verbundenheit"
-status: entwurf
+status: ok
 ---
