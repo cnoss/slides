@@ -163,9 +163,9 @@ def cards(e1=False, e2=False):
     f2=' filter="url(#ev2)"' if e2 else ''
     y2=200 if e2 else 220
     return f'''  {DEFS}
-  <rect data-id="c0" x="90" y="160" width="200" height="200" fill="#0f6b75" />
-  <rect data-id="c1" x="350" y="160" width="200" height="200" fill="#0f6b75"{f1} />
-  <rect data-id="c2" x="610" y="{y2-60}" width="200" height="200" fill="#0f6b75"{f2} />
+  <rect data-id="c0" x="90" y="160" width="200" height="200" fill="#9313ce" />
+  <rect data-id="c1" x="350" y="160" width="200" height="200" fill="#9313ce"{f1} />
+  <rect data-id="c2" x="610" y="{y2-60}" width="200" height="200" fill="#9313ce"{f2} />
 '''
 W(D,'070-licht-und-schatten.md',f'''
 ---

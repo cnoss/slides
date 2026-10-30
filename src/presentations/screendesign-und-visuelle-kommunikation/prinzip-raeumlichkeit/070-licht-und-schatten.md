@@ -18,19 +18,19 @@ speaker: |
 
 {% frame '{"stage":"#ffffff","w":900,"h":500,"bu":"Drei Flächen auf einer Ebene"}' %}
   <defs><filter id="ev1" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#231f20" flood-opacity="0.22"/></filter><filter id="ev2" x="-40%" y="-40%" width="180%" height="200%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#231f20" flood-opacity="0.28"/></filter></defs>
-  <rect data-id="c0" x="90" y="160" width="200" height="200" fill="#0f6b75" />
-  <rect data-id="c1" x="350" y="160" width="200" height="200" fill="#0f6b75" />
-  <rect data-id="c2" x="610" y="160" width="200" height="200" fill="#0f6b75" />
+  <rect data-id="c0" x="90" y="160" width="200" height="200" fill="#9313ce" />
+  <rect data-id="c1" x="350" y="160" width="200" height="200" fill="#9313ce" />
+  <rect data-id="c2" x="610" y="160" width="200" height="200" fill="#9313ce" />
 {% endframe %}
 {% frame '{"stage":"#ffffff","w":900,"h":500,"bu":"Ein kleiner Schatten: Die mittlere hebt sich ab"}' %}
   <defs><filter id="ev1" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#231f20" flood-opacity="0.22"/></filter><filter id="ev2" x="-40%" y="-40%" width="180%" height="200%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#231f20" flood-opacity="0.28"/></filter></defs>
-  <rect data-id="c0" x="90" y="160" width="200" height="200" fill="#0f6b75" />
-  <rect data-id="c1" x="350" y="160" width="200" height="200" fill="#0f6b75" filter="url(#ev1)" />
-  <rect data-id="c2" x="610" y="160" width="200" height="200" fill="#0f6b75" />
+  <rect data-id="c0" x="90" y="160" width="200" height="200" fill="#9313ce" />
+  <rect data-id="c1" x="350" y="160" width="200" height="200" fill="#9313ce" filter="url(#ev1)" />
+  <rect data-id="c2" x="610" y="160" width="200" height="200" fill="#9313ce" />
 {% endframe %}
 {% frame '{"stage":"#ffffff","w":900,"h":500,"bu":"Ein großer Schatten: Die rechte schwebt darüber"}' %}
   <defs><filter id="ev1" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#231f20" flood-opacity="0.22"/></filter><filter id="ev2" x="-40%" y="-40%" width="180%" height="200%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#231f20" flood-opacity="0.28"/></filter></defs>
-  <rect data-id="c0" x="90" y="160" width="200" height="200" fill="#0f6b75" />
-  <rect data-id="c1" x="350" y="160" width="200" height="200" fill="#0f6b75" filter="url(#ev1)" />
-  <rect data-id="c2" x="610" y="140" width="200" height="200" fill="#0f6b75" filter="url(#ev2)" />
+  <rect data-id="c0" x="90" y="160" width="200" height="200" fill="#9313ce" />
+  <rect data-id="c1" x="350" y="160" width="200" height="200" fill="#9313ce" filter="url(#ev1)" />
+  <rect data-id="c2" x="610" y="140" width="200" height="200" fill="#9313ce" filter="url(#ev2)" />
 {% endframe %}
