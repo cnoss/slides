@@ -8,7 +8,7 @@ speaker: |
 
   Das Bild mit dem Satz »Ich mache immer alles blau. Blau finden alle gut.« stammt aus dem bisherigen Foliensatz und ist der Untertitel der Veranstaltung. Gut als Pointe.
 
-  Wirkung lässt sich prüfen statt behaupten: mit dem Semantischen Differential.
+  Wirkung lässt sich prüfen statt behaupten: mit dem Semantischen Differenzial.
 ---
 
 <section class="screenshot" data-background="./images/blau-zitat.jpg">

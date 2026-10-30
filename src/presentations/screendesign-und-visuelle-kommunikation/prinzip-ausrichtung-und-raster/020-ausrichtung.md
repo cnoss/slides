@@ -7,7 +7,7 @@ transition: none
 speaker: |
   Fünf Formen, verschieden groß, verschieden in der Form. Erst frei verteilt: Jede steht für sich, das Ganze wirkt zufällig. Dann richten sie sich an einer Kante aus, und plötzlich ist es eine Gruppe. Die lila Linie zeigt die Kante einmal, danach verschwindet sie wieder. Gesehen wird sie trotzdem.
 
-  Dann die anderen Möglichkeiten: Mittelachse und Grundlinie. Fragen: Welche Fassung wirkt am ruhigsten? Welche am festesten? Meist: die linke Kante am ruhigsten (sie ist am leichtesten zu verfolgen, weil sie gerade ist), die Grundlinie am festesten (alles steht, siehe Kräfte). Die Mittelachse erzeugt einen unruhigen, gezackten Rand auf beiden Seiten.
+  Dann die anderen Möglichkeiten: Mittelachse und Grundlinie (Baseline). Fragen: Welche Fassung wirkt am ruhigsten? Welche am festesten? Meist: die linke Kante am ruhigsten (sie ist am leichtesten zu verfolgen, weil sie gerade ist), die Grundlinie am festesten (alles steht, siehe Kräfte). Die Mittelachse erzeugt einen unruhigen, gezackten Rand auf beiden Seiten.
 
   Kreise und Quadrate an derselben Kante wirken nicht ganz bündig. Das ist ein Fall für die optische Korrektur (siehe Phänomen Optische Korrektur).
 ---
@@ -41,7 +41,7 @@ speaker: |
   <rect data-id="s3" x="200" y="400" width="200" height="40" fill="#231f20" />
   <circle data-id="s4" cx="300" cy="505" r="25" fill="#231f20" />
 {% endframe %}
-{% frame '{"stage":"#ffffff","bu":"Auf einer Grundlinie"}' %}
+{% frame '{"stage":"#ffffff","bu":"Auf einer Grundlinie (Baseline)"}' %}
   <rect data-id="s0" x="60" y="330" width="120" height="70" fill="#231f20" />
   <circle data-id="s1" cx="240" cy="360" r="40" fill="#231f20" />
   <rect data-id="s2" x="300" y="340" width="60" height="60" fill="#231f20" />

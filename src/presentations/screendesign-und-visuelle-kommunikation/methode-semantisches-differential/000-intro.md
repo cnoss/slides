@@ -1,5 +1,5 @@
 ---
-title: "Semantisches Differential"
+title: "Semantisches Differenzial"
 layout: presentation.11ty.js
 slideClasses: intro
 transition: zoom
@@ -7,7 +7,7 @@ transition: zoom
 
 <div class="is-full-width">
 
-# Semantisches Differential
+# Semantisches Differenzial
 
 ## Methode // Wirkung und Ziel
 

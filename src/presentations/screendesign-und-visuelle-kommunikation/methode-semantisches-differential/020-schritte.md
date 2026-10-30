@@ -20,7 +20,7 @@ speaker: |
 
 <section class="simple" data-transition="fade">
   <div>
-    <h1>Semantisches Differential in fünf Schritten</h1>
+    <h1>Semantisches Differenzial in fünf Schritten</h1>
     {% fragment '<p class="list"><strong>1. Sammeln:</strong> Wofür soll die Marke stehen? Adjektive, frei und ohne Bewertung</p>' %}
     {% fragment '<p class="list"><strong>2. Gewichten:</strong> je wichtiger, desto näher am Kern. Die acht nächsten bleiben.</p>' %}
     {% fragment '<p class="list"><strong>3. Gegenpole finden:</strong> beide Pole positiv</p>' %}

@@ -4,7 +4,7 @@ layout: presentation.11ty.js
 slideClasses: wrap
 status: ok
 speaker: |
-  Backup, im normalen Ablauf überspringen. Derselbe Satz in drei Schriften: Frutiger, Georgia, Max. Gut geeignet, um das Differential live an Schrift auszuprobieren: Wie wirken die drei auf den Paaren sachlich gegen verspielt und modern gegen traditionell?
+  Backup, im normalen Ablauf überspringen. Derselbe Satz in drei Schriften: Frutiger, Georgia, Max. Gut geeignet, um das Differenzial live an Schrift auszuprobieren: Wie wirken die drei auf den Paaren sachlich gegen verspielt und modern gegen traditionell?
 ---
 
 {% interlude "Backup", "Wirkung von Schrift" %}

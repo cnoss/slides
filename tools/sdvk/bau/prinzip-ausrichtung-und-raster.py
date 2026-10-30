@@ -83,7 +83,7 @@ transition: none
 speaker: |
   Fünf Formen, verschieden groß, verschieden in der Form. Erst frei verteilt: Jede steht für sich, das Ganze wirkt zufällig. Dann richten sie sich an einer Kante aus, und plötzlich ist es eine Gruppe. Die lila Linie zeigt die Kante einmal, danach verschwindet sie wieder. Gesehen wird sie trotzdem.
 
-  Dann die anderen Möglichkeiten: Mittelachse und Grundlinie. Fragen: Welche Fassung wirkt am ruhigsten? Welche am festesten? Meist: die linke Kante am ruhigsten (sie ist am leichtesten zu verfolgen, weil sie gerade ist), die Grundlinie am festesten (alles steht, siehe Kräfte). Die Mittelachse erzeugt einen unruhigen, gezackten Rand auf beiden Seiten.
+  Dann die anderen Möglichkeiten: Mittelachse und Grundlinie (Baseline). Fragen: Welche Fassung wirkt am ruhigsten? Welche am festesten? Meist: die linke Kante am ruhigsten (sie ist am leichtesten zu verfolgen, weil sie gerade ist), die Grundlinie am festesten (alles steht, siehe Kräfte). Die Mittelachse erzeugt einen unruhigen, gezackten Rand auf beiden Seiten.
 
   Kreise und Quadrate an derselben Kante wirken nicht ganz bündig. Das ist ein Fall für die optische Korrektur (siehe Phänomen Optische Korrektur).
 ---
@@ -92,7 +92,7 @@ speaker: |
 {fr("An einer Kante ausgerichtet: eine Gruppe", layout('links'))}
 {fr("Die Kante, die man sieht, obwohl sie nicht da ist", layout('links')+achse('links'))}
 {fr("An der Mittelachse", layout('mitte'))}
-{fr("Auf einer Grundlinie", layout('grundlinie'))}
+{fr("Auf einer Grundlinie (Baseline)", layout('grundlinie'))}
 ''')
 
 # Raster abstrakt: Format 600 x 600, 6 Spalten, Rand 40, Rinne 20 -> Spalte (600-80-100)/6 = 70
@@ -126,7 +126,7 @@ transition: none
 speaker: |
   Ein Format mit zwölf Elementen: ein großes Bild, eine Überschrift mit Text, drei Bilder mit Unterzeilen, ein Button. Erst nach Augenmaß platziert. Nichts ist falsch, aber nichts passt zusammen.
 
-  Dann wird ein Raster sichtbar: sechs Spalten mit Rinnen dazwischen und einem Rand. Die Elemente rasten ein, jedes beginnt und endet an einer Spaltenkante. Zum Schluss verschwindet das Raster wieder. Die Ordnung bleibt.
+  Dann wird ein Raster sichtbar: sechs Spalten (Columns) mit Rinnen (Gutter) dazwischen und einem Rand (Margin). Die Elemente rasten ein, jedes beginnt und endet an einer Spaltenkante. Zum Schluss verschwindet das Raster wieder. Die Ordnung bleibt.
 
   Fragen: Was hat sich verändert? Nur die Positionen und Breiten. Kein Element ist neu, keine Farbe anders.
 
@@ -134,7 +134,7 @@ speaker: |
 ---
 
 {frg("Nach Augenmaß", cols0+els(False))}
-{frg("Ein Raster aus sechs Spalten", cols+els(False))}
+{frg("Ein Raster (Grid) aus sechs Spalten (Columns)", cols+els(False))}
 {frg("Die Elemente rasten ein", cols+els(True))}
 {frg("Das Raster verschwindet. Die Ordnung bleibt", cols0+els(True))}
 ''')
@@ -167,18 +167,18 @@ transition: none
 speaker: |
   Vier Begriffe, die man braucht, um über Raster zu sprechen, in Figma genauso wie in CSS.
 
-  - **Spalte (column):** die Fläche, auf der Inhalte stehen. Ein Element belegt eine oder mehrere Spalten.
-  - **Rinne (gutter):** der Abstand zwischen zwei Spalten. In CSS heißt sie gap.
-  - **Rand (margin):** der Abstand zwischen Raster und Formatkante.
-  - **Modul (Rasterzelle):** Teilt man die Spalten zusätzlich in Zeilen, entstehen Module. Ein Raster aus Spalten und Zeilen heißt Modulraster.
+  - **Spalte (Column):** die Fläche, auf der Inhalte stehen. Ein Element belegt eine oder mehrere Spalten.
+  - **Rinne (Gutter):** der Abstand zwischen zwei Spalten. In CSS heißt sie gap.
+  - **Rand (Margin):** der Abstand zwischen Raster und Formatkante.
+  - **Modul (Module, Rasterzelle):** Teilt man die Spalten zusätzlich in Zeilen (Rows), entstehen Module. Ein Raster aus Spalten und Zeilen heißt Modulraster.
 
-  Begriffe: Spalte, Rinne, Rand, Modul, Modulraster.
+  Begriffe: Spalte (Column), Rinne (Gutter), Rand (Margin), Modul (Module), Modulraster (Modular Grid). Figma und viele Werkzeuge verwenden die englischen Begriffe, deshalb brauchen Sie beide.
 ---
 
-{frg("Spalte", anat('spalte'))}
-{frg("Rinne", anat('rinne'))}
-{frg("Rand", anat('rand'))}
-{frg("Modul: Spalten und Zeilen ergeben Rasterzellen", anat('modul'))}
+{frg("Spalte (Column)", anat('spalte'))}
+{frg("Rinne (Gutter)", anat('rinne'))}
+{frg("Rand (Margin)", anat('rand'))}
+{frg("Modul (Module): Spalten (Columns) und Zeilen (Rows) ergeben Rasterzellen", anat('modul'))}
 ''')
 
 # Beispiel Modulraster 24 x 32, Format 990 x 1310 halbiert (495 x 655): Rand 10, Rinne 5, Zelle 15
@@ -209,14 +209,14 @@ slideClasses: wrap
 status: ok
 transition: none
 speaker: |
-  Ein strenges Modulraster für ein Tablet im Hochformat: 990 × 1310 Pixel, 24 Spalten und 32 Zeilen, Rand 20, Rinne 10. Daraus ergeben sich quadratische Zellen von 30 × 30 Pixeln: (990 − 2 × 20 − 23 × 10) ÷ 24 = 30 und (1310 − 2 × 20 − 31 × 10) ÷ 32 = 30.
+  Ein strenges Modulraster für ein Tablet im Hochformat: 990 × 1310 Pixel, 24 Spalten (Columns) und 32 Zeilen (Rows), Rand (Margin) 20, Rinne (Gutter) 10. Daraus ergeben sich quadratische Zellen von 30 × 30 Pixeln: (990 − 2 × 20 − 23 × 10) ÷ 24 = 30 und (1310 − 2 × 20 − 31 × 10) ÷ 32 = 30.
 
   Auf so einem Raster lässt sich jedes Gestaltgesetz durchspielen: Nähe, Ähnlichkeit, gemeinsame Ausrichtung, Störung. Auf der zweiten Folie: eine Gruppe durch Nähe, eine durch Ähnlichkeit, eine Reihe mit einem Ausreißer.
 
   **In Figma:** Frame auswählen, unter »Layout guide« (früher »Layout grid«) zwei Raster anlegen: Columns mit Count 24, Margin 20, Gutter 10 und Rows mit Count 32, Margin 20, Gutter 10. Mit Shift und Pfeiltaste springt eine Form 10 Pixel weit. Stellt man den großen Schritt in den Einstellungen (Nudge amount) auf 40, springt sie genau von Zelle zu Zelle.
 ---
 
-{{% frame '{{"w":495,"h":655,"bu":"24 Spalten, 32 Zeilen, quadratische Zellen"}}' %}}
+{{% frame '{{"w":495,"h":655,"bu":"24 Spalten (Columns), 32 Zeilen (Rows), quadratische Zellen"}}' %}}
 {modulraster(0)}{{% endframe %}}
 {{% frame '{{"w":495,"h":655,"bu":"Darauf gruppieren: Nähe, Ähnlichkeit, ein Ausreißer"}}' %}}
 {modulraster(0)}{gruppe()}{{% endframe %}}
@@ -249,11 +249,11 @@ speaker: |
 
   Die dritte Fassung bricht das Raster bewusst: Das Bild läuft rechts aus dem Format. Ein Rasterbruch wirkt nur, weil alles andere im Raster steht.
 
-  Danach dasselbe im Code. CSS Grid beschreibt genau diese Struktur: Spalten, Rinne (gap), Spannweite eines Elements. Wer in Figma mit einem Raster entwirft, kann es eins zu eins übergeben.
+  Danach dasselbe im Code. CSS Grid beschreibt genau diese Struktur: Spalten (Columns), Rinne (Gutter, in CSS: gap), Spannweite eines Elements. Wer in Figma mit einem Raster entwirft, kann es eins zu eins übergeben.
 ---
 
 {fq("Eine Startseite", cols12(0)+seite())}
-{fq("Zwölf Spalten dahinter", cols12(0.1)+seite())}
+{fq("Zwölf Spalten (Columns) dahinter", cols12(0.1)+seite())}
 {fq("Bewusst gebrochen: Das Bild läuft aus dem Format", cols12(0.1)+seite(True))}
 
 <section class="simple" data-transition="fade">
@@ -262,8 +262,8 @@ speaker: |
 <pre style="font-size:2.6vh; line-height:1.5; text-align:left; width:100%; box-shadow:none;"><code class="language-css">.seite {{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 20px; /* Rinne */
-  padding: 0 60px; /* Rand */
+  gap: 20px; /* Rinne, Gutter */
+  padding: 0 60px; /* Rand, Margin */
 }}
 .karte {{ grid-column: span 4; }}
 .text {{ grid-column: 1 / 7; }}</code></pre>
@@ -310,7 +310,7 @@ speaker: |
 {% statement "Verweise", "Dahinter: [Fortsetzung und Schicksal](../prinzip-fortsetzung-und-schicksal/) und [Eindeutigkeit](../prinzip-eindeutigkeit/). Weiter: [Nähe und Abstand](../prinzip-naehe-und-abstand/), [Weißraum](../prinzip-weissraum/) und [Optische Korrektur](../phaenomen-optische-korrektur/). Konstruieren: [Gestaltungsraster](../methode-gestaltungsraster/) und [Spacing-System](../methode-spacing-system/). Ausprobieren: [Permutation](../methode-permutation/)." %}
 ''')
 
-done(D,'Jedes Element richtet sich an etwas aus. Ein gemeinsames Raster verbindet alles, was darauf steht','Ausrichtung, Achse, Gestaltungsraster, Spalte, Rinne, Modul')
+done(D,'Jedes Element richtet sich an etwas aus. Ein gemeinsames Raster verbindet alles, was darauf steht','Ausrichtung, Achse, Gestaltungsraster, Spalte (Column), Rinne (Gutter), Rand (Margin), Modul (Module)')
 
 # Herkunft: Zitat aus dem Bestand
 p=f'{NEW}/{D}/index.md'; s=open(p).read()

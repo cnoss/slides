@@ -7,7 +7,7 @@ transition: none
 speaker: |
   Ein Format mit zwölf Elementen: ein großes Bild, eine Überschrift mit Text, drei Bilder mit Unterzeilen, ein Button. Erst nach Augenmaß platziert. Nichts ist falsch, aber nichts passt zusammen.
 
-  Dann wird ein Raster sichtbar: sechs Spalten mit Rinnen dazwischen und einem Rand. Die Elemente rasten ein, jedes beginnt und endet an einer Spaltenkante. Zum Schluss verschwindet das Raster wieder. Die Ordnung bleibt.
+  Dann wird ein Raster sichtbar: sechs Spalten (Columns) mit Rinnen (Gutter) dazwischen und einem Rand (Margin). Die Elemente rasten ein, jedes beginnt und endet an einer Spaltenkante. Zum Schluss verschwindet das Raster wieder. Die Ordnung bleibt.
 
   Fragen: Was hat sich verändert? Nur die Positionen und Breiten. Kein Element ist neu, keine Farbe anders.
 
@@ -34,7 +34,7 @@ speaker: |
   <rect data-id="u3" x="415" y="420" width="130" height="12" fill="#d9d9d9" />
   <rect data-id="btn" x="70" y="480" width="150" height="40" fill="#231f20" rx="20" />
 {% endframe %}
-{% frame '{"bu":"Ein Raster aus sechs Spalten"}' %}
+{% frame '{"bu":"Ein Raster (Grid) aus sechs Spalten (Columns)"}' %}
   <rect data-id="col0" x="40" y="40" width="70" height="520" fill="#9313ce" fill-opacity="0.12" />
   <rect data-id="col1" x="130" y="40" width="70" height="520" fill="#9313ce" fill-opacity="0.12" />
   <rect data-id="col2" x="220" y="40" width="70" height="520" fill="#9313ce" fill-opacity="0.12" />

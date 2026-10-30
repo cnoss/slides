@@ -4,7 +4,7 @@ layout: presentation.11ty.js
 slideClasses: wrap
 status: ok
 speaker: |
-  **1. Ziel klären:** Die gewünschte Wirkung in drei bis fünf Begriffen, am besten aus dem Semantischen Differential oder dem Gestaltungsziel. Ohne Ziel wird das Moodboard eine Sammlung von Dingen, die gefallen.
+  **1. Ziel klären:** Die gewünschte Wirkung in drei bis fünf Begriffen, am besten aus dem Semantischen Differenzial oder dem Gestaltungsziel. Ohne Ziel wird das Moodboard eine Sammlung von Dingen, die gefallen.
 
   **2. Breit sammeln:** nicht nur Screens der Konkurrenz. Fotos, Materialien, Räume, Mode, Typografie, Verpackungen. Was hat die gewünschte Stimmung, egal aus welchem Bereich?
 

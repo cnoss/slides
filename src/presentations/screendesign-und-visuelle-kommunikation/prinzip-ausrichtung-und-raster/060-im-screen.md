@@ -11,7 +11,7 @@ speaker: |
 
   Die dritte Fassung bricht das Raster bewusst: Das Bild läuft rechts aus dem Format. Ein Rasterbruch wirkt nur, weil alles andere im Raster steht.
 
-  Danach dasselbe im Code. CSS Grid beschreibt genau diese Struktur: Spalten, Rinne (gap), Spannweite eines Elements. Wer in Figma mit einem Raster entwirft, kann es eins zu eins übergeben.
+  Danach dasselbe im Code. CSS Grid beschreibt genau diese Struktur: Spalten (Columns), Rinne (Gutter, in CSS: gap), Spannweite eines Elements. Wer in Figma mit einem Raster entwirft, kann es eins zu eins übergeben.
 ---
 
 {% frame '{"w":900,"h":500,"bu":"Eine Startseite"}' %}
@@ -41,7 +41,7 @@ speaker: |
   <rect data-id="k2" x="326.667" y="290" width="246.667" height="130" fill="#e4e4e4" />
   <rect data-id="k3" x="593.333" y="290" width="246.667" height="130" fill="#e4e4e4" />
 {% endframe %}
-{% frame '{"w":900,"h":500,"bu":"Zwölf Spalten dahinter"}' %}
+{% frame '{"w":900,"h":500,"bu":"Zwölf Spalten (Columns) dahinter"}' %}
   <rect data-id="sc0" x="60" y="0" width="46.6667" height="500" fill="#9313ce" fill-opacity="0.1" />
   <rect data-id="sc1" x="126.667" y="0" width="46.6667" height="500" fill="#9313ce" fill-opacity="0.1" />
   <rect data-id="sc2" x="193.333" y="0" width="46.6667" height="500" fill="#9313ce" fill-opacity="0.1" />
@@ -102,8 +102,8 @@ speaker: |
 <pre style="font-size:2.6vh; line-height:1.5; text-align:left; width:100%; box-shadow:none;"><code class="language-css">.seite {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 20px; /* Rinne */
-  padding: 0 60px; /* Rand */
+  gap: 20px; /* Rinne, Gutter */
+  padding: 0 60px; /* Rand, Margin */
 }
 .karte { grid-column: span 4; }
 .text { grid-column: 1 / 7; }</code></pre>

@@ -12,6 +12,6 @@ begriffe: []
 herkunft: "N"
 inhalt:
   - "Die gewünschte Wirkung in einem Satz"
-  - "Prüfbar mit dem Semantischen Differential"
+  - "Prüfbar mit dem Semantischen Differenzial"
 status: entwurf
 ---

@@ -7,4 +7,4 @@ speaker: "Herkunft: N // Tiefe: können"
 ---
 
 {% fragment '<p class="list">Die gewünschte Wirkung in einem Satz</p>' %}
-{% fragment '<p class="list">Prüfbar mit dem Semantischen Differential</p>' %}
+{% fragment '<p class="list">Prüfbar mit dem Semantischen Differenzial</p>' %}
