@@ -1,0 +1,269 @@
+<!doctype html>
+  <html lang="de">
+    <head>
+      <title>Grenzen // Christian Noss</title>
+      <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="googlebot-news" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+      <link rel="stylesheet" href="/slides/reveal/dist/reset.css">
+      <link rel="stylesheet" href="/slides/reveal/dist/reveal.css">
+      <link rel="stylesheet" href="/slides/assets/main.css">
+     
+      <link rel="icon" type="image/svg" href="/slides/assets/images/preview_black_24dp.svg">
+  
+      <!-- Theme used for syntax highlighted code -->
+      <link rel="stylesheet" href="/slides/reveal/plugin/highlight/github.css">
+    </head>
+    <body>
+      <div class="reveal">
+        <div class="slides">
+          
+      <section data-slide-class="intro" class="mi-slide 
+      intro " data-background-color="#9313ce"   data-transition="zoom">
+      <div class="is-full-width">
+<h1>Lesetext</h1>
+<h2>Prinzip // Lesbar machen</h2>
+</div>
+
+      
+      
+      
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section data-slide-shortcode-class="interlude" data-background-color="#9313ce" class="image screenshot interlude" ><div><h1 class="title"><p>Guter Lesetext fällt nicht auf.</p>
+</h1><h2 class="subtitle js-delay"><p>Schlechter schon.</p>
+</h2></div></section>
+
+      
+      
+      <aside class="notes"><div><p>Die Regel: Lesetext ist bequem, wenn drei Dinge stimmen: Zeilenlänge, Zeilenabstand und ein gleichmäßiger Grauwert. Sie merken es nicht, wenn es stimmt. Sie merken nur, wenn es nicht stimmt, und hören dann auf zu lesen.</p>
+<p><strong>Für alle:</strong> Davon profitieren alle, besonders aber Menschen mit Leseschwäche oder eingeschränktem Sehen.</p>
+<p><strong>Hintergrund</strong></p>
+<p>Robert Bringhurst, »The Elements of Typographic Style« (1992): 45 bis 75 Zeichen pro Zeile, 66 gelten als ideal. Matthew Butterick, »Practical Typography« (online): 45 bis 90 Zeichen, Zeilenabstand 120 bis 145 %. Wathan und Schoger, »Refactoring UI« (2018), Kapitel »Designing Text«. Lupton, »Thinking with Type«, Kapitel »Text«.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section class="simple" data-transition="fade">
+  <div>
+    <h1>Zu lang: etwa 120 Zeichen</h1>
+    <p style="font-family:PTserif;font-size:2.4vh;line-height:1.5;max-width:120ch;width:100%;margin:0;text-align:left;hyphens:none;">Beim Lesen gleiten die Augen nicht gleichmäßig über die Zeile. Sie springen von Punkt zu Punkt und ergänzen den Rest aus dem Zusammenhang. Am Zeilenende müssen sie zurück an den Anfang der nächsten Zeile. Ist die Zeile zu lang, finden sie den Anfang schlecht wieder. Ist sie zu kurz, reißt der Lesefluss ständig ab.</p>
+  </div>
+</section>
+<section class="simple" data-transition="none">
+  <div>
+    <h1>Zu kurz: etwa 25 Zeichen</h1>
+    <p style="font-family:PTserif;font-size:2.6vh;line-height:1.4;max-width:25ch;width:100%;margin:0;text-align:left;hyphens:none;">Beim Lesen gleiten die Augen nicht gleichmäßig über die Zeile. Sie springen von Punkt zu Punkt und ergänzen den Rest aus dem Zusammenhang. Am Zeilenende müssen sie zurück an den Anfang der nächsten Zeile. Ist die Zeile zu lang, finden sie den Anfang schlecht wieder. Ist sie zu kurz, reißt der Lesefluss ständig ab.</p>
+  </div>
+</section>
+<section class="simple" data-transition="none">
+  <div>
+    <h1>Gut: etwa 65 Zeichen</h1>
+    <p style="font-family:PTserif;font-size:3.2vh;line-height:1.5;max-width:65ch;width:100%;margin:0;text-align:left;hyphens:none;">Beim Lesen gleiten die Augen nicht gleichmäßig über die Zeile. Sie springen von Punkt zu Punkt und ergänzen den Rest aus dem Zusammenhang. Am Zeilenende müssen sie zurück an den Anfang der nächsten Zeile. Ist die Zeile zu lang, finden sie den Anfang schlecht wieder. Ist sie zu kurz, reißt der Lesefluss ständig ab.</p>
+  </div>
+</section>
+
+      
+      
+      <aside class="notes"><div><p>Derselbe Text in drei Breiten. Beim Lesen springen die Augen am Zeilenende zurück an den Anfang der nächsten Zeile.</p>
+<p><strong>Zu lang:</strong> Der Rücksprung ist weit, man landet leicht in der falschen Zeile. <strong>Zu kurz:</strong> Die Augen springen ständig, der Lesefluss reißt ab, die Wörter verteilen sich unruhig. <strong>Richtig:</strong> 45 bis 75 Zeichen, auf dem Handy dürfen es 35 bis 50 sein.</p>
+<p>Die Breite ist unabhängig von der Bildschirmbreite. Genau das ist der häufigste Fehler am Screen: Der Text läuft einfach über die ganze Breite.</p>
+<p>Im CSS gibt es dafür eine eigene Einheit: <code>ch</code>, die Breite der Ziffer Null. Die drei Fassungen hier sind so gesetzt: <code>max-width: 120ch</code>, <code>25ch</code> und <code>65ch</code>.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section class="simple" data-transition="none">
+  <div>
+    <h1>Zu eng: 100 %</h1>
+    <p style="font-family:PTserif;font-size:3.2vh;line-height:1.0;max-width:65ch;width:100%;margin:0;text-align:left;hyphens:none;">Beim Lesen gleiten die Augen nicht gleichmäßig über die Zeile. Sie springen von Punkt zu Punkt und ergänzen den Rest aus dem Zusammenhang. Am Zeilenende müssen sie zurück an den Anfang der nächsten Zeile. Ist die Zeile zu lang, finden sie den Anfang schlecht wieder. Ist sie zu kurz, reißt der Lesefluss ständig ab.</p>
+  </div>
+</section>
+<section class="simple" data-transition="none">
+  <div>
+    <h1>Zu weit: 220 %</h1>
+    <p style="font-family:PTserif;font-size:3.2vh;line-height:2.2;max-width:65ch;width:100%;margin:0;text-align:left;hyphens:none;">Beim Lesen gleiten die Augen nicht gleichmäßig über die Zeile. Sie springen von Punkt zu Punkt und ergänzen den Rest aus dem Zusammenhang. Am Zeilenende müssen sie zurück an den Anfang der nächsten Zeile. Ist die Zeile zu lang, finden sie den Anfang schlecht wieder. Ist sie zu kurz, reißt der Lesefluss ständig ab.</p>
+  </div>
+</section>
+<section class="simple" data-transition="none">
+  <div>
+    <h1>Gut: 150 %</h1>
+    <p style="font-family:PTserif;font-size:3.2vh;line-height:1.5;max-width:65ch;width:100%;margin:0;text-align:left;hyphens:none;">Beim Lesen gleiten die Augen nicht gleichmäßig über die Zeile. Sie springen von Punkt zu Punkt und ergänzen den Rest aus dem Zusammenhang. Am Zeilenende müssen sie zurück an den Anfang der nächsten Zeile. Ist die Zeile zu lang, finden sie den Anfang schlecht wieder. Ist sie zu kurz, reißt der Lesefluss ständig ab.</p>
+  </div>
+</section>
+
+      
+      
+      <aside class="notes"><div><p><strong>Zu eng:</strong> Die Zeilen kleben zusammen, die Augen rutschen ab. <strong>Zu weit:</strong> Der Text zerfällt in Streifen, weil die Zeilen weiter voneinander entfernt sind als die Wörter voneinander. Das ist Nähe: Was nah ist, gehört zusammen.</p>
+<p><strong>Gut:</strong> Für Lesetext 120 bis 150 %. Je länger die Zeile, desto mehr Zeilenabstand braucht sie. Große Überschriften brauchen weniger, oft reichen 110 %. Im CSS ohne Einheit angeben (<code>line-height: 1.5</code>), dann wächst der Abstand mit der Schrift mit.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="none">
+      <section class="simple" data-transition="fade">
+  <div>
+    <h1>Zweimal derselbe Text</h1>
+    <div style="display:flex;gap:5vw;align-items:flex-start;width:100%;"><p lang="de" style="flex:1;font-family:PTserif;font-size:3vh;line-height:1.45;margin:0;hyphens:none;text-align:justify;">Beim <span style="font-weight:700;">Lesen</span> gleiten die Augen nicht <span style="letter-spacing:.25em;">gleichmäßig</span> über die Zeile. Sie <span style="font-weight:700;">springen von Punkt zu Punkt</span> und ergänzen den Rest aus dem Zusammenhang. Am <span style="letter-spacing:.25em;">Zeilenende</span> müssen sie zurück an den <span style="font-weight:700;">Anfang</span> der nächsten Zeile. Ist die Zeile zu lang, finden sie den Anfang <span style="letter-spacing:.25em;">schlecht</span> wieder.</p><p lang="de" style="flex:1;font-family:PTserif;font-size:3vh;line-height:1.45;margin:0;hyphens:none;text-align:left;">Beim Lesen gleiten die Augen nicht gleichmäßig über die Zeile. Sie springen von Punkt zu Punkt und ergänzen den Rest aus dem Zusammenhang. Am Zeilenende müssen sie zurück an den Anfang der nächsten Zeile. Ist die Zeile zu lang, finden sie den Anfang schlecht wieder.</p></div>
+  </div>
+</section>
+<section class="simple" data-transition="none">
+  <div>
+    <h1>Unscharf sieht man es</h1>
+    <div style="display:flex;gap:5vw;align-items:flex-start;width:100%;"><p lang="de" style="flex:1;font-family:PTserif;font-size:3vh;line-height:1.45;margin:0;hyphens:none;text-align:justify;filter:blur(0.35vw);">Beim <span style="font-weight:700;">Lesen</span> gleiten die Augen nicht <span style="letter-spacing:.25em;">gleichmäßig</span> über die Zeile. Sie <span style="font-weight:700;">springen von Punkt zu Punkt</span> und ergänzen den Rest aus dem Zusammenhang. Am <span style="letter-spacing:.25em;">Zeilenende</span> müssen sie zurück an den <span style="font-weight:700;">Anfang</span> der nächsten Zeile. Ist die Zeile zu lang, finden sie den Anfang <span style="letter-spacing:.25em;">schlecht</span> wieder.</p><p lang="de" style="flex:1;font-family:PTserif;font-size:3vh;line-height:1.45;margin:0;hyphens:none;text-align:left;filter:blur(0.35vw);">Beim Lesen gleiten die Augen nicht gleichmäßig über die Zeile. Sie springen von Punkt zu Punkt und ergänzen den Rest aus dem Zusammenhang. Am Zeilenende müssen sie zurück an den Anfang der nächsten Zeile. Ist die Zeile zu lang, finden sie den Anfang schlecht wieder.</p></div>
+  </div>
+</section>
+<section  class="statement"><div><h1 class="title"><p>Abstände haben eine Reihenfolge.</p>
+</h1><div class="fragment"><p>Buchstaben sind enger als Wörter. Wörter enger als Zeilen. Zeilen enger als Absätze.</p>
+</div></div></section>
+
+      
+      
+      <aside class="notes"><div><p>Kneifen Sie die Augen zusammen: Ein guter Textblock wirkt wie eine gleichmäßig graue Fläche. Das ist der Grauwert. Löcher, dunkle Flecken und helle Streifen stören den Lesefluss, auch wenn man sie beim Lesen nicht bewusst wahrnimmt.</p>
+<p>Links und rechts: derselbe Text. Links mit Blocksatz ohne Trennung, gesperrten und fetten Wörtern, rechts ruhig gesetzt. Unscharf sieht man den Unterschied sofort. Das ist derselbe Trick wie beim Unschärfetest.</p>
+<p>Was den Grauwert stört: gesperrter Text, zu viele Auszeichnungen im Absatz, erzwungener Blocksatz ohne Silbentrennung. Dazu mehr bei Satz.</p>
+<p>Die Reihenfolge der Abstände: Buchstabenabstand kleiner als Wortabstand, kleiner als Zeilenabstand, kleiner als Absatzabstand. Wird diese Reihenfolge verletzt, zerfällt der Text.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section data-slide-shortcode-class="screenshot" class="image screenshot shadow" data-transition="fade" data-background-transition="fade"><figure><img src="./images/lesetext-wikipedia.jpg" alt="Begrenzte Breite, und die Lesenden dürfen sie ändern de.wikipedia.org, Screenshot 2026, Ausschnitt" width="auto" ><figcaption class="bu"><p><p>Begrenzte Breite, und die Lesenden dürfen sie ändern<br><small>de.wikipedia.org, Screenshot 2026, Ausschnitt</small></p>
+</p></figcaption></figure></section>
+<section class="simple" data-transition="fade">
+  <div>
+    <h1>Vier Zeilen CSS</h1>
+    <pre style="font-size:3vh;line-height:1.5;text-align:left;width:100%;box-shadow:none;"><code class="language-css">article p {
+  font-size: 1rem;      /* mindestens 16 px */
+  line-height: 1.5;     /* ohne Einheit */
+  max-width: 65ch;      /* Zeilenlänge */
+  text-wrap: pretty;    /* keine einsamen Wörter am Ende */
+}</code></pre>
+  </div>
+</section>
+<section data-slide-shortcode-class="question" class="question "><div><h1 class="title"><p>Wie lang sind die Zeilen auf Ihrer Lieblingsseite?</p>
+</h1><h2 class="subtitle js-delay">Zählen Sie nach: Wie viele Zeichen hat eine Zeile? Und wie viele auf dem Handy?</h2></div></section>
+
+      
+      
+      <aside class="notes"><div><p>Auf einer echten Seite: Die deutsche Wikipedia begrenzt die Textbreite in der Standarddarstellung, gibt aber die Wahl, ob der Text schmal oder breit läuft. Das Menü rechts stellt Textgröße und Breite ein. Eine gute Lösung, weil Lesevorlieben verschieden sind.</p>
+<p>Dann die vier Zeilen CSS, mit denen das meiste erledigt ist. <code>text-wrap: pretty</code> ist noch nicht überall verfügbar, schadet aber auch nicht: Browser, die es nicht kennen, ignorieren es.</p>
+<p><strong>Für alle:</strong> WCAG 1.4.12 (Textabstände) verlangt, dass ein Layout nicht bricht, wenn Nutzende den Zeilenabstand auf das 1,5-Fache, den Absatzabstand auf das 2-Fache, den Buchstabenabstand auf das 0,12-Fache und den Wortabstand auf das 0,16-Fache der Schriftgröße stellen. Also keine festen Höhen für Textcontainer.</p>
+<p>Screenshot: de.wikipedia.org, 2026, ausgeschnitten. Der Spendenaufruf über der Seite ist weggelassen.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section class="simple" data-transition="fade">
+  <div>
+    <h1>Wann gilt das nicht?</h1>
+    <div data-slide-shortcode-class="fragment" class="fragment"><p class="list">Kurze Texte: Label, Buttons und Tabellen folgen eigenen Regeln.</p></div>
+    <div data-slide-shortcode-class="fragment" class="fragment"><p class="list">Überschriften: Große Schrift braucht weniger Zeilenabstand.</p></div>
+    <div data-slide-shortcode-class="fragment" class="fragment"><p class="list">Helle Schrift auf dunklem Grund: oft etwas mehr Abstand, kräftigerer Schnitt.</p></div>
+  </div>
+</section>
+
+      
+      
+      <aside class="notes"><div><p><strong>Kurze Texte:</strong> Die Regeln gelten für Lesetext. Ein Label, ein Button oder eine Tabellenzeile folgen anderen Regeln. Eine Tabelle darf breit sein, weil sie nicht zeilenweise gelesen wird.</p>
+<p><strong>Überschriften:</strong> Große Schrift braucht weniger Zeilenabstand und oft etwas engere Laufweite. Die 150 % würden sie zerfallen lassen.</p>
+<p><strong>Helle Schrift auf dunklem Grund:</strong> Sie wirkt dünner und braucht oft etwas mehr Zeilenabstand und einen kräftigeren Schnitt. Kontrast prüfen.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="wrap" class="mi-slide 
+      wrap "    data-transition="convex">
+      <section  class="statement"><div><h1 class="title"><p>Verweise</p>
+</h1><div class="fragment"><p>Dahinter: <a href="../phaenomen-wortbilder/">Wortbilder</a>. Weiter: <a href="../prinzip-satz/">Satz</a>, <a href="../prinzip-naehe-und-abstand/">Nähe und Abstand</a>. Prüfen: <a href="../methode-unschaerfetest/">Unschärfe- und Graustufentest</a>, <a href="../methode-kontrast-pruefen/">Kontrast prüfen</a>.</p>
+</div></div></section>
+
+      
+      
+      <aside class="notes"><div><p>Dahinter: Phänomen Wortbilder. Weiter: Satz, Nähe und Abstand. Prüfen: Unschärfe- und Graustufentest, Kontrast prüfen.</p>
+</div></aside>
+      
+      </section>
+    
+
+      <section data-slide-class="outro" class="mi-slide 
+      outro " data-background-color="#231f20"   data-transition="convex">
+      <div class="is-fullscreen is-centered"><p></p>
+<div class="outro">
+<figure class="outro-avatar">
+<img src="../../../assets/images/cnoss.jpeg">
+<figcaption>
+<p>Danke für's Mitmachen</p>
+<p class="small"><a href="https://christiannoss.de">https://christiannoss.de</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+      
+      
+      
+      
+      </section>
+      
+        </div>
+
+      </div>
+      
+      <script src="/slides/reveal/dist/reveal.js"></script>
+      <script src="/slides/assets/scripts/libs/fittext.js"></script>
+      <script src="/slides/assets/scripts/main.js"></script>
+      <script src="/slides/reveal/plugin/notes/notes.js"></script>
+      <script src="/slides/reveal/plugin/markdown/markdown.js"></script>
+      <script src="/slides/reveal/plugin/highlight/highlight.js"></script>
+      <script src="/slides/reveal/plugin/zoom/zoom.js"></script>
+      <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+          hash: true, 
+          center: false,
+          disableLayout: true,
+          progress: true,
+          backgroundTransition: 'fade',
+          pdfSeparateFragments: false,
+          highlight: {
+            highlightOnLoad: false,
+          },
+          // Learn about plugins: https://revealjs.com/plugins/
+          plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+        }).then(() => {
+          const highlight = Reveal.getPlugin('highlight');
+          highlight.hljs.configure(
+            {
+              languages: ['javascript', 'css', 'html', 'bash', 'json', 'markdown', 'xml', 'yaml'],
+            }
+          );
+          highlight.hljs.highlightAll();
+        });
+
+        
+      </script>
+    </body>
+  </html>
