@@ -7,11 +7,12 @@ typ: "Prinzip"
 gruppe: "Wirken"
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Schrift spricht mit: Dieselbe Botschaft wirkt in jeder Schrift anders. Beim Mischen gilt Kontrast oder Verwandtschaft, aber kein Zufall"
+begriffe: ["Schriftwirkung", "Schriftmischung", "Schriftfamilie", "Schnitt"]
 herkunft: "B: typographie/015, 140"
 inhalt:
   - "Schrift hat Ausstrahlung"
-  - "Schriftmischung"
-status: entwurf
+  - "Schriften mischen"
+  - "Tonlagen im Screen"
+status: ok
 ---

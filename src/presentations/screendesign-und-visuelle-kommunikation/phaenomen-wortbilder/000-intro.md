@@ -9,6 +9,6 @@ transition: zoom
 
 # Wortbilder
 
-## Phänomen
+## Phänomen // Lesen
 
 </div>

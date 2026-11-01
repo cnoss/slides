@@ -6,12 +6,13 @@ transition: convex
 typ: "Phänomen"
 gruppe: ""
 tiefe: ""
-einsatz: ""
-kurzsatz: ""
-begriffe: []
+einsatz: "Einstieg in Lesetext und Satz"
+kurzsatz: "Wir lesen in Wörtern und Wortgruppen, nicht Buchstabe für Buchstabe. Deshalb lesen sich Versalien schlechter"
+begriffe: ["Wortbild", "Versalien", "Lesen"]
 herkunft: "B: typographie/150"
 inhalt:
-  - "Wir lesen Wortformen"
-  - "Buchstabendreher"
-status: entwurf
+  - "Buchstabendreher-Test"
+  - "Lesen in Wörtern"
+  - "Versalien"
+status: ok
 ---

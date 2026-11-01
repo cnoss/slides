@@ -7,10 +7,13 @@ typ: "Prinzip"
 gruppe: "Gewichten"
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Lesestufen geben einem Text mehrere Einstiege. Größe, Schnitt, Farbe und Abstand bauen die Rangfolge auf"
+begriffe: ["Lesestufe", "Dachzeile", "Headline", "Lead", "Fließtext", "Bildunterschrift"]
 herkunft: "N"
 inhalt:
-  - "Lesestufen: Dachzeile, Headline, Lead, Fließtext, Bildunterschrift"
-status: entwurf
+  - "Mehrere Einstiege"
+  - "Schritt für Schritt: Größe, Schnitt, Farbe, Abstand"
+  - "Lesestufen im Screen"
+  - "Hierarchie im Code"
+status: ok
 ---

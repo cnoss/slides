@@ -6,12 +6,13 @@ transition: convex
 typ: "Methode"
 gruppe: "Konstruieren"
 tiefe: "kennen"
-einsatz: ""
-kurzsatz: ""
-begriffe: []
-herkunft: "U: typographie/050 bis 080"
+einsatz: "Zum Beschreiben, Suchen und Ordnen von Schriften"
+kurzsatz: "Schriften nach Merkmalen und Geschichte einordnen: DIN 16518 für den Bleisatz, Matrix Beinert für die digitale Arbeit"
+begriffe: ["Schriftklassifikation", "DIN 16518", "Matrix Beinert", "Antiqua", "Egyptienne", "Grotesk", "Achse"]
+herkunft: "U: typographie/060, 070"
 inhalt:
-  - "Anatomie der Buchstaben"
-  - "DIN 16518 und Beinert"
-status: entwurf
+  - "DIN 16518"
+  - "Matrix Beinert"
+  - "Schriften einordnen"
+status: ok
 ---

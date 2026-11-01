@@ -6,12 +6,16 @@ transition: convex
 typ: "Methode"
 gruppe: "Konstruieren"
 tiefe: "können"
-einsatz: ""
-kurzsatz: ""
-begriffe: []
+einsatz: "Am Anfang der visuellen Sprache"
+kurzsatz: "Schrift nach Zweck, Art des Lesens und Wirkung wählen, im echten Text testen und die Wahl begründen"
+begriffe: ["Schriftauswahl", "Arten des Lesens", "Schriftgruppe", "Schnitt", "Typo-Fähnchen"]
 herkunft: "U: auswahl-von-schriften"
 inhalt:
+  - "Ergebnis zuerst: Typo-Fähnchen"
+  - "Fünf Schritte"
   - "Arten des Lesens"
-  - "Kriterien der Auswahl"
-status: entwurf
+  - "Schriftgruppen"
+  - "Mini-Übung"
+  - "Typische Fehler"
+status: ok
 ---

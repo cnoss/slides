@@ -40,3 +40,7 @@ Kontaktbogen aus gerenderten Folien: `montage` (ImageMagick) über Python `subpr
 - **Auto-Animate und gedrehte SVG-Gruppen:** Ändert sich zwischen zwei Frame-Folien das `transform`-Attribut einer `<g>` mit `data-id` (z. B. `rotate`), zerlegt Reveal die Folie beim Weiterschalten, übrig bleibt ein einzelnes Element. Dann im Frame `"animate":false` setzen. Beispiel: `methode-permutation`.
 - Speaker Notes mit Guillemets (»…«). `python3 tools/sdvk/guillemets.py dry` listet gerade Anführungszeichen in den Speaker Notes, ohne `dry` werden sie ersetzt.
 - Reveal: Pfeil rechts springt von Stapel zu Stapel, Pfeil runter oder Leertaste geht durch alle Folien.
+
+## Typografie-Decks
+
+`typo.py` enthält Helfer für Folien mit echtem, im Browser gesetztem Text (`live`, `liste`, `kopf`, `index`) und `muster()` für Schriftmuster als PNG. `muster()` ruft `schriftmuster.js` aus `/tmp/shots` auf, also vor dem Lauf die Einrichtung oben ausführen. Die Muster sind mit Systemschriften des Mac gesetzt, damit sie auf jedem Rechner gleich aussehen.

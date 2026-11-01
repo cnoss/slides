@@ -6,11 +6,15 @@ transition: convex
 typ: "Methode"
 gruppe: "Konstruieren"
 tiefe: "kennen"
-einsatz: ""
-kurzsatz: ""
-begriffe: []
+einsatz: "Sobald mehr als ein Screen entsteht"
+kurzsatz: "Schriftgrößen in festem Verhältnis festlegen, statt sie einzeln zu wählen"
+begriffe: ["Typografische Skala", "Grundgröße", "Faktor", "Text Style", "rem"]
 herkunft: "N"
 inhalt:
-  - "Schriftgrößen in festem Verhältnis"
-status: entwurf
+  - "Ergebnis zuerst: fünf Stufen"
+  - "Vier Schritte"
+  - "Drei Faktoren"
+  - "Skala im Code"
+  - "Typische Fehler"
+status: ok
 ---
