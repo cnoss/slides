@@ -790,6 +790,7 @@ src                 hier wird entwickelt
 ├── assets          SCSS, Skripte, Fonts, Icons, Bilder
 ├── compiled-assets vom SASS-Compiler erzeugt (main.css)
 ├── presentations   Content: pro Kategorie ein Ordner, darin pro Deck ein Ordner
+├── screendesign-landschaft.json.njk  Datenexport der Screendesign-Decks für die Screendesign-Landschaft (/data/screendesign-landschaft.json, Querverweise aus _data/landschaftVerweise.js)
 └── index.md        Übersichtsseite mit allen Decks
 .eleventy.js        11ty-Config: Collections, Shortcodes, Passthrough-Copy
 .eleventyignore     von 11ty ignorierte Ordner/Dateien

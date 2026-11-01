@@ -1,0 +1,25 @@
+---
+permalink: /data/screendesign-landschaft.json
+eleventyExcludeFromCollections: true
+---
+{
+  "basisUrl": "https://cnoss.github.io/slides",
+  "decks": [
+{%- for deck in collections.screendesignUndVisuelleKommunikation %}
+    {
+      "id": {{ deck.fileSlug | dump | safe }},
+      "url": {{ deck.url | dump | safe }},
+      "titel": {{ deck.data.title | dump | safe }},
+      "typ": {{ (deck.data.typ or none) | dump | safe }},
+      "gruppe": {{ (deck.data.gruppe or none) | dump | safe }},
+      "thema": {{ (deck.data.thema or none) | dump | safe }},
+      "status": {{ (deck.data.status or none) | dump | safe }},
+      "tiefe": {{ (deck.data.tiefe or none) | dump | safe }},
+      "kurzsatz": {{ (deck.data.kurzsatz or none) | dump | safe }},
+      "begriffe": {{ (deck.data.begriffe or []) | dump | safe }},
+      "inhalt": {{ (deck.data.inhalt or []) | dump | safe }},
+      "verweise": {{ (landschaftVerweise[deck.fileSlug] or []) | dump | safe }}
+    }{% if not loop.last %},{% endif %}
+{%- endfor %}
+  ]
+}
