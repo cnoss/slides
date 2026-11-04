@@ -10,9 +10,9 @@ W(D, '010-test.md', kopf('Der Test', '''
 Danach die zweite Fassung: dieselben Wörter, aber auch der erste und der letzte Buchstabe sind vertauscht. Plötzlich geht es kaum noch. Dann die Auflösung im Klartext.
 ''') + '''{% interlude "Können Sie das lesen?", "Laut mitlesen, bitte." %}
 
-''' + live('Erster Versuch', f'<p style="{GROSS}">Biem Leesn ekrenenn wir gnaze Wröter. Es ist nchit so whictig, in wlehcer Rienhnelfoge die Bcuhstbaen sethen, solnage der estre und der ltzete an der rhictgien Stlele snid.</p>') + '\n\n'
-+ live('Zweiter Versuch', f'<p style="{GROSS}">Ibem Eesnl enneerkn riw negza Erwtör. Se ist thicn os iwhgtic, ni echlewr Ehneifloneg ied Thabcsueb eehnst, gnaloes red esert dnu red zettel na red itgichren Elelts dins.</p>', 'none') + '\n\n'
-+ live('Im Klartext', f'<p style="{GROSS}">Beim Lesen erkennen wir ganze Wörter. Es ist nicht so wichtig, in welcher Reihenfolge die Buchstaben stehen, solange der erste und der letzte an der richtigen Stelle sind.</p>', 'none') + '\n')
+''' + beispiel('Erster Versuch', f'<p style="{GROSS}">Biem Leesn ekrenenn wir gnaze Wröter. Es ist nchit so whictig, in wlehcer Rienhnelfoge die Bcuhstbaen sethen, solnage der estre und der ltzete an der rhictgien Stlele snid.</p>') + '\n\n'
++ beispiel('Zweiter Versuch', f'<p style="{GROSS}">Ibem Eesnl enneerkn riw negza Erwtör. Se ist thicn os iwhgtic, ni echlewr Ehneifloneg ied Thabcsueb eehnst, gnaloes red esert dnu red zettel na red itgichren Elelts dins.</p>', 'none') + '\n\n'
++ beispiel('Im Klartext', f'<p style="{GROSS}">Beim Lesen erkennen wir ganze Wörter. Es ist nicht so wichtig, in welcher Reihenfolge die Buchstaben stehen, solange der erste und der letzte an der richtigen Stelle sind.</p>', 'none') + '\n')
 
 W(D, '020-mechanismus.md', kopf('Was ist passiert?', '''
 Geübte Leserinnen und Leser gehen nicht Buchstabe für Buchstabe vor. Sie erfassen Wörter und Wortgruppen als Einheit und ergänzen aus dem Zusammenhang. Deshalb stört ein Dreher im Wortinneren kaum, und deshalb überliest man Tippfehler im eigenen Text.
@@ -38,7 +38,7 @@ Im Code: Text normal schreiben und über CSS umstellen (`text-transform: upperca
 **Hintergrund**
 
 Miles Tinker und Donald Paterson haben schon 1928 gemessen, dass Versalsatz langsamer gelesen wird als gemischte Schreibung. Tinker fasst das in »Legibility of Print« (1963) zusammen. Ein Teil des Effekts ist Übung: Wer viel Versalsatz liest, wird schneller.
-''') + live('Welchen lesen Sie lieber?', f'<div style="display:flex;gap:3vw;align-items:flex-start;width:100%;"><p style="{ST}flex:1;">{CAPS}</p><p style="{ST}flex:1;">{NORM}</p></div>') + '\n\n'
+''') + beispiel('Welchen lesen Sie lieber?', f'<div style="display:flex;gap:3vw;align-items:flex-start;width:100%;"><p style="{ST}flex:1;">{CAPS}</p><p style="{ST}flex:1;">{NORM}</p></div>') + '\n\n'
 + '''{% statement "Versalien nur für Kurzes.", "Ein Label, ein Button, eine Dachzeile: gut. Ein ganzer Satz: schlecht." %}
 ''')
 

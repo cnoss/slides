@@ -24,6 +24,17 @@ def live(titel, inhalt, transition='fade'):
     """Folie mit echtem, im Browser gesetztem Text."""
     return f'<section class="simple" data-transition="{transition}">\n  <div>\n    <h1>{titel}</h1>\n    {inhalt}\n  </div>\n</section>'
 
+def beispiel(bu, inhalt, transition='fade', breite='84%'):
+    """Textbeispiel wie eine Bildfolie: Inhalt im Rahmen, Erklärung als Bildunterschrift unten links."""
+    if inhalt.startswith('<!--zwei:'):
+        # Spaltenbeschriftungen aus zwei() wandern in die Bildunterschrift
+        kopf, inhalt = inhalt[9:].split('-->', 1)
+        la, lb = kopf.split('|', 1)
+        bu = f'{bu}<br><small>Links: {la}. Rechts: {lb}</small>'
+    return (f'<section class="image screenshot no-shadow" data-transition="{transition}" data-background-transition="none">'
+            f'<figure><div style="width:{breite};text-align:left;">{inhalt}</div>'
+            f'<figcaption class="bu"><p>{bu}</p></figcaption></figure></section>')
+
 def liste(titel, punkte):
     zeilen = '\n'.join("    {% fragment '<p class=\"list\">" + p + "</p>' %}" for p in punkte)
     return f'<section class="simple" data-transition="fade">\n  <div>\n    <h1>{titel}</h1>\n{zeilen}\n  </div>\n</section>'

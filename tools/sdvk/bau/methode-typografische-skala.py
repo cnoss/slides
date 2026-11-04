@@ -24,7 +24,7 @@ W(D, '010-ergebnis.md', kopf('Ergebnis zuerst', '''
 So sieht eine Skala aus: Grundgröße 16, jede Stufe das 1,25-Fache der vorigen, gerundet. Fünf Stufen reichen für die meisten Screens.
 
 Die Zahlen links sind Pixel. Auf der Folie ist alles proportional vergrößert.
-''') + live('Grundgröße 16, Faktor 1,25', probe(1.25)) + '\n')
+''') + beispiel('Grundgröße 16, Faktor 1,25', probe(1.25)) + '\n')
 
 W(D, '020-schritte.md', kopf('Schritte', '''
 **1. Grundgröße festlegen:** Das ist die Größe des Fließtexts, im Web meist 16 px (1 rem).
@@ -45,7 +45,7 @@ Die Idee stammt aus der Buchtypografie: Die klassische Skala der Bleisatz-Schrif
   '<strong>2. Faktor wählen:</strong> kleiner für dichte Oberflächen, größer für Inhaltsseiten',
   '<strong>3. Berechnen und runden:</strong> Grundgröße mal Faktor, immer wieder',
   '<strong>4. Zuweisen:</strong> Jede Lesestufe bekommt eine Größe',
-]) + '\n\n' + live('Drei Faktoren', '<div style="display:flex;gap:4vw;align-items:flex-end;">' + ''.join(f'<div><p style="font-family:PTsans;font-size:2.6vh;margin:0 0 1vh;text-align:left;color:#9313ce;">{n}</p>{probe(r, 5, 0.11)}</div>' for n, r in [('1,125: dicht', 1.125), ('1,25: ausgewogen', 1.25), ('1,5: deutlich', 1.5)]) + '</div>') + '\n')
+]) + '\n\n' + beispiel('Drei Faktoren<br><small>Von links: 1,125 (dicht), 1,25 (ausgewogen), 1,5 (deutlich)</small>', '<div style="display:flex;gap:4vw;align-items:flex-end;">' + ''.join(f'<div>{probe(r, 5, 0.11)}</div>' for r in [1.125, 1.25, 1.5]) + '</div>') + '\n')
 
 CODE = ''':root {
   --text-base: 1rem;     /* 16 px, Fließtext */

@@ -32,13 +32,13 @@ Derselbe Text in drei Breiten. Beim Lesen springen die Augen am Zeilenende zurü
 Die Breite ist unabhängig von der Bildschirmbreite. Genau das ist der häufigste Fehler am Screen: Der Text läuft einfach über die ganze Breite.
 
 Im CSS gibt es dafür eine eigene Einheit: `ch`, die Breite der Ziffer Null. Die drei Fassungen hier sind so gesetzt: `max-width: 120ch`, `25ch` und `65ch`.
-''') + live('Zu lang: etwa 120 Zeichen', satz(120, gr=2.4)) + '\n\n' + live('Zu kurz: etwa 25 Zeichen', satz(25, gr=2.6, lh=1.4), 'none') + '\n\n' + live('Gut: etwa 65 Zeichen', satz(65), 'none') + '\n')
+''') + beispiel('Zu lang: etwa 120 Zeichen', satz(120, gr=2.4)) + '\n\n' + beispiel('Zu kurz: etwa 25 Zeichen', satz(25, gr=2.6, lh=1.4), 'none') + '\n\n' + beispiel('Gut: etwa 65 Zeichen', satz(65), 'none') + '\n')
 
 W(D, '030-zeilenabstand.md', kopf('Zeilenabstand', '''
 **Zu eng:** Die Zeilen kleben zusammen, die Augen rutschen ab. **Zu weit:** Der Text zerfällt in Streifen, weil die Zeilen weiter voneinander entfernt sind als die Wörter voneinander. Das ist Nähe: Was nah ist, gehört zusammen.
 
 **Gut:** Für Lesetext 120 bis 150 %. Je länger die Zeile, desto mehr Zeilenabstand braucht sie. Große Überschriften brauchen weniger, oft reichen 110 %. Im CSS ohne Einheit angeben (`line-height: 1.5`), dann wächst der Abstand mit der Schrift mit.
-''') + live('Zu eng: 100 %', satz(65, 1.0), 'none') + '\n\n' + live('Zu weit: 220 %', satz(65, 2.2), 'none') + '\n\n' + live('Gut: 150 %', satz(65, 1.5), 'none') + '\n')
+''') + beispiel('Zu eng: 100 %', satz(65, 1.0), 'none') + '\n\n' + beispiel('Zu weit: 220 %', satz(65, 2.2), 'none') + '\n\n' + beispiel('Gut: 150 %', satz(65, 1.5), 'none') + '\n')
 
 W(D, '040-grauwert.md', kopf('Grauwert', '''
 Kneifen Sie die Augen zusammen: Ein guter Textblock wirkt wie eine gleichmäßig graue Fläche. Das ist der Grauwert. Löcher, dunkle Flecken und helle Streifen stören den Lesefluss, auch wenn man sie beim Lesen nicht bewusst wahrnimmt.
@@ -48,7 +48,7 @@ Links und rechts: derselbe Text. Links mit Blocksatz ohne Trennung, gesperrten u
 Was den Grauwert stört: gesperrter Text, zu viele Auszeichnungen im Absatz, erzwungener Blocksatz ohne Silbentrennung. Dazu mehr bei Satz.
 
 Die Reihenfolge der Abstände: Buchstabenabstand kleiner als Wortabstand, kleiner als Zeilenabstand, kleiner als Absatzabstand. Wird diese Reihenfolge verletzt, zerfällt der Text.
-''', transition='none') + live('Zweimal derselbe Text', grau()) + '\n\n' + live('Unscharf sieht man es', grau(True), 'none') + '''
+''', transition='none') + beispiel('Zweimal derselbe Text', grau()) + '\n\n' + beispiel('Unscharf sieht man es', grau(True), 'none') + '''
 
 {% statement "Abstände haben eine Reihenfolge.", "Buchstaben sind enger als Wörter. Wörter enger als Zeilen. Zeilen enger als Absätze." %}
 ''')

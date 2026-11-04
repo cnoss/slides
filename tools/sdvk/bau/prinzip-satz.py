@@ -5,8 +5,9 @@ intro(D, 'Satz', 'Prinzip // Lesbar machen')
 def block(st, ch=32, gr=3.1):
     return f'<p lang="de" style="font-family:PTserif;font-size:{gr}vh;line-height:1.45;max-width:{ch}ch;width:100%;margin:0;{st}">{KURZ}</p>'
 def zwei(a, b, la, lb):
-    k = lambda x, l: f'<div style="flex:1;"><p style="font-family:PTsans;font-size:2.6vh;color:#9313ce;margin:0 0 1vh;text-align:left;">{l}</p>{x}</div>'
-    return f'<div style="display:flex;gap:4vw;align-items:flex-start;width:100%;">{k(a, la)}{k(b, lb)}</div>'
+    # Beschriftungen stehen nicht über den Spalten, sondern in der Bildunterschrift (siehe beispiel() in typo.py)
+    k = lambda x: f'<div style="flex:1;">{x}</div>'
+    return f'<!--zwei:{la}|{lb}--><div style="display:flex;gap:4vw;align-items:flex-start;width:100%;">{k(a)}{k(b)}</div>'
 
 W(D, '010-regel.md', kopf('Satz', '''
 Die Regel: Die Satzart folgt der Textmenge. Lange Texte brauchen einen festen Zeilenanfang, damit die Augen zurückfinden. Kurze Texte dürfen freier gesetzt werden.
@@ -29,7 +30,7 @@ W(D, '020-satzarten.md', kopf('Satzarten', '''
 **Zentriert:** Jede Zeile beginnt woanders, die Augen müssen den Anfang jedes Mal suchen. Nur für Kurzes: eine Überschrift, ein Zitat, zwei bis drei Zeilen.
 
 **Rechtsbündig:** Nur für Ausnahmen, etwa Zahlen in Tabellen oder eine kurze Bildunterschrift.
-''') + live('Linksbündig gegen Blocksatz', zwei(block('text-align:left;hyphens:none;'), block('text-align:justify;hyphens:none;'), 'Linksbündig: gleichmäßige Wortabstände', 'Blocksatz ohne Trennung: Löcher')) + '\n\n' + live('Silbentrennung hilft', zwei(block('text-align:justify;hyphens:none;'), block('text-align:justify;hyphens:auto;'), 'Blocksatz ohne Trennung', 'Blocksatz mit <code>hyphens: auto</code>'), 'none') + '\n\n' + live('Zentriert: nur für Kurzes', zwei(block('text-align:center;hyphens:none;'), f'<p style="font-family:PTserif;font-size:5vh;line-height:1.3;margin:0;text-align:center;hyphens:none;">Typografie ist Auswählen, Gliedern, Anordnen und Lesbarmachen.</p>', 'Langer Text: Der Zeilenanfang fehlt', 'Kurzer Text: kein Problem'), 'none') + '''
+''') + beispiel('Linksbündig gegen Blocksatz', zwei(block('text-align:left;hyphens:none;'), block('text-align:justify;hyphens:none;'), 'linksbündig, gleichmäßige Wortabstände', 'Blocksatz ohne Trennung, Löcher')) + '\n\n' + beispiel('Silbentrennung hilft', zwei(block('text-align:justify;hyphens:none;'), block('text-align:justify;hyphens:auto;'), 'Blocksatz ohne Trennung', 'Blocksatz mit <code>hyphens: auto</code>'), 'none') + '\n\n' + beispiel('Zentriert: nur für Kurzes', zwei(block('text-align:center;hyphens:none;'), f'<p style="font-family:PTserif;font-size:5vh;line-height:1.3;margin:0;text-align:center;hyphens:none;">Typografie ist Auswählen, Gliedern, Anordnen und Lesbarmachen.</p>', 'langer Text, der Zeilenanfang fehlt', 'kurzer Text, kein Problem'), 'none') + '''
 
 {% statement "Am Screen: linksbündig.", "Blocksatz braucht Silbentrennung und viel Breite. Zentriert nur für Kurzes." %}
 ''')
@@ -45,7 +46,7 @@ Am Screen ist der Abstand üblich: etwa eine halbe bis eine ganze Zeile. Der Ein
 Im CSS: `p + p { margin-top: 1em; }`, keine leeren Absätze.
 
 Überschriften gehören zu dem, was folgt: Der Abstand nach oben ist größer als der nach unten. Das ist Nähe.
-''') + live('Abstand oder Einzug', zwei(f'<p style="{P}margin-bottom:1em;">{TA}</p><p style="{P}">{TB}</p>', f'<p style="{P}">{TA}</p><p style="{P}text-indent:1.5em;">{TB}</p>', 'Abstand: üblich am Screen', 'Einzug: üblich im Buch')) + '\n')
+''') + beispiel('Abstand oder Einzug', zwei(f'<p style="{P}margin-bottom:1em;">{TA}</p><p style="{P}">{TB}</p>', f'<p style="{P}">{TA}</p><p style="{P}text-indent:1.5em;">{TB}</p>', 'Abstand, üblich am Screen', 'Einzug, üblich im Buch')) + '\n')
 
 H = 'font-family:PTsans;font-weight:700;font-size:5.4vh;line-height:1.15;margin:0;text-align:left;max-width:20ch;hyphens:none;'
 W(D, '040-umbrueche.md', kopf('Umbrüche', '''
@@ -54,7 +55,7 @@ W(D, '040-umbrueche.md', kopf('Umbrüche', '''
 Am Screen gibt es selten Seiten, das Problem verschiebt sich: Spalten und Karten haben Umbrüche, und im Fließtext steht gern ein einzelnes Wort in der letzten Zeile.
 
 In CSS gibt es dafür Werkzeuge: `orphans` und `widows` für Umbrüche in Spalten und beim Druck, `text-wrap: balance` für Überschriften (die Zeilen werden gleich lang) und `text-wrap: pretty` für Fließtext (kein einsames letztes Wort). Früher hat man das von Hand mit festen Umbrüchen gelöst, die dann auf dem nächsten Gerät falsch saßen.
-''') + live('Überschriften ausbalancieren', zwei(f'<p style="{H}">Die Bibliothek zieht im Frühjahr in den alten Bahnhof um</p>', f'<p style="{H}text-wrap:balance;">Die Bibliothek zieht im Frühjahr in den alten Bahnhof um</p>', 'Automatisch', '<code>text-wrap: balance</code>')) + '''
+''') + beispiel('Überschriften ausbalancieren', zwei(f'<p style="{H}">Die Bibliothek zieht im Frühjahr in den alten Bahnhof um</p>', f'<p style="{H}text-wrap:balance;">Die Bibliothek zieht im Frühjahr in den alten Bahnhof um</p>', 'automatischer Umbruch', 'mit <code>text-wrap: balance</code>')) + '''
 
 {% statement "Einsame Zeilen stören.", "Im Druck heißen sie Hurenkind und Schusterjunge. Am Screen hilft CSS: text-wrap, widows, orphans." %}
 ''')

@@ -42,7 +42,7 @@ Derselbe Text, jede Folie ändert genau ein Mittel.
 6. **Die Namen:** Fünf Lesestufen. Mehr braucht fast kein Screen.
 
 Der Text ist erfunden.
-''') + live('Alles gleich', art(GLEICH), 'none') + '\n\n' + live('Größe', art(GROESSE), 'none') + '\n\n' + live('Schnitt', art(SCHNITT), 'none') + '\n\n' + live('Farbe', art(FARBE), 'none') + '\n\n' + live('Abstand', art(FARBE, ABST), 'none') + '\n\n' + live('Die Lesestufen', art(FARBE, ABST, True), 'none') + '\n')
+''') + beispiel('Alles gleich', art(GLEICH), 'none') + '\n\n' + beispiel('Größe', art(GROESSE), 'none') + '\n\n' + beispiel('Schnitt', art(SCHNITT), 'none') + '\n\n' + beispiel('Farbe', art(FARBE), 'none') + '\n\n' + beispiel('Abstand', art(FARBE, ABST), 'none') + '\n\n' + beispiel('Die Lesestufen', art(FARBE, ABST, True), 'none') + '\n')
 
 W(D, '030-im-screen.md', kopf('Im Screen', '''
 Die Lesestufen auf einer echten Seite: Dachzeile »Fehlender Wohnraum«, Headline, Lead, darunter die Autorenzeile. Die Dachzeile ist klein, die Headline trägt Größe und Farbe, und der Lead steht direkt darunter. Wer nur die Überschrift liest, hat die Nachricht verstanden.

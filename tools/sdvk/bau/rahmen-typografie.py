@@ -1,4 +1,5 @@
 exec(open('/Users/cnoss/git/privat/slides/tools/sdvk/deckbau.py').read())
+# Achtung: Das Deck wurde danach von Hand überarbeitet (Commit 959cff5bc). Nicht mehr ausführen, sonst gehen die Änderungen verloren.
 exec(open('/Users/cnoss/git/privat/slides/tools/sdvk/typo.py').read())
 import glob
 D = 'rahmen-typografie'
