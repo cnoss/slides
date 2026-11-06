@@ -27,7 +27,7 @@ Auch das Wort »Wortbild« ist eine Vereinfachung. Die alte Annahme, wir erkennt
 
 CAPS = 'BITTE BEACHTEN SIE, DASS IHRE BESTELLUNG ERST NACH EINGANG DER ZAHLUNG BEARBEITET WIRD. ÄNDERUNGEN SIND DANACH NUR NOCH ÜBER DEN KUNDENDIENST MÖGLICH.'
 NORM = 'Bitte beachten Sie, dass Ihre Bestellung erst nach Eingang der Zahlung bearbeitet wird. Änderungen sind danach nur noch über den Kundendienst möglich.'
-ST = 'font-family:PTsans;font-size:3.4vh;line-height:1.45;hyphens:none;margin:0;background:#e4e4e4;padding:1.2em 1.4em 2.2em;text-align:left;'
+ST = 'font-family:PTsans;font-size:3.4vh;line-height:1.45;hyphens:none;margin:0;text-align:left;'
 W(D, '030-versalien.md', kopf('Auf dem Screen', '''
 Die wichtigste Folge fürs Screendesign: Versalien, also durchgehende Großbuchstaben, lesen sich schlechter. Alle Wörter haben dieselbe rechteckige Form, Ober- und Unterlängen fehlen, und wir sind diese Form nicht gewohnt. Versalsatz kostet messbar Zeit und auch Platz.
 
@@ -38,7 +38,7 @@ Im Code: Text normal schreiben und über CSS umstellen (`text-transform: upperca
 **Hintergrund**
 
 Miles Tinker und Donald Paterson haben schon 1928 gemessen, dass Versalsatz langsamer gelesen wird als gemischte Schreibung. Tinker fasst das in »Legibility of Print« (1963) zusammen. Ein Teil des Effekts ist Übung: Wer viel Versalsatz liest, wird schneller.
-''') + beispiel('Welchen lesen Sie lieber?', f'<div style="display:flex;gap:3vw;align-items:flex-start;width:100%;"><p style="{ST}flex:1;">{CAPS}</p><p style="{ST}flex:1;">{NORM}</p></div>') + '\n\n'
+''') + beispiel('Welchen lesen Sie lieber?', f'<div style="display:flex;gap:6vw;align-items:flex-start;width:100%;"><p style="{ST}flex:1;">{CAPS}</p><p style="{ST}flex:1;">{NORM}</p></div>') + '\n\n'
 + '''{% statement "Versalien nur für Kurzes.", "Ein Label, ein Button, eine Dachzeile: gut. Ein ganzer Satz: schlecht." %}
 ''')
 
