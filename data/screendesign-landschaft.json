@@ -190,12 +190,12 @@
       "typ": "Methode",
       "gruppe": "Konstruieren",
       "thema": null,
-      "status": "entwurf",
+      "status": "ok",
       "tiefe": "können",
-      "kurzsatz": null,
-      "begriffe": [],
-      "inhalt": ["Spalten, Rinnen, Module","Satzspiegel"],
-      "verweise": []
+      "kurzsatz": "Ein Raster wird aus dem Inhalt abgeleitet: Format, Rand, Inhalt messen, Spalten und Spaltenabstand, Grundlinie, Module",
+      "begriffe": ["Gestaltungsraster","Satzspiegel","Steg","Grundlinienraster","Layout Guide","Spaltenbreite"],
+      "inhalt": ["Ergebnis zuerst: vorher, nachher","Sechs Schritte zum Raster","Satzspiegel","Spaltenbreite berechnen","Layout Guide in Figma","Mini-Übung"],
+      "verweise": ["methode-spacing-system","prinzip-ausrichtung-und-raster","prinzip-lesetext","prinzip-proportion","prinzip-weissraum"]
     },
     {
       "id": "methode-gestaltungsziel",
@@ -302,12 +302,12 @@
       "typ": "Methode",
       "gruppe": "Variieren",
       "thema": null,
-      "status": "entwurf",
-      "tiefe": null,
-      "kurzsatz": null,
-      "begriffe": [],
-      "inhalt": ["Parameter und Ausprägungen kombinieren"],
-      "verweise": []
+      "status": "ok",
+      "tiefe": "kennen",
+      "kurzsatz": "Variablen und Ausprägungen in einer Tabelle systematisch kombinieren, Sinnloses aussortieren, Kandidaten im Kontext prüfen",
+      "begriffe": ["Morphologischer Kasten","Variable","Ausprägung","Kombination"],
+      "inhalt": ["Rechenfrage: 4 × 4 × 4","Der Kasten und ein Weg hindurch","64 Thumbnails, aussortieren","Schritte","Grenzen und Fehler"],
+      "verweise": ["haltung-alternativen","methode-unschaerfetest","methode-variieren-achse"]
     },
     {
       "id": "methode-permutation",
@@ -428,12 +428,12 @@
       "typ": "Methode",
       "gruppe": "Konstruieren",
       "thema": null,
-      "status": "entwurf",
+      "status": "ok",
       "tiefe": "können",
-      "kurzsatz": null,
-      "begriffe": [],
-      "inhalt": ["Abstände aus einer festen Skala","Inset, Stack, Inline"],
-      "verweise": []
+      "kurzsatz": "Abstände aus einer festen, benannten Skala wählen statt nach Augenmaß schieben",
+      "begriffe": ["Spacing-System","Skala","Inset","Stack","Inline","Design Token","Auto Layout"],
+      "inhalt": ["Live-Test: Augenmaß gegen Skala","Ergebnis zuerst: benannte Skala","Fünf Schritte","Inset, Stack, Inline","Innen enger als außen, Skala im Code","Mini-Übung an der Card"],
+      "verweise": ["methode-gestaltungsraster","methode-typografische-skala","prinzip-naehe-und-abstand","prinzip-proportion","prinzip-weissraum"]
     },
     {
       "id": "methode-typografische-skala",
@@ -470,12 +470,12 @@
       "typ": "Methode",
       "gruppe": "Variieren",
       "thema": null,
-      "status": "entwurf",
+      "status": "ok",
       "tiefe": "können",
-      "kurzsatz": null,
-      "begriffe": [],
-      "inhalt": ["Ein Parameter ändert sich, alles andere bleibt","Übergangsreihe von A nach B"],
-      "verweise": []
+      "kurzsatz": "Eine Variable ändert sich, alles andere bleibt: in Stufen variieren, im Kontext prüfen, begründet auswählen",
+      "begriffe": ["Achse","Stufe","Ausgangsvariante","Variable","Entscheidungslog"],
+      "inhalt": ["Ergebnis zuerst: eine Achse, fünf Stufen","Aufbau Schritt für Schritt","Achsen","Fünf Schritte","Mini-Übung","Im Kontext prüfen und begründet auswählen","Typische Fehler"],
+      "verweise": ["haltung-alternativen","methode-entscheidungslog","methode-morphologischer-kasten","methode-unschaerfetest","prinzip-inhalt-bestimmt-form"]
     },
     {
       "id": "methode-wahrnehmungstests",
@@ -504,6 +504,20 @@
       "begriffe": [],
       "inhalt": ["Lösungsrecherche am Markt"],
       "verweise": []
+    },
+    {
+      "id": "methode-wireframes",
+      "url": "/presentations/screendesign-und-visuelle-kommunikation/methode-wireframes/",
+      "titel": "Wireframes und Fidelity",
+      "typ": "Methode",
+      "gruppe": "Konstruieren",
+      "thema": null,
+      "status": "ok",
+      "tiefe": "können",
+      "kurzsatz": "Ein Wireframe zeigt, was wo steht und wie wichtig es ist. So grob wie möglich, so fein wie nötig",
+      "begriffe": ["Wireframe","Fidelity","Skizze","Mid-Fi","Hi-Fi"],
+      "inhalt": ["Rätsel: Was für eine Seite ist das?","Struktur ohne Oberfläche, warum grau","Vier Stufen: Skizze, Grayscale-Wireframe, Mid-Fi, Hi-Fi","So grob wie möglich, so fein wie nötig","Typische Fehler, Einsatz"],
+      "verweise": ["haltung-alternativen","methode-gestaltungsraster","methode-spacing-system","methode-variieren-achse","prinzip-inhalt-bestimmt-form"]
     },
     {
       "id": "methode-zielgruppe",
@@ -739,7 +753,7 @@
       "status": "ok",
       "tiefe": null,
       "kurzsatz": "Jedes Element richtet sich an etwas aus. Ein gemeinsames Raster verbindet alles, was darauf steht",
-      "begriffe": ["Ausrichtung","Achse","Gestaltungsraster","Spalte (Column)","Rinne (Gutter)","Rand (Margin)","Modul (Module)"],
+      "begriffe": ["Ausrichtung","Achse","Gestaltungsraster","Spalte (Column)","Spaltenabstand (Gutter)","Rand (Margin)","Modul (Module)"],
       "inhalt": ["Ausrichtung","Raster schafft Zusammenhang"],
       "verweise": ["methode-gestaltungsraster","methode-permutation","methode-spacing-system","phaenomen-optische-korrektur","prinzip-eindeutigkeit","prinzip-fortsetzung-und-schicksal","prinzip-naehe-und-abstand","prinzip-weissraum"]
     },
@@ -1002,12 +1016,12 @@
       "typ": "Prinzip",
       "gruppe": "Ordnen",
       "thema": null,
-      "status": "entwurf",
+      "status": "ok",
       "tiefe": null,
-      "kurzsatz": null,
-      "begriffe": [],
-      "inhalt": ["Inhalt bestimmt Form (Für alle)","Priorität, Responsive, Mobile first"],
-      "verweise": []
+      "kurzsatz": "Das Layout folgt dem Inhalt und seiner Priorität. Testen Sie mit echten Inhalten und Extremfällen statt mit Lorem ipsum",
+      "begriffe": ["Inhalt bestimmt Form","Priorität","Mobile first","Extremfall","Lorem ipsum"],
+      "inhalt": ["Stresstest mit echten Inhalten","Priorität und Mobile first","Brücke zur NOXA-Aufgabe","Grenzen"],
+      "verweise": ["methode-variieren-achse","prinzip-ausrichtung-und-raster","prinzip-hierarchie","prinzip-lesetext"]
     },
     {
       "id": "prinzip-kommunikation",
@@ -1114,12 +1128,12 @@
       "typ": "Prinzip",
       "gruppe": "Dosieren",
       "thema": null,
-      "status": "entwurf",
+      "status": "ok",
       "tiefe": null,
-      "kurzsatz": null,
-      "begriffe": [],
-      "inhalt": ["Verhältnis statt Einzelmaß","Goldener Schnitt","Bevorzugte Zahlen"],
-      "verweise": []
+      "kurzsatz": "Gute Proportionen entstehen aus Verhältnissen, nicht aus Einzelmaßen. Goldener Schnitt, Drittel und Zahlenreihen helfen, beweisen aber nichts",
+      "begriffe": ["Proportion","Seitenverhältnis","Goldener Schnitt","Drittelregel","Fibonacci-Folge","Renard-Reihe","Normzahlen"],
+      "inhalt": ["Schätzfrage: Welches Rechteck?","Verhältnis statt Einzelmaß","Goldener Schnitt und sein Mythos","Drittel, DIN A","Zahlenreihen: Fibonacci und Renard als Schriftgrade und im Seitenaufbau"],
+      "verweise": ["methode-gestaltungsraster","methode-spacing-system","methode-typografische-skala","phaenomen-optische-korrektur","prinzip-inhalt-bestimmt-form","prinzip-weissraum"]
     },
     {
       "id": "prinzip-raeumlichkeit",
@@ -1282,12 +1296,12 @@
       "typ": "Prinzip",
       "gruppe": "Dosieren",
       "thema": null,
-      "status": "entwurf",
+      "status": "ok",
       "tiefe": null,
-      "kurzsatz": null,
-      "begriffe": [],
-      "inhalt": ["Weißraum und Negativraum"],
-      "verweise": []
+      "kurzsatz": "Leere ist gestalteter Raum, nicht übrig gebliebener. Weißraum trennt, gruppiert und gibt die Reihenfolge vor",
+      "begriffe": ["Weißraum","Negativraum","Makro-Weißraum","Mikro-Weißraum"],
+      "inhalt": ["Gedankenexperiment: Weißraum wegnehmen","Leere ist gestalteter Raum (Hofmann)","Weißraum gruppiert ohne Rahmen","Grenzen: Wertigkeit, zu viel, kleine Screens"],
+      "verweise": ["methode-spacing-system","prinzip-geschlossenheit-und-region","prinzip-naehe-und-abstand","prinzip-proportion","prinzip-reduzieren"]
     },
     {
       "id": "prinzip-zielgruppe-und-kontext",
@@ -1358,6 +1372,20 @@
       "begriffe": ["Farbspektrum","Additive Farbmischung","Subtraktive Farbmischung","Farbkreis","HSB"],
       "inhalt": ["Corporate Colors: Welche Marke ist das?","Irritationen: der gleiche Farbwert, Verläufe","Spektrum, RGB und CMY, Farbkreis, Sättigung und Helligkeit, HSB","Farbe im Code: Hex, rgb, hsl, oklch"],
       "verweise": []
+    },
+    {
+      "id": "rahmen-layout",
+      "url": "/presentations/screendesign-und-visuelle-kommunikation/rahmen-layout/",
+      "titel": "Layout",
+      "typ": "Rahmen",
+      "gruppe": null,
+      "thema": null,
+      "status": "ok",
+      "tiefe": null,
+      "kurzsatz": "Ein Layout ordnet Text, Bild und Fläche auf einem Format und legt fest, was zuerst gelesen wird",
+      "begriffe": ["Layout","Leserichtung","Makrotypografie"],
+      "inhalt": ["Schätzfrage: dieselben Teile, drei Anordnungen","Was ist ein Layout?","Was Sie schon haben","Lernziele des Tages"],
+      "verweise": ["methode-gestaltungsraster","methode-spacing-system","methode-typografische-skala","prinzip-ausrichtung-und-raster","prinzip-hierarchie","prinzip-lesetext","prinzip-naehe-und-abstand"]
     },
     {
       "id": "rahmen-modul",
