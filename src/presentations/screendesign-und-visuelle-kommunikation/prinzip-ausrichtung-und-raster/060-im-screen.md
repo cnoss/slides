@@ -11,7 +11,7 @@ speaker: |
 
   Die dritte Fassung bricht das Raster bewusst: Das Bild läuft rechts aus dem Format. Ein Rasterbruch wirkt nur, weil alles andere im Raster steht.
 
-  Danach dasselbe im Code. CSS Grid beschreibt genau diese Struktur: Spalten (Columns), Rinne (Gutter, in CSS: gap), Spannweite eines Elements. Wer in Figma mit einem Raster entwirft, kann es eins zu eins übergeben.
+  Danach dasselbe im Code. CSS Grid beschreibt genau diese Struktur: Spalten (Columns), Spaltenabstand (Gutter, in CSS: gap), Spannweite eines Elements. Wer in Figma mit einem Raster entwirft, kann es eins zu eins übergeben.
 ---
 
 {% frame '{"w":900,"h":500,"bu":"Eine Startseite"}' %}
@@ -102,7 +102,7 @@ speaker: |
 <pre style="font-size:2.6vh; line-height:1.5; text-align:left; width:100%; box-shadow:none;"><code class="language-css">.seite {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 20px; /* Rinne, Gutter */
+  gap: 20px; /* Spaltenabstand, Gutter */
   padding: 0 60px; /* Rand, Margin */
 }
 .karte { grid-column: span 4; }

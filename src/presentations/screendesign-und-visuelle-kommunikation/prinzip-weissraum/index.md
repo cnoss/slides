@@ -7,10 +7,13 @@ typ: "Prinzip"
 gruppe: "Dosieren"
 tiefe: ""
 einsatz: ""
-kurzsatz: ""
-begriffe: []
+kurzsatz: "Leere ist gestalteter Raum, nicht übrig gebliebener. Weißraum trennt, gruppiert und gibt die Reihenfolge vor"
+begriffe: ["Weißraum", "Negativraum", "Makro-Weißraum", "Mikro-Weißraum"]
 herkunft: "B: proportionen-und-abstaende/050"
 inhalt:
-  - "Weißraum und Negativraum"
-status: entwurf
+  - "Gedankenexperiment: Weißraum wegnehmen"
+  - "Leere ist gestalteter Raum (Hofmann)"
+  - "Weißraum gruppiert ohne Rahmen"
+  - "Grenzen: Wertigkeit, zu viel, kleine Screens"
+status: ok
 ---

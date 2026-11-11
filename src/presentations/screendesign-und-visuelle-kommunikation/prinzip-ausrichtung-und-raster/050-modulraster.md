@@ -5,7 +5,7 @@ slideClasses: wrap
 status: ok
 transition: none
 speaker: |
-  Ein strenges Modulraster für ein Tablet im Hochformat: 990 × 1310 Pixel, 24 Spalten (Columns) und 32 Zeilen (Rows), Rand (Margin) 20, Rinne (Gutter) 10. Daraus ergeben sich quadratische Zellen von 30 × 30 Pixeln: (990 − 2 × 20 − 23 × 10) ÷ 24 = 30 und (1310 − 2 × 20 − 31 × 10) ÷ 32 = 30.
+  Ein strenges Modulraster für ein Tablet im Hochformat: 990 × 1310 Pixel, 24 Spalten (Columns) und 32 Zeilen (Rows), Rand (Margin) 20, Spaltenabstand (Gutter) 10. Daraus ergeben sich quadratische Zellen von 30 × 30 Pixeln: (990 − 2 × 20 − 23 × 10) ÷ 24 = 30 und (1310 − 2 × 20 − 31 × 10) ÷ 32 = 30.
 
   Auf so einem Raster lässt sich jedes Gestaltgesetz durchspielen: Nähe, Ähnlichkeit, gemeinsame Ausrichtung, Störung. Auf der zweiten Folie: eine Gruppe durch Nähe, eine durch Ähnlichkeit, eine Reihe mit einem Ausreißer.
 

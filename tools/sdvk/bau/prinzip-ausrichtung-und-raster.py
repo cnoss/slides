@@ -95,7 +95,7 @@ speaker: |
 {fr("Auf einer Grundlinie (Baseline)", layout('grundlinie'))}
 ''')
 
-# Raster abstrakt: Format 600 x 600, 6 Spalten, Rand 40, Rinne 20 -> Spalte (600-80-100)/6 = 70
+# Raster abstrakt: Format 600 x 600, 6 Spalten, Rand 40, Spaltenabstand 20 -> Spalte (600-80-100)/6 = 70
 M=40; GU=20; CW=70
 cx=lambda c: M+c*(CW+GU)
 cols=''.join(f'  <rect data-id="col{c}" x="{cx(c)}" y="{M}" width="{CW}" height="{600-2*M}" fill="{L}" fill-opacity="0.12" />\n' for c in range(6))
@@ -126,7 +126,7 @@ transition: none
 speaker: |
   Ein Format mit zwölf Elementen: ein großes Bild, eine Überschrift mit Text, drei Bilder mit Unterzeilen, ein Button. Erst nach Augenmaß platziert. Nichts ist falsch, aber nichts passt zusammen.
 
-  Dann wird ein Raster sichtbar: sechs Spalten (Columns) mit Rinnen (Gutter) dazwischen und einem Rand (Margin). Die Elemente rasten ein, jedes beginnt und endet an einer Spaltenkante. Zum Schluss verschwindet das Raster wieder. Die Ordnung bleibt.
+  Dann wird ein Raster sichtbar: sechs Spalten (Columns) mit Spaltenabständen (Gutter) dazwischen und einem Rand (Margin). Die Elemente rasten ein, jedes beginnt und endet an einer Spaltenkante. Zum Schluss verschwindet das Raster wieder. Die Ordnung bleibt.
 
   Fragen: Was hat sich verändert? Nur die Positionen und Breiten. Kein Element ist neu, keine Farbe anders.
 
@@ -145,7 +145,7 @@ def anat(mark):
     for c in range(6):
         hl = (mark=='spalte' and c==2)
         out+=f'  <rect data-id="col{c}" x="{cx(c)}" y="{M}" width="{CW}" height="{600-2*M}" fill="{L if hl else G2}" fill-opacity="{0.9 if hl else 0.6}" />\n'
-    # Rinne
+    # Spaltenabstand
     out+=f'  <rect data-id="rinne" x="{cx(2)+CW}" y="{M}" width="{GU}" height="{600-2*M}" fill="{L}" fill-opacity="{0.9 if mark=="rinne" else 0}" />\n'
     # Rand
     op=0.9 if mark=='rand' else 0
@@ -168,20 +168,20 @@ speaker: |
   Vier Begriffe, die man braucht, um über Raster zu sprechen, in Figma genauso wie in CSS.
 
   - **Spalte (Column):** die Fläche, auf der Inhalte stehen. Ein Element belegt eine oder mehrere Spalten.
-  - **Rinne (Gutter):** der Abstand zwischen zwei Spalten. In CSS heißt sie gap.
+  - **Spaltenabstand (Gutter):** der Abstand zwischen zwei Spalten. In CSS heißt er gap.
   - **Rand (Margin):** der Abstand zwischen Raster und Formatkante.
   - **Modul (Module, Rasterzelle):** Teilt man die Spalten zusätzlich in Zeilen (Rows), entstehen Module. Ein Raster aus Spalten und Zeilen heißt Modulraster.
 
-  Begriffe: Spalte (Column), Rinne (Gutter), Rand (Margin), Modul (Module), Modulraster (Modular Grid). Figma und viele Werkzeuge verwenden die englischen Begriffe, deshalb brauchen Sie beide.
+  Begriffe: Spalte (Column), Spaltenabstand (Gutter), Rand (Margin), Modul (Module), Modulraster (Modular Grid). Figma und viele Werkzeuge verwenden die englischen Begriffe, deshalb brauchen Sie beide.
 ---
 
 {frg("Spalte (Column)", anat('spalte'))}
-{frg("Rinne (Gutter)", anat('rinne'))}
+{frg("Spaltenabstand (Gutter)", anat('rinne'))}
 {frg("Rand (Margin)", anat('rand'))}
 {frg("Modul (Module): Spalten (Columns) und Zeilen (Rows) ergeben Rasterzellen", anat('modul'))}
 ''')
 
-# Beispiel Modulraster 24 x 32, Format 990 x 1310 halbiert (495 x 655): Rand 10, Rinne 5, Zelle 15
+# Beispiel Modulraster 24 x 32, Format 990 x 1310 halbiert (495 x 655): Rand 10, Spaltenabstand 5, Zelle 15
 def modulraster(n_el):
     m=10; g=5; c=15
     out=''
@@ -209,7 +209,7 @@ slideClasses: wrap
 status: ok
 transition: none
 speaker: |
-  Ein strenges Modulraster für ein Tablet im Hochformat: 990 × 1310 Pixel, 24 Spalten (Columns) und 32 Zeilen (Rows), Rand (Margin) 20, Rinne (Gutter) 10. Daraus ergeben sich quadratische Zellen von 30 × 30 Pixeln: (990 − 2 × 20 − 23 × 10) ÷ 24 = 30 und (1310 − 2 × 20 − 31 × 10) ÷ 32 = 30.
+  Ein strenges Modulraster für ein Tablet im Hochformat: 990 × 1310 Pixel, 24 Spalten (Columns) und 32 Zeilen (Rows), Rand (Margin) 20, Spaltenabstand (Gutter) 10. Daraus ergeben sich quadratische Zellen von 30 × 30 Pixeln: (990 − 2 × 20 − 23 × 10) ÷ 24 = 30 und (1310 − 2 × 20 − 31 × 10) ÷ 32 = 30.
 
   Auf so einem Raster lässt sich jedes Gestaltgesetz durchspielen: Nähe, Ähnlichkeit, gemeinsame Ausrichtung, Störung. Auf der zweiten Folie: eine Gruppe durch Nähe, eine durch Ähnlichkeit, eine Reihe mit einem Ausreißer.
 
@@ -222,7 +222,7 @@ speaker: |
 {modulraster(0)}{gruppe()}{{% endframe %}}
 ''')
 
-# Im Screen: Desktop-Wireframe 900 x 500 mit 12 Spalten, Rand 60, Rinne 20 -> Spalte (900-120-220)/12 = 46.67
+# Im Screen: Desktop-Wireframe 900 x 500 mit 12 Spalten, Rand 60, Spaltenabstand 20 -> Spalte (900-120-220)/12 = 46.67
 SM=60; SG=20; SC=(900-2*SM-11*SG)/12
 sx=lambda c: SM+c*(SC+SG)
 span=lambda a,b: sx(b)+SC-sx(a)
@@ -249,7 +249,7 @@ speaker: |
 
   Die dritte Fassung bricht das Raster bewusst: Das Bild läuft rechts aus dem Format. Ein Rasterbruch wirkt nur, weil alles andere im Raster steht.
 
-  Danach dasselbe im Code. CSS Grid beschreibt genau diese Struktur: Spalten (Columns), Rinne (Gutter, in CSS: gap), Spannweite eines Elements. Wer in Figma mit einem Raster entwirft, kann es eins zu eins übergeben.
+  Danach dasselbe im Code. CSS Grid beschreibt genau diese Struktur: Spalten (Columns), Spaltenabstand (Gutter, in CSS: gap), Spannweite eines Elements. Wer in Figma mit einem Raster entwirft, kann es eins zu eins übergeben.
 ---
 
 {fq("Eine Startseite", cols12(0)+seite())}
@@ -262,7 +262,7 @@ speaker: |
 <pre style="font-size:2.6vh; line-height:1.5; text-align:left; width:100%; box-shadow:none;"><code class="language-css">.seite {{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 20px; /* Rinne, Gutter */
+  gap: 20px; /* Spaltenabstand, Gutter */
   padding: 0 60px; /* Rand, Margin */
 }}
 .karte {{ grid-column: span 4; }}
@@ -310,7 +310,7 @@ speaker: |
 {% statement "Verweise", "Dahinter: [Fortsetzung und Schicksal](../prinzip-fortsetzung-und-schicksal/) und [Eindeutigkeit](../prinzip-eindeutigkeit/). Weiter: [Nähe und Abstand](../prinzip-naehe-und-abstand/), [Weißraum](../prinzip-weissraum/) und [Optische Korrektur](../phaenomen-optische-korrektur/). Konstruieren: [Gestaltungsraster](../methode-gestaltungsraster/) und [Spacing-System](../methode-spacing-system/). Ausprobieren: [Permutation](../methode-permutation/)." %}
 ''')
 
-done(D,'Jedes Element richtet sich an etwas aus. Ein gemeinsames Raster verbindet alles, was darauf steht','Ausrichtung, Achse, Gestaltungsraster, Spalte (Column), Rinne (Gutter), Rand (Margin), Modul (Module)')
+done(D,'Jedes Element richtet sich an etwas aus. Ein gemeinsames Raster verbindet alles, was darauf steht','Ausrichtung, Achse, Gestaltungsraster, Spalte (Column), Spaltenabstand (Gutter), Rand (Margin), Modul (Module)')
 
 # Herkunft: Zitat aus dem Bestand
 p=f'{NEW}/{D}/index.md'; s=open(p).read()

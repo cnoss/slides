@@ -5,12 +5,16 @@ slideClasses: outro
 transition: convex
 typ: "Methode"
 gruppe: "Variieren"
-tiefe: ""
-einsatz: ""
-kurzsatz: ""
-begriffe: []
+tiefe: "kennen"
+einsatz: "Wenn mehrere Achsen zusammenkommen, etwa bei Varianten einer Komponente"
+kurzsatz: "Variablen und Ausprägungen in einer Tabelle systematisch kombinieren, Sinnloses aussortieren, Kandidaten im Kontext prüfen"
+begriffe: ["Morphologischer Kasten", "Variable", "Ausprägung", "Kombination"]
 herkunft: "N"
 inhalt:
-  - "Parameter und Ausprägungen kombinieren"
-status: entwurf
+  - "Rechenfrage: 4 × 4 × 4"
+  - "Der Kasten und ein Weg hindurch"
+  - "64 Thumbnails, aussortieren"
+  - "Schritte"
+  - "Grenzen und Fehler"
+status: ok
 ---

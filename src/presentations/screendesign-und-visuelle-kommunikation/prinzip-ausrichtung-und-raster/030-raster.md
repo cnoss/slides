@@ -7,7 +7,7 @@ transition: none
 speaker: |
   Ein Format mit zwölf Elementen: ein großes Bild, eine Überschrift mit Text, drei Bilder mit Unterzeilen, ein Button. Erst nach Augenmaß platziert. Nichts ist falsch, aber nichts passt zusammen.
 
-  Dann wird ein Raster sichtbar: sechs Spalten (Columns) mit Rinnen (Gutter) dazwischen und einem Rand (Margin). Die Elemente rasten ein, jedes beginnt und endet an einer Spaltenkante. Zum Schluss verschwindet das Raster wieder. Die Ordnung bleibt.
+  Dann wird ein Raster sichtbar: sechs Spalten (Columns) mit Spaltenabständen (Gutter) dazwischen und einem Rand (Margin). Die Elemente rasten ein, jedes beginnt und endet an einer Spaltenkante. Zum Schluss verschwindet das Raster wieder. Die Ordnung bleibt.
 
   Fragen: Was hat sich verändert? Nur die Positionen und Breiten. Kein Element ist neu, keine Farbe anders.
 
