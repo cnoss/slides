@@ -134,12 +134,12 @@
       "typ": "Methode",
       "gruppe": "Entscheiden und Kritik",
       "thema": null,
-      "status": "entwurf",
+      "status": "ok",
       "tiefe": "können",
-      "kurzsatz": null,
-      "begriffe": [],
-      "inhalt": ["Ablauf einer Designkritik","Gemeinsames Vokabular","Leitfragen der Prinzipien als Prüfliste"],
-      "verweise": []
+      "kurzsatz": "Designkritik mit festem Ablauf und gemeinsamem Vokabular: erst das Ziel, dann beobachten, dann gegen das Ziel bewerten, dann fragen",
+      "begriffe": ["Crit","Kritik","Reaktion","Anweisung","Gestaltungsziel","Leitfragen"],
+      "inhalt": ["Reaktion, Anweisung, Kritik","Eine Rückmeldung in vier Teilen","Ablauf in sechs Schritten, drei Rollen","Leitfragen der Prinzipien als Prüfliste","Verantwortungsfragen","Mini-Übung mit Satzanfängen"],
+      "verweise": ["haltung-beobachten-und-begruenden","methode-beschreibungsraster","methode-kontrast-pruefen","methode-unschaerfetest","prinzip-ausrichtung-und-raster","prinzip-farbe-und-lesbarkeit","prinzip-farbwirkung","prinzip-hierarchie","prinzip-kontrast-und-hervorhebung","prinzip-lesetext","prinzip-naehe-und-abstand","prinzip-reduzieren","prinzip-schrift-wirkung"]
     },
     {
       "id": "methode-double-diamond",
@@ -1383,8 +1383,8 @@
       "status": "ok",
       "tiefe": null,
       "kurzsatz": "Ein Layout ordnet Text, Bild und Fläche auf einem Format und legt fest, was zuerst gelesen wird",
-      "begriffe": ["Layout","Leserichtung","Makrotypografie"],
-      "inhalt": ["Schätzfrage: dieselben Teile, drei Anordnungen","Was ist ein Layout?","Was Sie schon haben","Lernziele des Tages"],
+      "begriffe": ["Layout","Leserichtung","Makrotypografie","Raster","Wireframe","Layoutmuster"],
+      "inhalt": ["Schätzfrage: dieselben Teile, drei Anordnungen","Was ist ein Layout? Definition und Abgrenzung","Layouts im Alltag: sechs Beispiele, Layoutmuster","Was Sie schon haben","Lernziele des Tages"],
       "verweise": ["methode-gestaltungsraster","methode-spacing-system","methode-typografische-skala","prinzip-ausrichtung-und-raster","prinzip-hierarchie","prinzip-lesetext","prinzip-naehe-und-abstand"]
     },
     {
