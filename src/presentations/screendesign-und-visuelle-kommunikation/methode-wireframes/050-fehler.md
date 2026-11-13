@@ -13,6 +13,7 @@ speaker: |
 
 {% fragment '<p class="list">Zu früh zu fein: Farbe und Schatten, bevor die Anordnung steht</p>' %}
 {% fragment '<p class="list">Schon im Wireframe Farbe: Dann geht es im Feedback nur noch um die Farbe</p>' %}
+{% fragment '<p class="list">Dinge zeigen, über die man nicht sprechen will: Stockfotos, Werbetexte, Logos</p>' %}
 {% fragment '<p class="list">Lorem ipsum bis zum Schluss: Die echten Inhalte passen dann nicht hinein</p>' %}
 {% fragment '<p class="list">Graustufen als Gestaltung missverstehen: Das Grau ist ein Platzhalter</p>' %}
 {% fragment '<p class="list">Nur eine Variante pro Stufe: Gerade die groben Stufen sind zum Variieren da</p>' %}

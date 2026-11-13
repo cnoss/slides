@@ -6,13 +6,16 @@ transition: convex
 typ: "Methode"
 gruppe: "Entscheiden und Kritik"
 tiefe: "können"
-einsatz: ""
-kurzsatz: ""
-begriffe: []
+einsatz: "Bei jeder Präsentation und jedem Zusammentragen von Entwürfen"
+kurzsatz: "Designkritik mit festem Ablauf und gemeinsamem Vokabular: erst das Ziel, dann beobachten, dann gegen das Ziel bewerten, dann fragen"
+begriffe: ["Crit", "Kritik", "Reaktion", "Anweisung", "Gestaltungsziel", "Leitfragen"]
 herkunft: "N"
 inhalt:
-  - "Ablauf einer Designkritik"
-  - "Gemeinsames Vokabular"
+  - "Reaktion, Anweisung, Kritik"
+  - "Eine Rückmeldung in vier Teilen"
+  - "Ablauf in sechs Schritten, drei Rollen"
   - "Leitfragen der Prinzipien als Prüfliste"
-status: entwurf
+  - "Verantwortungsfragen"
+  - "Mini-Übung mit Satzanfängen"
+status: ok
 ---

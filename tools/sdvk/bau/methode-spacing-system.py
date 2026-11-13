@@ -11,7 +11,7 @@ FONT = 'font-family="sans-serif" font-size="15" font-weight="600"'
 
 # ---------------------------------------------------------------- Card als Wireframe
 # Abstände: (Rand links, Rand rechts, Bild bis Kategorie, Kategorie bis Titel, Titel bis Teaser, Teaser bis Link, Rand unten)
-AUGE  = dict(l=13, r=11, a=22, b=9, c=19, d=27, u=17)
+AUGE  = dict(l=24, r=24, a=31, b=5, c=23, d=12, u=38)  # nach Augenmaß: nur die vertikalen Abstände sind unruhig
 SKALA = dict(l=24, r=24, a=24, b=8, c=16, d=24, u=32)
 CW = 300; BH = 150
 
@@ -22,6 +22,8 @@ def card(p, x, y, sp, s=1.0, mass=False, seite='rechts', mark=None):
     def r(id_, xx, yy, ww, hh, f, rx=0):
         o.append(f'<rect data-id="{p}-{id_}" x="{xx:.1f}" y="{yy:.1f}" width="{ww:.1f}" height="{hh:.1f}" fill="{f}"' + (f' rx="{rx}"' if rx else '') + ' />')
     tx = x + sp['l'] * s; tw = w - (sp['l'] + sp['r']) * s
+    dx = {k: v * s for k, v in sp.get('dx', {}).items()}
+    X = lambda k: tx + dx.get(k, 0)
     cy = y + BH * s
     ys = {}
     ys['bild'] = (y, cy)
@@ -32,12 +34,12 @@ def card(p, x, y, sp, s=1.0, mass=False, seite='rechts', mark=None):
     hoehe = ys['link'][1] + sp['u'] * s - y
     r('karte', x, y, w, hoehe, KARTE)
     r('bild', x, y, w, BH * s, BILD)
-    r('kat', tx, k0, 70 * s, 8 * s, TITEL)
-    r('t1', tx, t0, tw, 16 * s, TITEL); r('t2', tx, t0 + 24 * s, tw * 0.62, 16 * s, TITEL)
+    r('kat', X('kat'), k0, 70 * s, 8 * s, TITEL)
+    r('t1', X('t'), t0, tw, 16 * s, TITEL); r('t2', X('t'), t0 + 24 * s, tw * 0.62, 16 * s, TITEL)
     for i, f in enumerate((1, 1, 0.7)):
-        r(f'e{i}', tx, e0 + i * 16 * s, tw * f, 9 * s, TEXT)
-    r('link', tx, l0, 64 * s, 10 * s, K)
-    px = tx + 72 * s; py = l0 + 5 * s
+        r(f'e{i}', X('e'), e0 + i * 16 * s, tw * f - dx.get('e', 0), 9 * s, TEXT)
+    r('link', X('link'), l0, 64 * s, 10 * s, K)
+    px = X('link') + 72 * s; py = l0 + 5 * s
     o.append(f'<path data-id="{p}-pfeil" d="M{px:.1f} {py - 5*s:.1f} L{px + 5*s:.1f} {py:.1f} L{px:.1f} {py + 5*s:.1f}" fill="none" stroke="{K}" stroke-width="{2.5*s:.1f}" stroke-linecap="round" stroke-linejoin="round" />')
     lucken = [('a', cy, k0, sp['a']), ('b', ys['kat'][1], t0, sp['b']), ('c', ys['titel'][1], e0, sp['c']),
               ('d', ys['teaser'][1], l0, sp['d']), ('u', ys['link'][1], y + hoehe, sp['u'])]
@@ -77,7 +79,7 @@ def paar(mass):
 W(D, '005-live-test.md', kopf('Live-Test', '''
 **Live-Test (ca. 3 Minuten).** Zwei Cards mit denselben Elementen: Bild, Kategorie, Titel, Teaser, Link. Frage: Welche wirkt ruhiger, ordentlicher, »fertiger«? Handzeichen links oder rechts. Erfahrungsgemäß gewinnt rechts deutlich, aber kaum jemand kann sagen, warum.
 
-Dann die Auflösung: Die Maße erscheinen. Links wurde nach Augenmaß gesetzt: 13, 17, 22, 27 Pixel, jeder Abstand ist anders, und keiner hat einen Grund. Rechts stammen alle Abstände aus einer Skala: 8, 16, 24, 32. Und sie folgen einer Regel: Was zusammengehört (Kategorie und Titel), steht enger als das, was trennt.
+Dann die Auflösung: Die Maße erscheinen. Links wurde nach Augenmaß gesetzt: 5, 12, 23, 31, 38 Pixel, jeder Abstand ist anders, und keiner hat einen Grund. Der Link klebt fast am Teaser, die Kategorie fast am Titel. Die Ränder links und rechts sind auf beiden Seiten gleich, unruhig sind nur die vertikalen Abstände. Rechts stammen alle Abstände aus einer Skala: 8, 16, 24, 32. Und sie folgen einer Regel: Was zusammengehört (Kategorie und Titel), steht enger als das, was trennt.
 
 Das ist das Problem, das die Methode löst: Abstände nach Augenmaß sind fast nie falsch genug, dass es jemand bemerkt, aber zusammen ergeben sie Unruhe. Und spätestens im Team oder im Code weiß niemand mehr, welcher Wert gilt.
 ''', transition='none') + '''{% interlude "Welche Card wirkt ruhiger?", "Links oder rechts? Entscheiden Sie aus dem Bauch." %}

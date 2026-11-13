@@ -7,7 +7,7 @@ transition: none
 speaker: |
   Derselbe Screen in vier Stufen. Fidelity heißt Wiedergabetreue: wie nah ein Entwurf am fertigen Produkt ist.
 
-  **Skizze:** Blöcke, schief, schnell. Ein Kreuz steht für ein Bild, Wellenlinien für Text. Frage: Was gehört auf die Seite, und wie verteilt es sich grob?
+  **Skizze:** von Hand auf Punktpapier, schnell, aber präzise. Ein Kreuz steht für ein Bild, Linien für Text, ein dicker Strich für eine Zwischenüberschrift. Frage: Was gehört auf die Seite, und wie verteilt es sich grob? Die Skizze zeigt zwei andere Seiten als die folgenden Stufen, sie steht für die Art zu zeichnen.
 
   **Grayscale-Wireframe:** dasselbe auf dem Raster, mit echten Proportionen und Abständen. Frage: Was steht wo, was ist wie wichtig?
 
@@ -24,22 +24,7 @@ speaker: |
 
 {% interlude "Vier Stufen", "Von der Skizze zum fertigen Entwurf" %}
 
-{% frame '{"w":900, "h":500, "bu":"1. Skizze: Was gehört auf die Seite?"}' %}
-<path data-id="bild" d="M38.9,93.9 L440.9,93.4 L440.2,359.2 L37.3,360.0 Z" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
-<path data-id="kreuz" d="M48,104 L432,352 M432,104 L48,352" stroke="#aaaaaa" stroke-width="2.5" stroke-linecap="round" />
-<path data-id="th0" d="M37.2,373.6 L125.4,371.5 L127.5,428.0 L37.7,424.3 Z" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
-<path data-id="th1" d="M144.8,376.7 L232.5,373.4 L234.9,423.3 L146.2,424.7 Z" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
-<path data-id="th2" d="M245.9,371.7 L334.9,375.9 L334.1,426.5 L248.8,425.2 Z" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
-<path data-id="th3" d="M352.3,371.4 L437.4,372.2 L441.1,425.6 L350.9,426.5 Z" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
-<path data-id="logo" d="M40,26 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0" fill="none" stroke="#888888" stroke-width="2.5" stroke-linecap="round" />
-<path data-id="h1" d="M480,112 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0" fill="none" stroke="#888888" stroke-width="2.5" stroke-linecap="round" />
-<path data-id="h2" d="M480,142 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0" fill="none" stroke="#888888" stroke-width="2.5" stroke-linecap="round" />
-<path data-id="preis" d="M479.7,194.8 L601.8,197.2 L598.5,222.4 L480.2,224.3 Z" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
-<path data-id="btn" d="M577.4,298.7 L862.9,297.7 L859.5,345.5 L573.9,343.9 Z" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
-<path data-id="t0" d="M480,372 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0" fill="none" stroke="#888888" stroke-width="2.5" stroke-linecap="round" />
-<path data-id="t1" d="M480,392 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0" fill="none" stroke="#888888" stroke-width="2.5" stroke-linecap="round" />
-<path data-id="t2" d="M480,412 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0 q6,-4 12,0 q6,4 12,0" fill="none" stroke="#888888" stroke-width="2.5" stroke-linecap="round" />
-{% endframe %}
+{% screenshot "./images/wireframe-skizzen.webp", '{"transition":"none", "classes":"no-shadow", "width":"auto", "bu":"1. Skizze: Was gehört auf die Seite? Von Hand, schnell, aber präzise"}' %}
 {% frame '{"w":900, "h":500, "bu":"2. Grayscale-Wireframe: Was steht wo, was ist wie wichtig?"}' %}
 <rect data-id="nav" x="0" y="0" width="900" height="50" fill="#f2f2f2" rx="0" />
 <rect data-id="logo" x="40" y="18" width="90" height="14" fill="#888888" rx="0" />

@@ -182,7 +182,7 @@ transition: none
 speaker: |
   Derselbe Screen in vier Stufen. Fidelity heißt Wiedergabetreue: wie nah ein Entwurf am fertigen Produkt ist.
 
-  **Skizze:** Blöcke, schief, schnell. Ein Kreuz steht für ein Bild, Wellenlinien für Text. Frage: Was gehört auf die Seite, und wie verteilt es sich grob?
+  **Skizze:** von Hand auf Punktpapier, schnell, aber präzise. Ein Kreuz steht für ein Bild, Linien für Text, ein dicker Strich für eine Zwischenüberschrift. Frage: Was gehört auf die Seite, und wie verteilt es sich grob? Die Skizze zeigt zwei andere Seiten als die folgenden Stufen, sie steht für die Art zu zeichnen.
 
   **Grayscale-Wireframe:** dasselbe auf dem Raster, mit echten Proportionen und Abständen. Frage: Was steht wo, was ist wie wichtig?
 
@@ -199,7 +199,7 @@ speaker: |
 
 {% interlude "Vier Stufen", "Von der Skizze zum fertigen Entwurf" %}
 
-''' + fq('1. Skizze: Was gehört auf die Seite?', skizze()) + '''
+{% screenshot "./images/wireframe-skizzen.webp", '{"transition":"none", "classes":"no-shadow", "width":"auto", "bu":"1. Skizze: Was gehört auf die Seite? Von Hand, schnell, aber präzise"}' %}
 ''' + fq('2. Grayscale-Wireframe: Was steht wo, was ist wie wichtig?', grau()) + '''
 ''' + fq('3. Mid-Fi: Passt es zu den echten Inhalten?', midfi()) + '''
 ''' + fq('4. Hi-Fi: Wie wirkt es?', midfi(True)) + '''
@@ -237,6 +237,52 @@ speaker: |
 ''')
 
 # ---------------------------------------------------------------- Fehler und Einsatz
+# ---------------------------------------------------------------- Nur zeigen, worüber Sie sprechen wollen
+def nur_titel():
+    """Wireframe, in dem nur der Produktname echt ist."""
+    o = grau()
+    o = o.replace(rect('h1', HL), txt('h1', 480, 118, 'Hocker Kiel', 24, K, 700))
+    o = o.replace(rect('h2', HL), txt('h2', 480, 146, 'Eiche geölt, Sitzhöhe 46 cm', 16, '#555555'))
+    return o
+
+W(D, '045-nur-was-zur-sprache-kommt.md', """
+---
+title: "Nur zeigen, worüber Sie sprechen wollen"
+layout: presentation.11ty.js
+slideClasses: wrap
+status: ok
+transition: none
+speaker: |
+  Die Unterzeile ist Watzlawicks erstes Axiom (siehe Prinzip Kommunikation): Auch was nur als Platzhalter gedacht war, sendet eine Botschaft.
+
+  Die wichtigste Regel für jeden Prototyp, egal auf welcher Stufe: Alles, was im Entwurf zu sehen ist, wird auch besprochen. Wer ein Foto zeigt, bekommt Feedback zum Foto. Wer einen Werbetext zeigt, diskutiert den Werbetext. Wer Farbe zeigt, redet über Farbe.
+
+  Daraus folgt: In einen Prototyp gehört nur, worüber Sie gerade sprechen wollen. Alles andere bleibt Platzhalter. Wollen Sie nicht über den Bildinhalt sprechen, zeigen Sie kein Bild, sondern eine graue Fläche. Wollen Sie nicht über den Wortlaut sprechen, zeigen Sie Balken. Wollen Sie nicht über Farbe sprechen, bleibt alles grau.
+
+  Das gilt auch umgekehrt: Wollen Sie wissen, ob der lange Produktname in die Zeile passt, dann gehört genau dieser eine Text echt hinein, der Rest bleibt grau. Die Fidelity muss nicht überall gleich sein.
+
+  Der Fehler passiert oft: Ein Wireframe mit einem schönen Stockfoto, und die ganze Runde redet über das Foto statt über die Anordnung.
+
+  Vorführung: erst der Hi-Fi-Screen mit der Frage »Worüber würden Sie hier sprechen?« (Antworten: Hocker, Holz, Lila, Preis). Dann derselbe Screen als Wireframe: Jetzt bleibt nur die Anordnung. Zum Schluss der Wireframe, in dem nur der Produktname echt ist.
+---
+
+{% interlude "Nur zeigen, worüber Sie sprechen wollen.", "Man kann nicht nicht kommunizieren." %}
+
+""" + fq('Worüber würden Sie hier sprechen?', midfi(True)) + """
+""" + fq('Als Wireframe: Jetzt bleibt nur die Anordnung', grau()) + """
+""" + fq('Nur der Produktname ist echt: Jetzt geht es um genau diesen Text', nur_titel()) + """
+
+<section class="simple" data-transition="fade">
+  <div>
+    <h1>Was nicht besprochen werden soll, bleibt Platzhalter</h1>
+    {% fragment '<p class="list"><strong>Bild:</strong> Kein Gespräch über den Bildinhalt? Dann eine graue Fläche statt eines Fotos.</p>' %}
+    {% fragment '<p class="list"><strong>Text:</strong> Kein Gespräch über den Wortlaut? Dann Balken statt Text.</p>' %}
+    {% fragment '<p class="list"><strong>Farbe:</strong> Kein Gespräch über Farbe? Dann bleibt alles grau.</p>' %}
+    {% fragment '<p class="list"><strong>Umgekehrt:</strong> Was Sie besprechen wollen, zeigen Sie echt. Auch wenn der Rest grau bleibt.</p>' %}
+  </div>
+</section>
+""")
+
 W(D, '050-fehler.md', '''
 ---
 title: "Typische Fehler"
@@ -253,6 +299,7 @@ speaker: |
 
 {% fragment '<p class="list">Zu früh zu fein: Farbe und Schatten, bevor die Anordnung steht</p>' %}
 {% fragment '<p class="list">Schon im Wireframe Farbe: Dann geht es im Feedback nur noch um die Farbe</p>' %}
+{% fragment '<p class="list">Dinge zeigen, über die man nicht sprechen will: Stockfotos, Werbetexte, Logos</p>' %}
 {% fragment '<p class="list">Lorem ipsum bis zum Schluss: Die echten Inhalte passen dann nicht hinein</p>' %}
 {% fragment '<p class="list">Graustufen als Gestaltung missverstehen: Das Grau ist ein Platzhalter</p>' %}
 {% fragment '<p class="list">Nur eine Variante pro Stufe: Gerade die groben Stufen sind zum Variieren da</p>' %}

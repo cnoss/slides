@@ -86,18 +86,62 @@ speaker: |
     '<g transform="translate(477,130) scale(0.45)">' + teile(C, KC).replace('data-id="', 'data-x="') + pfad(C, ['bild', 'titel', 'text', 'link']) + '</g>\n'
 ), animate=False) + '\n')
 
+# Geräte-Reihe: übliche Ausrichtung schwarz, gedrehte grau
+GERAETE = [('desk', 1440, 900, False), ('tab-h', 834, 1194, False), ('tab-q', 1194, 834, True), ('ph-h', 390, 844, False), ('ph-q', 844, 390, True)]
+def geraete():
+    sk = 0.165; gap = 20; base = 345
+    breite = sum(w * sk for _, w, h, q in GERAETE) + gap * (len(GERAETE) - 1)
+    x = (900 - breite) / 2
+    pos = []
+    for gid, w, h, quer in GERAETE:
+        W_, H_ = w * sk, h * sk
+        pos.append((gid, x, base - H_, W_, H_, quer)); x += W_ + gap
+    def umriss(gid, x, y, w, h, quer):
+        farbe = '#888888' if quer else '#231f20'
+        return f'<rect data-id="{gid}" x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h:.1f}" rx="6" fill="#ffffff" stroke="{farbe}" stroke-width="3" />\n'
+    def inhalt(gid, x, y, w, h, quer):
+        # Kopfzeile, dann Karten in so vielen Spalten, wie die Breite hergibt
+        spalten = {'desk': 3, 'tab-h': 2, 'tab-q': 3, 'ph-h': 1, 'ph-q': 2}[gid]
+        p = max(w * 0.07, 5); g = max(w * 0.04, 3)
+        o = f'<rect data-id="{gid}-kopf" x="{x + p:.1f}" y="{y + p:.1f}" width="{w - 2 * p:.1f}" height="{max(h * 0.06, 4):.1f}" fill="#888888" />\n'
+        top = y + p + max(h * 0.06, 4) + g
+        kw = (w - 2 * p - g * (spalten - 1)) / spalten
+        kh = min(kw * 0.9, (y + h - p - top))
+        reihen = max(1, int((y + h - p - top + g) // (kh + g)))
+        n = 0
+        for r in range(reihen):
+            for c_ in range(spalten):
+                if n >= 6: break
+                kx = x + p + c_ * (kw + g); ky = top + r * (kh + g)
+                o += f'<rect data-id="{gid}-k{n}" x="{kx:.1f}" y="{ky:.1f}" width="{kw:.1f}" height="{kh:.1f}" fill="#e4e4e4" />\n'
+                o += f'<rect data-id="{gid}-b{n}" x="{kx:.1f}" y="{ky:.1f}" width="{kw:.1f}" height="{kh * 0.55:.1f}" fill="#c4c4c4" />\n'
+                n += 1
+        return o
+    leer = ''.join(umriss(*q) for q in pos)
+    voll = ''.join(umriss(*q) + inhalt(*q) for q in pos)
+    f1 = "{% frame '{\"stage\":\"#ffffff\", \"w\":900, \"h\":500, \"bu\":\"Ein Inhalt, viele Formate: Desktop, Tablet und Smartphone, die übliche Ausrichtung schwarz, die gedrehte grau\"}' %}\n" + leer + "{% endframe %}"
+    f2 = "{% frame '{\"stage\":\"#ffffff\", \"w\":900, \"h\":500, \"bu\":\"Das Layout passt sich an: Die Reihenfolge bleibt, die Zahl der Spalten ändert sich\"}' %}\n" + voll + "{% endframe %}"
+    return f1 + '\n' + f2
+
 W(D, '020-was-ist-ein-layout.md', '''
 ---
 title: "Was ist ein Layout?"
 layout: presentation.11ty.js
 slideClasses: wrap
 status: ok
+transition: none
 speaker: |
   Die Definition, die wir heute brauchen: Ein Layout ordnet Text, Bild und Fläche auf einem Format. Es entscheidet, was zuerst gelesen wird, was zusammengehört und was zurücktritt.
 
   Das Wort kommt aus dem Englischen: to lay out, auslegen, ausbreiten. In Druckereien und Agenturen hieß so der Entwurf, auf dem die Teile einer Seite ausgelegt wurden, bevor sie gesetzt wurden.
 
   Für jedes Layout stellen sich dieselben Fragen. Im bisherigen Foliensatz standen sie als fünf W-Fragen: Was (Inhalt), Warum (Ziel), Für wen (Zielgruppe), Wo (Medium) und Wie (stilistische Festlegungen). Die ersten vier kommen vor dem Wie. Ausführlich in der Methode Layoutanalyse.
+
+  Danach die Geräte-Reihe: Desktop, Tablet und Smartphone im richtigen Seitenverhältnis, die übliche Ausrichtung mit schwarzer Kontur, die gedrehte mit grauer. Beim Weiterschalten füllen sich die Umrisse mit demselben Inhalt: drei Spalten auf dem Desktop, zwei auf dem Tablet hoch, eine auf dem Smartphone hoch. Frage: Wer entscheidet, was auf dem Smartphone quer passiert? Antwort: das Layout, also Sie.
+
+  Zum Schluss das Foto von Brad Frost, das er in seinen Vorträgen zu Responsive Design und Atomic Design immer wieder zeigt: Geräte aus seinem eigenen Bestand, 2012. Seitdem ist die Vielfalt nur größer geworden: Uhren, faltbare Smartphones, Autos, Fernseher. Foto: Brad Frost, »Devices«, Flickr, CC BY 2.0, https://www.flickr.com/photos/brad_frost/7387824246
+
+  Die Abgrenzung: Raster, Wireframe, Layout und Screendesign werden oft durcheinander verwendet. Das Raster ist das Gerüst, der Wireframe das Layout ohne Oberfläche, das Screendesign kommt mit Oberfläche, Zuständen und Interaktion dazu. Auf dem Screen ist ein Layout außerdem nie ein einzelnes Bild, sondern ein System aus Regeln für viele Formate (siehe Inhalt bestimmt Form).
 
   **Hintergrund**
 
@@ -106,7 +150,76 @@ speaker: |
 
 {% interlude "Was ist ein Layout?", "Und warum reicht es nicht, alles irgendwie unterzubringen?" %}
 
+<section class="simple" data-transition="fade">
+  <div>
+    <h1>Layout</h1>
+    <p><em>von englisch »to lay out«: auslegen, ausbreiten</em></p>
+    <p>Die Anordnung aller Elemente auf einem Format, also Text, Bild, Fläche und Bedienelemente, nach einer erkennbaren Ordnung.</p>
+    {% fragment '<p class="list"><strong>Reihenfolge:</strong> Was wird zuerst gelesen, was danach?</p>' %}
+    {% fragment '<p class="list"><strong>Zusammenhang:</strong> Was gehört zusammen, was ist getrennt?</p>' %}
+    {% fragment '<p class="list"><strong>Gewicht:</strong> Was ist wichtig, was tritt zurück?</p>' %}
+    {% fragment '<p class="list"><strong>Raum:</strong> Was bleibt frei?</p>' %}
+  </div>
+</section>
+
 {% statement "Ein Layout ordnet Text, Bild und Fläche auf einem Format.", "Es entscheidet, was zuerst gelesen wird, was zusammengehört und was zurücktritt." %}
+
+<section class="simple" data-transition="fade">
+<div>
+
+# Nicht dasselbe
+
+| Begriff | Was es ist |
+|---|---|
+| **Raster** | das unsichtbare Gerüst unter dem Layout |
+| **Wireframe** | das Layout ohne Oberfläche: Struktur, Gewicht, Reihenfolge |
+| **Layout** | die Anordnung der Elemente auf dem Format |
+| **Screendesign** | Layout plus Oberfläche, Zustände und Interaktion |
+
+</div>
+</section>
+
+{% statement "Auf dem Screen ist ein Layout kein Bild, sondern ein System.", "Dieselben Inhalte müssen auf vielen Formaten funktionieren. Das Layout legt fest, was sich anpasst und was bleibt." %}
+
+''' + geraete() + '''
+
+{% screenshot "./images/geraete-brad-frost.jpg", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":"So sah das schon 2012 aus: Ein Layout muss auf all dem funktionieren<br><small>Foto: Brad Frost, »Devices«, 2012, Flickr, CC BY 2.0</small>"}' %}
+''')
+
+W(D, '025-beispiele.md', '''
+---
+title: "Layouts im Alltag"
+layout: presentation.11ty.js
+slideClasses: wrap
+status: ok
+speaker: |
+  **Echte Layouts (ca. 5 Minuten).** Bei jedem Beispiel dieselben zwei Fragen an den Raum: Was lesen Sie zuerst? Welche Ordnung erkennen Sie? Die Bildunterschrift nennt danach das Muster. Die Namen sind keine Norm, sie helfen nur, über Layouts zu sprechen.
+
+  **Apple, iPhone:** eine Bühne pro Produkt. Viel Weißraum, ein Bild, ein Titel, zwei Links. Die Navigationsleiste mit den Modellen darüber ist eine Reihe gleichartiger Elemente, Ähnlichkeit und Ausrichtung tragen sie.
+
+  **tagesschau.de:** ein Aufmacher, dann ein Raster aus kleineren Meldungen. Größe ordnet die Nachrichten nach Wichtigkeit, klassisch wie in der Zeitung.
+
+  **tagesschau.de mobil:** derselbe Inhalt in einer Spalte. Die Reihenfolge bleibt, die Anordnung ändert sich. Genau das meint »Layout als System«.
+
+  **Wikipedia:** drei Spalten mit klaren Rollen. Links Inhaltsverzeichnis, in der Mitte der Lesetext, rechts Einstellungen. Der Lesetext hat die breiteste Spalte, weil er die Hauptsache ist. Nebenbei passt der Artikel: Er erklärt den Begriff Layout.
+
+  **IKEA, Produkte:** ein Kachelraster. Alle Kategorien sind gleich wichtig, also gleich groß, mit Bild oben und Liste darunter. Ordnung durch Wiederholung.
+
+  **Stripe:** geteiltes Layout. Große Aussage links, Bildfläche rechts, darunter eine Reihe mit Kundenlogos als Beleg. Typisch für Startseiten, die etwas verkaufen.
+
+  Alle Screenshots von 2026.
+---
+
+{% interlude "Layouts im Alltag", "Was lesen Sie zuerst? Welche Ordnung erkennen Sie?" %}
+
+{% screenshot "./images/layout-apple.jpg", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":"Eine Bühne pro Produkt, viel Weißraum<br><small>apple.com, Screenshot 2026</small>"}' %}
+{% screenshot "./images/layout-tagesschau.jpg", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":"Ein Aufmacher, darunter ein Raster aus kleineren Meldungen<br><small>tagesschau.de, Screenshot 2026</small>"}' %}
+{% screenshot "./images/layout-tagesschau-mobil.jpg", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":"Derselbe Inhalt in einer Spalte: Die Reihenfolge bleibt, die Anordnung ändert sich<br><small>tagesschau.de, Smartphone, Screenshot 2026</small>"}' %}
+{% screenshot "./images/layout-wikipedia.jpg", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":"Drei Spalten mit klaren Rollen, der Lesetext bekommt die breiteste<br><small>de.wikipedia.org, Artikel »Layout«, Screenshot 2026</small>"}' %}
+{% screenshot "./images/layout-ikea.jpg", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":"Ein Kachelraster: Gleich wichtig heißt gleich groß<br><small>ikea.com, Screenshot 2026</small>"}' %}
+{% screenshot "./images/layout-stripe.jpg", '{"transition":"fade", "classes":"shadow", "width":"auto", "bu":"Geteilt: große Aussage links, Bildfläche rechts, darunter die Belege<br><small>stripe.com, Screenshot 2026</small>"}' %}
+
+{% question "Welches Muster hat Ihre meistgenutzte App?", "Bühne, Aufmacher mit Raster, Spalten, Kacheln oder geteilt?" %}
 ''')
 
 W(D, '030-werkzeuge.md', '''
@@ -167,11 +280,12 @@ gruppe: ""
 tiefe: ""
 einsatz: "Einstieg in die Bausteine zu Layout und Variantenbildung"
 kurzsatz: "Ein Layout ordnet Text, Bild und Fläche auf einem Format und legt fest, was zuerst gelesen wird"
-begriffe: ["Layout", "Leserichtung", "Makrotypografie"]
+begriffe: ["Layout", "Leserichtung", "Makrotypografie", "Raster", "Wireframe", "Layoutmuster"]
 herkunft: "U: layout/010"
 inhalt:
   - "Schätzfrage: dieselben Teile, drei Anordnungen"
-  - "Was ist ein Layout?"
+  - "Was ist ein Layout? Definition und Abgrenzung"
+  - "Layouts im Alltag: sechs Beispiele, Layoutmuster"
   - "Was Sie schon haben"
   - "Lernziele des Tages"
 status: ok

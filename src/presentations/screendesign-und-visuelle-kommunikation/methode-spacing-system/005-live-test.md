@@ -7,7 +7,7 @@ status: ok
 speaker: |
   **Live-Test (ca. 3 Minuten).** Zwei Cards mit denselben Elementen: Bild, Kategorie, Titel, Teaser, Link. Frage: Welche wirkt ruhiger, ordentlicher, »fertiger«? Handzeichen links oder rechts. Erfahrungsgemäß gewinnt rechts deutlich, aber kaum jemand kann sagen, warum.
 
-  Dann die Auflösung: Die Maße erscheinen. Links wurde nach Augenmaß gesetzt: 13, 17, 22, 27 Pixel, jeder Abstand ist anders, und keiner hat einen Grund. Rechts stammen alle Abstände aus einer Skala: 8, 16, 24, 32. Und sie folgen einer Regel: Was zusammengehört (Kategorie und Titel), steht enger als das, was trennt.
+  Dann die Auflösung: Die Maße erscheinen. Links wurde nach Augenmaß gesetzt: 5, 12, 23, 31, 38 Pixel, jeder Abstand ist anders, und keiner hat einen Grund. Der Link klebt fast am Teaser, die Kategorie fast am Titel. Die Ränder links und rechts sind auf beiden Seiten gleich, unruhig sind nur die vertikalen Abstände. Rechts stammen alle Abstände aus einer Skala: 8, 16, 24, 32. Und sie folgen einer Regel: Was zusammengehört (Kategorie und Titel), steht enger als das, was trennt.
 
   Das ist das Problem, das die Methode löst: Abstände nach Augenmaß sind fast nie falsch genug, dass es jemand bemerkt, aber zusammen ergeben sie Unruhe. Und spätestens im Team oder im Code weiß niemand mehr, welcher Wert gilt.
 ---
@@ -15,16 +15,16 @@ speaker: |
 {% interlude "Welche Card wirkt ruhiger?", "Links oder rechts? Entscheiden Sie aus dem Bauch." %}
 
 {% frame '{"stage":"#ffffff", "w":900, "h":500, "bu":"Links oder rechts?"}' %}
-<rect data-id="a-karte" x="110.0" y="60.0" width="300.0" height="343.0" fill="#e4e4e4" />
+<rect data-id="a-karte" x="110.0" y="60.0" width="300.0" height="358.0" fill="#e4e4e4" />
 <rect data-id="a-bild" x="110.0" y="60.0" width="300.0" height="150.0" fill="#c4c4c4" />
-<rect data-id="a-kat" x="123.0" y="232.0" width="70.0" height="8.0" fill="#888888" />
-<rect data-id="a-t1" x="123.0" y="249.0" width="276.0" height="16.0" fill="#888888" />
-<rect data-id="a-t2" x="123.0" y="273.0" width="171.1" height="16.0" fill="#888888" />
-<rect data-id="a-e0" x="123.0" y="308.0" width="276.0" height="9.0" fill="#aaaaaa" />
-<rect data-id="a-e1" x="123.0" y="324.0" width="276.0" height="9.0" fill="#aaaaaa" />
-<rect data-id="a-e2" x="123.0" y="340.0" width="193.2" height="9.0" fill="#aaaaaa" />
-<rect data-id="a-link" x="123.0" y="376.0" width="64.0" height="10.0" fill="#231f20" />
-<path data-id="a-pfeil" d="M195.0 376.0 L200.0 381.0 L195.0 386.0" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<rect data-id="a-kat" x="134.0" y="241.0" width="70.0" height="8.0" fill="#888888" />
+<rect data-id="a-t1" x="134.0" y="254.0" width="252.0" height="16.0" fill="#888888" />
+<rect data-id="a-t2" x="134.0" y="278.0" width="156.2" height="16.0" fill="#888888" />
+<rect data-id="a-e0" x="134.0" y="317.0" width="252.0" height="9.0" fill="#aaaaaa" />
+<rect data-id="a-e1" x="134.0" y="333.0" width="252.0" height="9.0" fill="#aaaaaa" />
+<rect data-id="a-e2" x="134.0" y="349.0" width="176.4" height="9.0" fill="#aaaaaa" />
+<rect data-id="a-link" x="134.0" y="370.0" width="64.0" height="10.0" fill="#231f20" />
+<path data-id="a-pfeil" d="M206.0 370.0 L211.0 375.0 L206.0 380.0" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
 <rect data-id="b-karte" x="490.0" y="60.0" width="300.0" height="353.0" fill="#e4e4e4" />
 <rect data-id="b-bild" x="490.0" y="60.0" width="300.0" height="150.0" fill="#c4c4c4" />
 <rect data-id="b-kat" x="514.0" y="234.0" width="70.0" height="8.0" fill="#888888" />
@@ -37,28 +37,28 @@ speaker: |
 <path data-id="b-pfeil" d="M586.0 371.0 L591.0 376.0 L586.0 381.0" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
 {% endframe %}
 {% frame '{"stage":"#ffffff", "w":900, "h":500, "bu":"Links nach Augenmaß, rechts aus einer Skala"}' %}
-<rect data-id="a-karte" x="110.0" y="60.0" width="300.0" height="343.0" fill="#e4e4e4" />
+<rect data-id="a-karte" x="110.0" y="60.0" width="300.0" height="358.0" fill="#e4e4e4" />
 <rect data-id="a-bild" x="110.0" y="60.0" width="300.0" height="150.0" fill="#c4c4c4" />
-<rect data-id="a-kat" x="123.0" y="232.0" width="70.0" height="8.0" fill="#888888" />
-<rect data-id="a-t1" x="123.0" y="249.0" width="276.0" height="16.0" fill="#888888" />
-<rect data-id="a-t2" x="123.0" y="273.0" width="171.1" height="16.0" fill="#888888" />
-<rect data-id="a-e0" x="123.0" y="308.0" width="276.0" height="9.0" fill="#aaaaaa" />
-<rect data-id="a-e1" x="123.0" y="324.0" width="276.0" height="9.0" fill="#aaaaaa" />
-<rect data-id="a-e2" x="123.0" y="340.0" width="193.2" height="9.0" fill="#aaaaaa" />
-<rect data-id="a-link" x="123.0" y="376.0" width="64.0" height="10.0" fill="#231f20" />
-<path data-id="a-pfeil" d="M195.0 376.0 L200.0 381.0 L195.0 386.0" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-<line data-id="a-ma" x1="96.0" y1="210.0" x2="96.0" y2="232.0" stroke="#9313ce" stroke-width="3" stroke-linecap="round" />
-<text data-id="a-mta" x="88.0" y="226.0" text-anchor="end" font-family="sans-serif" font-size="15" font-weight="600" fill="#9313ce">22</text>
-<line data-id="a-mb" x1="96.0" y1="240.0" x2="96.0" y2="249.0" stroke="#9313ce" stroke-width="3" stroke-linecap="round" />
-<text data-id="a-mtb" x="88.0" y="249.5" text-anchor="end" font-family="sans-serif" font-size="15" font-weight="600" fill="#9313ce">9</text>
-<line data-id="a-mc" x1="96.0" y1="289.0" x2="96.0" y2="308.0" stroke="#9313ce" stroke-width="3" stroke-linecap="round" />
-<text data-id="a-mtc" x="88.0" y="303.5" text-anchor="end" font-family="sans-serif" font-size="15" font-weight="600" fill="#9313ce">19</text>
-<line data-id="a-md" x1="96.0" y1="349.0" x2="96.0" y2="376.0" stroke="#9313ce" stroke-width="3" stroke-linecap="round" />
-<text data-id="a-mtd" x="88.0" y="367.5" text-anchor="end" font-family="sans-serif" font-size="15" font-weight="600" fill="#9313ce">27</text>
-<line data-id="a-mu" x1="96.0" y1="386.0" x2="96.0" y2="403.0" stroke="#9313ce" stroke-width="3" stroke-linecap="round" />
-<text data-id="a-mtu" x="88.0" y="399.5" text-anchor="end" font-family="sans-serif" font-size="15" font-weight="600" fill="#9313ce">17</text>
-<line data-id="a-ml" x1="110.0" y1="226.0" x2="123.0" y2="226.0" stroke="#9313ce" stroke-width="3" stroke-linecap="round" />
-<text data-id="a-mtl" x="113.0" y="220.0" font-family="sans-serif" font-size="15" font-weight="600" fill="#9313ce">13</text>
+<rect data-id="a-kat" x="134.0" y="241.0" width="70.0" height="8.0" fill="#888888" />
+<rect data-id="a-t1" x="134.0" y="254.0" width="252.0" height="16.0" fill="#888888" />
+<rect data-id="a-t2" x="134.0" y="278.0" width="156.2" height="16.0" fill="#888888" />
+<rect data-id="a-e0" x="134.0" y="317.0" width="252.0" height="9.0" fill="#aaaaaa" />
+<rect data-id="a-e1" x="134.0" y="333.0" width="252.0" height="9.0" fill="#aaaaaa" />
+<rect data-id="a-e2" x="134.0" y="349.0" width="176.4" height="9.0" fill="#aaaaaa" />
+<rect data-id="a-link" x="134.0" y="370.0" width="64.0" height="10.0" fill="#231f20" />
+<path data-id="a-pfeil" d="M206.0 370.0 L211.0 375.0 L206.0 380.0" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<line data-id="a-ma" x1="96.0" y1="210.0" x2="96.0" y2="241.0" stroke="#9313ce" stroke-width="3" stroke-linecap="round" />
+<text data-id="a-mta" x="88.0" y="230.5" text-anchor="end" font-family="sans-serif" font-size="15" font-weight="600" fill="#9313ce">31</text>
+<line data-id="a-mb" x1="96.0" y1="249.0" x2="96.0" y2="254.0" stroke="#9313ce" stroke-width="3" stroke-linecap="round" />
+<text data-id="a-mtb" x="88.0" y="256.5" text-anchor="end" font-family="sans-serif" font-size="15" font-weight="600" fill="#9313ce">5</text>
+<line data-id="a-mc" x1="96.0" y1="294.0" x2="96.0" y2="317.0" stroke="#9313ce" stroke-width="3" stroke-linecap="round" />
+<text data-id="a-mtc" x="88.0" y="310.5" text-anchor="end" font-family="sans-serif" font-size="15" font-weight="600" fill="#9313ce">23</text>
+<line data-id="a-md" x1="96.0" y1="358.0" x2="96.0" y2="370.0" stroke="#9313ce" stroke-width="3" stroke-linecap="round" />
+<text data-id="a-mtd" x="88.0" y="369.0" text-anchor="end" font-family="sans-serif" font-size="15" font-weight="600" fill="#9313ce">12</text>
+<line data-id="a-mu" x1="96.0" y1="380.0" x2="96.0" y2="418.0" stroke="#9313ce" stroke-width="3" stroke-linecap="round" />
+<text data-id="a-mtu" x="88.0" y="404.0" text-anchor="end" font-family="sans-serif" font-size="15" font-weight="600" fill="#9313ce">38</text>
+<line data-id="a-ml" x1="110.0" y1="235.0" x2="134.0" y2="235.0" stroke="#9313ce" stroke-width="3" stroke-linecap="round" />
+<text data-id="a-mtl" x="113.0" y="229.0" font-family="sans-serif" font-size="15" font-weight="600" fill="#9313ce">24</text>
 <rect data-id="b-karte" x="490.0" y="60.0" width="300.0" height="353.0" fill="#e4e4e4" />
 <rect data-id="b-bild" x="490.0" y="60.0" width="300.0" height="150.0" fill="#c4c4c4" />
 <rect data-id="b-kat" x="514.0" y="234.0" width="70.0" height="8.0" fill="#888888" />

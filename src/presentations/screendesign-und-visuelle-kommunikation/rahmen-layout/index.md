@@ -8,11 +8,12 @@ gruppe: ""
 tiefe: ""
 einsatz: "Einstieg in die Bausteine zu Layout und Variantenbildung"
 kurzsatz: "Ein Layout ordnet Text, Bild und Fläche auf einem Format und legt fest, was zuerst gelesen wird"
-begriffe: ["Layout", "Leserichtung", "Makrotypografie"]
+begriffe: ["Layout", "Leserichtung", "Makrotypografie", "Raster", "Wireframe", "Layoutmuster"]
 herkunft: "U: layout/010"
 inhalt:
   - "Schätzfrage: dieselben Teile, drei Anordnungen"
-  - "Was ist ein Layout?"
+  - "Was ist ein Layout? Definition und Abgrenzung"
+  - "Layouts im Alltag: sechs Beispiele, Layoutmuster"
   - "Was Sie schon haben"
   - "Lernziele des Tages"
 status: ok
